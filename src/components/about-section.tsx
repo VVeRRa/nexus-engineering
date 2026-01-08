@@ -48,21 +48,21 @@ export function AboutSection() {
 
   return (
     <section id="about" className="section bg-white relative overflow-hidden py-24">
-      {/* Background w/ Blue Accent */}
-      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-blue-100/30 rounded-full blur-[100px] -z-10" />
+      {/* Background w/ Green Accent */}
+      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-green-100/30 rounded-full blur-[100px] -z-10" />
 
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Left Column */}
           <div>
-            <span className="text-[var(--color-primary)] font-bold tracking-wider uppercase text-sm mb-4 block">{t("label")}</span>
+            <span className="text-[var(--color-secondary)] font-bold tracking-wider uppercase text-sm mb-4 block">{t("label")}</span>
             <h2
               className="text-4xl md:text-5xl text-slate-900 mb-8"
               style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
             >
               {t.rich("title", {
                 br: () => <br />,
-                span: (chunks) => <span className="text-[var(--color-primary)]">{chunks}</span>
+                span: (chunks) => <span className="text-[var(--color-secondary)]">{chunks}</span>
               })}
             </h2>
             <div className="space-y-6 text-lg text-slate-500 leading-relaxed">
@@ -80,10 +80,10 @@ export function AboutSection() {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-white to-blue-50/50 p-8 rounded-3xl shadow-sm border border-blue-100 hover:shadow-lg transition-all duration-300"
+                className="bg-gradient-to-br from-white to-green-50/50 p-8 rounded-3xl shadow-sm border border-green-100 hover:shadow-lg transition-all duration-300"
               >
                 {/* Icon */}
-                <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mb-5 text-[var(--color-primary)]">
+                <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center mb-5 text-[var(--color-secondary)]">
                   {value.icon}
                 </div>
 
