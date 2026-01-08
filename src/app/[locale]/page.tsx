@@ -29,8 +29,8 @@ export default function Home() {
         });
       },
       {
-        threshold: 0.1,
-        rootMargin: "50px", // Trigger slightly before element enters viewport
+        threshold: 0,
+        rootMargin: "200px", // Trigger well before element enters viewport
       }
     );
 
@@ -43,15 +43,17 @@ export default function Home() {
     // Fail-safe: If observer doesn't trigger within 500ms (e.g. rapid scroll or mobile lag), force visibility
     // This prevents the "white gap" issue where users scroll faster than the observer fires.
     const timeout = setTimeout(() => {
+      const elements = document.querySelectorAll(".animate-on-scroll");
       elements.forEach((el) => {
         if (!el.classList.contains("is-visible")) {
           el.classList.add("is-visible");
         }
       });
-    }, 1000);
+    }, 500);
 
     return () => {
       observer.disconnect();
+      clearTimeout(initTimer);
       clearTimeout(timeout);
     };
   }, []);
@@ -67,8 +69,9 @@ export default function Home() {
         <ProcessSection />
         <ProvenImpactSection />
         {/* CaseStudiesSection removed per user request */}
-        <FAQSection />
+
         <AboutSection />
+        <FAQSection />
         <ContactSection />
       </main>
       <Footer />
