@@ -10,229 +10,136 @@ export function ProcessSection() {
       number: "01",
       title: t("steps.discovery.title"),
       description: t("steps.discovery.description"),
-      duration: "1-2 weeks", // Duration could also be translated if strictly needed, but roughly language agnostic for now.
-      details: [
-        t("steps.discovery.details.0"),
-        t("steps.discovery.details.1"),
-        t("steps.discovery.details.2")
-      ],
+      details: t.raw("steps.discovery.details") as string[],
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      )
     },
     {
       number: "02",
       title: t("steps.matching.title"),
       description: t("steps.matching.description"),
-      duration: "1 week",
-      details: [
-        t("steps.matching.details.0"),
-        t("steps.matching.details.1"),
-        t("steps.matching.details.2")
-      ],
+      details: t.raw("steps.matching.details") as string[],
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+        </svg>
+      )
     },
     {
       number: "03",
       title: t("steps.integration.title"),
       description: t("steps.integration.description"),
-      duration: "1-2 weeks",
-      details: [
-        t("steps.integration.details.0"),
-        t("steps.integration.details.1"),
-        t("steps.integration.details.2")
-      ],
+      details: t.raw("steps.integration.details") as string[],
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+        </svg>
+      )
     },
     {
       number: "04",
       title: t("steps.delivery.title"),
       description: t("steps.delivery.description"),
-      duration: "Ongoing",
-      details: [
-        t("steps.delivery.details.0"),
-        t("steps.delivery.details.1"),
-        t("steps.delivery.details.2")
-      ],
-    },
-  ];
-
-  const engagementModels = [
-    {
-      title: t("models.augmentation.title"),
-      description: t("models.augmentation.desc"),
+      details: t.raw("steps.delivery.details") as string[],
       icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <circle cx="12" cy="8" r="4" stroke="currentColor" strokeWidth="2" />
-          <path d="M4 20C4 16.6863 7.58172 14 12 14C16.4183 14 20 16.6863 20 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      ),
-    },
-    {
-      title: t("models.team.title"),
-      description: t("models.team.desc"),
-      icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <circle cx="8" cy="8" r="3" stroke="currentColor" strokeWidth="2" />
-          <circle cx="16" cy="8" r="3" stroke="currentColor" strokeWidth="2" />
-          <circle cx="12" cy="16" r="3" stroke="currentColor" strokeWidth="2" />
-          <path d="M8 11V13M16 11V13M10 14.5L12 13M14 14.5L12 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      ),
-    },
-    {
-      title: t("models.project.title"),
-      description: t("models.project.desc"),
-      icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="2" />
-          <path d="M8 10L11 13L16 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
         </svg>
       ),
     },
   ];
 
   return (
-    <section id="process" className="section bg-[var(--color-ink)] relative overflow-hidden">
+    <section id="process" className="section bg-white relative overflow-hidden py-24">
       {/* Background */}
-      <div className="absolute inset-0 bg-grid-dark opacity-20" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-[var(--color-accent)] rounded-full blur-[400px] opacity-5" />
+      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-100/20 rounded-full blur-[100px] -z-10" />
 
       <div className="container relative z-10">
-        {/* Section Header */}
-        <div className="max-w-3xl mb-20">
-          <span className="section-label section-label-light">{t("label")}</span>
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <span className="text-[var(--color-primary)] font-bold tracking-wider uppercase text-sm mb-4 block">
+            {t("label")}
+          </span>
           <h2
-            className="text-display-md text-[var(--color-paper)] mb-6"
+            className="text-4xl md:text-5xl text-slate-900 mb-6"
             style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
           >
             {t("title")}
           </h2>
-          <p className="text-xl text-[var(--color-slate-400)]">
+          <p className="text-xl text-slate-500">
             {t("description")}
           </p>
         </div>
 
-        {/* Process Steps - Timeline */}
-        <div className="relative">
-          {/* Vertical Line */}
-          <div className="hidden lg:block absolute left-[calc(50%-1px)] top-0 bottom-0 w-0.5 bg-gradient-to-b from-[var(--color-accent)] via-[var(--color-slate-700)] to-[var(--color-slate-800)]" />
-
-          <div className="space-y-12 lg:space-y-0">
-            {steps.map((step, index) => (
-              <div
-                key={index}
-                className={`relative lg:grid lg:grid-cols-2 lg:gap-16 ${index % 2 === 0 ? "" : "lg:direction-rtl"
-                  }`}
-              >
-                {/* Content */}
-                <div
-                  className={`${index % 2 === 0
-                      ? "lg:text-right lg:pr-16"
-                      : "lg:col-start-2 lg:text-left lg:pl-16"
-                    }`}
-                >
-                  <div className="relative bg-[var(--color-slate-900)] rounded-2xl p-8 border border-[var(--color-slate-800)] hover:border-[var(--color-accent)]/30 transition-colors duration-300">
-                    {/* Step Number */}
-                    <div className="flex items-center gap-4 mb-4">
-                      <span
-                        className="text-5xl text-[var(--color-accent)]"
-                        style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
-                      >
-                        {step.number}
-                      </span>
-                      <div className="flex-1 lg:hidden">
-                        <span
-                          className="text-xs text-[var(--color-slate-500)]"
-                          style={{ fontFamily: "var(--font-mono)" }}
-                        >
-                          {step.duration}
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Title */}
-                    <h3
-                      className="text-2xl text-[var(--color-paper)] mb-3"
-                      style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
-                    >
-                      {step.title}
-                    </h3>
-
-                    {/* Description */}
-                    <p className="text-[var(--color-slate-400)] mb-6">
-                      {step.description}
-                    </p>
-
-                    {/* Details */}
-                    <div className="flex flex-wrap gap-2">
-                      {step.details.map((detail, dIndex) => (
-                        <span key={dIndex} className="tag tag-dark">
-                          {detail}
-                        </span>
-                      ))}
-                    </div>
-
-                    {/* Duration Badge - Desktop */}
-                    <div className="hidden lg:block absolute top-8 right-8">
-                      <span
-                        className="text-xs text-[var(--color-slate-500)]"
-                        style={{ fontFamily: "var(--font-mono)" }}
-                      >
-                        {step.duration}
-                      </span>
-                    </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {Object.entries(steps).map(([key, step], index) => (
+            <div key={key} className="group relative">
+              <div className="h-full bg-gradient-to-br from-white to-blue-50/50 border border-blue-100 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 flex flex-col">
+                <div className="mb-6">
+                  <div className="w-12 h-12 rounded-full bg-blue-100 text-[var(--color-primary)] flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    {index + 1}
                   </div>
-                </div>
-
-                {/* Timeline Dot */}
-                <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 top-8 w-4 h-4 rounded-full bg-[var(--color-accent)] border-4 border-[var(--color-ink)]" />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Engagement Models */}
-        <div className="mt-24 pt-16 border-t border-[var(--color-slate-800)]">
-          <div className="text-center mb-12">
-            <h3
-              className="text-2xl text-[var(--color-paper)] mb-4"
-              style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
-            >
-              {t("models.title")}
-            </h3>
-            <p className="text-[var(--color-slate-500)]">
-              {t("models.subtitle")}
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {engagementModels.map((model, index) => (
-              <div
-                key={index}
-                className="group relative p-8 rounded-2xl border border-[var(--color-slate-800)] hover:border-[var(--color-accent)] transition-all duration-300 overflow-hidden"
-              >
-                {/* Hover Glow */}
-                <div className="absolute inset-0 bg-[var(--color-accent)] opacity-0 group-hover:opacity-5 transition-opacity duration-300" />
-
-                <div className="relative z-10">
-                  {/* Icon */}
-                  <div className="w-12 h-12 rounded-xl bg-[var(--color-slate-800)] flex items-center justify-center text-[var(--color-accent)] mb-6 group-hover:bg-[var(--color-accent)] group-hover:text-[var(--color-ink)] transition-all duration-300">
-                    {model.icon}
-                  </div>
-
-                  {/* Title */}
-                  <h4
-                    className="text-xl text-[var(--color-paper)] mb-3"
-                    style={{ fontFamily: "var(--font-display)", fontWeight: 600 }}
+                  <h3
+                    className="text-2xl text-slate-900 mb-3"
+                    style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
                   >
-                    {model.title}
-                  </h4>
-
-                  {/* Description */}
-                  <p className="text-[var(--color-slate-400)] text-sm">
-                    {model.description}
+                    {step.title}
+                  </h3>
+                  <p className="text-slate-500 mb-6">
+                    {step.description}
                   </p>
                 </div>
+
+                <ul className="space-y-3 mt-auto">
+                  {step.details.map((detail, i) => (
+                    <li key={i} className="flex items-start gap-3 text-slate-600 text-sm">
+                      <svg className="w-5 h-5 text-[var(--color-primary)] flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none">
+                        <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
               </div>
-            ))}
+            </div>
+          ))}
+        </div>
+
+        {/* Engagement Models (Simplified) */}
+        <div className="mt-24 pt-16 border-t border-slate-100">
+          <div className="bg-slate-50 rounded-3xl p-10 md:p-16 text-center">
+            <h3 className="text-2xl font-bold text-slate-900 mb-4" style={{ fontFamily: "var(--font-display)" }}>
+              {t("models.title")}
+            </h3>
+            <p className="text-slate-500 max-w-2xl mx-auto mb-10">
+              {t("models.subtitle")}
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                { id: "augmentation", icon: "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8z M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75" },
+                { id: "team", icon: "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8z M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75" },
+                { id: "project", icon: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16zM3.27 6.96L12 12.01l8.73-5.05 M12 22.08V12" }
+              ].map((model, idx) => (
+                <div key={model.id} className="bg-white border border-slate-200 rounded-3xl p-6 hover:shadow-lg transition-all duration-300">
+                  <h4 className="text-lg font-bold text-slate-900 mb-2">
+                    {t(`models.${model.id}.title`)}
+                  </h4>
+                  <p className="text-slate-500 text-sm">
+                    {t(`models.${model.id}.desc`)}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
+
       </div>
     </section>
   );

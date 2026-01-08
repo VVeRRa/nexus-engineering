@@ -1,77 +1,30 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
 export function HeroSection() {
   const t = useTranslations("Home");
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({
-        x: (e.clientX / window.innerWidth - 0.5) * 20,
-        y: (e.clientY / window.innerHeight - 0.5) * 20,
-      });
-    };
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
 
   return (
-    <section className="relative min-h-screen bg-[var(--color-ink)] overflow-hidden">
-      {/* Animated Background Grid */}
-      <div className="absolute inset-0 bg-grid-dark opacity-40" />
+    <section className="relative min-h-screen bg-white flex flex-col justify-center overflow-hidden">
 
-      {/* Gradient Orbs */}
-      <div
-        className="absolute top-1/4 right-1/4 w-[800px] h-[800px] rounded-full opacity-30 blur-[150px] animate-blob"
-        style={{
-          background: "linear-gradient(135deg, var(--color-accent) 0%, transparent 70%)",
-          transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`,
-          transition: "transform 0.3s ease-out",
-        }}
-      />
-      <div
-        className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full opacity-20 blur-[120px]"
-        style={{
-          background: "linear-gradient(135deg, var(--color-fintech) 0%, transparent 70%)",
-          transform: `translate(${-mousePosition.x * 0.5}px, ${-mousePosition.y * 0.5}px)`,
-          transition: "transform 0.3s ease-out",
-        }}
-      />
-      <div
-        className="absolute top-1/2 left-1/3 w-[400px] h-[400px] rounded-full opacity-15 blur-[100px]"
-        style={{
-          background: "linear-gradient(135deg, var(--color-cloud) 0%, transparent 70%)",
-        }}
-      />
-
-      {/* Diagonal Lines Accent */}
-      <div className="absolute inset-0 bg-diagonal opacity-50" />
+      {/* Background Decor - Very subtle */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--color-slate-100)_0%,_transparent_50%)]" />
 
       {/* Content */}
-      <div className="container relative z-10 pt-32 pb-24 lg:pt-44 lg:pb-32 min-h-screen flex flex-col justify-center">
-        {/* Top Badge */}
-        <div className="animate-fade-up opacity-0" style={{ animationDelay: "0ms", animationFillMode: "forwards" }}>
-          <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-[var(--color-slate-900)]/80 backdrop-blur-sm border border-[var(--color-slate-700)]/50 mb-10">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-accent)] opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[var(--color-accent)]" />
-            </span>
-            <span
-              className="text-[var(--color-slate-300)] text-sm"
-              style={{ fontFamily: "var(--font-mono)" }}
-            >
-              {t('kicker')}
-            </span>
-          </div>
+      <div className="container relative z-10 pt-20 pb-20 text-center">
+
+        {/* Top Badge - Optional bubble */}
+        <div className="flex justify-center mb-8 animate-fade-up opacity-0" style={{ animationDelay: "0ms", animationFillMode: "forwards" }}>
+          <span className="text-[var(--color-primary)] font-bold text-sm tracking-wider uppercase bg-blue-50 px-4 py-1.5 rounded-full">
+            {t('kicker')}
+          </span>
         </div>
 
-        {/* Main Headline - Bold and Distinctive */}
-        <div className="max-w-5xl">
+        {/* Main Headline */}
+        <div className="max-w-4xl mx-auto">
           <h1
-            className="text-display-xl text-[var(--color-paper)] animate-fade-up opacity-0"
+            className="text-5xl md:text-7xl text-slate-900 tracking-tight leading-[1.1] animate-fade-up opacity-0"
             style={{
               fontFamily: "var(--font-display)",
               fontWeight: 800,
@@ -85,67 +38,65 @@ export function HeroSection() {
 
         {/* Subheadline */}
         <p
-          className="text-xl md:text-2xl text-[var(--color-slate-400)] max-w-2xl mt-10 leading-relaxed animate-fade-up opacity-0"
+          className="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto mt-8 leading-relaxed animate-fade-up opacity-0"
           style={{
             fontFamily: "var(--font-body)",
-            animationDelay: "300ms",
+            animationDelay: "200ms",
             animationFillMode: "forwards",
           }}
         >
           {t('subheadline')}
         </p>
 
-        {/* CTA Buttons */}
+        {/* Action Area - Centered Pill Button */}
         <div
-          className="flex flex-col sm:flex-row gap-4 mt-12 animate-fade-up opacity-0"
-          style={{ animationDelay: "400ms", animationFillMode: "forwards" }}
+          className="flex flex-col items-center mt-12 animate-fade-up opacity-0"
+          style={{ animationDelay: "300ms", animationFillMode: "forwards" }}
         >
-          <a href="#contact" className="btn btn-accent btn-lg group">
-            {t('ctaPrimary')}
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 16 16"
-              fill="none"
-              className="transition-transform duration-300 group-hover:translate-x-1"
-            >
-              <path
-                d="M3 8H13M13 8L9 4M13 8L9 12"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+          >
+            {t('ctaBlock.button')}
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </a>
-          <a href="#services" className="btn btn-ghost btn-lg">
-            {t('ctaSecondary')}
-          </a>
+
+          {/* Trust indicators */}
+          <div className="flex items-center gap-6 mt-8 text-sm text-slate-500 font-medium">
+            <div className="flex items-center gap-2">
+              <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+              </div>
+              <span>Free consultation</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+              </div>
+              <span>EU-based team</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+              </div>
+              <span>Start in 48h</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 animate-fade-in opacity-0" style={{ animationDelay: "800ms", animationFillMode: "forwards" }}>
-        <span
-          className="text-[var(--color-slate-600)] text-xs uppercase tracking-widest"
-          style={{ fontFamily: "var(--font-mono)" }}
-        >
-          {t('scroll')}
-        </span>
-        <div className="w-6 h-10 rounded-full border-2 border-[var(--color-slate-700)] flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-[var(--color-accent)] rounded-full animate-bounce" />
-        </div>
+      {/* Floating Chat Button (Visual Only CTA) */}
+      <div className="fixed bottom-8 right-8 z-50 animate-bounce-slow">
+        <a href="#contact" className="flex items-center gap-3 px-6 py-3 bg-[var(--color-primary)] text-white rounded-full shadow-lg hover:bg-[var(--color-primary-dark)] transition-colors">
+          <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" /></svg>
+          </div>
+          <span className="font-semibold">Chat with us</span>
+        </a>
       </div>
 
-      {/* Side Accent Text */}
-      <div
-        className="hidden xl:block absolute right-8 top-1/2 -translate-y-1/2 transform -rotate-90 origin-center"
-        style={{ fontFamily: "var(--font-mono)" }}
-      >
-        <span className="text-[var(--color-slate-700)] text-xs tracking-[0.3em] uppercase">
-          {t('sideText')}
-        </span>
-      </div>
     </section>
   );
 }

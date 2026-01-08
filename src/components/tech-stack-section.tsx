@@ -8,7 +8,7 @@ export function TechStackSection() {
   const techCategories = [
     {
       name: t("categories.languages"),
-      color: "var(--color-cloud)",
+      color: "var(--color-primary)",
       techs: [
         { name: "Java", abbr: "Jv" },
         { name: "Go", abbr: "Go" },
@@ -20,7 +20,7 @@ export function TechStackSection() {
     },
     {
       name: t("categories.data"),
-      color: "var(--color-fintech)",
+      color: "var(--color-secondary)",
       techs: [
         { name: "PostgreSQL", abbr: "Pg" },
         { name: "Redis", abbr: "Rd" },
@@ -30,7 +30,7 @@ export function TechStackSection() {
     },
     {
       name: t("categories.cloud"),
-      color: "var(--color-proptech)",
+      color: "var(--color-primary)",
       techs: [
         { name: "AWS", abbr: "Aw" },
         { name: "Kubernetes", abbr: "K8" },
@@ -40,7 +40,7 @@ export function TechStackSection() {
     },
     {
       name: t("categories.methodology"),
-      color: "var(--color-ai)",
+      color: "var(--color-secondary)",
       techs: [
         { name: "Agile", abbr: "Ag" },
         { name: "AI", abbr: "AI" },
@@ -50,25 +50,21 @@ export function TechStackSection() {
   ];
 
   return (
-    <section id="tech" className="section bg-[var(--color-paper)] relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-dots opacity-40" />
-
-      {/* Floating Accent Elements */}
-      <div className="absolute top-20 left-10 w-64 h-64 bg-[var(--color-accent)] rounded-full blur-[150px] opacity-10" />
-      <div className="absolute bottom-20 right-10 w-48 h-48 bg-[var(--color-cloud)] rounded-full blur-[120px] opacity-10" />
+    <section id="tech" className="section bg-slate-50 relative overflow-hidden py-24">
+      {/* Background w/ Green Accent */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-green-100/20 rounded-full blur-[100px] -z-10" />
 
       <div className="container relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="section-label justify-center">{t("label")}</span>
+          <span className="text-[var(--color-secondary)] font-bold tracking-wider uppercase text-sm mb-4 block">{t("label")}</span>
           <h2
-            className="text-display-md text-[var(--color-ink)] mb-6"
+            className="text-4xl md:text-5xl text-slate-900 mb-6"
             style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
           >
             {t("title")}
           </h2>
-          <p className="text-xl text-[var(--color-slate-600)]">
+          <p className="text-xl text-slate-500">
             {t("description")}
           </p>
         </div>
@@ -84,12 +80,12 @@ export function TechStackSection() {
                   style={{ background: category.color }}
                 />
                 <h3
-                  className="text-sm uppercase tracking-[0.15em] text-[var(--color-slate-500)]"
-                  style={{ fontFamily: "var(--font-mono)", fontWeight: 500 }}
+                  className="text-sm uppercase tracking-[0.15em] text-slate-500"
+                  style={{ fontFamily: "var(--font-mono)", fontWeight: 600 }}
                 >
                   {category.name}
                 </h3>
-                <div className="flex-1 h-px bg-[var(--color-slate-200)]" />
+                <div className="flex-1 h-px bg-slate-200" />
               </div>
 
               {/* Tech Grid */}
@@ -97,23 +93,15 @@ export function TechStackSection() {
                 {category.techs.map((tech, techIndex) => (
                   <div
                     key={techIndex}
-                    className="group/item relative bg-[var(--color-paper)] border border-[var(--color-slate-200)] rounded-xl p-4 hover:border-transparent hover:shadow-xl transition-all duration-300 cursor-default overflow-hidden"
+                    className="group/item relative bg-gradient-to-br from-white to-green-50/50 border border-green-100/50 rounded-xl p-4 hover:border-green-300 hover:shadow-lg transition-all duration-300 cursor-default overflow-hidden"
                   >
-                    {/* Hover Gradient */}
-                    <div
-                      className="absolute inset-0 opacity-0 group-hover/item:opacity-100 transition-opacity duration-300"
-                      style={{
-                        background: `linear-gradient(135deg, ${category.color}10 0%, transparent 60%)`,
-                      }}
-                    />
 
                     <div className="relative z-10">
                       {/* Abbreviation */}
                       <div
-                        className="text-2xl mb-2 transition-colors duration-300"
+                        className="text-2xl mb-2 transition-colors duration-300 font-bold"
                         style={{
                           fontFamily: "var(--font-mono)",
-                          fontWeight: 600,
                           color: category.color,
                         }}
                       >
@@ -122,8 +110,8 @@ export function TechStackSection() {
 
                       {/* Name */}
                       <div
-                        className="text-sm text-[var(--color-ink)]"
-                        style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
+                        className="text-sm text-slate-700 font-medium"
+                        style={{ fontFamily: "var(--font-display)" }}
                       >
                         {tech.name}
                       </div>
@@ -136,12 +124,12 @@ export function TechStackSection() {
         </div>
 
         {/* Bottom Statement */}
-        <div className="mt-20 pt-12 border-t border-[var(--color-slate-200)]">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-            <p className="text-lg text-[var(--color-slate-600)] max-w-2xl">
+        <div className="mt-20 pt-12 border-t border-slate-200">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 text-center lg:text-left">
+            <p className="text-lg text-slate-600 max-w-2xl">
               {t("statement")}
             </p>
-            <a href="#contact" className="btn btn-primary">
+            <a href="#contact" className="inline-flex items-center justify-center px-8 py-3 bg-[var(--color-primary)] text-white rounded-full font-bold hover:bg-blue-700 transition-colors">
               {t("cta")}
             </a>
           </div>

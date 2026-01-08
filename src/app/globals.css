@@ -5,13 +5,20 @@
   /* Primary Colors - Friendly & Professional */
   --color-ink: #0F172A;
   /* Slate 900 */
-  --color-paper: #F8FAFC;
-  /* Slate 50 */
-  --color-accent: #6366F1;
-  /* Indigo 500 - Cheerful/Friendly */
-  --color-accent-dark: #4F46E5;
-  /* Indigo 600 */
-  --color-accent-glow: rgba(99, 102, 241, 0.25);
+  --color-paper: #FFFFFF;
+  /* Pure White */
+  --color-paper-secondary: #F8FAFC;
+  /* Slate 50 for sections */
+
+  /* Bubuu Brand Colors */
+  --color-primary: #0066FF;
+  /* Bright Blue */
+  --color-primary-dark: #0052CC;
+  --color-secondary: #22C55E;
+  /* Fresh Green */
+  --color-accent: var(--color-primary);
+  /* Alias for existing usage */
+  --color-accent-glow: rgba(37, 99, 235, 0.25);
 
   /* Neutral Scale - Cool Tones */
   --color-slate-950: #020617;
@@ -27,10 +34,13 @@
   --color-slate-50: #F8FAFC;
 
   /* Semantic Colors */
-  --color-fintech: #00E5A0;
-  --color-proptech: #FF6B35;
+  --color-fintech: #0066FF;
+  /* Blue for FinTech */
+  --color-proptech: #22C55E;
+  /* Green for PropTech */
   --color-cloud: #00B4FF;
-  --color-ai: #B366FF;
+  --color-ai: #8B5CF6;
+  /* Purple for AI */
 
   /* Typography */
   --font-display: var(--font-body);

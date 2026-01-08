@@ -8,7 +8,9 @@ import {
   IndustriesSection,
   TechStackSection,
   ProcessSection,
+  ProvenImpactSection,
   CaseStudiesSection,
+  FAQSection,
   AboutSection,
   ContactSection,
   Footer,
@@ -44,7 +46,9 @@ export default function Home() {
         <IndustriesSection />
         <TechStackSection />
         <ProcessSection />
-        <CaseStudiesSection />
+        <ProvenImpactSection />
+        {/* CaseStudiesSection removed per user request */}
+        <FAQSection />
         <AboutSection />
         <ContactSection />
       </main>

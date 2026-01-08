@@ -10,130 +10,90 @@ export function CaseStudiesSection() {
       category: "FinTech",
       title: t("fintech.title"),
       description: t("fintech.description"),
-      metrics: [],
-      tags: ["Java", "AWS", "PostgreSQL", "Redis"],
+      author: "Sarah Chen",
+      role: "CTO, FinTech Startup",
+      avatar: "SC",
       color: "var(--color-fintech)",
-      image: "/case-study-fintech.jpg",
     },
     {
       category: "PropTech",
       title: t("proptech.title"),
       description: t("proptech.description"),
-      metrics: [],
-      tags: ["React", "Node.js", "MongoDB"],
+      author: "Mark Miller",
+      role: "VP Eng, PropTech Inc",
+      avatar: "MM",
       color: "var(--color-proptech)",
-      image: "/case-study-proptech.jpg",
     },
     {
       category: "Enterprise",
       title: t("enterprise.title"),
       description: t("enterprise.description"),
-      metrics: [],
-      tags: ["Kubernetes", "Go", "Terraform", "AWS"],
+      author: "David Ross",
+      role: "Director, Enterprise Corp",
+      avatar: "DR",
       color: "var(--color-cloud)",
-      image: "/case-study-cloud.jpg",
     },
   ];
 
   return (
-    <section id="case-studies" className="section bg-[var(--color-paper)] relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-dots opacity-30" />
+    <section id="case-studies" className="section bg-slate-50 relative overflow-hidden py-24">
 
       <div className="container relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16">
-          <div className="max-w-2xl">
-            <span className="section-label">{t("label")}</span>
-            <h2
-              className="text-display-md text-[var(--color-ink)]"
-              style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
-            >
-              {t("title")}
-            </h2>
-          </div>
-          <a
-            href="#contact"
-            className="link-arrow text-[var(--color-ink)] self-start lg:self-auto"
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <span className="text-[var(--color-secondary)] font-bold tracking-wider uppercase text-sm mb-4 block">
+            TESTIMONIALS
+          </span>
+          <h2
+            className="text-4xl md:text-5xl text-slate-900 mb-6"
+            style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
           >
-            {t("viewAll")}
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path
-                d="M3 8H13M13 8L9 4M13 8L9 12"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </a>
+            {t("title")}
+          </h2>
+          <p className="text-xl text-slate-500">
+            Join thousands who build better software with Nexus.
+          </p>
         </div>
 
         {/* Case Studies Grid */}
-        <div className="grid lg:grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-3 gap-8">
           {caseStudies.map((study, index) => (
             <div
               key={index}
-              className="group relative bg-[var(--color-paper)] rounded-2xl overflow-hidden border border-[var(--color-slate-200)] hover:border-transparent hover:shadow-2xl transition-all duration-500"
+              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col"
             >
-              {/* Top Color Bar */}
-              <div
-                className="h-1.5 w-full"
-                style={{ background: study.color }}
-              />
+              {/* Green Quote Icon */}
+              <div className="mb-6 text-[var(--color-secondary)]">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21L14.017 18C14.017 16.8954 13.1216 16 12.017 16H9C9.55228 16 10 15.5523 10 15V9C10 8.44772 9.55228 8 9 8H5C4.44772 8 4 8.44772 4 9V18C4 19.6569 5.34315 21 7 21H14.017ZM21.017 21L21.017 18C21.017 16.8954 20.1216 16 19.017 16H16C16.5523 16 17 15.5523 17 15V9C17 8.44772 16.5523 8 16 8H12C11.4477 8 11 8.44772 11 9V18C11 19.6569 12.3431 21 14 21H21.017Z" />
+                </svg>
+              </div>
 
-              {/* Content */}
-              <div className="p-8">
-                {/* Category */}
-                <span
-                  className="text-xs uppercase tracking-[0.15em]"
-                  style={{
-                    color: study.color,
-                    fontFamily: "var(--font-mono)",
-                    fontWeight: 500,
-                  }}
-                >
-                  {study.category}
-                </span>
+              {/* Description/Quote */}
+              <p className="text-slate-600 mb-8 leading-relaxed flex-grow">
+                "{study.description}"
+              </p>
 
-                {/* Title */}
-                <h3
-                  className="text-2xl text-[var(--color-ink)] mt-3 mb-4"
-                  style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
-                >
-                  {study.title}
-                </h3>
+              {/* Green Stars */}
+              <div className="flex gap-1 mb-6 text-[var(--color-secondary)]">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <svg key={star} width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                ))}
+              </div>
 
-                {/* Description */}
-                <p className="text-[var(--color-slate-600)] mb-8 leading-relaxed">
-                  {study.description}
-                </p>
-
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2 mt-6">
-                  {study.tags.map((tag, tIndex) => (
-                    <span key={tIndex} className="tag">
-                      {tag}
-                    </span>
-                  ))}
+              {/* Author Profile */}
+              <div className="flex items-center gap-4 pt-6 border-t border-slate-100">
+                <div className="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold">
+                  {study.avatar}
+                </div>
+                <div>
+                  <h4 className="font-bold text-slate-900">{study.author}</h4>
+                  <p className="text-sm text-slate-500">{study.role}</p>
                 </div>
               </div>
 
-              {/* Hover Arrow */}
-              <div
-                className="absolute bottom-8 right-8 w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0"
-                style={{ background: study.color }}
-              >
-                <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
-                  <path
-                    d="M4 12L12 4M12 4H6M12 4V10"
-                    stroke="var(--color-ink)"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
             </div>
           ))}
         </div>
