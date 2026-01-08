@@ -44,9 +44,13 @@ export function IndustriesSection() {
   ];
 
   return (
-    <section id="industries" className="section bg-white relative overflow-hidden py-24">
+    <section id="industries" className="section bg-white relative overflow-hidden py-24 animate-on-scroll">
       {/* Background with Blue Gradient Accent */}
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-100/30 rounded-full blur-[100px] -z-10" />
+      {/* Background with Blue Gradient Accent - Radial Gradient */}
+      <div
+        className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full opacity-30 -z-10"
+        style={{ background: 'radial-gradient(circle, var(--color-blue-100) 0%, transparent 70%)' }}
+      />
 
       <div className="container relative z-10">
         {/* Section Header */}

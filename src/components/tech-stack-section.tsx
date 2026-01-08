@@ -50,9 +50,13 @@ export function TechStackSection() {
   ];
 
   return (
-    <section id="tech" className="section bg-slate-50 relative overflow-hidden py-24">
+    <section id="tech" className="section bg-slate-50 relative overflow-hidden py-24 animate-on-scroll">
       {/* Background w/ Green Accent */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-green-100/20 rounded-full blur-[100px] -z-10" />
+      {/* Background w/ Green Accent - Radial Gradient */}
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-20 -z-10"
+        style={{ background: 'radial-gradient(circle, var(--color-green-100) 0%, transparent 70%)' }}
+      />
 
       <div className="container relative z-10">
         {/* Section Header */}

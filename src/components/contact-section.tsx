@@ -15,9 +15,12 @@ export function ContactSection() {
   const [state, formAction, isPending] = useActionState(sendEmail, initialState);
 
   return (
-    <section id="contact" className="section bg-slate-50 relative overflow-hidden py-24">
-      {/* Background w/ Green Accent */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-green-100/20 rounded-full blur-[100px] -z-10" />
+    <section id="contact" className="section bg-slate-50 relative overflow-hidden py-24 animate-on-scroll">
+      {/* Background w/ Green Accent - Radial Gradient (No Blur) */}
+      <div
+        className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full opacity-20 -z-10"
+        style={{ background: 'radial-gradient(circle, var(--color-green-100) 0%, transparent 70%)' }}
+      />
 
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
@@ -38,32 +41,32 @@ export function ContactSection() {
 
             <div className="space-y-6">
               <a href="mailto:hello@nexus.engineering" className="block group">
-                <div className="bg-gradient-to-br from-white to-green-50/50 border border-green-100 rounded-3xl p-8 hover:shadow-lg transition-all duration-300">
-                  <div className="flex items-center gap-6">
-                    <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center text-[var(--color-secondary)] group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-gradient-to-br from-white to-green-50/50 border border-green-100 rounded-3xl p-5 md:p-8 hover:shadow-lg transition-all duration-300">
+                  <div className="flex items-center gap-4 md:gap-6">
+                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-100 flex items-center justify-center text-[var(--color-secondary)] group-hover:scale-110 transition-transform duration-300 shrink-0">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         <path d="M22 6l-10 7L2 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-slate-900 mb-1">Email us</h3>
-                      <p className="text-slate-500">hello@nexus.engineering</p>
+                    <div className="min-w-0">
+                      <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1">Email us</h3>
+                      <p className="text-slate-500 break-all">hello@nexus.engineering</p>
                     </div>
                   </div>
                 </div>
               </a>
 
               <button className="block w-full group text-left">
-                <div className="bg-gradient-to-br from-white to-green-50/50 border border-green-100 rounded-3xl p-8 hover:shadow-lg transition-all duration-300">
-                  <div className="flex items-center gap-6">
-                    <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center text-[var(--color-secondary)] group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-gradient-to-br from-white to-green-50/50 border border-green-100 rounded-3xl p-5 md:p-8 hover:shadow-lg transition-all duration-300">
+                  <div className="flex items-center gap-4 md:gap-6">
+                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-100 flex items-center justify-center text-[var(--color-secondary)] group-hover:scale-110 transition-transform duration-300 shrink-0">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-slate-900 mb-1">Live Chat</h3>
+                      <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1">Live Chat</h3>
                       <p className="text-slate-500">{t("response")}</p>
                     </div>
                   </div>

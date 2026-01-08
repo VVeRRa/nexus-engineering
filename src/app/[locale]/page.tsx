@@ -1,6 +1,6 @@
 "use client";
 
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import {
   Header,
   HeroSection,
@@ -17,25 +17,36 @@ import {
 } from "@/components";
 
 export default function Home() {
-  // Scroll animation observer - keeping disabled for safety for now
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           entry.target.classList.add("is-visible");
-  //         }
-  //       });
-  //     },
-  //     { threshold: 0.1 }
-  //   );
+  // Scroll animation observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0 }
+    );
 
-  //   document.querySelectorAll(".animate-on-scroll").forEach((el) => {
-  //     observer.observe(el);
-  //   });
+    document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+      observer.observe(el);
+    });
 
-  //   return () => observer.disconnect();
-  // }, []);
+    // Fail-safe: Ensure everything is visible after 1s in case observer fails
+    const timeout = setTimeout(() => {
+      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+        el.classList.add("is-visible");
+      });
+    }, 1000);
+
+    return () => {
+      observer.disconnect();
+      clearTimeout(timeout);
+    };
+  }, []);
 
   return (
     <>

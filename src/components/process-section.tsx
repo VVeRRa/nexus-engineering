@@ -58,9 +58,13 @@ export function ProcessSection() {
   ];
 
   return (
-    <section id="process" className="section bg-white relative overflow-hidden py-24">
+    <section id="process" className="section bg-white relative overflow-hidden py-24 animate-on-scroll">
       {/* Background */}
-      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-100/20 rounded-full blur-[100px] -z-10" />
+      {/* Background - Radial Gradient */}
+      <div
+        className="absolute top-0 left-1/4 w-[600px] h-[600px] rounded-full opacity-20 -z-10"
+        style={{ background: 'radial-gradient(circle, var(--color-blue-100) 0%, transparent 70%)' }}
+      />
 
       <div className="container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">

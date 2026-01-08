@@ -47,9 +47,13 @@ export function AboutSection() {
   ];
 
   return (
-    <section id="about" className="section bg-white relative overflow-hidden py-24">
+    <section id="about" className="section bg-white relative overflow-hidden py-24 animate-on-scroll">
       {/* Background w/ Green Accent */}
-      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-green-100/30 rounded-full blur-[100px] -z-10" />
+      {/* Background w/ Green Accent - Radial Gradient */}
+      <div
+        className="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full opacity-30 -z-10"
+        style={{ background: 'radial-gradient(circle, var(--color-green-100) 0%, transparent 70%)' }}
+      />
 
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">

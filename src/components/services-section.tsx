@@ -51,9 +51,13 @@ export function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="section bg-slate-50 relative overflow-hidden py-24">
+    <section id="services" className="section bg-slate-50 relative overflow-hidden py-24 animate-on-scroll">
       {/* Background with Green Gradient Accent */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-green-200/20 rounded-full blur-[100px] -z-10" />
+      {/* Background with Green Gradient Accent - Radial Gradient */}
+      <div
+        className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-20 -z-10"
+        style={{ background: 'radial-gradient(circle, var(--color-green-200) 0%, transparent 70%)' }}
+      />
 
       <div className="container relative z-10">
         {/* Section Header */}
