@@ -126,7 +126,7 @@ export function IndustriesSection() {
                   >
                     <span
                       className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
-                      style={{ background: `${industry.color}15` }}
+                      style={{ background: `color-mix(in srgb, ${industry.color}, transparent 85%)` }}
                     >
                       <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
                         <path

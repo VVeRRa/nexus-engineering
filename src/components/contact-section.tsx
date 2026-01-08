@@ -85,7 +85,7 @@ export function ContactSection() {
 
           {/* Right Column - Form */}
           <div className="relative">
-            <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-slate-100 relative overflow-hidden">
+            <div className="bg-white rounded-3xl p-5 md:p-10 shadow-xl border border-slate-100 relative overflow-hidden">
 
               {state.success ? (
                 <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[400px] text-center">
@@ -108,7 +108,7 @@ export function ContactSection() {
                         type="text"
                         id="name"
                         name="name"
-                        className="w-full bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
+                        className="w-full max-w-full bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
                         placeholder={t("form.namePlaceholder")}
                       />
                       {state.errors?.name && (
@@ -123,7 +123,7 @@ export function ContactSection() {
                         type="email"
                         id="email"
                         name="email"
-                        className="w-full bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
+                        className="w-full max-w-full bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
                         placeholder={t("form.emailPlaceholder")}
                       />
                       {state.errors?.email && (
@@ -139,7 +139,7 @@ export function ContactSection() {
                     <select
                       id="projectType"
                       name="projectType"
-                      className="w-full bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all appearance-none"
+                      className="w-full max-w-full bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all appearance-none"
                     >
                       <option value="">{t("form.projectTypePlaceholder")}</option>
                       <option value="augmentation">{t("form.types.augmentation")}</option>

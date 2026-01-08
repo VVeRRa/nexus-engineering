@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import {
   Header,
   HeroSection,
@@ -17,25 +17,25 @@ import {
 } from "@/components";
 
 export default function Home() {
-  // Scroll animation observer
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
+  // Scroll animation observer - keeping disabled for safety for now
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           entry.target.classList.add("is-visible");
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.1 }
+  //   );
 
-    document.querySelectorAll(".animate-on-scroll").forEach((el) => {
-      observer.observe(el);
-    });
+  //   document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+  //     observer.observe(el);
+  //   });
 
-    return () => observer.disconnect();
-  }, []);
+  //   return () => observer.disconnect();
+  // }, []);
 
   return (
     <>

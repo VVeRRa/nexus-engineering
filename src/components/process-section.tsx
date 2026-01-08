@@ -10,7 +10,7 @@ export function ProcessSection() {
       number: "01",
       title: t("steps.discovery.title"),
       description: t("steps.discovery.description"),
-      details: t.raw("steps.discovery.details") as string[],
+      details: (t.raw("steps.discovery.details") as string[]) || [],
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="11" cy="11" r="8"></circle>
@@ -22,7 +22,7 @@ export function ProcessSection() {
       number: "02",
       title: t("steps.matching.title"),
       description: t("steps.matching.description"),
-      details: t.raw("steps.matching.details") as string[],
+      details: (t.raw("steps.matching.details") as string[]) || [],
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -36,7 +36,7 @@ export function ProcessSection() {
       number: "03",
       title: t("steps.integration.title"),
       description: t("steps.integration.description"),
-      details: t.raw("steps.integration.details") as string[],
+      details: (t.raw("steps.integration.details") as string[]) || [],
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
@@ -48,7 +48,7 @@ export function ProcessSection() {
       number: "04",
       title: t("steps.delivery.title"),
       description: t("steps.delivery.description"),
-      details: t.raw("steps.delivery.details") as string[],
+      details: (t.raw("steps.delivery.details") as string[]) || [],
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
@@ -79,37 +79,46 @@ export function ProcessSection() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {Object.entries(steps).map(([key, step], index) => (
-            <div key={key} className="group relative">
-              <div className="h-full bg-gradient-to-br from-white to-blue-50/50 border border-blue-100 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 flex flex-col">
-                <div className="mb-6">
-                  <div className="w-12 h-12 rounded-full bg-blue-100 text-[var(--color-primary)] flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                    {index + 1}
-                  </div>
-                  <h3
-                    className="text-2xl text-slate-900 mb-3"
-                    style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
-                  >
-                    {step.title}
-                  </h3>
-                  <p className="text-slate-500 mb-6">
-                    {step.description}
-                  </p>
-                </div>
+          {Object.entries(steps).map(([key, step], index) => {
+            const isEven = index % 2 === 0;
+            const themeClass = isEven
+              ? "from-[var(--color-primary)]/20 via-white to-white border-blue-100 shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
+              : "from-[var(--color-secondary)]/20 via-white to-white border-green-100 shadow-[0_20px_50px_rgba(34,197,94,0.15)]";
+            const iconBgClass = isEven ? "bg-blue-100" : "bg-green-100";
+            const iconColorClass = isEven ? "text-[var(--color-primary)]" : "text-[var(--color-secondary)]";
 
-                <ul className="space-y-3 mt-auto">
-                  {step.details.map((detail, i) => (
-                    <li key={i} className="flex items-start gap-3 text-slate-600 text-sm">
-                      <svg className="w-5 h-5 text-[var(--color-primary)] flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none">
-                        <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                      {detail}
-                    </li>
-                  ))}
-                </ul>
+            return (
+              <div key={key} className="group relative">
+                <div className={`h-full bg-gradient-to-br ${themeClass} border rounded-3xl p-8 hover:shadow-xl transition-all duration-300 flex flex-col transform-gpu will-change-transform`}>
+                  <div className="mb-6">
+                    <div className={`w-12 h-12 rounded-full ${iconBgClass} ${iconColorClass} flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                      {index + 1}
+                    </div>
+                    <h3
+                      className="text-2xl text-slate-900 mb-3"
+                      style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
+                    >
+                      {step.title}
+                    </h3>
+                    <p className="text-slate-500 mb-6">
+                      {step.description}
+                    </p>
+                  </div>
+
+                  <ul className="space-y-3 mt-auto">
+                    {step.details.map((detail, i) => (
+                      <li key={i} className="flex items-start gap-3 text-slate-600 text-sm">
+                        <svg className={`w-5 h-5 ${iconColorClass} flex-shrink-0 mt-0.5`} viewBox="0 0 24 24" fill="none">
+                          <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                        {detail}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Engagement Models (Simplified) */}

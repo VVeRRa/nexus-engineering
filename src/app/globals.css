@@ -1,5 +1,4 @@
 @import "tailwindcss";
-/* Force HMR update */
 
 :root {
   /* Primary Colors - Friendly & Professional */
@@ -14,7 +13,7 @@
   --color-primary: #0066FF;
   /* Bright Blue */
   --color-primary-dark: #0052CC;
-  --color-secondary: #22C55E;
+  --color-secondary: hsl(140, 76%, 44%);
   /* Fresh Green */
   --color-accent: var(--color-primary);
   /* Alias for existing usage */
@@ -106,6 +105,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 /* Selection */
@@ -796,302 +811,4 @@ h1 {
   letter-spacing: 0.15em;
   color: var(--color-slate-500);
   margin-bottom: 20px;
-}
-
-.section-label::before {
-  content: '';
-  width: 32px;
-  height: 2px;
-  background: var(--color-accent);
-}
-
-.section-label-light {
-  color: var(--color-slate-400);
-}
-
-.section-label-accent {
-  color: var(--color-accent);
-}
-
-.section-label-accent::before {
-  background: var(--color-paper);
-}
-
-/* Container */
-.container {
-  width: 100%;
-  max-width: var(--container-max);
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    padding: 0 48px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    padding: 0 80px;
-  }
-}
-
-/* Section spacing */
-.section {
-  padding: var(--space-section-mobile) 0;
-  position: relative;
-}
-
-@media (min-width: 768px) {
-  .section {
-    padding: var(--space-section) 0;
-  }
-}
-
-/* ==========================================================================
-   Text Utilities
-   ========================================================================== */
-
-.text-gradient {
-  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-fintech) 50%, var(--color-cloud) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.text-gradient-accent {
-  background: linear-gradient(135deg, var(--color-accent) 0%, #E5FF66 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.text-balance {
-  text-wrap: balance;
-}
-
-/* Display sizes */
-.text-display-xl {
-  font-size: clamp(3rem, 10vw, 8rem);
-  line-height: 0.95;
-  letter-spacing: -0.04em;
-}
-
-.text-display-lg {
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  line-height: 1;
-  letter-spacing: -0.03em;
-}
-
-.text-display-md {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-}
-
-/* ==========================================================================
-   Visual Effects
-   ========================================================================== */
-
-.glow-accent {
-  box-shadow: var(--shadow-glow);
-}
-
-.glow-accent-sm {
-  box-shadow: var(--shadow-glow-sm);
-}
-
-/* Gradient border */
-.gradient-border {
-  position: relative;
-  background: var(--color-ink);
-  border-radius: var(--radius-xl);
-}
-
-.gradient-border::before {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  background: linear-gradient(135deg, var(--color-accent), var(--color-fintech), var(--color-cloud));
-  border-radius: calc(var(--radius-xl) + 2px);
-  z-index: -1;
-}
-
-/* Number marker */
-.number-marker {
-  font-family: var(--font-display);
-  font-size: 8rem;
-  font-weight: 800;
-  line-height: 0.8;
-  color: var(--color-slate-100);
-  -webkit-text-stroke: 1px var(--color-slate-200);
-}
-
-.number-marker-dark {
-  color: var(--color-slate-900);
-  -webkit-text-stroke: 1px var(--color-slate-800);
-}
-
-/* Divider */
-.divider {
-  width: 100%;
-  height: 1px;
-  background: var(--color-slate-200);
-}
-
-.divider-dark {
-  background: var(--color-slate-800);
-}
-
-.divider-gradient {
-  background: linear-gradient(90deg, transparent 0%, var(--color-slate-300) 50%, transparent 100%);
-}
-
-/* ==========================================================================
-   Utility Classes
-   ========================================================================== */
-
-.hide-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Aspect ratios */
-.aspect-golden {
-  aspect-ratio: 1.618 / 1;
-}
-
-.aspect-wide {
-  aspect-ratio: 21 / 9;
-}
-
-/* Clip paths */
-.clip-diagonal {
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 80px), 0 100%);
-}
-
-.clip-diagonal-reverse {
-  clip-path: polygon(0 0, 100% 80px, 100% 100%, 0 100%);
-}
-
-/* Hover lift */
-.hover-lift {
-  transition: transform var(--duration-base) var(--ease-out), box-shadow var(--duration-base) var(--ease-out);
-}
-
-.hover-lift:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-xl);
-}
-
-/* Magnetic effect placeholder */
-.magnetic {
-  transition: transform var(--duration-fast) var(--ease-out);
-}
-
-/* Focus ring */
-.focus-ring:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px var(--color-accent-glow);
-}
-
-/* ==========================================================================
-   Marquee
-   ========================================================================== */
-
-.marquee-container {
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.marquee-content {
-  display: inline-flex;
-  animation: marquee 30s linear infinite;
-}
-
-.marquee-content:hover {
-  animation-play-state: paused;
-}
-
-/* ==========================================================================
-   Custom Cursor (optional enhancement)
-   ========================================================================== */
-
-.cursor-glow {
-  cursor: none;
-}
-
-/* ==========================================================================
-   Form Styles
-   ========================================================================== */
-
-.form-input {
-  width: 100%;
-  height: 56px;
-  padding: 0 20px;
-  font-family: var(--font-body);
-  font-size: 16px;
-  background: var(--color-paper);
-  border: 2px solid var(--color-slate-200);
-  border-radius: var(--radius-lg);
-  transition: all var(--duration-fast);
-}
-
-.form-input:hover {
-  border-color: var(--color-slate-300);
-}
-
-.form-input:focus {
-  outline: none;
-  border-color: var(--color-accent);
-  box-shadow: 0 0 0 4px var(--color-accent-glow);
-}
-
-.form-input::placeholder {
-  color: var(--color-slate-400);
-}
-
-.form-textarea {
-  height: auto;
-  padding: 16px 20px;
-  resize: none;
-}
-
-.form-select {
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%2371717A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 16px center;
-  padding-right: 48px;
-  cursor: pointer;
-}
-
-.form-label {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: var(--color-slate-600);
-  margin-bottom: 8px;
-}
-
-/* ==========================================================================
-   Print Styles
-   ========================================================================== */
-
-@media print {
-  .no-print {
-    display: none !important;
-  }
-
-  body {
-    background: white;
-    color: black;
-  }
 }

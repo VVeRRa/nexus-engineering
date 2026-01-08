@@ -8,15 +8,12 @@ export function ProvenImpactSection() {
     const projects = [
         {
             id: "fintech",
-            color: "var(--color-fintech)",
         },
         {
             id: "proptech",
-            color: "var(--color-proptech)",
         },
         {
             id: "enterprise",
-            color: "var(--color-cloud)",
         },
     ];
 
@@ -37,43 +34,56 @@ export function ProvenImpactSection() {
                 </div>
 
                 <div className="grid lg:grid-cols-3 gap-8">
-                    {projects.map((project, index) => (
-                        <div
-                            key={index}
-                            className="group relative bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-start"
-                        >
-                            {/* Category Tag */}
-                            <span
-                                className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-6"
-                                style={{
-                                    backgroundColor: `${project.color}15`,
-                                    color: project.color
-                                }}
+                    {projects.map((project, index) => {
+                        const isEven = index % 2 === 0;
+                        const color = isEven ? "var(--color-primary)" : "var(--color-secondary)";
+                        const themeClass = isEven
+                            ? "hover:text-[var(--color-primary)]/80"
+                            : "hover:text-[var(--color-secondary)]/80";
+
+                        return (
+                            <div
+                                key={index}
+                                className={`group relative bg-gradient-to-br transition-all duration-300 border rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 flex flex-col items-start transform-gpu will-change-transform ${isEven
+                                    ? "from-[var(--color-primary)]/20 via-white to-white border-blue-100 shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
+                                    : "from-[var(--color-secondary)]/20 via-white to-white border-green-100 shadow-[0_20px_50px_rgba(34,197,94,0.15)]"
+                                    }`}
                             >
-                                {t(`${project.id}.category`)}
-                            </span>
+                                {/* Category Tag */}
+                                <span
+                                    className={`inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-6 ${isEven
+                                        ? "bg-blue-50 text-[var(--color-primary)]"
+                                        : "bg-green-50 text-[var(--color-secondary)]"
+                                        }`}
+                                >
+                                    {t(`${project.id}.category`)}
+                                </span>
 
-                            {/* Title */}
-                            <h3
-                                className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-[var(--color-primary)] transition-colors"
-                                style={{ fontFamily: "var(--font-display)" }}
-                            >
-                                {t(`${project.id}.title`)}
-                            </h3>
+                                {/* Title */}
+                                <h3
+                                    className={`text-2xl font-bold text-slate-900 mb-4 transition-colors ${themeClass}`}
+                                    style={{ fontFamily: "var(--font-display)" }}
+                                >
+                                    {t(`${project.id}.title`)}
+                                </h3>
 
-                            {/* Description */}
-                            <p className="text-slate-500 mb-8 leading-relaxed flex-grow">
-                                {t(`${project.id}.description`)}
-                            </p>
+                                {/* Description */}
+                                <p className="text-slate-500 mb-8 leading-relaxed flex-grow">
+                                    {t(`${project.id}.description`)}
+                                </p>
 
-                            {/* Decorative Arrow */}
-                            <div className="mt-auto w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-[var(--color-primary)] group-hover:text-white transition-all duration-300">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
+                                {/* Decorative Arrow */}
+                                <div className={`mt-auto w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${isEven
+                                    ? "bg-blue-50 text-blue-300 group-hover:bg-[var(--color-primary)] group-hover:text-white"
+                                    : "bg-green-50 text-green-300 group-hover:bg-[var(--color-secondary)] group-hover:text-white"
+                                    }`}>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        )
+                    })}
                 </div>
             </div>
         </section>
