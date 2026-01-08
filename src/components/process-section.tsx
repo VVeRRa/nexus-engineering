@@ -58,7 +58,7 @@ export function ProcessSection() {
   ];
 
   return (
-    <section id="process" className="section bg-white relative overflow-hidden py-24 animate-on-scroll">
+    <section id="process" className="section bg-white relative overflow-hidden py-24">
       {/* Background */}
       {/* Background - Radial Gradient */}
       <div
@@ -67,7 +67,7 @@ export function ProcessSection() {
       />
 
       <div className="container relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-20 animate-on-scroll">
           <span className="text-[var(--color-primary)] font-bold tracking-wider uppercase text-sm mb-4 block">
             {t("label")}
           </span>
@@ -82,7 +82,7 @@ export function ProcessSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 animate-on-scroll stagger-children">
           {Object.entries(steps).map(([key, step], index) => {
             const isEven = index % 2 === 0;
             const themeClass = isEven

@@ -44,7 +44,7 @@ export function IndustriesSection() {
   ];
 
   return (
-    <section id="industries" className="section bg-white relative overflow-hidden py-24 animate-on-scroll">
+    <section id="industries" className="section bg-white relative overflow-hidden py-24">
       {/* Background with Blue Gradient Accent */}
       {/* Background with Blue Gradient Accent - Radial Gradient */}
       <div
@@ -54,7 +54,7 @@ export function IndustriesSection() {
 
       <div className="container relative z-10">
         {/* Section Header */}
-        <div className="max-w-3xl mb-20">
+        <div className="max-w-3xl mb-20 animate-on-scroll">
           <span className="text-[var(--color-primary)] font-bold tracking-wider uppercase text-sm mb-4 block">
             {t("label")}
           </span>
@@ -72,7 +72,7 @@ export function IndustriesSection() {
         </div>
 
         {/* Industries Grid */}
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8 animate-on-scroll stagger-children">
           {industries.map((industry, index) => (
             <div
               key={index}

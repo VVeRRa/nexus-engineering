@@ -28,17 +28,25 @@ export default function Home() {
           }
         });
       },
-      { threshold: 0 }
+      {
+        threshold: 0.1,
+        rootMargin: "50px", // Trigger slightly before element enters viewport
+      }
     );
 
-    document.querySelectorAll(".animate-on-scroll").forEach((el) => {
-      observer.observe(el);
-    });
+    // Initial check and observe - small delay to ensure hydration
+    const initTimer = setTimeout(() => {
+      const elements = document.querySelectorAll(".animate-on-scroll");
+      elements.forEach((el) => observer.observe(el));
+    }, 100);
 
-    // Fail-safe: Ensure everything is visible after 1s in case observer fails
+    // Fail-safe: If observer doesn't trigger within 500ms (e.g. rapid scroll or mobile lag), force visibility
+    // This prevents the "white gap" issue where users scroll faster than the observer fires.
     const timeout = setTimeout(() => {
-      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
-        el.classList.add("is-visible");
+      elements.forEach((el) => {
+        if (!el.classList.contains("is-visible")) {
+          el.classList.add("is-visible");
+        }
       });
     }, 1000);
 

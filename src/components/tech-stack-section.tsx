@@ -50,7 +50,7 @@ export function TechStackSection() {
   ];
 
   return (
-    <section id="tech" className="section bg-slate-50 relative overflow-hidden py-24 animate-on-scroll">
+    <section id="tech" className="section bg-slate-50 relative overflow-hidden py-24">
       {/* Background w/ Green Accent */}
       {/* Background w/ Green Accent - Radial Gradient */}
       <div
@@ -60,7 +60,7 @@ export function TechStackSection() {
 
       <div className="container relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-20 animate-on-scroll">
           <span className="text-[var(--color-secondary)] font-bold tracking-wider uppercase text-sm mb-4 block">{t("label")}</span>
           <h2
             className="text-4xl md:text-5xl text-slate-900 mb-6"
@@ -74,7 +74,7 @@ export function TechStackSection() {
         </div>
 
         {/* Tech Categories Grid */}
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 animate-on-scroll stagger-children">
           {techCategories.map((category, catIndex) => (
             <div key={catIndex} className="group">
               {/* Category Header */}

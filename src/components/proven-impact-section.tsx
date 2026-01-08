@@ -18,9 +18,9 @@ export function ProvenImpactSection() {
     ];
 
     return (
-        <section id="work" className="section bg-white relative overflow-hidden py-24 animate-on-scroll">
+        <section id="work" className="section bg-white relative overflow-hidden py-24">
             <div className="container relative z-10">
-                <div className="text-center max-w-2xl mx-auto mb-16">
+                <div className="text-center max-w-2xl mx-auto mb-16 animate-on-scroll">
                     <span className="text-[var(--color-primary)] font-bold tracking-wider uppercase text-sm mb-4 block">
                         {t("label")}
                     </span>
@@ -33,7 +33,7 @@ export function ProvenImpactSection() {
                     <div className="w-24 h-1.5 bg-[var(--color-secondary)] mx-auto rounded-full" />
                 </div>
 
-                <div className="grid lg:grid-cols-3 gap-8">
+                <div className="grid lg:grid-cols-3 gap-8 animate-on-scroll stagger-children">
                     {projects.map((project, index) => {
                         const isEven = index % 2 === 0;
                         const color = isEven ? "var(--color-primary)" : "var(--color-secondary)";

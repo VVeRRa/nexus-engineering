@@ -15,7 +15,7 @@ export function ContactSection() {
   const [state, formAction, isPending] = useActionState(sendEmail, initialState);
 
   return (
-    <section id="contact" className="section bg-slate-50 relative overflow-hidden py-24 animate-on-scroll">
+    <section id="contact" className="section bg-slate-50 relative overflow-hidden py-24">
       {/* Background w/ Green Accent - Radial Gradient (No Blur) */}
       <div
         className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full opacity-20 -z-10"
@@ -23,7 +23,7 @@ export function ContactSection() {
       />
 
       <div className="container relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 animate-on-scroll">
           {/* Left Column - Info */}
           <div>
             <span className="text-[var(--color-secondary)] font-bold tracking-wider uppercase text-sm mb-4 block">

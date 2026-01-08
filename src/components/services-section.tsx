@@ -51,7 +51,7 @@ export function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="section bg-slate-50 relative overflow-hidden py-24 animate-on-scroll">
+    <section id="services" className="section bg-slate-50 relative overflow-hidden py-24">
       {/* Background with Green Gradient Accent */}
       {/* Background with Green Gradient Accent - Radial Gradient */}
       <div
@@ -61,7 +61,7 @@ export function ServicesSection() {
 
       <div className="container relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-20 animate-on-scroll">
           <span className="text-[var(--color-secondary)] font-bold tracking-wider uppercase text-sm mb-4 block">
             {t("title")}
           </span>
@@ -74,7 +74,7 @@ export function ServicesSection() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-on-scroll stagger-children">
           {services.map((service, index) => {
             const tags = (t.raw(`list.${service.id}.tags`) as string[]) || [];
             const isEven = index % 2 === 0;

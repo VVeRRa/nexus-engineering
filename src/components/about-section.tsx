@@ -47,7 +47,7 @@ export function AboutSection() {
   ];
 
   return (
-    <section id="about" className="section bg-white relative overflow-hidden py-24 animate-on-scroll">
+    <section id="about" className="section bg-white relative overflow-hidden py-24">
       {/* Background w/ Green Accent */}
       {/* Background w/ Green Accent - Radial Gradient */}
       <div
@@ -56,7 +56,7 @@ export function AboutSection() {
       />
 
       <div className="container relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center animate-on-scroll">
           {/* Left Column */}
           <div>
             <span className="text-[var(--color-secondary)] font-bold tracking-wider uppercase text-sm mb-4 block">{t("label")}</span>

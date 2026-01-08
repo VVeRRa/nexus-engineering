@@ -26,9 +26,9 @@ export function FAQSection() {
     ];
 
     return (
-        <section className="section bg-slate-50 relative overflow-hidden py-24 animate-on-scroll" >
+        <section className="section bg-slate-50 relative overflow-hidden py-24" >
             <div className="container max-w-4xl relative z-10">
-                <div className="text-center mb-16">
+                <div className="text-center mb-16 animate-on-scroll">
                     <span className="text-[var(--color-primary)] font-bold tracking-wider uppercase text-sm mb-4 block">
                         FAQ
                     </span>
@@ -40,7 +40,7 @@ export function FAQSection() {
                     </h2>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-4 animate-on-scroll stagger-children">
                     {faqs.map((faq, index) => (
                         <AccordionItem key={index} question={faq.question} answer={faq.answer} />
                     ))}
