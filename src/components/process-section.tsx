@@ -1,43 +1,61 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export function ProcessSection() {
+  const t = useTranslations("Process");
+
   const steps = [
     {
       number: "01",
-      title: "Discovery",
-      description:
-        "We dive deep into your requirements, technical landscape, and team dynamics. Understanding context is everything.",
-      duration: "1-2 weeks",
-      details: ["Requirements analysis", "Technical assessment", "Team fit evaluation"],
+      title: t("steps.discovery.title"),
+      description: t("steps.discovery.description"),
+      duration: "1-2 weeks", // Duration could also be translated if strictly needed, but roughly language agnostic for now.
+      details: [
+        t("steps.discovery.details.0"),
+        t("steps.discovery.details.1"),
+        t("steps.discovery.details.2")
+      ],
     },
     {
       number: "02",
-      title: "Matching",
-      description:
-        "Precision talent selection based on technical skills, domain experience, and cultural fit. No resume roulette.",
+      title: t("steps.matching.title"),
+      description: t("steps.matching.description"),
       duration: "1 week",
-      details: ["Skills matching", "Domain expertise", "Culture alignment"],
+      details: [
+        t("steps.matching.details.0"),
+        t("steps.matching.details.1"),
+        t("steps.matching.details.2")
+      ],
     },
     {
       number: "03",
-      title: "Integration",
-      description:
-        "Seamless onboarding into your workflows, tools, and ceremonies. Our engineers become your engineers.",
+      title: t("steps.integration.title"),
+      description: t("steps.integration.description"),
       duration: "1-2 weeks",
-      details: ["Workflow setup", "Tool integration", "Team embedding"],
+      details: [
+        t("steps.integration.details.0"),
+        t("steps.integration.details.1"),
+        t("steps.integration.details.2")
+      ],
     },
     {
       number: "04",
-      title: "Delivery",
-      description:
-        "Continuous value delivery with transparent communication. Regular check-ins ensure alignment and momentum.",
+      title: t("steps.delivery.title"),
+      description: t("steps.delivery.description"),
       duration: "Ongoing",
-      details: ["Sprint planning", "Progress tracking", "Quality assurance"],
+      details: [
+        t("steps.delivery.details.0"),
+        t("steps.delivery.details.1"),
+        t("steps.delivery.details.2")
+      ],
     },
   ];
 
   const engagementModels = [
     {
-      title: "Staff Augmentation",
-      description: "Individual engineers embedded in your team, working your hours, using your tools.",
+      title: t("models.augmentation.title"),
+      description: t("models.augmentation.desc"),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
           <circle cx="12" cy="8" r="4" stroke="currentColor" strokeWidth="2" />
@@ -46,8 +64,8 @@ export function ProcessSection() {
       ),
     },
     {
-      title: "Dedicated Team",
-      description: "A full squad with complementary skills, managed as a cohesive unit.",
+      title: t("models.team.title"),
+      description: t("models.team.desc"),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
           <circle cx="8" cy="8" r="3" stroke="currentColor" strokeWidth="2" />
@@ -58,8 +76,8 @@ export function ProcessSection() {
       ),
     },
     {
-      title: "Project-Based",
-      description: "End-to-end delivery of defined scope with fixed timeline and budget.",
+      title: t("models.project.title"),
+      description: t("models.project.desc"),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
           <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="2" />
@@ -78,16 +96,15 @@ export function ProcessSection() {
       <div className="container relative z-10">
         {/* Section Header */}
         <div className="max-w-3xl mb-20">
-          <span className="section-label section-label-light">Process</span>
+          <span className="section-label section-label-light">{t("label")}</span>
           <h2
             className="text-display-md text-[var(--color-paper)] mb-6"
             style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
           >
-            How we work
+            {t("title")}
           </h2>
           <p className="text-xl text-[var(--color-slate-400)]">
-            A proven methodology refined across hundreds of engagements.
-            Fast time-to-value without cutting corners.
+            {t("description")}
           </p>
         </div>
 
@@ -100,17 +117,15 @@ export function ProcessSection() {
             {steps.map((step, index) => (
               <div
                 key={index}
-                className={`relative lg:grid lg:grid-cols-2 lg:gap-16 ${
-                  index % 2 === 0 ? "" : "lg:direction-rtl"
-                }`}
+                className={`relative lg:grid lg:grid-cols-2 lg:gap-16 ${index % 2 === 0 ? "" : "lg:direction-rtl"
+                  }`}
               >
                 {/* Content */}
                 <div
-                  className={`${
-                    index % 2 === 0
+                  className={`${index % 2 === 0
                       ? "lg:text-right lg:pr-16"
                       : "lg:col-start-2 lg:text-left lg:pl-16"
-                  }`}
+                    }`}
                 >
                   <div className="relative bg-[var(--color-slate-900)] rounded-2xl p-8 border border-[var(--color-slate-800)] hover:border-[var(--color-accent)]/30 transition-colors duration-300">
                     {/* Step Number */}
@@ -179,10 +194,10 @@ export function ProcessSection() {
               className="text-2xl text-[var(--color-paper)] mb-4"
               style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
             >
-              Engagement Models
+              {t("models.title")}
             </h3>
             <p className="text-[var(--color-slate-500)]">
-              Flexible arrangements to fit your needs
+              {t("models.subtitle")}
             </p>
           </div>
 

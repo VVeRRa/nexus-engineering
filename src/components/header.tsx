@@ -1,8 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./language-switcher";
 
 export function Header() {
+  const t = useTranslations("Nav");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -26,25 +29,22 @@ export function Header() {
   }, []);
 
   const navLinks = [
-    { href: "#services", label: "Services" },
-    { href: "#industries", label: "Industries" },
-    { href: "#tech", label: "Tech Stack" },
-    { href: "#process", label: "Process" },
-    { href: "#case-studies", label: "Work" },
-    { href: "#about", label: "About" },
+    { href: "#services", label: t('services') },
+    { href: "#industries", label: t('expertise') },
+    { href: "#tech", label: t('technology') },
+    { href: "#about", label: t('team') },
   ];
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
-          ? "bg-[var(--color-ink)]/98 backdrop-blur-xl py-3 shadow-lg"
-          : "bg-transparent py-5"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
+        ? "bg-[var(--color-ink)]/98 backdrop-blur-xl py-3 shadow-lg"
+        : "bg-transparent py-5"
+        }`}
     >
       <div className="container flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3 group relative z-10">
+        <a href="#" className="flex items-center gap-3 group relative z-50">
           <div className="relative">
             <div className="w-11 h-11 bg-[var(--color-accent)] rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
@@ -106,8 +106,9 @@ export function Header() {
           ))}
         </nav>
 
-        {/* CTA Button */}
+        {/* CTA Button & Language Switcher */}
         <div className="hidden lg:flex items-center gap-4">
+          <LanguageSwitcher />
           <a
             href="mailto:hello@nexus.engineering"
             className="text-[var(--color-slate-400)] hover:text-[var(--color-paper)] text-sm transition-colors"
@@ -116,7 +117,7 @@ export function Header() {
             hello@nexus.engineering
           </a>
           <a href="#contact" className="btn btn-accent">
-            Get Started
+            {t('getInTouch')}
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
               <path
                 d="M3 8H13M13 8L9 4M13 8L9 12"
@@ -131,25 +132,22 @@ export function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden relative w-10 h-10 flex items-center justify-center text-[var(--color-paper)]"
+          className="lg:hidden relative z-50 w-10 h-10 flex items-center justify-center text-[var(--color-paper)]"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
           <div className="relative w-6 h-5 flex flex-col justify-between">
             <span
-              className={`block w-full h-0.5 bg-current transform transition-all duration-300 origin-center ${
-                isMobileMenuOpen ? "rotate-45 translate-y-2" : ""
-              }`}
+              className={`block w-full h-0.5 bg-current transform transition-all duration-300 origin-center ${isMobileMenuOpen ? "rotate-45 translate-y-2" : ""
+                }`}
             />
             <span
-              className={`block w-full h-0.5 bg-current transition-all duration-300 ${
-                isMobileMenuOpen ? "opacity-0 scale-x-0" : ""
-              }`}
+              className={`block w-full h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? "opacity-0 scale-x-0" : ""
+                }`}
             />
             <span
-              className={`block w-full h-0.5 bg-current transform transition-all duration-300 origin-center ${
-                isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
-              }`}
+              className={`block w-full h-0.5 bg-current transform transition-all duration-300 origin-center ${isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
+                }`}
             />
           </div>
         </button>
@@ -157,23 +155,20 @@ export function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed inset-0 top-0 bg-[var(--color-ink)] transition-all duration-500 ${
-          isMobileMenuOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
-        }`}
-        style={{ zIndex: -1 }}
+        className={`lg:hidden fixed inset-0 top-0 bg-[var(--color-ink)] z-40 transition-all duration-500 ${isMobileMenuOpen
+          ? "opacity-100 pointer-events-auto"
+          : "opacity-0 pointer-events-none"
+          }`}
       >
         <nav className="container h-full flex flex-col justify-center gap-2 pt-20">
           {navLinks.map((link, index) => (
             <a
               key={link.href}
               href={link.href}
-              className={`text-4xl text-[var(--color-paper)] py-3 transform transition-all duration-500 hover:text-[var(--color-accent)] hover:translate-x-4 ${
-                isMobileMenuOpen
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-8"
-              }`}
+              className={`text-4xl text-[var(--color-paper)] py-3 transform transition-all duration-500 hover:text-[var(--color-accent)] hover:translate-x-4 ${isMobileMenuOpen
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
+                }`}
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: 700,
@@ -185,11 +180,10 @@ export function Header() {
             </a>
           ))}
           <div
-            className={`mt-8 pt-8 border-t border-[var(--color-slate-800)] transform transition-all duration-500 ${
-              isMobileMenuOpen
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-8"
-            }`}
+            className={`mt-8 pt-8 border-t border-[var(--color-slate-800)] transform transition-all duration-500 ${isMobileMenuOpen
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-8"
+              }`}
             style={{
               transitionDelay: isMobileMenuOpen
                 ? `${navLinks.length * 50}ms`
@@ -197,7 +191,7 @@ export function Header() {
             }}
           >
             <a href="#contact" className="btn btn-accent btn-lg w-full">
-              Start a Project
+              {t('getInTouch')}
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path
                   d="M3 8H13M13 8L9 4M13 8L9 12"
@@ -214,6 +208,9 @@ export function Header() {
             >
               hello@nexus.engineering
             </p>
+            <div className="mt-8 flex justify-center">
+              <LanguageSwitcher />
+            </div>
           </div>
         </nav>
       </div>

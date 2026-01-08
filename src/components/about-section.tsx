@@ -1,40 +1,46 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export function AboutSection() {
+  const t = useTranslations("About");
+
   const values = [
     {
-      title: "Engineering Excellence",
-      description: "We hire the top 3% of engineers and continuously invest in their growth.",
+      title: t("values.excellence.title"),
+      description: t("values.excellence.desc"),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       ),
     },
     {
-      title: "Transparent Partnership",
-      description: "No black boxes. Full visibility into progress, challenges, and decisions.",
+      title: t("values.transparent.title"),
+      description: t("values.transparent.desc"),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M1 12S5 4 12 4S23 12 23 12S19 20 12 20S1 12 1 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2"/>
+          <path d="M1 12S5 4 12 4S23 12 23 12S19 20 12 20S1 12 1 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2" />
         </svg>
       ),
     },
     {
-      title: "Business Impact Focus",
-      description: "Code is a means, not an end. We measure success by business outcomes.",
+      title: t("values.impact.title"),
+      description: t("values.impact.desc"),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M22 12H18L15 21L9 3L6 12H2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M22 12H18L15 21L9 3L6 12H2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       ),
     },
     {
-      title: "Long-term Thinking",
-      description: "We build systems meant to last and evolve. No quick wins that create tech debt.",
+      title: t("values.longterm.title"),
+      description: t("values.longterm.desc"),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
-          <path d="M12 6V12L16 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+          <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+          <path d="M12 6V12L16 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
         </svg>
       ),
     },
@@ -50,60 +56,26 @@ export function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left Column */}
           <div>
-            <span className="section-label section-label-light">About Us</span>
+            <span className="section-label section-label-light">{t("label")}</span>
             <h2
               className="text-display-md text-[var(--color-paper)] mb-8"
               style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
             >
-              Engineering partners,
-              <br />
-              <span className="text-[var(--color-accent)]">not vendors</span>
+              {t.rich("title", {
+                br: () => <br />,
+                span: (chunks) => <span className="text-[var(--color-accent)]">{chunks}</span>
+              })}
             </h2>
             <div className="space-y-6 text-lg text-[var(--color-slate-400)]">
               <p>
-                We founded Nexus because we saw how broken IT outsourcing was.
-                Misaligned incentives, communication gaps, talent lottery.
-                We built something better.
+                {t("description1")}
               </p>
               <p>
-                Our engineers work from European time zones with significant overlap
-                with both EU and US business hours. We speak your language—literally
-                and technically—and treat your codebase like our own.
+                {t("description2")}
               </p>
             </div>
 
-            {/* Stats */}
-            <div className="flex items-center gap-8 mt-12 pt-8 border-t border-[var(--color-slate-800)]">
-              <div>
-                <div
-                  className="text-4xl text-[var(--color-paper)]"
-                  style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
-                >
-                  EU & US
-                </div>
-                <div
-                  className="text-sm text-[var(--color-slate-500)] mt-1"
-                  style={{ fontFamily: "var(--font-mono)" }}
-                >
-                  Time Zone Coverage
-                </div>
-              </div>
-              <div className="w-px h-16 bg-[var(--color-slate-800)]" />
-              <div>
-                <div
-                  className="text-4xl text-[var(--color-paper)]"
-                  style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
-                >
-                  100%
-                </div>
-                <div
-                  className="text-sm text-[var(--color-slate-500)] mt-1"
-                  style={{ fontFamily: "var(--font-mono)" }}
-                >
-                  English Fluency
-                </div>
-              </div>
-            </div>
+            {/* Stats Removed per user request */}
           </div>
 
           {/* Right Column - Values */}

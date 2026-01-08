@@ -1,7 +1,13 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export function TechStackSection() {
+  const t = useTranslations("TechStack");
+
   const techCategories = [
     {
-      name: "Languages & Frameworks",
+      name: t("categories.languages"),
       color: "var(--color-cloud)",
       techs: [
         { name: "Java", abbr: "Jv" },
@@ -13,7 +19,7 @@ export function TechStackSection() {
       ],
     },
     {
-      name: "Data & Storage",
+      name: t("categories.data"),
       color: "var(--color-fintech)",
       techs: [
         { name: "PostgreSQL", abbr: "Pg" },
@@ -23,7 +29,7 @@ export function TechStackSection() {
       ],
     },
     {
-      name: "Cloud & DevOps",
+      name: t("categories.cloud"),
       color: "var(--color-proptech)",
       techs: [
         { name: "AWS", abbr: "Aw" },
@@ -33,11 +39,11 @@ export function TechStackSection() {
       ],
     },
     {
-      name: "Methodology & AI",
+      name: t("categories.methodology"),
       color: "var(--color-ai)",
       techs: [
         { name: "Agile", abbr: "Ag" },
-        { name: "AI/ML", abbr: "AI" },
+        { name: "AI", abbr: "AI" },
         { name: "CI/CD", abbr: "CI" },
       ],
     },
@@ -55,16 +61,15 @@ export function TechStackSection() {
       <div className="container relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="section-label justify-center">Technology</span>
+          <span className="section-label justify-center">{t("label")}</span>
           <h2
             className="text-display-md text-[var(--color-ink)] mb-6"
             style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
           >
-            Battle-tested stack
+            {t("title")}
           </h2>
           <p className="text-xl text-[var(--color-slate-600)]">
-            We work with the technologies that power the world&apos;s most demanding
-            applications. No experiments on your dime—proven tools, proven results.
+            {t("description")}
           </p>
         </div>
 
@@ -134,12 +139,10 @@ export function TechStackSection() {
         <div className="mt-20 pt-12 border-t border-[var(--color-slate-200)]">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <p className="text-lg text-[var(--color-slate-600)] max-w-2xl">
-              Our engineers stay current with evolving technologies while maintaining
-              deep expertise in battle-tested solutions. We choose the right tool for
-              each job.
+              {t("statement")}
             </p>
             <a href="#contact" className="btn btn-primary">
-              Discuss Your Tech Needs
+              {t("cta")}
             </a>
           </div>
         </div>

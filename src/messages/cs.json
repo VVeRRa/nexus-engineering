@@ -1,0 +1,463 @@
+{
+  "Brand": {
+    "name": "Solving Crew",
+    "short": "From problem to production",
+    "promise": "From problem to production — with the right people.",
+    "playful": "We solve all your problems.",
+    "description": "Seniorní produktový engineering. Začněte rolemi, které potřebujete, a škálujte s růstem projektů."
+  },
+  "Nav": {
+    "home": "Domů",
+    "services": "Služby",
+    "expertise": "Expertíza",
+    "technology": "Technologie",
+    "team": "Tým",
+    "contact": "Kontakt",
+    "getInTouch": "Napište nám"
+  },
+  "Common": {
+    "step": "Krok"
+  },
+  "Footer": {
+    "brandDesc": "Elitní IT staff augmentation pro společnosti, které odmítají kompromisy v inženýrské kvalitě.",
+    "services": "Služby",
+    "company": "Společnost",
+    "industries": "Odvětví",
+    "rights": "Nexus Engineering. Všechna práva vyhrazena.",
+    "links": {
+      "leadership": "IT Leadership",
+      "backend": "Backend Vývoj",
+      "frontend": "Frontend Vývoj",
+      "devops": "DevOps Engineering",
+      "about": "O nás",
+      "caseStudies": "Případové studie",
+      "process": "Proces",
+      "contact": "Kontakt",
+      "fintech": "FinTech",
+      "proptech": "PropTech",
+      "enterprise": "Enterprise"
+    }
+  },
+  "Home": {
+    "kicker": "Seniorní produktový engineering partner",
+    "subheadline": "Zkušenost z PropTech & FinTech • Delivery v EU • Začněte v malém a škálujte podle pipeline.",
+    "ctaPrimary": "Kontaktovat",
+    "ctaSecondary": "Zobrazit služby",
+    "scroll": "Rolovat",
+    "sideText": "IT Staff Augmentation & Outsourcing",
+    "highlights": {
+      "h1": {
+        "badge": "Řešení > šablona",
+        "title": "Odblokujeme problém, neprodáváme tabulkové squady",
+        "text": "Navrhneme nejmenší tvar týmu, který odemkne progres — a škálujeme až když to dává smysl."
+      },
+      "h2": {
+        "badge": "Produkční mentalita",
+        "title": "Build + run, spolehlivě",
+        "text": "IaC, observabilita, CI/CD a testování jsou součást dodávky – ne doplněk."
+      },
+      "h3": {
+        "badge": "Seriózní domény",
+        "title": "PropTech, FinTech, B2B SaaS",
+        "text": "Integrace, data-heavy systémy a prostředí, kde záleží na spolehlivosti."
+      }
+    },
+    "heroBullets": [
+      {
+        "title": "Malý tým, seniorně vedený",
+        "text": "Naskočíme jako kompaktní crew a rychle odblokujeme dodávku."
+      },
+      {
+        "title": "Production-first delivery",
+        "text": "CI/CD, observability a kvalita jsou součástí dodávky — ne až potom."
+      },
+      {
+        "title": "Znalost domény",
+        "text": "PropTech & FinTech zkušenost pro integračně náročné, datově bohaté systémy."
+      }
+    ],
+    "heroChip": "Obvykle odpovíme do 24 h",
+    "stackTitle": "Core tech stack",
+    "stackNote": "High-performance, event-driven architektura napříč stackem.",
+    "stack": [
+      "Java (Quarkus/Spring)",
+      "Node.js",
+      "Go",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Postgres",
+      "NATS JetStream",
+      "ElasticSearch",
+      "Valkey/Redis",
+      "Kubernetes",
+      "Terraform",
+      "Prometheus/Grafana/Loki",
+      "AWS (EKS)",
+      "Playwright/Cypress",
+      "Figma"
+    ],
+    "ctaBlock": {
+      "title": "Řekněte, co vás brzdí",
+      "text": "Jedna role, malý pod nebo delivery lane — navrhneme tvar spolupráce, který sedne.",
+      "button": "Začít konverzaci"
+    }
+  },
+  "Services": {
+    "title": "Služby",
+    "lead": "Od strategického vedení po implementaci — dodáme technickou expertízu, kterou potřebujete.",
+    "list": {
+      "leadership": {
+        "title": "IT Leadership",
+        "subtitle": "Strategické směřování",
+        "description": "Fractional CTOs a techničtí ředitelé, kteří sladí technologie s byznysem. Revize architektury, řešení technologického dluhu a plánování roadmapy.",
+        "tags": [
+          "CTO-as-a-Service",
+          "Tech Strategy",
+          "Architektura"
+        ]
+      },
+      "backend": {
+        "title": "Backend Development",
+        "subtitle": "Škálovatelné Systémy",
+        "description": "Robustní API a mikroslužby. High-performance systémy pro miliony transakcí. Event-driven architektura a distribuované systémy.",
+        "tags": [
+          "Java",
+          "Go",
+          "Node.js",
+          "PostgreSQL"
+        ]
+      },
+      "frontend": {
+        "title": "Frontend Development",
+        "subtitle": "Špičková rozhraní",
+        "description": "Pixel-perfect rozhraní s výjimečným UX. Komponentové knihovny, design systémy a výkonné SPA aplikace.",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Next.js"
+        ]
+      },
+      "qa": {
+        "title": "QA Engineering",
+        "subtitle": "Quality Assurance",
+        "description": "Komplexní testovací strategie. Manuální a automatizované testování, performance testy a bezpečnostní audity.",
+        "tags": [
+          "Selenium",
+          "Cypress",
+          "Performance"
+        ]
+      },
+      "devops": {
+        "title": "DevOps Engineering",
+        "subtitle": "Infrastruktura",
+        "description": "CI/CD pipelines pro bezpečné nasazení. Infrastructure as code, orchestrace kontejnerů a observabilita.",
+        "tags": [
+          "AWS",
+          "Kubernetes",
+          "Terraform"
+        ]
+      },
+      "product": {
+        "title": "Product Management",
+        "subtitle": "Od vize k exekuci",
+        "description": "Produktoví lídři, kteří propojí vizi s realitou. Roadmapy, alignment stakeholderů a prioritizace daty.",
+        "tags": [
+          "Strategie",
+          "Agile",
+          "Analytics"
+        ]
+      },
+      "design": {
+        "title": "Product Design",
+        "subtitle": "UI/UX Excellence",
+        "description": "Design zaměřený na uživatele. Wireframe, prototypy a high-fidelity UI design, který se dobře implementuje.",
+        "tags": [
+          "Figma",
+          "Adobe Creative Suite",
+          "Design Systems"
+        ]
+      }
+    },
+    "cta": {
+      "question": "Potřebujete řešení na míru?",
+      "button": "Probrat vaše potřeby"
+    }
+  },
+  "Expertise": {
+    "title": "Expertíza",
+    "lead": "Děláme v komplexních doménách, kde záleží na spolehlivosti, rychlosti a čisté komunikaci.",
+    "capabilitiesTitle": "Co umíme",
+    "capabilities": [
+      "Product engineering (od discovery do produkce)",
+      "Architektura & tech leadership",
+      "High-load backend & event-driven systémy",
+      "Data-heavy integrace a API",
+      "Cloud & DevOps (Kubernetes, IaC, observabilita)",
+      "QA automatizace & quality engineering",
+      "Design systémy & UX delivery"
+    ],
+    "areas": {
+      "proptech": {
+        "title": "PropTech",
+        "text": "Inzerce, valuace, integrace, back-office workflow, reporting a zákaznické portály."
+      },
+      "fintech": {
+        "title": "FinTech",
+        "text": "Platby, identita, compliance citlivé flow a auditovatelná dodávka."
+      },
+      "highload": {
+        "title": "High-load & platformy",
+        "text": "Event-driven architektura, výkon, škálování, observabilita a operations."
+      }
+    },
+    "areasBadge": {
+      "proptech": {
+        "badge": "PropTech"
+      },
+      "fintech": {
+        "badge": "FinTech"
+      },
+      "highload": {
+        "badge": "High-load"
+      }
+    }
+  },
+  "Technology": {
+    "title": "Technologie",
+    "lead": "Moderní stack, produkčně orientované inženýrství a pragmatické volby podle constraintů.",
+    "sectionsTitle": "Oblasti",
+    "principlesTitle": "Principy",
+    "principles": [
+      "Dodávat po malých krocích",
+      "Měřit a pozorovat",
+      "Automatizovat kvalitu",
+      "Navrhovat pro ownership",
+      "Snižovat operativní zátěž",
+      "Měřit dopad"
+    ],
+    "sections": {
+      "backend": {
+        "title": "Backend",
+        "text": "Java (Quarkus/Spring), Node.js, Go • microservices • REST/GraphQL • event-driven messaging."
+      },
+      "frontend": {
+        "title": "Frontend",
+        "text": "React, Next.js, TypeScript • design system • přístupnost • výkon."
+      },
+      "mobile": {
+        "title": "Mobile",
+        "text": "Pragmatická mobilní dodávka podle potřeby (hybrid / native podle constraintů)."
+      },
+      "data": {
+        "title": "Data & search",
+        "text": "Postgres, ElasticSearch • datové pipeline • modely vhodné pro analytiku."
+      },
+      "quality": {
+        "title": "Quality engineering",
+        "text": "Automation-first • Playwright/Cypress • contract testing tam, kde se vyplatí."
+      },
+      "platform": {
+        "title": "Platforma & Cloud",
+        "text": "Infrastruktura pro produkci, CI/CD a observabilita."
+      },
+      "design": {
+        "title": "Design",
+        "text": "Figma-driven delivery • UX prototypy • design system a komponenty."
+      }
+    }
+  },
+  "Team": {
+    "title": "Tým",
+    "comingSoon": "Profily a detaily o vedení zveřejníme v únoru 2026."
+  },
+  "Industries": {
+    "label": "Odbornost v oboru",
+    "title": "Hluboká znalost domény",
+    "subtitle": "v náročných odvětvích",
+    "description": "Nepíšeme jen kód – chápeme regulační prostředí, očekávání uživatelů a obchodní modely, které vedou k úspěchu.",
+    "fintech": {
+      "name": "FinTech",
+      "tagline": "Budování budoucnosti financí",
+      "description": "Zpracování plateb, obchodní platformy a bankovní infrastruktura. Systémy splňující PCI-DSS zpracovávající miliardy transakcí.",
+      "stats": "Zpracovaných transakcí",
+      "highlights": [
+        "Zpracování plateb v reálném čase",
+        "Algoritmické obchodní systémy",
+        "Regulační shoda (PCI-DSS, SOC2)",
+        "Detekce a prevence podvodů"
+      ]
+    },
+    "proptech": {
+      "name": "PropTech",
+      "tagline": "Transformace nemovitostí",
+      "description": "Platformy pro správu nemovitostí a realitní tržiště, která mění způsob, jakým interagujeme s prostory.",
+      "stats": "Spravovaných nemovitostí",
+      "highlights": [
+        "Platformy pro výpis nemovitostí",
+        "Komplexní systémová integrace",
+        "Systémy pro správu nájemníků",
+        "Analytika nemovitostí"
+      ]
+    },
+    "specializations": {
+      "title": "Další specializace",
+      "description": "Expertíza napříč odvětvími, která přináší výsledky",
+      "cloud": "Cloudová řešení",
+      "distArch": "Distribuovaná architektura",
+      "scaling": "Škálování týmů (0 na X)",
+      "product": "Vývoj startupových produktů",
+      "ai": "AI",
+      "migration": "Migrace systémů"
+    }
+  },
+  "TechStack": {
+    "label": "Technologie",
+    "title": "Ověřený stack",
+    "description": "Pracujeme s technologiemi, které pohánějí nejnáročnější aplikace světa. Žádné experimenty na váš účet – ověřené nástroje, ověřené výsledky.",
+    "cta": "Probrat vaše potřeby",
+    "statement": "Naši inženýři sledují vyvíjející se technologie a zároveň si udržují hlubokou expertízu v řešeních prověřených bojem. Pro každou práci volíme ten správný nástroj.",
+    "categories": {
+      "languages": "Jazyky & Frameworky",
+      "data": "Data & Úložiště",
+      "cloud": "Cloud & DevOps",
+      "methodology": "Metodika & AI"
+    }
+  },
+  "CaseStudies": {
+    "label": "Případové studie",
+    "title": "Prokázaný dopad",
+    "viewAll": "Zobrazit všechny projekty",
+    "fintech": {
+      "category": "FinTech",
+      "title": "Platforma pro zpracování plateb",
+      "description": "Navrhli a vybudovali jsme robustní platební bránu v reálném čase, zaměřenou na vysokou spolehlivost a rychlé zpracování transakcí. Systém zajišťuje plynulé finanční operace s důrazem na bezpečnost a nulové výpadky."
+    },
+    "proptech": {
+      "category": "PropTech",
+      "title": "Sada pro správu nemovitostí",
+      "description": "Komplexní platforma, která zefektivňuje provoz nemovitostí. Od onboardingu nájemníků po řešení údržby – naše řešení modernizuje celý životní cyklus správy realit."
+    },
+    "enterprise": {
+      "category": "Enterprise",
+      "title": "Migrace do cloudu",
+      "description": "Úspěšná transformace zastaralého monolitického systému na moderní, škálovatelnou architekturu mikroslužeb. Tato modernizace výrazně zvýšila rychlost nasazování a provozní efektivitu."
+    }
+  },
+  "Contact": {
+    "label": "Kontakt",
+    "title": "Pojďme vybudovat něco skvělého",
+    "description": "Ať už potřebujete jednoho specialistu nebo celý tým, navrhneme spolupráci, která vyhovuje vašim potřebám a rozpočtu.",
+    "response": "Odpověď do 24 hodin",
+    "trusted": "Důvěřují nám lídři v oboru",
+    "form": {
+      "name": "Jméno",
+      "namePlaceholder": "Jan Novák",
+      "email": "Email",
+      "emailPlaceholder": "jan@firma.cz",
+      "company": "Společnost",
+      "companyPlaceholder": "Firma s.r.o.",
+      "projectType": "Typ projektu",
+      "projectTypePlaceholder": "Vyberte typ projektu",
+      "message": "Povězte nám o svém projektu",
+      "messagePlaceholder": "Co budujete? Jaké dovednosti potřebujete?",
+      "send": "Odeslat zprávu",
+      "sending": "Odesílám...",
+      "sent": "Zpráva odeslána!",
+      "sentDesc": "Ozveme se vám do 24 hodin.",
+      "types": {
+        "augmentation": "Rozšíření týmu (Staff Augmentation)",
+        "team": "Dedikovaný tým",
+        "project": "Projektová báze",
+        "consulting": "Technické konzultace"
+      }
+    }
+  },
+  "About": {
+    "label": "O nás",
+    "title": "Inženýrští partneři, ne dodavatelé",
+    "description1": "Založili jsme Nexus, protože jsme viděli, jak rozbitý je IT outsourcing. Nesoulad v motivaci, komunikační mezery, loterie s talenty. Postavili jsme něco lepšího.",
+    "description2": "Naši inženýři pracují z evropských časových pásem s výrazným překryvem s pracovní dobou v EU i USA. Mluvíme vaším jazykem – doslova i technicky – a chováme se k vašemu kódu jako k vlastnímu.",
+    "stats": {
+      "timezone": "Pokrytí časových pásem",
+      "fluency": "Plynulá angličtina"
+    },
+    "values": {
+      "excellence": {
+        "title": "Inženýrská excelence",
+        "desc": "Najímáme elitní inženýry a neustále investujeme do jejich růstu pro zajištění špičkové kvality."
+      },
+      "transparent": {
+        "title": "Transparentní partnerství",
+        "desc": "Žádné černé skříňky. Plná viditelnost postupu, výzev a rozhodnutí."
+      },
+      "impact": {
+        "title": "Zaměření na obchodní dopad",
+        "desc": "Kód je prostředek, ne cíl. Úspěch měříme obchodními výsledky."
+      },
+      "longterm": {
+        "title": "Dlouhodobé myšlení",
+        "desc": "Stavíme systémy, které mají vydržet a vyvíjet se. Žádné rychlé výhry, které vytvářejí technický dluh."
+      }
+    }
+  },
+  "Process": {
+    "label": "Proces",
+    "title": "Jak pracujeme",
+    "description": "Ověřená metodika zdokonalená na stovkách projektů. Rychlá hodnota bez zkratek.",
+    "steps": {
+      "discovery": {
+        "title": "Discovery",
+        "description": "Ponoříme se do vašich požadavků, technického prostředí a dynamiky týmu. Pochopení kontextu je všechno.",
+        "details": [
+          "Analýza požadavků",
+          "Technické posouzení",
+          "Hodnocení týmového fitu"
+        ]
+      },
+      "matching": {
+        "title": "Matching",
+        "description": "Přesný výběr talentů na základě technických dovedností, doménových zkušeností a kulturního souladu.",
+        "details": [
+          "Párování dovedností",
+          "Doménová expertíza",
+          "Kulturní soulad"
+        ]
+      },
+      "integration": {
+        "title": "Integrace",
+        "description": "Bezproblémové zapojení do vašich pracovních postupů a nástrojů. Naši inženýři se stávají vašimi inženýry.",
+        "details": [
+          "Nastavení workflow",
+          "Integrace nástrojů",
+          "Začlenění do týmu"
+        ]
+      },
+      "delivery": {
+        "title": "Dodání",
+        "description": "Průběžné dodávání hodnoty s transparentní komunikací. Pravidelné check-iny zajišťují soulad.",
+        "details": [
+          "Plánování sprintů",
+          "Sledování pokroku",
+          "Zajištění kvality"
+        ]
+      }
+    },
+    "models": {
+      "title": "Modely spolupráce",
+      "subtitle": "Flexibilní uspořádání podle vašich potřeb",
+      "augmentation": {
+        "title": "Rozšíření týmu",
+        "desc": "Jednotliví inženýři začlenění do vašeho týmu, pracující ve vašich hodinách, s vašimi nástroji."
+      },
+      "team": {
+        "title": "Dedikovaný tým",
+        "desc": "Celý tým s doplňujícími se dovednostmi, řízený jako soudržná jednotka."
+      },
+      "project": {
+        "title": "Projektová báze",
+        "desc": "End-to-end dodávka definovaného rozsahu s pevným harmonogramem a rozpočtem."
+      }
+    }
+  }
+}

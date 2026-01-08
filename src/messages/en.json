@@ -1,0 +1,469 @@
+{
+  "Brand": {
+    "name": "Solving Crew",
+    "short": "From problem to production",
+    "promise": "From problem to production — with the right people.",
+    "playful": "We solve all your problems.",
+    "description": "Senior-led product engineering. Start with the roles you need and scale as projects grow."
+  },
+  "Nav": {
+    "home": "Home",
+    "services": "Services",
+    "expertise": "Expertise",
+    "technology": "Technology",
+    "team": "Team",
+    "contact": "Contact",
+    "getInTouch": "Get in touch"
+  },
+  "Common": {
+    "step": "Step"
+  },
+  "Footer": {
+    "brandDesc": "Elite IT staff augmentation for companies that refuse to compromise on engineering quality.",
+    "services": "Services",
+    "company": "Company",
+    "industries": "Industries",
+    "rights": "Nexus Engineering. All rights reserved.",
+    "links": {
+      "leadership": "IT Leadership",
+      "backend": "Backend Development",
+      "frontend": "Frontend Development",
+      "devops": "DevOps Engineering",
+      "about": "About Us",
+      "caseStudies": "Case Studies",
+      "process": "Process",
+      "contact": "Contact",
+      "fintech": "FinTech",
+      "proptech": "PropTech",
+      "enterprise": "Enterprise"
+    }
+  },
+  "Home": {
+    "kicker": "Senior-led product engineering partner",
+    "subheadline": "PropTech & FinTech experience • EU-based delivery • Start small and scale as your pipeline grows.",
+    "ctaPrimary": "Contact us",
+    "ctaSecondary": "See services",
+    "scroll": "Scroll",
+    "sideText": "IT Staff Augmentation & Outsourcing",
+    "highlights": {
+      "h1": {
+        "badge": "Solution-first",
+        "title": "We solve constraints, not org charts",
+        "text": "We propose the smallest team shape that unblocks progress — and scale only when it pays off."
+      },
+      "h2": {
+        "badge": "Production mindset",
+        "title": "Build + run, reliably",
+        "text": "IaC, observability, CI/CD and testing are part of delivery — not an afterthought."
+      },
+      "h3": {
+        "badge": "Serious domains",
+        "title": "PropTech, FinTech, B2B SaaS",
+        "text": "Integrations, data-heavy systems and regulated environments where reliability matters."
+      }
+    },
+    "heroBullets": [
+      {
+        "title": "Small team, senior-led",
+        "text": "We join as a compact crew that unblocks delivery fast."
+      },
+      {
+        "title": "Production-first delivery",
+        "text": "CI/CD, observability and quality are part of delivery — not an afterthought."
+      },
+      {
+        "title": "Domain depth",
+        "text": "PropTech & FinTech experience for integration-heavy, data-rich systems."
+      }
+    ],
+    "heroChip": "Typically reply within 24h",
+    "stackTitle": "Core tech stack",
+    "stackNote": "High-performance, event-driven architecture across the full stack.",
+    "stack": [
+      "Java (Quarkus/Spring)",
+      "Node.js",
+      "Go",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Postgres",
+      "NATS JetStream",
+      "ElasticSearch",
+      "Valkey/Redis",
+      "Kubernetes",
+      "Terraform",
+      "Prometheus/Grafana/Loki",
+      "AWS (EKS)",
+      "Playwright/Cypress",
+      "Figma"
+    ],
+    "ctaBlock": {
+      "title": "Tell us what’s blocking you",
+      "text": "One role, a small pod, or a delivery lane — we’ll propose a shape that fits.",
+      "button": "Start the conversation"
+    }
+  },
+  "Services": {
+    "title": "Services",
+    "lead": "From strategic leadership to hands-on implementation, we provide the technical expertise you need.",
+    "list": {
+      "leadership": {
+        "title": "IT Leadership",
+        "subtitle": "Strategic Direction",
+        "description": "Fractional CTOs and Technical Directors who align technology strategy with business objectives. Architecture reviews, tech debt assessment, and roadmap planning.",
+        "tags": [
+          "CTO-as-a-Service",
+          "Tech Strategy",
+          "Architecture"
+        ]
+      },
+      "backend": {
+        "title": "Backend Development",
+        "subtitle": "Scalable Systems",
+        "description": "Robust, scalable APIs and microservices. High-performance systems handling millions of transactions. Event-driven architectures and distributed systems.",
+        "tags": [
+          "Java",
+          "Go",
+          "Node.js",
+          "PostgreSQL"
+        ]
+      },
+      "frontend": {
+        "title": "Frontend Development",
+        "subtitle": "Exceptional Interfaces",
+        "description": "Pixel-perfect interfaces with exceptional UX. Component libraries, design systems, and performant SPAs that users love and competitors envy.",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Next.js"
+        ]
+      },
+      "qa": {
+        "title": "QA Engineering",
+        "subtitle": "Quality Assurance",
+        "description": "Comprehensive test strategies that catch bugs before users do. Manual and automated testing, performance testing, and security audits.",
+        "tags": [
+          "Selenium",
+          "Cypress",
+          "Performance"
+        ]
+      },
+      "devops": {
+        "title": "DevOps Engineering",
+        "subtitle": "Infrastructure Excellence",
+        "description": "CI/CD pipelines that ship with confidence. Infrastructure as code, container orchestration, and observability that keeps systems humming.",
+        "tags": [
+          "AWS",
+          "Kubernetes",
+          "Terraform"
+        ]
+      },
+      "product": {
+        "title": "Product Management",
+        "subtitle": "Vision to Execution",
+        "description": "Product leaders who bridge the gap between vision and execution. Roadmap development, stakeholder alignment, and data-driven prioritization.",
+        "tags": [
+          "Strategy",
+          "Agile",
+          "Analytics"
+        ]
+      },
+      "design": {
+        "title": "Product Design",
+        "subtitle": "UI/UX Excellence",
+        "description": "User-centric design that solves real problems. Wireframing, prototyping, and high-fidelity UI design that developers love to build.",
+        "tags": [
+          "Figma",
+          "Adobe Creative Suite",
+          "Design Systems"
+        ]
+      }
+    },
+    "cta": {
+      "question": "Need a custom solution?",
+      "button": "Let's Discuss Your Needs"
+    }
+  },
+  "Expertise": {
+    "title": "Expertise",
+    "lead": "We work in complex domains where reliability, speed and clarity matter.",
+    "capabilitiesTitle": "Capabilities",
+    "capabilities": [
+      "Product engineering (discovery to production)",
+      "Architecture & tech leadership",
+      "High-load backend & event-driven systems",
+      "Data-heavy integrations and APIs",
+      "Cloud & DevOps (Kubernetes, IaC, observability)",
+      "QA automation & quality engineering",
+      "Design systems & UX delivery"
+    ],
+    "areas": {
+      "proptech": {
+        "title": "PropTech",
+        "text": "Listings, valuation, integrations, back-office workflows, reporting and customer portals."
+      },
+      "fintech": {
+        "title": "FinTech",
+        "text": "Payments, identity, compliance-sensitive flows and audit-friendly delivery."
+      },
+      "highload": {
+        "title": "High-load & platforms",
+        "text": "Event-driven architecture, performance, scalability, observability and operations."
+      }
+    },
+    "areasBadge": {
+      "proptech": {
+        "badge": "PropTech"
+      },
+      "fintech": {
+        "badge": "FinTech"
+      },
+      "highload": {
+        "badge": "High-load"
+      }
+    }
+  },
+  "Technology": {
+    "title": "Technology",
+    "lead": "Modern stack, production-first engineering, and pragmatic choices based on constraints.",
+    "sectionsTitle": "Technology areas",
+    "principlesTitle": "Principles",
+    "principles": [
+      "Ship small increments",
+      "Make it observable",
+      "Automate quality",
+      "Design for ownership",
+      "Keep operational load low",
+      "Measure impact"
+    ],
+    "sections": {
+      "backend": {
+        "title": "Backend",
+        "text": "Java (Quarkus/Spring), Node.js, Go • microservices • REST/GraphQL • event-driven messaging."
+      },
+      "frontend": {
+        "title": "Frontend",
+        "text": "React, Next.js, TypeScript • design systems • accessible UI • performance."
+      },
+      "mobile": {
+        "title": "Mobile",
+        "text": "Pragmatic mobile delivery where needed (hybrid or native depending on constraints)."
+      },
+      "platform": {
+        "title": "Platform & Cloud",
+        "text": "Production-ready infrastructure, CI/CD and observability."
+      },
+      "data": {
+        "title": "Data & search",
+        "text": "Postgres, ElasticSearch • data pipelines • analytics-friendly models."
+      },
+      "quality": {
+        "title": "Quality engineering",
+        "text": "Automation-first mindset • Playwright/Cypress • contract testing where it pays off."
+      },
+      "design": {
+        "title": "Design",
+        "text": "Figma-driven delivery • UX prototypes • design systems and component libraries."
+      }
+    }
+  },
+  "Team": {
+    "title": "Team",
+    "comingSoon": "Profiles & leadership details will be published in February 2026."
+  },
+  "Industries": {
+    "label": "Industry Expertise",
+    "title": "Deep domain knowledge",
+    "subtitle": "in high-stakes industries",
+    "description": "We don't just write code—we understand the regulatory landscape, user expectations, and business models that drive success.",
+    "fintech": {
+      "name": "FinTech",
+      "tagline": "Building the Future of Finance",
+      "description": "Payment processing, trading platforms, and banking infrastructure. PCI-DSS compliant systems handling billions in transactions.",
+      "stats": "Transactions Processed",
+      "highlights": [
+        "Real-time payment processing",
+        "Algorithmic trading systems",
+        "Regulatory compliance (PCI-DSS, SOC2)",
+        "Fraud detection & prevention"
+      ]
+    },
+    "proptech": {
+      "name": "PropTech",
+      "tagline": "Transforming Real Estate",
+      "description": "Property management platforms and real estate marketplaces that transform how we interact with spaces.",
+      "stats": "Properties Managed",
+      "highlights": [
+        "Property listing platforms",
+        "Complex system integration",
+        "Tenant management systems",
+        "Real estate analytics"
+      ]
+    },
+    "specializations": {
+      "title": "Additional Specializations",
+      "description": "Cross-industry expertise that drives results",
+      "cloud": "Cloud Solutions",
+      "distArch": "Distributed Architecture",
+      "scaling": "Team Scaling (0 to X)",
+      "product": "Startup Product Development",
+      "ai": "AI",
+      "migration": "System Migration"
+    }
+  },
+  "TechStack": {
+    "label": "Technology",
+    "title": "Battle-tested stack",
+    "description": "We work with the technologies that power the world's most demanding applications. No experiments on your dime—proven tools, proven results.",
+    "cta": "Discuss Your Tech Needs",
+    "statement": "Our engineers stay current with evolving technologies while maintaining deep expertise in battle-tested solutions. We choose the right tool for each job.",
+    "categories": {
+      "languages": "Languages & Frameworks",
+      "data": "Data & Storage",
+      "cloud": "Cloud & DevOps",
+      "methodology": "Methodology & AI"
+    }
+  },
+  "CaseStudies": {
+    "label": "Case Studies",
+    "title": "Proven impact",
+    "viewAll": "View All Projects",
+    "fintech": {
+      "category": "FinTech",
+      "title": "Payment Processing Platform",
+      "description": "We architected and built a robust real-time payment gateway designed for high reliability and rapid transaction processing. The system ensures seamless financial operations with a focus on security and zero downtime."
+    },
+    "proptech": {
+      "category": "PropTech",
+      "title": "Property Management Suite",
+      "description": "A comprehensive end-to-end platform that streamlines property operations. From tenant onboarding to maintenance requests, our solution modernizes the entire real estate management lifecycle."
+    },
+    "enterprise": {
+      "category": "Enterprise",
+      "title": "Cloud Migration",
+      "description": "Successfully transformed a legacy monolithic system into a modern, scalable microservices architecture. This modernization significantly improved deployment velocity and operational efficiency."
+    },
+    "testimonials": {
+      "text": "Nexus engineers integrated seamlessly with our team and delivered beyond expectations. They're not vendors—they're partners.",
+      "author": "Sarah Chen",
+      "role": "CTO, FinTech Startup",
+      "cta": "Start Your Success Story"
+    }
+  },
+  "Contact": {
+    "label": "Contact",
+    "title": "Let's build something great",
+    "description": "Whether you need a single specialist or a full team, we'll craft an engagement that fits your needs and budget.",
+    "response": "Response within 24 hours",
+    "trusted": "Trusted by industry leaders",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "John Smith",
+      "email": "Email",
+      "emailPlaceholder": "john@company.com",
+      "company": "Company",
+      "companyPlaceholder": "Company Inc.",
+      "projectType": "Project Type",
+      "projectTypePlaceholder": "Select project type",
+      "message": "Tell us about your project",
+      "messagePlaceholder": "What are you building? What skills do you need?",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "sent": "Message Sent!",
+      "sentDesc": "We'll get back to you within 24 hours.",
+      "types": {
+        "augmentation": "Staff Augmentation",
+        "team": "Dedicated Team",
+        "project": "Project-Based",
+        "consulting": "Technical Consulting"
+      }
+    }
+  },
+  "About": {
+    "label": "About Us",
+    "title": "Engineering partners, not vendors",
+    "description1": "We founded Nexus because we saw how broken IT outsourcing was. Misaligned incentives, communication gaps, talent lottery. We built something better.",
+    "description2": "Our engineers work from European time zones with significant overlap with both EU and US business hours. We speak your language—literally and technically—and treat your codebase like our own.",
+    "stats": {
+      "timezone": "Time Zone Coverage",
+      "fluency": "English Fluency"
+    },
+    "values": {
+      "excellence": {
+        "title": "Engineering Excellence",
+        "desc": "We hire elite engineers and continuously invest in their growth to ensure top-tier delivery."
+      },
+      "transparent": {
+        "title": "Transparent Partnership",
+        "desc": "No black boxes. Full visibility into progress, challenges, and decisions."
+      },
+      "impact": {
+        "title": "Business Impact Focus",
+        "desc": "Code is a means, not an end. We measure success by business outcomes."
+      },
+      "longterm": {
+        "title": "Long-term Thinking",
+        "desc": "We build systems meant to last and evolve. No quick wins that create tech debt."
+      }
+    }
+  },
+  "Process": {
+    "label": "Process",
+    "title": "How we work",
+    "description": "A proven methodology refined across hundreds of engagements. Fast time-to-value without cutting corners.",
+    "steps": {
+      "discovery": {
+        "title": "Discovery",
+        "description": "We dive deep into your requirements, technical landscape, and team dynamics. Understanding context is everything.",
+        "details": [
+          "Requirements analysis",
+          "Technical assessment",
+          "Team fit evaluation"
+        ]
+      },
+      "matching": {
+        "title": "Matching",
+        "description": "Precision talent selection based on technical skills, domain experience, and cultural fit. No resume roulette.",
+        "details": [
+          "Skills matching",
+          "Domain expertise",
+          "Culture alignment"
+        ]
+      },
+      "integration": {
+        "title": "Integration",
+        "description": "Seamless onboarding into your workflows, tools, and ceremonies. Our engineers become your engineers.",
+        "details": [
+          "Workflow setup",
+          "Tool integration",
+          "Team embedding"
+        ]
+      },
+      "delivery": {
+        "title": "Delivery",
+        "description": "Continuous value delivery with transparent communication. Regular check-ins ensure alignment and momentum.",
+        "details": [
+          "Sprint planning",
+          "Progress tracking",
+          "Quality assurance"
+        ]
+      }
+    },
+    "models": {
+      "title": "Engagement Models",
+      "subtitle": "Flexible arrangements to fit your needs",
+      "augmentation": {
+        "title": "Staff Augmentation",
+        "desc": "Individual engineers embedded in your team, working your hours, using your tools."
+      },
+      "team": {
+        "title": "Dedicated Team",
+        "desc": "A full squad with complementary skills, managed as a cohesive unit."
+      },
+      "project": {
+        "title": "Project-Based",
+        "desc": "End-to-end delivery of defined scope with fixed timeline and budget."
+      }
+    }
+  }
+}

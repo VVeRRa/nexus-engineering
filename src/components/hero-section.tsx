@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 export function HeroSection() {
+  const t = useTranslations("Home");
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -61,7 +63,7 @@ export function HeroSection() {
               className="text-[var(--color-slate-300)] text-sm"
               style={{ fontFamily: "var(--font-mono)" }}
             >
-              Trusted by EU & US Enterprise Teams
+              {t('kicker')}
             </span>
           </div>
         </div>
@@ -77,36 +79,7 @@ export function HeroSection() {
               animationFillMode: "forwards",
             }}
           >
-            Engineer your
-          </h1>
-          <h1
-            className="text-display-xl animate-fade-up opacity-0"
-            style={{
-              fontFamily: "var(--font-display)",
-              fontWeight: 800,
-              animationDelay: "200ms",
-              animationFillMode: "forwards",
-            }}
-          >
-            <span className="text-[var(--color-accent)] relative inline-block">
-              unfair
-              <svg
-                className="absolute -bottom-2 left-0 w-full"
-                viewBox="0 0 200 12"
-                fill="none"
-                preserveAspectRatio="none"
-              >
-                <path
-                  d="M2 8C50 2 150 2 198 8"
-                  stroke="var(--color-accent)"
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                  className="animate-[draw-line_1s_ease-out_0.5s_forwards]"
-                  style={{ strokeDasharray: 200, strokeDashoffset: 200 }}
-                />
-              </svg>
-            </span>{" "}
-            <span className="text-[var(--color-paper)]">advantage</span>
+            {t('highlights.h1.title')}
           </h1>
         </div>
 
@@ -119,10 +92,7 @@ export function HeroSection() {
             animationFillMode: "forwards",
           }}
         >
-          Precision-matched engineering talent that integrates seamlessly.
-          From startup MVPs to enterprise scale—we architect, build, and ship
-          products that{" "}
-          <span className="text-[var(--color-paper)]">define markets</span>.
+          {t('subheadline')}
         </p>
 
         {/* CTA Buttons */}
@@ -131,7 +101,7 @@ export function HeroSection() {
           style={{ animationDelay: "400ms", animationFillMode: "forwards" }}
         >
           <a href="#contact" className="btn btn-accent btn-lg group">
-            Start Your Project
+            {t('ctaPrimary')}
             <svg
               width="18"
               height="18"
@@ -149,44 +119,8 @@ export function HeroSection() {
             </svg>
           </a>
           <a href="#services" className="btn btn-ghost btn-lg">
-            Explore Services
+            {t('ctaSecondary')}
           </a>
-        </div>
-
-        {/* Stats Row */}
-        <div
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mt-20 pt-12 border-t border-[var(--color-slate-800)]/50 animate-fade-up opacity-0"
-          style={{ animationDelay: "500ms", animationFillMode: "forwards" }}
-        >
-          {[
-            { value: "150+", label: "Senior Engineers", suffix: "" },
-            { value: "40+", label: "Enterprise Clients", suffix: "" },
-            { value: "8", label: "Years Delivering", suffix: "+" },
-            { value: "98", label: "Client Retention", suffix: "%" },
-          ].map((stat, index) => (
-            <div key={index} className="group">
-              <div className="flex items-baseline gap-1">
-                <span
-                  className="text-4xl md:text-5xl text-[var(--color-paper)] transition-colors duration-300 group-hover:text-[var(--color-accent)]"
-                  style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
-                >
-                  {stat.value}
-                </span>
-                <span
-                  className="text-2xl md:text-3xl text-[var(--color-accent)]"
-                  style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
-                >
-                  {stat.suffix}
-                </span>
-              </div>
-              <div
-                className="text-sm text-[var(--color-slate-500)] mt-2"
-                style={{ fontFamily: "var(--font-mono)" }}
-              >
-                {stat.label}
-              </div>
-            </div>
-          ))}
         </div>
       </div>
 
@@ -196,7 +130,7 @@ export function HeroSection() {
           className="text-[var(--color-slate-600)] text-xs uppercase tracking-widest"
           style={{ fontFamily: "var(--font-mono)" }}
         >
-          Scroll
+          {t('scroll')}
         </span>
         <div className="w-6 h-10 rounded-full border-2 border-[var(--color-slate-700)] flex items-start justify-center p-2">
           <div className="w-1 h-2 bg-[var(--color-accent)] rounded-full animate-bounce" />
@@ -209,7 +143,7 @@ export function HeroSection() {
         style={{ fontFamily: "var(--font-mono)" }}
       >
         <span className="text-[var(--color-slate-700)] text-xs tracking-[0.3em] uppercase">
-          IT Staff Augmentation & Outsourcing
+          {t('sideText')}
         </span>
       </div>
     </section>

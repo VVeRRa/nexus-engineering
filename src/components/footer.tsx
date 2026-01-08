@@ -1,23 +1,28 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export function Footer() {
+  const t = useTranslations("Footer");
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     services: [
-      { label: "IT Leadership", href: "#services" },
-      { label: "Backend Development", href: "#services" },
-      { label: "Frontend Development", href: "#services" },
-      { label: "DevOps Engineering", href: "#services" },
+      { label: t("links.leadership"), href: "#services" },
+      { label: t("links.backend"), href: "#services" },
+      { label: t("links.frontend"), href: "#services" },
+      { label: t("links.devops"), href: "#services" },
     ],
     company: [
-      { label: "About Us", href: "#about" },
-      { label: "Case Studies", href: "#case-studies" },
-      { label: "Process", href: "#process" },
-      { label: "Contact", href: "#contact" },
+      { label: t("links.about"), href: "#about" },
+      { label: t("links.caseStudies"), href: "#case-studies" },
+      { label: t("links.process"), href: "#process" },
+      { label: t("links.contact"), href: "#contact" },
     ],
     industries: [
-      { label: "FinTech", href: "#industries" },
-      { label: "PropTech", href: "#industries" },
-      { label: "Enterprise", href: "#industries" },
+      { label: t("links.fintech"), href: "#industries" },
+      { label: t("links.proptech"), href: "#industries" },
+      { label: t("links.enterprise"), href: "#industries" },
     ],
   };
 
@@ -53,8 +58,7 @@ export function Footer() {
               </span>
             </a>
             <p className="text-[var(--color-slate-400)] mb-6 max-w-sm">
-              Elite IT staff augmentation for companies that refuse to compromise
-              on engineering quality.
+              {t("brandDesc")}
             </p>
             <a
               href="mailto:hello@nexus.engineering"
@@ -71,7 +75,7 @@ export function Footer() {
               className="text-[var(--color-paper)] mb-5"
               style={{ fontFamily: "var(--font-display)", fontWeight: 600 }}
             >
-              Services
+              {t("services")}
             </h4>
             <ul className="space-y-3">
               {footerLinks.services.map((link, index) => (
@@ -93,7 +97,7 @@ export function Footer() {
               className="text-[var(--color-paper)] mb-5"
               style={{ fontFamily: "var(--font-display)", fontWeight: 600 }}
             >
-              Company
+              {t("company")}
             </h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link, index) => (
@@ -115,7 +119,7 @@ export function Footer() {
               className="text-[var(--color-paper)] mb-5"
               style={{ fontFamily: "var(--font-display)", fontWeight: 600 }}
             >
-              Industries
+              {t("industries")}
             </h4>
             <ul className="space-y-3">
               {footerLinks.industries.map((link, index) => (
@@ -138,7 +142,7 @@ export function Footer() {
             className="text-sm text-[var(--color-slate-500)]"
             style={{ fontFamily: "var(--font-mono)" }}
           >
-            &copy; {currentYear} Nexus Engineering. All rights reserved.
+            &copy; {currentYear} {t("rights")}
           </p>
 
           {/* Social Links */}

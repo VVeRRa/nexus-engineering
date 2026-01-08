@@ -1,25 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useActionState } from "react";
+import { useTranslations } from "next-intl";
+import { sendEmail, ContactFormState } from "@/actions/send-email";
+
+const initialState: ContactFormState = {
+  message: "",
+  errors: {},
+  success: false,
+};
 
 export function ContactSection() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    company: "",
-    message: "",
-    projectType: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log("Form submitted:", formState);
-    setIsSubmitting(false);
-  };
+  const t = useTranslations("Contact");
+  const [state, formAction, isPending] = useActionState(sendEmail, initialState);
 
   return (
     <section id="contact" className="section bg-[var(--color-paper)] relative overflow-hidden">
@@ -31,18 +24,15 @@ export function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left Column */}
           <div>
-            <span className="section-label">Contact</span>
+            <span className="section-label">{t("label")}</span>
             <h2
               className="text-display-md text-[var(--color-ink)] mb-6"
               style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
             >
-              Let&apos;s build
-              <br />
-              something great
+              {t("title")}
             </h2>
             <p className="text-xl text-[var(--color-slate-600)] mb-10">
-              Whether you need a single specialist or a full team, we&apos;ll craft
-              an engagement that fits your needs and budget.
+              {t("description")}
             </p>
 
             {/* Contact Info */}
@@ -79,7 +69,7 @@ export function ContactSection() {
                     className="text-sm text-[var(--color-slate-500)]"
                     style={{ fontFamily: "var(--font-mono)" }}
                   >
-                    Response within 24 hours
+                    {t("response")}
                   </p>
                 </div>
               </a>
@@ -91,7 +81,7 @@ export function ContactSection() {
                 className="text-xs text-[var(--color-slate-500)] uppercase tracking-wider mb-4"
                 style={{ fontFamily: "var(--font-mono)" }}
               >
-                Trusted by industry leaders
+                {t("trusted")}
               </p>
               <div className="flex flex-wrap gap-6">
                 {["FinTech Co.", "PropTech Inc.", "Enterprise Corp.", "Startup X"].map(
@@ -115,113 +105,142 @@ export function ContactSection() {
               {/* Form Background Accent */}
               <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-[var(--color-accent)] rounded-full blur-[150px] opacity-10" />
 
-              <form onSubmit={handleSubmit} className="relative z-10 space-y-6">
-                <div className="grid md:grid-cols-2 gap-5">
+              {state.success ? (
+                <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[400px] text-center">
+                  <div className="w-16 h-16 bg-[var(--color-fintech)] rounded-full flex items-center justify-center mb-6">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl text-[var(--color-paper)] font-bold mb-2">{t("form.sent")}</h3>
+                  <p className="text-[var(--color-slate-400)]">{t("form.sentDesc")}</p>
+                </div>
+              ) : (
+                <form action={formAction} className="relative z-10 space-y-6">
+                  <div className="grid md:grid-cols-2 gap-5">
+                    <div>
+                      <label htmlFor="name" className="form-label text-[var(--color-slate-400)]">
+                        {t("form.name")}
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        className="form-input w-full bg-white border border-[var(--color-slate-200)] text-[var(--color-ink)] placeholder:text-[var(--color-slate-400)] focus:border-[var(--color-accent)] focus:ring-1 focus:ring-[var(--color-accent)] rounded-lg px-4 py-3 outline-none transition-all"
+                        placeholder={t("form.namePlaceholder")}
+                        aria-describedby="name-error"
+                      />
+                      {state.errors?.name && (
+                        <p id="name-error" className="mt-1 text-sm text-red-400">
+                          {state.errors.name[0]}
+                        </p>
+                      )}
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="form-label text-[var(--color-slate-400)]">
+                        {t("form.email")}
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        className="form-input w-full bg-white border border-[var(--color-slate-200)] text-[var(--color-ink)] placeholder:text-[var(--color-slate-400)] focus:border-[var(--color-accent)] focus:ring-1 focus:ring-[var(--color-accent)] rounded-lg px-4 py-3 outline-none transition-all"
+                        placeholder={t("form.emailPlaceholder")}
+                        aria-describedby="email-error"
+                      />
+                      {state.errors?.email && (
+                        <p id="email-error" className="mt-1 text-sm text-red-400">
+                          {state.errors.email[0]}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+
                   <div>
-                    <label htmlFor="name" className="form-label text-[var(--color-slate-400)]">
-                      Name
+                    <label htmlFor="company" className="form-label text-[var(--color-slate-400)]">
+                      {t("form.company")}
                     </label>
                     <input
                       type="text"
-                      id="name"
-                      value={formState.name}
-                      onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                      className="form-input bg-[var(--color-slate-900)] border-[var(--color-slate-700)] text-[var(--color-paper)] placeholder:text-[var(--color-slate-600)]"
-                      placeholder="John Smith"
-                      required
+                      id="company"
+                      name="company"
+                      className="form-input w-full bg-white border border-[var(--color-slate-200)] text-[var(--color-ink)] placeholder:text-[var(--color-slate-400)] focus:border-[var(--color-accent)] focus:ring-1 focus:ring-[var(--color-accent)] rounded-lg px-4 py-3 outline-none transition-all"
+                      placeholder={t("form.companyPlaceholder")}
                     />
                   </div>
+
                   <div>
-                    <label htmlFor="email" className="form-label text-[var(--color-slate-400)]">
-                      Email
+                    <label htmlFor="projectType" className="form-label text-[var(--color-slate-400)]">
+                      {t("form.projectType")}
                     </label>
-                    <input
-                      type="email"
-                      id="email"
-                      value={formState.email}
-                      onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                      className="form-input bg-[var(--color-slate-900)] border-[var(--color-slate-700)] text-[var(--color-paper)] placeholder:text-[var(--color-slate-600)]"
-                      placeholder="john@company.com"
-                      required
-                    />
+                    <select
+                      id="projectType"
+                      name="projectType"
+                      className="form-input form-select w-full bg-white border border-[var(--color-slate-200)] text-[var(--color-ink)] focus:border-[var(--color-accent)] focus:ring-1 focus:ring-[var(--color-accent)] rounded-lg px-4 py-3 outline-none transition-all appearance-none"
+                    >
+                      <option value="">{t("form.projectTypePlaceholder")}</option>
+                      <option value="augmentation">{t("form.types.augmentation")}</option>
+                      <option value="team">{t("form.types.team")}</option>
+                      <option value="project">{t("form.types.project")}</option>
+                      <option value="consulting">{t("form.types.consulting")}</option>
+                    </select>
                   </div>
-                </div>
 
-                <div>
-                  <label htmlFor="company" className="form-label text-[var(--color-slate-400)]">
-                    Company
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    value={formState.company}
-                    onChange={(e) => setFormState({ ...formState, company: e.target.value })}
-                    className="form-input bg-[var(--color-slate-900)] border-[var(--color-slate-700)] text-[var(--color-paper)] placeholder:text-[var(--color-slate-600)]"
-                    placeholder="Company Inc."
-                  />
-                </div>
+                  <div>
+                    <label htmlFor="message" className="form-label text-[var(--color-slate-400)]">
+                      {t("form.message")}
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={4}
+                      className="form-input form-textarea w-full bg-white border border-[var(--color-slate-200)] text-[var(--color-ink)] placeholder:text-[var(--color-slate-400)] focus:border-[var(--color-accent)] focus:ring-1 focus:ring-[var(--color-accent)] rounded-lg px-4 py-3 outline-none transition-all resize-none"
+                      placeholder={t("form.messagePlaceholder")}
+                      aria-describedby="message-error"
+                    />
+                    {state.errors?.message && (
+                      <p id="message-error" className="mt-1 text-sm text-red-400">
+                        {state.errors.message[0]}
+                      </p>
+                    )}
+                  </div>
 
-                <div>
-                  <label htmlFor="projectType" className="form-label text-[var(--color-slate-400)]">
-                    Project Type
-                  </label>
-                  <select
-                    id="projectType"
-                    value={formState.projectType}
-                    onChange={(e) => setFormState({ ...formState, projectType: e.target.value })}
-                    className="form-input form-select bg-[var(--color-slate-900)] border-[var(--color-slate-700)] text-[var(--color-paper)]"
-                  >
-                    <option value="">Select project type</option>
-                    <option value="augmentation">Staff Augmentation</option>
-                    <option value="team">Dedicated Team</option>
-                    <option value="project">Project-Based</option>
-                    <option value="consulting">Technical Consulting</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="form-label text-[var(--color-slate-400)]">
-                    Tell us about your project
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    value={formState.message}
-                    onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                    className="form-input form-textarea bg-[var(--color-slate-900)] border-[var(--color-slate-700)] text-[var(--color-paper)] placeholder:text-[var(--color-slate-600)]"
-                    placeholder="What are you building? What skills do you need?"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="btn btn-accent btn-lg w-full"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? (
-                    <span className="flex items-center gap-2">
-                      <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                      </svg>
-                      Sending...
-                    </span>
-                  ) : (
-                    <>
-                      Send Message
-                      <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
-                        <path
-                          d="M14 2L7 9M14 2L10 14L7 9M14 2L2 6L7 9"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </>
+                  {state.message && !state.success && (
+                    <div className="p-3 rounded bg-red-500/10 text-red-400 text-sm border border-red-500/20">
+                      {state.message}
+                    </div>
                   )}
-                </button>
-              </form>
+
+                  <button
+                    type="submit"
+                    className="btn btn-accent btn-lg w-full"
+                    disabled={isPending}
+                  >
+                    {isPending ? (
+                      <span className="flex items-center gap-2">
+                        <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                        </svg>
+                        {t("form.sending")}
+                      </span>
+                    ) : (
+                      <>
+                        {t("form.send")}
+                        <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+                          <path
+                            d="M14 2L7 9M14 2L10 14L7 9M14 2L2 6L7 9"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </>
+                    )}
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </div>

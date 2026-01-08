@@ -1,42 +1,46 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export function IndustriesSection() {
+  const t = useTranslations("Industries");
+
   const industries = [
     {
-      name: "FinTech",
+      name: t("fintech.name"),
       color: "var(--color-fintech)",
-      tagline: "Building the Future of Finance",
-      description:
-        "Payment processing, trading platforms, and banking infrastructure. PCI-DSS compliant systems handling billions in transactions.",
+      tagline: t("fintech.tagline"),
+      description: t("fintech.description"),
       highlights: [
-        "Real-time payment processing",
-        "Algorithmic trading systems",
-        "Regulatory compliance (PCI-DSS, SOC2)",
-        "Fraud detection & prevention",
+        t("fintech.highlights.0"),
+        t("fintech.highlights.1"),
+        t("fintech.highlights.2"),
+        t("fintech.highlights.3"),
       ],
-      stats: { value: "$2B+", label: "Transactions Processed" },
+      stats: { value: "$2B+", label: t("fintech.stats") },
     },
     {
-      name: "PropTech",
+      name: t("proptech.name"),
       color: "var(--color-proptech)",
-      tagline: "Transforming Real Estate",
-      description:
-        "Property management platforms, real estate marketplaces, and smart building systems that transform how we interact with spaces.",
+      tagline: t("proptech.tagline"),
+      description: t("proptech.description"),
       highlights: [
-        "Property listing platforms",
-        "IoT & smart building integration",
-        "Tenant management systems",
-        "Real estate analytics",
+        t("proptech.highlights.0"),
+        t("proptech.highlights.1"),
+        t("proptech.highlights.2"),
+        t("proptech.highlights.3"),
       ],
-      stats: { value: "50K+", label: "Properties Managed" },
+      stats: { value: "50K+", label: t("proptech.stats") },
     },
   ];
 
   const specializations = [
-    { name: "Cloud Solutions", icon: "cloud" },
-    { name: "Distributed Architecture", icon: "network" },
-    { name: "Team Scaling (0 to X)", icon: "scale" },
-    { name: "Startup Product Development", icon: "rocket" },
-    { name: "AI & Machine Learning", icon: "ai" },
-    { name: "System Migration", icon: "migrate" },
+    { name: t("specializations.cloud"), icon: "cloud" },
+    { name: t("specializations.distArch"), icon: "network" },
+    { name: t("specializations.scaling"), icon: "scale" },
+    { name: t("specializations.product"), icon: "rocket" },
+    { name: t("specializations.ai"), icon: "ai" },
+    { name: t("specializations.migration"), icon: "migrate" },
   ];
 
   return (
@@ -49,18 +53,17 @@ export function IndustriesSection() {
       <div className="container relative z-10">
         {/* Section Header */}
         <div className="max-w-3xl mb-20">
-          <span className="section-label section-label-light">Industry Expertise</span>
+          <span className="section-label section-label-light">{t("label")}</span>
           <h2
             className="text-display-md text-[var(--color-paper)] mb-6"
             style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
           >
-            Deep domain knowledge
+            {t("title")}
             <br />
-            <span className="text-[var(--color-slate-500)]">in high-stakes industries</span>
+            <span className="text-[var(--color-slate-500)]">{t("subtitle")}</span>
           </h2>
           <p className="text-xl text-[var(--color-slate-400)]">
-            We don&apos;t just write code—we understand the regulatory landscape,
-            user expectations, and business models that drive success.
+            {t("description")}
           </p>
         </div>
 
@@ -170,10 +173,10 @@ export function IndustriesSection() {
               className="text-2xl text-[var(--color-paper)]"
               style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
             >
-              Additional Specializations
+              {t("specializations.title")}
             </h3>
             <p className="text-[var(--color-slate-500)]">
-              Cross-industry expertise that drives results
+              {t("specializations.description")}
             </p>
           </div>
 
