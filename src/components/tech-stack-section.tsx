@@ -47,6 +47,15 @@ export function TechStackSection() {
         { name: "CI/CD", abbr: "CI" },
       ],
     },
+    {
+      name: t("categories.design"),
+      color: "var(--color-primary)",
+      techs: [
+        { name: "Figma", abbr: "Fi" },
+        { name: "Storybook", abbr: "Sb" },
+        { name: "Tailwind", abbr: "Tw" },
+      ],
+    },
   ];
 
   return (

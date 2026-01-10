@@ -7,6 +7,12 @@ export function ServicesSection() {
 
   const services = [
     {
+      id: "design",
+      icon: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+      )
+    },
+    {
       id: "leadership",
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
@@ -41,12 +47,6 @@ export function ServicesSection() {
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
       )
-    },
-    {
-      id: "design",
-      icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
-      )
     }
   ];
 
@@ -74,7 +74,7 @@ export function ServicesSection() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-on-scroll stagger-children">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
             const tags = (t.raw(`list.${service.id}.tags`) as string[]) || [];
             const isEven = index % 2 === 0;
@@ -86,7 +86,7 @@ export function ServicesSection() {
             return (
               <div
                 key={index}
-                className={`group bg-gradient-to-br ${themeClass} border rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 transform-gpu`}
+                className={`group bg-gradient-to-br ${themeClass} border rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-100`}
               >
                 {/* Icon */}
                 <div

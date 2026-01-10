@@ -17,7 +17,7 @@ export function IndustriesSection() {
         t("fintech.highlights.2"),
         t("fintech.highlights.3"),
       ],
-      stats: { value: "12B+", label: t("fintech.stats") },
+      stats: { value: "", label: t("fintech.stats") },
     },
     {
       name: t("proptech.name"),
@@ -30,7 +30,7 @@ export function IndustriesSection() {
         t("proptech.highlights.2"),
         t("proptech.highlights.3"),
       ],
-      stats: { value: "150K+", label: t("proptech.stats") },
+      stats: { value: "", label: t("proptech.stats") },
     },
   ];
 

@@ -99,8 +99,8 @@ export function ProcessSection() {
                       {index + 1}
                     </div>
                     <h3
-                      className="text-2xl text-slate-900 dark:text-white mb-3"
-                      style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
+                      className="text-2xl font-bold text-[var(--color-ink)] mb-4"
+                      style={{ fontFamily: "var(--font-display)" }}
                     >
                       {step.title}
                     </h3>

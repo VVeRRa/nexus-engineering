@@ -74,13 +74,14 @@ export function ContactSection() {
               </button>
             </div>
 
-            <div className="flex items-center gap-4 text-slate-400 text-sm mt-12">
-              <span>Trusted by</span>
-              <div className="flex gap-4 opacity-60 grayscale">
+            <div className="flex items-center gap-4 text-sm mt-12" style={{ color: "#64748b" }}>
+              <span className="font-bold">Trusted by</span>
+              <div className="flex gap-4 opacity-100 grayscale">
                 {/* Placeholders for logos */}
-                <div className="h-6 w-20 bg-slate-200 rounded"></div>
-                <div className="h-6 w-20 bg-slate-200 rounded"></div>
-                <div className="h-6 w-20 bg-slate-200 rounded"></div>
+                {/* Placeholders for logos */}
+                <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold" style={{ backgroundColor: "#e2e8f0", color: "#64748b" }}>FinTech</div>
+                <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold" style={{ backgroundColor: "#e2e8f0", color: "#64748b" }}>PropTech</div>
+                <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold" style={{ backgroundColor: "#e2e8f0", color: "#64748b" }}>Enterprise</div>
               </div>
             </div>
 
