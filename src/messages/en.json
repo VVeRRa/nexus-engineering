@@ -295,7 +295,7 @@
       "stats": "Properties Managed",
       "highlights": [
         "Property listing platforms",
-        "Complex system integration",
+        "RESO & Open Immo Standards",
         "Tenant management systems",
         "Real estate analytics"
       ]
@@ -305,15 +305,15 @@
       "description": "Cross-industry expertise that drives results",
       "cloud": "Cloud Solutions",
       "distArch": "Distributed Architecture",
-      "scaling": "Team Scaling (0 to X)",
+      "scaling": "Ecosystems",
       "product": "Startup Product Development",
-      "ai": "AI",
+      "ai": "AI Implementation",
       "migration": "System Migration"
     }
   },
   "TechStack": {
     "label": "Technology",
-    "title": "Battle-tested stack",
+    "title": "Market-tested stack",
     "description": "We work with the technologies that power the world's most demanding applications. No experiments on your dime—proven tools, proven results.",
     "cta": "Discuss Your Tech Needs",
     "statement": "Our engineers stay current with evolving technologies while maintaining deep expertise in battle-tested solutions. We choose the right tool for each job.",
@@ -463,6 +463,27 @@
       "project": {
         "title": "Project-Based",
         "desc": "End-to-end delivery of defined scope with fixed timeline and budget."
+      }
+    }
+  },
+  "FAQ": {
+    "title": "FAQ",
+    "items": {
+      "start": {
+        "question": "How quickly can you start?",
+        "answer": "We typically start within 48 hours of our initial consultation. Our process is streamlined to get us integrated with your team as fast as possible."
+      },
+      "timezone": {
+        "question": "Do you work in my time zone?",
+        "answer": "Yes, we are based in the EU but work across US and European time zones. We ensure at least 4 hours of overlap with your core working hours."
+      },
+      "pricing": {
+        "question": "What is your pricing model?",
+        "answer": "We offer both staff augmentation (hourly/monthly rates) and project-based fixed pricing, depending on your needs. Contact us for a detailed quote."
+      },
+      "pm": {
+        "question": "Do you provide Project Managers?",
+        "answer": "Yes, if needed. However, our senior engineers are self-organizing and capable of working directly with your product owners."
       }
     }
   }

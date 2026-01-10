@@ -295,7 +295,7 @@
       "stats": "Verwaltete Immobilien",
       "highlights": [
         "Immobilien-Listing-Plattformen",
-        "Komplexe Systemintegration",
+        "RESO & Open Immo Standards",
         "Mieterverwaltungssysteme",
         "Immobilien-Analytik"
       ]
@@ -305,15 +305,15 @@
       "description": "Branchenübergreifende Expertise, die Ergebnisse liefert",
       "cloud": "Cloud-Lösungen",
       "distArch": "Verteilte Architektur",
-      "scaling": "Team-Skalierung (0 auf X)",
+      "scaling": "Ökosysteme",
       "product": "Startup-Produktentwicklung",
-      "ai": "AI",
+      "ai": "AI-Implementierung",
       "migration": "Systemmigration"
     }
   },
   "TechStack": {
     "label": "Technologie",
-    "title": "Kampferprobter Stack",
+    "title": "Markterprobter Stack",
     "description": "Wir arbeiten mit Technologien, die die anspruchsvollsten Anwendungen der Welt antreiben. Keine Experimente auf Ihre Kosten – bewährte Tools, bewährte Ergebnisse.",
     "cta": "Besprechen Sie Ihre Tech-Bedürfnisse",
     "statement": "Unsere Ingenieure bleiben bei sich entwickelnden Technologien auf dem Laufenden und bewahren gleichzeitig tiefe Expertise in kampferprobten Lösungen. Wir wählen das richtige Werkzeug für jeden Job.",
@@ -463,6 +463,27 @@
       "project": {
         "title": "Projektbasiert",
         "desc": "End-to-End-Lieferung eines definierten Umfangs mit festem Zeitplan und Budget."
+      }
+    }
+  },
+  "FAQ": {
+    "title": "FAQ",
+    "items": {
+      "start": {
+        "question": "Wie schnell könnt ihr starten?",
+        "answer": "Wir starten typischerweise innerhalb von 48 Stunden nach unserer Erstberatung. Unser Prozess ist darauf ausgelegt, uns so schnell wie möglich in Ihr Team zu integrieren."
+      },
+      "timezone": {
+        "question": "Arbeitet ihr in meiner Zeitzone?",
+        "answer": "Ja, wir sind in der EU ansässig, arbeiten aber über US- und europäische Zeitzonen hinweg. Wir garantieren mindestens 4 Stunden Überschneidung mit Ihren Kernarbeitszeiten."
+      },
+      "pricing": {
+        "question": "Was ist euer Preismodell?",
+        "answer": "Wir bieten sowohl Personalverstärkung (Stunden-/Monatssätze) als auch projektbasierte Festpreise an, je nach Ihren Bedürfnissen. Kontaktieren Sie uns für ein detailliertes Angebot."
+      },
+      "pm": {
+        "question": "Stellt ihr Projektmanager?",
+        "answer": "Ja, bei Bedarf. Unsere Senior-Ingenieure sind jedoch selbstorganisiert und in der Lage, direkt mit Ihren Product Owners zusammenzuarbeiten."
       }
     }
   }

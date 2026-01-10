@@ -36,7 +36,7 @@ export function CaseStudiesSection() {
   ];
 
   return (
-    <section id="case-studies" className="section bg-slate-50 relative overflow-hidden py-24">
+    <section id="case-studies" className="section bg-[var(--color-paper)] relative overflow-hidden py-24">
 
       <div className="container relative z-10">
         {/* Section Header */}

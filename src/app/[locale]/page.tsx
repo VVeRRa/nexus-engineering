@@ -40,7 +40,7 @@ export default function Home() {
       elements.forEach((el) => observer.observe(el));
     }, 100);
 
-    // Fail-safe: If observer doesn't trigger within 500ms (e.g. rapid scroll or mobile lag), force visibility
+    // Fail-safe: If observer doesn't trigger within 2000ms (e.g. rapid scroll or mobile lag), force visibility
     // This prevents the "white gap" issue where users scroll faster than the observer fires.
     const timeout = setTimeout(() => {
       const elements = document.querySelectorAll(".animate-on-scroll");
@@ -49,7 +49,7 @@ export default function Home() {
           el.classList.add("is-visible");
         }
       });
-    }, 500);
+    }, 2000);
 
     return () => {
       observer.disconnect();

@@ -295,7 +295,7 @@
       "stats": "Spravovaných nemovitostí",
       "highlights": [
         "Platformy pro výpis nemovitostí",
-        "Komplexní systémová integrace",
+        "Standardy RESO a Open Immo",
         "Systémy pro správu nájemníků",
         "Analytika nemovitostí"
       ]
@@ -305,15 +305,15 @@
       "description": "Expertíza napříč odvětvími, která přináší výsledky",
       "cloud": "Cloudová řešení",
       "distArch": "Distribuovaná architektura",
-      "scaling": "Škálování týmů (0 na X)",
+      "scaling": "Ekosystémy",
       "product": "Vývoj startupových produktů",
-      "ai": "AI",
+      "ai": "Implementace AI",
       "migration": "Migrace systémů"
     }
   },
   "TechStack": {
     "label": "Technologie",
-    "title": "Ověřený stack",
+    "title": "Trhem prověřený stack",
     "description": "Pracujeme s technologiemi, které pohánějí nejnáročnější aplikace světa. Žádné experimenty na váš účet – ověřené nástroje, ověřené výsledky.",
     "cta": "Probrat vaše potřeby",
     "statement": "Naši inženýři sledují vyvíjející se technologie a zároveň si udržují hlubokou expertízu v řešeních prověřených bojem. Pro každou práci volíme ten správný nástroj.",
@@ -457,6 +457,27 @@
       "project": {
         "title": "Projektová báze",
         "desc": "End-to-end dodávka definovaného rozsahu s pevným harmonogramem a rozpočtem."
+      }
+    }
+  },
+  "FAQ": {
+    "title": "Časté dotazy",
+    "items": {
+      "start": {
+        "question": "Jak rychle můžete začít?",
+        "answer": "Obvykle začínáme do 48 hodin od úvodní konzultace. Náš proces je nastaven tak, abychom se co nejrychleji integrovali do vašeho týmu."
+      },
+      "timezone": {
+        "question": "Pracujete v mém časovém pásmu?",
+        "answer": "Ano, sídlíme v EU, ale pracujeme napříč americkými a evropskými časovými pásmy. Zaručujeme alespoň 4 hodiny překryvu s vaší hlavní pracovní dobou."
+      },
+      "pricing": {
+        "question": "Jaký je váš cenový model?",
+        "answer": "Nabízíme jak staff augmentation (hodinové/měsíční sazby), tak projektové ceny s pevným rozpočtem, v závislosti na vašich potřebách. Kontaktujte nás pro detailní nabídku."
+      },
+      "pm": {
+        "question": "Poskytujete projektové manažery?",
+        "answer": "Ano, pokud je to potřeba. Nicméně naši seniorní inženýři jsou samoorganizovaní a schopní pracovat přímo s vašimi Product Ownery."
       }
     }
   }

@@ -17,7 +17,7 @@ export function IndustriesSection() {
         t("fintech.highlights.2"),
         t("fintech.highlights.3"),
       ],
-      stats: { value: "$2B+", label: t("fintech.stats") },
+      stats: { value: "12B+", label: t("fintech.stats") },
     },
     {
       name: t("proptech.name"),
@@ -30,7 +30,7 @@ export function IndustriesSection() {
         t("proptech.highlights.2"),
         t("proptech.highlights.3"),
       ],
-      stats: { value: "50K+", label: t("proptech.stats") },
+      stats: { value: "150K+", label: t("proptech.stats") },
     },
   ];
 
@@ -44,7 +44,7 @@ export function IndustriesSection() {
   ];
 
   return (
-    <section id="industries" className="section bg-white relative overflow-hidden py-24">
+    <section id="industries" className="section bg-[var(--color-paper)] relative overflow-hidden py-24">
       {/* Background with Blue Gradient Accent */}
       {/* Background with Blue Gradient Accent - Radial Gradient */}
       <div
@@ -59,14 +59,14 @@ export function IndustriesSection() {
             {t("label")}
           </span>
           <h2
-            className="text-4xl md:text-5xl text-slate-900 mb-6"
+            className="text-4xl md:text-5xl text-[var(--color-ink)] mb-6"
             style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
           >
             {t("title")}
             <br />
-            <span className="text-slate-400">{t("subtitle")}</span>
+            <span className="text-[var(--color-text-secondary)]">{t("subtitle")}</span>
           </h2>
-          <p className="text-xl text-slate-500">
+          <p className="text-xl text-[var(--color-text-secondary)]">
             {t("description")}
           </p>
         </div>
@@ -76,7 +76,8 @@ export function IndustriesSection() {
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="group relative rounded-3xl overflow-hidden bg-gradient-to-br from-white to-blue-50/50 border border-blue-100 p-10 md:p-12 hover:shadow-xl transition-all duration-300"
+              className={`group relative rounded-3xl overflow-hidden bg-gradient-to-br from-[var(--color-card-from)] ${index === 0 ? "to-[var(--color-card-to-blue)] border-[var(--color-card-border-blue)]" : "to-[var(--color-card-to-green)] border-[var(--color-card-border-green)]"
+                } border p-10 md:p-12 hover:shadow-xl transition-all duration-300`}
             >
               <div className="flex items-start justify-between mb-8">
                 <div>
@@ -86,7 +87,7 @@ export function IndustriesSection() {
                     style={{ background: industry.color }}
                   />
                   <h3
-                    className="text-3xl md:text-4xl text-slate-900 mb-2"
+                    className="text-3xl md:text-4xl text-[var(--color-ink)] mb-2"
                     style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
                   >
                     {industry.name}
@@ -102,13 +103,13 @@ export function IndustriesSection() {
                 {/* Stats Badge */}
                 <div className="text-right">
                   <div
-                    className="text-3xl text-slate-900"
+                    className="text-3xl text-[var(--color-ink)]"
                     style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
                   >
                     {industry.stats.value}
                   </div>
                   <div
-                    className="text-xs text-slate-500"
+                    className="text-xs text-[var(--color-text-secondary)]"
                     style={{ fontFamily: "var(--font-mono)" }}
                   >
                     {industry.stats.label}
@@ -117,7 +118,7 @@ export function IndustriesSection() {
               </div>
 
               {/* Description */}
-              <p className="text-slate-500 mb-8 leading-relaxed">
+              <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">
                 {industry.description}
               </p>
 
@@ -126,7 +127,7 @@ export function IndustriesSection() {
                 {industry.highlights.map((highlight, hIndex) => (
                   <li
                     key={hIndex}
-                    className="flex items-center gap-3 text-slate-600"
+                    className="flex items-center gap-3 text-[var(--color-text-secondary)]"
                   >
                     <span
                       className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
@@ -146,20 +147,32 @@ export function IndustriesSection() {
                   </li>
                 ))}
               </ul>
+
+              {/* Learn More Button */}
+              <div
+                className={`w-10 h-10 rounded-full flex items-center justify-center mt-8 transition-all duration-300 ${index === 0
+                  ? "bg-[var(--color-primary)] text-white shadow-lg shadow-blue-500/30"
+                  : "bg-[var(--color-secondary)] text-white shadow-lg shadow-green-500/30"
+                  }`}
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
             </div>
           ))}
         </div>
 
         {/* Specializations */}
-        <div className="mt-20 pt-16 border-t border-slate-100">
+        <div className="mt-20 pt-16 border-t border-slate-100 dark:border-slate-800">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10">
             <h3
-              className="text-2xl text-slate-900"
+              className="text-2xl text-slate-900 dark:text-white"
               style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
             >
               {t("specializations.title")}
             </h3>
-            <p className="text-slate-500">
+            <p className="text-[var(--color-text-secondary)]">
               {t("specializations.description")}
             </p>
           </div>
@@ -168,11 +181,11 @@ export function IndustriesSection() {
             {specializations.map((spec, index) => (
               <div
                 key={index}
-                className="group relative p-5 rounded-xl border border-slate-200 hover:border-blue-200 hover:shadow-md transition-all duration-300 cursor-default bg-white"
+                className="group relative p-5 rounded-xl border border-[var(--color-border)] hover:border-blue-200 transition-all duration-300 cursor-default bg-[var(--color-surface)]"
               >
                 <div className="text-center">
                   <span
-                    className="block text-sm text-slate-600 group-hover:text-[var(--color-primary)] transition-colors duration-300 font-medium"
+                    className="block text-sm text-[var(--color-text-secondary)] group-hover:text-[var(--color-primary)] transition-colors duration-300 font-medium"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {spec.name}

@@ -1,0 +1,490 @@
+{
+    "Brand": {
+        "name": "Solving Crew",
+        "short": "Del problema a la producción",
+        "promise": "Del problema a la producción — con las personas adecuadas.",
+        "playful": "Resolvemos todos sus problemas.",
+        "description": "Ingeniería de producto liderada por seniors. Comience con los roles que necesita y escale a medida que sus proyectos crecen."
+    },
+    "Nav": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "expertise": "Experiencia",
+        "technology": "Tecnología",
+        "team": "Equipo",
+        "contact": "Contacto",
+        "getInTouch": "Hablemos"
+    },
+    "Common": {
+        "step": "Paso"
+    },
+    "Footer": {
+        "brandDesc": "Aumento de personal de TI de élite para empresas que se niegan a comprometer la calidad de la ingeniería.",
+        "services": "Servicios",
+        "company": "Empresa",
+        "industries": "Industrias",
+        "rights": "Nexus Engineering. Todos los derechos reservados.",
+        "links": {
+            "leadership": "Liderazgo TI",
+            "backend": "Desarrollo Backend",
+            "frontend": "Desarrollo Frontend",
+            "devops": "Ingeniería DevOps",
+            "about": "Nosotros",
+            "caseStudies": "Casos de Estudio",
+            "process": "Proceso",
+            "contact": "Contacto",
+            "fintech": "FinTech",
+            "proptech": "PropTech",
+            "enterprise": "Enterprise"
+        }
+    },
+    "Home": {
+        "kicker": "Socio de ingeniería de producto liderado por seniors",
+        "subheadline": "Experiencia en PropTech y FinTech • Entrega desde la UE • Empiece pequeño y escale según su pipeline.",
+        "ctaPrimary": "Contáctenos",
+        "ctaSecondary": "Ver servicios",
+        "scroll": "Desplazarse",
+        "sideText": "Aumento de Personal TI & Outsourcing",
+        "highlights": {
+            "h1": {
+                "badge": "Prioridad en la solución",
+                "title": "Resolvemos restricciones, no organigramas",
+                "text": "Proponemos el equipo más pequeño que desbloquea el progreso — y escalamos solo cuando vale la pena."
+            },
+            "h2": {
+                "badge": "Mentalidad de producción",
+                "title": "Build + run, con fiabilidad",
+                "text": "IaC, observabilidad, CI/CD y pruebas son parte de la entrega — no una idea de último momento."
+            },
+            "h3": {
+                "badge": "Dominios serios",
+                "title": "PropTech, FinTech, B2B SaaS",
+                "text": "Integraciones, sistemas pesados en datos y entornos regulados donde la fiabilidad importa."
+            }
+        },
+        "heroBullets": [
+            {
+                "title": "Equipo pequeño, liderado por seniors",
+                "text": "Nos unimos como un equipo compacto que desbloquea la entrega rápidamente."
+            },
+            {
+                "title": "Entrega 'Production-first'",
+                "text": "CI/CD, observabilidad y calidad son parte de la entrega — no después."
+            },
+            {
+                "title": "Profundidad de dominio",
+                "text": "Experiencia en PropTech y FinTech para sistemas ricos en integraciones y datos."
+            }
+        ],
+        "heroChip": "Respuesta típica en 24h",
+        "stackTitle": "Stack tecnológico principal",
+        "stackNote": "Arquitectura de alto rendimiento y orientada a eventos en todo el stack.",
+        "stack": [
+            "Java (Quarkus/Spring)",
+            "Node.js",
+            "Go",
+            "React",
+            "Next.js",
+            "TypeScript",
+            "Postgres",
+            "NATS JetStream",
+            "ElasticSearch",
+            "Valkey/Redis",
+            "Kubernetes",
+            "Terraform",
+            "Prometheus/Grafana/Loki",
+            "AWS (EKS)",
+            "Playwright/Cypress",
+            "Figma"
+        ],
+        "ctaBlock": {
+            "title": "Cuéntenos qué le bloquea",
+            "text": "Un rol, un pequeño pod o un carril de entrega — propondremos una forma que se ajuste.",
+            "button": "Iniciar la conversación"
+        }
+    },
+    "Services": {
+        "title": "Servicios",
+        "lead": "Desde el liderazgo estratégico hasta la implementación práctica, proporcionamos la experiencia técnica que necesita.",
+        "list": {
+            "leadership": {
+                "title": "Liderazgo TI",
+                "subtitle": "Dirección Estratégica",
+                "description": "CTOs fraccionales y Directores Técnicos que alinean la estrategia tecnológica con los objetivos comerciales. Revisiones de arquitectura y planificación de roadmap.",
+                "tags": [
+                    "CTO-as-a-Service",
+                    "Estrategia Tech",
+                    "Arquitectura"
+                ]
+            },
+            "backend": {
+                "title": "Desarrollo Backend",
+                "subtitle": "Sistemas Escalables",
+                "description": "APIs robustas y microservicios escalables. Sistemas de alto rendimiento que manejan millones de transacciones. Arquitecturas orientadas a eventos.",
+                "tags": [
+                    "Java",
+                    "Go",
+                    "Node.js",
+                    "PostgreSQL"
+                ]
+            },
+            "frontend": {
+                "title": "Desarrollo Frontend",
+                "subtitle": "Interfaces Excepcionales",
+                "description": "Interfaces pixel-perfect con una UX excepcional. Bibliotecas de componentes, sistemas de diseño y SPAs de alto rendimiento.",
+                "tags": [
+                    "React",
+                    "TypeScript",
+                    "Next.js"
+                ]
+            },
+            "qa": {
+                "title": "Ingeniería QA",
+                "subtitle": "Aseguramiento de Calidad",
+                "description": "Estrategias de prueba completas que detectan errores antes que los usuarios. Pruebas manuales y automatizadas, pruebas de rendimiento.",
+                "tags": [
+                    "Selenium",
+                    "Cypress",
+                    "Rendimiento"
+                ]
+            },
+            "devops": {
+                "title": "Ingeniería DevOps",
+                "subtitle": "Excelencia en Infraestructura",
+                "description": "Pipelines CI/CD para implementar con confianza. Infraestructura como código, orquestación de contenedores y observabilidad.",
+                "tags": [
+                    "AWS",
+                    "Kubernetes",
+                    "Terraform"
+                ]
+            },
+            "product": {
+                "title": "Gestión de Producto",
+                "subtitle": "De la Visión a la Ejecución",
+                "description": "Líderes de producto que cierran la brecha entre visión y ejecución. Desarrollo de roadmap, alineación de partes interesadas y priorización.",
+                "tags": [
+                    "Estrategia",
+                    "Agile",
+                    "Analytics"
+                ]
+            },
+            "design": {
+                "title": "Diseño de Producto",
+                "subtitle": "Excelencia UI/UX",
+                "description": "Diseño centrado en el usuario que resuelve problemas reales. Wireframing, prototipos y diseño de UI de alta fidelidad.",
+                "tags": [
+                    "Figma",
+                    "Adobe Creative Suite",
+                    "Design Systems"
+                ]
+            }
+        },
+        "cta": {
+            "question": "¿Necesita una solución personalizada?",
+            "button": "Hablemos de sus necesidades"
+        }
+    },
+    "Expertise": {
+        "title": "Experiencia",
+        "lead": "Trabajamos en dominios complejos donde la fiabilidad, la velocidad y la claridad importan.",
+        "capabilitiesTitle": "Capacidades",
+        "capabilities": [
+            "Ingeniería de producto (del descubrimiento a la producción)",
+            "Arquitectura y liderazgo técnico",
+            "Backend de alta carga y sistemas orientados a eventos",
+            "Integraciones con gran volumen de datos y APIs",
+            "Cloud y DevOps (Kubernetes, IaC, observabilidad)",
+            "Automatización de QA e ingeniería de calidad",
+            "Sistemas de diseño y entrega de UX"
+        ],
+        "areas": {
+            "proptech": {
+                "title": "PropTech",
+                "text": "Listados, valoración, integraciones, flujos de trabajo de back-office, informes y portales de clientes."
+            },
+            "fintech": {
+                "title": "FinTech",
+                "text": "Pagos, identidad, flujos sensibles al cumplimiento y entrega auditable."
+            },
+            "highload": {
+                "title": "Alta carga y plataformas",
+                "text": "Arquitectura orientada a eventos, rendimiento, escalabilidad, observabilidad y operaciones."
+            }
+        },
+        "areasBadge": {
+            "proptech": {
+                "badge": "PropTech"
+            },
+            "fintech": {
+                "badge": "FinTech"
+            },
+            "highload": {
+                "badge": "Alta carga"
+            }
+        }
+    },
+    "Technology": {
+        "title": "Tecnología",
+        "lead": "Stack moderno, ingeniería orientada a la producción y opciones pragmáticas basadas en restricciones.",
+        "sectionsTitle": "Áreas tecnológicas",
+        "principlesTitle": "Principios",
+        "principles": [
+            "Entregar pequeños incrementos",
+            "Hacerlo observable",
+            "Automatizar la calidad",
+            "Diseñar para la propiedad",
+            "Mantener baja la carga operativa",
+            "Medir el impacto"
+        ],
+        "sections": {
+            "backend": {
+                "title": "Backend",
+                "text": "Java (Quarkus/Spring), Node.js, Go • microservicios • REST/GraphQL • mensajería orientada a eventos."
+            },
+            "frontend": {
+                "title": "Frontend",
+                "text": "React, Next.js, TypeScript • sistemas de diseño • UI accesible • rendimiento."
+            },
+            "mobile": {
+                "title": "Móvil",
+                "text": "Entrega móvil pragmática cuando sea necesario (híbrido o nativo dependiendo de las restricciones)."
+            },
+            "platform": {
+                "title": "Plataforma y Nube",
+                "text": "Infraestructura lista para producción, CI/CD y observabilidad."
+            },
+            "data": {
+                "title": "Datos y búsqueda",
+                "text": "Postgres, ElasticSearch • pipelines de datos • modelos amigables para analítica."
+            },
+            "quality": {
+                "title": "Ingeniería de calidad",
+                "text": "Mentalidad 'Automation-first' • Playwright/Cypress • pruebas de contrato donde valga la pena."
+            },
+            "design": {
+                "title": "Diseño",
+                "text": "Entrega impulsada por Figma • prototipos UX • sistemas de diseño y bibliotecas de componentes."
+            }
+        }
+    },
+    "Team": {
+        "title": "Equipo",
+        "comingSoon": "Los perfiles y detalles de liderazgo se publicarán en febrero de 2026."
+    },
+    "Industries": {
+        "label": "Experiencia en la Industria",
+        "title": "Profundo conocimiento del dominio",
+        "subtitle": "en industrias de alto riesgo",
+        "description": "No solo escribimos código: entendemos el panorama regulatorio, las expectativas de los usuarios y los modelos de negocio que impulsan el éxito.",
+        "fintech": {
+            "name": "FinTech",
+            "tagline": "Construyendo el Futuro de las Finanzas",
+            "description": "Procesamiento de pagos, plataformas de trading e infraestructura bancaria. Sistemas compatibles con PCI-DSS que manejan miles de millones en transacciones.",
+            "stats": "Transacciones Procesadas",
+            "highlights": [
+                "Procesamiento de pagos en tiempo real",
+                "Sistemas de trading algorítmico",
+                "Cumplimiento regulatorio (PCI-DSS, SOC2)",
+                "Detección y prevención de fraudes"
+            ]
+        },
+        "proptech": {
+            "name": "PropTech",
+            "tagline": "Transformando el Sector Inmobiliario",
+            "description": "Plataformas de gestión de propiedades y mercados inmobiliarios que transforman cómo interactuamos con los espacios.",
+            "stats": "Propiedades Gestionadas",
+            "highlights": [
+                "Plataformas de listado de propiedades",
+                "Estándares RESO & Open Immo",
+                "Sistemas de gestión de inquilinos",
+                "Analítica inmobiliaria"
+            ]
+        },
+        "specializations": {
+            "title": "Especializaciones Adicionales",
+            "description": "Experiencia interindustrial que impulsa resultados",
+            "cloud": "Soluciones en la Nube",
+            "distArch": "Arquitectura Distribuida",
+            "scaling": "Ecosistemas",
+            "product": "Desarrollo de Productos Startup",
+            "ai": "Implementación de IA",
+            "migration": "Migración de Sistemas"
+        }
+    },
+    "TechStack": {
+        "label": "Tecnología",
+        "title": "Stack probado en el mercado",
+        "description": "Trabajamos con las tecnologías que impulsan las aplicaciones más exigentes del mundo. Sin experimentos a su costa: herramientas probadas, resultados probados.",
+        "cta": "Discuta sus Necesidades Tecnológicas",
+        "statement": "Nuestros ingenieros se mantienen al día con tecnologías en evolución mientras mantienen una profunda experiencia en soluciones probadas en batalla. Elegimos la herramienta adecuada para cada trabajo.",
+        "categories": {
+            "languages": "Lenguajes y Frameworks",
+            "data": "Datos y Almacenamiento",
+            "cloud": "Nube y DevOps",
+            "methodology": "Metodología e IA"
+        }
+    },
+    "CaseStudies": {
+        "label": "Casos de Estudio",
+        "title": "Impacto comprobado",
+        "viewAll": "Ver Todos los Proyectos",
+        "fintech": {
+            "category": "FinTech",
+            "title": "Plataforma de Procesamiento de Pagos",
+            "description": "Diseñamos y construimos una pasarela de pagos en tiempo real robusta, diseñada para alta fiabilidad y procesamiento rápido de transacciones. El sistema garantiza operaciones financieras fluidas con enfoque en seguridad y cero tiempo de inactividad."
+        },
+        "proptech": {
+            "category": "PropTech",
+            "title": "Suite de Gestión Inmobiliaria",
+            "description": "Una plataforma integral de extremo a extremo que agiliza las operaciones inmobiliarias. Desde la incorporación de inquilinos hasta las solicitudes de mantenimiento, nuestra solución moderniza todo el ciclo de vida de la gestión de bienes raíces."
+        },
+        "enterprise": {
+            "category": "Enterprise",
+            "title": "Migración a la Nube",
+            "description": "Transformación exitosa de un sistema monolítico heredado en una arquitectura de microservicios moderna y escalable. Esta modernización mejoró significativamente la velocidad de implementación y la eficiencia operativa."
+        },
+        "testimonials": {
+            "text": "Los ingenieros de Nexus se integraron perfectamente con nuestro equipo y entregaron más allá de las expectativas. No son proveedores, son socios.",
+            "author": "Sarah Chen",
+            "role": "CTO, FinTech Startup",
+            "cta": "Comience Su Historia de Éxito"
+        }
+    },
+    "Contact": {
+        "label": "Contacto",
+        "title": "Construyamos algo grande",
+        "description": "Ya sea que necesite un solo especialista o un equipo completo, elaboraremos un compromiso que se ajuste a sus necesidades y presupuesto.",
+        "response": "Respuesta en 24 horas",
+        "trusted": "Confiado por líderes de la industria",
+        "form": {
+            "name": "Nombre",
+            "namePlaceholder": "Juan Pérez",
+            "email": "Correo",
+            "emailPlaceholder": "juan@empresa.com",
+            "company": "Empresa",
+            "companyPlaceholder": "Empresa S.A.",
+            "projectType": "Tipo de Proyecto",
+            "projectTypePlaceholder": "Seleccione tipo de proyecto",
+            "message": "Cuéntenos sobre su proyecto",
+            "messagePlaceholder": "¿Qué está construyendo? ¿Qué habilidades necesita?",
+            "send": "Enviar Mensaje",
+            "sending": "Enviando...",
+            "sent": "¡Mensaje Enviado!",
+            "sentDesc": "Nos pondremos en contacto con usted en 24 horas.",
+            "types": {
+                "augmentation": "Aumento de Personal",
+                "team": "Equipo Dedicado",
+                "project": "Basado en Proyecto",
+                "consulting": "Consultoría Técnica"
+            }
+        }
+    },
+    "About": {
+        "label": "Sobre Nosotros",
+        "title": "Socios de ingeniería, no proveedores",
+        "description1": "Fundamos Nexus porque vimos cuán roto estaba el outsourcing de TI. Incentivos desalineados, brechas de comunicación, lotería de talentos. Construimos algo mejor.",
+        "description2": "Nuestros ingenieros trabajan desde zonas horarias europeas con una superposición significativa con las horas hábiles de la UE y los EE. UU. Hablamos su idioma, literal y técnicamente, y tratamos su código como si fuera nuestro.",
+        "stats": {
+            "timezone": "Cobertura de Zona Horaria",
+            "fluency": "Fluidez en Inglés"
+        },
+        "values": {
+            "excellence": {
+                "title": "Excelencia en Ingeniería",
+                "desc": "Contratamos ingenieros de élite e invertimos continuamente en su crecimiento para garantizar una entrega de primer nivel."
+            },
+            "transparent": {
+                "title": "Asociación Transparente",
+                "desc": "Sin cajas negras. Visibilidad total sobre el progreso, los desafíos y las decisiones."
+            },
+            "impact": {
+                "title": "Enfoque en Impacto Comercial",
+                "desc": "El código es un medio, no un fin. Medimos el éxito por los resultados comerciales."
+            },
+            "longterm": {
+                "title": "Pensamiento a Largo Plazo",
+                "desc": "Construimos sistemas destinados a durar y evolucionar. Sin victorias rápidas que creen deuda técnica."
+            }
+        }
+    },
+    "Process": {
+        "label": "Proceso",
+        "title": "Cómo trabajamos",
+        "description": "Una metodología probada refinada a través de cientos de compromisos. Rápido tiempo de valor sin tomar atajos.",
+        "steps": {
+            "discovery": {
+                "title": "Descubrimiento",
+                "description": "Profundizamos en sus requisitos, panorama técnico y dinámica de equipo. Entender el contexto lo es todo.",
+                "details": [
+                    "Análisis de requisitos",
+                    "Evaluación técnica",
+                    "Evaluación de ajuste de equipo"
+                ]
+            },
+            "matching": {
+                "title": "Emparejamiento",
+                "description": "Selección precisa de talento basada en habilidades técnicas, experiencia en el dominio y ajuste cultural.",
+                "details": [
+                    "Coincidencia de habilidades",
+                    "Experiencia de dominio",
+                    "Alineación cultural"
+                ]
+            },
+            "integration": {
+                "title": "Integración",
+                "description": "Incorporación perfecta a sus flujos de trabajo, herramientas y ceremonias. Nuestros ingenieros se convierten en sus ingenieros.",
+                "details": [
+                    "Configuración de flujo de trabajo",
+                    "Integración de herramientas",
+                    "Incrustación de equipo"
+                ]
+            },
+            "delivery": {
+                "title": "Entrega",
+                "description": "Entrega continua de valor con comunicación transparente. Los controles regulares aseguran la alineación.",
+                "details": [
+                    "Planificación de sprint",
+                    "Seguimiento de progreso",
+                    "Aseguramiento de calidad"
+                ]
+            }
+        },
+        "models": {
+            "title": "Modelos de Compromiso",
+            "subtitle": "Arreglos flexibles para satisfacer sus necesidades",
+            "augmentation": {
+                "title": "Aumento de Personal",
+                "desc": "Ingenieros individuales integrados en su equipo, trabajando en sus horarios, utilizando sus herramientas."
+            },
+            "team": {
+                "title": "Equipo Dedicado",
+                "desc": "Un escuadrón completo con habilidades complementarias, gestionado como una unidad cohesiva."
+            },
+            "project": {
+                "title": "Basado en Proyecto",
+                "desc": "Entrega de extremo a extremo de un alcance definido con cronograma y presupuesto fijos."
+            }
+        }
+    },
+    "FAQ": {
+        "title": "FAQ",
+        "items": {
+            "start": {
+                "question": "¿Qué tan rápido pueden empezar?",
+                "answer": "Típicamente comenzamos dentro de las 48 horas posteriores a nuestra consulta inicial. Nuestro proceso está diseñado para integrarnos con su equipo lo más rápido posible."
+            },
+            "timezone": {
+                "question": "¿Trabajan en mi zona horaria?",
+                "answer": "Sí, estamos basados en la UE pero trabajamos en zonas horarias de EE. UU. y Europa. Aseguramos al menos 4 horas de superposición con sus horas laborales principales."
+            },
+            "pricing": {
+                "question": "¿Cuál es su modelo de precios?",
+                "answer": "Ofrecemos tanto aumento de personal (tarifas por hora/mensuales) como precios fijos basados en proyectos, dependiendo de sus necesidades. Contáctenos para una cotización detallada."
+            },
+            "pm": {
+                "question": "¿Proporcionan gestores de proyectos?",
+                "answer": "Sí, si es necesario. Sin embargo, nuestros ingenieros senior son autoorganizados y capaces de trabajar directamente con sus propietarios de productos."
+            }
+        }
+    }
+}

@@ -27,18 +27,18 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-white pt-20 pb-8 border-t border-slate-100">
+    <footer className="bg-[var(--color-paper)] pt-20 pb-8 border-t border-[var(--color-border)] transition-colors duration-300">
       <div className="container">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-6">
-              <div className="text-2xl tracking-tighter font-extrabold text-slate-900" style={{ fontFamily: "var(--font-display)" }}>
+              <div className="text-2xl tracking-tighter font-extrabold text-[var(--color-ink)]" style={{ fontFamily: "var(--font-display)" }}>
                 bubuu<span className="text-[var(--color-primary)]">.</span>
               </div>
             </a>
-            <p className="text-slate-500 mb-6 max-w-sm leading-relaxed">
+            <p className="text-[var(--color-text-secondary)] mb-6 max-w-sm leading-relaxed">
               {t("brandDesc")}
             </p>
             <a
@@ -52,7 +52,7 @@ export function Footer() {
           {/* Services Links */}
           <div>
             <h4
-              className="text-slate-900 font-bold mb-5"
+              className="text-slate-900 dark:text-white font-bold mb-5"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {t("services")}
@@ -62,7 +62,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-slate-500 hover:text-[var(--color-primary)] transition-colors text-sm"
+                    className="text-slate-500 dark:text-slate-400 hover:text-[var(--color-primary)] transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -74,7 +74,7 @@ export function Footer() {
           {/* Company Links */}
           <div>
             <h4
-              className="text-slate-900 font-bold mb-5"
+              className="text-slate-900 dark:text-white font-bold mb-5"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {t("company")}
@@ -84,7 +84,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-slate-500 hover:text-[var(--color-primary)] transition-colors text-sm"
+                    className="text-slate-500 dark:text-slate-400 hover:text-[var(--color-primary)] transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -96,7 +96,7 @@ export function Footer() {
           {/* Industries Links */}
           <div>
             <h4
-              className="text-slate-900 font-bold mb-5"
+              className="text-slate-900 dark:text-white font-bold mb-5"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {t("industries")}
@@ -106,7 +106,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-slate-500 hover:text-[var(--color-primary)] transition-colors text-sm"
+                    className="text-slate-500 dark:text-slate-400 hover:text-[var(--color-primary)] transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -117,7 +117,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-400">
             &copy; {currentYear} {t("rights")}
           </p>

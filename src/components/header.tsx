@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./language-switcher";
+import { ThemeToggle } from "./theme-toggle";
 
 export function Header() {
   const t = useTranslations("Nav");
@@ -10,9 +11,18 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 10);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -38,15 +48,15 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${isScrolled || isMobileMenuOpen
-        ? "bg-white shadow-sm py-3"
+      className={`fixed top-0 left-0 right-0 z-[100] transition-[padding,background-color,box-shadow] duration-300 ${isScrolled || isMobileMenuOpen
+        ? "bg-[var(--color-surface)] shadow-sm py-3"
         : "bg-transparent py-5"
         }`}
     >
       <div className="container flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group relative z-50">
-          <div className="text-2xl tracking-tighter font-extrabold text-slate-900" style={{ fontFamily: "var(--font-display)" }}>
+          <div className="text-2xl tracking-tighter font-extrabold text-[var(--color-ink)]" style={{ fontFamily: "var(--font-display)" }}>
             bubuu<span className="text-[var(--color-primary)]">.</span>
           </div>
         </a>
@@ -57,7 +67,7 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-slate-600 hover:text-[var(--color-primary)] text-sm font-medium transition-colors duration-200"
+              className="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm font-medium transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -66,6 +76,7 @@ export function Header() {
 
         {/* CTA Button & Language Switcher */}
         <div className="hidden lg:flex items-center gap-4">
+          <ThemeToggle />
           <LanguageSwitcher />
           <a
             href="#contact"
@@ -81,7 +92,7 @@ export function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden relative z-50 p-2 text-slate-900"
+          className="lg:hidden relative z-50 p-2 text-[var(--color-ink)]"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -104,7 +115,7 @@ export function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed inset-0 top-0 bg-white z-40 transition-all duration-500 overflow-y-auto ${isMobileMenuOpen
+        className={`lg:hidden fixed inset-0 top-0 bg-[var(--color-surface)] z-40 transition-all duration-500 overflow-y-auto ${isMobileMenuOpen
           ? "opacity-100 pointer-events-auto"
           : "opacity-0 pointer-events-none"
           }`}
@@ -114,13 +125,13 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-3xl text-slate-900 font-bold tracking-tight hover:text-[var(--color-primary)] transition-colors"
+              className="text-3xl text-[var(--color-ink)] font-bold tracking-tight hover:text-[var(--color-primary)] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.label}
             </a>
           ))}
-          <div className="mt-8 pt-8 border-t border-slate-100">
+          <div className="mt-8 pt-8 border-t border-slate-100 dark:border-slate-800">
             <a
               href="#contact"
               className="flex w-full justify-center items-center gap-2 px-6 py-4 bg-[var(--color-slate-900)] text-white rounded-full text-lg font-medium shadow-lg"
@@ -128,7 +139,8 @@ export function Header() {
             >
               <span>(800) 555-1234</span>
             </a>
-            <div className="mt-8 flex justify-center">
+            <div className="mt-8 flex justify-center gap-4">
+              <ThemeToggle />
               <LanguageSwitcher />
             </div>
           </div>

@@ -6,16 +6,18 @@ export function HeroSection() {
   const t = useTranslations("Home");
 
   return (
-    <section className="relative min-h-screen bg-white flex flex-col justify-center overflow-hidden">
+    <section className="bg-[var(--color-paper)] relative min-h-screen flex flex-col justify-center overflow-hidden transition-colors duration-300">
 
       {/* Background Decor - Very subtle */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--color-slate-100)_0%,_transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--color-slate-100)_0%,_transparent_50%)] dark:bg-none dark:opacity-0" />
+      {/* Dark mode subtle glow */}
+      <div className="absolute inset-0 opacity-0 dark:opacity-20 pointer-events-none bg-[radial-gradient(circle_at_top,_#1e293b_0%,_transparent_50%)]" />
 
       {/* Content */}
       <div className="container relative z-10 pt-20 pb-20 text-center">
 
         {/* Top Badge - Optional bubble */}
-        <div className="flex justify-center mb-8 animate-fade-up opacity-0" style={{ animationDelay: "0ms", animationFillMode: "forwards" }}>
+        <div className="flex justify-center mb-8 animate-fade-up" style={{ animationDelay: "0ms", animationFillMode: "forwards" }}>
           <span className="text-[var(--color-primary)] font-bold text-sm tracking-wider uppercase bg-blue-50 px-4 py-1.5 rounded-full">
             {t('kicker')}
           </span>
@@ -24,7 +26,7 @@ export function HeroSection() {
         {/* Main Headline */}
         <div className="max-w-4xl mx-auto">
           <h1
-            className="text-5xl md:text-7xl text-slate-900 tracking-tight leading-[1.1] animate-fade-up opacity-0"
+            className="text-5xl md:text-7xl text-[var(--color-ink)] tracking-tight leading-[1.1] animate-fade-up"
             style={{
               fontFamily: "var(--font-display)",
               fontWeight: 800,
@@ -38,7 +40,7 @@ export function HeroSection() {
 
         {/* Subheadline */}
         <p
-          className="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto mt-8 leading-relaxed animate-fade-up opacity-0"
+          className="text-xl md:text-2xl text-[var(--color-text-secondary)] max-w-2xl mx-auto mt-8 leading-relaxed animate-fade-up"
           style={{
             fontFamily: "var(--font-body)",
             animationDelay: "200ms",
@@ -50,7 +52,7 @@ export function HeroSection() {
 
         {/* Action Area - Centered Pill Button */}
         <div
-          className="flex flex-col items-center mt-12 animate-fade-up opacity-0"
+          className="flex flex-col items-center mt-12 animate-fade-up"
           style={{ animationDelay: "300ms", animationFillMode: "forwards" }}
         >
           <a
@@ -97,6 +99,6 @@ export function HeroSection() {
         </a>
       </div>
 
-    </section>
+    </section >
   );
 }

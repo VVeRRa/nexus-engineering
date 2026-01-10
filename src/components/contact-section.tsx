@@ -15,7 +15,7 @@ export function ContactSection() {
   const [state, formAction, isPending] = useActionState(sendEmail, initialState);
 
   return (
-    <section id="contact" className="section bg-slate-50 relative overflow-hidden py-24">
+    <section id="contact" className="section bg-[var(--color-paper)] relative overflow-hidden py-24">
       {/* Background w/ Green Accent - Radial Gradient (No Blur) */}
       <div
         className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full opacity-20 -z-10"
@@ -30,18 +30,18 @@ export function ContactSection() {
               {t("label")}
             </span>
             <h2
-              className="text-4xl md:text-5xl text-slate-900 mb-6"
+              className="text-4xl md:text-5xl text-[var(--color-ink)] mb-6"
               style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
             >
               {t("title")}
             </h2>
-            <p className="text-xl text-slate-500 mb-12">
+            <p className="text-xl text-[var(--color-text-secondary)] mb-12">
               {t("description")}
             </p>
 
             <div className="space-y-6">
               <a href="mailto:hello@nexus.engineering" className="block group">
-                <div className="bg-gradient-to-br from-white to-green-50/50 border border-green-100 rounded-3xl p-5 md:p-8 hover:shadow-lg transition-all duration-300">
+                <div className="bg-gradient-to-br from-[var(--color-card-from)] to-[var(--color-card-to-green)] border border-[var(--color-card-border-green)] rounded-3xl p-5 md:p-8 hover:shadow-lg transition-all duration-300">
                   <div className="flex items-center gap-4 md:gap-6">
                     <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-100 flex items-center justify-center text-[var(--color-secondary)] group-hover:scale-110 transition-transform duration-300 shrink-0">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -50,15 +50,15 @@ export function ContactSection() {
                       </svg>
                     </div>
                     <div className="min-w-0">
-                      <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1">Email us</h3>
-                      <p className="text-slate-500 break-all">hello@nexus.engineering</p>
+                      <h3 className="text-lg md:text-xl font-bold text-[var(--color-ink)] mb-1">Email us</h3>
+                      <p className="text-[var(--color-text-secondary)] break-all">hello@nexus.engineering</p>
                     </div>
                   </div>
                 </div>
               </a>
 
               <button className="block w-full group text-left">
-                <div className="bg-gradient-to-br from-white to-green-50/50 border border-green-100 rounded-3xl p-5 md:p-8 hover:shadow-lg transition-all duration-300">
+                <div className="bg-gradient-to-br from-[var(--color-card-from)] to-[var(--color-card-to-green)] border border-[var(--color-card-border-green)] rounded-3xl p-5 md:p-8 hover:shadow-lg transition-all duration-300">
                   <div className="flex items-center gap-4 md:gap-6">
                     <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-100 flex items-center justify-center text-[var(--color-secondary)] group-hover:scale-110 transition-transform duration-300 shrink-0">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -66,8 +66,8 @@ export function ContactSection() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1">Live Chat</h3>
-                      <p className="text-slate-500">{t("response")}</p>
+                      <h3 className="text-lg md:text-xl font-bold text-[var(--color-ink)] mb-1">Live Chat</h3>
+                      <p className="text-[var(--color-text-secondary)]">{t("response")}</p>
                     </div>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ export function ContactSection() {
 
           {/* Right Column - Form */}
           <div className="relative">
-            <div className="bg-white rounded-3xl p-5 md:p-10 shadow-xl border border-slate-100 relative overflow-hidden">
+            <div className="bg-[var(--color-paper)] rounded-3xl p-5 md:p-10 shadow-xl border border-[var(--color-border)] relative overflow-hidden">
 
               {state.success ? (
                 <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[400px] text-center">
@@ -97,21 +97,21 @@ export function ContactSection() {
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
                   </div>
-                  <h3 className="text-2xl text-slate-900 font-bold mb-2">{t("form.sent")}</h3>
-                  <p className="text-slate-500">{t("form.sentDesc")}</p>
+                  <h3 className="text-2xl text-[var(--color-ink)] font-bold mb-2">{t("form.sent")}</h3>
+                  <p className="text-[var(--color-text-secondary)]">{t("form.sentDesc")}</p>
                 </div>
               ) : (
                 <form action={formAction} className="relative z-10 space-y-5">
                   <div className="grid md:grid-cols-2 gap-5">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
+                      <label htmlFor="name" className="block text-sm font-medium text-[var(--color-text-secondary)] mb-1">
                         {t("form.name")}
                       </label>
                       <input
                         type="text"
                         id="name"
                         name="name"
-                        className="w-full max-w-full bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
+                        className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
                         placeholder={t("form.namePlaceholder")}
                       />
                       {state.errors?.name && (
@@ -119,14 +119,14 @@ export function ContactSection() {
                       )}
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
+                      <label htmlFor="email" className="block text-sm font-medium text-[var(--color-text-secondary)] mb-1">
                         {t("form.email")}
                       </label>
                       <input
                         type="email"
                         id="email"
                         name="email"
-                        className="w-full max-w-full bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
+                        className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
                         placeholder={t("form.emailPlaceholder")}
                       />
                       {state.errors?.email && (
@@ -136,13 +136,13 @@ export function ContactSection() {
                   </div>
 
                   <div>
-                    <label htmlFor="projectType" className="block text-sm font-medium text-slate-700 mb-1">
+                    <label htmlFor="projectType" className="block text-sm font-medium text-[var(--color-text-secondary)] mb-1">
                       {t("form.projectType")}
                     </label>
                     <select
                       id="projectType"
                       name="projectType"
-                      className="w-full max-w-full bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all appearance-none"
+                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all appearance-none"
                     >
                       <option value="">{t("form.projectTypePlaceholder")}</option>
                       <option value="augmentation">{t("form.types.augmentation")}</option>
@@ -153,14 +153,14 @@ export function ContactSection() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">
+                    <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
                       {t("form.message")}
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       rows={4}
-                      className="w-full bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all resize-none"
+                      className="w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all resize-none"
                       placeholder={t("form.messagePlaceholder")}
                     />
                     {state.errors?.message && (

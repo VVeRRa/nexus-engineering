@@ -51,11 +51,11 @@ export function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="section bg-slate-50 relative overflow-hidden py-24">
+    <section id="services" className="section bg-[var(--color-paper)] relative overflow-hidden py-24 transition-colors duration-300">
       {/* Background with Green Gradient Accent */}
       {/* Background with Green Gradient Accent - Radial Gradient */}
       <div
-        className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-20 -z-10"
+        className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-20 dark:opacity-0 -z-10"
         style={{ background: 'radial-gradient(circle, var(--color-green-200) 0%, transparent 70%)' }}
       />
 
@@ -66,7 +66,7 @@ export function ServicesSection() {
             {t("title")}
           </span>
           <h2
-            className="text-4xl md:text-5xl text-slate-900 mb-6"
+            className="text-4xl md:text-5xl text-[var(--color-ink)] mb-6"
             style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
           >
             {t("lead")}
@@ -80,13 +80,13 @@ export function ServicesSection() {
             const isEven = index % 2 === 0;
 
             const themeClass = isEven
-              ? "from-[var(--color-primary)]/20 via-white to-white border-blue-100 shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
-              : "from-[var(--color-secondary)]/20 via-white to-white border-green-100 shadow-[0_20px_50px_rgba(34,197,94,0.15)]";
+              ? "from-[var(--color-primary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-blue-100 shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
+              : "from-[var(--color-secondary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-green-100 shadow-[0_20px_50px_rgba(34,197,94,0.15)]";
 
             return (
               <div
                 key={index}
-                className={`group bg-gradient-to-br ${themeClass} border rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 transform-gpu will-change-transform`}
+                className={`group bg-gradient-to-br ${themeClass} border rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 transform-gpu`}
               >
                 {/* Icon */}
                 <div
@@ -101,13 +101,13 @@ export function ServicesSection() {
                 {/* Content */}
                 <div>
                   <h3
-                    className="text-xl font-bold text-slate-900 mb-3"
+                    className="text-xl font-bold text-[var(--color-ink)] mb-3"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {t(`list.${service.id}.title`)}
                   </h3>
 
-                  <p className="text-slate-500 mb-6 leading-relaxed text-sm">
+                  <p className="text-[var(--color-text-secondary)] mb-6 leading-relaxed text-sm">
                     {t(`list.${service.id}.description`)}
                   </p>
 
@@ -115,7 +115,10 @@ export function ServicesSection() {
                     {tags.slice(0, 3).map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className="px-3 py-1 bg-slate-50 text-slate-600 text-xs font-medium rounded-full border border-slate-100"
+                        className={`px-0 py-1 text-xs font-medium ${isEven
+                          ? "text-[var(--color-primary)] dark:text-blue-300"
+                          : "text-[var(--color-secondary)] dark:text-green-300"
+                          }`}
                       >
                         {tag}
                       </span>
