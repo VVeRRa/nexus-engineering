@@ -1,5 +1,8 @@
 "use client";
 
+import { Section } from "./ui/section";
+import { SectionHeader } from "./ui/section-header";
+
 import { useTranslations } from "next-intl";
 
 export function AboutSection() {
@@ -47,67 +50,64 @@ export function AboutSection() {
   ];
 
   return (
-    <section id="about" className="section bg-[var(--color-paper)] relative overflow-hidden py-24 transition-colors duration-300">
-      {/* Background w/ Green Accent */}
-      {/* Background w/ Green Accent - Radial Gradient */}
-      <div
-        className="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full opacity-30 -z-10"
-        style={{ background: 'radial-gradient(circle, var(--color-green-100) 0%, transparent 70%)' }}
-      />
-
-      <div className="container relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center animate-on-scroll">
-          {/* Left Column */}
-          <div>
-            <span className="text-[var(--color-secondary)] font-bold tracking-wider uppercase text-sm mb-4 block">{t("label")}</span>
-            <h2
-              className="text-4xl md:text-5xl text-slate-900 dark:text-white mb-8"
-              style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
-            >
-              {t.rich("title", {
-                br: () => <br />,
-                span: (chunks) => <span className="text-[var(--color-secondary)]">{chunks}</span>
-              })}
-            </h2>
-            <div className="space-y-6 text-lg text-slate-500 dark:text-slate-400 leading-relaxed">
-              <p>
-                {t("description1")}
-              </p>
-              <p>
-                {t("description2")}
-              </p>
-            </div>
-          </div>
-
-          {/* Right Column - Values */}
-          <div className="grid sm:grid-cols-2 gap-5">
-            {values.map((value, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-[var(--color-card-from)] to-[var(--color-card-to-green)] p-8 rounded-3xl shadow-sm border border-[var(--color-card-border-green)] hover:shadow-lg transition-all duration-300"
-              >
-                {/* Icon */}
-                <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center mb-5 text-[var(--color-secondary)]">
-                  {value.icon}
-                </div>
-
-                {/* Title */}
-                <h3
-                  className="text-lg text-[var(--color-ink)] font-bold mb-2"
-                  style={{ fontFamily: "var(--font-display)" }}
-                >
-                  {value.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
-                  {value.description}
-                </p>
-              </div>
-            ))}
+    <Section
+      id="about"
+      background={
+        <div
+          className="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full opacity-30 -z-10"
+          style={{ background: 'radial-gradient(circle, var(--color-green-100) 0%, transparent 70%)' }}
+        />
+      }
+    >
+      <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center animate-on-scroll">
+        {/* Left Column */}
+        <div>
+          <SectionHeader
+            label={<span className="text-[var(--color-secondary)]">{t("label")}</span>}
+            title={t.rich("title", {
+              br: () => <br />,
+              span: (chunks) => <span className="text-[var(--color-secondary)]">{chunks}</span>
+            })}
+            className="mb-8"
+          />
+          <div className="space-y-6 text-lg text-slate-500 dark:text-slate-400 leading-relaxed">
+            <p>
+              {t("description1")}
+            </p>
+            <p>
+              {t("description2")}
+            </p>
           </div>
         </div>
+
+        {/* Right Column - Values */}
+        <div className="grid sm:grid-cols-2 gap-5">
+          {values.map((value, index) => (
+            <div
+              key={index}
+              className="bg-gradient-to-br from-[var(--color-card-from)] to-[var(--color-card-to-green)] p-8 rounded-3xl shadow-sm border border-[var(--color-card-border-green)] hover:shadow-lg transition-all duration-300"
+            >
+              {/* Icon */}
+              <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center mb-5 text-[var(--color-secondary)]">
+                {value.icon}
+              </div>
+
+              {/* Title */}
+              <h3
+                className="text-lg text-[var(--color-ink)] font-bold mb-2"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                {value.title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+                {value.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
-    </section>
+    </Section>
   );
 }

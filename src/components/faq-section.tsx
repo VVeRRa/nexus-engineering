@@ -1,5 +1,8 @@
 "use client";
 
+import { Section } from "./ui/section";
+import { SectionHeader } from "./ui/section-header";
+
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -9,19 +12,14 @@ export function FAQSection() {
     const keys = ['start', 'timezone', 'pricing', 'pm'] as const;
 
     return (
-        <section className="section bg-[var(--color-paper)] relative overflow-hidden py-24 transition-colors duration-300">
-            <div className="container max-w-4xl relative z-10">
-                <div className="text-center mb-16 animate-on-scroll">
-                    <span className="text-[var(--color-primary)] font-bold tracking-wider uppercase text-sm mb-4 block">
-                        FAQ
-                    </span>
-                    <h2
-                        className="text-4xl md:text-5xl text-[var(--color-ink)] font-bold"
-                        style={{ fontFamily: "var(--font-display)" }}
-                    >
-                        {t('FAQ.title')}
-                    </h2>
-                </div>
+        <Section>
+            <div className="max-w-4xl mx-auto">
+                <SectionHeader
+                    align="center"
+                    label={<span className="text-[var(--color-primary)]">FAQ</span>}
+                    title={t('FAQ.title')}
+                    className="mb-16"
+                />
 
                 <div className="space-y-4 animate-on-scroll stagger-children">
                     {keys.map((key) => (
@@ -33,7 +31,7 @@ export function FAQSection() {
                     ))}
                 </div>
             </div>
-        </section >
+        </Section >
     );
 }
 

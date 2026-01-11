@@ -1,5 +1,8 @@
 "use client";
 
+import { Section } from "./ui/section";
+import { SectionHeader } from "./ui/section-header";
+
 import { useTranslations } from "next-intl";
 
 export function ServicesSection() {
@@ -51,93 +54,87 @@ export function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="section bg-[var(--color-paper)] relative overflow-hidden py-24 transition-colors duration-300">
-      {/* Background with Green Gradient Accent */}
-      {/* Background with Green Gradient Accent - Radial Gradient */}
-      <div
-        className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-20 dark:opacity-0 -z-10"
-        style={{ background: 'radial-gradient(circle, var(--color-green-200) 0%, transparent 70%)' }}
+
+    <Section
+      id="services"
+      background={
+        <div
+          className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-20 dark:opacity-0 -z-10"
+          style={{ background: 'radial-gradient(circle, var(--color-green-200) 0%, transparent 70%)' }}
+        />
+      }
+    >
+      <SectionHeader
+        align="center"
+        label={<span className="text-[var(--color-secondary)]">{t("title")}</span>}
+        title={t("lead")}
+        className="mb-20"
       />
 
-      <div className="container relative z-10">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20 animate-on-scroll">
-          <span className="text-[var(--color-secondary)] font-bold tracking-wider uppercase text-sm mb-4 block">
-            {t("title")}
-          </span>
-          <h2
-            className="text-4xl md:text-5xl text-[var(--color-ink)] mb-6"
-            style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
-          >
-            {t("lead")}
-          </h2>
-        </div>
+      {/* Services Grid */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {services.map((service, index) => {
+          const tags = (t.raw(`list.${service.id}.tags`) as string[]) || [];
+          const isEven = index % 2 === 0;
 
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => {
-            const tags = (t.raw(`list.${service.id}.tags`) as string[]) || [];
-            const isEven = index % 2 === 0;
+          const themeClass = isEven
+            ? "from-[var(--color-primary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-blue-100 shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
+            : "from-[var(--color-secondary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-green-100 shadow-[0_20px_50px_rgba(34,197,94,0.15)]";
 
-            const themeClass = isEven
-              ? "from-[var(--color-primary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-blue-100 shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
-              : "from-[var(--color-secondary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-green-100 shadow-[0_20px_50px_rgba(34,197,94,0.15)]";
-
-            return (
+          return (
+            <div
+              key={index}
+              className={`group bg-gradient-to-br ${themeClass} border rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-100`}
+            >
+              {/* Icon */}
               <div
-                key={index}
-                className={`group bg-gradient-to-br ${themeClass} border rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-100`}
+                className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 transition-colors ${isEven
+                  ? "bg-blue-50 text-[var(--color-primary)]"
+                  : "bg-green-50 text-[var(--color-secondary)]"
+                  }`}
               >
-                {/* Icon */}
-                <div
-                  className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 transition-colors ${isEven
-                    ? "bg-blue-50 text-[var(--color-primary)]"
-                    : "bg-green-50 text-[var(--color-secondary)]"
-                    }`}
+                {service.icon}
+              </div>
+
+              {/* Content */}
+              <div>
+                <h3
+                  className="text-xl font-bold text-[var(--color-ink)] mb-3"
+                  style={{ fontFamily: "var(--font-display)" }}
                 >
-                  {service.icon}
-                </div>
+                  {t(`list.${service.id}.title`)}
+                </h3>
 
-                {/* Content */}
-                <div>
-                  <h3
-                    className="text-xl font-bold text-[var(--color-ink)] mb-3"
-                    style={{ fontFamily: "var(--font-display)" }}
-                  >
-                    {t(`list.${service.id}.title`)}
-                  </h3>
+                <p className="text-[var(--color-text-secondary)] mb-6 leading-relaxed text-sm">
+                  {t(`list.${service.id}.description`)}
+                </p>
 
-                  <p className="text-[var(--color-text-secondary)] mb-6 leading-relaxed text-sm">
-                    {t(`list.${service.id}.description`)}
-                  </p>
-
-                  <div className="flex flex-wrap gap-2">
-                    {tags.slice(0, 3).map((tag, tagIndex) => (
-                      <span
-                        key={tagIndex}
-                        className={`px-0 py-1 text-xs font-medium ${isEven
-                          ? "text-[var(--color-primary)] dark:text-blue-300"
-                          : "text-[var(--color-secondary)] dark:text-green-300"
-                          }`}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
+                <div className="flex flex-wrap gap-2">
+                  {tags.slice(0, 3).map((tag, tagIndex) => (
+                    <span
+                      key={tagIndex}
+                      className={`px-0 py-1 text-xs font-medium ${isEven
+                        ? "text-[var(--color-primary)] dark:text-blue-300"
+                        : "text-[var(--color-secondary)] dark:text-green-300"
+                        }`}
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
               </div>
-            );
-          })}
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="mt-16 text-center">
-          <a href="#contact" className="inline-flex items-center gap-2 text-[var(--color-primary)] font-bold hover:gap-3 transition-all">
-            {t('cta.button')}
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-          </a>
-        </div>
+            </div>
+          );
+        })}
       </div>
-    </section>
+
+      {/* Bottom CTA */}
+      <div className="mt-16 text-center">
+        <a href="#contact" className="inline-flex items-center gap-2 text-[var(--color-primary)] font-bold hover:gap-3 transition-all">
+          {t('cta.button')}
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+        </a>
+      </div>
+    </Section>
   );
 }

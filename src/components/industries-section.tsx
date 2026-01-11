@@ -1,5 +1,8 @@
 "use client";
 
+import { Section } from "./ui/section";
+import { SectionHeader } from "./ui/section-header";
+
 import { useTranslations } from "next-intl";
 
 export function IndustriesSection() {
@@ -44,158 +47,149 @@ export function IndustriesSection() {
   ];
 
   return (
-    <section id="industries" className="section bg-[var(--color-paper)] relative overflow-hidden py-24">
-      {/* Background with Blue Gradient Accent */}
-      {/* Background with Blue Gradient Accent - Radial Gradient */}
-      <div
-        className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full opacity-30 -z-10"
-        style={{ background: 'radial-gradient(circle, var(--color-blue-100) 0%, transparent 70%)' }}
+
+    <Section
+      id="industries"
+      background={
+        <div
+          className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full opacity-30 -z-10"
+          style={{ background: 'radial-gradient(circle, var(--color-blue-100) 0%, transparent 70%)' }}
+        />
+      }
+    >
+      {/* Section Header */}
+      <SectionHeader
+        align="center"
+        label={<span className="text-[var(--color-primary)]">{t("label")}</span>}
+        title={<>{t("title")}<br /><span className="text-[var(--color-text-secondary)]">{t("subtitle")}</span></>}
+        description={t("description")}
+        className="mb-20"
       />
 
-      <div className="container relative z-10">
-        {/* Section Header */}
-        <div className="max-w-3xl mb-20 animate-on-scroll">
-          <span className="text-[var(--color-primary)] font-bold tracking-wider uppercase text-sm mb-4 block">
-            {t("label")}
-          </span>
-          <h2
-            className="text-4xl md:text-5xl text-[var(--color-ink)] mb-6"
-            style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
+      {/* Industries Grid */}
+      <div className="grid lg:grid-cols-2 gap-8 animate-on-scroll stagger-children">
+        {industries.map((industry, index) => (
+          <div
+            key={index}
+            className={`group relative rounded-3xl overflow-hidden bg-gradient-to-br from-[var(--color-card-from)] ${index === 0 ? "to-[var(--color-card-to-blue)] border-[var(--color-card-border-blue)]" : "to-[var(--color-card-to-green)] border-[var(--color-card-border-green)]"
+              } border p-10 md:p-12 hover:shadow-xl transition-all duration-300`}
           >
-            {t("title")}
-            <br />
-            <span className="text-[var(--color-text-secondary)]">{t("subtitle")}</span>
-          </h2>
-          <p className="text-xl text-[var(--color-text-secondary)]">
-            {t("description")}
+            <div className="flex items-start justify-between mb-8">
+              <div>
+                {/* Color Accent Bar */}
+                <div
+                  className="w-12 h-1 rounded-full mb-4"
+                  style={{ background: industry.color }}
+                />
+                <h3
+                  className="text-3xl md:text-4xl text-[var(--color-ink)] mb-2"
+                  style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
+                >
+                  {industry.name}
+                </h3>
+                <p
+                  className="text-sm uppercase tracking-widest font-bold"
+                  style={{ color: industry.color, fontFamily: "var(--font-mono)" }}
+                >
+                  {industry.tagline}
+                </p>
+              </div>
+
+              {/* Stats Badge */}
+              <div className="text-right">
+                <div
+                  className="text-3xl text-[var(--color-ink)]"
+                  style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
+                >
+                  {industry.stats.value}
+                </div>
+                <div
+                  className="text-xs text-[var(--color-text-secondary)]"
+                  style={{ fontFamily: "var(--font-mono)" }}
+                >
+                  {industry.stats.label}
+                </div>
+              </div>
+            </div>
+
+            {/* Description */}
+            <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">
+              {industry.description}
+            </p>
+
+            {/* Highlights */}
+            <ul className="grid sm:grid-cols-2 gap-3">
+              {industry.highlights.map((highlight, hIndex) => (
+                <li
+                  key={hIndex}
+                  className="flex items-center gap-3 text-[var(--color-text-secondary)]"
+                >
+                  <span
+                    className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
+                    style={{ background: `color-mix(in srgb, ${industry.color}, transparent 85%)` }}
+                  >
+                    <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+                      <path
+                        d="M2 6L5 9L10 3"
+                        stroke={industry.color}
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span className="text-sm font-medium">{highlight}</span>
+                </li>
+              ))}
+            </ul>
+
+            {/* Learn More Button */}
+            <div
+              className={`w-10 h-10 rounded-full flex items-center justify-center mt-8 transition-all duration-300 ${index === 0
+                ? "bg-[var(--color-primary)] text-white shadow-lg shadow-blue-500/30"
+                : "bg-[var(--color-secondary)] text-white shadow-lg shadow-green-500/30"
+                }`}
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Specializations */}
+      <div className="mt-20 pt-16 border-t border-slate-100 dark:border-slate-800">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10">
+          <h3
+            className="text-2xl text-slate-900 dark:text-white"
+            style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
+          >
+            {t("specializations.title")}
+          </h3>
+          <p className="text-[var(--color-text-secondary)]">
+            {t("specializations.description")}
           </p>
         </div>
 
-        {/* Industries Grid */}
-        <div className="grid lg:grid-cols-2 gap-8 animate-on-scroll stagger-children">
-          {industries.map((industry, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          {specializations.map((spec, index) => (
             <div
               key={index}
-              className={`group relative rounded-3xl overflow-hidden bg-gradient-to-br from-[var(--color-card-from)] ${index === 0 ? "to-[var(--color-card-to-blue)] border-[var(--color-card-border-blue)]" : "to-[var(--color-card-to-green)] border-[var(--color-card-border-green)]"
-                } border p-10 md:p-12 hover:shadow-xl transition-all duration-300`}
+              className="flex items-center justify-center group relative p-5 rounded-xl border border-[var(--color-border)] hover:border-blue-200 transition-all duration-300 cursor-default bg-[var(--color-surface)]"
             >
-              <div className="flex items-start justify-between mb-8">
-                <div>
-                  {/* Color Accent Bar */}
-                  <div
-                    className="w-12 h-1 rounded-full mb-4"
-                    style={{ background: industry.color }}
-                  />
-                  <h3
-                    className="text-3xl md:text-4xl text-[var(--color-ink)] mb-2"
-                    style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
-                  >
-                    {industry.name}
-                  </h3>
-                  <p
-                    className="text-sm uppercase tracking-widest font-bold"
-                    style={{ color: industry.color, fontFamily: "var(--font-mono)" }}
-                  >
-                    {industry.tagline}
-                  </p>
-                </div>
-
-                {/* Stats Badge */}
-                <div className="text-right">
-                  <div
-                    className="text-3xl text-[var(--color-ink)]"
-                    style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
-                  >
-                    {industry.stats.value}
-                  </div>
-                  <div
-                    className="text-xs text-[var(--color-text-secondary)]"
-                    style={{ fontFamily: "var(--font-mono)" }}
-                  >
-                    {industry.stats.label}
-                  </div>
-                </div>
-              </div>
-
-              {/* Description */}
-              <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">
-                {industry.description}
-              </p>
-
-              {/* Highlights */}
-              <ul className="grid sm:grid-cols-2 gap-3">
-                {industry.highlights.map((highlight, hIndex) => (
-                  <li
-                    key={hIndex}
-                    className="flex items-center gap-3 text-[var(--color-text-secondary)]"
-                  >
-                    <span
-                      className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
-                      style={{ background: `color-mix(in srgb, ${industry.color}, transparent 85%)` }}
-                    >
-                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                        <path
-                          d="M2 6L5 9L10 3"
-                          stroke={industry.color}
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </span>
-                    <span className="text-sm font-medium">{highlight}</span>
-                  </li>
-                ))}
-              </ul>
-
-              {/* Learn More Button */}
-              <div
-                className={`w-10 h-10 rounded-full flex items-center justify-center mt-8 transition-all duration-300 ${index === 0
-                  ? "bg-[var(--color-primary)] text-white shadow-lg shadow-blue-500/30"
-                  : "bg-[var(--color-secondary)] text-white shadow-lg shadow-green-500/30"
-                  }`}
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
+              <div className="text-center">
+                <span
+                  className="block text-sm text-[var(--color-text-secondary)] group-hover:text-[var(--color-primary)] transition-colors duration-300 font-medium"
+                  style={{ fontFamily: "var(--font-display)" }}
+                >
+                  {spec.name}
+                </span>
               </div>
             </div>
           ))}
         </div>
-
-        {/* Specializations */}
-        <div className="mt-20 pt-16 border-t border-slate-100 dark:border-slate-800">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10">
-            <h3
-              className="text-2xl text-slate-900 dark:text-white"
-              style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
-            >
-              {t("specializations.title")}
-            </h3>
-            <p className="text-[var(--color-text-secondary)]">
-              {t("specializations.description")}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {specializations.map((spec, index) => (
-              <div
-                key={index}
-                className="group relative p-5 rounded-xl border border-[var(--color-border)] hover:border-blue-200 transition-all duration-300 cursor-default bg-[var(--color-surface)]"
-              >
-                <div className="text-center">
-                  <span
-                    className="block text-sm text-[var(--color-text-secondary)] group-hover:text-[var(--color-primary)] transition-colors duration-300 font-medium"
-                    style={{ fontFamily: "var(--font-display)" }}
-                  >
-                    {spec.name}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
-    </section>
+    </Section>
   );
 }
