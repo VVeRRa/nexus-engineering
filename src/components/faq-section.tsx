@@ -12,7 +12,7 @@ export function FAQSection() {
     const keys = ['start', 'timezone', 'pricing', 'pm'] as const;
 
     return (
-        <Section>
+        <Section id="faq">
             <div className="max-w-4xl mx-auto">
                 <SectionHeader
                     align="center"
@@ -21,7 +21,7 @@ export function FAQSection() {
                     className="mb-16"
                 />
 
-                <div className="space-y-4 animate-on-scroll stagger-children">
+                <div className="space-y-4 animate-on-scroll stagger-fly-children">
                     {keys.map((key) => (
                         <AccordionItem
                             key={key}

@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 
 
 :root {
@@ -307,6 +309,18 @@ h1 {
   }
 }
 
+@keyframes flyUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -461,6 +475,10 @@ h1 {
   animation: fadeUp 0.8s var(--ease-out) forwards;
 }
 
+.animate-fly-up {
+  animation: flyUp 1s var(--ease-spring) forwards;
+}
+
 .animate-fade-in {
   animation: fadeIn 0.6s var(--ease-out) forwards;
 }
@@ -560,6 +578,7 @@ h1 {
 /* Initially hidden for scroll animation */
 .animate-on-scroll {
   opacity: 0;
+  will-change: opacity, transform;
 }
 
 .animate-on-scroll.is-visible {
@@ -594,6 +613,84 @@ h1 {
 
 .stagger-children.is-visible>*:nth-child(6) {
   animation: fadeUp 0.6s var(--ease-out) 500ms forwards;
+}
+
+.stagger-children.is-visible>*:nth-child(7) {
+  animation: fadeUp 0.6s var(--ease-out) 600ms forwards;
+}
+
+.stagger-children.is-visible>*:nth-child(8) {
+  animation: fadeUp 0.6s var(--ease-out) 700ms forwards;
+}
+
+.stagger-children.is-visible>*:nth-child(9) {
+  animation: fadeUp 0.6s var(--ease-out) 800ms forwards;
+}
+
+.stagger-children.is-visible>*:nth-child(10) {
+  animation: fadeUp 0.6s var(--ease-out) 900ms forwards;
+}
+
+.stagger-children.is-visible>*:nth-child(11) {
+  animation: fadeUp 0.6s var(--ease-out) 1000ms forwards;
+}
+
+.stagger-children.is-visible>*:nth-child(12) {
+  animation: fadeUp 0.6s var(--ease-out) 1100ms forwards;
+}
+
+/* Stagger fly children */
+.stagger-fly-children>* {
+  opacity: 0;
+  transform: translateY(60px) scale(0.9);
+}
+
+.stagger-fly-children.is-visible>*:nth-child(1) {
+  animation: flyUp 0.8s var(--ease-spring) 0ms forwards;
+}
+
+.stagger-fly-children.is-visible>*:nth-child(2) {
+  animation: flyUp 0.8s var(--ease-spring) 100ms forwards;
+}
+
+.stagger-fly-children.is-visible>*:nth-child(3) {
+  animation: flyUp 0.8s var(--ease-spring) 200ms forwards;
+}
+
+.stagger-fly-children.is-visible>*:nth-child(4) {
+  animation: flyUp 0.8s var(--ease-spring) 300ms forwards;
+}
+
+.stagger-fly-children.is-visible>*:nth-child(5) {
+  animation: flyUp 0.8s var(--ease-spring) 400ms forwards;
+}
+
+.stagger-fly-children.is-visible>*:nth-child(6) {
+  animation: flyUp 0.8s var(--ease-spring) 500ms forwards;
+}
+
+.stagger-fly-children.is-visible>*:nth-child(7) {
+  animation: flyUp 0.8s var(--ease-spring) 600ms forwards;
+}
+
+.stagger-fly-children.is-visible>*:nth-child(8) {
+  animation: flyUp 0.8s var(--ease-spring) 700ms forwards;
+}
+
+.stagger-fly-children.is-visible>*:nth-child(9) {
+  animation: flyUp 0.8s var(--ease-spring) 800ms forwards;
+}
+
+.stagger-fly-children.is-visible>*:nth-child(10) {
+  animation: flyUp 0.8s var(--ease-spring) 900ms forwards;
+}
+
+.stagger-fly-children.is-visible>*:nth-child(11) {
+  animation: flyUp 0.8s var(--ease-spring) 1000ms forwards;
+}
+
+.stagger-fly-children.is-visible>*:nth-child(12) {
+  animation: flyUp 0.8s var(--ease-spring) 1100ms forwards;
 }
 
 /* ==========================================================================

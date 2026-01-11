@@ -13,7 +13,11 @@
     "technology": "Technologie",
     "team": "Tým",
     "contact": "Kontakt",
-    "getInTouch": "Napište nám"
+    "getInTouch": "Napište nám",
+    "process": "Proces",
+    "work": "Reference",
+    "about": "O nás",
+    "faq": "FAQ"
   },
   "Common": {
     "step": "Krok"
@@ -298,6 +302,30 @@
         "Standardy RESO a Open Immo",
         "Systémy pro správu nájemníků",
         "Analytika nemovitostí"
+      ]
+    },
+    "regtech": {
+      "name": "RegTech",
+      "tagline": "Compliance v základu",
+      "description": "Automatizované systémy pro sledování shody, řízení rizik a reportování, které mění regulační zátěž v konkurenční výhodu.",
+      "stats": "Zvýšení efektivity",
+      "highlights": [
+        "Automatizovaná kontrola KYC/AML",
+        "Monitorování rizik v reálném čase",
+        "Regulační reporting (MiFID II, GDPR)",
+        "Chytré auditní záznamy"
+      ]
+    },
+    "ecosystems": {
+      "name": "Ekosystémy a platformy",
+      "tagline": "Propojování hodnotových řetězců",
+      "description": "Škálovatelné digitální platformy, které orchestrují interakce mezi uživateli, partnery a službami pro vytvoření silných síťových efektů.",
+      "stats": "API interakce",
+      "highlights": [
+        "Vícestranná tržiště",
+        "API-first architektury",
+        "Integrační huby pro partnery",
+        "Vývojářská zkušenost (DX)"
       ]
     },
     "specializations": {

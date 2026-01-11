@@ -26,7 +26,7 @@ export function HeroSection() {
         {/* Main Headline */}
         <div className="max-w-4xl mx-auto">
           <h1
-            className="text-5xl md:text-7xl text-[var(--color-ink)] tracking-tight leading-[1.1] animate-fade-up"
+            className="text-5xl md:text-7xl text-[var(--color-ink)] dark:text-white/50 tracking-tight leading-[1.1] animate-fade-up"
             style={{
               fontFamily: "var(--font-display)",
               fontWeight: 800,

@@ -13,7 +13,11 @@
     "technology": "Technology",
     "team": "Team",
     "contact": "Contact",
-    "getInTouch": "Get in touch"
+    "getInTouch": "Get in touch",
+    "process": "Process",
+    "work": "Work",
+    "about": "About",
+    "faq": "FAQ"
   },
   "Common": {
     "step": "Step"
@@ -298,6 +302,30 @@
         "RESO & Open Immo Standards",
         "Tenant management systems",
         "Real estate analytics"
+      ]
+    },
+    "regtech": {
+      "name": "RegTech",
+      "tagline": "Compliance by Design",
+      "description": "Automated compliance monitoring, risk management, and reporting systems that turn regulatory burden into a competitive advantage.",
+      "stats": "Efficiency Gained",
+      "highlights": [
+        "Automated KYC/AML Check",
+        "Real-time Risk Monitoring",
+        "Regulatory Reporting (MiFID II, GDPR)",
+        "Smart Audit Trails"
+      ]
+    },
+    "ecosystems": {
+      "name": "Ecosystems & Platforms",
+      "tagline": "Connecting Value Chains",
+      "description": "Scalable digital platforms that orchestrate interactions between users, partners, and services to create powerful network effects.",
+      "stats": "API Interactions",
+      "highlights": [
+        "Multi-sided Marketplaces",
+        "API-first Architectures",
+        "Partner Integration Hubs",
+        "Developer Experience"
       ]
     },
     "specializations": {

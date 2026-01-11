@@ -35,6 +35,32 @@ export function IndustriesSection() {
       ],
       stats: { value: "", label: t("proptech.stats") },
     },
+    {
+      name: t("regtech.name"),
+      color: "var(--color-primary)",
+      tagline: t("regtech.tagline"),
+      description: t("regtech.description"),
+      highlights: [
+        t("regtech.highlights.0"),
+        t("regtech.highlights.1"),
+        t("regtech.highlights.2"),
+        t("regtech.highlights.3"),
+      ],
+      stats: { value: "", label: t("regtech.stats") },
+    },
+    {
+      name: t("ecosystems.name"),
+      color: "var(--color-secondary)",
+      tagline: t("ecosystems.tagline"),
+      description: t("ecosystems.description"),
+      highlights: [
+        t("ecosystems.highlights.0"),
+        t("ecosystems.highlights.1"),
+        t("ecosystems.highlights.2"),
+        t("ecosystems.highlights.3"),
+      ],
+      stats: { value: "", label: t("ecosystems.stats") },
+    },
   ];
 
   const specializations = [
@@ -67,11 +93,11 @@ export function IndustriesSection() {
       />
 
       {/* Industries Grid */}
-      <div className="grid lg:grid-cols-2 gap-8 animate-on-scroll stagger-children">
+      <div className="grid lg:grid-cols-2 gap-8 animate-on-scroll stagger-fly-children">
         {industries.map((industry, index) => (
           <div
             key={index}
-            className={`group relative rounded-3xl overflow-hidden bg-gradient-to-br from-[var(--color-card-from)] ${index === 0 ? "to-[var(--color-card-to-blue)] border-[var(--color-card-border-blue)]" : "to-[var(--color-card-to-green)] border-[var(--color-card-border-green)]"
+            className={`group relative rounded-3xl overflow-hidden bg-gradient-to-br from-[var(--color-card-from)] ${index % 2 === 0 ? "to-[var(--color-card-to-blue)] border-[var(--color-card-border-blue)]" : "to-[var(--color-card-to-green)] border-[var(--color-card-border-green)]"
               } border p-10 md:p-12 hover:shadow-xl transition-all duration-300`}
           >
             <div className="flex items-start justify-between mb-8">
@@ -145,7 +171,7 @@ export function IndustriesSection() {
 
             {/* Learn More Button */}
             <div
-              className={`w-10 h-10 rounded-full flex items-center justify-center mt-8 transition-all duration-300 ${index === 0
+              className={`w-10 h-10 rounded-full flex items-center justify-center mt-8 transition-all duration-300 ${index % 2 === 0
                 ? "bg-[var(--color-primary)] text-white shadow-lg shadow-blue-500/30"
                 : "bg-[var(--color-secondary)] text-white shadow-lg shadow-green-500/30"
                 }`}

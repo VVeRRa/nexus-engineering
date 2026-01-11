@@ -81,7 +81,7 @@ export function AboutSection() {
         </div>
 
         {/* Right Column - Values */}
-        <div className="grid sm:grid-cols-2 gap-5">
+        <div className="grid sm:grid-cols-2 gap-5 animate-on-scroll stagger-fly-children">
           {values.map((value, index) => (
             <div
               key={index}

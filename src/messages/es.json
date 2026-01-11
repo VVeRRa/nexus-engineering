@@ -13,7 +13,11 @@
         "technology": "Tecnología",
         "team": "Equipo",
         "contact": "Contacto",
-        "getInTouch": "Hablemos"
+        "getInTouch": "Hablemos",
+        "process": "Proceso",
+        "work": "Proyectos",
+        "about": "Nosotros",
+        "faq": "FAQ"
     },
     "Common": {
         "step": "Paso"
@@ -298,6 +302,30 @@
                 "Estándares RESO & Open Immo",
                 "Sistemas de gestión de inquilinos",
                 "Analítica inmobiliaria"
+            ]
+        },
+        "regtech": {
+            "name": "RegTech",
+            "tagline": "Cumplimiento por Diseño",
+            "description": "Sistemas automatizados de monitoreo de cumplimiento, gestión de riesgos y reportes que convierten la carga regulatoria en una ventaja competitiva.",
+            "stats": "Eficiencia Ganada",
+            "highlights": [
+                "Verificación KYC/AML automatizada",
+                "Monitoreo de riesgos en tiempo real",
+                "Reportes regulatorios (MiFID II, GDPR)",
+                "Pistas de auditoría inteligentes"
+            ]
+        },
+        "ecosystems": {
+            "name": "Ecosistemas y Plataformas",
+            "tagline": "Conectando Cadenas de Valor",
+            "description": "Plataformas digitales escalables que orquestan interacciones entre usuarios, socios y servicios para crear potentes efectos de red.",
+            "stats": "Interacciones API",
+            "highlights": [
+                "Marketplaces multilaterales",
+                "Arquitecturas API-first",
+                "Hubs de integración de socios",
+                "Experiencia de desarrollador (DX)"
             ]
         },
         "specializations": {

@@ -81,7 +81,7 @@ export function TechStackSection() {
       />
 
       {/* Tech Categories Grid */}
-      <div className="grid md:grid-cols-2 gap-8 lg:gap-12 animate-on-scroll stagger-children">
+      <div className="grid md:grid-cols-2 gap-8 lg:gap-12 animate-on-scroll stagger-fly-children">
         {techCategories.map((category, catIndex) => (
           <div key={catIndex} className="group">
             {/* Category Header */}

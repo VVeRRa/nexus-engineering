@@ -72,7 +72,7 @@ export function ServicesSection() {
       />
 
       {/* Services Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-on-scroll stagger-fly-children">
         {services.map((service, index) => {
           const tags = (t.raw(`list.${service.id}.tags`) as string[]) || [];
           const isEven = index % 2 === 0;

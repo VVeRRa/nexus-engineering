@@ -19,6 +19,15 @@ import {
 export default function Home() {
   // Scroll animation observer
   useEffect(() => {
+    // Immediate check for reduced motion or if JS is disabled fallback (though this is client side)
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (mediaQuery.matches) {
+      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+        el.classList.add("is-visible");
+      });
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -29,32 +38,17 @@ export default function Home() {
         });
       },
       {
-        threshold: 0,
-        rootMargin: "200px", // Trigger well before element enters viewport
+        threshold: 0.1, // Trigger when 10% is visible
+        rootMargin: "50px", // Trigger slightly before it enters fully
       }
     );
 
-    // Initial check and observe - small delay to ensure hydration
-    const initTimer = setTimeout(() => {
-      const elements = document.querySelectorAll(".animate-on-scroll");
-      elements.forEach((el) => observer.observe(el));
-    }, 100);
+    const elements = document.querySelectorAll(".animate-on-scroll");
+    elements.forEach((el) => observer.observe(el));
 
-    // Fail-safe: If observer doesn't trigger within 2000ms (e.g. rapid scroll or mobile lag), force visibility
-    // This prevents the "white gap" issue where users scroll faster than the observer fires.
-    const timeout = setTimeout(() => {
-      const elements = document.querySelectorAll(".animate-on-scroll");
-      elements.forEach((el) => {
-        if (!el.classList.contains("is-visible")) {
-          el.classList.add("is-visible");
-        }
-      });
-    }, 2000);
-
+    // Cleanup
     return () => {
       observer.disconnect();
-      clearTimeout(initTimer);
-      clearTimeout(timeout);
     };
   }, []);
 

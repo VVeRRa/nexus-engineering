@@ -13,7 +13,11 @@
         "technology": "Technologie",
         "team": "Équipe",
         "contact": "Contact",
-        "getInTouch": "Contactez-nous"
+        "getInTouch": "Contactez-nous",
+        "process": "Processus",
+        "work": "Projets",
+        "about": "À propos",
+        "faq": "FAQ"
     },
     "Common": {
         "step": "Étape"
@@ -298,6 +302,30 @@
                 "Standardy RESO & Open Immo",
                 "Systèmes de gestion des locataires",
                 "Analytique immobilière"
+            ]
+        },
+        "regtech": {
+            "name": "RegTech",
+            "tagline": "La conformité par le design",
+            "description": "Systèmes automatisés de surveillance de la conformité, de gestion des risques et de reporting qui transforment la charge réglementaire en avantage concurrentiel.",
+            "stats": "Efficacité gagnée",
+            "highlights": [
+                "Vérification KYC/AML automatisée",
+                "Surveillance des risques en temps réel",
+                "Reporting réglementaire (MiFID II, GDPR)",
+                "Pistes d'audit intelligentes"
+            ]
+        },
+        "ecosystems": {
+            "name": "Écosystèmes & Plateformes",
+            "tagline": "Connecter les chaînes de valeur",
+            "description": "Plateformes numériques évolutives qui orchestrent les interactions entre utilisateurs, partenaires et services pour créer de puissants effets de réseau.",
+            "stats": "Interactions API",
+            "highlights": [
+                "Marketplaces multilaterales",
+                "Architectures API-first",
+                "Hubs d'intégration de partenaires",
+                "Expérience développeur (DX)"
             ]
         },
         "specializations": {

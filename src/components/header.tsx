@@ -31,7 +31,10 @@ export function Header() {
     { href: "#services", label: t('services') },
     { href: "#industries", label: t('expertise') },
     { href: "#tech", label: t('technology') },
-    { href: "#about", label: t('team') },
+    { href: "#process", label: t('process') },
+    { href: "#work", label: t('work') },
+    { href: "#about", label: t('about') },
+    { href: "#faq", label: t('faq') },
   ];
 
   // Lock body scroll when mobile menu is open
@@ -62,7 +65,7 @@ export function Header() {
         </a>
 
         {/* Desktop Navigation - Centered */}
-        <nav className="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+        <nav className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}

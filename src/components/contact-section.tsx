@@ -28,7 +28,7 @@ export function ContactSection() {
         />
       }
     >
-      <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 animate-on-scroll">
+      <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 animate-on-scroll stagger-fly-children">
         {/* Left Column - Info */}
         <div>
           <SectionHeader

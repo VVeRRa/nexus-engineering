@@ -50,7 +50,7 @@ export function CaseStudiesSection() {
       />
 
       {/* Case Studies Grid */}
-      <div className="grid lg:grid-cols-3 gap-8">
+      <div className="grid lg:grid-cols-3 gap-8 animate-on-scroll stagger-fly-children">
         {caseStudies.map((study, index) => (
           <div
             key={index}

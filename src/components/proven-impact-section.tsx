@@ -30,7 +30,7 @@ export function ProvenImpactSection() {
                 description={<div className="w-24 h-1.5 bg-[var(--color-secondary)] mx-auto rounded-full" />}
             />
 
-            <div className="grid lg:grid-cols-3 gap-8 animate-on-scroll stagger-children">
+            <div className="grid lg:grid-cols-3 gap-8 animate-on-scroll stagger-fly-children">
                 {projects.map((project, index) => {
                     const isEven = index % 2 === 0;
                     const color = isEven ? "var(--color-primary)" : "var(--color-secondary)";
