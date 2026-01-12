@@ -162,24 +162,14 @@
           "Terraform"
         ]
       },
-      "product": {
-        "title": "Product Management",
+      "product-design": {
+        "title": "Product Management & Design",
         "subtitle": "Vision to Execution",
-        "description": "Product leaders who bridge the gap between vision and execution. Roadmap development, stakeholder alignment, and data-driven prioritization.",
+        "description": "Product leaders who bridge the gap between vision and execution, coupled with user-centric design that solves real problems.",
         "tags": [
           "Strategy",
           "Agile",
-          "Analytics"
-        ]
-      },
-      "design": {
-        "title": "Product Design",
-        "subtitle": "UI/UX Excellence",
-        "description": "User-centric design that solves real problems. Wireframing, prototyping, and high-fidelity UI design that developers love to build.",
-        "tags": [
-          "Figma",
-          "Adobe Creative Suite",
-          "Design Systems"
+          "UI/UX Design"
         ]
       }
     },

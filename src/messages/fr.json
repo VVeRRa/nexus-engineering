@@ -162,24 +162,14 @@
                     "Terraform"
                 ]
             },
-            "product": {
-                "title": "Gestion Produit",
+            "product-design": {
+                "title": "Gestion de Produit & Design",
                 "subtitle": "De la Vision à l'Exécution",
-                "description": "Leaders produit qui font le pont entre vision et exécution. Développement de roadmap, alignement des parties prenantes et priorisation basée sur les données.",
+                "description": "Leaders produit qui lient vision et exécution, couplés à un design centré utilisateur qui résout de vrais problèmes.",
                 "tags": [
                     "Stratégie",
                     "Agile",
-                    "Analytics"
-                ]
-            },
-            "design": {
-                "title": "Design Produit",
-                "subtitle": "Excellence UI/UX",
-                "description": "Design centré utilisateur qui résout de vrais problèmes. Wireframing, prototypage et design UI haute fidélité faciles à implémenter pour les développeurs.",
-                "tags": [
-                    "Figma",
-                    "Adobe Creative Suite",
-                    "Design Systems"
+                    "UI/UX Design"
                 ]
             }
         },

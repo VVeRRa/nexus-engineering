@@ -77,7 +77,7 @@ export function TechStackSection() {
         label={<span className="text-[var(--color-secondary)]">{t("label")}</span>}
         title={t("title")}
         description={t("description")}
-        className="mb-20"
+        className="mb-10"
       />
 
       {/* Tech Categories Grid */}
@@ -104,13 +104,12 @@ export function TechStackSection() {
               {category.techs.map((tech, techIndex) => (
                 <div
                   key={techIndex}
-                  className="group/item relative bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-4 hover:shadow-md transition-all duration-300 cursor-default overflow-hidden"
+                  className="group/item relative bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-3 hover:shadow-md transition-all duration-300 cursor-default overflow-hidden"
                 >
 
                   <div className="relative z-10">
-                    {/* Abbreviation */}
                     <div
-                      className="text-2xl mb-2 transition-colors duration-300 font-bold"
+                      className="text-lg mb-1 transition-colors duration-300 font-bold"
                       style={{
                         fontFamily: "var(--font-mono)",
                         color: category.color,
@@ -121,7 +120,7 @@ export function TechStackSection() {
 
                     {/* Name */}
                     <div
-                      className="text-sm text-[var(--color-text-secondary)] font-medium"
+                      className="text-xs text-[var(--color-text-secondary)] font-medium"
                       style={{ fontFamily: "var(--font-display)" }}
                     >
                       {tech.name}

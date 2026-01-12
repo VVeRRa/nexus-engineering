@@ -162,24 +162,14 @@
           "Terraform"
         ]
       },
-      "product": {
-        "title": "Produktmanagement",
+      "product-design": {
+        "title": "Produktmanagement & Design",
         "subtitle": "Von Vision zur Exekution",
-        "description": "Produktleiter, die die Lücke zwischen Vision und Umsetzung schließen. Roadmap-Entwicklung, Stakeholder-Abstimmung und datengestützte Priorisierung.",
+        "description": "Produktleiter, die Vision und Umsetzung verbinden, gepaart mit nutzerzentriertem Design, das echte Probleme löst.",
         "tags": [
           "Strategie",
           "Agile",
-          "Analytics"
-        ]
-      },
-      "design": {
-        "title": "Produktdesign",
-        "subtitle": "UI/UX Exzellenz",
-        "description": "Nutzerzentriertes Design, das echte Probleme löst. Wireframing, Prototyping und High-Fidelity-UI-Design, das Entwickler gerne umsetzen.",
-        "tags": [
-          "Figma",
-          "Adobe Creative Suite",
-          "Design Systems"
+          "UI/UX Design"
         ]
       }
     },

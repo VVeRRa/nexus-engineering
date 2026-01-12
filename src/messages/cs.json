@@ -162,24 +162,14 @@
           "Terraform"
         ]
       },
-      "product": {
-        "title": "Product Management",
+      "product-design": {
+        "title": "Produktový management & Design",
         "subtitle": "Od vize k exekuci",
-        "description": "Produktoví lídři, kteří propojí vizi s realitou. Roadmapy, alignment stakeholderů a prioritizace daty.",
+        "description": "Produktoví lídři propojující vizi s realitou, doplnění o design zaměřený na uživatele, který řeší skutečné problémy.",
         "tags": [
           "Strategie",
           "Agile",
-          "Analytics"
-        ]
-      },
-      "design": {
-        "title": "Product Design",
-        "subtitle": "UI/UX Excellence",
-        "description": "Design zaměřený na uživatele. Wireframe, prototypy a high-fidelity UI design, který se dobře implementuje.",
-        "tags": [
-          "Figma",
-          "Adobe Creative Suite",
-          "Design Systems"
+          "UI/UX Design"
         ]
       }
     },

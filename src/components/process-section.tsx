@@ -135,28 +135,42 @@ export function ProcessSection() {
 
       {/* Engagement Models (Simplified) */}
       <div className="mt-24 pt-16 border-t border-[var(--color-border)]">
-        <div className="bg-[var(--color-paper-secondary)] rounded-3xl p-10 md:p-16 text-center">
-          <h3 className="text-2xl font-bold text-[var(--color-ink)] mb-4" style={{ fontFamily: "var(--font-display)" }}>
-            {t("models.title")}
-          </h3>
-          <p className="text-[var(--color-text-secondary)] max-w-2xl mx-auto mb-10">
-            {t("models.subtitle")}
-          </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { id: "augmentation", icon: "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8z M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75" },
-              { id: "team", icon: "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8z M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75" },
-              { id: "project", icon: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16zM3.27 6.96L12 12.01l8.73-5.05 M12 22.08V12" }
-            ].map((model, idx) => (
-              <div key={model.id} className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-3xl p-6 hover:shadow-lg transition-all duration-300">
-                <h4 className="text-lg font-bold text-[var(--color-ink)] mb-2">
-                  {t(`models.${model.id}.title`)}
-                </h4>
-                <p className="text-[var(--color-text-secondary)] text-sm">
-                  {t(`models.${model.id}.desc`)}
-                </p>
-              </div>
-            ))}
+        <div className="bg-[var(--color-paper-secondary)] rounded-3xl overflow-hidden flex flex-col lg:flex-row shadow-2xl">
+          {/* Image Side */}
+          <div className="lg:w-2/5 relative min-h-[300px] lg:min-h-full">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/developer-explaining.png"
+              alt="Developer collaboration"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-[var(--color-surface)]/30 mix-blend-multiply" />
+          </div>
+
+          {/* Content Side */}
+          <div className="flex-1 p-8 md:p-12 lg:p-16">
+            <h3 className="text-2xl font-bold text-[var(--color-ink)] mb-4" style={{ fontFamily: "var(--font-display)" }}>
+              {t("models.title")}
+            </h3>
+            <p className="text-[var(--color-text-secondary)] mb-10 text-lg">
+              {t("models.subtitle")}
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
+              {[
+                { id: "augmentation", icon: "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8z M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75" },
+                { id: "team", icon: "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8z M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75" },
+                { id: "project", icon: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16zM3.27 6.96L12 12.01l8.73-5.05 M12 22.08V12" }
+              ].map((model, idx) => (
+                <div key={model.id} className={`bg-[var(--color-surface)] border border-[var(--color-border)] rounded-2xl p-6 hover:shadow-lg transition-all duration-300 ${model.id === 'project' ? 'md:col-span-2 lg:col-span-1 xl:col-span-2' : ''}`}>
+                  <h4 className="text-lg font-bold text-[var(--color-ink)] mb-2 flex items-center gap-2">
+                    {t(`models.${model.id}.title`)}
+                  </h4>
+                  <p className="text-[var(--color-text-secondary)] text-sm leading-relaxed">
+                    {t(`models.${model.id}.desc`)}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

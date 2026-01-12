@@ -59,7 +59,7 @@ export function AboutSection() {
         />
       }
     >
-      <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center animate-on-scroll">
+      <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start animate-on-scroll">
         {/* Left Column */}
         <div>
           <SectionHeader
@@ -78,6 +78,8 @@ export function AboutSection() {
               {t("description2")}
             </p>
           </div>
+
+
         </div>
 
         {/* Right Column - Values */}
@@ -108,6 +110,15 @@ export function AboutSection() {
           ))}
         </div>
       </div>
-    </Section>
+
+      <div className="mt-20 relative w-full h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-[var(--color-border)]">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/team-collaboration.png"
+          alt="Nexus Engineering Team"
+          className="absolute inset-0 w-full h-full object-cover object-center opacity-90 hover:opacity-100 transition-opacity duration-500"
+        />
+      </div>
+    </Section >
   );
 }

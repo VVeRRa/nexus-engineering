@@ -6,12 +6,12 @@
 
 :root {
   /* Primary Colors - Friendly & Professional */
-  --color-ink: #0F172A;
-  /* Slate 900 */
-  --color-paper: #FFFFFF;
-  /* Pure White */
-  --color-paper-secondary: #F8FAFC;
-  /* Slate 50 for sections */
+  --color-ink: #F1F5F9;
+  /* Slate 100 - Text */
+  --color-paper: #04003f;
+  /* Deep Navy - Base BG */
+  --color-paper-secondary: #0d0739;
+  /* Surface Navy */
 
   /* Bubuu Brand Colors */
   --color-primary: #0066FF;
@@ -20,13 +20,12 @@
   --color-secondary: hsl(140, 76%, 44%);
   /* Fresh Green */
   --color-accent: var(--color-primary);
-  /* Alias for existing usage */
   --color-accent-glow: rgba(37, 99, 235, 0.25);
 
-  /* Neutral Scale - Cool Tones */
+  /* Neutral Scale */
   --color-slate-950: #020617;
-  --color-slate-900: #0F172A;
-  --color-slate-800: #1E293B;
+  --color-slate-900: #04003f;
+  --color-slate-800: #0d0739;
   --color-slate-700: #334155;
   --color-slate-600: #475569;
   --color-slate-500: #64748B;
@@ -38,12 +37,9 @@
 
   /* Semantic Colors */
   --color-fintech: #0066FF;
-  /* Blue for FinTech */
   --color-proptech: #22C55E;
-  /* Green for PropTech */
   --color-cloud: #00B4FF;
   --color-ai: #8B5CF6;
-  /* Purple for AI */
 
   /* Typography */
   --font-display: var(--font-body);
@@ -68,11 +64,11 @@
   --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
   --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-  /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
-  --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.16);
+  /* Shadows - Adjusted for Dark Mode Default */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
   --shadow-glow: 0 0 60px var(--color-accent-glow);
   --shadow-glow-sm: 0 0 30px var(--color-accent-glow);
 
@@ -84,66 +80,28 @@
   --radius-2xl: 32px;
   --radius-full: 9999px;
 
-  /* Semantic Text & Borders (New) */
-  --color-text-secondary: #475569;
-  /* Slate 600 - Darker for better readability */
-  --color-border: #E2E8F0;
-  /* Slate 200 */
-  --color-surface: #FFFFFF;
-  /* White for cards */
-  --color-surface-hover: #F8FAFC;
-  /* Slate 50 for hover */
-
-  /* Card Gradients & Borders (Enhanced) */
-  --color-card-from: #FFFFFF;
-  --color-card-to-green: #DCFCE7;
-  /* Green 100 - More visible gradient */
-  --color-card-to-blue: #DBEAFE;
-  /* Blue 100 - More visible gradient */
-  --color-card-border-green: #86EFAC;
-  /* Green 300 - Visible border */
-  --color-card-border-blue: #93C5FD;
-  /* Blue 300 - Visible border */
-  --color-accordian-bg: #FFFFFF;
-}
-
-.dark {
-  /* Dark Mode Overrides */
-  --color-ink: #F1F5F9;
-  /* Slate 100 */
-  --color-paper: #020617;
-  /* Slate 950 */
-  --color-paper-secondary: #0F172A;
-  /* Slate 900 */
-
-  /* Adjust shadows for dark mode */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
-
-  /* Semantic Text & Borders Overrides (New) */
+  /* Semantic Text & Borders */
   --color-text-secondary: #CBD5E1;
-  /* Slate 300 - Lighter for better dark mode reading */
+  /* Slate 300 - Readable on dark */
   --color-border: #1E293B;
   /* Slate 800 */
-  --color-surface: #0F172A;
-  /* Slate 900 for cards */
-  --color-surface-hover: #1E293B;
-  /* Slate 800 for hover */
+  --color-surface: #0d0739;
+  /* Deep Navy Surface */
+  --color-surface-hover: #0a083f;
+  /* Slightly lighter surface for hover */
 
-  /* Card Gradients & Borders Overrides */
-  --color-card-from: #1E293B;
-  /* Slate 800 */
-  --color-card-to-green: #1E293B;
-  /* Slate 800 (Flat in dark mode) */
-  --color-card-to-blue: #1E293B;
-  /* Slate 800 (Flat in dark mode) */
+  /* Card Gradients & Borders */
+  --color-card-from: #0d0739;
+  /* Deep Navy Surface */
+  --color-card-to-green: #0d0739;
+  /* Flat in dark mode */
+  --color-card-to-blue: #0d0739;
+  /* Flat in dark mode */
   --color-card-border-green: #052e16;
   /* Green 950 */
   --color-card-border-blue: #172554;
   /* Blue 950 */
-  --color-accordian-bg: #0F172A;
+  --color-accordian-bg: #04003f;
 }
 
 @theme inline {

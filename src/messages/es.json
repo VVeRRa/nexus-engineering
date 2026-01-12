@@ -162,24 +162,14 @@
                     "Terraform"
                 ]
             },
-            "product": {
-                "title": "Gestión de Producto",
+            "product-design": {
+                "title": "Gestión de Producto y Diseño",
                 "subtitle": "De la Visión a la Ejecución",
-                "description": "Líderes de producto que cierran la brecha entre visión y ejecución. Desarrollo de roadmap, alineación de partes interesadas y priorización.",
+                "description": "Líderes de producto que unen visión y ejecución, junto con un diseño centrado en el usuario que resuelve problemas reales.",
                 "tags": [
                     "Estrategia",
                     "Agile",
-                    "Analytics"
-                ]
-            },
-            "design": {
-                "title": "Diseño de Producto",
-                "subtitle": "Excelencia UI/UX",
-                "description": "Diseño centrado en el usuario que resuelve problemas reales. Wireframing, prototipos y diseño de UI de alta fidelidad.",
-                "tags": [
-                    "Figma",
-                    "Adobe Creative Suite",
-                    "Design Systems"
+                    "UI/UX Design"
                 ]
             }
         },

@@ -73,14 +73,13 @@ export function ContactSection() {
             </button>
           </div>
 
-          <div className="flex items-center gap-4 text-sm mt-12" style={{ color: "#64748b" }}>
+          <div className="flex items-center gap-4 text-sm mt-12 text-[var(--color-text-secondary)]">
             <span className="font-bold">Trusted by</span>
-            <div className="flex gap-4 opacity-100 grayscale">
+            <div className="flex gap-4 opacity-100">
               {/* Placeholders for logos */}
-              {/* Placeholders for logos */}
-              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold" style={{ backgroundColor: "#e2e8f0", color: "#64748b" }}>FinTech</div>
-              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold" style={{ backgroundColor: "#e2e8f0", color: "#64748b" }}>PropTech</div>
-              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold" style={{ backgroundColor: "#e2e8f0", color: "#64748b" }}>Enterprise</div>
+              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text-secondary)]">FinTech</div>
+              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text-secondary)]">PropTech</div>
+              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text-secondary)]">Enterprise</div>
             </div>
           </div>
 

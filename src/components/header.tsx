@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./language-switcher";
-import { ThemeToggle } from "./theme-toggle";
+
 
 export function Header() {
   const t = useTranslations("Nav");
@@ -53,7 +53,7 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-[100] transition-[padding,background-color,box-shadow] duration-300 ${isScrolled || isMobileMenuOpen
         ? "bg-[var(--color-surface)] shadow-sm py-3"
-        : "bg-transparent py-5"
+        : "bg-[var(--color-surface)] py-5"
         }`}
     >
       <div className="container flex items-center justify-between">
@@ -79,7 +79,7 @@ export function Header() {
 
         {/* CTA Button & Language Switcher */}
         <div className="hidden lg:flex items-center gap-4">
-          <ThemeToggle />
+
           <LanguageSwitcher />
           <a
             href="#contact"
@@ -143,7 +143,7 @@ export function Header() {
               <span>(800) 555-1234</span>
             </a>
             <div className="mt-8 flex justify-center gap-4">
-              <ThemeToggle />
+
               <LanguageSwitcher />
             </div>
           </div>

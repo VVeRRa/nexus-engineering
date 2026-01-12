@@ -59,12 +59,12 @@ export default function Home() {
         <HeroSection />
         <ServicesSection />
         <IndustriesSection />
-        <TechStackSection />
         <ProcessSection />
         <ProvenImpactSection />
         {/* CaseStudiesSection removed per user request */}
 
         <AboutSection />
+        <TechStackSection />
         <FAQSection />
         <ContactSection />
       </main>
