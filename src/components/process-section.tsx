@@ -140,7 +140,7 @@ export function ProcessSection() {
           <div className="lg:w-2/5 relative min-h-[300px] lg:min-h-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/developer-explaining.png"
+              src="/images/process-whiteboard.png"
               alt="Developer collaboration"
               className="absolute inset-0 w-full h-full object-cover"
             />

@@ -8,10 +8,10 @@
   /* Primary Colors - Friendly & Professional */
   --color-ink: #F1F5F9;
   /* Slate 100 - Text */
-  --color-paper: #04003f;
-  /* Deep Navy - Base BG */
-  --color-paper-secondary: #0d0739;
-  /* Surface Navy */
+  --color-paper: #2A547D;
+  /* Metallic Blue - Base BG */
+  --color-paper-secondary: #242F4D;
+  /* Space Cadet - Surface */
 
   /* Bubuu Brand Colors */
   --color-primary: #0066FF;
@@ -24,8 +24,8 @@
 
   /* Neutral Scale */
   --color-slate-950: #020617;
-  --color-slate-900: #04003f;
-  --color-slate-800: #0d0739;
+  --color-slate-900: #2A547D;
+  --color-slate-800: #242F4D;
   --color-slate-700: #334155;
   --color-slate-600: #475569;
   --color-slate-500: #64748B;
@@ -85,17 +85,17 @@
   /* Slate 300 - Readable on dark */
   --color-border: #1E293B;
   /* Slate 800 */
-  --color-surface: #0d0739;
+  --color-surface: #242F4D;
   /* Deep Navy Surface */
-  --color-surface-hover: #0a083f;
-  /* Slightly lighter surface for hover */
+  --color-surface-hover: #2F3C5F;
+  /* Slightly lighter surface for hover - adjusted manually based on #242F4D */
 
   /* Card Gradients & Borders */
-  --color-card-from: #0d0739;
+  --color-card-from: #242F4D;
   /* Deep Navy Surface */
-  --color-card-to-green: #0d0739;
+  --color-card-to-green: #242F4D;
   /* Flat in dark mode */
-  --color-card-to-blue: #0d0739;
+  --color-card-to-blue: #242F4D;
   /* Flat in dark mode */
   --color-card-border-green: #052e16;
   /* Green 950 */
