@@ -78,7 +78,7 @@ export function IndustriesSection() {
       id="industries"
       background={
         <div
-          className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full opacity-30 -z-10"
+          className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full opacity-0 -z-10"
           style={{ background: 'radial-gradient(circle, var(--color-blue-100) 0%, transparent 70%)' }}
         />
       }
@@ -86,7 +86,7 @@ export function IndustriesSection() {
       {/* Section Header */}
       <SectionHeader
         align="center"
-        label={<span className="text-[var(--color-primary)]">{t("label")}</span>}
+        label={<span className="text-[var(--color-secondary)]">{t("label")}</span>}
         title={<>{t("title")}<br /><span className="text-[var(--color-text-secondary)]">{t("subtitle")}</span></>}
         description={t("description")}
         className="mb-20"
@@ -130,7 +130,7 @@ export function IndustriesSection() {
                   {industry.stats.value}
                 </div>
                 <div
-                  className="text-xs text-[var(--color-text-secondary)]"
+                  className="text-xs text-slate-400"
                   style={{ fontFamily: "var(--font-mono)" }}
                 >
                   {industry.stats.label}
@@ -139,7 +139,7 @@ export function IndustriesSection() {
             </div>
 
             {/* Description */}
-            <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">
+            <p className="text-slate-400 mb-8 leading-relaxed">
               {industry.description}
             </p>
 
@@ -148,7 +148,7 @@ export function IndustriesSection() {
               {industry.highlights.map((highlight, hIndex) => (
                 <li
                   key={hIndex}
-                  className="flex items-center gap-3 text-[var(--color-text-secondary)]"
+                  className="flex items-center gap-3 text-[var(--color-ink)]"
                 >
                   <span
                     className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
@@ -188,7 +188,7 @@ export function IndustriesSection() {
       <div className="mt-20 pt-16 border-t border-slate-100 dark:border-slate-800">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10">
           <h3
-            className="text-2xl text-slate-900 dark:text-white"
+            className="text-2xl text-[var(--color-ink)]"
             style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
           >
             {t("specializations.title")}
@@ -206,7 +206,7 @@ export function IndustriesSection() {
             >
               <div className="text-center">
                 <span
-                  className="block text-sm text-[var(--color-text-secondary)] group-hover:text-[var(--color-primary)] transition-colors duration-300 font-medium"
+                  className="block text-sm text-slate-400 group-hover:text-[var(--color-primary)] transition-colors duration-300 font-medium"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   {spec.name}

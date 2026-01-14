@@ -25,7 +25,7 @@ export function SectionHeader({
             )}
         >
             {label && (
-                <span className="text-[var(--color-primary)] font-bold tracking-wider uppercase text-sm mb-4 block">
+                <span className="text-[var(--color-secondary)] font-bold tracking-wider uppercase text-sm mb-4 block">
                     {label}
                 </span>
             )}
@@ -36,7 +36,7 @@ export function SectionHeader({
                 {title}
             </h2>
             {description && (
-                <div className="text-xl text-[var(--color-text-secondary)]">
+                <div className="text-xl text-[var(--color-ink)]">
                     {description}
                 </div>
             )}

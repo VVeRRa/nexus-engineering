@@ -9,9 +9,8 @@ export function HeroSection() {
     <section className="bg-[var(--color-paper)] relative min-h-screen flex flex-col justify-center overflow-hidden transition-colors duration-300">
 
       {/* Background Decor - Very subtle */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--color-slate-100)_0%,_transparent_50%)] dark:bg-none dark:opacity-0" />
-      {/* Dark mode subtle glow */}
-      <div className="absolute inset-0 opacity-0 dark:opacity-20 pointer-events-none bg-[radial-gradient(circle_at_top,_#1e293b_0%,_transparent_50%)]" />
+      {/* Background Decor - Very subtle */}
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top,_#1e293b_0%,_transparent_50%)] opacity-20" />
 
       {/* Content */}
       <div className="container relative z-10 pt-20 pb-20 text-center">
@@ -26,7 +25,7 @@ export function HeroSection() {
         {/* Main Headline */}
         <div className="max-w-4xl mx-auto">
           <h1
-            className="text-5xl md:text-7xl text-[var(--color-ink)] dark:text-white/50 tracking-tight leading-[1.1] animate-fade-up"
+            className="text-5xl md:text-7xl text-[var(--color-ink)] tracking-tight leading-[1.1] animate-fade-up"
             style={{
               fontFamily: "var(--font-display)",
               fontWeight: 800,
@@ -40,7 +39,7 @@ export function HeroSection() {
 
         {/* Subheadline */}
         <p
-          className="text-xl md:text-2xl text-[var(--color-text-secondary)] max-w-2xl mx-auto mt-8 leading-relaxed animate-fade-up"
+          className="text-xl md:text-2xl text-[var(--color-ink)] max-w-2xl mx-auto mt-8 leading-relaxed animate-fade-up"
           style={{
             fontFamily: "var(--font-body)",
             animationDelay: "200ms",
@@ -66,7 +65,7 @@ export function HeroSection() {
           </a>
 
           {/* Trust indicators */}
-          <div className="flex items-center gap-6 mt-8 text-sm text-slate-500 font-medium">
+          <div className="flex items-center gap-6 mt-8 text-sm text-[var(--color-ink)] font-medium">
             <div className="flex items-center gap-2">
               <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>

@@ -16,7 +16,7 @@ export function FAQSection() {
             <div className="max-w-4xl mx-auto">
                 <SectionHeader
                     align="center"
-                    label={<span className="text-[var(--color-primary)]">FAQ</span>}
+                    label={<span className="text-[var(--color-secondary)]">FAQ</span>}
                     title={t('FAQ.title')}
                     className="mb-16"
                 />
@@ -54,7 +54,7 @@ function AccordionItem({ question, answer }: { question: string; answer: string 
             <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-48' : 'max-h-0'}`}
             >
-                <div className="p-6 pt-0 text-[var(--color-text-secondary)]">
+                <div className="p-6 pt-0 text-slate-400">
                     {answer}
                 </div>
             </div>

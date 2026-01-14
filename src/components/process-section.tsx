@@ -66,14 +66,14 @@ export function ProcessSection() {
       id="process"
       background={
         <div
-          className="absolute top-0 left-1/4 w-[600px] h-[600px] rounded-full opacity-20 -z-10"
+          className="absolute top-0 left-1/4 w-[600px] h-[600px] rounded-full opacity-0 -z-10"
           style={{ background: 'radial-gradient(circle, var(--color-blue-100) 0%, transparent 70%)' }}
         />
       }
     >
       <SectionHeader
         align="center"
-        label={<span className="text-[var(--color-primary)]">{t("label")}</span>}
+        label={<span className="text-[var(--color-secondary)]">{t("label")}</span>}
         title={t("title")}
         description={t("description")}
         className="mb-20"
@@ -101,14 +101,14 @@ export function ProcessSection() {
                   >
                     {step.title}
                   </h3>
-                  <p className="text-slate-500 dark:text-slate-400 mb-6">
+                  <p className="text-slate-400 mb-6">
                     {step.description}
                   </p>
                 </div>
 
                 <ul className="space-y-3 mt-auto">
                   {step.details.map((detail, i) => (
-                    <li key={i} className="flex items-start gap-3 text-[var(--color-text-secondary)] text-sm">
+                    <li key={i} className="flex items-start gap-3 text-[var(--color-ink)] text-sm">
                       <span
                         className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5"
                         style={{ background: isEven ? `color-mix(in srgb, var(--color-primary), transparent 85%)` : `color-mix(in srgb, var(--color-secondary), transparent 85%)` }}
@@ -152,7 +152,7 @@ export function ProcessSection() {
             <h3 className="text-2xl font-bold text-[var(--color-ink)] mb-4" style={{ fontFamily: "var(--font-display)" }}>
               {t("models.title")}
             </h3>
-            <p className="text-[var(--color-text-secondary)] mb-10 text-lg">
+            <p className="text-[var(--color-ink)] mb-10 text-lg">
               {t("models.subtitle")}
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
@@ -165,7 +165,7 @@ export function ProcessSection() {
                   <h4 className="text-lg font-bold text-[var(--color-ink)] mb-2 flex items-center gap-2">
                     {t(`models.${model.id}.title`)}
                   </h4>
-                  <p className="text-[var(--color-text-secondary)] text-sm leading-relaxed">
+                  <p className="text-slate-400 text-sm leading-relaxed">
                     {t(`models.${model.id}.desc`)}
                   </p>
                 </div>

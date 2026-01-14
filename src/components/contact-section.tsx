@@ -23,7 +23,7 @@ export function ContactSection() {
       id="contact"
       background={
         <div
-          className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full opacity-20 -z-10"
+          className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full opacity-0 -z-10"
           style={{ background: 'radial-gradient(circle, var(--color-green-100) 0%, transparent 70%)' }}
         />
       }
@@ -50,7 +50,7 @@ export function ContactSection() {
                   </div>
                   <div className="min-w-0">
                     <h3 className="text-lg md:text-xl font-bold text-[var(--color-ink)] mb-1">Email us</h3>
-                    <p className="text-[var(--color-text-secondary)] break-all">hello@nexus.engineering</p>
+                    <p className="text-slate-400 break-all">hello@nexus.engineering</p>
                   </div>
                 </div>
               </div>
@@ -66,20 +66,20 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h3 className="text-lg md:text-xl font-bold text-[var(--color-ink)] mb-1">Live Chat</h3>
-                    <p className="text-[var(--color-text-secondary)]">{t("response")}</p>
+                    <p className="text-slate-400">{t("response")}</p>
                   </div>
                 </div>
               </div>
             </button>
           </div>
 
-          <div className="flex items-center gap-4 text-sm mt-12 text-[var(--color-text-secondary)]">
+          <div className="flex items-center gap-4 text-sm mt-12 text-[var(--color-ink)]">
             <span className="font-bold">Trusted by</span>
             <div className="flex gap-4 opacity-100">
               {/* Placeholders for logos */}
-              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text-secondary)]">FinTech</div>
-              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text-secondary)]">PropTech</div>
-              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text-secondary)]">Enterprise</div>
+              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">FinTech</div>
+              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">PropTech</div>
+              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">Enterprise</div>
             </div>
           </div>
 
@@ -97,20 +97,20 @@ export function ContactSection() {
                   </svg>
                 </div>
                 <h3 className="text-2xl text-[var(--color-ink)] font-bold mb-2">{t("form.sent")}</h3>
-                <p className="text-[var(--color-text-secondary)]">{t("form.sentDesc")}</p>
+                <p className="text-[var(--color-ink)]">{t("form.sentDesc")}</p>
               </div>
             ) : (
               <form action={formAction} className="relative z-10 space-y-5">
                 <div className="grid md:grid-cols-2 gap-5">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-[var(--color-text-secondary)] mb-1">
+                    <label htmlFor="name" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
                       {t("form.name")}
                     </label>
                     <input
                       type="text"
                       id="name"
                       name="name"
-                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
+                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
                       placeholder={t("form.namePlaceholder")}
                     />
                     {state.errors?.name && (
@@ -118,14 +118,14 @@ export function ContactSection() {
                     )}
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-[var(--color-text-secondary)] mb-1">
+                    <label htmlFor="email" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
                       {t("form.email")}
                     </label>
                     <input
                       type="email"
                       id="email"
                       name="email"
-                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
+                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
                       placeholder={t("form.emailPlaceholder")}
                     />
                     {state.errors?.email && (
@@ -135,7 +135,7 @@ export function ContactSection() {
                 </div>
 
                 <div>
-                  <label htmlFor="projectType" className="block text-sm font-medium text-[var(--color-text-secondary)] mb-1">
+                  <label htmlFor="projectType" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
                     {t("form.projectType")}
                   </label>
                   <select
@@ -152,14 +152,14 @@ export function ContactSection() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+                  <label htmlFor="message" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
                     {t("form.message")}
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     rows={4}
-                    className="w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all resize-none"
+                    className="w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all resize-none"
                     placeholder={t("form.messagePlaceholder")}
                   />
                   {state.errors?.message && (

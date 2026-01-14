@@ -65,7 +65,7 @@ export function ServicesSection() {
       id="services"
       background={
         <div
-          className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-20 dark:opacity-0 -z-10"
+          className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-0 -z-10"
           style={{ background: 'radial-gradient(circle, var(--color-green-200) 0%, transparent 70%)' }}
         />
       }
@@ -111,7 +111,7 @@ export function ServicesSection() {
                   {t(`list.${service.id}.title`)}
                 </h3>
 
-                <p className="text-[var(--color-text-secondary)] mb-6 leading-relaxed text-sm">
+                <p className="text-[var(--color-ink)] mb-6 leading-relaxed text-sm">
                   {t(`list.${service.id}.description`)}
                 </p>
 
@@ -120,8 +120,8 @@ export function ServicesSection() {
                     <span
                       key={tagIndex}
                       className={`px-0 py-1 text-xs font-medium ${isEven
-                        ? "text-[var(--color-primary)] dark:text-blue-300"
-                        : "text-[var(--color-secondary)] dark:text-green-300"
+                        ? "text-blue-300"
+                        : "text-green-300"
                         }`}
                     >
                       {tag}
@@ -136,7 +136,7 @@ export function ServicesSection() {
 
       {/* Bottom CTA */}
       <div className="mt-16 text-center">
-        <a href="#contact" className="inline-flex items-center gap-2 text-[var(--color-primary)] font-bold hover:gap-3 transition-all">
+        <a href="#contact" className="inline-flex items-center gap-2 text-[var(--color-secondary)] font-bold hover:gap-3 transition-all">
           {t('cta.button')}
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
         </a>

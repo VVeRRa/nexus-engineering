@@ -54,7 +54,7 @@ export function AboutSection() {
       id="about"
       background={
         <div
-          className="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full opacity-30 -z-10"
+          className="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full opacity-0 -z-10"
           style={{ background: 'radial-gradient(circle, var(--color-green-100) 0%, transparent 70%)' }}
         />
       }
@@ -70,7 +70,7 @@ export function AboutSection() {
             })}
             className="mb-8"
           />
-          <div className="space-y-6 text-lg text-slate-500 dark:text-slate-400 leading-relaxed">
+          <div className="space-y-6 text-lg text-[var(--color-ink)] leading-relaxed">
             <p>
               {t("description1")}
             </p>
@@ -103,7 +103,7 @@ export function AboutSection() {
               </h3>
 
               {/* Description */}
-              <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+              <p className="text-sm text-slate-400 leading-relaxed">
                 {value.description}
               </p>
             </div>

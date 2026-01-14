@@ -67,7 +67,7 @@ export function TechStackSection() {
       id="tech"
       background={
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-20 -z-10"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-0 -z-10"
           style={{ background: 'radial-gradient(circle, var(--color-green-100) 0%, transparent 70%)' }}
         />
       }
@@ -91,7 +91,7 @@ export function TechStackSection() {
                 style={{ background: category.color }}
               />
               <h3
-                className="text-sm uppercase tracking-[0.15em] text-[var(--color-text-secondary)]"
+                className="text-sm uppercase tracking-[0.15em] text-[var(--color-ink)]"
                 style={{ fontFamily: "var(--font-mono)", fontWeight: 600 }}
               >
                 {category.name}
@@ -120,7 +120,7 @@ export function TechStackSection() {
 
                     {/* Name */}
                     <div
-                      className="text-xs text-[var(--color-text-secondary)] font-medium"
+                      className="text-xs text-[var(--color-ink)] font-medium"
                       style={{ fontFamily: "var(--font-display)" }}
                     >
                       {tech.name}
@@ -134,9 +134,9 @@ export function TechStackSection() {
       </div>
 
       {/* Bottom Statement */}
-      <div className="mt-20 pt-12 border-t border-slate-200 dark:border-slate-800">
+      <div className="mt-20 pt-12 border-t border-slate-800">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 text-center lg:text-left">
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl">
+          <p className="text-lg text-[var(--color-ink)] max-w-2xl">
             {t("statement")}
           </p>
           <a href="#contact" className="inline-flex items-center justify-center px-8 py-3 bg-[var(--color-primary)] text-white rounded-full font-bold hover:bg-blue-700 transition-colors">

@@ -49,8 +49,8 @@ export function ProvenImpactSection() {
                             {/* Category Tag */}
                             <span
                                 className={`inline-block px-0 py-1 text-xs font-bold uppercase tracking-wider mb-6 ${isEven
-                                    ? "text-[var(--color-primary)] dark:text-blue-300"
-                                    : "text-[var(--color-secondary)] dark:text-green-300"
+                                    ? "text-blue-300"
+                                    : "text-green-300"
                                     }`}
                             >
                                 {t(`${project.id}.category`)}
@@ -65,7 +65,7 @@ export function ProvenImpactSection() {
                             </h3>
 
                             {/* Description */}
-                            <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed flex-grow">
+                            <p className="text-slate-400 mb-8 leading-relaxed flex-grow">
                                 {t(`${project.id}.description`)}
                             </p>
 
@@ -82,6 +82,6 @@ export function ProvenImpactSection() {
                     )
                 })}
             </div>
-        </Section>
+        </Section >
     );
 }

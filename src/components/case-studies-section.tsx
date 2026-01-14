@@ -54,7 +54,7 @@ export function CaseStudiesSection() {
         {caseStudies.map((study, index) => (
           <div
             key={index}
-            className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col"
+            className="bg-[var(--color-surface)] rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-800 flex flex-col"
           >
             {/* Green Quote Icon */}
             <div className="mb-6 text-[var(--color-secondary)]">
@@ -64,7 +64,7 @@ export function CaseStudiesSection() {
             </div>
 
             {/* Description/Quote */}
-            <p className="text-slate-600 mb-8 leading-relaxed flex-grow">
+            <p className="text-slate-400 mb-8 leading-relaxed flex-grow">
               &quot;{study.description}&quot;
             </p>
 
@@ -78,13 +78,13 @@ export function CaseStudiesSection() {
             </div>
 
             {/* Author Profile */}
-            <div className="flex items-center gap-4 pt-6 border-t border-slate-100">
-              <div className="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold">
+            <div className="flex items-center gap-4 pt-6 border-t border-slate-800">
+              <div className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 font-bold">
                 {study.avatar}
               </div>
               <div>
-                <h4 className="font-bold text-slate-900">{study.author}</h4>
-                <p className="text-sm text-slate-500">{study.role}</p>
+                <h4 className="font-bold text-[var(--color-ink)]">{study.author}</h4>
+                <p className="text-sm text-[var(--color-ink)]">{study.role}</p>
               </div>
             </div>
 

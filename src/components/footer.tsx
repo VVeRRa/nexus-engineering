@@ -38,12 +38,12 @@ export function Footer() {
                 bubuu<span className="text-[var(--color-primary)]">.</span>
               </div>
             </a>
-            <p className="text-[var(--color-text-secondary)] mb-6 max-w-sm leading-relaxed">
+            <p className="text-[var(--color-ink)] mb-6 max-w-sm leading-relaxed">
               {t("brandDesc")}
             </p>
             <a
               href="mailto:hello@nexus.engineering"
-              className="inline-flex items-center gap-2 text-[var(--color-primary)] hover:text-blue-700 transition-colors font-medium"
+              className="inline-flex items-center gap-2 text-[var(--color-secondary)] hover:text-blue-700 transition-colors font-medium"
             >
               hello@nexus.engineering
             </a>
@@ -52,7 +52,7 @@ export function Footer() {
           {/* Services Links */}
           <div>
             <h4
-              className="text-slate-900 dark:text-white font-bold mb-5"
+              className="text-[var(--color-ink)] font-bold mb-5"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {t("services")}
@@ -62,7 +62,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-slate-500 dark:text-slate-400 hover:text-[var(--color-primary)] transition-colors text-sm"
+                    className="text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -74,7 +74,7 @@ export function Footer() {
           {/* Company Links */}
           <div>
             <h4
-              className="text-slate-900 dark:text-white font-bold mb-5"
+              className="text-[var(--color-ink)] font-bold mb-5"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {t("company")}
@@ -84,7 +84,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-slate-500 dark:text-slate-400 hover:text-[var(--color-primary)] transition-colors text-sm"
+                    className="text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -96,7 +96,7 @@ export function Footer() {
           {/* Industries Links */}
           <div>
             <h4
-              className="text-slate-900 dark:text-white font-bold mb-5"
+              className="text-[var(--color-ink)] font-bold mb-5"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {t("industries")}
@@ -106,7 +106,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-slate-500 dark:text-slate-400 hover:text-[var(--color-primary)] transition-colors text-sm"
+                    className="text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -117,8 +117,8 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-slate-400">
+        <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-[var(--color-ink)]">
             &copy; {currentYear} {t("rights")}
           </p>
 
@@ -132,7 +132,7 @@ export function Footer() {
               <a
                 key={index}
                 href="#"
-                className="text-sm text-slate-400 hover:text-[var(--color-primary)] transition-colors"
+                className="text-sm text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors"
                 aria-label={social.label}
               >
                 {social.label}
