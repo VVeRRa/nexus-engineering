@@ -90,7 +90,7 @@ export function ServicesSection() {
           return (
             <div
               key={index}
-              className={`group bg-gradient-to-br ${themeClass} border rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-100`}
+              className={`group bg-gradient-to-br ${themeClass} border rounded-3xl p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-100`}
             >
               {/* Icon */}
               <div

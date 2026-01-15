@@ -20,13 +20,8 @@ export default function Home() {
   // Scroll animation observer
   useEffect(() => {
     // Immediate check for reduced motion or if JS is disabled fallback (though this is client side)
-    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (mediaQuery.matches) {
-      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
-        el.classList.add("is-visible");
-      });
-      return;
-    }
+    // Immediate check for reduced motion removed to allow JS observer to run
+
 
     const observer = new IntersectionObserver(
       (entries) => {

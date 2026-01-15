@@ -28,7 +28,7 @@ export function ContactSection() {
         />
       }
     >
-      <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 animate-on-scroll stagger-fly-children">
+      <div className="grid md:grid-cols-2 gap-10 lg:gap-24 animate-on-scroll stagger-fly-children">
         {/* Left Column - Info */}
         <div>
           <SectionHeader
@@ -73,13 +73,13 @@ export function ContactSection() {
             </button>
           </div>
 
-          <div className="flex items-center gap-4 text-sm mt-12 text-[var(--color-ink)]">
-            <span className="font-bold">Trusted by</span>
-            <div className="flex gap-4 opacity-100">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-3 text-sm mt-12 text-[var(--color-ink)]">
+            <span className="font-bold flex-shrink-0">Trusted by</span>
+            <div className="flex flex-wrap gap-2 opacity-100">
               {/* Placeholders for logos */}
-              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">FinTech</div>
-              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">PropTech</div>
-              <div className="h-8 px-4 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">Enterprise</div>
+              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">FinTech</div>
+              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">PropTech</div>
+              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">Enterprise</div>
             </div>
           </div>
 

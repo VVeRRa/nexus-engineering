@@ -200,9 +200,16 @@ h1 {
   *,
   *::before,
   *::after {
+    /* Allow opacity transition for a gentler effect, but disable movement */
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Exception: Allow fade-ins for scroll animations */
+  .animate-on-scroll {
+    transition: opacity 0.5s ease-out !important;
   }
 
   html {

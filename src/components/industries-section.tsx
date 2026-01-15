@@ -93,12 +93,12 @@ export function IndustriesSection() {
       />
 
       {/* Industries Grid */}
-      <div className="grid lg:grid-cols-2 gap-8 animate-on-scroll stagger-fly-children">
+      <div className="grid md:grid-cols-2 gap-8 animate-on-scroll stagger-fly-children">
         {industries.map((industry, index) => (
           <div
             key={index}
             className={`group relative rounded-3xl overflow-hidden bg-gradient-to-br from-[var(--color-card-from)] ${index % 2 === 0 ? "to-[var(--color-card-to-blue)] border-[var(--color-card-border-blue)]" : "to-[var(--color-card-to-green)] border-[var(--color-card-border-green)]"
-              } border p-10 md:p-12 hover:shadow-xl transition-all duration-300`}
+              } border p-8 md:p-10 lg:p-12 hover:shadow-xl transition-all duration-300`}
           >
             <div className="flex items-start justify-between mb-8">
               <div>
