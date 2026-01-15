@@ -39,7 +39,7 @@
             "contact": "Contato",
             "fintech": "FinTech",
             "proptech": "PropTech",
-            "enterprise": "Enterprise"
+            "enterprise": "Empresas"
         }
     },
     "Home": {
@@ -105,6 +105,12 @@
             "title": "Nos conte o que está te bloqueando",
             "text": "Uma função, um pequeno pod, ou uma linha de entrega — vamos propor o formato que se encaixa.",
             "button": "Iniciar a conversa"
+        },
+        "trust": {
+            "consultation": "Consulta gratuita",
+            "euTeam": "Equipa na UE",
+            "startFast": "Início em 48h",
+            "chat": "Fale connosco"
         }
     },
     "Services": {
@@ -358,7 +364,7 @@
             "description": "Uma plataforma abrangente de ponta a ponta que agiliza as operações imobiliárias. Do onboarding de inquilinos a solicitações de manutenção, nossa solução moderniza todo o ciclo de vida da gestão imobiliária."
         },
         "enterprise": {
-            "category": "Enterprise",
+            "category": "Empresas",
             "title": "Migração para Cloud",
             "description": "Transformamos com sucesso um sistema monolítico legado em uma arquitetura de microsserviços moderna e escalável. Essa modernização melhorou significativamente a velocidade de implantação e a eficiência operacional."
         },
@@ -374,6 +380,14 @@
         "title": "Vamos construir algo ótimo",
         "description": "Seja um único especialista ou uma equipe completa, criaremos um engajamento que se encaixe nas suas necessidades e orçamento.",
         "response": "Resposta em até 24 horas",
+        "emailUs": "Envie-nos um e-mail",
+        "liveChat": "Chat ao vivo",
+        "trustedBy": "Confiado por",
+        "badges": {
+            "fintech": "FinTech",
+            "proptech": "PropTech",
+            "enterprise": "Empresas"
+        },
         "trusted": "Confiado por líderes da indústria",
         "form": {
             "name": "Nome",
@@ -441,7 +455,7 @@
                 ]
             },
             "matching": {
-                "title": "Matching",
+                "title": "Seleção",
                 "description": "Seleção precisa de talentos baseada em habilidades técnicas, experiência de domínio e fit cultural. Sem roleta de currículos.",
                 "details": [
                     "Matching de habilidades",

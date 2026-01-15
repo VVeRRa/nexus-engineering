@@ -169,17 +169,7 @@ export function IndustriesSection() {
               ))}
             </ul>
 
-            {/* Learn More Button */}
-            <div
-              className={`w-10 h-10 rounded-full flex items-center justify-center mt-8 transition-all duration-300 ${index % 2 === 0
-                ? "bg-[var(--color-primary)] text-white shadow-lg shadow-blue-500/30"
-                : "bg-[var(--color-secondary)] text-white shadow-lg shadow-green-500/30"
-                }`}
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </div>
+
           </div>
         ))}
       </div>

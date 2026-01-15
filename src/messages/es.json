@@ -39,7 +39,7 @@
             "contact": "Contacto",
             "fintech": "FinTech",
             "proptech": "PropTech",
-            "enterprise": "Enterprise"
+            "enterprise": "Empresas"
         }
     },
     "Home": {
@@ -105,6 +105,12 @@
             "title": "Cuéntenos qué le bloquea",
             "text": "Un rol, un pequeño pod o un carril de entrega — propondremos una forma que se ajuste.",
             "button": "Iniciar la conversación"
+        },
+        "trust": {
+            "consultation": "Consulta gratuita",
+            "euTeam": "Equipo en la UE",
+            "startFast": "Inicio en 48h",
+            "chat": "Habla con nosotros"
         }
     },
     "Services": {
@@ -357,7 +363,7 @@
             "description": "Una plataforma integral de extremo a extremo que agiliza las operaciones inmobiliarias. Desde la incorporación de inquilinos hasta las solicitudes de mantenimiento, nuestra solución moderniza todo el ciclo de vida de la gestión de bienes raíces."
         },
         "enterprise": {
-            "category": "Enterprise",
+            "category": "Empresas",
             "title": "Migración a la Nube",
             "description": "Transformación exitosa de un sistema monolítico heredado en una arquitectura de microservicios moderna y escalable. Esta modernización mejoró significativamente la velocidad de implementación y la eficiencia operativa."
         },
@@ -373,6 +379,14 @@
         "title": "Construyamos algo grande",
         "description": "Ya sea que necesite un solo especialista o un equipo completo, elaboraremos un compromiso que se ajuste a sus necesidades y presupuesto.",
         "response": "Respuesta en 24 horas",
+        "emailUs": "Escríbenos",
+        "liveChat": "Chat en vivo",
+        "trustedBy": "Confían en nosotros",
+        "badges": {
+            "fintech": "FinTech",
+            "proptech": "PropTech",
+            "enterprise": "Empresas"
+        },
         "trusted": "Confiado por líderes de la industria",
         "form": {
             "name": "Nombre",
@@ -432,38 +446,38 @@
         "steps": {
             "discovery": {
                 "title": "Descubrimiento",
-                "description": "Profundizamos en sus requisitos, panorama técnico y dinámica de equipo. Entender el contexto lo es todo.",
+                "description": "Profundizamos en sus requisitos, panorama técnico y dinámica de equipo.",
                 "details": [
                     "Análisis de requisitos",
                     "Evaluación técnica",
-                    "Evaluación de ajuste de equipo"
+                    "Evaluación de ajuste del equipo"
                 ]
             },
             "matching": {
-                "title": "Emparejamiento",
-                "description": "Selección precisa de talento basada en habilidades técnicas, experiencia en el dominio y ajuste cultural.",
+                "title": "Selección",
+                "description": "Selección precisa de talentos basada en habilidades técnicas, experiencia en el dominio y ajuste cultural.",
                 "details": [
                     "Coincidencia de habilidades",
-                    "Experiencia de dominio",
-                    "Alineación cultural"
+                    "Experiencia en el dominio",
+                    "Ajuste cultural"
                 ]
             },
             "integration": {
                 "title": "Integración",
-                "description": "Incorporación perfecta a sus flujos de trabajo, herramientas y ceremonias. Nuestros ingenieros se convierten en sus ingenieros.",
+                "description": "Incorporación fluida en sus flujos de trabajo, herramientas y ceremonias.",
                 "details": [
                     "Configuración de flujo de trabajo",
                     "Integración de herramientas",
-                    "Incrustación de equipo"
+                    "Incorporación al equipo"
                 ]
             },
             "delivery": {
                 "title": "Entrega",
-                "description": "Entrega continua de valor con comunicación transparente. Los controles regulares aseguran la alineación.",
+                "description": "Entrega continua de valor con comunicación transparente.",
                 "details": [
                     "Planificación de sprint",
-                    "Seguimiento de progreso",
-                    "Aseguramiento de calidad"
+                    "Seguimiento del progreso",
+                    "Garantía de calidad"
                 ]
             }
         },

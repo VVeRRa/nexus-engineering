@@ -105,6 +105,12 @@
       "title": "Sagen Sie uns, was Sie blockiert",
       "text": "Eine Rolle, ein kleines Pod oder ein Delivery-Lane — wir schlagen eine passende Form vor.",
       "button": "Gespräch beginnen"
+    },
+    "trust": {
+      "consultation": "Kostenlose Beratung",
+      "euTeam": "Team in der EU",
+      "startFast": "Start in 48 Std.",
+      "chat": "Chatten Sie mit uns"
     }
   },
   "Services": {
@@ -373,6 +379,14 @@
     "title": "Lassen Sie uns etwas Großartiges bauen",
     "description": "Ob Sie einen einzelnen Spezialisten oder ein ganzes Team benötigen, wir gestalten eine Zusammenarbeit, die Ihren Bedürfnissen und Ihrem Budget entspricht.",
     "response": "Antwort innerhalb von 24 Stunden",
+    "emailUs": "E-Mail an uns",
+    "liveChat": "Live-Chat",
+    "trustedBy": "Vertraut von",
+    "badges": {
+      "fintech": "FinTech",
+      "proptech": "PropTech",
+      "enterprise": "Enterprise"
+    },
     "trusted": "Vertraut von Branchenführern",
     "form": {
       "name": "Name",
@@ -431,7 +445,7 @@
     "description": "Eine bewährte Methodik, die über hunderte von Engagements verfeinert wurde. Schnelle Time-to-Value ohne Abkürzungen.",
     "steps": {
       "discovery": {
-        "title": "Discovery",
+        "title": "Analyse",
         "description": "Wir tauchen tief in Ihre Anforderungen, technische Landschaft und Teamdynamik ein. Kontext zu verstehen ist alles.",
         "details": [
           "Anforderungsanalyse",
@@ -458,7 +472,7 @@
         ]
       },
       "delivery": {
-        "title": "Delivery",
+        "title": "Lieferung",
         "description": "Kontinuierliche Wertlieferung mit transparenter Kommunikation. Regelmäßige Check-ins sichern die Ausrichtung.",
         "details": [
           "Sprint-Planung",

@@ -105,6 +105,12 @@
       "title": "Tell us what’s blocking you",
       "text": "One role, a small pod, or a delivery lane — we’ll propose a shape that fits.",
       "button": "Start the conversation"
+    },
+    "trust": {
+      "consultation": "Free consultation",
+      "euTeam": "EU-based team",
+      "startFast": "Start in 48h",
+      "chat": "Chat with us"
     }
   },
   "Services": {
@@ -374,6 +380,14 @@
     "title": "Let's build something great",
     "description": "Whether you need a single specialist or a full team, we'll craft an engagement that fits your needs and budget.",
     "response": "Response within 24 hours",
+    "emailUs": "Email us",
+    "liveChat": "Live Chat",
+    "trustedBy": "Trusted by",
+    "badges": {
+      "fintech": "FinTech",
+      "proptech": "PropTech",
+      "enterprise": "Enterprise"
+    },
     "trusted": "Trusted by industry leaders",
     "form": {
       "name": "Name",

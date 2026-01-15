@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 
 export function ProvenImpactSection() {
     const t = useTranslations("CaseStudies");
+    const tNav = useTranslations("Nav");
 
     const projects = [
         {
@@ -25,7 +26,7 @@ export function ProvenImpactSection() {
         <Section id="work">
             <SectionHeader
                 align="center"
-                label={t("label")}
+                label={<span className="text-[var(--color-secondary)]">{tNav("work").toUpperCase()}</span>}
                 title={t("title")}
                 description={<div className="w-24 h-1.5 bg-[var(--color-secondary)] mx-auto rounded-full" />}
             />
@@ -69,15 +70,7 @@ export function ProvenImpactSection() {
                                 {t(`${project.id}.description`)}
                             </p>
 
-                            {/* Decorative Arrow */}
-                            <div className={`mt-auto w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${isEven
-                                ? "bg-[var(--color-primary)] text-white shadow-lg shadow-blue-500/30"
-                                : "bg-[var(--color-secondary)] text-white shadow-lg shadow-green-500/30"
-                                }`}>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </div>
+
                         </div>
                     )
                 })}

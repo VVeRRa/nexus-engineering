@@ -105,6 +105,12 @@
             "title": "Dites-nous ce qui vous bloque",
             "text": "Un rôle, un petit pod ou une ligne de livraison — nous proposerons une forme qui convient.",
             "button": "Démarrer la conversation"
+        },
+        "trust": {
+            "consultation": "Consultation gratuite",
+            "euTeam": "Équipe basée en UE",
+            "startFast": "Démarrage en 48h",
+            "chat": "Discuter avec nous"
         }
     },
     "Services": {
@@ -373,6 +379,14 @@
         "title": "Bâtissons quelque chose de grand",
         "description": "Que vous ayez besoin d'un seul spécialiste ou d'une équipe complète, nous élaborerons un engagement adapté à vos besoins et à votre budget.",
         "response": "Réponse sous 24 heures",
+        "emailUs": "Écrivez-nous",
+        "liveChat": "Chat en direct",
+        "trustedBy": "Approuvé par",
+        "badges": {
+            "fintech": "FinTech",
+            "proptech": "PropTech",
+            "enterprise": "Entreprise"
+        },
         "trusted": "Reconnu par les leaders de l'industrie",
         "form": {
             "name": "Nom",
@@ -428,11 +442,11 @@
     "Process": {
         "label": "Processus",
         "title": "Comment nous travaillons",
-        "description": "Une méthodologie éprouvée affinée au fil de centaines de missions. Délai de rentabilisation rapide sans prendre de raccourcis.",
+        "description": "Une méthodologie éprouvée et affinée sur des centaines de missions.",
         "steps": {
             "discovery": {
                 "title": "Découverte",
-                "description": "Nous plongeons profondément dans vos exigences, votre paysage technique et la dynamique de votre équipe. Comprendre le contexte est tout.",
+                "description": "Nous plongeons dans vos besoins, votre environnement technique et la dynamique d'équipe.",
                 "details": [
                     "Analyse des besoins",
                     "Évaluation technique",
@@ -440,26 +454,26 @@
                 ]
             },
             "matching": {
-                "title": "Matching",
-                "description": "Sélection précise des talents basée sur les compétences techniques, l'expérience du domaine et l'adéquation culturelle.",
+                "title": "Sélection",
+                "description": "Sélection précise des talents basée sur les compétences techniques, l'expertise du domaine et la culture.",
                 "details": [
-                    "Matching de compétences",
-                    "Expertise domaine",
-                    "Alignement culturel"
+                    "Correspondance des compétences",
+                    "Expertise du domaine",
+                    "Adéquation culturelle"
                 ]
             },
             "integration": {
                 "title": "Intégration",
-                "description": "Onboarding transparent dans vos workflows, outils et rituels. Nos ingénieurs deviennent vos ingénieurs.",
+                "description": "Intégration transparente dans vos workflows, outils et cérémonies.",
                 "details": [
-                    "Configuration workflow",
-                    "Intégration outils",
-                    "Intégration équipe"
+                    "Configuration du flux",
+                    "Intégration des outils",
+                    "Intégration d'équipe"
                 ]
             },
             "delivery": {
                 "title": "Livraison",
-                "description": "Livraison continue de valeur avec une communication transparente. Des points réguliers assurent l'alignement.",
+                "description": "Livraison continue de valeur avec une communication transparente.",
                 "details": [
                     "Planification de sprint",
                     "Suivi des progrès",

@@ -49,7 +49,7 @@ export function ContactSection() {
                     </svg>
                   </div>
                   <div className="min-w-0">
-                    <h3 className="text-lg md:text-xl font-bold text-[var(--color-ink)] mb-1">Email us</h3>
+                    <h3 className="text-lg md:text-xl font-bold text-[var(--color-ink)] mb-1">{t("emailUs")}</h3>
                     <p className="text-slate-400 break-all">hello@blait.engineering</p>
                   </div>
                 </div>
@@ -65,7 +65,7 @@ export function ContactSection() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg md:text-xl font-bold text-[var(--color-ink)] mb-1">Live Chat</h3>
+                    <h3 className="text-lg md:text-xl font-bold text-[var(--color-ink)] mb-1">{t("liveChat")}</h3>
                     <p className="text-slate-400">{t("response")}</p>
                   </div>
                 </div>
@@ -74,12 +74,12 @@ export function ContactSection() {
           </div>
 
           <div className="flex flex-wrap items-center gap-x-4 gap-y-3 text-sm mt-12 text-[var(--color-ink)]">
-            <span className="font-bold flex-shrink-0">Trusted by</span>
+            <span className="font-bold flex-shrink-0">{t("trustedBy")}</span>
             <div className="flex flex-wrap gap-2 opacity-100">
               {/* Placeholders for logos */}
-              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">FinTech</div>
-              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">PropTech</div>
-              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">Enterprise</div>
+              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">{t("badges.fintech")}</div>
+              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">{t("badges.proptech")}</div>
+              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">{t("badges.enterprise")}</div>
             </div>
           </div>
 

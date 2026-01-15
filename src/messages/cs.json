@@ -105,6 +105,12 @@
       "title": "Řekněte, co vás brzdí",
       "text": "Jedna role, malý pod nebo delivery lane — navrhneme tvar spolupráce, který sedne.",
       "button": "Začít konverzaci"
+    },
+    "trust": {
+      "consultation": "Konzultace zdarma",
+      "euTeam": "Tým v EU",
+      "startFast": "Začneme do 48 hod",
+      "chat": "Napište nám"
     }
   },
   "Services": {
@@ -367,6 +373,14 @@
     "title": "Pojďme vybudovat něco skvělého",
     "description": "Ať už potřebujete jednoho specialistu nebo celý tým, navrhneme spolupráci, která vyhovuje vašim potřebám a rozpočtu.",
     "response": "Odpověď do 24 hodin",
+    "emailUs": "Napište nám",
+    "liveChat": "Živý chat",
+    "trustedBy": "Důvěřují nám",
+    "badges": {
+      "fintech": "FinTech",
+      "proptech": "PropTech",
+      "enterprise": "Enterprise"
+    },
     "trusted": "Důvěřují nám lídři v oboru",
     "form": {
       "name": "Jméno",
@@ -425,7 +439,7 @@
     "description": "Ověřená metodika zdokonalená na stovkách projektů. Rychlá hodnota bez zkratek.",
     "steps": {
       "discovery": {
-        "title": "Discovery",
+        "title": "Analýza",
         "description": "Ponoříme se do vašich požadavků, technického prostředí a dynamiky týmu. Pochopení kontextu je všechno.",
         "details": [
           "Analýza požadavků",
@@ -434,7 +448,7 @@
         ]
       },
       "matching": {
-        "title": "Matching",
+        "title": "Výběr",
         "description": "Přesný výběr talentů na základě technických dovedností, doménových zkušeností a kulturního souladu.",
         "details": [
           "Párování dovedností",
