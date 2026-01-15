@@ -186,7 +186,7 @@ export function IndustriesSection() {
 
       {/* Specializations */}
       <div className="mt-20 pt-16 border-t border-slate-100 dark:border-slate-800">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10">
+        <div className="flex flex-col items-center text-center gap-6 mb-10">
           <h3
             className="text-2xl text-[var(--color-ink)]"
             style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}

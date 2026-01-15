@@ -87,7 +87,7 @@ export function ContactSection() {
 
         {/* Right Column - Form */}
         <div className="relative">
-          <div className="bg-[var(--color-paper)] rounded-3xl p-5 md:p-10 shadow-xl border border-[var(--color-border)] relative overflow-hidden">
+          <div className="bg-[var(--color-surface)] rounded-3xl p-5 md:p-10 shadow-xl border border-[var(--color-border)] relative overflow-hidden">
 
             {state.success ? (
               <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[400px] text-center">

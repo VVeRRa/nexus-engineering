@@ -45,6 +45,9 @@ export default function LanguageSwitcher() {
                 <option value="ua" className="text-black">
                     UA
                 </option>
+                <option value="pt" className="text-black">
+                    PT
+                </option>
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-[var(--color-slate-500)]">
                 <svg
