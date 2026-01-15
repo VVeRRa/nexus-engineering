@@ -45,7 +45,7 @@ export function CaseStudiesSection() {
         align="center"
         label={<span className="text-[var(--color-secondary)]">TESTIMONIALS</span>}
         title={t("title")}
-        description="Join thousands who build better software with Nexus."
+        description="Join thousands who build better software with BLAiT."
         className="mb-16"
       />
 

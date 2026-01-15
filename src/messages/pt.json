@@ -27,7 +27,7 @@
         "services": "Serviços",
         "company": "Empresa",
         "industries": "Indústrias",
-        "rights": "Nexus Engineering. Todos os direitos reservados.",
+        "rights": "BLAiT Engineering. Todos os direitos reservados.",
         "links": {
             "leadership": "Liderança de TI",
             "backend": "Desenvolvimento Backend",
@@ -363,7 +363,7 @@
             "description": "Transformamos com sucesso um sistema monolítico legado em uma arquitetura de microsserviços moderna e escalável. Essa modernização melhorou significativamente a velocidade de implantação e a eficiência operacional."
         },
         "testimonials": {
-            "text": "Os engenheiros da Nexus se integraram perfeitamente à nossa equipe e entregaram além das expectativas. Eles não são fornecedores — são parceiros.",
+            "text": "Os engenheiros da BLAiT se integraram perfeitamente à nossa equipe e entregaram além das expectativas. Eles não são fornecedores — são parceiros.",
             "author": "Sarah Chen",
             "role": "CTO, FinTech Startup",
             "cta": "Comece Sua História de Sucesso"
@@ -401,7 +401,7 @@
     "About": {
         "label": "Sobre Nós",
         "title": "Parceiros de engenharia, não fornecedores",
-        "description1": "Fundamos a Nexus porque vimos como o outsourcing de TI estava quebrado. Incentivos desalinhados, lacunas de comunicação, loteria de talentos. Construímos algo melhor.",
+        "description1": "Fundamos a BLAiT porque vimos como o outsourcing de TI estava quebrado. Incentivos desalinhados, lacunas de comunicação, loteria de talentos. Construímos algo melhor.",
         "description2": "Nossos engenheiros trabalham de fusos horários europeus com sobreposição significativa com horários comerciais da UE e dos EUA. Falamos sua língua — literalmente e tecnicamente — e tratamos seu codebase como o nosso.",
         "stats": {
             "timezone": "Cobertura de Fuso Horário",

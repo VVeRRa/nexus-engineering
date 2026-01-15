@@ -202,11 +202,11 @@ export function IndustriesSection() {
           {specializations.map((spec, index) => (
             <div
               key={index}
-              className="flex items-center justify-center group relative p-5 rounded-xl border border-[var(--color-border)] hover:border-blue-200 transition-all duration-300 cursor-default bg-[var(--color-surface)]"
+              className="flex items-center justify-center p-5 rounded-xl border border-[var(--color-border)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-default bg-[var(--color-surface)]"
             >
               <div className="text-center">
                 <span
-                  className="block text-sm text-slate-400 group-hover:text-[var(--color-primary)] transition-colors duration-300 font-medium"
+                  className="block text-sm text-[var(--color-ink)] font-medium"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   {spec.name}

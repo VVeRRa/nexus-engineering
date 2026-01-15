@@ -27,7 +27,7 @@
         "services": "Services",
         "company": "Entreprise",
         "industries": "Industries",
-        "rights": "Nexus Engineering. Tous droits réservés.",
+        "rights": "BLAiT Engineering. Tous droits réservés.",
         "links": {
             "leadership": "Leadership IT",
             "backend": "Développement Backend",
@@ -362,7 +362,7 @@
             "description": "Transformation réussie d'un système monolithique hérité en une architecture de microservices moderne et évolutive. Cette modernisation a considérablement amélioré la vitesse de déploiement et l'efficacité opérationnelle."
         },
         "testimonials": {
-            "text": "Les ingénieurs Nexus se sont intégrés parfaitement à notre équipe et ont livré au-delà des attentes. Ce ne sont pas des vendeurs — ce sont des partenaires.",
+            "text": "Les ingénieurs BLAiT se sont intégrés parfaitement à notre équipe et ont livré au-delà des attentes. Ce ne sont pas des vendeurs — ce sont des partenaires.",
             "author": "Sarah Chen",
             "role": "CTO, FinTech Startup",
             "cta": "Commencez votre Success Story"
@@ -400,7 +400,7 @@
     "About": {
         "label": "À propos",
         "title": "Partenaires d'ingénierie, pas vendeurs",
-        "description1": "Nous avons fondé Nexus parce que nous avons vu à quel point l'outsourcing IT était cassé. Incitations mal alignées, lacunes de communication, loterie des talents. Nous avons construit quelque chose de mieux.",
+        "description1": "Nous avons fondé BLAiT parce que nous avons vu à quel point l'outsourcing IT était cassé. Incitations mal alignées, lacunes de communication, loterie des talents. Nous avons construit quelque chose de mieux.",
         "description2": "Nos ingénieurs travaillent depuis des fuseaux horaires européens avec un chevauchement significatif avec les heures de bureau de l'UE et des États-Unis. Nous parlons votre langue — littéralement et techniquement — et traitons votre code comme le nôtre.",
         "stats": {
             "timezone": "Couverture fuseaux horaires",

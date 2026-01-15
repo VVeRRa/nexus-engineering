@@ -35,17 +35,17 @@ export function Footer() {
           <div className="lg:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-6">
               <div className="text-2xl tracking-tighter font-extrabold text-[var(--color-ink)]" style={{ fontFamily: "var(--font-display)" }}>
-                bubuu<span className="text-[var(--color-primary)]">.</span>
+                BLAiT<span className="text-[var(--color-primary)]">.</span>
               </div>
             </a>
             <p className="text-[var(--color-ink)] mb-6 max-w-sm leading-relaxed">
               {t("brandDesc")}
             </p>
             <a
-              href="mailto:hello@nexus.engineering"
+              href="mailto:hello@blait.engineering"
               className="inline-flex items-center gap-2 text-[var(--color-secondary)] hover:text-blue-700 transition-colors font-medium"
             >
-              hello@nexus.engineering
+              hello@blait.engineering
             </a>
           </div>
 
@@ -62,7 +62,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors text-sm"
+                    className="text-[var(--color-ink)] hover:scale-110 origin-left inline-block transition-transform text-sm"
                   >
                     {link.label}
                   </a>
@@ -84,7 +84,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors text-sm"
+                    className="text-[var(--color-ink)] hover:scale-110 origin-left inline-block transition-transform text-sm"
                   >
                     {link.label}
                   </a>
@@ -106,7 +106,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors text-sm"
+                    className="text-[var(--color-ink)] hover:scale-110 origin-left inline-block transition-transform text-sm"
                   >
                     {link.label}
                   </a>
@@ -132,7 +132,7 @@ export function Footer() {
               <a
                 key={index}
                 href="#"
-                className="text-sm text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors"
+                className="text-sm text-[var(--color-ink)] hover:scale-110 origin-center inline-block transition-transform"
                 aria-label={social.label}
               >
                 {social.label}

@@ -39,7 +39,7 @@ export function ContactSection() {
           />
 
           <div className="space-y-6">
-            <a href="mailto:hello@nexus.engineering" className="block group">
+            <a href="mailto:hello@blait.engineering" className="block group">
               <div className="bg-gradient-to-br from-[var(--color-card-from)] to-[var(--color-card-to-green)] border border-[var(--color-card-border-green)] rounded-3xl p-5 md:p-8 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-4 md:gap-6">
                   <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-100 flex items-center justify-center text-[var(--color-secondary)] group-hover:scale-110 transition-transform duration-300 shrink-0">
@@ -50,7 +50,7 @@ export function ContactSection() {
                   </div>
                   <div className="min-w-0">
                     <h3 className="text-lg md:text-xl font-bold text-[var(--color-ink)] mb-1">Email us</h3>
-                    <p className="text-slate-400 break-all">hello@nexus.engineering</p>
+                    <p className="text-slate-400 break-all">hello@blait.engineering</p>
                   </div>
                 </div>
               </div>

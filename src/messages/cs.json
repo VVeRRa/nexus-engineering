@@ -27,7 +27,7 @@
     "services": "Služby",
     "company": "Společnost",
     "industries": "Odvětví",
-    "rights": "Nexus Engineering. Všechna práva vyhrazena.",
+    "rights": "BLAiT Engineering. Všechna práva vyhrazena.",
     "links": {
       "leadership": "IT Leadership",
       "backend": "Backend Vývoj",
@@ -394,7 +394,7 @@
   "About": {
     "label": "O nás",
     "title": "Inženýrští partneři, ne dodavatelé",
-    "description1": "Založili jsme Nexus, protože jsme viděli, jak rozbitý je IT outsourcing. Nesoulad v motivaci, komunikační mezery, loterie s talenty. Postavili jsme něco lepšího.",
+    "description1": "Založili jsme BLAiT, protože jsme viděli, jak rozbitý je IT outsourcing. Nesoulad v motivaci, komunikační mezery, loterie s talenty. Postavili jsme něco lepšího.",
     "description2": "Naši inženýři pracují z evropských časových pásem s výrazným překryvem s pracovní dobou v EU i USA. Mluvíme vaším jazykem – doslova i technicky – a chováme se k vašemu kódu jako k vlastnímu.",
     "stats": {
       "timezone": "Pokrytí časových pásem",

@@ -27,7 +27,7 @@
         "services": "Servicios",
         "company": "Empresa",
         "industries": "Industrias",
-        "rights": "Nexus Engineering. Todos los derechos reservados.",
+        "rights": "BLAiT Engineering. Todos los derechos reservados.",
         "links": {
             "leadership": "Liderazgo TI",
             "backend": "Desarrollo Backend",
@@ -362,7 +362,7 @@
             "description": "Transformación exitosa de un sistema monolítico heredado en una arquitectura de microservicios moderna y escalable. Esta modernización mejoró significativamente la velocidad de implementación y la eficiencia operativa."
         },
         "testimonials": {
-            "text": "Los ingenieros de Nexus se integraron perfectamente con nuestro equipo y entregaron más allá de las expectativas. No son proveedores, son socios.",
+            "text": "Los ingenieros de BLAiT se integraron perfectamente con nuestro equipo y entregaron más allá de las expectativas. No son proveedores, son socios.",
             "author": "Sarah Chen",
             "role": "CTO, FinTech Startup",
             "cta": "Comience Su Historia de Éxito"
@@ -400,7 +400,7 @@
     "About": {
         "label": "Sobre Nosotros",
         "title": "Socios de ingeniería, no proveedores",
-        "description1": "Fundamos Nexus porque vimos cuán roto estaba el outsourcing de TI. Incentivos desalineados, brechas de comunicación, lotería de talentos. Construimos algo mejor.",
+        "description1": "Fundamos BLAiT porque vimos cuán roto estaba el outsourcing de TI. Incentivos desalineados, brechas de comunicación, lotería de talentos. Construimos algo mejor.",
         "description2": "Nuestros ingenieros trabajan desde zonas horarias europeas con una superposición significativa con las horas hábiles de la UE y los EE. UU. Hablamos su idioma, literal y técnicamente, y tratamos su código como si fuera nuestro.",
         "stats": {
             "timezone": "Cobertura de Zona Horaria",

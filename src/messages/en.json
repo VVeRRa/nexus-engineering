@@ -27,7 +27,7 @@
     "services": "Services",
     "company": "Company",
     "industries": "Industries",
-    "rights": "Nexus Engineering. All rights reserved.",
+    "rights": "BLAiT Engineering. All rights reserved.",
     "links": {
       "leadership": "IT Leadership",
       "backend": "Backend Development",
@@ -363,7 +363,7 @@
       "description": "Successfully transformed a legacy monolithic system into a modern, scalable microservices architecture. This modernization significantly improved deployment velocity and operational efficiency."
     },
     "testimonials": {
-      "text": "Nexus engineers integrated seamlessly with our team and delivered beyond expectations. They're not vendors—they're partners.",
+      "text": "BLAiT engineers integrated seamlessly with our team and delivered beyond expectations. They're not vendors—they're partners.",
       "author": "Sarah Chen",
       "role": "CTO, FinTech Startup",
       "cta": "Start Your Success Story"
@@ -401,7 +401,7 @@
   "About": {
     "label": "About Us",
     "title": "Engineering partners, not vendors",
-    "description1": "We founded Nexus because we saw how broken IT outsourcing was. Misaligned incentives, communication gaps, talent lottery. We built something better.",
+    "description1": "We founded BLAiT because we saw how broken IT outsourcing was. Misaligned incentives, communication gaps, talent lottery. We built something better.",
     "description2": "Our engineers work from European time zones with significant overlap with both EU and US business hours. We speak your language—literally and technically—and treat your codebase like our own.",
     "stats": {
       "timezone": "Time Zone Coverage",

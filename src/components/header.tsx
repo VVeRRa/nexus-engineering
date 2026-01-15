@@ -35,6 +35,7 @@ export function Header() {
     { href: "#work", label: t('work') },
     { href: "#about", label: t('about') },
     { href: "#faq", label: t('faq') },
+    { href: "#contact", label: t('contact') },
   ];
 
   // Lock body scroll when mobile menu is open
@@ -59,17 +60,17 @@ export function Header() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group relative z-50">
             <div className="text-2xl tracking-tighter font-extrabold text-[var(--color-ink)]" style={{ fontFamily: "var(--font-display)" }}>
-              bubuu<span className="text-[var(--color-primary)]">.</span>
+              BLAiT<span className="text-[var(--color-primary)]">.</span>
             </div>
           </a>
 
           {/* Desktop Navigation - Centered */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm font-medium transition-colors duration-200"
+                className="text-[var(--color-text-secondary)] hover:scale-110 transition-transform duration-200 inline-block"
               >
                 {link.label}
               </a>
@@ -81,7 +82,7 @@ export function Header() {
 
             <LanguageSwitcher />
             <a
-              href="#contact"
+              href="tel:8005551234"
               className="flex items-center gap-2 px-6 py-2.5 bg-[var(--color-primary)] hover:opacity-90 text-white rounded-full text-sm font-bold transition-all duration-300 shadow-lg shadow-blue-500/20"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -128,7 +129,7 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-3xl text-[var(--color-ink)] font-bold tracking-tight hover:text-[var(--color-primary)] transition-colors"
+              className="text-3xl text-[var(--color-ink)] font-bold tracking-tight hover:scale-105 origin-left inline-block transition-transform duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.label}
@@ -136,7 +137,7 @@ export function Header() {
           ))}
           <div className="mt-8 pt-8 border-t border-slate-100 dark:border-slate-800">
             <a
-              href="#contact"
+              href="tel:8005551234"
               className="flex w-full justify-center items-center gap-2 px-6 py-4 bg-[var(--color-slate-900)] text-white rounded-full text-lg font-medium shadow-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >

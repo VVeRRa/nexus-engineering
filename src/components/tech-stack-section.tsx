@@ -104,7 +104,7 @@ export function TechStackSection() {
               {category.techs.map((tech, techIndex) => (
                 <div
                   key={techIndex}
-                  className="group/item relative bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-3 hover:shadow-md transition-all duration-300 cursor-default overflow-hidden"
+                  className="group/item relative bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-3 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-default overflow-hidden"
                 >
 
                   <div className="relative z-10">

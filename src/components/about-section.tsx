@@ -115,7 +115,7 @@ export function AboutSection() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/images/team-informal.png"
-          alt="Nexus Engineering Team"
+          alt="BLAiT Engineering Team"
           className="absolute inset-0 w-full h-full object-cover object-center opacity-90 hover:opacity-100 transition-opacity duration-500"
         />
       </div>

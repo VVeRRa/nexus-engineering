@@ -8,12 +8,13 @@
   /* Primary Colors - Friendly & Professional */
   --color-ink: #F1F5F9;
   /* Slate 100 - Text */
-  --color-paper: #2A547D;
+  /* Slate 100 - Text */
+  --color-paper: #243566;
   /* Metallic Blue - Base BG */
   --color-paper-secondary: #242F4D;
   /* Space Cadet - Surface */
 
-  /* Bubuu Brand Colors */
+  /* BLAiT Brand Colors */
   --color-primary: #0066FF;
   /* Bright Blue */
   --color-primary-dark: #0052CC;
@@ -23,6 +24,7 @@
   --color-accent-glow: rgba(37, 99, 235, 0.25);
 
   /* Neutral Scale */
+  --color-slate-950: #020617;
   --color-slate-950: #020617;
   --color-slate-900: #2A547D;
   --color-slate-800: #242F4D;
@@ -207,9 +209,24 @@ h1 {
     scroll-behavior: auto !important;
   }
 
-  /* Exception: Allow fade-ins for scroll animations */
-  .animate-on-scroll {
-    transition: opacity 0.5s ease-out !important;
+  /* Force enable scroll animations even if reduced motion is preferred, per user request */
+  .animate-on-scroll,
+  .animate-fade-up,
+  .animate-fly-up,
+  .animate-slide-left,
+  .animate-slide-right,
+  .animate-scale-in,
+  .stagger-children>*,
+  .stagger-fly-children>* {
+    animation-duration: 0.8s !important;
+    transition-duration: 0.8s !important;
+    opacity: 1;
+    /* Ensure visibility management is handled by class logic, but here we reset the "kill switch" above */
+  }
+
+  /* Specific resets for interactions */
+  .hover\:translate-y-1:hover {
+    transform: translateY(-0.25rem) !important;
   }
 
   html {
