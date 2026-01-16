@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { useEffect } from "react";
 import {
   Header,
@@ -52,6 +54,17 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src="/services-hero.png"
+              alt="Services Overview"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
         <ServicesSection />
         <IndustriesSection />
         <ProcessSection />

@@ -82,17 +82,20 @@ export function ProcessSection() {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 animate-on-scroll stagger-fly-children">
         {Object.entries(steps).map(([key, step], index) => {
           const isEven = index % 2 === 0;
+
           const themeClass = isEven
-            ? "from-[var(--color-card-from)] to-[var(--color-card-to-blue)] border-[var(--color-card-border-blue)] shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
-            : "from-[var(--color-card-from)] to-[var(--color-card-to-green)] border-[var(--color-card-border-green)] shadow-[0_20px_50px_rgba(34,197,94,0.15)]";
-          const iconBgClass = isEven ? "bg-[var(--color-primary)]" : "bg-[var(--color-secondary)]";
-          const iconColorClass = "text-white";
+            ? "from-[var(--color-primary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-blue-100 shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
+            : "from-[var(--color-secondary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-green-100 shadow-[0_20px_50px_rgba(34,197,94,0.15)]";
+
+          const iconBgClass = isEven
+            ? "bg-blue-50 text-[var(--color-primary)]"
+            : "bg-green-50 text-[var(--color-secondary)]";
 
           return (
             <div key={key} className="group relative">
-              <div className={`h-full bg-gradient-to-br ${themeClass} border dark:border-0 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 flex flex-col`}>
+              <div className={`h-full bg-gradient-to-br ${themeClass} border rounded-3xl p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col`}>
                 <div className="mb-6">
-                  <div className={`w-12 h-12 rounded-full ${iconBgClass} ${iconColorClass} flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`w-12 h-12 rounded-xl ${iconBgClass} flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     {index + 1}
                   </div>
                   <h3

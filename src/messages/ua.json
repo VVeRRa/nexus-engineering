@@ -345,7 +345,8 @@
             "languages": "Мови та Фреймворки",
             "data": "Дані та Сховища",
             "cloud": "Cloud та DevOps",
-            "methodology": "Методологія та AI"
+            "methodology": "Методологія та AI",
+            "design": "Дизайн"
         }
     },
     "CaseStudies": {

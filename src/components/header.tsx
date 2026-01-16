@@ -30,10 +30,10 @@ export function Header() {
   const navLinks = [
     { href: "#services", label: t('services') },
     { href: "#industries", label: t('expertise') },
-    { href: "#tech", label: t('technology') },
     { href: "#process", label: t('process') },
     { href: "#work", label: t('work') },
     { href: "#about", label: t('about') },
+    { href: "#tech", label: t('technology') },
     { href: "#faq", label: t('faq') },
     { href: "#contact", label: t('contact') },
   ];

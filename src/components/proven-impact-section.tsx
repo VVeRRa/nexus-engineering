@@ -36,16 +36,13 @@ export function ProvenImpactSection() {
                     const isEven = index % 2 === 0;
                     const color = isEven ? "var(--color-primary)" : "var(--color-secondary)";
                     const themeClass = isEven
-                        ? "hover:text-[var(--color-primary)]/80"
-                        : "hover:text-[var(--color-secondary)]/80";
+                        ? "from-[var(--color-primary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-blue-100 shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
+                        : "from-[var(--color-secondary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-green-100 shadow-[0_20px_50px_rgba(34,197,94,0.15)]";
 
                     return (
                         <div
                             key={index}
-                            className={`group relative bg-gradient-to-br transition-all duration-300 border rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 flex flex-col items-start transform-gpu will-change-transform ${isEven
-                                ? "from-[var(--color-card-from)] via-[var(--color-card-from)] to-[var(--color-card-from)] border-[var(--color-card-border-blue)] shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
-                                : "from-[var(--color-card-from)] via-[var(--color-card-from)] to-[var(--color-card-from)] border-[var(--color-card-border-green)] shadow-[0_20px_50px_rgba(34,197,94,0.15)]"
-                                }`}
+                            className={`group relative bg-gradient-to-br transition-all duration-300 border rounded-3xl p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 flex flex-col items-start transform-gpu will-change-transform ${themeClass}`}
                         >
                             {/* Category Tag */}
                             <span
@@ -59,7 +56,7 @@ export function ProvenImpactSection() {
 
                             {/* Title */}
                             <h3
-                                className={`text-2xl font-bold text-[var(--color-ink)] mb-4 transition-colors ${themeClass}`}
+                                className="text-2xl font-bold text-[var(--color-ink)] mb-4"
                                 style={{ fontFamily: "var(--font-display)" }}
                             >
                                 {t(`${project.id}.title`)}
