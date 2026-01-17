@@ -6,7 +6,7 @@ export function HeroSection() {
   const t = useTranslations("Home");
 
   return (
-    <section className="bg-[var(--color-paper)] relative min-h-screen flex flex-col justify-center overflow-hidden transition-colors duration-300">
+    <section className="bg-transparent relative min-h-screen flex flex-col justify-center overflow-hidden transition-colors duration-300">
 
       {/* Background Decor - Very subtle */}
       {/* Background Decor - Very subtle */}
