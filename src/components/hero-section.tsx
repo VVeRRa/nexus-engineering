@@ -6,11 +6,9 @@ export function HeroSection() {
   const t = useTranslations("Home");
 
   return (
-    <section className="bg-transparent relative min-h-screen flex flex-col justify-center overflow-hidden transition-colors duration-300">
+    <section id="hero" className="bg-transparent relative min-h-screen flex flex-col justify-center overflow-hidden transition-colors duration-300">
 
-      {/* Background Decor - Very subtle */}
-      {/* Background Decor - Very subtle */}
-      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top,_#1e293b_0%,_transparent_50%)] opacity-20" />
+      {/* Background Decor - Removed to show Aurora */}
 
       {/* Content */}
       <div className="container relative z-10 pt-20 pb-20 text-center">
