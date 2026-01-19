@@ -11,7 +11,7 @@ export function HeroSection() {
       {/* Background Decor - Removed to show Aurora */}
 
       {/* Content */}
-      <div className="container relative z-10 pt-20 pb-20 text-center">
+      <div className="container relative z-10 pt-32 pb-20 text-center md:pt-40">
 
         {/* Top Badge - Optional bubble */}
         <div className="flex justify-center mb-8 animate-fade-up" style={{ animationDelay: "0ms", animationFillMode: "forwards" }}>
@@ -63,7 +63,7 @@ export function HeroSection() {
           </a>
 
           {/* Trust indicators */}
-          <div className="flex items-center gap-6 mt-8 text-sm text-[var(--color-ink)] font-medium">
+          <div className="flex items-center gap-6 mt-16 text-sm text-[var(--color-ink)] font-medium">
             <div className="flex items-center gap-2">
               <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
