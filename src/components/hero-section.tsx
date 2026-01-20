@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <section id="hero" className="bg-transparent relative min-h-screen flex flex-col justify-center overflow-hidden transition-colors duration-300">
 
-      {/* Background Decor - Removed to show Aurora */}
+
 
       {/* Content */}
       <div className="container relative z-10 pt-32 pb-20 text-center md:pt-40">

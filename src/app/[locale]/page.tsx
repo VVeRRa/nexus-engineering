@@ -11,7 +11,7 @@ import {
   TechStackSection,
   ProcessSection,
   ProvenImpactSection,
-  CaseStudiesSection,
+
   FAQSection,
   AboutSection,
   ContactSection,
@@ -69,7 +69,7 @@ export default function Home() {
         <IndustriesSection />
         <ProcessSection />
         <ProvenImpactSection />
-        {/* CaseStudiesSection removed per user request */}
+
 
         <AboutSection />
         <TechStackSection />

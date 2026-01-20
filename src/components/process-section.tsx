@@ -95,16 +95,18 @@ export function ProcessSection() {
             <div key={key} className="group relative">
               <div className={`h-full bg-gradient-to-br ${themeClass} border rounded-3xl p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col`}>
                 <div className="mb-6">
-                  <div className={`w-12 h-12 rounded-xl ${iconBgClass} flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    {index + 1}
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className={`w-12 h-12 shrink-0 rounded-xl ${iconBgClass} flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform duration-300`}>
+                      {index + 1}
+                    </div>
+                    <h3
+                      className="text-2xl font-bold text-[var(--color-ink)]"
+                      style={{ fontFamily: "var(--font-display)" }}
+                    >
+                      {step.title}
+                    </h3>
                   </div>
-                  <h3
-                    className="text-2xl font-bold text-[var(--color-ink)] mb-4"
-                    style={{ fontFamily: "var(--font-display)" }}
-                  >
-                    {step.title}
-                  </h3>
-                  <p className="text-slate-400 mb-6">
+                  <p className="text-slate-400">
                     {step.description}
                   </p>
                 </div>

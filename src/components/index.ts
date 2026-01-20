@@ -4,7 +4,7 @@ export { ServicesSection } from "./services-section";
 export { IndustriesSection } from "./industries-section";
 export { TechStackSection } from "./tech-stack-section";
 export { ProcessSection } from "./process-section";
-export { CaseStudiesSection } from "./case-studies-section";
+
 export { AboutSection } from "./about-section";
 export { FAQSection } from "./faq-section";
 export { ProvenImpactSection } from "./proven-impact-section";

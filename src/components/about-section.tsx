@@ -89,18 +89,20 @@ export function AboutSection() {
               key={index}
               className="bg-gradient-to-br from-[var(--color-card-from)] to-[var(--color-card-to-green)] p-8 rounded-3xl shadow-sm border border-[var(--color-card-border-green)] hover:shadow-lg transition-all duration-300"
             >
-              {/* Icon */}
-              <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center mb-5 text-[var(--color-secondary)]">
-                {value.icon}
-              </div>
+              <div className="flex items-center gap-4 mb-4">
+                {/* Icon */}
+                <div className="w-12 h-12 shrink-0 rounded-xl bg-green-100 flex items-center justify-center text-[var(--color-secondary)]">
+                  {value.icon}
+                </div>
 
-              {/* Title */}
-              <h3
-                className="text-lg text-[var(--color-ink)] font-bold mb-2"
-                style={{ fontFamily: "var(--font-display)" }}
-              >
-                {value.title}
-              </h3>
+                {/* Title */}
+                <h3
+                  className="text-lg text-[var(--color-ink)] font-bold"
+                  style={{ fontFamily: "var(--font-display)" }}
+                >
+                  {value.title}
+                </h3>
+              </div>
 
               {/* Description */}
               <p className="text-sm text-slate-400 leading-relaxed">

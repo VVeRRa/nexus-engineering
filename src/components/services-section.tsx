@@ -92,24 +92,26 @@ export function ServicesSection() {
               key={index}
               className={`group bg-gradient-to-br ${themeClass} border rounded-3xl p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-100`}
             >
-              {/* Icon */}
-              <div
-                className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 transition-colors ${isEven
-                  ? "bg-blue-50 text-[var(--color-primary)]"
-                  : "bg-green-50 text-[var(--color-secondary)]"
-                  }`}
-              >
-                {service.icon}
-              </div>
-
               {/* Content */}
               <div>
-                <h3
-                  className="text-xl font-bold text-[var(--color-ink)] mb-3"
-                  style={{ fontFamily: "var(--font-display)" }}
-                >
-                  {t(`list.${service.id}.title`)}
-                </h3>
+                <div className="flex items-center gap-4 mb-3">
+                  {/* Icon */}
+                  <div
+                    className={`shrink-0 w-12 h-12 rounded-xl flex items-center justify-center transition-colors ${isEven
+                      ? "bg-blue-50 text-[var(--color-primary)]"
+                      : "bg-green-50 text-[var(--color-secondary)]"
+                      }`}
+                  >
+                    {service.icon}
+                  </div>
+
+                  <h3
+                    className="text-xl font-bold text-[var(--color-ink)]"
+                    style={{ fontFamily: "var(--font-display)" }}
+                  >
+                    {t(`list.${service.id}.title`)}
+                  </h3>
+                </div>
 
                 <p className="text-[var(--color-ink)] mb-6 leading-relaxed text-sm">
                   {t(`list.${service.id}.description`)}
