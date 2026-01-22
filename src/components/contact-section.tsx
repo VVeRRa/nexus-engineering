@@ -3,7 +3,10 @@
 import { Section } from "./ui/section";
 import { SectionHeader } from "./ui/section-header";
 
-import { useActionState } from "react";
+import { startTransition, useActionState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { ContactFormSchema, ContactFormValues } from "@/lib/schemas";
 import { useTranslations } from "next-intl";
 import { sendEmail, ContactFormState } from "@/actions/send-email";
 
@@ -17,8 +20,37 @@ export function ContactSection() {
   const t = useTranslations("Contact");
   const [state, formAction, isPending] = useActionState(sendEmail, initialState);
 
-  return (
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<ContactFormValues>({
+    resolver: zodResolver(ContactFormSchema),
+    mode: "onChange",
+    defaultValues: {
+      name: "",
+      email: "",
+      company: "",
+      projectType: "",
+      message: "",
+    },
+  });
 
+  const onSubmit = (data: ContactFormValues) => {
+    const formData = new FormData();
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    if (data.company) formData.append("company", data.company);
+    if (data.projectType) formData.append("projectType", data.projectType);
+    formData.append("message", data.message);
+
+    // Wrap in transition to ensure useActionState updates correctly if called manually
+    startTransition(() => {
+      formAction(formData);
+    });
+  };
+
+  return (
     <Section
       id="contact"
       background={
@@ -39,7 +71,7 @@ export function ContactSection() {
           />
 
           <div className="space-y-6">
-            <a href="mailto:hello@blait.engineering" className="block group">
+            <a href="mailto:sales@blait.eu" className="block group">
               <div className="bg-gradient-to-br from-[var(--color-card-from)] to-[var(--color-card-to-green)] border border-[var(--color-card-border-green)] rounded-3xl p-5 md:p-8 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-4 md:gap-6">
                   <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-100 flex items-center justify-center text-[var(--color-secondary)] group-hover:scale-110 transition-transform duration-300 shrink-0">
@@ -50,27 +82,11 @@ export function ContactSection() {
                   </div>
                   <div className="min-w-0">
                     <h3 className="text-lg md:text-xl font-bold text-[var(--color-ink)] mb-1">{t("emailUs")}</h3>
-                    <p className="text-slate-400 break-all">hello@blait.engineering</p>
+                    <p className="text-slate-400 break-all">sales@blait.eu</p>
                   </div>
                 </div>
               </div>
             </a>
-
-            <button className="block w-full group text-left">
-              <div className="bg-gradient-to-br from-[var(--color-card-from)] to-[var(--color-card-to-green)] border border-[var(--color-card-border-green)] rounded-3xl p-5 md:p-8 hover:shadow-lg transition-all duration-300">
-                <div className="flex items-center gap-4 md:gap-6">
-                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-100 flex items-center justify-center text-[var(--color-secondary)] group-hover:scale-110 transition-transform duration-300 shrink-0">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-lg md:text-xl font-bold text-[var(--color-ink)] mb-1">{t("liveChat")}</h3>
-                    <p className="text-slate-400">{t("response")}</p>
-                  </div>
-                </div>
-              </div>
-            </button>
           </div>
 
           <div className="flex flex-wrap items-center gap-x-4 gap-y-3 text-sm mt-12 text-[var(--color-ink)]">
@@ -100,21 +116,26 @@ export function ContactSection() {
                 <p className="text-[var(--color-ink)]">{t("form.sentDesc")}</p>
               </div>
             ) : (
-              <form action={formAction} className="relative z-10 space-y-5">
+              <form onSubmit={handleSubmit(onSubmit)} className="relative z-10 space-y-5">
+                {state.message && !state.success && (
+                  <div className="p-4 rounded-xl bg-red-50 border border-red-100 text-red-600 text-sm">
+                    {state.message}
+                  </div>
+                )}
                 <div className="grid md:grid-cols-2 gap-5">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
                       {t("form.name")}
                     </label>
                     <input
+                      {...register("name")}
                       type="text"
                       id="name"
-                      name="name"
                       className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
                       placeholder={t("form.namePlaceholder")}
                     />
-                    {state.errors?.name && (
-                      <p className="mt-1 text-sm text-red-500">{state.errors.name[0]}</p>
+                    {(errors.name || state.errors?.name) && (
+                      <p className="mt-1 text-sm text-red-500">{errors.name?.message || state.errors?.name?.[0]}</p>
                     )}
                   </div>
                   <div>
@@ -122,33 +143,53 @@ export function ContactSection() {
                       {t("form.email")}
                     </label>
                     <input
+                      {...register("email")}
                       type="email"
                       id="email"
-                      name="email"
                       className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
                       placeholder={t("form.emailPlaceholder")}
                     />
-                    {state.errors?.email && (
-                      <p className="mt-1 text-sm text-red-500">{state.errors.email[0]}</p>
+                    {(errors.email || state.errors?.email) && (
+                      <p className="mt-1 text-sm text-red-500">{errors.email?.message || state.errors?.email?.[0]}</p>
                     )}
                   </div>
                 </div>
 
-                <div>
-                  <label htmlFor="projectType" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
-                    {t("form.projectType")}
-                  </label>
-                  <select
-                    id="projectType"
-                    name="projectType"
-                    className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all appearance-none"
-                  >
-                    <option value="">{t("form.projectTypePlaceholder")}</option>
-                    <option value="augmentation">{t("form.types.augmentation")}</option>
-                    <option value="team">{t("form.types.team")}</option>
-                    <option value="project">{t("form.types.project")}</option>
-                    <option value="consulting">{t("form.types.consulting")}</option>
-                  </select>
+                <div className="grid md:grid-cols-2 gap-5">
+                  <div>
+                    <label htmlFor="company" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
+                      {t("form.company")}
+                    </label>
+                    <input
+                      {...register("company")}
+                      type="text"
+                      id="company"
+                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
+                      placeholder={t("form.companyPlaceholder")}
+                    />
+                    {(errors.company || state.errors?.company) && (
+                      <p className="mt-1 text-sm text-red-500">{errors.company?.message || state.errors?.company?.[0]}</p>
+                    )}
+                  </div>
+                  <div>
+                    <label htmlFor="projectType" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
+                      {t("form.projectType")}
+                    </label>
+                    <select
+                      {...register("projectType")}
+                      id="projectType"
+                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all appearance-none"
+                    >
+                      <option value="">{t("form.projectTypePlaceholder")}</option>
+                      <option value="augmentation">{t("form.types.augmentation")}</option>
+                      <option value="team">{t("form.types.team")}</option>
+                      <option value="project">{t("form.types.project")}</option>
+                      <option value="consulting">{t("form.types.consulting")}</option>
+                    </select>
+                    {(errors.projectType || state.errors?.projectType) && (
+                      <p className="mt-1 text-sm text-red-500">{errors.projectType?.message || state.errors?.projectType?.[0]}</p>
+                    )}
+                  </div>
                 </div>
 
                 <div>
@@ -156,14 +197,14 @@ export function ContactSection() {
                     {t("form.message")}
                   </label>
                   <textarea
+                    {...register("message")}
                     id="message"
-                    name="message"
                     rows={4}
                     className="w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all resize-none"
                     placeholder={t("form.messagePlaceholder")}
                   />
-                  {state.errors?.message && (
-                    <p className="mt-1 text-sm text-red-500">{state.errors.message[0]}</p>
+                  {(errors.message || state.errors?.message) && (
+                    <p className="mt-1 text-sm text-red-500">{errors.message?.message || state.errors?.message?.[0]}</p>
                   )}
                 </div>
 

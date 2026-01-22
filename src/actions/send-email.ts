@@ -1,15 +1,7 @@
 'use server';
 
-import { z } from 'zod';
+import { ContactFormSchema } from '@/lib/schemas';
 import { resend } from '@/lib/resend';
-
-const ContactFormSchema = z.object({
-    name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-    email: z.string().email({ message: "Please enter a valid email address." }),
-    company: z.string().optional(),
-    projectType: z.string().optional(),
-    message: z.string().min(10, { message: "Message must be at least 10 characters." }),
-});
 
 export type ContactFormState = {
     errors?: {
@@ -24,12 +16,23 @@ export type ContactFormState = {
 };
 
 export async function sendEmail(prevState: ContactFormState, formData: FormData): Promise<ContactFormState> {
-    const validatedFields = ContactFormSchema.safeParse({
+    const rawData = {
         name: formData.get('name'),
         email: formData.get('email'),
         company: formData.get('company'),
         projectType: formData.get('projectType'),
         message: formData.get('message'),
+    };
+
+    // Handle empty strings as undefined for optional fields if needed, 
+    // but Zod with correct schema handles strings. 
+    // Our schema expects strings (or optional). 
+    // FormData.get returns string | null.
+
+    const validatedFields = ContactFormSchema.safeParse({
+        ...rawData,
+        company: rawData.company || undefined, // Convert null/empty to undefined if preferred, or let Zod handle it if schema matches
+        projectType: rawData.projectType || undefined,
     });
 
     if (!validatedFields.success) {
@@ -61,7 +64,7 @@ export async function sendEmail(prevState: ContactFormState, formData: FormData)
         if (data.error) {
             console.error("Resend Error:", data.error);
             return {
-                message: 'Failed to send message via Resend.',
+                message: `Failed to send message via Resend: ${data.error.message}`,
                 success: false,
             };
         }
