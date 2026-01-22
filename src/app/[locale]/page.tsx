@@ -36,7 +36,7 @@ export default function Home() {
       },
       {
         threshold: 0.1, // Trigger when 10% is visible
-        rootMargin: "50px", // Trigger slightly before it enters fully
+        rootMargin: "150px", // Trigger earlier for smoother flow
       }
     );
 
@@ -62,6 +62,7 @@ export default function Home() {
               fill
               className="object-cover"
               priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
             />
           </div>
         </div>

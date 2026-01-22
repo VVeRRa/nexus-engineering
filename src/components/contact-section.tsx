@@ -181,7 +181,7 @@ export function ContactSection() {
                       required
                       className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] invalid:text-[var(--color-ink)]/50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all appearance-none"
                     >
-                      <option value="" disabled selected>{t("form.projectTypePlaceholder")}</option>
+                      <option value="" disabled>{t("form.projectTypePlaceholder")}</option>
                       <option value="augmentation">{t("form.types.augmentation")}</option>
                       <option value="team">{t("form.types.team")}</option>
                       <option value="project">{t("form.types.project")}</option>

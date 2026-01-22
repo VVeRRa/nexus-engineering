@@ -63,7 +63,7 @@
   /* Easing */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-spring: cubic-bezier(0.34, 1.3, 0.64, 1);
   --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
   /* Shadows - Adjusted for Dark Mode Default */
@@ -627,7 +627,8 @@ h1 {
 /* Initially hidden for scroll animation */
 .animate-on-scroll {
   opacity: 0;
-  will-change: opacity, transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .animate-on-scroll.is-visible {
@@ -645,47 +646,47 @@ h1 {
 }
 
 .stagger-children.is-visible>*:nth-child(2) {
-  animation: fadeUp 0.6s var(--ease-out) 100ms forwards;
+  animation: fadeUp 0.6s var(--ease-out) 50ms forwards;
 }
 
 .stagger-children.is-visible>*:nth-child(3) {
-  animation: fadeUp 0.6s var(--ease-out) 200ms forwards;
+  animation: fadeUp 0.6s var(--ease-out) 100ms forwards;
 }
 
 .stagger-children.is-visible>*:nth-child(4) {
-  animation: fadeUp 0.6s var(--ease-out) 300ms forwards;
+  animation: fadeUp 0.6s var(--ease-out) 150ms forwards;
 }
 
 .stagger-children.is-visible>*:nth-child(5) {
-  animation: fadeUp 0.6s var(--ease-out) 400ms forwards;
+  animation: fadeUp 0.6s var(--ease-out) 200ms forwards;
 }
 
 .stagger-children.is-visible>*:nth-child(6) {
-  animation: fadeUp 0.6s var(--ease-out) 500ms forwards;
+  animation: fadeUp 0.6s var(--ease-out) 250ms forwards;
 }
 
 .stagger-children.is-visible>*:nth-child(7) {
-  animation: fadeUp 0.6s var(--ease-out) 600ms forwards;
+  animation: fadeUp 0.6s var(--ease-out) 300ms forwards;
 }
 
 .stagger-children.is-visible>*:nth-child(8) {
-  animation: fadeUp 0.6s var(--ease-out) 700ms forwards;
+  animation: fadeUp 0.6s var(--ease-out) 350ms forwards;
 }
 
 .stagger-children.is-visible>*:nth-child(9) {
-  animation: fadeUp 0.6s var(--ease-out) 800ms forwards;
+  animation: fadeUp 0.6s var(--ease-out) 400ms forwards;
 }
 
 .stagger-children.is-visible>*:nth-child(10) {
-  animation: fadeUp 0.6s var(--ease-out) 900ms forwards;
+  animation: fadeUp 0.6s var(--ease-out) 450ms forwards;
 }
 
 .stagger-children.is-visible>*:nth-child(11) {
-  animation: fadeUp 0.6s var(--ease-out) 1000ms forwards;
+  animation: fadeUp 0.6s var(--ease-out) 500ms forwards;
 }
 
 .stagger-children.is-visible>*:nth-child(12) {
-  animation: fadeUp 0.6s var(--ease-out) 1100ms forwards;
+  animation: fadeUp 0.6s var(--ease-out) 550ms forwards;
 }
 
 /* Stagger fly children */
@@ -699,47 +700,47 @@ h1 {
 }
 
 .stagger-fly-children.is-visible>*:nth-child(2) {
-  animation: flyUp 0.8s var(--ease-spring) 100ms forwards;
+  animation: flyUp 0.8s var(--ease-spring) 70ms forwards;
 }
 
 .stagger-fly-children.is-visible>*:nth-child(3) {
-  animation: flyUp 0.8s var(--ease-spring) 200ms forwards;
+  animation: flyUp 0.8s var(--ease-spring) 140ms forwards;
 }
 
 .stagger-fly-children.is-visible>*:nth-child(4) {
-  animation: flyUp 0.8s var(--ease-spring) 300ms forwards;
+  animation: flyUp 0.8s var(--ease-spring) 210ms forwards;
 }
 
 .stagger-fly-children.is-visible>*:nth-child(5) {
-  animation: flyUp 0.8s var(--ease-spring) 400ms forwards;
+  animation: flyUp 0.8s var(--ease-spring) 280ms forwards;
 }
 
 .stagger-fly-children.is-visible>*:nth-child(6) {
-  animation: flyUp 0.8s var(--ease-spring) 500ms forwards;
+  animation: flyUp 0.8s var(--ease-spring) 350ms forwards;
 }
 
 .stagger-fly-children.is-visible>*:nth-child(7) {
-  animation: flyUp 0.8s var(--ease-spring) 600ms forwards;
+  animation: flyUp 0.8s var(--ease-spring) 420ms forwards;
 }
 
 .stagger-fly-children.is-visible>*:nth-child(8) {
-  animation: flyUp 0.8s var(--ease-spring) 700ms forwards;
+  animation: flyUp 0.8s var(--ease-spring) 490ms forwards;
 }
 
 .stagger-fly-children.is-visible>*:nth-child(9) {
-  animation: flyUp 0.8s var(--ease-spring) 800ms forwards;
+  animation: flyUp 0.8s var(--ease-spring) 560ms forwards;
 }
 
 .stagger-fly-children.is-visible>*:nth-child(10) {
-  animation: flyUp 0.8s var(--ease-spring) 900ms forwards;
+  animation: flyUp 0.8s var(--ease-spring) 630ms forwards;
 }
 
 .stagger-fly-children.is-visible>*:nth-child(11) {
-  animation: flyUp 0.8s var(--ease-spring) 1000ms forwards;
+  animation: flyUp 0.8s var(--ease-spring) 700ms forwards;
 }
 
 .stagger-fly-children.is-visible>*:nth-child(12) {
-  animation: flyUp 0.8s var(--ease-spring) 1100ms forwards;
+  animation: flyUp 0.8s var(--ease-spring) 770ms forwards;
 }
 
 /* ==========================================================================

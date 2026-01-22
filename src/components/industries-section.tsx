@@ -89,7 +89,7 @@ export function IndustriesSection() {
         label={<span className="text-[var(--color-secondary)]">{t("label")}</span>}
         title={<>{t("title")}<br /><span className="text-[var(--color-text-secondary)]">{t("subtitle")}</span></>}
         description={t("description")}
-        className="mb-20"
+        className="mb-12"
       />
 
       {/* Industries Grid */}

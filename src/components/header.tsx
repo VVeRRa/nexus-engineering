@@ -5,10 +5,25 @@ import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./language-switcher";
 
 
+import { useScrollSpy } from "@/hooks/use-scroll-spy";
+
 export function Header() {
   const t = useTranslations("Nav");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const navLinks = [
+    { href: "#services", label: t('services') },
+    { href: "#industries", label: t('expertise') },
+    { href: "#process", label: t('process') },
+    { href: "#work", label: t('work') },
+    { href: "#about", label: t('about') },
+    { href: "#tech", label: t('technology') },
+    { href: "#faq", label: t('faq') },
+    { href: "#contact", label: t('contact') },
+  ];
+
+  const activeId = useScrollSpy(navLinks.map((link) => link.href), { threshold: 0.2, rootMargin: "-20% 0px -50% 0px" });
 
   useEffect(() => {
     let ticking = false;
@@ -27,16 +42,6 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { href: "#services", label: t('services') },
-    { href: "#industries", label: t('expertise') },
-    { href: "#process", label: t('process') },
-    { href: "#work", label: t('work') },
-    { href: "#about", label: t('about') },
-    { href: "#tech", label: t('technology') },
-    { href: "#faq", label: t('faq') },
-    { href: "#contact", label: t('contact') },
-  ];
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -53,7 +58,7 @@ export function Header() {
   return (
     <header className="fixed top-4 left-0 right-0 z-[100] px-4 md:px-6">
       <div
-        className={`mx-auto max-w-7xl rounded-full border border-[var(--color-border)] bg-[var(--color-surface)]/80 backdrop-blur-md transition-all duration-300 ${isScrolled || isMobileMenuOpen ? "shadow-lg py-3 px-6" : "shadow-md py-4 px-8"
+        className={`relative z-[60] mx-auto max-w-7xl rounded-full border border-[var(--color-border)] bg-[var(--color-surface)]/80 backdrop-blur-md transition-all duration-300 ${isScrolled || isMobileMenuOpen ? "shadow-lg py-3 px-6" : "shadow-md py-4 px-8"
           }`}
       >
         <div className="flex items-center justify-between">
@@ -70,7 +75,7 @@ export function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[var(--color-text-secondary)] hover:scale-110 transition-transform duration-200 inline-block"
+                className={`${activeId === link.href.slice(1) ? "text-[var(--color-primary)] font-bold scale-110" : "text-[var(--color-text-secondary)]"} hover:scale-110 transition-all duration-200 inline-block`}
               >
                 {link.label}
               </a>
@@ -99,20 +104,18 @@ export function Header() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            <div className="w-6 h-5 flex flex-col justify-between">
-              <span
-                className={`block w-full h-0.5 bg-current transform transition-all duration-300 origin-center ${isMobileMenuOpen ? "rotate-45 translate-y-2.5" : ""
-                  }`}
-              />
-              <span
-                className={`block w-full h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? "opacity-0" : ""
-                  }`}
-              />
-              <span
-                className={`block w-full h-0.5 bg-current transform transition-all duration-300 origin-center ${isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
-                  }`}
-              />
-            </div>
+            {isMobileMenuOpen ? (
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            ) : (
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            )}
           </button>
         </div>
       </div>

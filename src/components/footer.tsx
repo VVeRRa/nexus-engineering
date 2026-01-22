@@ -42,10 +42,10 @@ export function Footer() {
               {t("brandDesc")}
             </p>
             <a
-              href="mailto:hello@blait.engineering"
+              href="mailto:sales@blait.eu"
               className="inline-flex items-center gap-2 text-[var(--color-secondary)] hover:text-blue-700 transition-colors font-medium"
             >
-              hello@blait.engineering
+              sales@blait.eu
             </a>
           </div>
 

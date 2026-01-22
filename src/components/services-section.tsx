@@ -74,7 +74,7 @@ export function ServicesSection() {
         align="center"
         label={<span className="text-[var(--color-secondary)]">{t("title")}</span>}
         title={t("lead")}
-        className="mb-20"
+        className="mb-12"
       />
 
       {/* Services Grid */}

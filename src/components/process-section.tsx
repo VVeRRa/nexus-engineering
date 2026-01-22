@@ -76,7 +76,7 @@ export function ProcessSection() {
         label={<span className="text-[var(--color-secondary)]">{t("label")}</span>}
         title={t("title")}
         description={t("description")}
-        className="mb-20"
+        className="mb-12"
       />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 animate-on-scroll stagger-fly-children">
