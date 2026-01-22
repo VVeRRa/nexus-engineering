@@ -28,7 +28,7 @@ export function useScrollSpy(selectors: string[], options?: IntersectionObserver
             let currentActiveEntry: IntersectionObserverEntry | null = null;
 
             // Find best candidate and current active entry
-            observerEntries.current.forEach((entry) => {
+            for (const entry of observerEntries.current.values()) {
                 const id = entry.target.getAttribute("id");
                 if (id === activeId) {
                     currentActiveEntry = entry;
@@ -42,7 +42,7 @@ export function useScrollSpy(selectors: string[], options?: IntersectionObserver
                         bestCandidate = entry;
                     }
                 }
-            });
+            }
 
             if (bestCandidate) {
                 const candidateId = (bestCandidate as IntersectionObserverEntry).target.getAttribute("id");
