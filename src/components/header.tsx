@@ -23,7 +23,7 @@ export function Header() {
     { href: "#contact", label: t('contact') },
   ];
 
-  const activeId = useScrollSpy(navLinks.map((link) => link.href), { threshold: 0.2, rootMargin: "-20% 0px -50% 0px" });
+  const activeId = useScrollSpy(["#hero", ...navLinks.map((link) => link.href)], { rootMargin: "-10% 0px -35% 0px" });
 
   useEffect(() => {
     let ticking = false;
@@ -75,7 +75,7 @@ export function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className={`${activeId === link.href.slice(1) ? "text-[var(--color-primary)] font-bold scale-110" : "text-[var(--color-text-secondary)]"} hover:scale-110 transition-all duration-200 inline-block`}
+                className={`${activeId === link.href.slice(1) ? "text-[var(--color-ink)] font-bold scale-110" : "text-[var(--color-text-secondary)]"} hover:scale-110 transition-all duration-200 inline-block`}
               >
                 {link.label}
               </a>
