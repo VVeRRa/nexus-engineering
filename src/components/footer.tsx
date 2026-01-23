@@ -22,6 +22,7 @@ export function Footer() {
     industries: [
       { label: t("links.fintech"), href: "#industries" },
       { label: t("links.proptech"), href: "#industries" },
+      { label: t("links.regtech"), href: "#industries" },
       { label: t("links.enterprise"), href: "#industries" },
     ],
   };
@@ -122,23 +123,7 @@ export function Footer() {
             &copy; {currentYear} {t("rights")}
           </p>
 
-          {/* Social Links */}
-          <div className="flex items-center gap-4">
-            {[
-              { label: "LinkedIn", icon: "LinkedIn" },
-              { label: "GitHub", icon: "GitHub" },
-              { label: "Twitter", icon: "Twitter" },
-            ].map((social, index) => (
-              <a
-                key={index}
-                href="#"
-                className="text-sm text-[var(--color-ink)] hover:scale-110 origin-center inline-block transition-transform"
-                aria-label={social.label}
-              >
-                {social.label}
-              </a>
-            ))}
-          </div>
+
         </div>
       </div>
     </footer>

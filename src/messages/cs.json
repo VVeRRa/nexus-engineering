@@ -39,12 +39,13 @@
       "contact": "Kontakt",
       "fintech": "FinTech",
       "proptech": "PropTech",
+      "regtech": "RegTech",
       "enterprise": "Enterprise"
     }
   },
   "Home": {
     "kicker": "Seniorní produktový engineering partner",
-    "subheadline": "Zkušenost z PropTech & FinTech • Delivery v EU • Začněte v malém a škálujte podle pipeline.",
+    "subheadline": "Zkušenost z PropTech & FinTech & RegTech • Delivery v EU • Začněte v malém a škálujte podle pipeline.",
     "ctaPrimary": "Kontaktovat",
     "ctaSecondary": "Zobrazit služby",
     "scroll": "Rolovat",
@@ -62,7 +63,7 @@
       },
       "h3": {
         "badge": "Seriózní domény",
-        "title": "PropTech, FinTech, B2B SaaS",
+        "title": "PropTech, FinTech, RegTech,  B2B SaaS",
         "text": "Integrace, data-heavy systémy a prostředí, kde záleží na spolehlivosti."
       }
     },
@@ -77,7 +78,7 @@
       },
       {
         "title": "Znalost domény",
-        "text": "PropTech & FinTech zkušenost pro integračně náročné, datově bohaté systémy."
+        "text": "PropTech & FinTech & RegTech zkušenost pro integračně náročné, datově bohaté systémy."
       }
     ],
     "heroChip": "Obvykle odpovíme do 24 h",
@@ -120,7 +121,7 @@
       "leadership": {
         "title": "IT Leadership",
         "subtitle": "Strategické směřování",
-        "description": "Fractional CTOs a techničtí ředitelé, kteří sladí technologie s byznysem. Revize architektury, řešení technologického dluhu a plánování roadmapy.",
+        "description": "Fractional CTOs a Team Leads, kteří sladí technologie s byznysem. Revize architektury, řešení technologického dluhu a plánování roadmapy.",
         "tags": [
           "CTO-as-a-Service",
           "Tech Strategy",
@@ -130,7 +131,7 @@
       "backend": {
         "title": "Backend Development",
         "subtitle": "Škálovatelné Systémy",
-        "description": "Robustní API a mikroslužby. High-performance systémy pro miliony transakcí. Event-driven architektura a distribuované systémy.",
+        "description": "Robustní API a mikroslužby. High-performance systémy pro zpracování transakcí. Event-driven architektura a distribuované systémy.",
         "tags": [
           "Java",
           "Go",
@@ -141,7 +142,7 @@
       "frontend": {
         "title": "Frontend Development",
         "subtitle": "Špičková rozhraní",
-        "description": "Pixel-perfect rozhraní s výjimečným UX. Komponentové knihovny, design systémy a výkonné SPA aplikace.",
+        "description": "Responzivní rozhraní s výjimečným UX. Komponentové knihovny, design systémy a výkonné SPA aplikace.",
         "tags": [
           "React",
           "TypeScript",
@@ -345,7 +346,8 @@
       "languages": "Jazyky & Frameworky",
       "data": "Data & Úložiště",
       "cloud": "Cloud & DevOps",
-      "methodology": "Metodika & AI"
+      "methodology": "Metodika & AI",
+      "design": "Design"
     }
   },
   "CaseStudies": {
@@ -379,6 +381,7 @@
     "badges": {
       "fintech": "FinTech",
       "proptech": "PropTech",
+      "regtech": "RegTech",
       "enterprise": "Enterprise"
     },
     "trusted": "Důvěřují nám lídři v oboru",
@@ -408,7 +411,7 @@
   "About": {
     "label": "O nás",
     "title": "Inženýrští partneři, ne dodavatelé",
-    "description1": "Založili jsme BLAiT, protože jsme viděli, jak rozbitý je IT outsourcing. Nesoulad v motivaci, komunikační mezery, loterie s talenty. Postavili jsme něco lepšího.",
+    "description1": "Založili jsme BLAiT, abychom redefinovali standardy externí technické spolupráce. Odklonili jsme se od tradičních outsourcingových modelů, abychom odstranili nesprávně nastavené pobídky, komunikační mezery a \"loterii talentů\". Vybudovali jsme něco lepšího.",
     "description2": "Naši inženýři pracují z evropských časových pásem s výrazným překryvem s pracovní dobou v EU i USA. Mluvíme vaším jazykem – doslova i technicky – a chováme se k vašemu kódu jako k vlastnímu.",
     "stats": {
       "timezone": "Pokrytí časových pásem",
@@ -436,7 +439,7 @@
   "Process": {
     "label": "Proces",
     "title": "Jak pracujeme",
-    "description": "Ověřená metodika zdokonalená na stovkách projektů. Rychlá hodnota bez zkratek.",
+    "description": "Ověřená metodika zdokonalená na mnoha projektech. Rychlá hodnota bez zkratek.",
     "steps": {
       "discovery": {
         "title": "Analýza",
@@ -512,5 +515,9 @@
         "answer": "Ano, pokud je to potřeba. Nicméně naši seniorní inženýři jsou samoorganizovaní a schopní pracovat přímo s vašimi Product Ownery."
       }
     }
+  },
+  "Metadata": {
+    "title": "BLAiT Engineering | Elite IT Staff Augmentation",
+    "description": "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions."
   }
 }

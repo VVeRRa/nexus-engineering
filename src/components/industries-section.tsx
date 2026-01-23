@@ -139,7 +139,7 @@ export function IndustriesSection() {
             </div>
 
             {/* Description */}
-            <p className="text-slate-400 mb-8 leading-relaxed">
+            <p className="text-[var(--color-ink)] mb-8 leading-relaxed">
               {industry.description}
             </p>
 

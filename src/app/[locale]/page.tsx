@@ -1,83 +1,33 @@
-"use client";
+import { HomeContent } from "@/components/Home/HomeContent";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
 
-import Image from "next/image";
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const params = await props.params;
+  const { locale } = params;
+  const t = await getTranslations({ locale, namespace: "Metadata" });
 
-import { useEffect } from "react";
-import {
-  Header,
-  HeroSection,
-  ServicesSection,
-  IndustriesSection,
-  TechStackSection,
-  ProcessSection,
-  ProvenImpactSection,
-
-  FAQSection,
-  AboutSection,
-  ContactSection,
-  Footer,
-} from "@/components";
+  return {
+    title: t("title"),
+    description: t("description"),
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      type: "website",
+      locale: locale,
+      url: `https://nexus-engineering.com/${locale}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+    },
+  };
+}
 
 export default function Home() {
-  // Scroll animation observer
-  useEffect(() => {
-    // Immediate check for reduced motion or if JS is disabled fallback (though this is client side)
-    // Immediate check for reduced motion removed to allow JS observer to run
-
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.1, // Trigger when 10% is visible
-        rootMargin: "150px", // Trigger earlier for smoother flow
-      }
-    );
-
-    const elements = document.querySelectorAll(".animate-on-scroll");
-    elements.forEach((el) => observer.observe(el));
-
-    // Cleanup
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
-  return (
-    <>
-      <Header />
-      <main>
-        <HeroSection />
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl">
-            <Image
-              src="/services-hero.png"
-              alt="Services Overview"
-              fill
-              className="object-cover"
-              priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-            />
-          </div>
-        </div>
-        <ServicesSection />
-        <IndustriesSection />
-        <ProcessSection />
-        <ProvenImpactSection />
-
-
-        <AboutSection />
-        <TechStackSection />
-        <FAQSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </>
-  );
+  return <HomeContent />;
 }
+

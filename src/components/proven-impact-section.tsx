@@ -63,7 +63,7 @@ export function ProvenImpactSection() {
                             </h3>
 
                             {/* Description */}
-                            <p className="text-slate-400 mb-8 leading-relaxed flex-grow">
+                            <p className="text-[var(--color-ink)] mb-8 leading-relaxed flex-grow">
                                 {t(`${project.id}.description`)}
                             </p>
 

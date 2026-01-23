@@ -106,7 +106,7 @@ export function ProcessSection() {
                       {step.title}
                     </h3>
                   </div>
-                  <p className="text-slate-400">
+                  <p className="text-[var(--color-ink)]">
                     {step.description}
                   </p>
                 </div>
@@ -170,7 +170,7 @@ export function ProcessSection() {
                   <h4 className="text-lg font-bold text-[var(--color-ink)] mb-2 flex items-center gap-2">
                     {t(`models.${model.id}.title`)}
                   </h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <p className="text-[var(--color-ink)] text-sm leading-relaxed">
                     {t(`models.${model.id}.desc`)}
                   </p>
                 </div>

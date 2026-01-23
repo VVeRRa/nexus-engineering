@@ -39,12 +39,13 @@
       "contact": "Kontakt",
       "fintech": "FinTech",
       "proptech": "PropTech",
+      "regtech": "RegTech",
       "enterprise": "Enterprise"
     }
   },
   "Home": {
     "kicker": "Senior-geführter Product-Engineering-Partner",
-    "subheadline": "PropTech- & FinTech-Erfahrung • Delivery in der EU • Klein starten, mit der Pipeline skalieren.",
+    "subheadline": "PropTech- & FinTech-Erfahrung & RegTech • Delivery in der EU • Klein starten, mit der Pipeline skalieren.",
     "ctaPrimary": "Kontaktieren Sie uns",
     "ctaSecondary": "Leistungen ansehen",
     "scroll": "Scrollen",
@@ -62,7 +63,7 @@
       },
       "h3": {
         "badge": "Ernsthafte Domänen",
-        "title": "PropTech, FinTech, B2B SaaS",
+        "title": "PropTech, FinTech, RegTech, B2B SaaS",
         "text": "Integrationen, datenintensive Systeme und regulierte Umgebungen, in denen Zuverlässigkeit zählt."
       }
     },
@@ -77,7 +78,7 @@
       },
       {
         "title": "Domänen-Tiefe",
-        "text": "PropTech- & FinTech-Erfahrung für integrationslastige, datenreiche Systeme."
+        "text": "PropTech- & FinTech-Erfahrung & RegTech für integrationslastige, datenreiche Systeme."
       }
     ],
     "heroChip": "Antwort typischerweise innerhalb von 24h",
@@ -120,7 +121,7 @@
       "leadership": {
         "title": "IT-Leadership",
         "subtitle": "Strategische Ausrichtung",
-        "description": "Fractional CTOs und technische Direktoren, die die Technologiestrategie mit den Geschäftszielen abstimmen. Architektur-Reviews, Bewertung technischer Schulden und Roadmap-Planung.",
+        "description": "Fractional CTOs und Team Leads, die die Technologiestrategie mit den Geschäftszielen abstimmen. Architektur-Reviews, Bewertung technischer Schulden und Roadmap-Planung.",
         "tags": [
           "CTO-as-a-Service",
           "Tech-Strategie",
@@ -130,7 +131,7 @@
       "backend": {
         "title": "Backend-Entwicklung",
         "subtitle": "Skalierbare Systeme",
-        "description": "Robuste, skalierbare APIs und Microservices. Hochleistungssysteme, die Millionen von Transaktionen verarbeiten. Event-driven Architekturen und verteilte Systeme.",
+        "description": "Robuste, skalierbare APIs und Microservices. Hochleistungssysteme, die Transaktionen verarbeiten. Event-driven Architekturen und verteilte Systeme.",
         "tags": [
           "Java",
           "Go",
@@ -141,7 +142,7 @@
       "frontend": {
         "title": "Frontend-Entwicklung",
         "subtitle": "Außergewöhnliche Interfaces",
-        "description": "Pixelgenaue Interfaces mit außergewöhnlicher UX. Komponentenbibliotheken, Design-Systeme und leistungsstarke SPAs, die Nutzer lieben.",
+        "description": "Responsive Interfaces mit außergewöhnlicher UX. Komponentenbibliotheken, Design-Systeme und leistungsstarke SPAs, die Nutzer lieben.",
         "tags": [
           "React",
           "TypeScript",
@@ -345,7 +346,8 @@
       "languages": "Sprachen & Frameworks",
       "data": "Daten & Speicher",
       "cloud": "Cloud & DevOps",
-      "methodology": "Methodik & AI"
+      "methodology": "Methodik & AI",
+      "design": "Design"
     }
   },
   "CaseStudies": {
@@ -385,6 +387,7 @@
     "badges": {
       "fintech": "FinTech",
       "proptech": "PropTech",
+      "regtech": "RegTech",
       "enterprise": "Enterprise"
     },
     "trusted": "Vertraut von Branchenführern",
@@ -414,7 +417,7 @@
   "About": {
     "label": "Über uns",
     "title": "Engineering-Partner, keine Lieferanten",
-    "description1": "Wir haben BLAiT gegründet, weil wir gesehen haben, wie kaputt IT-Outsourcing war. Fehlausgerichtete Anreize, Kommunikationslücken, Talent-Lotterie. Wir haben etwas Besseres gebaut.",
+    "description1": "Wir haben BLAiT gegründet, um den Standard der externen technischen Zusammenarbeit neu zu definieren. Wir haben uns von traditionellen Outsourcing-Modellen gelöst, um fehlausgerichtete Anreize, Kommunikationslücken und die \"Talent-Lotterie\" zu beseitigen. Wir haben etwas Besseres gebaut.",
     "description2": "Unsere Ingenieure arbeiten aus europäischen Zeitzonen mit erheblicher Überlappung mit EU- und US-Geschäftszeiten. Wir sprechen Ihre Sprache – buchstäblich und technisch – und behandeln Ihre Codebase wie unsere eigene.",
     "stats": {
       "timezone": "Zeitzonen-Abdeckung",
@@ -442,7 +445,7 @@
   "Process": {
     "label": "Prozess",
     "title": "Wie wir arbeiten",
-    "description": "Eine bewährte Methodik, die über hunderte von Engagements verfeinert wurde. Schnelle Time-to-Value ohne Abkürzungen.",
+    "description": "Eine bewährte Methodik, die über mehrere Engagements verfeinert wurde. Schnelle Time-to-Value ohne Abkürzungen.",
     "steps": {
       "discovery": {
         "title": "Analyse",
@@ -518,5 +521,9 @@
         "answer": "Ja, bei Bedarf. Unsere Senior-Ingenieure sind jedoch selbstorganisiert und in der Lage, direkt mit Ihren Product Owners zusammenzuarbeiten."
       }
     }
+  },
+  "Metadata": {
+    "title": "BLAiT Engineering | Elite IT Staff Augmentation",
+    "description": "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions."
   }
 }

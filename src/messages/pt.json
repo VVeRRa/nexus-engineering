@@ -39,12 +39,13 @@
             "contact": "Contato",
             "fintech": "FinTech",
             "proptech": "PropTech",
+            "regtech": "RegTech",
             "enterprise": "Empresas"
         }
     },
     "Home": {
         "kicker": "Parceiro de engenharia de produto liderado por seniores",
-        "subheadline": "Experiência em PropTech & FinTech • Entrega baseada na UE • Comece pequeno e cresça conforme sua demanda.",
+        "subheadline": "Experiência em PropTech & FinTech & RegTech • Entrega baseada na UE • Comece pequeno e cresça conforme sua demanda.",
         "ctaPrimary": "Contate-nos",
         "ctaSecondary": "Ver serviços",
         "scroll": "Rolar",
@@ -62,7 +63,7 @@
             },
             "h3": {
                 "badge": "Domínios sérios",
-                "title": "PropTech, FinTech, B2B SaaS",
+                "title": "PropTech, FinTech, RegTech, B2B SaaS",
                 "text": "Integrações, sistemas pesados em dados e ambientes regulados onde a confiabilidade importa."
             }
         },
@@ -77,7 +78,7 @@
             },
             {
                 "title": "Profundidade de domínio",
-                "text": "Experiência em PropTech & FinTech para sistemas ricos em dados e integrações."
+                "text": "Experiência em PropTech & FinTech & RegTech para sistemas ricos em dados e integrações."
             }
         ],
         "heroChip": "Geralmente respondemos em 24h",
@@ -120,7 +121,7 @@
             "leadership": {
                 "title": "Liderança de TI",
                 "subtitle": "Direção Estratégica",
-                "description": "CTOs fracionados e Diretores Técnicos que alinham a estratégia de tecnologia aos objetivos de negócio. Revisões de arquitetura, avaliação de dívida técnica e planejamento de roadmap.",
+                "description": "CTOs fracionados e Team Leads que alinham a estratégia de tecnologia aos objetivos de negócio. Revisões de arquitetura, avaliação de dívida técnica e planejamento de roadmap.",
                 "tags": [
                     "CTO-as-a-Service",
                     "Estratégia Tech",
@@ -130,7 +131,7 @@
             "backend": {
                 "title": "Desenvolvimento Backend",
                 "subtitle": "Sistemas Escaláveis",
-                "description": "APIs robustas e escaláveis e microsserviços. Sistemas de alto desempenho lidando com milhões de transações. Arquiteturas orientadas a eventos e sistemas distribuídos.",
+                "description": "APIs robustas e escaláveis e microsserviços. Sistemas de alto desempenho lidando com transações. Arquiteturas orientadas a eventos e sistemas distribuídos.",
                 "tags": [
                     "Java",
                     "Go",
@@ -141,7 +142,7 @@
             "frontend": {
                 "title": "Desenvolvimento Frontend",
                 "subtitle": "Interfaces Excepcionais",
-                "description": "Interfaces pixel-perfect com UX excepcional. Bibliotecas de componentes, design systems e SPAs performáticas que os usuários amam e concorrentes invejam.",
+                "description": "Interfaces responsivas com UX excepcional. Bibliotecas de componentes, design systems e SPAs performáticas que os usuários amam e concorrentes invejam.",
                 "tags": [
                     "React",
                     "TypeScript",
@@ -386,6 +387,7 @@
         "badges": {
             "fintech": "FinTech",
             "proptech": "PropTech",
+            "regtech": "RegTech",
             "enterprise": "Empresas"
         },
         "trusted": "Confiado por líderes da indústria",
@@ -415,7 +417,7 @@
     "About": {
         "label": "Sobre Nós",
         "title": "Parceiros de engenharia, não fornecedores",
-        "description1": "Fundamos a BLAiT porque vimos como o outsourcing de TI estava quebrado. Incentivos desalinhados, lacunas de comunicação, loteria de talentos. Construímos algo melhor.",
+        "description1": "Fundamos a BLAiT para redefinir o padrão da colaboração técnica externa. Afastamo-nos dos modelos de outsourcing tradicionais para eliminar incentivos desalinhados, lacunas de comunicação e a \"loteria de talentos\". Construímos algo melhor.",
         "description2": "Nossos engenheiros trabalham de fusos horários europeus com sobreposição significativa com horários comerciais da UE e dos EUA. Falamos sua língua — literalmente e tecnicamente — e tratamos seu codebase como o nosso.",
         "stats": {
             "timezone": "Cobertura de Fuso Horário",
@@ -443,7 +445,7 @@
     "Process": {
         "label": "Processo",
         "title": "Como trabalhamos",
-        "description": "Uma metodologia comprovada refinada em centenas de engajamentos. Tempo rápido para valor sem cortar caminhos.",
+        "description": "Uma metodologia comprovada refinada em múltiplos engajamentos. Tempo rápido para valor sem cortar caminhos.",
         "steps": {
             "discovery": {
                 "title": "Descoberta",
@@ -519,5 +521,9 @@
                 "answer": "Sim, se necessário. No entanto, nossos engenheiros seniores são auto-organizáveis e capazes de trabalhar diretamente com seus product owners."
             }
         }
+    },
+    "Metadata": {
+        "title": "BLAiT Engineering | Elite IT Staff Augmentation",
+        "description": "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions."
     }
 }

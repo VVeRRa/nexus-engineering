@@ -39,12 +39,13 @@
       "contact": "Contact",
       "fintech": "FinTech",
       "proptech": "PropTech",
+      "regtech": "RegTech",
       "enterprise": "Enterprise"
     }
   },
   "Home": {
     "kicker": "Senior-led product engineering partner",
-    "subheadline": "PropTech & FinTech experience • EU-based delivery • Start small and scale as your pipeline grows.",
+    "subheadline": "PropTech & FinTech & RegTech experience • EU-based delivery • Start small and scale as your pipeline grows.",
     "ctaPrimary": "Contact us",
     "ctaSecondary": "See services",
     "scroll": "Scroll",
@@ -62,7 +63,7 @@
       },
       "h3": {
         "badge": "Serious domains",
-        "title": "PropTech, FinTech, B2B SaaS",
+        "title": "PropTech, FinTech, RegTech, B2B SaaS",
         "text": "Integrations, data-heavy systems and regulated environments where reliability matters."
       }
     },
@@ -77,7 +78,7 @@
       },
       {
         "title": "Domain depth",
-        "text": "PropTech & FinTech experience for integration-heavy, data-rich systems."
+        "text": "PropTech, FinTech & RegTech experience for integration-heavy, data-rich systems."
       }
     ],
     "heroChip": "Typically reply within 24h",
@@ -120,7 +121,7 @@
       "leadership": {
         "title": "IT Leadership",
         "subtitle": "Strategic Direction",
-        "description": "Fractional CTOs and Technical Directors who align technology strategy with business objectives. Architecture reviews, tech debt assessment, and roadmap planning.",
+        "description": "Fractional CTOs and Team Leads who align technology strategy with business objectives. Architecture reviews, tech debt assessment, and roadmap planning.",
         "tags": [
           "CTO-as-a-Service",
           "Tech Strategy",
@@ -130,7 +131,7 @@
       "backend": {
         "title": "Backend Development",
         "subtitle": "Scalable Systems",
-        "description": "Robust, scalable APIs and microservices. High-performance systems handling millions of transactions. Event-driven architectures and distributed systems.",
+        "description": "Robust, scalable APIs and microservices. High-performance systems handling transactions. Event-driven architectures and distributed systems.",
         "tags": [
           "Java",
           "Go",
@@ -141,7 +142,7 @@
       "frontend": {
         "title": "Frontend Development",
         "subtitle": "Exceptional Interfaces",
-        "description": "Pixel-perfect interfaces with exceptional UX. Component libraries, design systems, and performant SPAs that users love and competitors envy.",
+        "description": "Responsive interfaces with exceptional UX. Component libraries, design systems, and performant SPAs that users love and competitors envy.",
         "tags": [
           "React",
           "TypeScript",
@@ -386,6 +387,7 @@
     "badges": {
       "fintech": "FinTech",
       "proptech": "PropTech",
+      "regtech": "RegTech",
       "enterprise": "Enterprise"
     },
     "trusted": "Trusted by industry leaders",
@@ -415,7 +417,7 @@
   "About": {
     "label": "About Us",
     "title": "Engineering partners, not vendors",
-    "description1": "We founded BLAiT because we saw how broken IT outsourcing was. Misaligned incentives, communication gaps, talent lottery. We built something better.",
+    "description1": "We founded BLAiT to redefine the standard of external technical collaboration. We moved away from traditional outsourcing models to eliminate misaligned incentives, communication gaps, and the \"talent lottery.\" We built something better.",
     "description2": "Our engineers work from European time zones with significant overlap with both EU and US business hours. We speak your language—literally and technically—and treat your codebase like our own.",
     "stats": {
       "timezone": "Time Zone Coverage",
@@ -443,7 +445,7 @@
   "Process": {
     "label": "Process",
     "title": "How we work",
-    "description": "A proven methodology refined across hundreds of engagements. Fast time-to-value without cutting corners.",
+    "description": "A proven methodology refined across multiple engagements. Fast time-to-value without cutting corners.",
     "steps": {
       "discovery": {
         "title": "Discovery",
@@ -519,5 +521,9 @@
         "answer": "Yes, if needed. However, our senior engineers are self-organizing and capable of working directly with your product owners."
       }
     }
+  },
+  "Metadata": {
+    "title": "BLAiT Engineering | Elite IT Staff Augmentation",
+    "description": "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions."
   }
 }

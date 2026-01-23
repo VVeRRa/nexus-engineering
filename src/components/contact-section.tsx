@@ -95,6 +95,7 @@ export function ContactSection() {
               {/* Placeholders for logos */}
               <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">{t("badges.fintech")}</div>
               <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">{t("badges.proptech")}</div>
+              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">{t("badges.regtech")}</div>
               <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">{t("badges.enterprise")}</div>
             </div>
           </div>

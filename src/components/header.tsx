@@ -148,7 +148,7 @@ export function Header() {
             </a>
             <div className="mt-8 flex justify-center gap-4">
 
-              <LanguageSwitcher />
+              <LanguageSwitcher direction="up" />
             </div>
           </div>
         </nav>
