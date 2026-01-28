@@ -30,7 +30,7 @@ export function SectionHeader({
                 </span>
             )}
             <h2
-                className="text-4xl md:text-5xl text-[var(--color-ink)] mb-6"
+                className="text-3xl md:text-5xl text-[var(--color-ink)] mb-6"
                 style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
             >
                 {title}

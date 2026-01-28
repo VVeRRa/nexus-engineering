@@ -55,24 +55,24 @@ export function ContactSection() {
       id="contact"
       background={
         <div
-          className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full opacity-0 -z-10"
+          className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full opacity-0 -z-10 hidden md:block"
           style={{ background: 'radial-gradient(circle, var(--color-green-100) 0%, transparent 70%)' }}
         />
       }
     >
-      <div className="grid md:grid-cols-2 gap-10 lg:gap-24 animate-on-scroll stagger-fly-children">
+      <div className="flex flex-col md:grid md:grid-cols-2 gap-10 lg:gap-24 animate-on-scroll stagger-fly-children">
         {/* Left Column - Info */}
-        <div>
+        <div className="w-full min-w-0">
           <SectionHeader
             label={<span className="text-[var(--color-secondary)]">{t("label")}</span>}
             title={t("title")}
             description={t("description")}
-            className="mb-12"
+            className="mb-12 break-words"
           />
 
           <div className="space-y-6">
             <a href="mailto:sales@blait.eu" className="block group">
-              <div className="bg-gradient-to-br from-[var(--color-card-from)] to-[var(--color-card-to-green)] border border-[var(--color-card-border-green)] rounded-3xl p-5 md:p-8 hover:shadow-lg transition-all duration-300">
+              <div className="bg-gradient-to-br from-[var(--color-card-from)] to-[var(--color-card-to-green)] border border-[var(--color-card-border-green)] rounded-3xl p-3 md:p-8 hover:shadow-lg transition-all duration-300 shadow-sm md:shadow-md">
                 <div className="flex items-center gap-4 md:gap-6">
                   <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-100 flex items-center justify-center text-[var(--color-secondary)] group-hover:scale-110 transition-transform duration-300 shrink-0">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -80,31 +80,31 @@ export function ContactSection() {
                       <path d="M22 6l-10 7L2 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
-                  <div className="min-w-0">
-                    <h3 className="text-lg md:text-xl font-bold text-[var(--color-ink)] mb-1">{t("emailUs")}</h3>
-                    <p className="text-slate-400 break-all">sales@blait.eu</p>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-lg md:text-xl font-bold text-[var(--color-ink)] mb-1 truncate">{t("emailUs")}</h3>
+                    <p className="text-slate-400 truncate">sales@blait.eu</p>
                   </div>
                 </div>
               </div>
             </a>
           </div>
 
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-3 text-sm mt-12 text-[var(--color-ink)]">
+          <div className="flex flex-col items-start gap-3 md:flex-row md:items-center md:gap-4 text-sm mt-12 text-[var(--color-ink)]">
             <span className="font-bold flex-shrink-0">{t("trustedBy")}</span>
-            <div className="flex flex-wrap gap-2 opacity-100">
+            <div className="flex flex-wrap gap-2 opacity-100 w-full">
               {/* Placeholders for logos */}
-              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">{t("badges.fintech")}</div>
-              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">{t("badges.proptech")}</div>
-              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">{t("badges.regtech")}</div>
-              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)]">{t("badges.enterprise")}</div>
+              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)] whitespace-nowrap">{t("badges.fintech")}</div>
+              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)] whitespace-nowrap">{t("badges.proptech")}</div>
+              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)] whitespace-nowrap">{t("badges.regtech")}</div>
+              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)] whitespace-nowrap">{t("badges.enterprise")}</div>
             </div>
           </div>
 
         </div>
 
         {/* Right Column - Form */}
-        <div className="relative">
-          <div className="bg-[var(--color-surface)] rounded-3xl p-5 md:p-10 shadow-xl border border-[var(--color-border)] relative overflow-hidden">
+        <div className="relative w-full min-w-0">
+          <div className="bg-[var(--color-surface)] rounded-3xl p-3 md:p-10 shadow-lg md:shadow-xl border border-[var(--color-border)] relative overflow-hidden">
 
             {state.success ? (
               <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[400px] text-center">
@@ -123,7 +123,7 @@ export function ContactSection() {
                     {state.message}
                   </div>
                 )}
-                <div className="grid md:grid-cols-2 gap-5">
+                <div className="flex flex-col md:grid md:grid-cols-2 gap-5">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
                       {t("form.name")}
@@ -132,7 +132,7 @@ export function ContactSection() {
                       {...register("name")}
                       type="text"
                       id="name"
-                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] placeholder:opacity-50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
+                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] placeholder:opacity-50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all min-w-0"
                       placeholder={t("form.namePlaceholder")}
                     />
                     {(errors.name || state.errors?.name) && (
@@ -147,7 +147,7 @@ export function ContactSection() {
                       {...register("email")}
                       type="email"
                       id="email"
-                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] placeholder:opacity-50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
+                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] placeholder:opacity-50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all min-w-0"
                       placeholder={t("form.emailPlaceholder")}
                     />
                     {(errors.email || state.errors?.email) && (
@@ -156,7 +156,7 @@ export function ContactSection() {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-5">
+                <div className="flex flex-col md:grid md:grid-cols-2 gap-5">
                   <div>
                     <label htmlFor="company" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
                       {t("form.company")}
@@ -165,7 +165,7 @@ export function ContactSection() {
                       {...register("company")}
                       type="text"
                       id="company"
-                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] placeholder:opacity-50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all"
+                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] placeholder:opacity-50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all min-w-0"
                       placeholder={t("form.companyPlaceholder")}
                     />
                     {(errors.company || state.errors?.company) && (
@@ -180,7 +180,7 @@ export function ContactSection() {
                       {...register("projectType")}
                       id="projectType"
                       required
-                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] invalid:text-[var(--color-ink)]/50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all appearance-none"
+                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] invalid:text-[var(--color-ink)]/50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all appearance-none min-w-0"
                     >
                       <option value="" disabled>{t("form.projectTypePlaceholder")}</option>
                       <option value="augmentation">{t("form.types.augmentation")}</option>
@@ -202,7 +202,7 @@ export function ContactSection() {
                     {...register("message")}
                     id="message"
                     rows={4}
-                    className="w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] placeholder:opacity-50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all resize-none"
+                    className="w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] placeholder:opacity-50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all resize-none min-w-0"
                     placeholder={t("form.messagePlaceholder")}
                   />
                   {(errors.message || state.errors?.message) && (
@@ -212,7 +212,7 @@ export function ContactSection() {
 
                 <button
                   type="submit"
-                  className="w-full btn btn-accent btn-lg justify-center rounded-xl py-4 text-base shadow-lg hover:shadow-xl hover:-translate-y-1"
+                  className="w-full btn btn-accent btn-lg justify-center rounded-xl py-3 h-auto !px-4 md:px-8 text-base shadow-lg hover:shadow-xl hover:-translate-y-1 !whitespace-normal text-center leading-tight"
                   disabled={isPending}
                 >
                   {isPending ? t("form.sending") : t("form.send")}

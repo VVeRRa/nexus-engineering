@@ -32,6 +32,16 @@ export function TechStackSection() {
       ],
     },
     {
+      name: t("categories.design"),
+      color: "var(--color-secondary)",
+      techs: [
+        { name: "Figma", abbr: "Fi" },
+        { name: "Storybook", abbr: "Sb" },
+        { name: "Tailwind", abbr: "Tw" },
+        { name: "Adobe products", abbr: "Ad" },
+      ],
+    },
+    {
       name: t("categories.cloud"),
       color: "var(--color-primary)",
       techs: [
@@ -39,24 +49,16 @@ export function TechStackSection() {
         { name: "Kubernetes", abbr: "K8" },
         { name: "Docker", abbr: "Dk" },
         { name: "Terraform", abbr: "Tf" },
+        { name: "Google Cloud", abbr: "Gc" },
       ],
     },
     {
       name: t("categories.methodology"),
-      color: "var(--color-secondary)",
+      color: "var(--color-primary)",
       techs: [
         { name: "Agile", abbr: "Ag" },
         { name: "AI", abbr: "AI" },
         { name: "CI/CD", abbr: "CI" },
-      ],
-    },
-    {
-      name: t("categories.design"),
-      color: "var(--color-primary)",
-      techs: [
-        { name: "Figma", abbr: "Fi" },
-        { name: "Storybook", abbr: "Sb" },
-        { name: "Tailwind", abbr: "Tw" },
       ],
     },
   ];
