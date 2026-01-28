@@ -45,7 +45,7 @@
   },
   "Home": {
     "kicker": "Senior-geführter Product-Engineering-Partner",
-    "subheadline": "PropTech- & FinTech-Erfahrung & RegTech • Delivery in der EU • Klein starten, mit der Pipeline skalieren.",
+    "subheadline": "Senior-geführte Produktteams für FinTech, PropTech und RegTech. Wir bieten die architektonische Tiefe eines CTO-Office mit der Liefergeschwindigkeit eines agilen Squads.",
     "ctaPrimary": "Kontaktieren Sie uns",
     "ctaSecondary": "Leistungen ansehen",
     "scroll": "Scrollen",
@@ -53,7 +53,7 @@
     "highlights": {
       "h1": {
         "badge": "Lösungsorientiert",
-        "title": "Wir lösen Probleme, keine Organigramme",
+        "title": "High-Velocity Engineering für anspruchsvolle Branchen",
         "text": "Wir schlagen die kleinste Teamgröße vor, die den Fortschritt freisetzt – und skalieren erst, wenn es sich lohnt."
       },
       "h2": {
@@ -110,7 +110,7 @@
     "trust": {
       "consultation": "Kostenlose Beratung",
       "euTeam": "Team in der EU",
-      "startFast": "Start in 48 Std.",
+      "startFast": "Schnelles Onboarding",
       "chat": "Chatten Sie mit uns"
     }
   },
@@ -497,7 +497,7 @@
       },
       "project": {
         "title": "Projektbasiert",
-        "desc": "End-to-End-Lieferung eines definierten Umfangs mit festem Zeitplan und Budget."
+        "desc": "Wir bieten eine End-to-End-Projektabwicklung innerhalb eines definierten Umfangs und Zeitrahmens. Je nach Ihren Anforderungen bieten wir sowohl Festpreis- als auch Stundenabrechnungsmodelle an, um eine vollständige Übereinstimmung mit Ihrem Budget zu gewährleisten."
       }
     }
   },

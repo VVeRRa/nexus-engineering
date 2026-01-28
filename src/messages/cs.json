@@ -45,7 +45,7 @@
   },
   "Home": {
     "kicker": "Seniorní produktový engineering partner",
-    "subheadline": "Zkušenost z PropTech & FinTech & RegTech • Delivery v EU • Začněte v malém a škálujte podle pipeline.",
+    "subheadline": "Seniorní produktové týmy pro FinTech, PropTech a RegTech. Poskytujeme architektonickou hloubku CTO office s rychlostí dodání agilního squadu.",
     "ctaPrimary": "Kontaktovat",
     "ctaSecondary": "Zobrazit služby",
     "scroll": "Rolovat",
@@ -53,7 +53,7 @@
     "highlights": {
       "h1": {
         "badge": "Řešení > šablona",
-        "title": "Odblokujeme problém, neprodáváme tabulkové squady",
+        "title": "High-Velocity Engineering pro náročná odvětví",
         "text": "Navrhneme nejmenší tvar týmu, který odemkne progres — a škálujeme až když to dává smysl."
       },
       "h2": {
@@ -110,7 +110,7 @@
     "trust": {
       "consultation": "Konzultace zdarma",
       "euTeam": "Tým v EU",
-      "startFast": "Začneme do 48 hod",
+      "startFast": "Rychlý onboarding",
       "chat": "Napište nám"
     }
   },
@@ -491,7 +491,7 @@
       },
       "project": {
         "title": "Projektová báze",
-        "desc": "End-to-end dodávka definovaného rozsahu s pevným harmonogramem a rozpočtem."
+        "desc": "Poskytujeme komplexní realizaci projektů v definovaném rozsahu a časovém harmonogramu. V závislosti na vašich požadavcích nabízíme modely účtování s pevnou cenou nebo hodinovou sazbou, abychom zajistili plný soulad s vaším rozpočtem."
       }
     }
   },

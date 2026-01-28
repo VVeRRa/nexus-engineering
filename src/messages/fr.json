@@ -45,7 +45,7 @@
     },
     "Home": {
         "kicker": "Partenaire d'ingénierie produit dirigé par des seniors",
-        "subheadline": "Expérience PropTech & FinTech & RegTech • Livraison basée en UE • Commencez petit et évoluez selon votre pipeline.",
+        "subheadline": "Équipes produit dirigées par des seniors pour FinTech, PropTech et RegTech. Nous offrons la profondeur architecturale d'un bureau de CTO avec la vitesse de livraison d'une squad agile.",
         "ctaPrimary": "Contactez-nous",
         "ctaSecondary": "Voir les services",
         "scroll": "Défiler",
@@ -53,7 +53,7 @@
         "highlights": {
             "h1": {
                 "badge": "Priorité à la solution",
-                "title": "Nous résolvons des contraintes, pas des organigrammes",
+                "title": "Ingénierie Haute Vitesse pour Industries à Forts Enjeux",
                 "text": "Nous proposons la plus petite équipe qui débloque le progrès — et ne passons à l'échelle que lorsque cela est rentable."
             },
             "h2": {
@@ -110,7 +110,7 @@
         "trust": {
             "consultation": "Consultation gratuite",
             "euTeam": "Équipe basée en UE",
-            "startFast": "Démarrage en 48h",
+            "startFast": "Onboarding Rapide",
             "chat": "Discuter avec nous"
         }
     },
@@ -497,7 +497,7 @@
             },
             "project": {
                 "title": "Basé sur un projet",
-                "desc": "Livraison de bout en bout d'un périmètre défini avec un calendrier et un budget fixes."
+                "desc": "Nous assurons une exécution de projet de bout en bout dans un périmètre et un calendrier définis. Selon vos besoins, nous proposons des modèles de facturation au forfait ou au taux horaire pour garantir un alignement total avec votre budget."
             }
         }
     },

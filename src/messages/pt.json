@@ -45,7 +45,7 @@
     },
     "Home": {
         "kicker": "Parceiro de engenharia de produto liderado por seniores",
-        "subheadline": "Experiência em PropTech & FinTech & RegTech • Entrega baseada na UE • Comece pequeno e cresça conforme sua demanda.",
+        "subheadline": "Times de produto liderados por seniores para FinTech, PropTech e RegTech. Fornecemos a profundidade arquitetural de um escritório de CTO com a velocidade de entrega de um squad ágil.",
         "ctaPrimary": "Contate-nos",
         "ctaSecondary": "Ver serviços",
         "scroll": "Rolar",
@@ -53,7 +53,7 @@
         "highlights": {
             "h1": {
                 "badge": "Foco na solução",
-                "title": "Resolvemos restrições, não organogramas",
+                "title": "Engenharia de Alta Velocidade para Indústrias Críticas",
                 "text": "Propomos o menor time capaz de destravar o progresso — e escalamos apenas quando vale a pena."
             },
             "h2": {
@@ -110,7 +110,7 @@
         "trust": {
             "consultation": "Consulta gratuita",
             "euTeam": "Equipa na UE",
-            "startFast": "Início em 48h",
+            "startFast": "Onboarding Rápido",
             "chat": "Fale connosco"
         }
     },
@@ -497,7 +497,7 @@
             },
             "project": {
                 "title": "Baseado em Projeto",
-                "desc": "Entrega de ponta a ponta de escopo definido com cronograma e orçamento fixos."
+                "desc": "Oferecemos execução de projetos de ponta a ponta dentro de um escopo e cronograma definidos. Dependendo dos seus requisitos, oferecemos modelos de cobrança de preço fixo ou taxas horárias para garantir total alinhamento com as suas necessidades orçamentais."
             }
         }
     },
