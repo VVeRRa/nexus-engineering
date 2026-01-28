@@ -17,6 +17,7 @@ export function Footer() {
       { label: t("links.about"), href: "#about" },
       { label: t("links.caseStudies"), href: "#case-studies" },
       { label: t("links.process"), href: "#process" },
+      { label: t("links.security"), href: "/security" },
       { label: t("links.contact"), href: "#contact" },
     ],
     industries: [
@@ -28,7 +29,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-[var(--color-paper)] pt-20 pb-8 border-t border-[var(--color-border)] transition-colors duration-300">
+    <footer className="bg-[var(--color-paper)] pt-20 pb-8 border-t border-[var(--color-border)] transition-colors duration-300 relative z-50">
       <div className="container">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16">

@@ -40,7 +40,8 @@
       "fintech": "FinTech",
       "proptech": "PropTech",
       "regtech": "RegTech",
-      "enterprise": "Enterprise"
+      "enterprise": "Enterprise",
+      "security": "Bezpečnost a shoda"
     }
   },
   "Home": {
@@ -205,7 +206,7 @@
       },
       "fintech": {
         "title": "FinTech",
-        "text": "Platby, identita, compliance citlivé flow a auditovatelná dodávka."
+        "text": "Platby, identita, toky podléhající přísné regulaci a auditovatelná dodávka."
       },
       "highload": {
         "title": "High-load & platformy",
@@ -303,7 +304,7 @@
     },
     "regtech": {
       "name": "RegTech",
-      "tagline": "Compliance v základu",
+      "tagline": "Shoda s předpisy v DNA",
       "description": "Automatizované systémy pro sledování shody, řízení rizik a reportování, které mění regulační zátěž v konkurenční výhodu.",
       "stats": "Zvýšení efektivity",
       "highlights": [
@@ -519,5 +520,80 @@
   "Metadata": {
     "title": "BLAiT Engineering | Elite IT Staff Augmentation",
     "description": "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions."
+  },
+  "Security": {
+    "hero": {
+      "label": "Bezpečnost a shoda",
+      "title": "Bezpečnost skrze design",
+      "subtitle": "Bezpečnost nelepíme nakonec. Je zapečená v každém commitu, každém kontejneru a každém cloudu zdroji, na který sáhneme."
+    },
+    "compliance": {
+      "title": "Shoda a Standardy",
+      "description": "Naše interní procesy jsou navrženy tak, aby ladily s frameworky, na kterých vám záleží. Jsme sice engineering partner, ne hosting provider, ale fungujeme s přísností regulované entity.",
+      "items": {
+        "gdpr": {
+          "title": "V souladu s GDPR",
+          "text": "Všichni naši inženýři a operace jsou v EU/EHP nebo ekvivalentních jurisdikcích. Smlouvy o zpracování dat (DPA) jsou standardem každé spolupráce."
+        },
+        "iso": {
+          "title": "Dle ISO 27001",
+          "text": "Dodržujeme best practices pro řízení informační bezpečnosti, včetně dokumentovaných přístupových práv, plánů reakce na incidenty a správy aktiv."
+        },
+        "soc2": {
+          "title": "Připravenost na SOC2",
+          "text": "Pro klienty z USA se řídíme kritérii SOC2 Trust Services. Implementujeme change management, logický přístup a monitoring controls jako standard."
+        }
+      }
+    },
+    "infrastructure": {
+      "title": "Bezpečnost Infrastruktury",
+      "description": "Bezpečné základy pro škálovatelné systémy.",
+      "items": {
+        "aws": {
+          "title": "Bezpečnost cloudu",
+          "text": "Používáme AWS/GCP best practices: Well-Architected Framework, least-privilege IAM role a oddělené VPC pro prostředí."
+        },
+        "encryption": {
+          "title": "Šifrování všude",
+          "text": "Data šifrujeme v klidu (AES-256) i při přenosu (TLS 1.2+). Tajemství spravujeme pomocí enterprise trezorů (AWS Secrets Manager, HashiCorp Vault)."
+        },
+        "access": {
+          "title": "Zero Trust přístup",
+          "text": "Žádné VPN, žádná sdílená hesla. K infrastruktuře přistupujeme přes krátkodobé přihlašovací údaje a identity-aware proxy."
+        }
+      }
+    },
+    "sdlc": {
+      "title": "Bezpečný vývojový cyklus",
+      "description": "Kód, který se sám brání.",
+      "items": {
+        "review": {
+          "title": "Povinné Code Review",
+          "text": "Žádný kód nejde do produkce bez schválení alespoň jednoho seniorního inženýra. Během review kontrolujeme OWASP Top 10 zranitelnosti."
+        },
+        "scanning": {
+          "title": "Automatizované skenování",
+          "text": "CI/CD pipeline obsahují SAST (statická analýza), DAST (dynamická analýza) a skenování závislostí pro včasné odhalení chyb."
+        },
+        "supply": {
+          "title": "Bezpečnost dodavatelského řetězce",
+          "text": "Pinnujeme verze závislostí, používáme podepsané commity a pravidelně auditujeme knihovny třetích stran na CVE."
+        }
+      }
+    },
+    "operational": {
+      "title": "Provozní bezpečnost",
+      "items": [
+        "Přísné NDA & dohody o ochraně IP",
+        "Kompletní prověrky (Background Checks)",
+        "Spravovaná zařízení (MDM)",
+        "Kultura bezpečnostního povědomí"
+      ]
+    },
+    "cta": {
+      "title": "Máte specifické požadavky na shodu s předpisy?",
+      "text": "Rádi probereme naše bezpečnostní protokoly a pomůžeme vám s požadavky na hodnocení dodavatelů.",
+      "button": "Kontaktovat bezpečnostní tým"
+    }
   }
 }

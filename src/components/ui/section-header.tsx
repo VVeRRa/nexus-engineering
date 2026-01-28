@@ -14,12 +14,19 @@ export function SectionHeader({
     title,
     description,
     align = "left",
-    className
-}: SectionHeaderProps) {
+    className,
+    animate = true,
+}: SectionHeaderProps & { animate?: boolean }) {
+    // Check if we should inherit color (implying parent sets it, e.g. text-white)
+    // Also explicitly check for white request to force it via style if needed
+    const isWhite = className?.includes("text-white") || className?.includes("!text-white");
+    const inheritColor = className?.includes("text-slate");
+
     return (
         <div
             className={cn(
-                "mb-16 animate-on-scroll",
+                "mb-16",
+                animate && "animate-on-scroll",
                 align === "center" ? "text-center max-w-3xl mx-auto" : "max-w-3xl",
                 className
             )}
@@ -30,13 +37,26 @@ export function SectionHeader({
                 </span>
             )}
             <h2
-                className="text-3xl md:text-5xl text-[var(--color-ink)] mb-6"
-                style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
+                className={cn(
+                    "text-3xl md:text-5xl mb-6",
+                    isWhite ? "text-white" : (inheritColor ? "text-inherit" : "text-[var(--color-ink)]")
+                )}
+                style={{
+                    fontFamily: "var(--font-display)",
+                    fontWeight: 800,
+                    color: isWhite ? "#ffffff" : undefined
+                }}
             >
                 {title}
             </h2>
             {description && (
-                <div className="text-xl text-[var(--color-ink)]">
+                <div
+                    className={cn(
+                        "text-xl",
+                        isWhite ? "text-white" : (inheritColor ? "text-inherit" : "text-[var(--color-ink)]")
+                    )}
+                    style={{ color: isWhite ? "#ffffff" : undefined }}
+                >
                     {description}
                 </div>
             )}

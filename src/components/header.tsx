@@ -7,23 +7,34 @@ import LanguageSwitcher from "./language-switcher";
 
 import { useScrollSpy } from "@/hooks/use-scroll-spy";
 
+import { usePathname } from "next/navigation";
+
 export function Header() {
   const t = useTranslations("Nav");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+  // If we are on a subpage (like /security), we need full paths for anchors
+  // Assuming the home page is "/[locale]" or "/"
+  // We can check if pathname ends with /security
+  const isHomePage = !pathname.includes("/security");
+  const locale = pathname.split("/")[1];
 
   const navLinks = [
-    { href: "#services", label: t('services') },
-    { href: "#industries", label: t('expertise') },
-    { href: "#process", label: t('process') },
-    { href: "#work", label: t('work') },
-    { href: "#about", label: t('about') },
-    { href: "#tech", label: t('technology') },
-    { href: "#faq", label: t('faq') },
-    { href: "#contact", label: t('contact') },
+    { href: isHomePage ? "#services" : `/${locale}/#services`, label: t('services') },
+    { href: isHomePage ? "#industries" : `/${locale}/#industries`, label: t('expertise') },
+    { href: isHomePage ? "#process" : `/${locale}/#process`, label: t('process') },
+    { href: isHomePage ? "#work" : `/${locale}/#work`, label: t('work') },
+    { href: isHomePage ? "#about" : `/${locale}/#about`, label: t('about') },
+    { href: isHomePage ? "#tech" : `/${locale}/#tech`, label: t('technology') },
+    { href: isHomePage ? "#faq" : `/${locale}/#faq`, label: t('faq') },
+    { href: isHomePage ? "#contact" : `/${locale}/#contact`, label: t('contact') },
   ];
 
-  const activeId = useScrollSpy(["#hero", ...navLinks.map((link) => link.href)], { rootMargin: "-10% 0px -35% 0px" });
+  // Only spy on scroll when on the home page where these sections exist
+  // using full URLs causes "not a valid selector" errors
+  const spySelectors = isHomePage ? ["#hero", ...navLinks.map((link) => link.href)] : [];
+  const activeId = useScrollSpy(spySelectors, { rootMargin: "-10% 0px -35% 0px" });
 
   useEffect(() => {
     let ticking = false;
@@ -63,7 +74,7 @@ export function Header() {
       >
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group relative z-50">
+          <a href={`/${locale}`} className="flex items-center gap-2 group relative z-50">
             <div className="text-2xl tracking-tighter font-extrabold text-[var(--color-ink)]" style={{ fontFamily: "var(--font-display)" }}>
               BLAiT<span className="text-[var(--color-primary)]">.</span>
             </div>

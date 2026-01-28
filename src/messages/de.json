@@ -40,7 +40,8 @@
       "fintech": "FinTech",
       "proptech": "PropTech",
       "regtech": "RegTech",
-      "enterprise": "Enterprise"
+      "enterprise": "Enterprise",
+      "security": "Sicherheit & Compliance"
     }
   },
   "Home": {
@@ -525,5 +526,80 @@
   "Metadata": {
     "title": "BLAiT Engineering | Elite IT Staff Augmentation",
     "description": "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions."
+  },
+  "Security": {
+    "hero": {
+      "label": "Sicherheit & Compliance",
+      "title": "Sicherheit durch Design",
+      "subtitle": "Wir fügen Sicherheit nicht am Ende hinzu. Sie ist in jeden Commit, jeden Container und jede Cloud-Ressource integriert, die wir berühren."
+    },
+    "compliance": {
+      "title": "Regeltreue & Standards",
+      "description": "Unsere internen Prozesse sind so konzipiert, dass sie mit den für Sie wichtigen Frameworks übereinstimmen. Obwohl wir ein Engineering-Partner und kein Hosting-Provider sind, arbeiten wir mit der Strenge eines regulierten Unternehmens.",
+      "items": {
+        "gdpr": {
+          "title": "DSGVO-konform",
+          "text": "Alle unsere Ingenieure und Betriebsabläufe sind in der EU/EWR oder gleichwertigen Jurisdiktionen angesiedelt. Auftragsverarbeitungsverträge (AVV) sind Standard bei jedem Engagement."
+        },
+        "iso": {
+          "title": "ISO 27001 ausgerichtet",
+          "text": "Wir befolgen Best Practices für Informationssicherheitsmanagement, einschließlich dokumentierter Zugriffskontrollen, Vorfallreaktionsplänen und Asset Management."
+        },
+        "soc2": {
+          "title": "SOC2-Bereitschaft",
+          "text": "Für US-Kunden richten wir uns nach den SOC2 Trust Services Criteria. Wir implementieren standardmäßig Change Management, logischen Zugriff und Überwachungskontrollen."
+        }
+      }
+    },
+    "infrastructure": {
+      "title": "Infrastruktursicherheit",
+      "description": "Sichere Grundlagen für skalierbare Systeme.",
+      "items": {
+        "aws": {
+          "title": "Cloud-Sicherheit",
+          "text": "Wir nutzen AWS/GCP Best Practices: Well-Architected Framework, Least-Privilege IAM-Rollen und separate VPCs für Umgebungen."
+        },
+        "encryption": {
+          "title": "Verschlüsselung überall",
+          "text": "Daten werden im Ruhezustand (AES-256) und bei der Übertragung (TLS 1.2+) verschlüsselt. Wir verwalten Secrets mit Enterprise-Grade Vaults (AWS Secrets Manager, HashiCorp Vault)."
+        },
+        "access": {
+          "title": "Zero Trust Zugang",
+          "text": "Keine VPNs, keine geteilten Passwörter. Wir greifen auf Infrastruktur über kurzlebige Anmeldeinformationen und identitätsbewusste Proxys zu."
+        }
+      }
+    },
+    "sdlc": {
+      "title": "Sicherer Entwicklungszyklus",
+      "description": "Code, der sich selbst verteidigt.",
+      "items": {
+        "review": {
+          "title": "Obligatorischer Peer-Review",
+          "text": "Kein Code erreicht die Produktion ohne mindestens eine Genehmigung durch einen Senior Engineer. Wir prüfen während des Reviews auf OWASP Top 10 Schwachstellen."
+        },
+        "scanning": {
+          "title": "Automatisches Scannen",
+          "text": "CI/CD-Pipelines umfassen SAST (statische Analyse), DAST (dynamische Analyse) und spezialisiertes Dependency Scanning, um Schwachstellen frühzeitig zu erkennen."
+        },
+        "supply": {
+          "title": "Sicherheit der Lieferkette",
+          "text": "Wir pinnen Dependency-Versionen, verwenden signierte Commits und auditieren regelmäßig Third-Party-Bibliotheken auf CVEs."
+        }
+      }
+    },
+    "operational": {
+      "title": "Operative Sicherheit",
+      "items": [
+        "Strenge NDA & IP-Schutzvereinbarungen",
+        "Umfassende Hintergrundüberprüfungen",
+        "Verwaltete Geräte (MDM)",
+        "Sicherheitsbewusstsein und Kultur"
+      ]
+    },
+    "cta": {
+      "title": "Haben Sie spezifische Compliance-Anforderungen?",
+      "text": "Wir besprechen gerne unsere Sicherheitsprotokolle und unterstützen Sie bei Ihren Anforderungen an die Lieferantenbewertung.",
+      "button": "Sicherheitsteam kontaktieren"
+    }
   }
 }

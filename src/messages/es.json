@@ -40,7 +40,8 @@
             "fintech": "FinTech",
             "proptech": "PropTech",
             "regtech": "RegTech",
-            "enterprise": "Empresas"
+            "enterprise": "Empresas",
+            "security": "Seguridad y Cumplimiento"
         }
     },
     "Home": {
@@ -205,7 +206,7 @@
             },
             "fintech": {
                 "title": "FinTech",
-                "text": "Pagos, identidad, flujos sensibles al cumplimiento y entrega auditable."
+                "text": "Pagamentos, identidad, flujos sensibles al cumplimiento y entrega auditable."
             },
             "highload": {
                 "title": "Alta carga y plataformas",
@@ -329,7 +330,7 @@
             "title": "Especializaciones Adicionales",
             "description": "Experiencia interindustrial que impulsa resultados",
             "cloud": "Soluciones en la Nube",
-            "distArch": "Arquitectura Distribuida",
+            "distArch": "Arquitectura Distribuída",
             "scaling": "Ecosistemas",
             "product": "Desarrollo de Productos Startup",
             "ai": "Implementación de IA",
@@ -514,7 +515,7 @@
             },
             "pricing": {
                 "question": "¿Cuál es su modelo de precios?",
-                "answer": "Ofrecemos tanto aumento de personal (tarifas por hora/mensuales) como precios fijos basados en proyectos, dependiendo de sus necesidades. Contáctenos para una cotización detallada."
+                "answer": "Oferecemos tanto aumento de personal (tarifas por hora/mensuales) como precios fijos basados en proyectos, dependiendo de sus necesidades. Contáctenos para una cotización detallada."
             },
             "pm": {
                 "question": "¿Proporcionan gestores de proyectos?",
@@ -525,5 +526,80 @@
     "Metadata": {
         "title": "BLAiT Engineering | Elite IT Staff Augmentation",
         "description": "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions."
+    },
+    "Security": {
+        "hero": {
+            "label": "Seguridad y Cumplimiento",
+            "title": "Seguridad desde el Diseño",
+            "subtitle": "No añadimos seguridad al final. Está integrada en cada commit, cada contenedor y cada recurso en la nube que tocamos."
+        },
+        "compliance": {
+            "title": "Cumplimiento y Estándares",
+            "description": "Nuestros procesos internos están diseñados para alinearse con los marcos que le importan. Aunque somos un socio de ingeniería, no un proveedor de hosting, operamos con el rigor de una entidad regulada.",
+            "items": {
+                "gdpr": {
+                    "title": "Cumplimiento RGPD",
+                    "text": "Todos nuestros ingenieros y operaciones están basados en la UE/EEE o jurisdicciones equivalentes. Los Acuerdos de Protección de Datos (DPA) son estándar en cada compromiso."
+                },
+                "iso": {
+                    "title": "Alineado con ISO 27001",
+                    "text": "Seguimos las mejores prácticas de gestión de seguridad de la información, incluidos controles de acceso documentados, planes de respuesta a incidentes y gestión de activos."
+                },
+                "soc2": {
+                    "title": "Preparación para SOC2",
+                    "text": "Para clientes de EE. UU., nos alineamos con los Criterios de Servicios de Confianza SOC2. Implementamos gestión de cambios, acceso lógico y controles de monitoreo por defecto."
+                }
+            }
+        },
+        "infrastructure": {
+            "title": "Seguridad de Infraestructura",
+            "description": "Cimientos seguros para sistemas escalables.",
+            "items": {
+                "aws": {
+                    "title": "Seguridad en la Nube",
+                    "text": "Utilizamos las mejores prácticas AWS/GCP: Marco de Buena Arquitectura, roles IAM de privilegio mínimo y VPCs separadas para entornos."
+                },
+                "encryption": {
+                    "title": "Cifrado en Todas Partes",
+                    "text": "Los datos se cifran en reposo (AES-256) y en tránsito (TLS 1.2+). Gestionamos secretos utilizando bóvedas de grado empresarial (AWS Secrets Manager, HashiCorp Vault)."
+                },
+                "access": {
+                    "title": "Acceso Zero Trust",
+                    "text": "Sin VPNs, sin contraseñas compartidas. Accedemos a la infraestructura a través de credenciales de corta duración y proxies conscientes de la identidad."
+                }
+            }
+        },
+        "sdlc": {
+            "title": "Ciclo de Desarrollo Seguro",
+            "description": "Código que se defiende a sí mismo.",
+            "items": {
+                "review": {
+                    "title": "Revisión por Pares Obligatoria",
+                    "text": "Ningún código llega a producción sin al menos una aprobación de un ingeniero senior. Verificamos vulnerabilidades OWASP Top 10 durante la revisión."
+                },
+                "scanning": {
+                    "title": "Escaneo Automatizado",
+                    "text": "Los pipelines de CI/CD incluyen SAST (Análisis Estático), DAST (Análisis Dinámico) y escaneo de dependencias especializado para detectar vulnerabilidades temprano."
+                },
+                "supply": {
+                    "title": "Seguridad de la Cadena de Suministro",
+                    "text": "Fijamos versiones de dependencias, utilizamos commits firmados y auditamos regularmente bibliotecas de terceros en busca de CVEs."
+                }
+            }
+        },
+        "operational": {
+            "title": "Seguridad Operacional",
+            "items": [
+                "Acuerdos estrictos de NDA y protección de PI",
+                "Verificaciones de antecedentes exhaustivas",
+                "Dispositivos gestionados (MDM)",
+                "Cultura de Conciencia de Seguridad"
+            ]
+        },
+        "cta": {
+            "title": "¿Tiene necesidades específicas de cumplimiento?",
+            "text": "Estaremos encantados de discutir nuestros protocolos de seguridad y ayudarle con sus requisitos de evaluación de proveedores.",
+            "button": "Contactar al Equipo de Seguridad"
+        }
     }
 }

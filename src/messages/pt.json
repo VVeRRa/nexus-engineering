@@ -40,7 +40,8 @@
             "fintech": "FinTech",
             "proptech": "PropTech",
             "regtech": "RegTech",
-            "enterprise": "Empresas"
+            "enterprise": "Empresas",
+            "security": "Segurança e Conformidade"
         }
     },
     "Home": {
@@ -264,7 +265,7 @@
             },
             "design": {
                 "title": "Design",
-                "text": "Entrega guiada por Figma • protótipos UX • design systems e bibliotecas de componentes."
+                "text": "Entrega guiada por Figma • prototipos UX • design systems e bibliotecas de componentes."
             }
         }
     },
@@ -525,5 +526,80 @@
     "Metadata": {
         "title": "BLAiT Engineering | Elite IT Staff Augmentation",
         "description": "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions."
+    },
+    "Security": {
+        "hero": {
+            "label": "Segurança e Conformidade",
+            "title": "Segurança desde o Design",
+            "subtitle": "Não adicionamos segurança no final. Ela está integrada em cada commit, cada container e cada recurso de nuvem que tocamos."
+        },
+        "compliance": {
+            "title": "Conformidade e Padrões",
+            "description": "Nossos processos internos são projetados para se alinhar com as estruturas que importam para você. Embora sejamos um parceiro de engenharia, não um provedor de hospedagem, operamos com o rigor de uma entidade regulada.",
+            "items": {
+                "gdpr": {
+                    "title": "Compatível com GDPR",
+                    "text": "Todos os nossos engenheiros e operações estão baseados na UE/EEE ou jurisdições equivalentes. Acordos de Proteção de Dados (DPA) são padrão em cada compromisso."
+                },
+                "iso": {
+                    "title": "Alinhado com ISO 27001",
+                    "text": "Seguimos as melhores práticas de gestão de segurança da informação, incluindo controles de acesso documentados, planos de resposta a incidentes e gestão de ativos."
+                },
+                "soc2": {
+                    "title": "Prontidão para SOC2",
+                    "text": "Para clientes dos EUA, nos alinhamos com os Critérios de Serviços de Confiança SOC2. Implementamos gestão de mudanças, acesso lógico e controles de monitoramento por padrão."
+                }
+            }
+        },
+        "infrastructure": {
+            "title": "Segurança de Infraestrutura",
+            "description": "Fundações seguras para sistemas escaláveis.",
+            "items": {
+                "aws": {
+                    "title": "Segurança na Nuvem",
+                    "text": "Usamos as melhores práticas AWS/GCP: Well-Architected Framework, funções IAM de menor privilégio e VPCs separadas para ambientes."
+                },
+                "encryption": {
+                    "title": "Criptografia em Todo Lugar",
+                    "text": "Os dados são criptografados em repouso (AES-256) e em trânsito (TLS 1.2+). Gerenciamos segredos usando cofres de nível empresarial (AWS Secrets Manager, HashiCorp Vault)."
+                },
+                "access": {
+                    "title": "Acesso Zero Trust",
+                    "text": "Sem VPNs, sem senhas compartilhadas. Acessamos a infraestrutura via credenciais de curta duração e proxies conscientes da identidade."
+                }
+            }
+        },
+        "sdlc": {
+            "title": "Ciclo de Desenvolvimento Seguro",
+            "description": "Código que se defende.",
+            "items": {
+                "review": {
+                    "title": "Revisão por Pares Obrigatória",
+                    "text": "Nenhum código chega à produção sem pelo menos uma aprovação de um engenheiro sênior. Verificamos vulnerabilidades OWASP Top 10 durante a revisão."
+                },
+                "scanning": {
+                    "title": "Escaneamento Automatizado",
+                    "text": "Pipelines de CI/CD incluem SAST (Análise Estática), DAST (Análise Dinâmica) e escaneamento especializado de dependências para detectar vulnerabilidades precocemente."
+                },
+                "supply": {
+                    "title": "Segurança da Cadeia de Suprimentos",
+                    "text": "Fixamos versões de dependências, usamos commits assinados e auditamos regularmente bibliotecas de terceiros em busca de CVEs."
+                }
+            }
+        },
+        "operational": {
+            "title": "Segurança Operacional",
+            "items": [
+                "NDAs rigorosos & Acordos de Proteção de PI",
+                "Verificações de antecedentes abrangentes",
+                "Dispositivos gerenciados (MDM)",
+                "Cultura de Conscientização de Segurança"
+            ]
+        },
+        "cta": {
+            "title": "Tem necessidades específicas de conformidade?",
+            "text": "Teremos prazer em discutir nossos protocolos de segurança e ajudá-lo com seus requisitos de avaliação de fornecedores.",
+            "button": "Contatar Equipe de Segurança"
+        }
     }
 }

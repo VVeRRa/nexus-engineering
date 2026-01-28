@@ -40,7 +40,8 @@
             "fintech": "FinTech",
             "proptech": "PropTech",
             "regtech": "RegTech",
-            "enterprise": "Entreprise"
+            "enterprise": "Entreprise",
+            "security": "Sécurité et Conformité"
         }
     },
     "Home": {
@@ -142,7 +143,7 @@
             "frontend": {
                 "title": "Développement Frontend",
                 "subtitle": "Interfaces Exceptionnelles",
-                "description": "Interfaces responsives avec une UX exceptionnelle. Bibliothèques de composants, design systems et SPAs performantes que les utilisateurs adorent.",
+                "description": "Interfaces responsivas avec une UX exceptionnelle. Bibliothèques de composants, design systems et SPAs performantes que les utilisateurs adorent.",
                 "tags": [
                     "React",
                     "TypeScript",
@@ -190,7 +191,7 @@
         "lead": "Nous travaillons dans des domaines complexes où la fiabilité, la vitesse et la clarté comptent.",
         "capabilitiesTitle": "Capacités",
         "capabilities": [
-            "Ingénierie produit (de la découverte à la production)",
+            "Ingeniería de produit (de la découverte à la production)",
             "Architecture & tech leadership",
             "Backend haute charge & systèmes événementiels",
             "Intégrations riches en données et APIs",
@@ -417,7 +418,7 @@
     "About": {
         "label": "À propos",
         "title": "Partenaires d'ingénierie, pas vendeurs",
-        "description1": "Nous avons fondé BLAiT pour redéfinir la norme de la collaboration technique externe. Nous nous sommes éloignés des modèles d'externalisation traditionnels pour éliminer les incitations mal alignées, les lacunes de communication et la \"loterie des talents\". Nous avons construit quelque chose de mieux.",
+        "description1": "Nous avons fondé BLAiT pour redéfinir la norme de la collaboration technique externa. Nous nous sommes éloignés des modèles d'externalisation traditionnels pour éliminer les incitations mal alignées, les lacunes de communication et la \"loterie des talents\". Nous avons construit quelque chose de mieux.",
         "description2": "Nos ingénieurs travaillent depuis des fuseaux horaires européens avec un chevauchement significatif avec les heures de bureau de l'UE et des États-Unis. Nous parlons votre langue — littéralement et techniquement — et traitons votre code comme le nôtre.",
         "stats": {
             "timezone": "Couverture fuseaux horaires",
@@ -525,5 +526,80 @@
     "Metadata": {
         "title": "BLAiT Engineering | Elite IT Staff Augmentation",
         "description": "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions."
+    },
+    "Security": {
+        "hero": {
+            "label": "Sécurité et Conformité",
+            "title": "La Sécurité dès la Conception",
+            "subtitle": "Nous n'ajoutons pas la sécurité à la fin. Elle est intégrée dans chaque commit, chaque conteneur et chaque ressource cloud que nous touchons."
+        },
+        "compliance": {
+            "title": "Conformité & Normes",
+            "description": "Nos processus internes sont conçus pour s'aligner sur les cadres qui comptent pour vous. Bien que nous soyons un partenaire d'ingénierie et non un hébergeur, nous opérons avec la rigueur d'une entité réglementée.",
+            "items": {
+                "gdpr": {
+                    "title": "Conforme au RGPD",
+                    "text": "Tous nos ingénieurs et opérations sont basés dans l'UE/EEE ou des juridictions équivalentes. Les accords de protection des données (DPA) sont standard dans chaque engagement."
+                },
+                "iso": {
+                    "title": "Aligné sur ISO 27001",
+                    "text": "Nous suivons les meilleures pratiques de gestion de la sécurité de l'information, y compris les contrôles d'accès documentés, les plans de réponse aux incidents et la gestion des actifs."
+                },
+                "soc2": {
+                    "title": "Préparation SOC2",
+                    "text": "Pour les clients américains, nous nous alignons sur les critères de services de confiance SOC2. Nous mettons en œuvre la gestion des changements, l'accès logique et les contrôles de surveillance par défaut."
+                }
+            }
+        },
+        "infrastructure": {
+            "title": "Sécurité de l'Infrastructure",
+            "description": "Des fondations sécurisées pour des systèmes évolutifs.",
+            "items": {
+                "aws": {
+                    "title": "Sécurité Cloud",
+                    "text": "Nous utilisons les meilleures pratiques AWS/GCP: Cadre Well-Architected, rôles IAM à privilèges moindres et VPC séparés pour les environnements."
+                },
+                "encryption": {
+                    "title": "Chiffrement Partout",
+                    "text": "Les données sont chiffrées au repos (AES-256) et en transit (TLS 1.2+). Nous gérons les secrets à l'aide de coffres-forts de qualité entreprise (AWS Secrets Manager, HashiCorp Vault)."
+                },
+                "access": {
+                    "title": "Accès Zero Trust",
+                    "text": "Pas de VPN, pas de mots de passe partagés. Nous accédons à l'infrastructure via des identifiants éphémères et des proxys conscients de l'identité."
+                }
+            }
+        },
+        "sdlc": {
+            "title": "Cycle de Développement Sécurisé",
+            "description": "Du code qui se défend lui-même.",
+            "items": {
+                "review": {
+                    "title": "Revue par les Pairs Obligatoire",
+                    "text": "Aucun code n'atteint la production sans au moins une approbation d'un ingénieur senior. Nous vérifions les vulnérabilités OWASP Top 10 lors de la revue."
+                },
+                "scanning": {
+                    "title": "Analyse Automatisée",
+                    "text": "Les pipelines CI/CD incluent SAST (Analyse Statique), DAST (Analyse Dynamique) et une analyse spécialisée des dépendances pour détecter les vulnérabilités tôt."
+                },
+                "supply": {
+                    "title": "Sécurité de la Chaîne Logistique",
+                    "text": "Nous figeons les versions des dépendances, utilisons des commits signés et auditons régulièrement les bibliothèques tierces pour les CVE."
+                }
+            }
+        },
+        "operational": {
+            "title": "Sécurité Opérationnelle",
+            "items": [
+                "NDA stricts & Accords de protection de la PI",
+                "Vérifications complètes des antécédents",
+                "Appareils gérés (MDM)",
+                "Culture de Sensibilisation à la Sécurité"
+            ]
+        },
+        "cta": {
+            "title": "Avez-vous des besoins spécifiques en matière de conformité ?",
+            "text": "Nous serions ravis de discuter de nos protocoles de sécurité et de vouis aider avec vos exigences d'évaluation des fournisseurs.",
+            "button": "Contacter l'Équipe Sécurité"
+        }
     }
 }
