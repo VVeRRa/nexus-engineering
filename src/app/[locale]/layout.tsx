@@ -25,10 +25,10 @@ export const metadata: Metadata = {
     template: "%s | BLAiT Engineering",
   },
   description: "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions.",
-  keywords: ["IT outsourcing", "staff augmentation", "software development", "FinTech", "PropTech", "RegTech", "cloud solutions", "React", "Java", "Go", "AWS", "LangChain4j", "Claude API", "ChatGPT API", "Gemini API", "Ollama models", "RAG", "Embeddings", "custom software development", "web application development", "mobile app development", "dedicated development team", "enterprise software solutions", "digital transformation services", "tech talent acquisition", "QA automation services", "DevOps consulting", "MVP development", "nearshore IT outsourcing"],
   authors: [{ name: "BLAiT Engineering" }],
   creator: "BLAiT Engineering",
   publisher: "BLAiT Engineering",
+  applicationName: "BLAiT Engineering",
   alternates: {
     languages: {
       en: "/en",
@@ -69,6 +69,9 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  verification: {
+    google: "google-site-verification=YOUR_CODE_HERE", // User to provide
   },
 };
 

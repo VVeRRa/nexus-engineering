@@ -53,6 +53,50 @@ export function JsonLd() {
                     "@id": "https://nexus-engineering.com/#organization",
                 },
             },
+            {
+                "@type": "Service",
+                name: "IT Staff Augmentation",
+                provider: {
+                    "@id": "https://nexus-engineering.com/#organization"
+                },
+                areaServed: ["US", "EU"],
+                hasOfferCatalog: {
+                    "@type": "OfferCatalog",
+                    name: "Engineering Services",
+                    itemListElement: [
+                        {
+                            "@type": "Offer",
+                            itemOffered: {
+                                "@type": "Service",
+                                name: "Software Development"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            itemOffered: {
+                                "@type": "Service",
+                                name: "FinTech Solutions"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            itemOffered: {
+                                "@type": "Service",
+                                name: "Cloud Engineering"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                itemListElement: [{
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: "https://nexus-engineering.com"
+                }]
+            }
         ],
     };
 
