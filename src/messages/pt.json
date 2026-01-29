@@ -50,7 +50,7 @@
         "ctaPrimary": "Contate-nos",
         "ctaSecondary": "Ver serviços",
         "scroll": "Rolar",
-        "sideText": "Staff Augmentation de TI & Outsourcing",
+        "sideText": "Parceria Estratégica de Engenharia",
         "highlights": {
             "h1": {
                 "badge": "Foco na solução",
@@ -71,7 +71,7 @@
         "heroBullets": [
             {
                 "title": "Time pequeno, liderado por seniores",
-                "text": "Nos juntamos como uma tripulação compacta que destrava a entrega rápido."
+                "text": "Nos juntamos como uma tripulação compacta. Sem juniores, sem babá — apenas expertise autônoma que destrava a entrega."
             },
             {
                 "title": "Entrega focada em produção",
@@ -278,52 +278,62 @@
         "title": "Profundo conhecimento de domínio",
         "subtitle": "em indústrias de alto risco",
         "description": "Nós não apenas escrevemos código — entendemos o cenário regulatório, as expectativas dos usuários e os modelos de negócios que impulsionam o sucesso.",
+        "valueProps": {
+            "startups": {
+                "label": "Startups",
+                "text": "CTO fracionado e prevenção de dívida técnica"
+            },
+            "smes": {
+                "label": "PMEs / Empresas",
+                "text": "Modernização de sistemas legados e velocidade sem overhead"
+            }
+        },
         "fintech": {
             "name": "FinTech",
             "tagline": "Construindo o Futuro das Finanças",
-            "description": "Processamento de pagamentos, plataformas de trading e infraestrutura bancária. Sistemas compatíveis com PCI-DSS lidando com bilhões em transações.",
+            "description": "Reconhecemos que a confiança é a moeda das finanças modernas. Nossos sistemas integram verificação de identidade e scoring em tempo real para automatizar fluxos hipotecários e bancários complexos sem atrito.",
             "stats": "Transações Processadas",
             "highlights": [
-                "Processamento de pagamentos em tempo real",
-                "Sistemas de trading algorítmico",
-                "Conformidade regulatória (PCI-DSS, SOC2)",
-                "Detecção & prevenção de fraudes"
+                "BankID Integration",
+                "Mortgage & Fincheck",
+                "PSD2/Open Banking",
+                "Real-time Scoring"
             ]
         },
         "proptech": {
             "name": "PropTech",
             "tagline": "Transformando o Imobiliário",
-            "description": "Plataformas de gestão de propriedades e marketplaces imobiliários que transformam como interagimos com espaços.",
+            "description": "Sabemos que a fragmentação de dados impede a inovação. Nossas soluções unificam registros geoespaciais e padronizam listagens para impulsionar avaliações de próxima geração e busca visual.",
             "stats": "Propriedades Gerenciadas",
             "highlights": [
-                "Plataformas de listagem de propriedades",
+                "Algorithm-driven Valuations",
+                "Geospatial Data (Cadastre)",
                 "Padrões RESO & Open Immo",
-                "Sistemas de gestão de inquilinos",
-                "Análise imobiliária"
+                "AI Visual Search"
             ]
         },
         "regtech": {
             "name": "RegTech",
             "tagline": "Conformidade por Design",
-            "description": "Sistemas automatizados de monitoramento de conformidade, gestão de riscos e relatórios que transformam o fardo regulatório em vantagem competitiva.",
+            "description": "Acreditamos que a conformidade deve ser um acelerador. Incorporamos verificações automatizadas, assinatura digital e integração de crédito diretamente na jornada do usuário para um onboarding sem atrito.",
             "stats": "Eficiência Ganha",
             "highlights": [
-                "Verificação Automatizada de KYC/AML",
-                "Monitoramento de Risco em Tempo Real",
-                "Relatórios Regulatórios (MiFID II, GDPR)",
-                "Trilhas de Auditoria Inteligentes"
+                "KYC/AML via BankID",
+                "Fincheck",
+                "Digital Signing Trails",
+                "Integração CRIF"
             ]
         },
         "ecosystems": {
             "name": "Ecossistemas & Plataformas",
             "tagline": "Conectando Cadeias de Valor",
-            "description": "Plataformas digitais escaláveis que orquestram interações entre usuários, parceiros e serviços para criar poderosos efeitos de rede.",
+            "description": "Vemos o poder das plataformas conectadas. Nossa identidade unificada e pipelines de dados preenchem a lacuna entre setores díspares, permitindo motores de listagem de propriedades escaláveis.",
             "stats": "Interações de API",
             "highlights": [
-                "Marketplaces Multi-laterais",
-                "Arquiteturas API-first",
-                "Hubs de Integração de Parceiros",
-                "Experiência do Desenvolvedor"
+                "Cross-sector Integrations",
+                "Plataformas de Listagem de Imóveis",
+                "Unified Identity",
+                "Scalable Data Pipelines"
             ]
         },
         "specializations": {
@@ -357,18 +367,24 @@
         "viewAll": "Ver Todos os Projetos",
         "fintech": {
             "category": "FinTech",
-            "title": "Plataforma de Processamento de Pagamentos",
-            "description": "Arquitetamos e construímos um gateway de pagamento em tempo real robusto, projetado para alta confiabilidade e processamento rápido de transações. O sistema garante operações financeiras contínuas com foco em segurança e zero downtime."
+            "title": "Hipoteca Digital",
+            "challenge": "O processamento manual de hipotecas estava causando uma taxa de desistência de 40% e demorava mais de 5 dias para aprovar.",
+            "solution": "Arquitetamos um fluxo totalmente digital integrado com mais de 5 APIs bancárias e motores de scoring em tempo real.",
+            "outcome": "Redução do tempo de aprovação para 15 minutos e aumento da conversão em 200%."
         },
         "proptech": {
             "category": "PropTech",
             "title": "Suíte de Gestão de Propriedades",
-            "description": "Uma plataforma abrangente de ponta a ponta que agiliza as operações imobiliárias. Do onboarding de inquilinos a solicitações de manutenção, nossa solução moderniza todo o ciclo de vida da gestão imobiliária."
+            "challenge": "Dados fragmentados em sistemas legados tornavam as avaliações de imóveis lentas e imprecisas.",
+            "solution": "Construímos uma plataforma de dados unificada harmonizando feeds de Cadastro, RESO e MLS em uma única fonte da verdade.",
+            "outcome": "Permitiu avaliações automatizadas instantâneas com 95% de precisão em comparação com avaliações manuais."
         },
         "enterprise": {
             "category": "Empresas",
             "title": "Migração para Cloud",
-            "description": "Transformamos com sucesso um sistema monolítico legado em uma arquitetura de microsserviços moderna e escalável. Essa modernização melhorou significativamente a velocidade de implantação e a eficiência operacional."
+            "challenge": "A arquitetura monolítica legada impedia implantações frequentes e escalabilidade durante picos de carga.",
+            "solution": "Transformamos o sistema em microsserviços escaláveis em Kubernetes com automação total de CI/CD.",
+            "outcome": "Redução do tempo de implantação em 40% e redução dos custos de infraestrutura em 30% via escalabilidade otimizada."
         },
         "testimonials": {
             "text": "Os engenheiros da BLAiT se integraram perfeitamente à nossa equipe e entregaram além das expectativas. Eles não são fornecedores — são parceiros.",
@@ -408,7 +424,7 @@
             "sent": "Mensagem Enviada!",
             "sentDesc": "Entraremos em contato em até 24 horas.",
             "types": {
-                "augmentation": "Staff Augmentation",
+                "augmentation": "Parceria de Engenharia",
                 "team": "Equipe Dedicada",
                 "project": "Baseado em Projeto",
                 "consulting": "Consultoria Técnica"
@@ -419,7 +435,7 @@
         "label": "Sobre Nós",
         "title": "Parceiros de engenharia, não fornecedores",
         "description1": "Fundamos a BLAiT para redefinir o padrão da colaboração técnica externa. Afastamo-nos dos modelos de outsourcing tradicionais para eliminar incentivos desalinhados, lacunas de comunicação e a \"loteria de talentos\". Construímos algo melhor.",
-        "description2": "Nossos engenheiros trabalham de fusos horários europeus com sobreposição significativa com horários comerciais da UE e dos EUA. Falamos sua língua — literalmente e tecnicamente — e tratamos seu codebase como o nosso.",
+        "description2": "Nossos engenheiros trabalham de fusos horários europeus com sobreposição significativa com horários comerciais da UE e dos EUA. Operamos sob rigorosos quadros legais da UE (GDPR) e trazemos alinhamento cultural que vai além do idioma — não apenas pegamos tickets; nós desafiamos requisitos para construir produtos melhores.",
         "stats": {
             "timezone": "Cobertura de Fuso Horário",
             "fluency": "Fluência em Inglês"
@@ -427,7 +443,7 @@
         "values": {
             "excellence": {
                 "title": "Excelência em Engenharia",
-                "desc": "Contratamos engenheiros de elite e investimos continuamente em seu crescimento para garantir entrega de alto nível."
+                "desc": "Contratamos seniores de elite e engenheiros de nível médio autônomos. Sem juniores, sem trainees. Investimos em entrega de alto nível desde o primeiro dia."
             },
             "transparent": {
                 "title": "Parceria Transparente",
@@ -449,39 +465,39 @@
         "description": "Uma metodologia comprovada refinada em múltiplos engajamentos. Tempo rápido para valor sem cortar caminhos.",
         "steps": {
             "discovery": {
-                "title": "Descoberta",
-                "description": "Mergulhamos fundo nos seus requisitos, cenário técnico e dinâmica da equipe. Entender o contexto é tudo.",
+                "title": "Discovery & Arquitetura",
+                "description": "Analisamos seu cenário técnico e objetivos de negócios para definir os limites do sistema antes que uma única linha de código seja escrita.",
                 "details": [
-                    "Análise de requisitos",
-                    "Avaliação técnica",
-                    "Avaliação de fit da equipe"
+                    "Análise do Cenário Técnico",
+                    "Definição de Arquitetura",
+                    "Alinhamento de Objetivos de Negócios"
                 ]
             },
             "matching": {
-                "title": "Seleção",
-                "description": "Seleção precisa de talentos baseada em habilidades técnicas, experiência de domínio e fit cultural. Sem roleta de currículos.",
+                "title": "Alinhamento Arquitetural",
+                "description": "Não apenas 'preenchemos vagas'. Montamos uma equipe sênior com a experiência de domínio exata para executar a arquitetura definida.",
                 "details": [
-                    "Matching de habilidades",
-                    "Expertise de domínio",
-                    "Alinhamento cultural"
+                    "Mapeamento de Expertise de Domínio",
+                    "Verificação Liderada por Seniores",
+                    "Fit Cultural e Técnico"
                 ]
             },
             "integration": {
-                "title": "Integração",
-                "description": "Onboarding contínuo em seus fluxos de trabalho, ferramentas e cerimônias. Nossos engenheiros se tornam seus engenheiros.",
+                "title": "Qualidade de Código & Revisão por Pares",
+                "description": "Cada linha de código é revisada por pares. Impomos padrões de Clean Code e melhores práticas de CI/CD para garantir entrega sem dívida técnica.",
                 "details": [
-                    "Configuração de fluxo",
-                    "Integração de ferramentas",
-                    "Incorporação à equipe"
+                    "Revisões por Pares Obrigatórias",
+                    "Princípios de Clean Code",
+                    "Padrões Rigorosos de QA"
                 ]
             },
             "delivery": {
-                "title": "Entrega",
-                "description": "Entrega contínua de valor com comunicação transparente. Check-ins regulares garantem alinhamento e momentum.",
+                "title": "Produção & Evolução",
+                "description": "Entregamos em produção com confiança. Vendemos longevidade, não apenas horas — construindo sistemas projetados para durar.",
                 "details": [
-                    "Planejamento de sprint",
-                    "Acompanhamento de progresso",
-                    "Garantia de qualidade"
+                    "Entrega Pronta para Produção",
+                    "Configuração de Observabilidade",
+                    "Manutenibilidade a Longo Prazo"
                 ]
             }
         },
@@ -515,7 +531,7 @@
             },
             "pricing": {
                 "question": "Qual é o modelo de preços?",
-                "answer": "Oferecemos tanto staff augmentation (taxas por hora/mês) quanto preço fixo baseado em projeto, dependendo das suas necessidades. Contate-nos para um orçamento detalhado."
+                "answer": "Oferecemos modelos de Entrega com Custo Eficiente, incluindo staff augmentation e preços fixos por projeto. Focamos em ROI Otimizado entregando código de alta qualidade que reduz custos de manutenção a longo prazo."
             },
             "pm": {
                 "question": "Vocês fornecem Gerentes de Projeto?",
@@ -524,7 +540,7 @@
         }
     },
     "Metadata": {
-        "title": "BLAiT Engineering | Elite IT Staff Augmentation",
+        "title": "BLAiT Engineering | Parceria Estratégica de Engenharia",
         "description": "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions."
     },
     "Security": {

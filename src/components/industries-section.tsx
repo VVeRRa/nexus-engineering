@@ -14,6 +14,10 @@ export function IndustriesSection() {
       color: "var(--color-primary)",
       tagline: t("fintech.tagline"),
       description: t("fintech.description"),
+      valueProps: {
+        startups: t("fintech.valueProps.startups"),
+        smes: t("fintech.valueProps.smes"),
+      },
       highlights: [
         t("fintech.highlights.0"),
         t("fintech.highlights.1"),
@@ -27,6 +31,10 @@ export function IndustriesSection() {
       color: "var(--color-secondary)",
       tagline: t("proptech.tagline"),
       description: t("proptech.description"),
+      valueProps: {
+        startups: t("proptech.valueProps.startups"),
+        smes: t("proptech.valueProps.smes"),
+      },
       highlights: [
         t("proptech.highlights.0"),
         t("proptech.highlights.1"),
@@ -40,6 +48,10 @@ export function IndustriesSection() {
       color: "var(--color-primary)",
       tagline: t("regtech.tagline"),
       description: t("regtech.description"),
+      valueProps: {
+        startups: t("regtech.valueProps.startups"),
+        smes: t("regtech.valueProps.smes"),
+      },
       highlights: [
         t("regtech.highlights.0"),
         t("regtech.highlights.1"),
@@ -53,6 +65,10 @@ export function IndustriesSection() {
       color: "var(--color-secondary)",
       tagline: t("ecosystems.tagline"),
       description: t("ecosystems.description"),
+      valueProps: {
+        startups: t("ecosystems.valueProps.startups"),
+        smes: t("ecosystems.valueProps.smes"),
+      },
       highlights: [
         t("ecosystems.highlights.0"),
         t("ecosystems.highlights.1"),
@@ -91,6 +107,20 @@ export function IndustriesSection() {
         description={t("description")}
         className="mb-12"
       />
+
+      {/* Value Props Legend */}
+      <div className="max-w-4xl mx-auto mb-16 grid md:grid-cols-2 gap-6">
+        <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-2xl p-6 relative overflow-hidden group hover:border-[var(--color-primary)] transition-colors duration-300">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-[var(--color-primary)]/5 rounded-bl-[100px] -mr-4 -mt-4 transition-transform group-hover:scale-110" />
+          <span className="relative z-10 text-xs font-bold text-[var(--color-primary)] uppercase tracking-wider block mb-2">{t("valueProps.startups.label")}</span>
+          <p className="relative z-10 text-lg font-medium text-[var(--color-ink)]">{t("valueProps.startups.text")}</p>
+        </div>
+        <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-2xl p-6 relative overflow-hidden group hover:border-[var(--color-secondary)] transition-colors duration-300">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-[var(--color-secondary)]/5 rounded-bl-[100px] -mr-4 -mt-4 transition-transform group-hover:scale-110" />
+          <span className="relative z-10 text-xs font-bold text-[var(--color-secondary)] uppercase tracking-wider block mb-2">{t("valueProps.smes.label")}</span>
+          <p className="relative z-10 text-lg font-medium text-[var(--color-ink)]">{t("valueProps.smes.text")}</p>
+        </div>
+      </div>
 
       {/* Industries Grid */}
       <div className="grid md:grid-cols-2 gap-8 animate-on-scroll stagger-fly-children">

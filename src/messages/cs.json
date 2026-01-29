@@ -50,7 +50,7 @@
     "ctaPrimary": "Kontaktovat",
     "ctaSecondary": "Zobrazit služby",
     "scroll": "Rolovat",
-    "sideText": "IT Staff Augmentation & Outsourcing",
+    "sideText": "Strategické Inženýrské Partnerství",
     "highlights": {
       "h1": {
         "badge": "Řešení > šablona",
@@ -70,16 +70,16 @@
     },
     "heroBullets": [
       {
-        "title": "Malý tým, seniorně vedený",
-        "text": "Naskočíme jako kompaktní crew a rychle odblokujeme dodávku."
+        "title": "Senior-led, malý tým",
+        "text": "Připojujeme se jako kompaktní posádka. Žádní junioři, žádné vodění za ruku — jen samostatná expertíza, která odblokuje dodávku."
       },
       {
-        "title": "Production-first delivery",
-        "text": "CI/CD, observability a kvalita jsou součástí dodávky — ne až potom."
+        "title": "Production-first dodávka",
+        "text": "CI/CD, observabilita a kvalita jsou součástí dodávky — ne dodatečná myšlenka."
       },
       {
-        "title": "Znalost domény",
-        "text": "PropTech & FinTech & RegTech zkušenost pro integračně náročné, datově bohaté systémy."
+        "title": "Hloubka domény",
+        "text": "Zkušenosti s PropTech, FinTech & RegTech pro datově náročné systémy a integrace."
       }
     ],
     "heroChip": "Obvykle odpovíme do 24 h",
@@ -278,52 +278,62 @@
     "title": "Hluboká znalost domény",
     "subtitle": "v náročných odvětvích",
     "description": "Nepíšeme jen kód – chápeme regulační prostředí, očekávání uživatelů a obchodní modely, které vedou k úspěchu.",
+    "valueProps": {
+      "startups": {
+        "label": "Startupy",
+        "text": "Frakční CTO a prevence technického dluhu"
+      },
+      "smes": {
+        "label": "SME / Korporace",
+        "text": "Modernizace legacy systémů a rychlost bez režie"
+      }
+    },
     "fintech": {
       "name": "FinTech",
       "tagline": "Budování budoucnosti financí",
-      "description": "Zpracování plateb, obchodní platformy a bankovní infrastruktura. Systémy splňující PCI-DSS zpracovávající miliardy transakcí.",
+      "description": "Chápeme, že důvěra je měnou moderních financí. Naše systémy integrují ověření identity a real-time scoring pro automatizaci složitých hypotečních a bankovních procesů bez tření.",
       "stats": "Zpracovaných transakcí",
       "highlights": [
-        "Zpracování plateb v reálném čase",
-        "Algoritmické obchodní systémy",
-        "Regulační shoda (PCI-DSS, SOC2)",
-        "Detekce a prevence podvodů"
+        "BankID Integrace",
+        "Hypotéky & Fincheck",
+        "PSD2/Open Banking",
+        "Real-time Scoring"
       ]
     },
     "proptech": {
       "name": "PropTech",
       "tagline": "Transformace nemovitostí",
-      "description": "Platformy pro správu nemovitostí a realitní tržiště, která mění způsob, jakým interagujeme s prostory.",
+      "description": "Víme, že fragmentace dat brzdí inovace. Naše řešení sjednocují geoprostorové záznamy a standardizují inzerci pro podporu oceňování nové generace a vizuálního vyhledávání.",
       "stats": "Spravovaných nemovitostí",
       "highlights": [
-        "Platformy pro výpis nemovitostí",
-        "Standardy RESO a Open Immo",
-        "Systémy pro správu nájemníků",
-        "Analytika nemovitostí"
+        "Algoritmické oceňování (Valuo)",
+        "Geoprostorová data (Katastr)",
+        "RESO & Open Immo standardy",
+        "AI vizuální vyhledávání"
       ]
     },
     "regtech": {
       "name": "RegTech",
       "tagline": "Shoda s předpisy v DNA",
-      "description": "Automatizované systémy pro sledování shody, řízení rizik a reportování, které mění regulační zátěž v konkurenční výhodu.",
+      "description": "Věříme, že compliance by měla být akcelerátorem. Zabudováváme automatizované kontroly, digitální podpisy a úvěrové integrace přímo do uživatelské cesty pro hladký onboarding.",
       "stats": "Zvýšení efektivity",
       "highlights": [
-        "Automatizovaná kontrola KYC/AML",
-        "Monitorování rizik v reálném čase",
-        "Regulační reporting (MiFID II, GDPR)",
-        "Chytré auditní záznamy"
+        "KYC/AML přes BankID",
+        "Fincheck",
+        "Digitální podpisové stopy",
+        "Integrace CRIF"
       ]
     },
     "ecosystems": {
       "name": "Ekosystémy a platformy",
       "tagline": "Propojování hodnotových řetězců",
-      "description": "Škálovatelné digitální platformy, které orchestrují interakce mezi uživateli, partnery a službami pro vytvoření silných síťových efektů.",
+      "description": "Vidíme sílu propojených platforem. Naše jednotná identita a datové pipeliny propojují nesourodé sektory a umožňují škálovatelné realitní portály.",
       "stats": "API interakce",
       "highlights": [
-        "Vícestranná tržiště",
-        "API-first architektury",
-        "Integrační huby pro partnery",
-        "Vývojářská zkušenost (DX)"
+        "Mezioborové integrace",
+        "Platformy pro výpis nemovitostí",
+        "Jednotná identita",
+        "Škálovatelné datové pipeliny"
       ]
     },
     "specializations": {
@@ -402,7 +412,7 @@
       "sent": "Zpráva odeslána!",
       "sentDesc": "Ozveme se vám do 24 hodin.",
       "types": {
-        "augmentation": "Rozšíření týmu (Staff Augmentation)",
+        "augmentation": "Inženýrské Partnerství",
         "team": "Dedikovaný tým",
         "project": "Projektová báze",
         "consulting": "Technické konzultace"
@@ -413,7 +423,7 @@
     "label": "O nás",
     "title": "Inženýrští partneři, ne dodavatelé",
     "description1": "Založili jsme BLAiT, abychom redefinovali standardy externí technické spolupráce. Odklonili jsme se od tradičních outsourcingových modelů, abychom odstranili nesprávně nastavené pobídky, komunikační mezery a \"loterii talentů\". Vybudovali jsme něco lepšího.",
-    "description2": "Naši inženýři pracují z evropských časových pásem s výrazným překryvem s pracovní dobou v EU i USA. Mluvíme vaším jazykem – doslova i technicky – a chováme se k vašemu kódu jako k vlastnímu.",
+    "description2": "Naši inženýři pracují z evropských časových pásem s významným překryvem s pracovní dobou v EU i USA. Fungujeme pod přísnými právními rámcemi EU (GDPR) a přinášíme kulturní soulad, který přesahuje jazyk — nebereme jen tikety; zpochybňujeme požadavky, abychom stavěli lepší produkty.",
     "stats": {
       "timezone": "Pokrytí časových pásem",
       "fluency": "Plynulá angličtina"
@@ -421,7 +431,7 @@
     "values": {
       "excellence": {
         "title": "Inženýrská excelence",
-        "desc": "Najímáme elitní inženýry a neustále investujeme do jejich růstu pro zajištění špičkové kvality."
+        "desc": "Najímáme elitní seniory a samostatné mid-level inženýry. Žádní junioři, žádní stážisté. Investujeme do špičkové dodávky od prvního dne."
       },
       "transparent": {
         "title": "Transparentní partnerství",
@@ -443,39 +453,39 @@
     "description": "Ověřená metodika zdokonalená na mnoha projektech. Rychlá hodnota bez zkratek.",
     "steps": {
       "discovery": {
-        "title": "Analýza",
-        "description": "Ponoříme se do vašich požadavků, technického prostředí a dynamiky týmu. Pochopení kontextu je všechno.",
+        "title": "Discovery & Architektura",
+        "description": "Analyzujeme vaše technické prostředí a obchodní cíle, abychom definovali hranice systému ještě před napsáním jediného řádku kódu.",
         "details": [
-          "Analýza požadavků",
-          "Technické posouzení",
-          "Hodnocení týmového fitu"
+          "Analýza technického prostředí",
+          "Definice architektury",
+          "Sladění s obchodními cíli"
         ]
       },
       "matching": {
-        "title": "Výběr",
-        "description": "Přesný výběr talentů na základě technických dovedností, doménových zkušeností a kulturního souladu.",
+        "title": "Architektonický soulad",
+        "description": "Neobsazujeme jen 'místa'. Sestavujeme seniorní crew s přesnou doménovou zkušeností pro exekuci definované architektury.",
         "details": [
-          "Párování dovedností",
-          "Doménová expertíza",
-          "Kulturní soulad"
+          "Mapování doménové expertízy",
+          "Verifikace seniory",
+          "Kulturní a technický fit"
         ]
       },
       "integration": {
-        "title": "Integrace",
-        "description": "Bezproblémové zapojení do vašich pracovních postupů a nástrojů. Naši inženýři se stávají vašimi inženýry.",
+        "title": "Kvalita kódu & Code Review",
+        "description": "Každý řádek kódu prochází revizí. Vynucujeme standardy Clean Code a CI/CD best practices pro doručení bez dluhu.",
         "details": [
-          "Nastavení workflow",
-          "Integrace nástrojů",
-          "Začlenění do týmu"
+          "Povinné Code Reviews",
+          "Principy Clean Code",
+          "Důsledné QA standardy"
         ]
       },
       "delivery": {
-        "title": "Dodání",
-        "description": "Průběžné dodávání hodnoty s transparentní komunikací. Pravidelné check-iny zajišťují soulad.",
+        "title": "Produkce & Evoluce",
+        "description": "Nasazujeme do produkce s jistotou. Prodáváme dlouhověkost, ne jen hodiny — stavíme systémy navržené tak, aby vydržely.",
         "details": [
-          "Plánování sprintů",
-          "Sledování pokroku",
-          "Zajištění kvality"
+          "Dodávka připravená pro produkci",
+          "Nastavení observability",
+          "Dlouhodobá udržitelnost"
         ]
       }
     },
@@ -509,7 +519,7 @@
       },
       "pricing": {
         "question": "Jaký je váš cenový model?",
-        "answer": "Nabízíme jak staff augmentation (hodinové/měsíční sazby), tak projektové ceny s pevným rozpočtem, v závislosti na vašich potřebách. Kontaktujte nás pro detailní nabídku."
+        "answer": "Nabízíme modely nákladově efektivního doručení (Cost-Efficient Delivery), včetně staff augmentation a projektových cen. Zaměřujeme se na optimalizovanou návratnost investic (ROI) dodáváním vysoce kvalitního kódu, který snižuje dlouhodobé náklady na údržbu."
       },
       "pm": {
         "question": "Poskytujete projektové manažery?",
@@ -518,7 +528,7 @@
     }
   },
   "Metadata": {
-    "title": "BLAiT Engineering | Elite IT Staff Augmentation",
+    "title": "BLAiT Engineering | Strategické Inženýrské Partnerství",
     "description": "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions."
   },
   "Security": {

@@ -62,10 +62,51 @@ export function ProvenImpactSection() {
                                 {t(`${project.id}.title`)}
                             </h3>
 
-                            {/* Description */}
-                            <p className="text-[var(--color-ink)] mb-8 leading-relaxed flex-grow">
-                                {t(`${project.id}.description`)}
-                            </p>
+                            {/* Structured Content */}
+                            <div className="space-y-4 mb-8 flex-grow">
+                                <div>
+                                    <h4 className="font-bold text-xs uppercase opacity-70 mb-1" style={{ color: "var(--color-ink)" }}>
+                                        {tNav("work") === "Work" ? "Challenge" :
+                                            tNav("work") === "Práce" ? "Výzva" :
+                                                tNav("work") === "Arbeit" ? "Herausforderung" :
+                                                    tNav("work") === "Trabajo" ? "Desafío" :
+                                                        tNav("work") === "Travail" ? "Défi" :
+                                                            tNav("work") === "Trabalho" ? "Desafio" :
+                                                                "Виклик"}
+                                    </h4>
+                                    <p className="text-[var(--color-ink)] text-sm leading-relaxed">
+                                        {t(`${project.id}.challenge`)}
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-xs uppercase opacity-70 mb-1" style={{ color: "var(--color-ink)" }}>
+                                        {tNav("work") === "Work" ? "Solution" :
+                                            tNav("work") === "Práce" ? "Řešení" :
+                                                tNav("work") === "Arbeit" ? "Lösung" :
+                                                    tNav("work") === "Trabajo" ? "Solución" :
+                                                        tNav("work") === "Travail" ? "Solution" :
+                                                            tNav("work") === "Trabalho" ? "Solução" :
+                                                                "Рішення"}
+                                    </h4>
+                                    <p className="text-[var(--color-ink)] text-sm leading-relaxed">
+                                        {t(`${project.id}.solution`)}
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-xs uppercase opacity-70 mb-1" style={{ color: "var(--color-ink)" }}>
+                                        {tNav("work") === "Work" ? "Outcome" :
+                                            tNav("work") === "Práce" ? "Výsledek" :
+                                                tNav("work") === "Arbeit" ? "Ergebnis" :
+                                                    tNav("work") === "Trabajo" ? "Resultado" :
+                                                        tNav("work") === "Travail" ? "Résultat" :
+                                                            tNav("work") === "Trabalho" ? "Resultado" :
+                                                                "Результат"}
+                                    </h4>
+                                    <p className="text-[var(--color-ink)] text-sm leading-relaxed font-semibold">
+                                        {t(`${project.id}.outcome`)}
+                                    </p>
+                                </div>
+                            </div>
 
 
                         </div>
