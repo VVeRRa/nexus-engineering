@@ -1,88 +1,104 @@
-export function JsonLd() {
+import { getTranslations } from "next-intl/server";
+
+export async function JsonLd({ locale }: { locale: string }) {
+    const tBrand = await getTranslations({ locale, namespace: "Brand" });
+    const tMeta = await getTranslations({ locale, namespace: "Metadata" });
+    const tFaq = await getTranslations({ locale, namespace: "FAQ" });
+
+    const faqKeys = ['start', 'timezone', 'pricing', 'pm'];
+    const faqItems = faqKeys.map(key => ({
+        "@type": "Question",
+        "name": tFaq(`items.${key}.question`),
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": tFaq(`items.${key}.answer`)
+        }
+    }));
+
     const jsonLd = {
         "@context": "https://schema.org",
         "@graph": [
             {
                 "@type": "Organization",
-                "@id": "https://nexus-engineering.com/#organization",
-                name: "BLAiT Engineering",
-                url: "https://nexus-engineering.com",
-                logo: {
+                "@id": `https://nexus-engineering.com/${locale}/#organization`,
+                "name": "BLAiT Engineering",
+                "url": `https://nexus-engineering.com/${locale}`,
+                "logo": {
                     "@type": "ImageObject",
-                    url: "https://nexus-engineering.com/icon.png",
-                    width: 512,
-                    height: 512,
+                    "url": "https://nexus-engineering.com/icon.png",
+                    "width": 512,
+                    "height": 512,
                 },
-                sameAs: [
+                "sameAs": [
                     "https://twitter.com/blaitengineering",
                     "https://www.linkedin.com/company/blait-engineering",
                 ],
-                contactPoint: {
+                "contactPoint": {
                     "@type": "ContactPoint",
-                    telephone: "+1-555-0123-4567",
-                    contactType: "sales",
-                    areaServed: ["US", "EU"],
-                    availableLanguage: ["English", "German", "French", "Spanish"],
+                    "telephone": "+1-555-0123-4567",
+                    "contactType": "sales",
+                    "areaServed": ["US", "EU"],
+                    "availableLanguage": ["English", "German", "French", "Spanish", "Czech", "Ukrainian"],
                 },
             },
             {
                 "@type": "WebSite",
-                "@id": "https://nexus-engineering.com/#website",
-                url: "https://nexus-engineering.com",
-                name: "BLAiT Engineering",
-                description: "Elite IT Staff Augmentation & Software Development",
-                publisher: {
-                    "@id": "https://nexus-engineering.com/#organization",
-                },
-                potentialAction: {
-                    "@type": "SearchAction",
-                    target: "https://nexus-engineering.com/search?q={search_term_string}",
-                    "query-input": "required name=search_term_string",
+                "@id": `https://nexus-engineering.com/${locale}/#website`,
+                "url": `https://nexus-engineering.com/${locale}`,
+                "name": "BLAiT Engineering",
+                "description": tBrand("description"),
+                "publisher": {
+                    "@id": `https://nexus-engineering.com/${locale}/#organization`,
                 },
             },
             {
                 "@type": "WebPage",
-                "@id": "https://nexus-engineering.com/#webpage",
-                url: "https://nexus-engineering.com",
-                inLanguage: "en",
-                name: "Home | BLAiT Engineering",
-                isPartOf: {
-                    "@id": "https://nexus-engineering.com/#website",
+                "@id": `https://nexus-engineering.com/${locale}/#webpage`,
+                "url": `https://nexus-engineering.com/${locale}`,
+                "inLanguage": locale,
+                "name": tMeta("title"),
+                "description": tMeta("description"),
+                "isPartOf": {
+                    "@id": `https://nexus-engineering.com/${locale}/#website`,
                 },
-                about: {
-                    "@id": "https://nexus-engineering.com/#organization",
+                "about": {
+                    "@id": `https://nexus-engineering.com/${locale}/#organization`,
                 },
             },
             {
+                "@type": "FAQPage",
+                "mainEntity": faqItems
+            },
+            {
                 "@type": "Service",
-                name: "IT Staff Augmentation",
-                provider: {
-                    "@id": "https://nexus-engineering.com/#organization"
+                "name": "IT Staff Augmentation",
+                "provider": {
+                    "@id": `https://nexus-engineering.com/${locale}/#organization`
                 },
-                areaServed: ["US", "EU"],
-                hasOfferCatalog: {
+                "areaServed": ["US", "EU"],
+                "hasOfferCatalog": {
                     "@type": "OfferCatalog",
-                    name: "Engineering Services",
-                    itemListElement: [
+                    "name": "Engineering Services",
+                    "itemListElement": [
                         {
                             "@type": "Offer",
-                            itemOffered: {
+                            "itemOffered": {
                                 "@type": "Service",
-                                name: "Software Development"
+                                "name": "Software Development"
                             }
                         },
                         {
                             "@type": "Offer",
-                            itemOffered: {
+                            "itemOffered": {
                                 "@type": "Service",
-                                name: "FinTech Solutions"
+                                "name": "FinTech Solutions"
                             }
                         },
                         {
                             "@type": "Offer",
-                            itemOffered: {
+                            "itemOffered": {
                                 "@type": "Service",
-                                name: "Cloud Engineering"
+                                "name": "Cloud Engineering"
                             }
                         }
                     ]
@@ -90,11 +106,11 @@ export function JsonLd() {
             },
             {
                 "@type": "BreadcrumbList",
-                itemListElement: [{
+                "itemListElement": [{
                     "@type": "ListItem",
-                    position: 1,
-                    name: "Home",
-                    item: "https://nexus-engineering.com"
+                    "position": 1,
+                    "name": "Home",
+                    "item": `https://nexus-engineering.com/${locale}`
                 }]
             }
         ],

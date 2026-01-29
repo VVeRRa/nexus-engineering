@@ -52,7 +52,7 @@ export function HomeContent() {
                     <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl">
                         <Image
                             src="/services-hero.png"
-                            alt="Services Overview"
+                            alt="Elite IT Staff Augmentation and Product Engineering Services for FinTech, PropTech, and RegTech"
                             fill
                             className="object-cover"
                             priority

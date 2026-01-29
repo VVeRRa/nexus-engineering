@@ -4,18 +4,22 @@ const locales = ["en", "de", "fr", "es", "ua", "pt", "cs"];
 const baseUrl = "https://nexus-engineering.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const routes = locales.flatMap((locale) => {
+    return locales.flatMap((locale) => {
+        const languages = locales.reduce((acc, l) => ({
+            ...acc,
+            [l]: `${baseUrl}/${l}`
+        }), {});
+
         return [
             {
                 url: `${baseUrl}/${locale}`,
                 lastModified: new Date(),
                 changeFrequency: "weekly" as const,
                 priority: 1,
+                alternates: {
+                    languages: languages,
+                },
             },
-            // Add other routes here if necessary, e.g. /about, /services etc. if they have their own pages
-            // For a single page app structure where sections are on the home page, this is sufficient.
         ];
     });
-
-    return routes;
 }

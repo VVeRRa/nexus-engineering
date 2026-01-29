@@ -19,6 +19,9 @@ export async function generateMetadata(props: {
       locale: locale,
       url: `https://nexus-engineering.com/${locale}`,
     },
+    alternates: {
+      canonical: `https://nexus-engineering.com/${locale}`,
+    },
     twitter: {
       card: "summary_large_image",
       title: t("title"),

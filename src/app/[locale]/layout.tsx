@@ -44,7 +44,9 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "BLAiT Engineering",
     title: "BLAiT Engineering | Product engineering partner",
-    description: "Transform your technical capacity with precision-matched engineering talent.",
+    description: "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions.",
+    locale: "en_US",
+    alternateLocale: ["de_DE", "fr_FR", "es_ES", "uk_UA", "pt_PT", "cs_CZ"],
     images: [
       {
         url: "/og-image.png",
@@ -95,7 +97,7 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <JsonLd />
+            <JsonLd locale={locale} />
             {children}
           </ThemeProvider>
         </NextIntlClientProvider>
