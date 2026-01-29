@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://nexus-engineering.com"),
   title: {
-    default: "BLAiT Engineering | Elite IT Staff Augmentation",
+    default: "BLAiT Engineering | Product engineering partner",
     template: "%s | BLAiT Engineering",
   },
   description: "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions.",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "BLAiT Engineering",
-    title: "BLAiT Engineering | Elite IT Staff Augmentation",
+    title: "BLAiT Engineering | Product engineering partner",
     description: "Transform your technical capacity with precision-matched engineering talent.",
     images: [
       {
