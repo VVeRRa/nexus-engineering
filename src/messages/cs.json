@@ -367,18 +367,30 @@
     "viewAll": "Zobrazit všechny projekty",
     "fintech": {
       "category": "FinTech",
-      "title": "Platforma pro zpracování plateb",
-      "description": "Navrhli a vybudovali jsme robustní platební bránu v reálném čase, zaměřenou na vysokou spolehlivost a rychlé zpracování transakcí. Systém zajišťuje plynulé finanční operace s důrazem na bezpečnost a nulové výpadky."
+      "title": "Digitální hypotéka",
+      "challenge": "Manuální zpracování hypoték způsobovalo 40% míru rozpracovanosti a trvalo více než 5 dní.",
+      "solution": "Navržení plně digitálního toku integrovaného s 5+ bankovními API a skóringem v reálném čase.",
+      "outcome": "Zkrácení doby schválení na 15 minut a zvýšení konverze o 200 %."
     },
     "proptech": {
       "category": "PropTech",
       "title": "Sada pro správu nemovitostí",
-      "description": "Komplexní platforma, která zefektivňuje provoz nemovitostí. Od onboardingu nájemníků po řešení údržby – naše řešení modernizuje celý životní cyklus správy realit."
+      "challenge": "Fragmentovaná data v legacy systémech činila oceňování nemovitostí pomalým a nepřesným.",
+      "solution": "Vybudování sjednocené datové platformy harmonizující feedy katastru, RESO a MLS.",
+      "outcome": "Umožnilo okamžité automatizované oceňování s 95% přesností."
     },
     "enterprise": {
       "category": "Enterprise",
       "title": "Migrace do cloudu",
-      "description": "Úspěšná transformace zastaralého monolitického systému na moderní, škálovatelnou architekturu mikroslužeb. Tato modernizace výrazně zvýšila rychlost nasazování a provozní efektivitu."
+      "challenge": "Monolitická legacy architektura bránila častému nasazování a škálování v době špičky.",
+      "solution": "Transformace systému na škálovatelné mikroslužby na Kubernetes s plnou automatizací CI/CD.",
+      "outcome": "Snížení doby nasazení o 40 % a nákladů na infrastrukturu o 30 %."
+    },
+    "testimonials": {
+      "text": "Inženýři z BLAiT se plynule integrovali do našeho týmu a doručili výsledky nad očekávání. Nejsou jen dodavateli – jsou partnery.",
+      "author": "Sarah Chen",
+      "role": "CTO, FinTech Startup",
+      "cta": "Začněte svůj úspěšný příběh"
     }
   },
   "Contact": {
@@ -529,7 +541,7 @@
   },
   "Metadata": {
     "title": "BLAiT Engineering | Strategické Inženýrské Partnerství",
-    "description": "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions."
+    "description": "Transformujte svou technickou kapacitu se špičkovými inženýry . Outsourcing IT na podnikové úrovni pro FinTech, PropTech, RegTech a cloudová řešení."
   },
   "Security": {
     "hero": {

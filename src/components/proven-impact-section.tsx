@@ -67,7 +67,7 @@ export function ProvenImpactSection() {
                                 <div>
                                     <h4 className="font-bold text-xs uppercase opacity-70 mb-1" style={{ color: "var(--color-ink)" }}>
                                         {tNav("work") === "Work" ? "Challenge" :
-                                            tNav("work") === "Práce" ? "Výzva" :
+                                            (tNav("work") === "Práce" || tNav("work") === "Reference") ? "Výzva" :
                                                 tNav("work") === "Arbeit" ? "Herausforderung" :
                                                     tNav("work") === "Trabajo" ? "Desafío" :
                                                         tNav("work") === "Travail" ? "Défi" :
@@ -81,7 +81,7 @@ export function ProvenImpactSection() {
                                 <div>
                                     <h4 className="font-bold text-xs uppercase opacity-70 mb-1" style={{ color: "var(--color-ink)" }}>
                                         {tNav("work") === "Work" ? "Solution" :
-                                            tNav("work") === "Práce" ? "Řešení" :
+                                            (tNav("work") === "Práce" || tNav("work") === "Reference") ? "Řešení" :
                                                 tNav("work") === "Arbeit" ? "Lösung" :
                                                     tNav("work") === "Trabajo" ? "Solución" :
                                                         tNav("work") === "Travail" ? "Solution" :
@@ -95,7 +95,7 @@ export function ProvenImpactSection() {
                                 <div>
                                     <h4 className="font-bold text-xs uppercase opacity-70 mb-1" style={{ color: "var(--color-ink)" }}>
                                         {tNav("work") === "Work" ? "Outcome" :
-                                            tNav("work") === "Práce" ? "Výsledek" :
+                                            (tNav("work") === "Práce" || tNav("work") === "Reference") ? "Výsledek" :
                                                 tNav("work") === "Arbeit" ? "Ergebnis" :
                                                     tNav("work") === "Trabajo" ? "Resultado" :
                                                         tNav("work") === "Travail" ? "Résultat" :

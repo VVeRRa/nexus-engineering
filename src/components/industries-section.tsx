@@ -14,16 +14,7 @@ export function IndustriesSection() {
       color: "var(--color-primary)",
       tagline: t("fintech.tagline"),
       description: t("fintech.description"),
-      valueProps: {
-        startups: t("fintech.valueProps.startups"),
-        smes: t("fintech.valueProps.smes"),
-      },
-      highlights: [
-        t("fintech.highlights.0"),
-        t("fintech.highlights.1"),
-        t("fintech.highlights.2"),
-        t("fintech.highlights.3"),
-      ],
+      highlights: (t.raw("fintech.highlights") as string[]) || [],
       stats: { value: "", label: t("fintech.stats") },
     },
     {
@@ -31,16 +22,7 @@ export function IndustriesSection() {
       color: "var(--color-secondary)",
       tagline: t("proptech.tagline"),
       description: t("proptech.description"),
-      valueProps: {
-        startups: t("proptech.valueProps.startups"),
-        smes: t("proptech.valueProps.smes"),
-      },
-      highlights: [
-        t("proptech.highlights.0"),
-        t("proptech.highlights.1"),
-        t("proptech.highlights.2"),
-        t("proptech.highlights.3"),
-      ],
+      highlights: (t.raw("proptech.highlights") as string[]) || [],
       stats: { value: "", label: t("proptech.stats") },
     },
     {
@@ -48,16 +30,7 @@ export function IndustriesSection() {
       color: "var(--color-primary)",
       tagline: t("regtech.tagline"),
       description: t("regtech.description"),
-      valueProps: {
-        startups: t("regtech.valueProps.startups"),
-        smes: t("regtech.valueProps.smes"),
-      },
-      highlights: [
-        t("regtech.highlights.0"),
-        t("regtech.highlights.1"),
-        t("regtech.highlights.2"),
-        t("regtech.highlights.3"),
-      ],
+      highlights: (t.raw("regtech.highlights") as string[]) || [],
       stats: { value: "", label: t("regtech.stats") },
     },
     {
@@ -65,16 +38,7 @@ export function IndustriesSection() {
       color: "var(--color-secondary)",
       tagline: t("ecosystems.tagline"),
       description: t("ecosystems.description"),
-      valueProps: {
-        startups: t("ecosystems.valueProps.startups"),
-        smes: t("ecosystems.valueProps.smes"),
-      },
-      highlights: [
-        t("ecosystems.highlights.0"),
-        t("ecosystems.highlights.1"),
-        t("ecosystems.highlights.2"),
-        t("ecosystems.highlights.3"),
-      ],
+      highlights: (t.raw("ecosystems.highlights") as string[]) || [],
       stats: { value: "", label: t("ecosystems.stats") },
     },
   ];
@@ -174,32 +138,32 @@ export function IndustriesSection() {
             </p>
 
             {/* Highlights */}
-            <ul className="grid sm:grid-cols-2 gap-3">
-              {industry.highlights.map((highlight, hIndex) => (
-                <li
-                  key={hIndex}
-                  className="flex items-center gap-3 text-[var(--color-ink)]"
-                >
-                  <span
-                    className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
-                    style={{ background: `color-mix(in srgb, ${industry.color}, transparent 85%)` }}
+            {industry.highlights && industry.highlights.length > 0 && (
+              <ul className="grid sm:grid-cols-2 gap-3">
+                {industry.highlights.map((highlight: string, hIndex: number) => (
+                  <li
+                    key={hIndex}
+                    className="flex items-center gap-3 text-[var(--color-ink)]"
                   >
-                    <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                      <path
-                        d="M2 6L5 9L10 3"
-                        stroke={industry.color}
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                  <span className="text-sm font-medium">{highlight}</span>
-                </li>
-              ))}
-            </ul>
-
-
+                    <span
+                      className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
+                      style={{ background: `color-mix(in srgb, ${industry.color}, transparent 85%)` }}
+                    >
+                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path
+                          d="M2 6L5 9L10 3"
+                          stroke={industry.color}
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    <span className="text-sm font-medium">{highlight}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         ))}
       </div>
