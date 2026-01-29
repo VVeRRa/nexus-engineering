@@ -17,13 +17,14 @@
     "process": "Process",
     "work": "Work",
     "about": "About",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "specializations": "Specializations"
   },
   "Common": {
     "step": "Step"
   },
   "Footer": {
-    "brandDesc": "Strategic engineering partnership for companies that refuse to compromise on engineering quality.",
+    "brandDesc": "Strategic product engineering partner for companies that refuse to compromise on engineering quality.",
     "services": "Services",
     "company": "Company",
     "industries": "Industries",
@@ -54,7 +55,7 @@
     "highlights": {
       "h1": {
         "badge": "Solution-first",
-        "title": "High-Velocity Engineering for High-Stakes Industries",
+        "title": "Senior-Led Software Development & Product Engineering",
         "text": "We propose the smallest team shape that unblocks progress — and scale only when it pays off."
       },
       "h2": {
@@ -113,6 +114,19 @@
       "euTeam": "EU-based team",
       "startFast": "Rapid Onboarding",
       "chat": "Chat with us"
+    },
+    "technicalCluster": {
+      "title": "Technical Specializations",
+      "headline": "Precision Engineering Specializations",
+      "text": "Deep expertise in modern software engineering paradigms.",
+      "items": [
+        "Legacy Monolith to Microservices Refactoring",
+        "High-Throughput Event-Driven Architectures",
+        "Cloud-Native Infrastructure & Kubernetes",
+        "FinTech Security & Compliance (PSD2, GDPR)",
+        "API-First Design & Integration Strategy",
+        "PropTech Ecosystems & Digital Identity"
+      ]
     }
   },
   "Services": {
@@ -120,24 +134,24 @@
     "lead": "From strategic leadership to hands-on implementation, we provide the technical expertise you need.",
     "list": {
       "leadership": {
-        "title": "IT Leadership",
-        "subtitle": "Strategic Direction",
-        "description": "Fractional CTOs and Team Leads who align technology strategy with business objectives. Architecture reviews, tech debt assessment, and roadmap planning.",
+        "title": "IT Leadership & CTO-as-a-Service",
+        "subtitle": "Strategic Technology Direction",
+        "description": "Fractional CTOs and Team Leads who align technology strategy with business objectives. We specialize in architecture modernization, technical debt reduction, and building high-performance engineering cultures.",
         "tags": [
           "CTO-as-a-Service",
-          "Tech Strategy",
-          "Architecture"
+          "Legacy Modernization",
+          "Architecture Audit"
         ]
       },
       "backend": {
-        "title": "Backend Development",
-        "subtitle": "Scalable Systems",
-        "description": "Robust, scalable APIs and microservices. High-performance systems handling transactions. Event-driven architectures and distributed systems.",
+        "title": "Backend Engineering",
+        "subtitle": "Event-Driven & Scalable Systems",
+        "description": "Robust, high-performance APIs and microservices. We specialize in event-driven Java (Quarkus/Spring) architectures, Go-based distributed systems, and real-time transaction processing.",
         "tags": [
-          "Java",
-          "Go",
-          "Node.js",
-          "PostgreSQL"
+          "Java/Go/Node.js",
+          "Event-Driven",
+          "Microservices",
+          "Cloud-Native"
         ]
       },
       "frontend": {
@@ -161,13 +175,14 @@
         ]
       },
       "devops": {
-        "title": "DevOps Engineering",
-        "subtitle": "Infrastructure Excellence",
-        "description": "CI/CD pipelines that ship with confidence. Infrastructure as code, container orchestration, and observability that keeps systems humming.",
+        "title": "Cloud & DevOps Engineering",
+        "subtitle": "Infrastructure as Code",
+        "description": "Modernizing platforms with CI/CD automation and Infrastructure as Code (Terraform). We build production-ready Kubernetes environments with comprehensive observability (Prometheus/Grafana).",
         "tags": [
-          "AWS",
+          "AWS/GCP/Azure",
           "Kubernetes",
-          "Terraform"
+          "Terraform (IaC)",
+          "DevSecOps"
         ]
       },
       "product-design": {
@@ -367,24 +382,24 @@
     "viewAll": "View All Projects",
     "fintech": {
       "category": "FinTech",
-      "title": "Digital Mortgage",
-      "challenge": "Manual mortgage processing was causing a 40% drop-off rate and taking 5+ days to approve.",
-      "solution": "Architected a fully digital flow integrated with 5+ bank APIs and real-time scoring engines.",
-      "outcome": "Reduced approval time to 15 minutes and increased conversion by 200%."
+      "title": "Digital Mortgage & Fincheck",
+      "challenge": "Traditional mortgage applications required multiple in-person visits and weeks of manual processing.",
+      "solution": "Integrated BankID for instant KYC and developed 'Fincheck' for automated financial health assessments and online applications.",
+      "outcome": "First-to-market digital mortgage flow in the region with instant eligibility feedback and reduced time-to-offer."
     },
     "proptech": {
       "category": "PropTech",
-      "title": "Property Management Suite",
-      "challenge": "Fragmented data across legacy systems made property valuations slow and inaccurate.",
-      "solution": "Built a unified data platform harmonizing Cadastre, RESO, and MLS feeds into a single source of truth.",
-      "outcome": "Enabled instant automated valuations with 95% accuracy compared to manual appraisals."
+      "title": "National Real Estate Ecosystem (MLS)",
+      "challenge": "The real estate market lacked a unified source of data, leading to fragmentation and lack of transparency for brokers and buyers.",
+      "solution": "Engineered the first comprehensive Multiple Listing Service (MLS) integrated with the national Land Registry (Katastr nemovitostí).",
+      "outcome": "Created a single source of truth for 10,000+ brokers, enabling seamless cooperation and transaction transparency."
     },
     "enterprise": {
       "category": "Enterprise",
-      "title": "Cloud Migration",
-      "challenge": "Legacy monolithic architecture was preventing frequent deployments and scaling during peak loads.",
-      "solution": "Transformed the system into scalable microservices on Kubernetes with full CI/CD automation.",
-      "outcome": "Reduced deployment time by 40% and cut infrastructure costs by 30% via optimized scaling."
+      "title": "AI-Powered Property Search",
+      "challenge": "Users struggled to find properties based on visual preference or location-specific data amidst thousands of listings.",
+      "solution": "Implemented AI-driven visual search for property styles and Augmented Reality (AR) for on-site property discovery.",
+      "outcome": "Increased user engagement by 3x through intuitive, 'point-and-see' property exploration and personalized search."
     },
     "testimonials": {
       "text": "BLAiT engineers integrated seamlessly with our team and delivered beyond expectations. They're not vendors—they're partners.",
@@ -424,7 +439,7 @@
       "sent": "Message Sent!",
       "sentDesc": "We'll get back to you within 24 hours.",
       "types": {
-        "augmentation": "Engineering Partnership",
+        "augmentation": "Product Engineering Partner",
         "team": "Dedicated Team",
         "project": "Project-Based",
         "consulting": "Technical Consulting"
@@ -505,7 +520,7 @@
       "title": "Engagement Models",
       "subtitle": "Flexible arrangements to fit your needs",
       "augmentation": {
-        "title": "Staff Augmentation",
+        "title": "Product Engineering Partner",
         "desc": "Individual engineers embedded in your team, working your hours, using your tools."
       },
       "team": {
@@ -531,17 +546,21 @@
       },
       "pricing": {
         "question": "What is your pricing model?",
-        "answer": "We offer Cost-Efficient Delivery models including staff augmentation and project-based fixed pricing. We focus on Optimized ROI by delivering high-quality code that reduces long-term maintenance costs."
+        "answer": "We offer Cost-Efficient Delivery models including product engineering partnerships and project-based fixed pricing. We focus on Optimized ROI by delivering high-quality code that reduces long-term maintenance costs."
       },
       "pm": {
-        "question": "Do you provide Project Managers?",
-        "answer": "Yes, if needed. However, our senior engineers are self-organizing and capable of working directly with your product owners."
+        "question": "How do you handle legacy code modernization?",
+        "answer": "We take a pragmatic approach to legacy debt. Our team can either incrementally refactor your existing monolith into microservices or build new high-performance features that integrate seamlessly with your current stack."
+      },
+      "security": {
+        "question": "Is your engineering compliant with FinTech standards?",
+        "answer": "Yes. We incorporate secure SDLC, OWASP best practices, and automated security scanning from day one. Our team is experienced in building systems for regulated environments like GDPR, PSD2, and ISO 27001."
       }
     }
   },
   "Metadata": {
-    "title": "BLAiT Engineering | Strategic Engineering Partnership",
-    "description": "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions."
+    "title": "BLAiT Engineering | Product Engineering & IT Staffing Partner",
+    "description": "Expert Software Development and IT Staffing. Precision-matched engineering talent for FinTech, PropTech, and RegTech. Enterprise-grade IT outsourcing and strategic engineering partnerships."
   },
   "Security": {
     "hero": {

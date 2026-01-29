@@ -23,6 +23,7 @@ export function Header() {
   const navLinks = [
     { href: isHomePage ? "#services" : `/${locale}/#services`, label: t('services') },
     { href: isHomePage ? "#industries" : `/${locale}/#industries`, label: t('expertise') },
+    { href: isHomePage ? "#specializations" : `/${locale}/#specializations`, label: t('specializations') },
     { href: isHomePage ? "#process" : `/${locale}/#process`, label: t('process') },
     { href: isHomePage ? "#work" : `/${locale}/#work`, label: t('work') },
     { href: isHomePage ? "#about" : `/${locale}/#about`, label: t('about') },
@@ -97,7 +98,7 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-4">
 
             <LanguageSwitcher />
-            <a
+            {/* <a
               href="tel:8005551234"
               className="flex items-center gap-2 px-6 py-2.5 bg-[var(--color-primary)] hover:opacity-90 text-white rounded-full text-sm font-bold transition-all duration-300 shadow-lg shadow-blue-500/20"
             >
@@ -106,7 +107,7 @@ export function Header() {
               </svg>
               <span>(800) 555-1234</span>
               <span className="w-2 h-2 rounded-full bg-white animate-pulse ml-1"></span>
-            </a>
+            </a> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -149,16 +150,15 @@ export function Header() {
               {link.label}
             </a>
           ))}
-          <div className="mt-8 pt-8 border-t border-slate-100 dark:border-slate-800">
-            <a
+          <div className="mt-8 pt-8 border-t border-[var(--color-border)] opacity-80">
+            {/* <a
               href="tel:8005551234"
               className="flex w-full justify-center items-center gap-2 px-6 py-4 bg-[var(--color-slate-900)] text-white rounded-full text-lg font-medium shadow-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <span>(800) 555-1234</span>
-            </a>
-            <div className="mt-8 flex justify-center gap-4">
-
+            </a> */}
+            <div className="flex justify-center gap-4">
               <LanguageSwitcher direction="up" />
             </div>
           </div>

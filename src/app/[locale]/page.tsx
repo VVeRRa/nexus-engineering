@@ -17,10 +17,10 @@ export async function generateMetadata(props: {
       description: t("description"),
       type: "website",
       locale: locale,
-      url: `https://nexus-engineering.com/${locale}`,
+      url: `https://blait.eu/${locale}`,
     },
     alternates: {
-      canonical: `https://nexus-engineering.com/${locale}`,
+      canonical: `https://blait.eu/${locale}`,
     },
     twitter: {
       card: "summary_large_image",

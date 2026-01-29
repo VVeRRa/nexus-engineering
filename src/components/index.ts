@@ -10,3 +10,4 @@ export { FAQSection } from "./faq-section";
 export { ProvenImpactSection } from "./proven-impact-section";
 export { ContactSection } from "./contact-section";
 export { Footer } from "./footer";
+export { TechnicalSpecializations } from "./technical-specializations";

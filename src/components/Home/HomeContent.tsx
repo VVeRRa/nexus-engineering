@@ -14,6 +14,7 @@ import {
     AboutSection,
     ContactSection,
     Footer,
+    TechnicalSpecializations,
 } from "@/components";
 
 export function HomeContent() {
@@ -52,7 +53,7 @@ export function HomeContent() {
                     <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl">
                         <Image
                             src="/services-hero.png"
-                            alt="Elite IT Staff Augmentation and Product Engineering Services for FinTech, PropTech, and RegTech"
+                            alt="BLAiT Engineering - Senior-led product engineering partner for FinTech, PropTech, and RegTech"
                             fill
                             className="object-cover"
                             priority
@@ -61,6 +62,7 @@ export function HomeContent() {
                     </div>
                 </div>
                 <ServicesSection />
+                <TechnicalSpecializations />
                 <IndustriesSection />
                 <ProcessSection />
                 <ProvenImpactSection />

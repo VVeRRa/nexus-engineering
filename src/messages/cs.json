@@ -17,13 +17,14 @@
     "process": "Proces",
     "work": "Reference",
     "about": "O nás",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "specializations": "Specializace"
   },
   "Common": {
     "step": "Krok"
   },
   "Footer": {
-    "brandDesc": "Elitní IT staff augmentation pro společnosti, které odmítají kompromisy v inženýrské kvalitě.",
+    "brandDesc": "Strategický partner pro produktové inženýrství pro společnosti, které odmítají kompromisy v inženýrské kvalitě.",
     "services": "Služby",
     "company": "Společnost",
     "industries": "Odvětví",
@@ -54,7 +55,7 @@
     "highlights": {
       "h1": {
         "badge": "Řešení > šablona",
-        "title": "High-Velocity Engineering pro náročná odvětví",
+        "title": "Seniorní vývoj softwaru a partnerství v produktovém inženýrství",
         "text": "Navrhneme nejmenší tvar týmu, který odemkne progres — a škálujeme až když to dává smysl."
       },
       "h2": {
@@ -113,6 +114,19 @@
       "euTeam": "Tým v EU",
       "startFast": "Rychlý onboarding",
       "chat": "Napište nám"
+    },
+    "technicalCluster": {
+      "title": "Technické specializace",
+      "headline": "Specializace v precizním inženýrství",
+      "text": "Hluboké odborné znalosti v moderních paradigmatech softwarového inženýrství.",
+      "items": [
+        "Refaktoring monolitů na mikroslužby",
+        "Event-driven architektury s vysokou propustností",
+        "Cloud-native infrastruktura a Kubernetes",
+        "FinTech bezpečnost a compliance (PSD2, GDPR)",
+        "API-First design a integrační strategie",
+        "PropTech ekosystémy a digitální identita"
+      ]
     }
   },
   "Services": {
@@ -367,24 +381,24 @@
     "viewAll": "Zobrazit všechny projekty",
     "fintech": {
       "category": "FinTech",
-      "title": "Digitální hypotéka",
-      "challenge": "Manuální zpracování hypoték způsobovalo 40% míru rozpracovanosti a trvalo více než 5 dní.",
-      "solution": "Navržení plně digitálního toku integrovaného s 5+ bankovními API a skóringem v reálném čase.",
-      "outcome": "Zkrácení doby schválení na 15 minut a zvýšení konverze o 200 %."
+      "title": "Digitální hypotéka a Fincheck",
+      "challenge": "Tradiční žádosti o hypotéku vyžadovaly několik osobních návštěv a týdny ručního zpracování.",
+      "solution": "Integrovali jsme BankID pro okamžité KYC a vyvinuli 'Fincheck' pro automatizované posouzení finančního zdraví a online žádosti.",
+      "outcome": "První plně digitální hypotéka na trhu s okamžitou zpětnou vazbou o způsobilosti a kratší dobou do nabídky."
     },
     "proptech": {
       "category": "PropTech",
-      "title": "Sada pro správu nemovitostí",
-      "challenge": "Fragmentovaná data v legacy systémech činila oceňování nemovitostí pomalým a nepřesným.",
-      "solution": "Vybudování sjednocené datové platformy harmonizující feedy katastru, RESO a MLS.",
-      "outcome": "Umožnilo okamžité automatizované oceňování s 95% přesností."
+      "title": "Národní realitní ekosystém (MLS)",
+      "challenge": "Realitnímu trhu chyběl sjednocený zdroj dat, což vedlo k fragmentaci a netransparentnosti pro makléře i kupující.",
+      "solution": "Vyvinuli jsme první komplexní Multiple Listing Service (MLS) integrovaný na národní Katastr nemovitostí.",
+      "outcome": "Vytvořili jsme jediný zdroj pravdy pro 10 000+ makléřů, umožňující bezproblémovou spolupráci a transparentnost trhu."
     },
     "enterprise": {
       "category": "Enterprise",
-      "title": "Migrace do cloudu",
-      "challenge": "Monolitická legacy architektura bránila častému nasazování a škálování v době špičky.",
-      "solution": "Transformace systému na škálovatelné mikroslužby na Kubernetes s plnou automatizací CI/CD.",
-      "outcome": "Snížení doby nasazení o 40 % a nákladů na infrastrukturu o 30 %."
+      "title": "Vyhledávání nemovitostí pomocí AI",
+      "challenge": "Uživatelé v tisících inzerátů obtížně hledali nemovitosti podle vizuálních preferencí nebo lokálních dat.",
+      "solution": "Implementovali jsme vizuální vyhledávání pomocí AI a rozšířenou realitu (AR) pro objevování nemovitostí přímo v terénu.",
+      "outcome": "Zvýšení zapojení uživatelů o 300 % díky intuitivnímu vyhledávání stylem 'namiř a uvidíš' a personalizovanému hledání."
     },
     "testimonials": {
       "text": "Inženýři z BLAiT se plynule integrovali do našeho týmu a doručili výsledky nad očekávání. Nejsou jen dodavateli – jsou partnery.",
@@ -424,7 +438,7 @@
       "sent": "Zpráva odeslána!",
       "sentDesc": "Ozveme se vám do 24 hodin.",
       "types": {
-        "augmentation": "Inženýrské Partnerství",
+        "augmentation": "Partner pro produktové inženýrství",
         "team": "Dedikovaný tým",
         "project": "Projektová báze",
         "consulting": "Technické konzultace"
@@ -505,7 +519,7 @@
       "title": "Modely spolupráce",
       "subtitle": "Flexibilní uspořádání podle vašich potřeb",
       "augmentation": {
-        "title": "Rozšíření týmu",
+        "title": "Partner pro produktové inženýrství",
         "desc": "Jednotliví inženýři začlenění do vašeho týmu, pracující ve vašich hodinách, s vašimi nástroji."
       },
       "team": {
@@ -531,17 +545,21 @@
       },
       "pricing": {
         "question": "Jaký je váš cenový model?",
-        "answer": "Nabízíme modely nákladově efektivního doručení (Cost-Efficient Delivery), včetně staff augmentation a projektových cen. Zaměřujeme se na optimalizovanou návratnost investic (ROI) dodáváním vysoce kvalitního kódu, který snižuje dlouhodobé náklady na údržbu."
+        "answer": "Nabízíme modely nákladově efektivního doručení (Cost-Efficient Delivery), včetně partnerství pro produktové inženýrství a projektových cen. Zaměřujeme se na optimalizovanou návratnost investic (ROI) dodáváním vysoce kvalitního kódu, který snižuje dlouhodobé náklady na údržbu."
       },
       "pm": {
         "question": "Poskytujete projektové manažery?",
         "answer": "Ano, pokud je to potřeba. Nicméně naši seniorní inženýři jsou samoorganizovaní a schopní pracovat přímo s vašimi Product Ownery."
+      },
+      "security": {
+        "question": "Jsou vaše inženýrské procesy v souladu se standardy FinTech?",
+        "answer": "Ano. Od prvního dne integrujeme bezpečné SDLC, best practices OWASP a automatizované skenování bezpečnosti. Náš tým má zkušenosti s budováním systémů pro regulovaná prostředí jako GDPR, PSD2 a ISO 27001."
       }
     }
   },
   "Metadata": {
-    "title": "BLAiT Engineering | Strategické Inženýrské Partnerství",
-    "description": "Transformujte svou technickou kapacitu se špičkovými inženýry . Outsourcing IT na podnikové úrovni pro FinTech, PropTech, RegTech a cloudová řešení."
+    "title": "BLAiT Engineering | Vývoj softwaru a produktové inženýrství",
+    "description": "Expert na vývoj softwaru a partnerství v produktovém inženýrství. Inženýrské talenty pro FinTech, PropTech a RegTech. Outsourcing IT na podnikové úrovni."
   },
   "Security": {
     "hero": {

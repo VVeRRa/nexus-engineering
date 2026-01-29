@@ -5,7 +5,7 @@ export async function JsonLd({ locale }: { locale: string }) {
     const tMeta = await getTranslations({ locale, namespace: "Metadata" });
     const tFaq = await getTranslations({ locale, namespace: "FAQ" });
 
-    const faqKeys = ['start', 'timezone', 'pricing', 'pm'];
+    const faqKeys = ['start', 'timezone', 'pricing', 'pm', 'security'];
     const faqItems = faqKeys.map(key => ({
         "@type": "Question",
         "name": tFaq(`items.${key}.question`),
@@ -15,20 +15,25 @@ export async function JsonLd({ locale }: { locale: string }) {
         }
     }));
 
+    const baseUrl = "https://blait.eu";
+    const canonicalUrl = `${baseUrl}/${locale}`;
+
     const jsonLd = {
         "@context": "https://schema.org",
         "@graph": [
             {
                 "@type": "Organization",
-                "@id": `https://nexus-engineering.com/${locale}/#organization`,
+                "@id": `${baseUrl}/#organization`,
                 "name": "BLAiT Engineering",
-                "url": `https://nexus-engineering.com/${locale}`,
+                "url": baseUrl,
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://nexus-engineering.com/icon.png",
+                    "url": `${baseUrl}/icon.png`,
                     "width": 512,
                     "height": 512,
                 },
+                "description": "Senior-led product engineering partner specializing in high-stakes industries like FinTech, PropTech, and RegTech. Delivering scalable backend systems and exceptional user experiences.",
+                "areaServed": ["EU", "US", "Worldwide"],
                 "sameAs": [
                     "https://twitter.com/blaitengineering",
                     "https://www.linkedin.com/company/blait-engineering",
@@ -43,27 +48,40 @@ export async function JsonLd({ locale }: { locale: string }) {
             },
             {
                 "@type": "WebSite",
-                "@id": `https://nexus-engineering.com/${locale}/#website`,
-                "url": `https://nexus-engineering.com/${locale}`,
+                "@id": `${baseUrl}/#website`,
+                "url": baseUrl,
                 "name": "BLAiT Engineering",
                 "description": tBrand("description"),
                 "publisher": {
-                    "@id": `https://nexus-engineering.com/${locale}/#organization`,
+                    "@id": `${baseUrl}/#organization`,
                 },
             },
             {
                 "@type": "WebPage",
-                "@id": `https://nexus-engineering.com/${locale}/#webpage`,
-                "url": `https://nexus-engineering.com/${locale}`,
-                "inLanguage": locale,
+                "@id": `${canonicalUrl}/#webpage`,
+                "url": canonicalUrl,
+                "inLanguage": locale === 'ua' ? 'uk' : locale,
                 "name": tMeta("title"),
                 "description": tMeta("description"),
                 "isPartOf": {
-                    "@id": `https://nexus-engineering.com/${locale}/#website`,
+                    "@id": `${baseUrl}/#website`,
                 },
                 "about": {
-                    "@id": `https://nexus-engineering.com/${locale}/#organization`,
+                    "@id": `${baseUrl}/#organization`,
                 },
+                "breadcrumb": {
+                    "@id": `${canonicalUrl}/#breadcrumb`
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": `${canonicalUrl}/#breadcrumb`,
+                "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": canonicalUrl
+                }]
             },
             {
                 "@type": "FAQPage",
@@ -71,49 +89,31 @@ export async function JsonLd({ locale }: { locale: string }) {
             },
             {
                 "@type": "Service",
-                "name": "IT Staff Augmentation",
+                "name": "Software Development & Product Engineering",
+                "description": "Expert software development and product engineering for FinTech, PropTech, and RegTech. Specializing in high-performance microservices, event-driven Java architecture, and cloud-native infrastructure.",
                 "provider": {
-                    "@id": `https://nexus-engineering.com/${locale}/#organization`
+                    "@id": `${baseUrl}/#organization`
                 },
-                "areaServed": ["US", "EU"],
-                "hasOfferCatalog": {
-                    "@type": "OfferCatalog",
-                    "name": "Engineering Services",
-                    "itemListElement": [
-                        {
-                            "@type": "Offer",
-                            "itemOffered": {
-                                "@type": "Service",
-                                "name": "Software Development"
-                            }
-                        },
-                        {
-                            "@type": "Offer",
-                            "itemOffered": {
-                                "@type": "Service",
-                                "name": "FinTech Solutions"
-                            }
-                        },
-                        {
-                            "@type": "Offer",
-                            "itemOffered": {
-                                "@type": "Service",
-                                "name": "Cloud Engineering"
-                            }
-                        }
-                    ]
+                "areaServed": "Global",
+                "serviceType": "Software Engineering"
+            },
+            {
+                "@type": "Service",
+                "name": "FinTech Engineering Solutions",
+                "description": "Custom FinTech software development including payment integrations, mortgage automation, and PSD2 compliance.",
+                "provider": {
+                    "@id": `${baseUrl}/#organization`
                 }
             },
             {
-                "@type": "BreadcrumbList",
-                "itemListElement": [{
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Home",
-                    "item": `https://nexus-engineering.com/${locale}`
-                }]
+                "@type": "Service",
+                "name": "PropTech & RegTech Development",
+                "description": "Building scalable PropTech platforms and RegTech compliance solutions with automated KYC/AML and geospatial data integration.",
+                "provider": {
+                    "@id": `${baseUrl}/#organization`
+                }
             }
-        ],
+        ]
     };
 
     return (

@@ -17,13 +17,14 @@
         "process": "Processo",
         "work": "Trabalho",
         "about": "Sobre",
-        "faq": "FAQ"
+        "faq": "FAQ",
+        "specializations": "Especializações"
     },
     "Common": {
         "step": "Passo"
     },
     "Footer": {
-        "brandDesc": "Staff augmentation de TI de elite para empresas que não abrem mão da qualidade de engenharia.",
+        "brandDesc": "Parceiro estratégico de engenharia de produto para empresas que não abrem mão da qualidade de engenharia.",
         "services": "Serviços",
         "company": "Empresa",
         "industries": "Indústrias",
@@ -54,7 +55,7 @@
         "highlights": {
             "h1": {
                 "badge": "Foco na solução",
-                "title": "Engenharia de Alta Velocidade para Indústrias Críticas",
+                "title": "Desenvolvimento de Software e Parceria de Engenharia de Produto de Elite",
                 "text": "Propomos o menor time capaz de destravar o progresso — e escalamos apenas quando vale a pena."
             },
             "h2": {
@@ -113,6 +114,19 @@
             "euTeam": "Equipa na UE",
             "startFast": "Onboarding Rápido",
             "chat": "Fale connosco"
+        },
+        "technicalCluster": {
+            "title": "Especializações Técnicas",
+            "headline": "Especializações em Engenharia de Precisão",
+            "text": "Especialização profunda em paradigmas modernos de engenharia de software.",
+            "items": [
+                "Refatoração de monólitos legados para microsserviços",
+                "Arquiteturas orientadas a eventos de alto desempenho",
+                "Infraestrutura nativa da nuvem e Kubernetes",
+                "Segurança e Conformidade FinTech (PSD2, GDPR)",
+                "Design primeiro na API e estratégia de integração",
+                "Ecossistemas PropTech e Identidade Digital"
+            ]
         }
     },
     "Services": {
@@ -367,24 +381,24 @@
         "viewAll": "Ver Todos os Projetos",
         "fintech": {
             "category": "FinTech",
-            "title": "Hipoteca Digital",
-            "challenge": "O processamento manual de hipotecas estava causando uma taxa de desistência de 40% e demorava mais de 5 dias para aprovar.",
-            "solution": "Arquitetamos um fluxo totalmente digital integrado com mais de 5 APIs bancárias e motores de scoring em tempo real.",
-            "outcome": "Redução do tempo de aprovação para 15 minutos e aumento da conversão em 200%."
+            "title": "Hipoteca Digital e Fincheck",
+            "challenge": "Os pedidos de hipoteca tradicionais exigiam várias visitas presenciais e semanas de processamento manual.",
+            "solution": "Integração de BankID para identidade instantânea e desenvolvimento de 'Fincheck' para avaliações financeiras automáticas e candidaturas online.",
+            "outcome": "Primeiro fluxo de hipoteca digital na região com feedback instantâneo sobre elegibilidade e tempo de oferta reduzido."
         },
         "proptech": {
             "category": "PropTech",
-            "title": "Suíte de Gestão de Propriedades",
-            "challenge": "Dados fragmentados em sistemas legados tornavam as avaliações de imóveis lentas e imprecisas.",
-            "solution": "Construímos uma plataforma de dados unificada harmonizando feeds de Cadastro, RESO e MLS em uma única fonte da verdade.",
-            "outcome": "Permitiu avaliações automatizadas instantâneas com 95% de precisão em comparação com avaliações manuais."
+            "title": "Ecossistema Imobiliário Nacional (MLS)",
+            "challenge": "O mercado imobiliário carecia de uma fonte de dados unificada, levando à fragmentação e falta de transparência.",
+            "solution": "Engenharia do primeiro Multiple Listing Service (MLS) abrangente integrado com o Registo de Imóveis nacional (Katastr nemovitostí).",
+            "outcome": "Uma fonte única de verdade para mais de 10.000 corretores, permitindo cooperação fluida e transparência de mercado."
         },
         "enterprise": {
             "category": "Empresas",
-            "title": "Migração para Cloud",
-            "challenge": "A arquitetura monolítica legada impedia implantações frequentes e escalabilidade durante picos de carga.",
-            "solution": "Transformamos o sistema em microsserviços escaláveis em Kubernetes com automação total de CI/CD.",
-            "outcome": "Redução do tempo de implantação em 40% e redução dos custos de infraestrutura em 30% via escalabilidade otimizada."
+            "title": "Busca Imobiliária por IA",
+            "challenge": "Os utilizadores tinham dificuldade em encontrar propriedades baseadas em preferências visuais entre milhares de anúncios.",
+            "solution": "Implementação de busca visual orientada por IA e Realidade Aumentada (AR) para descoberta de imóveis no local.",
+            "outcome": "Aumento do envolvimento do utilizador em 3 vezes através de exploração intuitiva 'apontar e ver' e busca personalizada."
         },
         "testimonials": {
             "text": "Os engenheiros da BLAiT se integraram perfeitamente à nossa equipe e entregaram além das expectativas. Eles não são fornecedores — são parceiros.",
@@ -424,7 +438,7 @@
             "sent": "Mensagem Enviada!",
             "sentDesc": "Entraremos em contato em até 24 horas.",
             "types": {
-                "augmentation": "Parceria de Engenharia",
+                "augmentation": "Parceiro de Engenharia de Produto",
                 "team": "Equipe Dedicada",
                 "project": "Baseado em Projeto",
                 "consulting": "Consultoria Técnica"
@@ -505,7 +519,7 @@
             "title": "Modelos de Engajamento",
             "subtitle": "Arranjos flexíveis para atender suas necessidades",
             "augmentation": {
-                "title": "Staff Augmentation",
+                "title": "Parceiro de Engenharia de Produto",
                 "desc": "Engenheiros individuais incorporados à sua equipe, trabalhando seus horários, usando suas ferramentas."
             },
             "team": {
@@ -531,17 +545,21 @@
             },
             "pricing": {
                 "question": "Qual é o modelo de preços?",
-                "answer": "Oferecemos modelos de Entrega com Custo Eficiente, incluindo staff augmentation e preços fixos por projeto. Focamos em ROI Otimizado entregando código de alta qualidade que reduz custos de manutenção a longo prazo."
+                "answer": "Oferecemos modelos de Entrega com Custo Eficiente, incluindo parcerias de engenharia de produto e preços fixos por projeto. Focamos em ROI Otimizado entregando código de alta qualidade que reduz custos de manutenção a longo prazo."
             },
             "pm": {
                 "question": "Vocês fornecem Gerentes de Projeto?",
                 "answer": "Sim, se necessário. No entanto, nossos engenheiros seniores são auto-organizáveis e capazes de trabalhar diretamente com seus product owners."
+            },
+            "security": {
+                "question": "A vossa engenharia está em conformidade com os padrões FinTech?",
+                "answer": "Sim. Incorporamos SDLC seguro, melhores práticas OWASP e varredura de segurança automatizada desde o primeiro dia. A nossa equipa tem experiência na criação de sistemas para ambientes regulados como o RGPD, PSD2 e ISO 27001."
             }
         }
     },
     "Metadata": {
-        "title": "BLAiT Engineering | Parceria Estratégica de Engenharia",
-        "description": "Transform your technical capacity with precision-matched engineering talent. Enterprise-grade IT outsourcing for FinTech, PropTech, RegTech, and Cloud solutions."
+        "title": "BLAiT Engineering | Desenvolvimento de Software e Engenharia de Produto",
+        "description": "Especialista em Desenvolvimento de Software e Parceria de Engenharia de Produto. Talento de engenharia para FinTech, PropTech e RegTech. Outsourcing de TI de nível empresarial."
     },
     "Security": {
         "hero": {

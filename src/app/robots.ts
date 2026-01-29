@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: "/",
             disallow: ["/private/", "/api/"],
         },
-        sitemap: "https://nexus-engineering.com/sitemap.xml",
+        sitemap: "https://blait.eu/sitemap.xml",
     };
 }
