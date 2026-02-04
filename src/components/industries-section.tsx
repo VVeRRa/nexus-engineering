@@ -75,7 +75,7 @@ export function IndustriesSection() {
   };
 
   return (
-    <Section id="industries" className="bg-black">
+    <Section id="industries" className="bg-black overflow-hidden relative">
       <div className="container relative z-10">
         {/* Section Header */}
         <SectionHeader
@@ -99,7 +99,7 @@ export function IndustriesSection() {
             <motion.div
               key={index}
               variants={itemVars}
-              className="group relative bg-[#050505] p-10 md:p-14 transition-all duration-700 overflow-hidden hover:bg-[#0a0a0a]"
+              className="group relative bg-[#050505] p-6 md:p-14 transition-all duration-700 overflow-hidden hover:bg-[#0a0a0a]"
             >
               {/* Glow Aura */}
               <div

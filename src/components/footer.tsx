@@ -29,10 +29,10 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-black pt-32 pb-16 border-t border-white/5 transition-colors duration-300 relative z-50">
+    <footer className="bg-black pt-16 lg:pt-32 pb-16 border-t border-white/5 transition-colors duration-300 relative z-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Main Footer Content */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-20 pb-24">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20 pb-24">
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <a href="#" className="inline-block mb-10">

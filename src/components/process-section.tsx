@@ -105,7 +105,7 @@ export function ProcessSection() {
             <motion.div
               key={index}
               variants={itemVars}
-              className="group relative bg-[#050505] p-10 md:p-12 transition-all duration-500 hover:bg-[#0a0a0a]"
+              className="group relative bg-[#050505] p-6 md:p-12 transition-all duration-500 hover:bg-[#0a0a0a]"
             >
               <div className="absolute top-8 right-8 text-8xl font-black text-blue-500/20 pointer-events-none group-hover:text-blue-500/30 transition-all duration-700">
                 {step.number}
@@ -138,8 +138,8 @@ export function ProcessSection() {
         </motion.div>
 
         {/* Engagement Models */}
-        <div className="mt-40 pt-24 border-t border-white/5">
-          <div className="flex flex-col lg:flex-row gap-24 items-center">
+        <div className="mt-20 lg:mt-40 pt-24 border-t border-white/5">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -159,7 +159,7 @@ export function ProcessSection() {
                   { id: "team" },
                   { id: "project" }
                 ].map((model) => (
-                  <div key={model.id} className="p-8 bg-white/[0.01] border border-white/5 rounded-3xl hover:bg-white/[0.03] transition-colors group">
+                  <div key={model.id} className="p-6 md:p-8 bg-white/[0.01] border border-white/5 rounded-3xl hover:bg-white/[0.03] transition-colors group">
                     <h4 className="text-xl font-bold text-white mb-3 transition-colors uppercase tracking-[0.2em] text-[11px] font-bold">{t(`models.${model.id}.title`)}</h4>
                     <p className="text-white/30 text-base font-medium leading-relaxed">{t(`models.${model.id}.desc`)}</p>
                   </div>

@@ -67,7 +67,11 @@ function GalaxySwarm({ scrollYProgress }: { scrollYProgress: any }) {
     const ref = useRef<THREE.Points>(null!);
 
     const [sphere] = useState(() => {
-        const count = 4000;
+        let count = 4000;
+        if (typeof window !== 'undefined' && window.innerWidth < 768) {
+            count = 1500;
+        }
+
         const positions = new Float32Array(count * 3);
         const colors = new Float32Array(count * 3);
         const sizes = new Float32Array(count);

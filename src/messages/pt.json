@@ -1,92 +1,92 @@
 {
   "Brand": {
     "name": "Solving Crew",
-    "short": "From problem to production",
-    "promise": "From problem to production — with the right people.",
-    "playful": "We solve all your problems.",
-    "description": "Senior-led product engineering. Start with the roles you need and scale as projects grow."
+    "short": "Do Problema à Produção",
+    "promise": "Do Problema à Produção – com as pessoas certas.",
+    "playful": "Resolvemos todos os seus problemas.",
+    "description": "Engenharia de produto liderada por seniores. Comece com as funções que você precisa e escale conforme o projeto cresce."
   },
   "Nav": {
-    "home": "Home",
-    "services": "Services",
+    "home": "Início",
+    "services": "Serviços",
     "expertise": "Expertise",
-    "technology": "Technology",
-    "team": "Team",
-    "contact": "Contact",
-    "getInTouch": "Get in touch",
-    "process": "Process",
-    "work": "Work",
-    "about": "About",
+    "technology": "Tecnologia",
+    "team": "Equipe",
+    "contact": "Contato",
+    "getInTouch": "Fale Conosco",
+    "process": "Processo",
+    "work": "Trabalho",
+    "about": "Sobre",
     "faq": "FAQ",
-    "specializations": "Specializations"
+    "specializations": "Especializações"
   },
   "Common": {
-    "step": "Step"
+    "step": "Passo"
   },
   "Footer": {
-    "brandDesc": "Strategic product engineering partner for companies that refuse to compromise on engineering quality.",
-    "services": "Services",
-    "company": "Company",
-    "industries": "Industries",
-    "rights": "BLAiT Engineering. All rights reserved.",
+    "brandDesc": "Parceiro estratégico de engenharia de produto para empresas que se recusam a comprometer a qualidade da engenharia.",
+    "services": "Serviços",
+    "company": "Empresa",
+    "industries": "Indústrias",
+    "rights": "BLAiT Engineering. Todos os direitos reservados.",
     "links": {
-      "leadership": "IT Leadership",
-      "backend": "Backend Development",
-      "frontend": "Frontend Development",
-      "devops": "DevOps Engineering",
-      "about": "About Us",
-      "caseStudies": "Case Studies",
-      "process": "Process",
-      "contact": "Contact",
+      "leadership": "Liderança de TI",
+      "backend": "Desenvolvimento Backend",
+      "frontend": "Desenvolvimento Frontend",
+      "devops": "Engenharia DevOps",
+      "about": "Sobre Nós",
+      "caseStudies": "Estudos de Caso",
+      "process": "Processo",
+      "contact": "Contato",
       "fintech": "FinTech",
       "proptech": "PropTech",
       "regtech": "RegTech",
-      "enterprise": "Enterprise",
-      "security": "Security & Compliance"
+      "enterprise": "Empresarial",
+      "security": "Segurança & Compliance"
     }
   },
   "Home": {
-    "kicker": "Senior-led product engineering partner",
-    "subheadline": "Senior-led product teams for FinTech, PropTech, and RegTech. We provide the architectural depth of a CTO office with the delivery speed of an agile squad.",
-    "ctaPrimary": "Contact us",
-    "ctaSecondary": "See services",
-    "scroll": "Scroll",
-    "sideText": "Strategic Engineering Partnership",
+    "kicker": "Parceiro de Engenharia de Produto Liderado por Seniores",
+    "subheadline": "Equipes de produto lideradas por seniores para FinTech, PropTech e RegTech. Oferecemos a profundidade arquitetônica de um escritório de CTO com a velocidade de entrega de um squad ágil.",
+    "ctaPrimary": "Contate-nos",
+    "ctaSecondary": "Ver Serviços",
+    "scroll": "Rolar",
+    "sideText": "Parceria Estratégica de Engenharia",
     "highlights": {
       "h1": {
-        "badge": "Solution-first",
-        "titlePart1": "Senior-Led Software Development",
-        "titlePart2": "Product Engineering",
-        "text": "We propose the smallest team shape that unblocks progress — and scale only when it pays off."
+        "badge": "Solução Primeiro",
+        "titlePart1": "Desenvolvimento de Software Liderado por Seniores",
+        "titlePart2": "Engenharia de Produto",
+        "text": "Propomos o tamanho de equipe menor que desbloqueia o progresso – e escalamos apenas quando vale a pena."
       },
       "h2": {
-        "badge": "Production mindset",
-        "title": "Build + run, reliably",
-        "text": "IaC, observability, CI/CD and testing are part of delivery — not an afterthought."
+        "badge": "Mentalidade de Produção",
+        "title": "Construir + Operar, Confiavelmente",
+        "text": "IaC, observabilidade, CI/CD e testes são parte da entrega – não um pensamento posterior."
       },
       "h3": {
-        "badge": "Serious domains",
+        "badge": "Domínios Sérios",
         "title": "PropTech, FinTech, RegTech, B2B SaaS",
-        "text": "Integrations, data-heavy systems and regulated environments where reliability matters."
+        "text": "Integrações, sistemas ricos em dados e ambientes regulados onde a confiabilidade importa."
       }
     },
     "heroBullets": [
       {
-        "title": "Small team, senior-led",
-        "text": "We join as a compact crew. No juniors, no hand-holding—just autonomous expertise that unblocks delivery."
+        "title": "Equipe Pequena, Liderada por Seniores",
+        "text": "Chegamos como uma equipe compacta. Sem juniores, sem precisar ensinar o básico – apenas expertise autônoma que desbloqueia a entrega."
       },
       {
-        "title": "Production-first delivery",
-        "text": "CI/CD, observability and quality are part of delivery — not an afterthought."
+        "title": "Entrega Focada em Produção",
+        "text": "CI/CD, observabilidade e qualidade são parte da entrega – não apenas um pensamento posterior."
       },
       {
-        "title": "Domain depth",
-        "text": "PropTech, FinTech & RegTech experience for integration-heavy, data-rich systems."
+        "title": "Profundidade de Domínio",
+        "text": "Experiência em PropTech, FinTech e RegTech para sistemas pesados em integração e ricos em dados."
       }
     ],
-    "heroChip": "Typically reply within 24h",
-    "stackTitle": "Core tech stack",
-    "stackNote": "High-performance, event-driven architecture across the full stack.",
+    "heroChip": "Resposta tipicamente em 24h",
+    "stackTitle": "Tech Stack Principal",
+    "stackNote": "Arquitetura de alto desempenho orientada a eventos em todo o stack.",
     "stack": [
       "Java (Quarkus/Spring)",
       "Node.js",
@@ -106,66 +106,66 @@
       "Figma"
     ],
     "ctaBlock": {
-      "title": "Tell us what’s blocking you",
-      "text": "One role, a small pod, or a delivery lane — we’ll propose a shape that fits.",
-      "button": "Start the conversation"
+      "title": "Diga-nos o que está te bloqueando",
+      "text": "Uma função, um pequeno pod ou uma linha de entrega – proporemos uma forma que se encaixe.",
+      "button": "Iniciar conversa"
     },
     "trust": {
-      "consultation": "Free consultation",
-      "euTeam": "EU-based team",
-      "startFast": "Rapid Onboarding",
-      "chat": "Chat with us"
+      "consultation": "Consultoria Gratuita",
+      "euTeam": "Equipe baseada na UE",
+      "startFast": "Início Rápido",
+      "chat": "Converse conosco"
     },
     "technicalCluster": {
-      "title": "Technical Specializations",
-      "headline": "Precision Engineering Specializations",
-      "text": "Deep expertise in modern software engineering paradigms.",
+      "title": "Especializações Técnicas",
+      "headline": "Especializações de Engenharia de Precisão",
+      "text": "Expertise profunda em paradigmas modernos de engenharia de software.",
       "items": [
-        "Legacy Monolith to Microservices Refactoring",
-        "High-Throughput Event-Driven Architectures",
-        "Cloud-Native Infrastructure & Kubernetes",
-        "FinTech Security & Compliance (PSD2, GDPR)",
-        "API-First Design & Integration Strategy",
-        "PropTech Ecosystems & Digital Identity"
+        "Refatoração de Monolito Legacy para Microsserviços",
+        "Arquiteturas Orientadas a Eventos de Alto Rendimento",
+        "Infraestrutura Cloud-Native e Kubernetes",
+        "Segurança e Compliance FinTech (PSD2, GDPR)",
+        "Design API-First e Estratégia de Integração",
+        "Ecossistemas PropTech e Identidade Digital"
       ]
     },
     "heroChunks": {
-      "strategic": "Strategic Engineering",
-      "architecting": "Architecting Value",
-      "velocity": "Engineering Velocity",
-      "scale": "Built to Scale"
+      "strategic": "Engenharia Estratégica",
+      "architecting": "Arquitetando Valor",
+      "velocity": "Velocidade de Engenharia",
+      "scale": "Construído para Escalar"
     }
   },
   "Services": {
-    "title": "Services",
-    "leadTitle": "From strategic leadership to hands-on implementation",
-    "leadText": "We provide the technical expertise you need.",
+    "title": "Serviços",
+    "leadTitle": "Da liderança estratégica à implementação prática",
+    "leadText": "Fornecemos a expertise técnica que você precisa.",
     "list": {
       "leadership": {
-        "title": "IT Leadership & CTO-as-a-Service",
-        "subtitle": "Strategic Technology Direction",
-        "description": "Fractional CTOs and Team Leads who align technology strategy with business objectives. We specialize in architecture modernization, technical debt reduction, and building high-performance engineering cultures.",
+        "title": "Liderança de TI e CTO-as-a-Service",
+        "subtitle": "Direção Tecnológica Estratégica",
+        "description": "CTOs fracionados e líderes de equipe que alinham a estratégia de tecnologia com os objetivos de negócios. Somos especializados em modernização de arquitetura, redução de dívida técnica e construção de culturas de engenharia de alto desempenho.",
         "tags": [
           "CTO-as-a-Service",
-          "Legacy Modernization",
-          "Architecture Audit"
+          "Modernização Legacy",
+          "Auditoria de Arquitetura"
         ]
       },
       "backend": {
-        "title": "Backend Engineering",
-        "subtitle": "Event-Driven & Scalable Systems",
-        "description": "Robust, high-performance APIs and microservices. We specialize in event-driven Java (Quarkus/Spring) architectures, Go-based distributed systems, and real-time transaction processing.",
+        "title": "Engenharia Backend",
+        "subtitle": "Sistemas Escaláveis e Orientados a Eventos",
+        "description": "APIs e microsserviços robustos e de alto desempenho. Somos especializados em arquiteturas Java (Quarkus/Spring) orientadas a eventos, sistemas distribuídos baseados em Go e processamento de transações em tempo real.",
         "tags": [
           "Java/Go/Node.js",
-          "Event-Driven",
-          "Microservices",
+          "Orientado a Eventos",
+          "Microsserviços",
           "Cloud-Native"
         ]
       },
       "frontend": {
-        "title": "Frontend Development",
-        "subtitle": "Exceptional Interfaces",
-        "description": "Responsive interfaces with exceptional UX. Component libraries, design systems, and performant SPAs that users love and competitors envy.",
+        "title": "Desenvolvimento Frontend",
+        "subtitle": "Interfaces Excepcionais",
+        "description": "Interfaces responsivas com UX excepcional. Bibliotecas de componentes, sistemas de design e SPAs de alto desempenho que os usuários amam e os concorrentes invejam.",
         "tags": [
           "React",
           "TypeScript",
@@ -173,19 +173,19 @@
         ]
       },
       "qa": {
-        "title": "QA Engineering",
-        "subtitle": "Quality Assurance",
-        "description": "Comprehensive test strategies that catch bugs before users do. Manual and automated testing, performance testing, and security audits.",
+        "title": "Engenharia de QA",
+        "subtitle": "Garantia de Qualidade",
+        "description": "Estratégias de teste abrangentes que detectam bugs antes dos usuários. Testes manuais e automatizados, testes de desempenho e auditorias de segurança.",
         "tags": [
           "Selenium",
           "Cypress",
-          "Performance"
+          "Desempenho"
         ]
       },
       "devops": {
-        "title": "Cloud & DevOps Engineering",
-        "subtitle": "Infrastructure as Code",
-        "description": "Modernizing platforms with CI/CD automation and Infrastructure as Code (Terraform). We build production-ready Kubernetes environments with comprehensive observability (Prometheus/Grafana).",
+        "title": "Engenharia Cloud & DevOps",
+        "subtitle": "Infraestrutura como Código",
+        "description": "Modernização de plataformas com automação de CI/CD e Infraestrutura como Código (Terraform). Construímos ambientes Kubernetes prontos para produção com observabilidade total (Prometheus/Grafana).",
         "tags": [
           "AWS/GCP/Azure",
           "Kubernetes",
@@ -194,50 +194,50 @@
         ]
       },
       "product-design": {
-        "title": "Product Management & Design",
-        "subtitle": "Vision to Execution",
-        "description": "Product leaders who bridge the gap between vision and execution, coupled with user-centric design that solves real problems.",
+        "title": "Gestão de Produto e Design",
+        "subtitle": "Da Visão à Execução",
+        "description": "Líderes de produto que fecham a lacuna entre a visão e a execução, combinados com design centrado no usuário que resolve problemas reais.",
         "tags": [
-          "Strategy",
-          "Agile",
-          "UI/UX Design"
+          "Estratégia",
+          "Ágil",
+          "Design UI/UX"
         ]
       }
     },
     "cta": {
-      "question": "Need a custom solution?",
-      "button": "Let's Discuss Your Needs"
+      "question": "Precisa de uma solução personalizada?",
+      "button": "Vamos discutir suas necessidades"
     }
   },
   "Expertise": {
     "title": "Expertise",
-    "lead": "We work in complex domains where reliability, speed and clarity matter.",
-    "capabilitiesTitle": "Capabilities",
+    "lead": "Trabalhamos em domínios complexos onde confiabilidade, velocidade e clareza importam.",
+    "capabilitiesTitle": "Capacidades",
     "capabilities": [
-      "Product engineering (discovery to production)",
-      "Architecture & tech leadership",
-      "High-load backend & event-driven systems",
-      "Data-heavy integrations and APIs",
-      "Cloud & DevOps (Kubernetes, IaC, observability)",
-      "QA automation & quality engineering",
-      "Design systems & UX delivery",
-      "frontend-desing",
-      "3d-web-experience",
-      "ui-ux-pro-max",
-      "scroll-experience"
+      "Engenharia de produto (Discovery à Produção)",
+      "Arquitetura e Liderança Técnica",
+      "Backend de Alta Carga e Sistemas Orientados a Eventos",
+      "Integrações pesadas em dados e APIs",
+      "Cloud e DevOps (Kubernetes, IaC, Observabilidade)",
+      "Automação de QA e Engenharia de Qualidade",
+      "Sistemas de Design e Entrega de UX",
+      "Design Frontend",
+      "Experiência Web 3D",
+      "UI/UX Pro Max",
+      "Experiência de rolagem"
     ],
     "areas": {
       "proptech": {
         "title": "PropTech",
-        "text": "Listings, valuation, integrations, back-office workflows, reporting and customer portals."
+        "text": "Listagens, avaliação, integrações, fluxos de trabalho de back-office, relatórios e portais de clientes."
       },
       "fintech": {
         "title": "FinTech",
-        "text": "Payments, identity, compliance-sensitive flows and audit-friendly delivery."
+        "text": "Pagamentos, identidade, fluxos sensíveis a compliance e entrega amigável a auditorias."
       },
       "highload": {
-        "title": "High-load & platforms",
-        "text": "Event-driven architecture, performance, scalability, observability and operations."
+        "title": "Alta Carga e Plataformas",
+        "text": "Arquitetura orientada a eventos, desempenho, escalabilidade, observabilidade e operações."
       }
     },
     "areasBadge": {
@@ -248,300 +248,300 @@
         "badge": "FinTech"
       },
       "highload": {
-        "badge": "High-load"
+        "badge": "Alta Carga"
       }
     }
   },
   "Technology": {
-    "title": "Technology",
-    "lead": "Modern stack, production-first engineering, and pragmatic choices based on constraints.",
-    "sectionsTitle": "Technology areas",
-    "principlesTitle": "Principles",
+    "title": "Tecnologia",
+    "lead": "Stack moderno, engenharia focada em produção e escolhas pragmáticas baseadas em restrições.",
+    "sectionsTitle": "Áreas Tecnológicas",
+    "principlesTitle": "Princípios",
     "principles": [
-      "Ship small increments",
-      "Make it observable",
-      "Automate quality",
-      "Design for ownership",
-      "Keep operational load low",
-      "Measure impact"
+      "Entregar pequenos incrementos",
+      "Tornar observável",
+      "Automatizar a qualidade",
+      "Projetar para propriedade",
+      "Manter a carga operacional baixa",
+      "Medir impacto"
     ],
     "sections": {
       "backend": {
         "title": "Backend",
-        "text": "Java (Quarkus/Spring), Node.js, Go • microservices • REST/GraphQL • event-driven messaging."
+        "text": "Java (Quarkus/Spring), Node.js, Go • microsserviços • REST/GraphQL • mensagens orientadas a eventos."
       },
       "frontend": {
         "title": "Frontend",
-        "text": "React, Next.js, TypeScript • design systems • accessible UI • performance."
+        "text": "React, Next.js, TypeScript • sistemas de design • UI acessível • desempenho."
       },
       "mobile": {
         "title": "Mobile",
-        "text": "Pragmatic mobile delivery where needed (hybrid or native depending on constraints)."
+        "text": "Entrega móvel pragmática onde necessário (híbrido ou nativo dependendo das restrições)."
       },
       "platform": {
-        "title": "Platform & Cloud",
-        "text": "Production-ready infrastructure, CI/CD and observability."
+        "title": "Plataforma e Cloud",
+        "text": "Infraestrutura pronta para produção, CI/CD e observabilidade."
       },
       "data": {
-        "title": "Data & search",
-        "text": "Postgres, ElasticSearch • data pipelines • analytics-friendly models."
+        "title": "Dados e Busca",
+        "text": "Postgres, ElasticSearch • pipelines de dados • modelos amigáveis para análise."
       },
       "quality": {
-        "title": "Quality engineering",
-        "text": "Automation-first mindset • Playwright/Cypress • contract testing where it pays off."
+        "title": "Engenharia de Qualidade",
+        "text": "Mentalidade de automação • Playwright/Cypress • teste de contrato onde vale a pena."
       },
       "design": {
         "title": "Design",
-        "text": "Figma-driven delivery • UX prototypes • design systems and component libraries."
+        "text": "Entrega impulsionada pelo Figma • prototipos de UX • sistemas de design e bibliotecas de componentes."
       }
     }
   },
   "Team": {
-    "title": "Team",
-    "comingSoon": "Profiles & leadership details will be published in February 2026."
+    "title": "Equipe",
+    "comingSoon": "Perfis e detalhes da liderança serão publicados em fevereiro de 2026."
   },
   "Industries": {
-    "label": "Industry Expertise",
-    "title": "Deep domain knowledge",
-    "subtitle": "in high-stakes industries",
-    "description": "We don't just write code—we understand the regulatory landscape, user expectations, and business models that drive success.",
+    "label": "Expertise da Indústria",
+    "title": "Conhecimento Profundo do Domínio",
+    "subtitle": "em indústrias exigentes",
+    "description": "Não escrevemos apenas código – entendemos o cenário regulatório, as expectativas dos usuários e os modelos de negócios que impulsionam o sucesso.",
     "valueProps": {
       "startups": {
         "label": "Startups",
-        "text": "Fractional CTO & Avoiding Tech Debt"
+        "text": "CTO Fracionado e Prevenção de Dívida Técnica"
       },
       "smes": {
-        "label": "SMEs / Enterprise",
-        "text": "Modernizing Legacy Systems & Velocity without Overhead"
+        "label": "PME / Enterprise",
+        "text": "Modernização de Sistemas Legacy e Velocidade sem Sobrecarga"
       }
     },
     "fintech": {
       "name": "FinTech",
-      "tagline": "Building the Future of Finance",
-      "description": "We recognize that trust is the currency of modern finance. Our systems integrate identity verification and real-time scoring to automate complex mortgage and banking flows without friction.",
-      "stats": "Transactions Processed",
+      "tagline": "Construindo o Futuro das Finanças",
+      "description": "Reconhecemos que a confiança é a moeda das finanças modernas. Nossos sistemas integram verificação de identidade e pontuação em tempo real para automatizar fluxos hipotecários e bancários complexos sem atrito.",
+      "stats": "Transações Processadas",
       "highlights": [
-        "BankID Integration",
-        "Mortgage & Fincheck",
+        "Integração BankID",
+        "Hipoteca e Fincheck",
         "PSD2/Open Banking",
-        "Real-time Scoring"
+        "Pontuação em Tempo Real"
       ]
     },
     "proptech": {
       "name": "PropTech",
-      "tagline": "Transforming Real Estate",
-      "description": "We know that data fragmentation holds back innovation. Our solutions unify geospatial records and standardize listings to power next-gen valuations and visual search.",
-      "stats": "Properties Managed",
+      "tagline": "Transformando Imóveis",
+      "description": "Sabemos que a fragmentação de dados freia a inovação. Nossas soluções unificam registros geoespaciais e padronizam listagens para potencializar avaliações de próxima geração e busca visual.",
+      "stats": "Propriedades Gerenciadas",
       "highlights": [
-        "Algorithm-driven Valuations",
-        "Geospatial Data (Cadastre)",
-        "RESO & Open Immo Standards",
-        "AI Visual Search"
+        "Avaliações impulsionadas por algoritmos",
+        "Dados Geoespaciais (Cadastro)",
+        "Padrões RESO e Open Immo",
+        "Busca Visual IA"
       ]
     },
     "regtech": {
       "name": "RegTech",
-      "tagline": "Compliance by Design",
-      "description": "We believe compliance should be an accelerator. We embed automated checks, digital signing, and credit integration directly into the user journey for frictionless onboarding.",
-      "stats": "Efficiency Gained",
+      "tagline": "Compliance por Design",
+      "description": "Acreditamos que o compliance deve ser um acelerador. Integramos verificações automatizadas, assinatura digital e integração de crédito diretamente na jornada do usuário para um onboarding sem atrito.",
+      "stats": "Aumento de Eficiência",
       "highlights": [
         "KYC/AML via BankID",
         "Fincheck",
-        "Digital Signing Trails",
-        "CRIF Integration"
+        "Trilhas de Assinatura Digital",
+        "Integração CRIF"
       ]
     },
     "ecosystems": {
-      "name": "Ecosystems & Platforms",
-      "tagline": "Connecting Value Chains",
-      "description": "We see the power of connected platforms. Our unified identity and data pipelines bridge the gap between disparate sectors, enabling scalable property listing engines.",
-      "stats": "API Interactions",
+      "name": "Ecossistemas e Plataformas",
+      "tagline": "Conectando Cadeias de Valor",
+      "description": "Vemos o poder das plataformas conectadas. Nossas identidades unificadas e pipelines de dados fecham a lacuna entre setores díspares, permitindo motores de listagem de imóveis escaláveis.",
+      "stats": "Interações de API",
       "highlights": [
-        "Cross-sector Integrations",
-        "Property Listing Platforms",
-        "Unified Identity",
-        "Scalable Data Pipelines"
+        "Integrações Intersetoriais",
+        "Plataformas de Listagem Imobiliária",
+        "Identidade Unificada",
+        "Pipelines de Dados Escaláveis"
       ]
     },
     "specializations": {
-      "title": "Additional Specializations",
-      "description": "Cross-industry expertise that drives results",
-      "cloud": "Cloud Solutions",
-      "distArch": "Distributed Architecture",
-      "scaling": "Ecosystems",
-      "product": "Startup Product Development",
-      "ai": "AI Implementation",
-      "migration": "System Migration"
+      "title": "Especializações Adicionais",
+      "description": "Expertise intersetorial que gera resultados",
+      "cloud": "Soluções Cloud",
+      "distArch": "Arquitetura Distribuída",
+      "scaling": "Ecossistemas",
+      "product": "Desenvolvimento de Produto Startup",
+      "ai": "Implementação de IA",
+      "migration": "Migração de Sistemas"
     }
   },
   "TechStack": {
-    "label": "Technology",
-    "title": "Market-tested stack",
-    "description": "We work with the technologies that power the world's most demanding applications. No experiments on your dime—proven tools, proven results.",
-    "cta": "Discuss Your Tech Needs",
-    "statement": "Our engineers stay current with evolving technologies while maintaining deep expertise in battle-tested solutions. We choose the right tool for each job.",
+    "label": "Tecnologia",
+    "title": "Stack provado no mercado",
+    "description": "Trabalhamos com tecnologias que impulsionam as aplicações mais exigentes do mundo. Sem experimentos às suas custas – ferramentas provadas, resultados provados.",
+    "cta": "Discuta suas Necessidades Tech",
+    "statement": "Nossos engenheiros se mantêm atualizados com tecnologias em evolução enquanto mantêm uma profunda experiência em soluções testadas em batalha. Escolhemos a ferramenta certa para cada trabalho.",
     "categories": {
-      "languages": "Languages & Frameworks",
-      "data": "Data & Storage",
-      "cloud": "Cloud & DevOps",
-      "methodology": "Methodology & AI",
+      "languages": "Linguagens e Frameworks",
+      "data": "Dados e Armazenamento",
+      "cloud": "Nuvem e DevOps",
+      "methodology": "Metodologia e IA",
       "design": "Design"
     }
   },
   "CaseStudies": {
-    "label": "Case Studies",
-    "title": "Proven impact",
-    "viewAll": "View All Projects",
+    "label": "Estudos de Caso",
+    "title": "Impacto Comprovado",
+    "viewAll": "Ver Todos os Projetos",
     "fintech": {
       "category": "FinTech",
-      "title": "Digital Mortgage & Fincheck",
-      "challenge": "Traditional mortgage applications required multiple in-person visits and weeks of manual processing.",
-      "solution": "Integrated BankID for instant KYC and developed 'Fincheck' for automated financial health assessments and online applications.",
-      "outcome": "First-to-market digital mortgage flow in the region with instant eligibility feedback and reduced time-to-offer."
+      "title": "Hipoteca Digital e Fincheck",
+      "challenge": "Pedidos de hipoteca tradicionais exigiam várias visitas presenciais e semanas de processamento manual.",
+      "solution": "Integração do BankID para KYC instantâneo e desenvolvimento do 'Fincheck' para avaliações automatizadas de saúde financeira e pedidos online.",
+      "outcome": "Primeiro fluxo hipotecário digital na região com feedback instantâneo sobre elegibilidade e tempo de oferta reduzido."
     },
     "proptech": {
       "category": "PropTech",
-      "title": "National Real Estate Ecosystem (MLS)",
-      "challenge": "The real estate market lacked a unified source of data, leading to fragmentation and lack of transparency for brokers and buyers.",
-      "solution": "Engineered the first comprehensive Multiple Listing Service (MLS) integrated with the national Land Registry (Katastr nemovitostí).",
-      "outcome": "Created a single source of truth for 10,000+ brokers, enabling seamless cooperation and transaction transparency."
+      "title": "Ecossistema Imobiliário Nacional (MLS)",
+      "challenge": "O mercado imobiliário carecia de uma fonte de dados unificada, levando à fragmentação e falta de transparência para corretores e compradores.",
+      "solution": "Engenharia do primeiro Serviço de Listagem Múltipla (MLS) abrangente integrado com o Registro de Terras nacional (Katastr nemovitostí).",
+      "outcome": "Criação de uma única fonte de verdade para mais de 10.000 corretores, permitindo cooperação contínua e transparência nas transações."
     },
     "enterprise": {
-      "category": "Enterprise",
-      "title": "AI-Powered Property Search",
-      "challenge": "Users struggled to find properties based on visual preference or location-specific data amidst thousands of listings.",
-      "solution": "Implemented AI-driven visual search for property styles and Augmented Reality (AR) for on-site property discovery.",
-      "outcome": "Increased user engagement by 3x through intuitive, 'point-and-see' property exploration and personalized search."
+      "category": "Empresarial",
+      "title": "Busca Imobiliária Impulsionada por IA",
+      "challenge": "Os usuários lutavam para encontrar propriedades com base em preferências visuais ou dados específicos de localização entre milhares de listagens.",
+      "solution": "Implementação de busca visual impulsionada por IA para estilos de propriedade e Realidade Aumentada (RA) para exploração de propriedades no local.",
+      "outcome": "Aumento do engajamento do usuário em 3x através da exploração intuitiva de propriedades 'aponte e veja' e busca personalizada."
     },
     "testimonials": {
-      "text": "BLAiT engineers integrated seamlessly with our team and delivered beyond expectations. They're not vendors—they're partners.",
+      "text": "Os engenheiros da BLAiT se integraram perfeitamente à nossa equipe e entregaram além das expectativas. Eles não são fornecedores – são parceiros.",
       "author": "Sarah Chen",
-      "role": "CTO, FinTech Startup",
-      "cta": "Start Your Success Story"
+      "role": "CTO, Startup FinTech",
+      "cta": "Comece Sua História de Sucesso"
     }
   },
   "Contact": {
-    "label": "Contact",
-    "title": "Let's build something great",
-    "description": "Whether you need a single specialist or a full team, we'll craft an engagement that fits your needs and budget.",
-    "response": "Response within 24 hours",
-    "emailUs": "Email us",
-    "liveChat": "Live Chat",
-    "trustedBy": "Trusted by",
+    "label": "Contato",
+    "title": "Vamos construir algo grandioso",
+    "description": "Se você precisa de um único especialista ou de uma equipe completa, projetaremos um compromisso que se ajuste às suas necessidades e orçamento.",
+    "response": "Resposta em 24 horas",
+    "emailUs": "Envie-nos um e-mail",
+    "liveChat": "Chat ao vivo",
+    "trustedBy": "Com a confiança de",
     "badges": {
       "fintech": "FinTech",
       "proptech": "PropTech",
       "regtech": "RegTech",
-      "enterprise": "Enterprise"
+      "enterprise": "Empresarial"
     },
-    "trusted": "Trusted by industry leaders",
+    "trusted": "Com a confiança de líderes da indústria",
     "form": {
-      "name": "Name",
-      "namePlaceholder": "John Smith",
-      "email": "Email",
-      "emailPlaceholder": "john@company.com",
-      "company": "Company",
-      "companyPlaceholder": "Company Inc.",
-      "projectType": "Project Type",
-      "projectTypePlaceholder": "Select project type",
-      "message": "Tell us about your project",
-      "messagePlaceholder": "What are you building? What skills do you need?",
-      "send": "Send Message",
-      "sending": "Sending...",
-      "sent": "Message Sent!",
-      "sentDesc": "We'll get back to you within 24 hours.",
+      "name": "Nome",
+      "namePlaceholder": "João Silva",
+      "email": "E-mail",
+      "emailPlaceholder": "joao@empresa.com",
+      "company": "Empresa",
+      "companyPlaceholder": "Empresa S.A.",
+      "projectType": "Tipo de Projet",
+      "projectTypePlaceholder": "Selecione o tipo de projeto",
+      "message": "Fale-nos sobre seu projeto",
+      "messagePlaceholder": "O que você está construindo? Quais habilidades você precisa?",
+      "send": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "sent": "Mensagem Enviada!",
+      "sentDesc": " entraremos em contato com você em 24 horas.",
       "types": {
-        "augmentation": "Product Engineering Partner",
-        "team": "Dedicated Team",
-        "project": "Project-Based",
-        "consulting": "Technical Consulting"
+        "augmentation": "Parceiro de Engenharia de Produto",
+        "team": "Equipe Dedicada",
+        "project": "Baseado em Projeto",
+        "consulting": "Consultoria Técnica"
       }
     }
   },
   "About": {
-    "label": "About Us",
-    "title": "Engineering partners, not vendors",
-    "description1": "We founded BLAiT to redefine the standard of external technical collaboration. We moved away from traditional outsourcing models to eliminate misaligned incentives, communication gaps, and the \"talent lottery.\" We built something better.",
-    "description2": "Our engineers work from European time zones with significant overlap with both EU and US business hours. We operate under strict EU legal frameworks (GDPR) and bring cultural alignment that goes beyond language—we don't just take tickets; we challenge requirements to build better products.",
+    "label": "Sobre Nós",
+    "title": "Parceiros de engenharia, não fornecedores",
+    "description1": "Fundamos a BLAiT para redefinir o padrão de colaboração técnica externa. Afastamo-nos dos modelos tradicionais de terceirização para eliminar incentivos desalinhados, lacunas de comunicação e a \"loteria de talentos\". Construímos algo melhor.",
+    "description2": "Nossos engenheiros trabalham a partir de fusos horários europeus com sobreposição significativa com o horário comercial da UE e dos EUA. Operamos sob rigorosos quadros legais da UE (GDPR) e trazemos alinhamento cultural que vai além do idioma – não apenas aceitamos tickets; desafiamos os requisitos para construir melhores produtos.",
     "stats": {
-      "timezone": "Time Zone Coverage",
-      "fluency": "English Fluency"
+      "timezone": "Cobertura de Fuso Horário",
+      "fluency": "Fluência em Inglês"
     },
     "values": {
       "excellence": {
-        "title": "Engineering Excellence",
-        "desc": "We hire elite seniors and autonomous mid-level engineers. No juniors, no trainees. We invest in top-tier delivery from Day 1."
+        "title": "Excelência em Engenharia",
+        "desc": "Contratamos seniores de elite e engenheiros de nível médio autônomos. Sem juniores, sem estagiários. Investimos em entrega de primeira linha desde o primeiro dia."
       },
       "transparent": {
-        "title": "Transparent Partnership",
-        "desc": "No black boxes. Full visibility into progress, challenges, and decisions."
+        "title": "Parceria Transparente",
+        "desc": "Sem caixas pretas. Visibilidade total sobre o progresso, desafios e decisões."
       },
       "impact": {
-        "title": "Business Impact Focus",
-        "desc": "Code is a means, not an end. We measure success by business outcomes."
+        "title": "Foco no Impacto nos Negócios",
+        "desc": "O código é um meio para um fim, não um fim em si mesmo. Medimos o sucesso pelos resultados de negócios."
       },
       "longterm": {
-        "title": "Long-term Thinking",
-        "desc": "We build systems meant to last and evolve. No quick wins that create tech debt."
+        "title": "Pensamento de Longo Prazo",
+        "desc": "Construímos sistemas projetados para durar e evoluir. Sem vitórias rápidas que criam dívida técnica."
       }
     }
   },
   "Process": {
-    "label": "Process",
-    "title": "How we work",
-    "description": "A proven methodology refined across multiple engagements. Fast time-to-value without cutting corners.",
+    "label": "Processo",
+    "title": "Como trabalhamos",
+    "description": "Uma metodologia comprovada refinada em múltiplos compromissos. Valor rápido sem atalhos.",
     "steps": {
       "discovery": {
-        "title": "Discovery & Architecture",
-        "description": "We analyze your technical landscape and business goals to define the system boundaries before a single line of code is written.",
+        "title": "Descoberta e Arquitetura",
+        "description": "Analisamos seu cenário técnico e objetivos de negócios para definir os limites do sistema antes que uma única linha de código seja escrita.",
         "details": [
-          "Technical Landscape Analysis",
-          "Architecture Definition",
-          "Business Goal Alignment"
+          "Análise do Cenário Técnico",
+          "Definição de Arquitetura",
+          "Alinhamento dos Objetivos de Negócios"
         ]
       },
       "matching": {
-        "title": "Architectural Alignment",
-        "description": "We don’t just 'fill seats'. We assemble a senior crew with the exact domain experience to execute the defined architecture.",
+        "title": "Alinhamento Arquitetônico",
+        "description": "Não apenas 'preenchemos vagas'. Reunimos uma equipe sênior com a experiência de domínio exata para executar a arquitetura definida.",
         "details": [
-          "Domain Expertise Mapping",
-          "Senior-Led Verification",
-          "Cultural & Technical Fit"
+          "Mapeamento de Expertise de Domínio",
+          "Verificação Liderada por Seniores",
+          "Ajuste Cultural e Técnico"
         ]
       },
       "integration": {
-        "title": "Code Quality & Peer Review",
-        "description": "Every line of code is peer-reviewed. We enforce Clean Code standards and CI/CD best practices to ensure zero-debt delivery.",
+        "title": "Qualidade do Código e Revisão por Pares",
+        "description": "Cada linha de código é revisada por pares. Aplicamos padrões de Clean Code e melhores práticas de CI/CD para garantir uma entrega livre de dívidas.",
         "details": [
-          "Mandatory Peer Reviews",
-          "Clean Code Principles",
-          "Rigorous QA Standards"
+          "Revisões por Pares Obrigatórias",
+          "Princípios de Clean Code",
+          "Padrões Rigorosos de QA"
         ]
       },
       "delivery": {
-        "title": "Production & Evolution",
-        "description": "We ship to production with confidence. We sell longevity, not just hours—building systems designed to last.",
+        "title": "Produção e Evolução",
+        "description": "Entregamos em produção com confiança. Vendemos longevidade, não apenas horas – construindo sistemas projetados para durar.",
         "details": [
-          "Production-Ready Delivery",
-          "Observability Setup",
-          "Long-term Maintainability"
+          "Entrega Pronta para Produção",
+          "Configuração de Observabilidade",
+          "Manutenibilidade a Longo Prazo"
         ]
       }
     },
     "models": {
-      "title": "Engagement Models",
-      "subtitle": "Flexible arrangements to fit your needs",
+      "title": "Modelos de Engajamento",
+      "subtitle": "Arranjos flexíveis para atender às suas necessidades",
       "augmentation": {
-        "title": "Product Engineering Partner",
-        "desc": "Individual engineers embedded in your team, working your hours, using your tools."
+        "title": "Parceiro de Engenharia de Produto",
+        "desc": "Engenheiros individuais integrados à sua equipe, trabalhando nos seus horários, com suas ferramentas."
       },
       "team": {
-        "title": "Dedicated Team",
-        "desc": "A full squad with complementary skills, managed as a cohesive unit."
+        "title": "Equipe Dedicada",
+        "desc": "Um squad completo com habilidades complementares, gerenciado como uma unidade coesa."
       },
       "project": {
-        "title": "Project-Based",
-        "desc": "We provide end-to-end project execution within a defined scope and timeline. Depending on your requirements, we offer both Fixed-Price or Hourly rates billing models to ensure full alignment with your budgetary needs."
+        "title": "Baseado em Projeto",
+        "desc": "Fornecemos execução de projeto de ponta a ponta dentro de um escopo e cronograma definidos. Dependendo dos seus requisitos, oferecemos modelos de preço fixo ou por hora para garantir alinhamento total com suas necessidades orçamentárias."
       }
     }
   },
@@ -549,104 +549,104 @@
     "title": "FAQ",
     "items": {
       "start": {
-        "question": "How quickly can you start?",
-        "answer": "We typically start within 48 hours of our initial consultation. Our process is streamlined to get us integrated with your team as fast as possible."
+        "question": "Quão rápido vocês podem começar?",
+        "answer": "Normalmente começamos dentro de 48 horas após nossa consulta inicial. Nosso processo é otimizado para nos integrarmos à sua equipe o mais rápido possível."
       },
       "timezone": {
-        "question": "Do you work in my time zone?",
-        "answer": "Yes, we are based in the EU but work across US and European time zones. We ensure at least 4 hours of overlap with your core working hours."
+        "question": "Vocês trabalham no meu fuso horário?",
+        "answer": "Sim, estamos baseados na UE, mas trabalhamos em fusos horários dos EUA e da Europa. Garantimos pelo menos 4 horas de sobreposição com suas horas de trabalho principais."
       },
       "pricing": {
-        "question": "What is your pricing model?",
-        "answer": "We offer Cost-Efficient Delivery models including product engineering partnerships and project-based fixed pricing. We focus on Optimized ROI by delivering high-quality code that reduces long-term maintenance costs."
+        "question": "Qual é o seu modelo de preços?",
+        "answer": "Oferecemos modelos de entrega econômicos, incluindo parcerias de engenharia de produto e preços fixos baseados em projetos. Focamos em ROI otimizado entregando código de alta qualidade que reduz os custos de manutenção a longo prazo."
       },
       "pm": {
-        "question": "How do you handle legacy code modernization?",
-        "answer": "We take a pragmatic approach to legacy debt. Our team can either incrementally refactor your existing monolith into microservices or build new high-performance features that integrate seamlessly with your current stack."
+        "question": "Como vocês lidam com a modernização de código legacy?",
+        "answer": "Adotamos uma abordagem pragmática para a dívida legacy. Nossa equipe pode refatorar incrementalmente seu monólito existente em microsserviços ou construir novos recursos de alto desempenho que se integram perfeitamente ao seu stack atual."
       },
       "security": {
-        "question": "Is your engineering compliant with FinTech standards?",
-        "answer": "Yes. We incorporate secure SDLC, OWASP best practices, and automated security scanning from day one. Our team is experienced in building systems for regulated environments like GDPR, PSD2, and ISO 27001."
+        "question": "Sua engenharia está em conformidade com os padrões FinTech?",
+        "answer": "Sim. Integramos SDLC seguro, melhores práticas da OWASP e verificação de segurança automatizada desde o primeiro dia. Nossa equipe tem experiência na construção de sistemas para ambientes regulados como GDPR, PSD2 e ISO 27001."
       }
     }
   },
   "Metadata": {
-    "title": "BLAiT Engineering | Product Engineering & IT Staffing Partner",
-    "description": "Expert Software Development and IT Staffing. Precision-matched engineering talent for FinTech, PropTech, and RegTech. Enterprise-grade IT outsourcing and strategic engineering partnerships."
+    "title": "BLAiT Engineering | Parceiro de Engenharia de Produto e Staffing de TI",
+    "description": "Desenvolvimento de Software Especializado e Staffing de TI. Talento de engenharia de precisão para FinTech, PropTech e RegTech. Terceirização de TI de nível empresarial e parcerias de engenharia estratégica."
   },
   "Security": {
     "hero": {
-      "label": "Security & Compliance",
-      "title": "Security by Design",
-      "subtitle": "We don’t bolt security on at the end. It’s baked into every commit, every container, and every cloud resource we touch."
+      "label": "Segurança e Compliance",
+      "title": "Segurança por Design",
+      "subtitle": "Não adicionamos segurança no final. Ela está integrada em cada commit, cada contêiner e cada recurso de nuvem que tocamos."
     },
     "compliance": {
-      "title": "Compliance & Standards",
-      "description": "Our internal processes are designed to align with the frameworks that matter to you. While we are an engineering partner, not a hosting provider, we operate with the rigor of a regulated entity.",
+      "title": "Compliance e Padrões",
+      "description": "Nossos processos internos são projetados para se alinharem com os frameworks que importam para você. Embora sejamos um parceiro de engenharia, não um provedor de hospedagem, operamos com o rigor de uma entidade regulada.",
       "items": {
         "gdpr": {
-          "title": "GDPR Compliant",
-          "text": "All our engineers and operations are based in the EU/EEA or equivalent jurisdictions. Data Protection Agreements (DPA) are standard in every engagement."
+          "title": "Compliance GDPR",
+          "text": "Todos os nossos engenheiros e operações são baseados na UE/EEE ou jurisdições equivalentes. Acordos de Processamento de Dados (DPA) são padrão em cada engajamento."
         },
         "iso": {
-          "title": "ISO 27001 Aligned",
-          "text": "We follow information security management best practices, including documented access controls, incident response plans, and asset management."
+          "title": "Alinhado com ISO 27001",
+          "text": "Seguimos as melhores práticas para gestão de segurança da informação, incluindo controles de acesso documentados, planos de resposta a incidentes e gestão de ativos."
         },
         "soc2": {
-          "title": "SOC2 Readiness",
-          "text": "For US clients, we align with SOC2 Trust Services Criteria. We implement change management, logical access, and monitoring controls by default."
+          "title": "Prontidão SOC2",
+          "text": "Para clientes dos EUA, nos alinhamos com os Critérios de Serviços de Confiança SOC2. Implementamos gestão de mudanças, acesso lógico e controles de monitoramento por padrão."
         }
       }
     },
     "infrastructure": {
-      "title": "Infrastructure Security",
-      "description": "Secure foundations for scalable systems.",
+      "title": "Segurança de Infraestrutura",
+      "description": "Fundações seguras para sistemas escaláveis.",
       "items": {
         "aws": {
-          "title": "Cloud Security",
-          "text": "We use AWS/GCP best practices: Well-Architected Framework, least-privilege IAM roles, and separate VPCs for environments."
+          "title": "Segurança na Nuvem",
+          "text": "Utilizamos as melhores práticas da AWS/GCP: Framework Well-Architected, funções IAM de privilégio mínimo e VPCs separadas para ambientes."
         },
         "encryption": {
-          "title": "Encryption Everywhere",
-          "text": "Data is encrypted at rest (AES-256) and in transit (TLS 1.2+). We manage secrets using enterprise-grade vaults (AWS Secrets Manager, HashiCorp Vault)."
+          "title": "Criptografia em Todos os Lugares",
+          "text": "Os dados são criptografados em repouso (AES-256) e em trânsito (TLS 1.2+). Gerenciamos segredos usando cofres de nível empresarial (AWS Secrets Manager, HashiCorp Vault)."
         },
         "access": {
-          "title": "Zero Trust Access",
-          "text": "No VPNs, no shared passwords. We access infrastructure via short-lived credentials and identity-aware proxies."
+          "title": "Acesso Zero Trust",
+          "text": "Sem VPNs, sem senhas compartilhadas. Acessamos a infraestrutura por meio de credenciais efêmeras e proxies cientes da identidade."
         }
       }
     },
     "sdlc": {
-      "title": "Secure Development Lifecycle",
-      "description": "Code that defends itself.",
+      "title": "Ciclo de Vida de Desenvolvimento Seguro",
+      "description": "Código que se defende.",
       "items": {
         "review": {
-          "title": "Mandatory Peer Review",
-          "text": "No code reaches production without at least one senior engineer approval. We check for OWASP Top 10 vulnerabilities during review."
+          "title": "Revisão por Pares Obrigatória",
+          "text": "Nenhum código chega à produção sem pelo menos uma aprovação de um engenheiro sênior. Verificamos vulnerabilidades OWASP Top 10 durante a revisão."
         },
         "scanning": {
-          "title": "Automated Scanning",
-          "text": "CI/CD pipelines include SAST (Static Analysis), DAST (Dynamic Analysis), and specialized dependency scanning to catch vulnerabilities early."
+          "title": "Verificação Automatizada",
+          "text": "Pipelines de CI/CD incluem SAST (Análise Estática), DAST (Análise Dinâmica) e verificação de dependências especializada para detectar vulnerabilidades cedo."
         },
         "supply": {
-          "title": "Supply Chain Security",
-          "text": "We pin dependency versions, use signed commits, and regularly audit third-party libraries for CVEs."
+          "title": "Segurança da Cadeia de Suprimentos",
+          "text": "Fixamos versões de dependências, usamos commits assinados e auditamos regularmente bibliotecas de terceiros para CVEs."
         }
       }
     },
     "operational": {
-      "title": "Operational Security",
+      "title": "Segurança Operacional",
       "items": [
-        "Strict NDA & IP Protection Agreements",
-        "Comprehensive Background Checks",
-        "Managed Devices (MDM)",
-        "Security Awareness Culture"
+        "Acordos rigorosos de NDA e Proteção de PI",
+        "Verificações de antecedentes abrangentes",
+        "Dispositivos Gerenciados (MDM)",
+        "Cultura de conscientização de segurança"
       ]
     },
     "cta": {
-      "title": "Have specific compliance needs?",
-      "text": "We are happy to discuss our security protocols and align with your vendor assessment requirements.",
-      "button": "Contact Security Team"
+      "title": "Tem requisitos de compliance específicos?",
+      "text": "Estamos felizes em discutir nossos protocolos de segurança e nos alinhar com seus requisitos de avaliação de fornecedores.",
+      "button": "Contatar a Equipe de Segurança"
     }
   }
 }

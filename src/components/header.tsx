@@ -71,7 +71,7 @@ export function Header() {
     <header className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-700 ${isScrolled ? "glass-morphism py-4" : "bg-transparent py-8"}`}>
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href={`/${locale}`} className="group relative z-50">
+        <a href={`/${locale}`} className="group relative z-[80]">
           <div className="text-2xl tracking-tighter font-black text-white" style={{ fontFamily: "var(--font-display)" }}>
             BLAiT<span className="text-white opacity-20">.</span>
           </div>
@@ -105,7 +105,7 @@ export function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden relative z-50 p-2 text-white"
+          className="lg:hidden relative z-[80] p-2 text-white"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -124,7 +124,8 @@ export function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed inset-0 top-0 bg-black z-40 transition-all duration-700 ease-[0.16,1,0.3,1] ${isMobileMenuOpen
+        style={{ backgroundColor: "#000000" }}
+        className={`lg:hidden fixed inset-0 top-0 z-[70] transition-all duration-700 ease-[0.16,1,0.3,1] ${isMobileMenuOpen
           ? "translate-y-0 opacity-100"
           : "-translate-y-full opacity-0"
           }`}
@@ -134,7 +135,7 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-5xl text-white font-black tracking-tighter hover:text-white/60 transition-all duration-300 uppercase"
+              className="text-3xl md:text-5xl text-white font-black tracking-tighter hover:text-white/60 transition-all duration-300 uppercase"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.label}

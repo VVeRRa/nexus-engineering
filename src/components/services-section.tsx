@@ -116,7 +116,7 @@ export function ServicesSection() {
               <motion.div
                 key={index}
                 variants={itemVars}
-                className={`group bg-[#050505] p-10 flex flex-col h-full relative overflow-hidden transition-colors duration-500 hover:bg-[#0a0a0a] ${spans[index % spans.length]}`}
+                className={`group bg-[#050505] p-6 md:p-10 flex flex-col h-full relative overflow-hidden transition-colors duration-500 hover:bg-[#0a0a0a] ${spans[index % spans.length]}`}
               >
                 <div className="flex items-start justify-between mb-8">
                   <div className="w-12 h-12 flex items-center justify-center text-white/40 group-hover:text-white transition-all duration-500">

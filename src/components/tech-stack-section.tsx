@@ -72,7 +72,7 @@ export function TechStackSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
-          className="p-16 lg:p-20 border border-white/5 bg-white/[0.01] rounded-[4rem] relative overflow-hidden group"
+          className="p-6 md:p-16 lg:p-20 border border-white/5 bg-white/[0.01] rounded-[4rem] relative overflow-hidden group"
         >
           {/* Subtle Glows inside Bottom Block */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-white/[0.02] blur-[100px] -z-10 group-hover:bg-white/[0.04] transition-all duration-1000" />
