@@ -68,10 +68,19 @@ export function Header() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-700 ${isScrolled ? "glass-morphism py-4" : "bg-transparent py-8"}`}>
-      <div className="container mx-auto px-6 flex items-center justify-between">
+    <header className={`fixed top-0 left-0 right-0 z-[999] transition-all duration-700 ${isScrolled ? "glass-morphism py-4" : "bg-transparent py-8"}`}>
+      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href={`/${locale}`} className="group relative z-[80]">
+        <a
+          href={`/${locale || ""}`}
+          className="group relative z-[50]"
+          onClick={(e) => {
+            if (isHomePage) {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          }}
+        >
           <div className="text-2xl tracking-tighter font-black text-white" style={{ fontFamily: "var(--font-display)" }}>
             BLAiT<span className="text-white opacity-20">.</span>
           </div>
@@ -105,7 +114,7 @@ export function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden relative z-[80] p-2 text-white"
+          className="lg:hidden relative z-[999] p-2 text-white"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -125,7 +134,7 @@ export function Header() {
       {/* Mobile Menu */}
       <div
         style={{ backgroundColor: "#000000" }}
-        className={`lg:hidden fixed inset-0 top-0 z-[70] transition-all duration-700 ease-[0.16,1,0.3,1] ${isMobileMenuOpen
+        className={`lg:hidden fixed inset-0 top-0 z-[990] transition-all duration-700 ease-[0.16,1,0.3,1] ${isMobileMenuOpen
           ? "translate-y-0 opacity-100"
           : "-translate-y-full opacity-0"
           }`}

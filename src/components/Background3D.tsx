@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useRef, useMemo, useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as THREE from "three";
-import { useScroll, useInView } from "framer-motion";
+
 
 
 function TheCore({ scrollYProgress }: { scrollYProgress: any }) {
@@ -67,9 +67,9 @@ function GalaxySwarm({ scrollYProgress }: { scrollYProgress: any }) {
     const ref = useRef<THREE.Points>(null!);
 
     const [sphere] = useState(() => {
-        let count = 4000;
+        let count = 2000;
         if (typeof window !== 'undefined' && window.innerWidth < 768) {
-            count = 1500;
+            count = 600;
         }
 
         const positions = new Float32Array(count * 3);
@@ -144,19 +144,14 @@ function GalaxySwarm({ scrollYProgress }: { scrollYProgress: any }) {
 }
 
 export const Background3D = ({ scrollYProgress }: { scrollYProgress: any }) => {
-    const containerRef = useRef<HTMLDivElement>(null);
-    const isInView = useInView(containerRef, { margin: "200px" });
-
     return (
-        <div ref={containerRef} className="absolute inset-0 z-0 bg-black overflow-hidden pointer-events-none">
-            {isInView && (
-                <Canvas camera={{ position: [0, 0, 8], fov: 50 }} dpr={[1, 2]} performance={{ min: 0.5 }}>
-                    <fog attach="fog" args={["#000", 8, 30]} />
-                    <ambientLight intensity={1} />
-                    <TheCore scrollYProgress={scrollYProgress} />
-                    <GalaxySwarm scrollYProgress={scrollYProgress} />
-                </Canvas>
-            )}
+        <div className="absolute inset-0 z-0 bg-black overflow-hidden pointer-events-none">
+            <Canvas camera={{ position: [0, 0, 8], fov: 50 }} dpr={[1, 2]} performance={{ min: 0.5 }}>
+                <fog attach="fog" args={["#000", 8, 30]} />
+                <ambientLight intensity={1} />
+                <TheCore scrollYProgress={scrollYProgress} />
+                <GalaxySwarm scrollYProgress={scrollYProgress} />
+            </Canvas>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black pointer-events-none" />
         </div>
     );

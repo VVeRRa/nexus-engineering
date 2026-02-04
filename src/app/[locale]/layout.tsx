@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { Geist, Geist_Mono } from 'next/font/google';
 import "../globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { JsonLd } from "@/components/JsonLd";
+import { SmoothScroll } from "@/components/SmoothScroll";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -86,7 +87,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-import { SmoothScroll } from "@/components/SmoothScroll";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#000000",
+};
+
+
 
 export default async function RootLayout({
   children,
