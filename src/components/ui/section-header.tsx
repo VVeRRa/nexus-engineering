@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 interface SectionHeaderProps {
     label?: ReactNode;
@@ -15,50 +16,51 @@ export function SectionHeader({
     description,
     align = "left",
     className,
-    animate = true,
-}: SectionHeaderProps & { animate?: boolean }) {
-    // Check if we should inherit color (implying parent sets it, e.g. text-white)
-    // Also explicitly check for white request to force it via style if needed
-    const isWhite = className?.includes("text-white") || className?.includes("!text-white");
-    const inheritColor = className?.includes("text-slate");
-
+}: SectionHeaderProps) {
     return (
         <div
             className={cn(
-                "mb-16",
-                animate && "animate-on-scroll",
+                "mb-16 relative z-10",
                 align === "center" ? "text-center max-w-3xl mx-auto" : "max-w-3xl",
                 className
             )}
         >
             {label && (
-                <span className="text-[var(--color-secondary)] font-bold tracking-wider uppercase text-sm mb-4 block">
+                <motion.span
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="text-accent font-mono text-[10px] tracking-[0.4em] uppercase mb-6 block"
+                >
                     {label}
-                </span>
+                </motion.span>
             )}
-            <h2
+            <motion.h2
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.1 }}
                 className={cn(
-                    "text-3xl md:text-5xl mb-6",
-                    isWhite ? "text-white" : (inheritColor ? "text-inherit" : "text-[var(--color-ink)]")
+                    "text-5xl md:text-7xl lg:text-8xl mb-8 tracking-tighter leading-[0.9] text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 pb-2"
                 )}
                 style={{
-                    fontFamily: "var(--font-display)",
-                    fontWeight: 800,
-                    color: isWhite ? "#ffffff" : undefined
+                    fontFamily: "var(--font-sans)",
+                    fontWeight: 900
                 }}
             >
                 {title}
-            </h2>
+            </motion.h2>
             {description && (
-                <div
-                    className={cn(
-                        "text-xl",
-                        isWhite ? "text-white" : (inheritColor ? "text-inherit" : "text-[var(--color-ink)]")
-                    )}
-                    style={{ color: isWhite ? "#ffffff" : undefined }}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="text-lg md:text-xl text-muted max-w-2xl mx-auto"
                 >
                     {description}
-                </div>
+                </motion.div>
             )}
         </div>
     );

@@ -9,12 +9,13 @@ interface SectionProps {
     style?: CSSProperties;
 }
 
-export function Section({ id, className, children, background, style }: SectionProps) {
+export function Section({ id, className, children, background, style, variant = "light" }: SectionProps & { variant?: "light" | "dark" }) {
     return (
         <section
             id={id}
             className={cn(
-                "section bg-transparent relative overflow-hidden pb-24 transition-colors duration-300",
+                "section relative overflow-hidden transition-colors duration-300",
+                variant === "dark" ? "bg-ink text-paper" : "bg-paper text-ink",
                 className
             )}
             style={style}

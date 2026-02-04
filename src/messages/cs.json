@@ -4,88 +4,89 @@
     "short": "From problem to production",
     "promise": "From problem to production — with the right people.",
     "playful": "We solve all your problems.",
-    "description": "Seniorní produktový engineering. Začněte rolemi, které potřebujete, a škálujte s růstem projektů."
+    "description": "Senior-led product engineering. Start with the roles you need and scale as projects grow."
   },
   "Nav": {
-    "home": "Domů",
-    "services": "Služby",
-    "expertise": "Expertíza",
-    "technology": "Technologie",
-    "team": "Tým",
-    "contact": "Kontakt",
-    "getInTouch": "Napište nám",
-    "process": "Proces",
-    "work": "Reference",
-    "about": "O nás",
+    "home": "Home",
+    "services": "Services",
+    "expertise": "Expertise",
+    "technology": "Technology",
+    "team": "Team",
+    "contact": "Contact",
+    "getInTouch": "Get in touch",
+    "process": "Process",
+    "work": "Work",
+    "about": "About",
     "faq": "FAQ",
-    "specializations": "Specializace"
+    "specializations": "Specializations"
   },
   "Common": {
-    "step": "Krok"
+    "step": "Step"
   },
   "Footer": {
-    "brandDesc": "Strategický partner pro produktové inženýrství pro společnosti, které odmítají kompromisy v inženýrské kvalitě.",
-    "services": "Služby",
-    "company": "Společnost",
-    "industries": "Odvětví",
-    "rights": "BLAiT Engineering. Všechna práva vyhrazena.",
+    "brandDesc": "Strategic product engineering partner for companies that refuse to compromise on engineering quality.",
+    "services": "Services",
+    "company": "Company",
+    "industries": "Industries",
+    "rights": "BLAiT Engineering. All rights reserved.",
     "links": {
       "leadership": "IT Leadership",
-      "backend": "Backend Vývoj",
-      "frontend": "Frontend Vývoj",
+      "backend": "Backend Development",
+      "frontend": "Frontend Development",
       "devops": "DevOps Engineering",
-      "about": "O nás",
-      "caseStudies": "Případové studie",
-      "process": "Proces",
-      "contact": "Kontakt",
+      "about": "About Us",
+      "caseStudies": "Case Studies",
+      "process": "Process",
+      "contact": "Contact",
       "fintech": "FinTech",
       "proptech": "PropTech",
       "regtech": "RegTech",
       "enterprise": "Enterprise",
-      "security": "Bezpečnost a shoda"
+      "security": "Security & Compliance"
     }
   },
   "Home": {
-    "kicker": "Seniorní produktový engineering partner",
-    "subheadline": "Seniorní produktové týmy pro FinTech, PropTech a RegTech. Poskytujeme architektonickou hloubku CTO office s rychlostí dodání agilního squadu.",
-    "ctaPrimary": "Kontaktovat",
-    "ctaSecondary": "Zobrazit služby",
-    "scroll": "Rolovat",
-    "sideText": "Strategické Inženýrské Partnerství",
+    "kicker": "Senior-led product engineering partner",
+    "subheadline": "Senior-led product teams for FinTech, PropTech, and RegTech. We provide the architectural depth of a CTO office with the delivery speed of an agile squad.",
+    "ctaPrimary": "Contact us",
+    "ctaSecondary": "See services",
+    "scroll": "Scroll",
+    "sideText": "Strategic Engineering Partnership",
     "highlights": {
       "h1": {
-        "badge": "Řešení > šablona",
-        "title": "Seniorní vývoj softwaru a partnerství v produktovém inženýrství",
-        "text": "Navrhneme nejmenší tvar týmu, který odemkne progres — a škálujeme až když to dává smysl."
+        "badge": "Solution-first",
+        "titlePart1": "Senior-Led Software Development",
+        "titlePart2": "Product Engineering",
+        "text": "We propose the smallest team shape that unblocks progress — and scale only when it pays off."
       },
       "h2": {
-        "badge": "Produkční mentalita",
-        "title": "Build + run, spolehlivě",
-        "text": "IaC, observabilita, CI/CD a testování jsou součást dodávky – ne doplněk."
+        "badge": "Production mindset",
+        "title": "Build + run, reliably",
+        "text": "IaC, observability, CI/CD and testing are part of delivery — not an afterthought."
       },
       "h3": {
-        "badge": "Seriózní domény",
-        "title": "PropTech, FinTech, RegTech,  B2B SaaS",
-        "text": "Integrace, data-heavy systémy a prostředí, kde záleží na spolehlivosti."
+        "badge": "Serious domains",
+        "title": "PropTech, FinTech, RegTech, B2B SaaS",
+        "text": "Integrations, data-heavy systems and regulated environments where reliability matters."
       }
     },
     "heroBullets": [
       {
-        "title": "Senior-led, malý tým",
-        "text": "Připojujeme se jako kompaktní posádka. Žádní junioři, žádné vodění za ruku — jen samostatná expertíza, která odblokuje dodávku."
+        "title": "Small team, senior-led",
+        "text": "We join as a compact crew. No juniors, no hand-holding—just autonomous expertise that unblocks delivery."
       },
       {
-        "title": "Production-first dodávka",
-        "text": "CI/CD, observabilita a kvalita jsou součástí dodávky — ne dodatečná myšlenka."
+        "title": "Production-first delivery",
+        "text": "CI/CD, observability and quality are part of delivery — not an afterthought."
       },
       {
-        "title": "Hloubka domény",
-        "text": "Zkušenosti s PropTech, FinTech & RegTech pro datově náročné systémy a integrace."
+        "title": "Domain depth",
+        "text": "PropTech, FinTech & RegTech experience for integration-heavy, data-rich systems."
       }
     ],
-    "heroChip": "Obvykle odpovíme do 24 h",
+    "heroChip": "Typically reply within 24h",
     "stackTitle": "Core tech stack",
-    "stackNote": "High-performance, event-driven architektura napříč stackem.",
+    "stackNote": "High-performance, event-driven architecture across the full stack.",
     "stack": [
       "Java (Quarkus/Spring)",
       "Node.js",
@@ -105,59 +106,66 @@
       "Figma"
     ],
     "ctaBlock": {
-      "title": "Řekněte, co vás brzdí",
-      "text": "Jedna role, malý pod nebo delivery lane — navrhneme tvar spolupráce, který sedne.",
-      "button": "Začít konverzaci"
+      "title": "Tell us what’s blocking you",
+      "text": "One role, a small pod, or a delivery lane — we’ll propose a shape that fits.",
+      "button": "Start the conversation"
     },
     "trust": {
-      "consultation": "Konzultace zdarma",
-      "euTeam": "Tým v EU",
-      "startFast": "Rychlý onboarding",
-      "chat": "Napište nám"
+      "consultation": "Free consultation",
+      "euTeam": "EU-based team",
+      "startFast": "Rapid Onboarding",
+      "chat": "Chat with us"
     },
     "technicalCluster": {
-      "title": "Technické specializace",
-      "headline": "Specializace v precizním inženýrství",
-      "text": "Hluboké odborné znalosti v moderních paradigmatech softwarového inženýrství.",
+      "title": "Technical Specializations",
+      "headline": "Precision Engineering Specializations",
+      "text": "Deep expertise in modern software engineering paradigms.",
       "items": [
-        "Refaktoring monolitů na mikroslužby",
-        "Event-driven architektury s vysokou propustností",
-        "Cloud-native infrastruktura a Kubernetes",
-        "FinTech bezpečnost a compliance (PSD2, GDPR)",
-        "API-First design a integrační strategie",
-        "PropTech ekosystémy a digitální identita"
+        "Legacy Monolith to Microservices Refactoring",
+        "High-Throughput Event-Driven Architectures",
+        "Cloud-Native Infrastructure & Kubernetes",
+        "FinTech Security & Compliance (PSD2, GDPR)",
+        "API-First Design & Integration Strategy",
+        "PropTech Ecosystems & Digital Identity"
       ]
+    },
+    "heroChunks": {
+      "strategic": "Strategic Engineering",
+      "architecting": "Architecting Value",
+      "velocity": "Engineering Velocity",
+      "scale": "Built to Scale"
     }
   },
   "Services": {
-    "title": "Služby",
-    "lead": "Od strategického vedení po implementaci — dodáme technickou expertízu, kterou potřebujete.",
+    "title": "Services",
+    "leadTitle": "From strategic leadership to hands-on implementation",
+    "leadText": "We provide the technical expertise you need.",
     "list": {
       "leadership": {
-        "title": "IT Leadership",
-        "subtitle": "Strategické směřování",
-        "description": "Fractional CTOs a Team Leads, kteří sladí technologie s byznysem. Revize architektury, řešení technologického dluhu a plánování roadmapy.",
+        "title": "IT Leadership & CTO-as-a-Service",
+        "subtitle": "Strategic Technology Direction",
+        "description": "Fractional CTOs and Team Leads who align technology strategy with business objectives. We specialize in architecture modernization, technical debt reduction, and building high-performance engineering cultures.",
         "tags": [
           "CTO-as-a-Service",
-          "Tech Strategy",
-          "Architektura"
+          "Legacy Modernization",
+          "Architecture Audit"
         ]
       },
       "backend": {
-        "title": "Backend Development",
-        "subtitle": "Škálovatelné Systémy",
-        "description": "Robustní API a mikroslužby. High-performance systémy pro zpracování transakcí. Event-driven architektura a distribuované systémy.",
+        "title": "Backend Engineering",
+        "subtitle": "Event-Driven & Scalable Systems",
+        "description": "Robust, high-performance APIs and microservices. We specialize in event-driven Java (Quarkus/Spring) architectures, Go-based distributed systems, and real-time transaction processing.",
         "tags": [
-          "Java",
-          "Go",
-          "Node.js",
-          "PostgreSQL"
+          "Java/Go/Node.js",
+          "Event-Driven",
+          "Microservices",
+          "Cloud-Native"
         ]
       },
       "frontend": {
         "title": "Frontend Development",
-        "subtitle": "Špičková rozhraní",
-        "description": "Responzivní rozhraní s výjimečným UX. Komponentové knihovny, design systémy a výkonné SPA aplikace.",
+        "subtitle": "Exceptional Interfaces",
+        "description": "Responsive interfaces with exceptional UX. Component libraries, design systems, and performant SPAs that users love and competitors envy.",
         "tags": [
           "React",
           "TypeScript",
@@ -167,7 +175,7 @@
       "qa": {
         "title": "QA Engineering",
         "subtitle": "Quality Assurance",
-        "description": "Komplexní testovací strategie. Manuální a automatizované testování, performance testy a bezpečnostní audity.",
+        "description": "Comprehensive test strategies that catch bugs before users do. Manual and automated testing, performance testing, and security audits.",
         "tags": [
           "Selenium",
           "Cypress",
@@ -175,56 +183,61 @@
         ]
       },
       "devops": {
-        "title": "DevOps Engineering",
-        "subtitle": "Infrastruktura",
-        "description": "CI/CD pipelines pro bezpečné nasazení. Infrastructure as code, orchestrace kontejnerů a observabilita.",
+        "title": "Cloud & DevOps Engineering",
+        "subtitle": "Infrastructure as Code",
+        "description": "Modernizing platforms with CI/CD automation and Infrastructure as Code (Terraform). We build production-ready Kubernetes environments with comprehensive observability (Prometheus/Grafana).",
         "tags": [
-          "AWS",
+          "AWS/GCP/Azure",
           "Kubernetes",
-          "Terraform"
+          "Terraform (IaC)",
+          "DevSecOps"
         ]
       },
       "product-design": {
-        "title": "Produktový management & Design",
-        "subtitle": "Od vize k exekuci",
-        "description": "Produktoví lídři propojující vizi s realitou, doplnění o design zaměřený na uživatele, který řeší skutečné problémy.",
+        "title": "Product Management & Design",
+        "subtitle": "Vision to Execution",
+        "description": "Product leaders who bridge the gap between vision and execution, coupled with user-centric design that solves real problems.",
         "tags": [
-          "Strategie",
+          "Strategy",
           "Agile",
           "UI/UX Design"
         ]
       }
     },
     "cta": {
-      "question": "Potřebujete řešení na míru?",
-      "button": "Probrat vaše potřeby"
+      "question": "Need a custom solution?",
+      "button": "Let's Discuss Your Needs"
     }
   },
   "Expertise": {
-    "title": "Expertíza",
-    "lead": "Děláme v komplexních doménách, kde záleží na spolehlivosti, rychlosti a čisté komunikaci.",
-    "capabilitiesTitle": "Co umíme",
+    "title": "Expertise",
+    "lead": "We work in complex domains where reliability, speed and clarity matter.",
+    "capabilitiesTitle": "Capabilities",
     "capabilities": [
-      "Product engineering (od discovery do produkce)",
-      "Architektura & tech leadership",
-      "High-load backend & event-driven systémy",
-      "Data-heavy integrace a API",
-      "Cloud & DevOps (Kubernetes, IaC, observabilita)",
-      "QA automatizace & quality engineering",
-      "Design systémy & UX delivery"
+      "Product engineering (discovery to production)",
+      "Architecture & tech leadership",
+      "High-load backend & event-driven systems",
+      "Data-heavy integrations and APIs",
+      "Cloud & DevOps (Kubernetes, IaC, observability)",
+      "QA automation & quality engineering",
+      "Design systems & UX delivery",
+      "frontend-desing",
+      "3d-web-experience",
+      "ui-ux-pro-max",
+      "scroll-experience"
     ],
     "areas": {
       "proptech": {
         "title": "PropTech",
-        "text": "Inzerce, valuace, integrace, back-office workflow, reporting a zákaznické portály."
+        "text": "Listings, valuation, integrations, back-office workflows, reporting and customer portals."
       },
       "fintech": {
         "title": "FinTech",
-        "text": "Platby, identita, toky podléhající přísné regulaci a auditovatelná dodávka."
+        "text": "Payments, identity, compliance-sensitive flows and audit-friendly delivery."
       },
       "highload": {
-        "title": "High-load & platformy",
-        "text": "Event-driven architektura, výkon, škálování, observabilita a operations."
+        "title": "High-load & platforms",
+        "text": "Event-driven architecture, performance, scalability, observability and operations."
       }
     },
     "areasBadge": {
@@ -240,17 +253,17 @@
     }
   },
   "Technology": {
-    "title": "Technologie",
-    "lead": "Moderní stack, produkčně orientované inženýrství a pragmatické volby podle constraintů.",
-    "sectionsTitle": "Oblasti",
-    "principlesTitle": "Principy",
+    "title": "Technology",
+    "lead": "Modern stack, production-first engineering, and pragmatic choices based on constraints.",
+    "sectionsTitle": "Technology areas",
+    "principlesTitle": "Principles",
     "principles": [
-      "Dodávat po malých krocích",
-      "Měřit a pozorovat",
-      "Automatizovat kvalitu",
-      "Navrhovat pro ownership",
-      "Snižovat operativní zátěž",
-      "Měřit dopad"
+      "Ship small increments",
+      "Make it observable",
+      "Automate quality",
+      "Design for ownership",
+      "Keep operational load low",
+      "Measure impact"
     ],
     "sections": {
       "backend": {
@@ -259,381 +272,381 @@
       },
       "frontend": {
         "title": "Frontend",
-        "text": "React, Next.js, TypeScript • design system • přístupnost • výkon."
+        "text": "React, Next.js, TypeScript • design systems • accessible UI • performance."
       },
       "mobile": {
         "title": "Mobile",
-        "text": "Pragmatická mobilní dodávka podle potřeby (hybrid / native podle constraintů)."
+        "text": "Pragmatic mobile delivery where needed (hybrid or native depending on constraints)."
+      },
+      "platform": {
+        "title": "Platform & Cloud",
+        "text": "Production-ready infrastructure, CI/CD and observability."
       },
       "data": {
         "title": "Data & search",
-        "text": "Postgres, ElasticSearch • datové pipeline • modely vhodné pro analytiku."
+        "text": "Postgres, ElasticSearch • data pipelines • analytics-friendly models."
       },
       "quality": {
         "title": "Quality engineering",
-        "text": "Automation-first • Playwright/Cypress • contract testing tam, kde se vyplatí."
-      },
-      "platform": {
-        "title": "Platforma & Cloud",
-        "text": "Infrastruktura pro produkci, CI/CD a observabilita."
+        "text": "Automation-first mindset • Playwright/Cypress • contract testing where it pays off."
       },
       "design": {
         "title": "Design",
-        "text": "Figma-driven delivery • UX prototypy • design system a komponenty."
+        "text": "Figma-driven delivery • UX prototypes • design systems and component libraries."
       }
     }
   },
   "Team": {
-    "title": "Tým",
-    "comingSoon": "Profily a detaily o vedení zveřejníme v únoru 2026."
+    "title": "Team",
+    "comingSoon": "Profiles & leadership details will be published in February 2026."
   },
   "Industries": {
-    "label": "Odbornost v oboru",
-    "title": "Hluboká znalost domény",
-    "subtitle": "v náročných odvětvích",
-    "description": "Nepíšeme jen kód – chápeme regulační prostředí, očekávání uživatelů a obchodní modely, které vedou k úspěchu.",
+    "label": "Industry Expertise",
+    "title": "Deep domain knowledge",
+    "subtitle": "in high-stakes industries",
+    "description": "We don't just write code—we understand the regulatory landscape, user expectations, and business models that drive success.",
     "valueProps": {
       "startups": {
-        "label": "Startupy",
-        "text": "Frakční CTO a prevence technického dluhu"
+        "label": "Startups",
+        "text": "Fractional CTO & Avoiding Tech Debt"
       },
       "smes": {
-        "label": "SME / Korporace",
-        "text": "Modernizace legacy systémů a rychlost bez režie"
+        "label": "SMEs / Enterprise",
+        "text": "Modernizing Legacy Systems & Velocity without Overhead"
       }
     },
     "fintech": {
       "name": "FinTech",
-      "tagline": "Budování budoucnosti financí",
-      "description": "Chápeme, že důvěra je měnou moderních financí. Naše systémy integrují ověření identity a real-time scoring pro automatizaci složitých hypotečních a bankovních procesů bez tření.",
-      "stats": "Zpracovaných transakcí",
+      "tagline": "Building the Future of Finance",
+      "description": "We recognize that trust is the currency of modern finance. Our systems integrate identity verification and real-time scoring to automate complex mortgage and banking flows without friction.",
+      "stats": "Transactions Processed",
       "highlights": [
-        "BankID Integrace",
-        "Hypotéky & Fincheck",
+        "BankID Integration",
+        "Mortgage & Fincheck",
         "PSD2/Open Banking",
         "Real-time Scoring"
       ]
     },
     "proptech": {
       "name": "PropTech",
-      "tagline": "Transformace nemovitostí",
-      "description": "Víme, že fragmentace dat brzdí inovace. Naše řešení sjednocují geoprostorové záznamy a standardizují inzerci pro podporu oceňování nové generace a vizuálního vyhledávání.",
-      "stats": "Spravovaných nemovitostí",
+      "tagline": "Transforming Real Estate",
+      "description": "We know that data fragmentation holds back innovation. Our solutions unify geospatial records and standardize listings to power next-gen valuations and visual search.",
+      "stats": "Properties Managed",
       "highlights": [
-        "Algoritmické oceňování (Valuo)",
-        "Geoprostorová data (Katastr)",
-        "RESO & Open Immo standardy",
-        "AI vizuální vyhledávání"
+        "Algorithm-driven Valuations",
+        "Geospatial Data (Cadastre)",
+        "RESO & Open Immo Standards",
+        "AI Visual Search"
       ]
     },
     "regtech": {
       "name": "RegTech",
-      "tagline": "Shoda s předpisy v DNA",
-      "description": "Věříme, že compliance by měla být akcelerátorem. Zabudováváme automatizované kontroly, digitální podpisy a úvěrové integrace přímo do uživatelské cesty pro hladký onboarding.",
-      "stats": "Zvýšení efektivity",
+      "tagline": "Compliance by Design",
+      "description": "We believe compliance should be an accelerator. We embed automated checks, digital signing, and credit integration directly into the user journey for frictionless onboarding.",
+      "stats": "Efficiency Gained",
       "highlights": [
-        "KYC/AML přes BankID",
+        "KYC/AML via BankID",
         "Fincheck",
-        "Digitální podpisové stopy",
-        "Integrace CRIF"
+        "Digital Signing Trails",
+        "CRIF Integration"
       ]
     },
     "ecosystems": {
-      "name": "Ekosystémy a platformy",
-      "tagline": "Propojování hodnotových řetězců",
-      "description": "Vidíme sílu propojených platforem. Naše jednotná identita a datové pipeliny propojují nesourodé sektory a umožňují škálovatelné realitní portály.",
-      "stats": "API interakce",
+      "name": "Ecosystems & Platforms",
+      "tagline": "Connecting Value Chains",
+      "description": "We see the power of connected platforms. Our unified identity and data pipelines bridge the gap between disparate sectors, enabling scalable property listing engines.",
+      "stats": "API Interactions",
       "highlights": [
-        "Mezioborové integrace",
-        "Platformy pro výpis nemovitostí",
-        "Jednotná identita",
-        "Škálovatelné datové pipeliny"
+        "Cross-sector Integrations",
+        "Property Listing Platforms",
+        "Unified Identity",
+        "Scalable Data Pipelines"
       ]
     },
     "specializations": {
-      "title": "Další specializace",
-      "description": "Expertíza napříč odvětvími, která přináší výsledky",
-      "cloud": "Cloudová řešení",
-      "distArch": "Distribuovaná architektura",
-      "scaling": "Ekosystémy",
-      "product": "Vývoj startupových produktů",
-      "ai": "Implementace AI",
-      "migration": "Migrace systémů"
+      "title": "Additional Specializations",
+      "description": "Cross-industry expertise that drives results",
+      "cloud": "Cloud Solutions",
+      "distArch": "Distributed Architecture",
+      "scaling": "Ecosystems",
+      "product": "Startup Product Development",
+      "ai": "AI Implementation",
+      "migration": "System Migration"
     }
   },
   "TechStack": {
-    "label": "Technologie",
-    "title": "Trhem prověřený stack",
-    "description": "Pracujeme s technologiemi, které pohánějí nejnáročnější aplikace světa. Žádné experimenty na váš účet – ověřené nástroje, ověřené výsledky.",
-    "cta": "Probrat vaše potřeby",
-    "statement": "Naši inženýři sledují vyvíjející se technologie a zároveň si udržují hlubokou expertízu v řešeních prověřených bojem. Pro každou práci volíme ten správný nástroj.",
+    "label": "Technology",
+    "title": "Market-tested stack",
+    "description": "We work with the technologies that power the world's most demanding applications. No experiments on your dime—proven tools, proven results.",
+    "cta": "Discuss Your Tech Needs",
+    "statement": "Our engineers stay current with evolving technologies while maintaining deep expertise in battle-tested solutions. We choose the right tool for each job.",
     "categories": {
-      "languages": "Jazyky & Frameworky",
-      "data": "Data & Úložiště",
+      "languages": "Languages & Frameworks",
+      "data": "Data & Storage",
       "cloud": "Cloud & DevOps",
-      "methodology": "Metodika & AI",
+      "methodology": "Methodology & AI",
       "design": "Design"
     }
   },
   "CaseStudies": {
-    "label": "Případové studie",
-    "title": "Prokázaný dopad",
-    "viewAll": "Zobrazit všechny projekty",
+    "label": "Case Studies",
+    "title": "Proven impact",
+    "viewAll": "View All Projects",
     "fintech": {
       "category": "FinTech",
-      "title": "Digitální hypotéka a Fincheck",
-      "challenge": "Tradiční žádosti o hypotéku vyžadovaly několik osobních návštěv a týdny ručního zpracování.",
-      "solution": "Integrovali jsme BankID pro okamžité KYC a vyvinuli 'Fincheck' pro automatizované posouzení finančního zdraví a online žádosti.",
-      "outcome": "První plně digitální hypotéka na trhu s okamžitou zpětnou vazbou o způsobilosti a kratší dobou do nabídky."
+      "title": "Digital Mortgage & Fincheck",
+      "challenge": "Traditional mortgage applications required multiple in-person visits and weeks of manual processing.",
+      "solution": "Integrated BankID for instant KYC and developed 'Fincheck' for automated financial health assessments and online applications.",
+      "outcome": "First-to-market digital mortgage flow in the region with instant eligibility feedback and reduced time-to-offer."
     },
     "proptech": {
       "category": "PropTech",
-      "title": "Národní realitní ekosystém (MLS)",
-      "challenge": "Realitnímu trhu chyběl sjednocený zdroj dat, což vedlo k fragmentaci a netransparentnosti pro makléře i kupující.",
-      "solution": "Vyvinuli jsme první komplexní Multiple Listing Service (MLS) integrovaný na národní Katastr nemovitostí.",
-      "outcome": "Vytvořili jsme jediný zdroj pravdy pro 10 000+ makléřů, umožňující bezproblémovou spolupráci a transparentnost trhu."
+      "title": "National Real Estate Ecosystem (MLS)",
+      "challenge": "The real estate market lacked a unified source of data, leading to fragmentation and lack of transparency for brokers and buyers.",
+      "solution": "Engineered the first comprehensive Multiple Listing Service (MLS) integrated with the national Land Registry (Katastr nemovitostí).",
+      "outcome": "Created a single source of truth for 10,000+ brokers, enabling seamless cooperation and transaction transparency."
     },
     "enterprise": {
       "category": "Enterprise",
-      "title": "Vyhledávání nemovitostí pomocí AI",
-      "challenge": "Uživatelé v tisících inzerátů obtížně hledali nemovitosti podle vizuálních preferencí nebo lokálních dat.",
-      "solution": "Implementovali jsme vizuální vyhledávání pomocí AI a rozšířenou realitu (AR) pro objevování nemovitostí přímo v terénu.",
-      "outcome": "Zvýšení zapojení uživatelů o 300 % díky intuitivnímu vyhledávání stylem 'namiř a uvidíš' a personalizovanému hledání."
+      "title": "AI-Powered Property Search",
+      "challenge": "Users struggled to find properties based on visual preference or location-specific data amidst thousands of listings.",
+      "solution": "Implemented AI-driven visual search for property styles and Augmented Reality (AR) for on-site property discovery.",
+      "outcome": "Increased user engagement by 3x through intuitive, 'point-and-see' property exploration and personalized search."
     },
     "testimonials": {
-      "text": "Inženýři z BLAiT se plynule integrovali do našeho týmu a doručili výsledky nad očekávání. Nejsou jen dodavateli – jsou partnery.",
+      "text": "BLAiT engineers integrated seamlessly with our team and delivered beyond expectations. They're not vendors—they're partners.",
       "author": "Sarah Chen",
       "role": "CTO, FinTech Startup",
-      "cta": "Začněte svůj úspěšný příběh"
+      "cta": "Start Your Success Story"
     }
   },
   "Contact": {
-    "label": "Kontakt",
-    "title": "Pojďme vybudovat něco skvělého",
-    "description": "Ať už potřebujete jednoho specialistu nebo celý tým, navrhneme spolupráci, která vyhovuje vašim potřebám a rozpočtu.",
-    "response": "Odpověď do 24 hodin",
-    "emailUs": "Napište nám",
-    "liveChat": "Živý chat",
-    "trustedBy": "Důvěřují nám",
+    "label": "Contact",
+    "title": "Let's build something great",
+    "description": "Whether you need a single specialist or a full team, we'll craft an engagement that fits your needs and budget.",
+    "response": "Response within 24 hours",
+    "emailUs": "Email us",
+    "liveChat": "Live Chat",
+    "trustedBy": "Trusted by",
     "badges": {
       "fintech": "FinTech",
       "proptech": "PropTech",
       "regtech": "RegTech",
       "enterprise": "Enterprise"
     },
-    "trusted": "Důvěřují nám lídři v oboru",
+    "trusted": "Trusted by industry leaders",
     "form": {
-      "name": "Jméno",
-      "namePlaceholder": "Jan Novák",
+      "name": "Name",
+      "namePlaceholder": "John Smith",
       "email": "Email",
-      "emailPlaceholder": "jan@firma.cz",
-      "company": "Společnost",
-      "companyPlaceholder": "Firma s.r.o.",
-      "projectType": "Typ projektu",
-      "projectTypePlaceholder": "Vyberte typ projektu",
-      "message": "Povězte nám o svém projektu",
-      "messagePlaceholder": "Co budujete? Jaké dovednosti potřebujete?",
-      "send": "Odeslat zprávu",
-      "sending": "Odesílám...",
-      "sent": "Zpráva odeslána!",
-      "sentDesc": "Ozveme se vám do 24 hodin.",
+      "emailPlaceholder": "john@company.com",
+      "company": "Company",
+      "companyPlaceholder": "Company Inc.",
+      "projectType": "Project Type",
+      "projectTypePlaceholder": "Select project type",
+      "message": "Tell us about your project",
+      "messagePlaceholder": "What are you building? What skills do you need?",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "sent": "Message Sent!",
+      "sentDesc": "We'll get back to you within 24 hours.",
       "types": {
-        "augmentation": "Partner pro produktové inženýrství",
-        "team": "Dedikovaný tým",
-        "project": "Projektová báze",
-        "consulting": "Technické konzultace"
+        "augmentation": "Product Engineering Partner",
+        "team": "Dedicated Team",
+        "project": "Project-Based",
+        "consulting": "Technical Consulting"
       }
     }
   },
   "About": {
-    "label": "O nás",
-    "title": "Inženýrští partneři, ne dodavatelé",
-    "description1": "Založili jsme BLAiT, abychom redefinovali standardy externí technické spolupráce. Odklonili jsme se od tradičních outsourcingových modelů, abychom odstranili nesprávně nastavené pobídky, komunikační mezery a \"loterii talentů\". Vybudovali jsme něco lepšího.",
-    "description2": "Naši inženýři pracují z evropských časových pásem s významným překryvem s pracovní dobou v EU i USA. Fungujeme pod přísnými právními rámcemi EU (GDPR) a přinášíme kulturní soulad, který přesahuje jazyk — nebereme jen tikety; zpochybňujeme požadavky, abychom stavěli lepší produkty.",
+    "label": "About Us",
+    "title": "Engineering partners, not vendors",
+    "description1": "We founded BLAiT to redefine the standard of external technical collaboration. We moved away from traditional outsourcing models to eliminate misaligned incentives, communication gaps, and the \"talent lottery.\" We built something better.",
+    "description2": "Our engineers work from European time zones with significant overlap with both EU and US business hours. We operate under strict EU legal frameworks (GDPR) and bring cultural alignment that goes beyond language—we don't just take tickets; we challenge requirements to build better products.",
     "stats": {
-      "timezone": "Pokrytí časových pásem",
-      "fluency": "Plynulá angličtina"
+      "timezone": "Time Zone Coverage",
+      "fluency": "English Fluency"
     },
     "values": {
       "excellence": {
-        "title": "Inženýrská excelence",
-        "desc": "Najímáme elitní seniory a samostatné mid-level inženýry. Žádní junioři, žádní stážisté. Investujeme do špičkové dodávky od prvního dne."
+        "title": "Engineering Excellence",
+        "desc": "We hire elite seniors and autonomous mid-level engineers. No juniors, no trainees. We invest in top-tier delivery from Day 1."
       },
       "transparent": {
-        "title": "Transparentní partnerství",
-        "desc": "Žádné černé skříňky. Plná viditelnost postupu, výzev a rozhodnutí."
+        "title": "Transparent Partnership",
+        "desc": "No black boxes. Full visibility into progress, challenges, and decisions."
       },
       "impact": {
-        "title": "Zaměření na obchodní dopad",
-        "desc": "Kód je prostředek, ne cíl. Úspěch měříme obchodními výsledky."
+        "title": "Business Impact Focus",
+        "desc": "Code is a means, not an end. We measure success by business outcomes."
       },
       "longterm": {
-        "title": "Dlouhodobé myšlení",
-        "desc": "Stavíme systémy, které mají vydržet a vyvíjet se. Žádné rychlé výhry, které vytvářejí technický dluh."
+        "title": "Long-term Thinking",
+        "desc": "We build systems meant to last and evolve. No quick wins that create tech debt."
       }
     }
   },
   "Process": {
-    "label": "Proces",
-    "title": "Jak pracujeme",
-    "description": "Ověřená metodika zdokonalená na mnoha projektech. Rychlá hodnota bez zkratek.",
+    "label": "Process",
+    "title": "How we work",
+    "description": "A proven methodology refined across multiple engagements. Fast time-to-value without cutting corners.",
     "steps": {
       "discovery": {
-        "title": "Discovery & Architektura",
-        "description": "Analyzujeme vaše technické prostředí a obchodní cíle, abychom definovali hranice systému ještě před napsáním jediného řádku kódu.",
+        "title": "Discovery & Architecture",
+        "description": "We analyze your technical landscape and business goals to define the system boundaries before a single line of code is written.",
         "details": [
-          "Analýza technického prostředí",
-          "Definice architektury",
-          "Sladění s obchodními cíli"
+          "Technical Landscape Analysis",
+          "Architecture Definition",
+          "Business Goal Alignment"
         ]
       },
       "matching": {
-        "title": "Architektonický soulad",
-        "description": "Neobsazujeme jen 'místa'. Sestavujeme seniorní crew s přesnou doménovou zkušeností pro exekuci definované architektury.",
+        "title": "Architectural Alignment",
+        "description": "We don’t just 'fill seats'. We assemble a senior crew with the exact domain experience to execute the defined architecture.",
         "details": [
-          "Mapování doménové expertízy",
-          "Verifikace seniory",
-          "Kulturní a technický fit"
+          "Domain Expertise Mapping",
+          "Senior-Led Verification",
+          "Cultural & Technical Fit"
         ]
       },
       "integration": {
-        "title": "Kvalita kódu & Code Review",
-        "description": "Každý řádek kódu prochází revizí. Vynucujeme standardy Clean Code a CI/CD best practices pro doručení bez dluhu.",
+        "title": "Code Quality & Peer Review",
+        "description": "Every line of code is peer-reviewed. We enforce Clean Code standards and CI/CD best practices to ensure zero-debt delivery.",
         "details": [
-          "Povinné Code Reviews",
-          "Principy Clean Code",
-          "Důsledné QA standardy"
+          "Mandatory Peer Reviews",
+          "Clean Code Principles",
+          "Rigorous QA Standards"
         ]
       },
       "delivery": {
-        "title": "Produkce & Evoluce",
-        "description": "Nasazujeme do produkce s jistotou. Prodáváme dlouhověkost, ne jen hodiny — stavíme systémy navržené tak, aby vydržely.",
+        "title": "Production & Evolution",
+        "description": "We ship to production with confidence. We sell longevity, not just hours—building systems designed to last.",
         "details": [
-          "Dodávka připravená pro produkci",
-          "Nastavení observability",
-          "Dlouhodobá udržitelnost"
+          "Production-Ready Delivery",
+          "Observability Setup",
+          "Long-term Maintainability"
         ]
       }
     },
     "models": {
-      "title": "Modely spolupráce",
-      "subtitle": "Flexibilní uspořádání podle vašich potřeb",
+      "title": "Engagement Models",
+      "subtitle": "Flexible arrangements to fit your needs",
       "augmentation": {
-        "title": "Partner pro produktové inženýrství",
-        "desc": "Jednotliví inženýři začlenění do vašeho týmu, pracující ve vašich hodinách, s vašimi nástroji."
+        "title": "Product Engineering Partner",
+        "desc": "Individual engineers embedded in your team, working your hours, using your tools."
       },
       "team": {
-        "title": "Dedikovaný tým",
-        "desc": "Celý tým s doplňujícími se dovednostmi, řízený jako soudržná jednotka."
+        "title": "Dedicated Team",
+        "desc": "A full squad with complementary skills, managed as a cohesive unit."
       },
       "project": {
-        "title": "Projektová báze",
-        "desc": "Poskytujeme komplexní realizaci projektů v definovaném rozsahu a časovém harmonogramu. V závislosti na vašich požadavcích nabízíme modely účtování s pevnou cenou nebo hodinovou sazbou, abychom zajistili plný soulad s vaším rozpočtem."
+        "title": "Project-Based",
+        "desc": "We provide end-to-end project execution within a defined scope and timeline. Depending on your requirements, we offer both Fixed-Price or Hourly rates billing models to ensure full alignment with your budgetary needs."
       }
     }
   },
   "FAQ": {
-    "title": "Časté dotazy",
+    "title": "FAQ",
     "items": {
       "start": {
-        "question": "Jak rychle můžete začít?",
-        "answer": "Obvykle začínáme do 48 hodin od úvodní konzultace. Náš proces je nastaven tak, abychom se co nejrychleji integrovali do vašeho týmu."
+        "question": "How quickly can you start?",
+        "answer": "We typically start within 48 hours of our initial consultation. Our process is streamlined to get us integrated with your team as fast as possible."
       },
       "timezone": {
-        "question": "Pracujete v mém časovém pásmu?",
-        "answer": "Ano, sídlíme v EU, ale pracujeme napříč americkými a evropskými časovými pásmy. Zaručujeme alespoň 4 hodiny překryvu s vaší hlavní pracovní dobou."
+        "question": "Do you work in my time zone?",
+        "answer": "Yes, we are based in the EU but work across US and European time zones. We ensure at least 4 hours of overlap with your core working hours."
       },
       "pricing": {
-        "question": "Jaký je váš cenový model?",
-        "answer": "Nabízíme modely nákladově efektivního doručení (Cost-Efficient Delivery), včetně partnerství pro produktové inženýrství a projektových cen. Zaměřujeme se na optimalizovanou návratnost investic (ROI) dodáváním vysoce kvalitního kódu, který snižuje dlouhodobé náklady na údržbu."
+        "question": "What is your pricing model?",
+        "answer": "We offer Cost-Efficient Delivery models including product engineering partnerships and project-based fixed pricing. We focus on Optimized ROI by delivering high-quality code that reduces long-term maintenance costs."
       },
       "pm": {
-        "question": "Poskytujete projektové manažery?",
-        "answer": "Ano, pokud je to potřeba. Nicméně naši seniorní inženýři jsou samoorganizovaní a schopní pracovat přímo s vašimi Product Ownery."
+        "question": "How do you handle legacy code modernization?",
+        "answer": "We take a pragmatic approach to legacy debt. Our team can either incrementally refactor your existing monolith into microservices or build new high-performance features that integrate seamlessly with your current stack."
       },
       "security": {
-        "question": "Jsou vaše inženýrské procesy v souladu se standardy FinTech?",
-        "answer": "Ano. Od prvního dne integrujeme bezpečné SDLC, best practices OWASP a automatizované skenování bezpečnosti. Náš tým má zkušenosti s budováním systémů pro regulovaná prostředí jako GDPR, PSD2 a ISO 27001."
+        "question": "Is your engineering compliant with FinTech standards?",
+        "answer": "Yes. We incorporate secure SDLC, OWASP best practices, and automated security scanning from day one. Our team is experienced in building systems for regulated environments like GDPR, PSD2, and ISO 27001."
       }
     }
   },
   "Metadata": {
-    "title": "BLAiT Engineering | Vývoj softwaru a produktové inženýrství",
-    "description": "Expert na vývoj softwaru a partnerství v produktovém inženýrství. Inženýrské talenty pro FinTech, PropTech a RegTech. Outsourcing IT na podnikové úrovni."
+    "title": "BLAiT Engineering | Product Engineering & IT Staffing Partner",
+    "description": "Expert Software Development and IT Staffing. Precision-matched engineering talent for FinTech, PropTech, and RegTech. Enterprise-grade IT outsourcing and strategic engineering partnerships."
   },
   "Security": {
     "hero": {
-      "label": "Bezpečnost a shoda",
-      "title": "Bezpečnost skrze design",
-      "subtitle": "Bezpečnost nelepíme nakonec. Je zapečená v každém commitu, každém kontejneru a každém cloudu zdroji, na který sáhneme."
+      "label": "Security & Compliance",
+      "title": "Security by Design",
+      "subtitle": "We don’t bolt security on at the end. It’s baked into every commit, every container, and every cloud resource we touch."
     },
     "compliance": {
-      "title": "Shoda a Standardy",
-      "description": "Naše interní procesy jsou navrženy tak, aby ladily s frameworky, na kterých vám záleží. Jsme sice engineering partner, ne hosting provider, ale fungujeme s přísností regulované entity.",
+      "title": "Compliance & Standards",
+      "description": "Our internal processes are designed to align with the frameworks that matter to you. While we are an engineering partner, not a hosting provider, we operate with the rigor of a regulated entity.",
       "items": {
         "gdpr": {
-          "title": "V souladu s GDPR",
-          "text": "Všichni naši inženýři a operace jsou v EU/EHP nebo ekvivalentních jurisdikcích. Smlouvy o zpracování dat (DPA) jsou standardem každé spolupráce."
+          "title": "GDPR Compliant",
+          "text": "All our engineers and operations are based in the EU/EEA or equivalent jurisdictions. Data Protection Agreements (DPA) are standard in every engagement."
         },
         "iso": {
-          "title": "Dle ISO 27001",
-          "text": "Dodržujeme best practices pro řízení informační bezpečnosti, včetně dokumentovaných přístupových práv, plánů reakce na incidenty a správy aktiv."
+          "title": "ISO 27001 Aligned",
+          "text": "We follow information security management best practices, including documented access controls, incident response plans, and asset management."
         },
         "soc2": {
-          "title": "Připravenost na SOC2",
-          "text": "Pro klienty z USA se řídíme kritérii SOC2 Trust Services. Implementujeme change management, logický přístup a monitoring controls jako standard."
+          "title": "SOC2 Readiness",
+          "text": "For US clients, we align with SOC2 Trust Services Criteria. We implement change management, logical access, and monitoring controls by default."
         }
       }
     },
     "infrastructure": {
-      "title": "Bezpečnost Infrastruktury",
-      "description": "Bezpečné základy pro škálovatelné systémy.",
+      "title": "Infrastructure Security",
+      "description": "Secure foundations for scalable systems.",
       "items": {
         "aws": {
-          "title": "Bezpečnost cloudu",
-          "text": "Používáme AWS/GCP best practices: Well-Architected Framework, least-privilege IAM role a oddělené VPC pro prostředí."
+          "title": "Cloud Security",
+          "text": "We use AWS/GCP best practices: Well-Architected Framework, least-privilege IAM roles, and separate VPCs for environments."
         },
         "encryption": {
-          "title": "Šifrování všude",
-          "text": "Data šifrujeme v klidu (AES-256) i při přenosu (TLS 1.2+). Tajemství spravujeme pomocí enterprise trezorů (AWS Secrets Manager, HashiCorp Vault)."
+          "title": "Encryption Everywhere",
+          "text": "Data is encrypted at rest (AES-256) and in transit (TLS 1.2+). We manage secrets using enterprise-grade vaults (AWS Secrets Manager, HashiCorp Vault)."
         },
         "access": {
-          "title": "Zero Trust přístup",
-          "text": "Žádné VPN, žádná sdílená hesla. K infrastruktuře přistupujeme přes krátkodobé přihlašovací údaje a identity-aware proxy."
+          "title": "Zero Trust Access",
+          "text": "No VPNs, no shared passwords. We access infrastructure via short-lived credentials and identity-aware proxies."
         }
       }
     },
     "sdlc": {
-      "title": "Bezpečný vývojový cyklus",
-      "description": "Kód, který se sám brání.",
+      "title": "Secure Development Lifecycle",
+      "description": "Code that defends itself.",
       "items": {
         "review": {
-          "title": "Povinné Code Review",
-          "text": "Žádný kód nejde do produkce bez schválení alespoň jednoho seniorního inženýra. Během review kontrolujeme OWASP Top 10 zranitelnosti."
+          "title": "Mandatory Peer Review",
+          "text": "No code reaches production without at least one senior engineer approval. We check for OWASP Top 10 vulnerabilities during review."
         },
         "scanning": {
-          "title": "Automatizované skenování",
-          "text": "CI/CD pipeline obsahují SAST (statická analýza), DAST (dynamická analýza) a skenování závislostí pro včasné odhalení chyb."
+          "title": "Automated Scanning",
+          "text": "CI/CD pipelines include SAST (Static Analysis), DAST (Dynamic Analysis), and specialized dependency scanning to catch vulnerabilities early."
         },
         "supply": {
-          "title": "Bezpečnost dodavatelského řetězce",
-          "text": "Pinnujeme verze závislostí, používáme podepsané commity a pravidelně auditujeme knihovny třetích stran na CVE."
+          "title": "Supply Chain Security",
+          "text": "We pin dependency versions, use signed commits, and regularly audit third-party libraries for CVEs."
         }
       }
     },
     "operational": {
-      "title": "Provozní bezpečnost",
+      "title": "Operational Security",
       "items": [
-        "Přísné NDA & dohody o ochraně IP",
-        "Kompletní prověrky (Background Checks)",
-        "Spravovaná zařízení (MDM)",
-        "Kultura bezpečnostního povědomí"
+        "Strict NDA & IP Protection Agreements",
+        "Comprehensive Background Checks",
+        "Managed Devices (MDM)",
+        "Security Awareness Culture"
       ]
     },
     "cta": {
-      "title": "Máte specifické požadavky na shodu s předpisy?",
-      "text": "Rádi probereme naše bezpečnostní protokoly a pomůžeme vám s požadavky na hodnocení dodavatelů.",
-      "button": "Kontaktovat bezpečnostní tým"
+      "title": "Have specific compliance needs?",
+      "text": "We are happy to discuss our security protocols and align with your vendor assessment requirements.",
+      "button": "Contact Security Team"
     }
   }
 }

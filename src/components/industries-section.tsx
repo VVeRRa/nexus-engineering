@@ -2,8 +2,8 @@
 
 import { Section } from "./ui/section";
 import { SectionHeader } from "./ui/section-header";
-
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 
 export function IndustriesSection() {
   const t = useTranslations("Industries");
@@ -11,7 +11,7 @@ export function IndustriesSection() {
   const industries = [
     {
       name: t("fintech.name"),
-      color: "var(--color-primary)",
+      color: "#ffffff",
       tagline: t("fintech.tagline"),
       description: t("fintech.description"),
       highlights: (t.raw("fintech.highlights") as string[]) || [],
@@ -19,7 +19,7 @@ export function IndustriesSection() {
     },
     {
       name: t("proptech.name"),
-      color: "var(--color-secondary)",
+      color: "#ffffff",
       tagline: t("proptech.tagline"),
       description: t("proptech.description"),
       highlights: (t.raw("proptech.highlights") as string[]) || [],
@@ -27,7 +27,7 @@ export function IndustriesSection() {
     },
     {
       name: t("regtech.name"),
-      color: "var(--color-primary)",
+      color: "#ffffff",
       tagline: t("regtech.tagline"),
       description: t("regtech.description"),
       highlights: (t.raw("regtech.highlights") as string[]) || [],
@@ -35,7 +35,7 @@ export function IndustriesSection() {
     },
     {
       name: t("ecosystems.name"),
-      color: "var(--color-secondary)",
+      color: "#ffffff",
       tagline: t("ecosystems.tagline"),
       description: t("ecosystems.description"),
       highlights: (t.raw("ecosystems.highlights") as string[]) || [],
@@ -52,154 +52,145 @@ export function IndustriesSection() {
     { name: t("specializations.migration"), icon: "migrate" },
   ];
 
+  const containerVars = {
+    initial: { opacity: 0 },
+    whileInView: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVars = {
+    initial: { y: 40, opacity: 0 },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        ease: [0.2, 0.65, 0.3, 0.9] as any,
+      },
+    },
+  };
+
   return (
-
-    <Section
-      id="industries"
-      background={
-        <div
-          className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full opacity-0 -z-10"
-          style={{ background: 'radial-gradient(circle, var(--color-blue-100) 0%, transparent 70%)' }}
+    <Section id="industries" className="bg-black">
+      <div className="container relative z-10">
+        {/* Section Header */}
+        <SectionHeader
+          align="center"
+          label={t("label")}
+          title={t("title")}
+          description={t("description")}
+          className="mb-16"
         />
-      }
-    >
-      {/* Section Header */}
-      <SectionHeader
-        align="center"
-        label={<span className="text-[var(--color-secondary)]">{t("label")}</span>}
-        title={<>{t("title")}<br /><span className="text-[var(--color-text-secondary)]">{t("subtitle")}</span></>}
-        description={t("description")}
-        className="mb-12"
-      />
 
-      {/* Value Props Legend */}
-      <div className="max-w-4xl mx-auto mb-16 grid md:grid-cols-2 gap-6">
-        <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-2xl p-6 relative overflow-hidden group hover:border-[var(--color-primary)] transition-colors duration-300">
-          <div className="absolute top-0 right-0 w-24 h-24 bg-[var(--color-primary)]/5 rounded-bl-[100px] -mr-4 -mt-4 transition-transform group-hover:scale-110" />
-          <span className="relative z-10 text-xs font-bold text-[var(--color-primary)] uppercase tracking-wider block mb-2">{t("valueProps.startups.label")}</span>
-          <p className="relative z-10 text-lg font-medium text-[var(--color-ink)]">{t("valueProps.startups.text")}</p>
-        </div>
-        <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-2xl p-6 relative overflow-hidden group hover:border-[var(--color-secondary)] transition-colors duration-300">
-          <div className="absolute top-0 right-0 w-24 h-24 bg-[var(--color-secondary)]/5 rounded-bl-[100px] -mr-4 -mt-4 transition-transform group-hover:scale-110" />
-          <span className="relative z-10 text-xs font-bold text-[var(--color-secondary)] uppercase tracking-wider block mb-2">{t("valueProps.smes.label")}</span>
-          <p className="relative z-10 text-lg font-medium text-[var(--color-ink)]">{t("valueProps.smes.text")}</p>
-        </div>
-      </div>
+        {/* Industries Grid */}
+        <motion.div
+          variants={containerVars}
+          initial="initial"
+          whileInView="whileInView"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid md:grid-cols-2 gap-px bg-white/10 border border-white/10 overflow-hidden"
+        >
 
-      {/* Industries Grid */}
-      <div className="grid md:grid-cols-2 gap-8 animate-on-scroll stagger-fly-children">
-        {industries.map((industry, index) => (
-          <div
-            key={index}
-            className={`group relative rounded-3xl overflow-hidden bg-gradient-to-br from-[var(--color-card-from)] ${index % 2 === 0 ? "to-[var(--color-card-to-blue)] border-[var(--color-card-border-blue)]" : "to-[var(--color-card-to-green)] border-[var(--color-card-border-green)]"
-              } border p-8 md:p-10 lg:p-12 hover:shadow-xl transition-all duration-300`}
-          >
-            <div className="flex items-start justify-between mb-8">
-              <div>
-                {/* Color Accent Bar */}
-                <div
-                  className="w-12 h-1 rounded-full mb-4"
-                  style={{ background: industry.color }}
-                />
-                <h3
-                  className="text-3xl md:text-4xl text-[var(--color-ink)] mb-2"
-                  style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
-                >
+          {industries.map((industry, index) => (
+            <motion.div
+              key={index}
+              variants={itemVars}
+              className="group relative bg-[#050505] p-10 md:p-14 transition-all duration-700 overflow-hidden hover:bg-[#0a0a0a]"
+            >
+              {/* Glow Aura */}
+              <div
+                className="absolute -top-32 -right-32 w-80 h-80 blur-[120px] opacity-0 group-hover:opacity-20 transition-opacity duration-700 pointer-events-none"
+                style={{ background: industry.color }}
+              />
+
+              <div className="relative z-10">
+                <div className="flex items-center gap-4 mb-8 text-white/50">
+                  <div className="w-10 h-px bg-white/10 group-hover:w-16 group-hover:bg-white/40 transition-all duration-700" />
+                  <span className="text-[10px] font-bold tracking-[0.4em] uppercase">
+                    {industry.tagline}
+                  </span>
+                </div>
+
+                <h3 className="text-5xl md:text-6xl font-black text-white mb-8 tracking-tighter">
                   {industry.name}
                 </h3>
-                <p
-                  className="text-sm uppercase tracking-widest font-bold"
-                  style={{ color: industry.color, fontFamily: "var(--font-mono)" }}
-                >
-                  {industry.tagline}
+
+                <p className="text-muted text-lg mb-12 leading-tight tracking-tight font-medium">
+                  {industry.description}
                 </p>
-              </div>
 
-              {/* Stats Badge */}
-              <div className="text-right">
-                <div
-                  className="text-3xl text-[var(--color-ink)]"
-                  style={{ fontFamily: "var(--font-display)", fontWeight: 800 }}
-                >
-                  {industry.stats.value}
-                </div>
-                <div
-                  className="text-xs text-slate-400"
-                  style={{ fontFamily: "var(--font-mono)" }}
-                >
-                  {industry.stats.label}
+                {/* Highlights */}
+                <div className="grid sm:grid-cols-2 gap-6 pb-2">
+                  {industry.highlights.map((highlight: string, hIndex: number) => (
+                    <div key={hIndex} className="flex items-center gap-4">
+                      <div className="w-1.5 h-1.5 rounded-full bg-white/10 group-hover:bg-white/40 transition-all duration-700" />
+                      <span className="text-[10px] font-bold tracking-widest text-white/50 uppercase">{highlight}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
-            </div>
-
-            {/* Description */}
-            <p className="text-[var(--color-ink)] mb-8 leading-relaxed">
-              {industry.description}
-            </p>
-
-            {/* Highlights */}
-            {industry.highlights && industry.highlights.length > 0 && (
-              <ul className="grid sm:grid-cols-2 gap-3">
-                {industry.highlights.map((highlight: string, hIndex: number) => (
-                  <li
-                    key={hIndex}
-                    className="flex items-center gap-3 text-[var(--color-ink)]"
-                  >
-                    <span
-                      className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
-                      style={{ background: `color-mix(in srgb, ${industry.color}, transparent 85%)` }}
-                    >
-                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                        <path
-                          d="M2 6L5 9L10 3"
-                          stroke={industry.color}
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </span>
-                    <span className="text-sm font-medium">{highlight}</span>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        ))}
-      </div>
-
-      {/* Specializations */}
-      <div className="mt-20 pt-16 border-t border-slate-100 dark:border-slate-800">
-        <div className="flex flex-col items-center text-center gap-6 mb-10">
-          <h3
-            className="text-2xl text-[var(--color-ink)]"
-            style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
-          >
-            {t("specializations.title")}
-          </h3>
-          <p className="text-[var(--color-text-secondary)]">
-            {t("specializations.description")}
-          </p>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {specializations.map((spec, index) => (
-            <div
-              key={index}
-              className="flex items-center justify-center p-5 rounded-xl border border-[var(--color-border)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-default bg-[var(--color-surface)]"
-            >
-              <div className="text-center">
-                <span
-                  className="block text-sm text-[var(--color-ink)] font-medium"
-                  style={{ fontFamily: "var(--font-display)" }}
-                >
-                  {spec.name}
-                </span>
-              </div>
-            </div>
+            </motion.div>
           ))}
+        </motion.div>
+
+        {/* Specializations & Value Props */}
+        <div className="mt-24 pt-16 border-t border-white/5">
+          <div className="grid lg:grid-cols-2 gap-24">
+            {/* Legend/Value Props */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="space-y-12"
+            >
+              <h4 className="text-3xl font-bold text-white tracking-tight">
+                {t("valueProps.startups.label")} & {t("valueProps.smes.label")}
+              </h4>
+              <div className="grid gap-6">
+                <div className="p-10 bg-white/[0.01] border border-white/5 rounded-3xl hover:bg-white/[0.03] transition-colors group">
+                  <p className="text-white/40 group-hover:text-white/70 transition-colors text-lg font-light leading-relaxed">
+                    {t("valueProps.startups.text")}
+                  </p>
+                </div>
+                <div className="p-10 bg-white/[0.01] border border-white/5 rounded-3xl hover:bg-white/[0.03] transition-colors group">
+                  <p className="text-white/40 group-hover:text-white/70 transition-colors text-lg font-light leading-relaxed">
+                    {t("valueProps.smes.text")}
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Specializations Tags */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h4 className="text-3xl font-bold text-white mb-12 tracking-tight">
+                {t("specializations.title")}
+              </h4>
+              <div className="flex flex-wrap gap-4">
+                {specializations.map((spec, index) => (
+                  <motion.div
+                    key={index}
+                    whileHover={{ scale: 1.05 }}
+                    className="px-8 py-4 rounded-full border border-white/5 bg-white/[0.02] text-[11px] font-mono tracking-widest text-white/50 hover:text-white/90 hover:border-white/20 transition-all uppercase"
+                  >
+                    {spec.name}
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </Section>
   );
 }
+

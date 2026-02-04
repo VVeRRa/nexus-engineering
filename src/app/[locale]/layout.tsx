@@ -8,7 +8,7 @@ import { JsonLd } from "@/components/JsonLd";
 
 const geistSans = Geist({
   subsets: ["latin"],
-  variable: "--font-body",
+  variable: "--font-sans",
   display: "swap",
 });
 
@@ -86,6 +86,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
+import { SmoothScroll } from "@/components/SmoothScroll";
+
 export default async function RootLayout({
   children,
   params
@@ -98,16 +100,18 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-flowing-ribbon`} suppressHydrationWarning>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
-            enableSystem
+            defaultTheme="dark"
+            enableSystem={false}
             disableTransitionOnChange
           >
             <JsonLd locale={locale} />
-            {children}
+            <SmoothScroll>
+              {children}
+            </SmoothScroll>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

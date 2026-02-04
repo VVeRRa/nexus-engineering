@@ -29,104 +29,65 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-[var(--color-paper)] pt-20 pb-8 border-t border-[var(--color-border)] transition-colors duration-300 relative z-50">
-      <div className="container">
+    <footer className="bg-black pt-32 pb-16 border-t border-white/5 transition-colors duration-300 relative z-50">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Main Footer Content */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-20 pb-24">
           {/* Brand Column */}
-          <div className="lg:col-span-2">
-            <a href="#" className="flex items-center gap-2 mb-6">
-              <div className="text-2xl tracking-tighter font-extrabold text-[var(--color-ink)]" style={{ fontFamily: "var(--font-display)" }}>
-                BLAiT<span className="text-[var(--color-primary)]">.</span>
+          <div className="lg:col-span-1">
+            <a href="#" className="inline-block mb-10">
+              <div className="text-3xl tracking-tighter font-black text-white">
+                BLAiT<span className="text-white opacity-20">.</span>
               </div>
             </a>
-            <p className="text-[var(--color-ink)] mb-6 max-w-sm leading-relaxed">
+            <p className="text-white/30 mb-8 max-w-xs leading-relaxed text-sm font-medium">
               {t("brandDesc")}
             </p>
             <a
               href="mailto:sales@blait.eu"
-              className="inline-flex items-center gap-2 text-[var(--color-secondary)] hover:text-blue-700 transition-colors font-medium"
+              className="text-white/40 font-bold text-[11px] tracking-[0.3em] hover:text-white transition-all duration-300 uppercase"
             >
-              sales@blait.eu
+              SALES@BLAIT.EU
             </a>
           </div>
 
-          {/* Services Links */}
-          <div>
-            <h4
-              className="text-[var(--color-ink)] font-bold mb-5"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              {t("services")}
-            </h4>
-            <ul className="space-y-3">
-              {footerLinks.services.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-[var(--color-ink)] hover:scale-110 origin-left inline-block transition-transform text-sm"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company Links */}
-          <div>
-            <h4
-              className="text-[var(--color-ink)] font-bold mb-5"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              {t("company")}
-            </h4>
-            <ul className="space-y-3">
-              {footerLinks.company.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-[var(--color-ink)] hover:scale-110 origin-left inline-block transition-transform text-sm"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Industries Links */}
-          <div>
-            <h4
-              className="text-[var(--color-ink)] font-bold mb-5"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              {t("industries")}
-            </h4>
-            <ul className="space-y-3">
-              {footerLinks.industries.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-[var(--color-ink)] hover:scale-110 origin-left inline-block transition-transform text-sm"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {[
+            { title: t("services"), links: footerLinks.services },
+            { title: t("industries"), links: footerLinks.industries },
+            { title: t("company"), links: footerLinks.company }
+          ].map((col, i) => (
+            <div key={i}>
+              <h4 className="text-[10px] font-mono tracking-[0.3em] text-white/30 uppercase mb-8">
+                {col.title}
+              </h4>
+              <ul className="space-y-4">
+                {col.links.map((link, index) => (
+                  <li key={index}>
+                    <a
+                      href={link.href}
+                      className="text-white/40 hover:text-white transition-colors text-sm"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-[var(--color-ink)]">
+        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-8">
+          <p className="text-[10px] font-mono tracking-widest text-white/50 uppercase">
             &copy; {currentYear} {t("rights")}
           </p>
-
-
+          <div className="flex gap-8">
+            <a href="#" className="text-[10px] font-mono tracking-widest text-white/50 uppercase hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="text-[10px] font-mono tracking-widest text-white/50 uppercase hover:text-white transition-colors">Terms of Service</a>
+          </div>
         </div>
       </div>
     </footer>
+
   );
 }

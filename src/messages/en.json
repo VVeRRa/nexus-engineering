@@ -55,7 +55,8 @@
     "highlights": {
       "h1": {
         "badge": "Solution-first",
-        "title": "Senior-Led Software Development & Product Engineering",
+        "titlePart1": "Senior-Led Software Development",
+        "titlePart2": "Product Engineering",
         "text": "We propose the smallest team shape that unblocks progress — and scale only when it pays off."
       },
       "h2": {
@@ -127,11 +128,18 @@
         "API-First Design & Integration Strategy",
         "PropTech Ecosystems & Digital Identity"
       ]
+    },
+    "heroChunks": {
+      "strategic": "Strategic Engineering",
+      "architecting": "Architecting Value",
+      "velocity": "Engineering Velocity",
+      "scale": "Built to Scale"
     }
   },
   "Services": {
     "title": "Services",
-    "lead": "From strategic leadership to hands-on implementation, we provide the technical expertise you need.",
+    "leadTitle": "From strategic leadership to hands-on implementation",
+    "leadText": "We provide the technical expertise you need.",
     "list": {
       "leadership": {
         "title": "IT Leadership & CTO-as-a-Service",
@@ -212,7 +220,11 @@
       "Data-heavy integrations and APIs",
       "Cloud & DevOps (Kubernetes, IaC, observability)",
       "QA automation & quality engineering",
-      "Design systems & UX delivery"
+      "Design systems & UX delivery",
+      "frontend-desing",
+      "3d-web-experience",
+      "ui-ux-pro-max",
+      "scroll-experience"
     ],
     "areas": {
       "proptech": {

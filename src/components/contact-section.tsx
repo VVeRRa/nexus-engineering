@@ -16,9 +16,33 @@ const initialState: ContactFormState = {
   success: false,
 };
 
+import { motion } from "framer-motion";
+
 export function ContactSection() {
   const t = useTranslations("Contact");
   const [state, formAction, isPending] = useActionState(sendEmail, initialState);
+
+  const containerVars = {
+    initial: { opacity: 0 },
+    whileInView: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVars = {
+    initial: { y: 20, opacity: 0 },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        ease: [0.2, 0.65, 0.3, 0.9] as any,
+      },
+    },
+  };
 
   const {
     register,
@@ -44,7 +68,6 @@ export function ContactSection() {
     if (data.projectType) formData.append("projectType", data.projectType);
     formData.append("message", data.message);
 
-    // Wrap in transition to ensure useActionState updates correctly if called manually
     startTransition(() => {
       formAction(formData);
     });
@@ -53,174 +76,189 @@ export function ContactSection() {
   return (
     <Section
       id="contact"
-      background={
-        <div
-          className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full opacity-0 -z-10 hidden md:block"
-          style={{ background: 'radial-gradient(circle, var(--color-green-100) 0%, transparent 70%)' }}
-        />
-      }
+      className="pb-24"
     >
-      <div className="flex flex-col md:grid md:grid-cols-2 gap-10 lg:gap-24 animate-on-scroll stagger-fly-children">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 gap-20">
         {/* Left Column - Info */}
-        <div className="w-full min-w-0">
+        <motion.div
+          variants={containerVars}
+          initial="initial"
+          whileInView="whileInView"
+          viewport={{ once: true, margin: "-100px" }}
+          className="w-full min-w-0"
+        >
           <SectionHeader
-            label={<span className="text-[var(--color-secondary)]">{t("label")}</span>}
+            label={t("label")}
             title={t("title")}
             description={t("description")}
-            className="mb-12 break-words"
+            className="mb-12"
           />
 
-          <div className="space-y-6">
-            <a href="mailto:sales@blait.eu" className="block group">
-              <div className="bg-gradient-to-br from-[var(--color-card-from)] to-[var(--color-card-to-green)] border border-[var(--color-card-border-green)] rounded-3xl p-3 md:p-8 hover:shadow-lg transition-all duration-300 shadow-sm md:shadow-md">
-                <div className="flex items-center gap-4 md:gap-6">
-                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-100 flex items-center justify-center text-[var(--color-secondary)] group-hover:scale-110 transition-transform duration-300 shrink-0">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M22 6l-10 7L2 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <h3 className="text-lg md:text-xl font-bold text-[var(--color-ink)] mb-1 truncate">{t("emailUs")}</h3>
-                    <p className="text-slate-400 truncate">sales@blait.eu</p>
-                  </div>
+          <motion.div variants={itemVars} className="space-y-6">
+            <a href="mailto:sales@blait.eu" className="group block items-center p-12 bg-white/[0.02] border border-white/5 rounded-3xl hover:bg-white/[0.04] transition-all duration-700">
+              <div className="flex items-center gap-8">
+                <div className="w-16 h-16 rounded-full bg-white/[0.03] border border-white/10 flex items-center justify-center text-white/40 group-hover:scale-110 group-hover:text-white group-hover:border-white/20 transition-all duration-700 shrink-0">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M22 6l-10 7L2 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
+                <div className="min-w-0">
+                  <h3 className="text-2xl font-black text-white mb-2 tracking-tight transition-colors">{t("emailUs")}</h3>
+                  <p className="text-muted truncate text-xl group-hover:text-white transition-colors">sales@blait.eu</p>
                 </div>
               </div>
             </a>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-start gap-3 md:flex-row md:items-center md:gap-4 text-sm mt-12 text-[var(--color-ink)]">
-            <span className="font-bold flex-shrink-0">{t("trustedBy")}</span>
-            <div className="flex flex-wrap gap-2 opacity-100 w-full">
-              {/* Placeholders for logos */}
-              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)] whitespace-nowrap">{t("badges.fintech")}</div>
-              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)] whitespace-nowrap">{t("badges.proptech")}</div>
-              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)] whitespace-nowrap">{t("badges.regtech")}</div>
-              <div className="h-8 px-3 rounded-md flex items-center justify-center text-xs font-bold bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-ink)] whitespace-nowrap">{t("badges.enterprise")}</div>
+          <motion.div variants={itemVars} className="mt-16">
+            <h4 className="text-[10px] font-bold tracking-[0.4em] text-white/50 uppercase mb-10">{t("trustedBy")}</h4>
+            <div className="flex flex-wrap gap-4">
+              {[t("badges.fintech"), t("badges.proptech"), t("badges.regtech"), t("badges.enterprise")].map((badge) => (
+                <motion.div
+                  key={badge}
+                  whileHover={{ scale: 1.05, borderColor: "rgba(255,255,255,0.2)" }}
+                  className="px-6 py-2.5 rounded-full border border-white/5 text-[9px] font-bold tracking-widest text-white/30 uppercase cursor-default transition-all duration-300"
+                >
+                  {badge}
+                </motion.div>
+              ))}
             </div>
-          </div>
-
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Right Column - Form */}
-        <div className="relative w-full min-w-0">
-          <div className="bg-[var(--color-surface)] rounded-3xl p-3 md:p-10 shadow-lg md:shadow-xl border border-[var(--color-border)] relative overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+          className="relative"
+        >
+          <div className="bg-[#050505] border border-white/5 p-12 md:p-16 relative overflow-hidden group">
+            {/* Subtle Glow */}
+            <div className="absolute -top-40 -right-40 w-96 h-96 bg-white/[0.01] blur-[120px] transition-all duration-1000" />
 
             {state.success ? (
-              <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[400px] text-center">
-                <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-6 animate-fade-in">
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="flex flex-col items-center justify-center min-h-[500px] text-center"
+              >
+                <div className="w-24 h-24 bg-white/[0.05] text-white rounded-full flex items-center justify-center mb-10">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                 </div>
-                <h3 className="text-2xl text-[var(--color-ink)] font-bold mb-2">{t("form.sent")}</h3>
-                <p className="text-[var(--color-ink)]">{t("form.sentDesc")}</p>
-              </div>
+                <h3 className="text-4xl font-black text-white mb-6 tracking-tighter">{t("form.sent")}</h3>
+                <p className="text-muted text-xl leading-relaxed max-w-sm">{t("form.sentDesc")}</p>
+              </motion.div>
             ) : (
-              <form onSubmit={handleSubmit(onSubmit)} className="relative z-10 space-y-5">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-10">
                 {state.message && !state.success && (
-                  <div className="p-4 rounded-xl bg-red-50 border border-red-100 text-red-600 text-sm">
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="p-5 bg-white/[0.05] border border-white/10 text-white/80 text-xs font-bold tracking-widest uppercase text-center"
+                  >
                     {state.message}
-                  </div>
+                  </motion.div>
                 )}
-                <div className="flex flex-col md:grid md:grid-cols-2 gap-5">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
+                <div className="grid md:grid-cols-2 gap-10">
+                  <div className="space-y-4">
+                    <label className="text-[10px] font-bold tracking-[0.4em] text-white/50 uppercase ml-2">
                       {t("form.name")}
                     </label>
                     <input
                       {...register("name")}
-                      type="text"
-                      id="name"
-                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] placeholder:opacity-50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all min-w-0"
+                      className="w-full bg-white/[0.02] border border-white/10 text-white placeholder:text-white/10 focus:border-white/40 focus:bg-white/[0.04] rounded-2xl px-8 py-5 outline-none transition-all duration-500"
                       placeholder={t("form.namePlaceholder")}
                     />
                     {(errors.name || state.errors?.name) && (
-                      <p className="mt-1 text-sm text-red-500">{errors.name?.message || state.errors?.name?.[0]}</p>
+                      <p className="text-[10px] text-white/40 font-bold uppercase tracking-widest mt-3 ml-2">{errors.name?.message || state.errors?.name?.[0]}</p>
                     )}
                   </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
+                  <div className="space-y-4">
+                    <label className="text-[10px] font-bold tracking-[0.4em] text-white/50 uppercase ml-2">
                       {t("form.email")}
                     </label>
                     <input
                       {...register("email")}
-                      type="email"
-                      id="email"
-                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] placeholder:opacity-50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all min-w-0"
+                      className="w-full bg-white/[0.02] border border-white/10 text-white placeholder:text-white/10 focus:border-white/40 focus:bg-white/[0.04] rounded-2xl px-8 py-5 outline-none transition-all duration-500"
                       placeholder={t("form.emailPlaceholder")}
                     />
                     {(errors.email || state.errors?.email) && (
-                      <p className="mt-1 text-sm text-red-500">{errors.email?.message || state.errors?.email?.[0]}</p>
+                      <p className="text-[10px] text-white/40 font-bold uppercase tracking-widest mt-3 ml-2">{errors.email?.message || state.errors?.email?.[0]}</p>
                     )}
                   </div>
                 </div>
 
-                <div className="flex flex-col md:grid md:grid-cols-2 gap-5">
-                  <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
+                <div className="grid md:grid-cols-2 gap-10">
+                  <div className="space-y-4">
+                    <label className="text-[10px] font-bold tracking-[0.4em] text-white/50 uppercase ml-2">
                       {t("form.company")}
                     </label>
                     <input
                       {...register("company")}
-                      type="text"
-                      id="company"
-                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] placeholder:opacity-50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all min-w-0"
+                      className="w-full bg-white/[0.02] border border-white/10 text-white placeholder:text-white/10 focus:border-white/40 focus:bg-white/[0.04] rounded-2xl px-8 py-5 outline-none transition-all duration-500"
                       placeholder={t("form.companyPlaceholder")}
                     />
                     {(errors.company || state.errors?.company) && (
-                      <p className="mt-1 text-sm text-red-500">{errors.company?.message || state.errors?.company?.[0]}</p>
+                      <p className="text-[10px] text-white/40 font-bold uppercase tracking-widest mt-3 ml-2">{errors.company?.message || state.errors?.company?.[0]}</p>
                     )}
                   </div>
-                  <div>
-                    <label htmlFor="projectType" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
+                  <div className="space-y-4">
+                    <label className="text-[10px] font-bold tracking-[0.4em] text-white/50 uppercase ml-2">
                       {t("form.projectType")}
                     </label>
-                    <select
-                      {...register("projectType")}
-                      id="projectType"
-                      required
-                      className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] invalid:text-[var(--color-ink)]/50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all appearance-none min-w-0"
-                    >
-                      <option value="" disabled>{t("form.projectTypePlaceholder")}</option>
-                      <option value="augmentation">{t("form.types.augmentation")}</option>
-                      <option value="team">{t("form.types.team")}</option>
-                      <option value="project">{t("form.types.project")}</option>
-                      <option value="consulting">{t("form.types.consulting")}</option>
-                    </select>
-                    {(errors.projectType || state.errors?.projectType) && (
-                      <p className="mt-1 text-sm text-red-500">{errors.projectType?.message || state.errors?.projectType?.[0]}</p>
-                    )}
+                    <div className="relative">
+                      <select
+                        {...register("projectType")}
+                        className="w-full bg-white/[0.02] border border-white/10 text-white focus:border-white/40 focus:bg-white/[0.04] rounded-2xl px-8 py-5 outline-none transition-all duration-500 appearance-none"
+                      >
+                        <option value="" disabled className="bg-black">{t("form.projectTypePlaceholder")}</option>
+                        <option value="augmentation" className="bg-black">{t("form.types.augmentation")}</option>
+                        <option value="team" className="bg-black">{t("form.types.team")}</option>
+                        <option value="project" className="bg-black">{t("form.types.project")}</option>
+                        <option value="consulting" className="bg-black">{t("form.types.consulting")}</option>
+                      </select>
+                      <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-white/20">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-[var(--color-ink)] mb-1">
+                <div className="space-y-4">
+                  <label className="text-[10px] font-bold tracking-[0.4em] text-white/50 uppercase ml-2">
                     {t("form.message")}
                   </label>
                   <textarea
                     {...register("message")}
-                    id="message"
-                    rows={4}
-                    className="w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] placeholder:text-[var(--color-ink)] placeholder:opacity-50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all resize-none min-w-0"
+                    rows={5}
+                    className="w-full bg-white/[0.02] border border-white/10 text-white placeholder:text-white/10 focus:border-white/40 focus:bg-white/[0.04] rounded-2xl px-8 py-5 outline-none transition-all duration-500 resize-none"
                     placeholder={t("form.messagePlaceholder")}
                   />
                   {(errors.message || state.errors?.message) && (
-                    <p className="mt-1 text-sm text-red-500">{errors.message?.message || state.errors?.message?.[0]}</p>
+                    <p className="text-[10px] text-white/40 font-bold uppercase tracking-widest mt-3 ml-2">{errors.message?.message || state.errors?.message?.[0]}</p>
                   )}
                 </div>
 
-                <button
+                <motion.button
+                  whileHover={{ scale: 1.01 }}
+                  whileTap={{ scale: 0.99 }}
                   type="submit"
-                  className="w-full btn btn-accent btn-lg justify-center rounded-xl py-3 h-auto !px-4 md:px-8 text-base shadow-lg hover:shadow-xl hover:-translate-y-1 !whitespace-normal text-center leading-tight"
                   disabled={isPending}
+                  className="w-full btn btn-primary py-7 text-xs"
                 >
                   {isPending ? t("form.sending") : t("form.send")}
-                </button>
+                </motion.button>
               </form>
             )}
           </div>
-        </div>
+        </motion.div>
       </div>
     </Section>
   );

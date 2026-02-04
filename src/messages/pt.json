@@ -1,639 +1,652 @@
 {
-    "Brand": {
-        "name": "Solving Crew",
-        "short": "Do problema à produção",
-        "promise": "Do problema à produção — com as pessoas certas.",
-        "playful": "Nós resolvemos todos os seus problemas.",
-        "description": "Engenharia de produto liderada por seniores. Comece com as funções necessárias e escale conforme os projetos crescem."
-    },
-    "Nav": {
-        "home": "Início",
-        "services": "Serviços",
-        "expertise": "Especialidade",
-        "technology": "Tecnologia",
-        "team": "Equipe",
-        "contact": "Contato",
-        "getInTouch": "Entre em contato",
-        "process": "Processo",
-        "work": "Trabalho",
-        "about": "Sobre",
-        "faq": "FAQ",
-        "specializations": "Especializações"
-    },
-    "Common": {
-        "step": "Passo"
-    },
-    "Footer": {
-        "brandDesc": "Parceiro estratégico de engenharia de produto para empresas que não abrem mão da qualidade de engenharia.",
-        "services": "Serviços",
-        "company": "Empresa",
-        "industries": "Indústrias",
-        "rights": "BLAiT Engineering. Todos os direitos reservados.",
-        "links": {
-            "leadership": "Liderança de TI",
-            "backend": "Desenvolvimento Backend",
-            "frontend": "Desenvolvimento Frontend",
-            "devops": "Engenharia DevOps",
-            "about": "Sobre Nós",
-            "caseStudies": "Casos de Sucesso",
-            "process": "Processo",
-            "contact": "Contato",
-            "fintech": "FinTech",
-            "proptech": "PropTech",
-            "regtech": "RegTech",
-            "enterprise": "Empresas",
-            "security": "Segurança e Conformidade"
-        }
-    },
-    "Home": {
-        "kicker": "Parceiro de engenharia de produto liderado por seniores",
-        "subheadline": "Times de produto liderados por seniores para FinTech, PropTech e RegTech. Fornecemos a profundidade arquitetural de um escritório de CTO com a velocidade de entrega de um squad ágil.",
-        "ctaPrimary": "Contate-nos",
-        "ctaSecondary": "Ver serviços",
-        "scroll": "Rolar",
-        "sideText": "Parceria Estratégica de Engenharia",
-        "highlights": {
-            "h1": {
-                "badge": "Foco na solução",
-                "title": "Desenvolvimento de Software e Parceria de Engenharia de Produto de Elite",
-                "text": "Propomos o menor time capaz de destravar o progresso — e escalamos apenas quando vale a pena."
-            },
-            "h2": {
-                "badge": "Mentalidade de produção",
-                "title": "Construir + rodar, com confiabilidade",
-                "text": "IaC, observabilidade, CI/CD e testes fazem parte da entrega — não são secundários."
-            },
-            "h3": {
-                "badge": "Domínios sérios",
-                "title": "PropTech, FinTech, RegTech, B2B SaaS",
-                "text": "Integrações, sistemas pesados em dados e ambientes regulados onde a confiabilidade importa."
-            }
-        },
-        "heroBullets": [
-            {
-                "title": "Time pequeno, liderado por seniores",
-                "text": "Nos juntamos como uma tripulação compacta. Sem juniores, sem babá — apenas expertise autônoma que destrava a entrega."
-            },
-            {
-                "title": "Entrega focada em produção",
-                "text": "CI/CD, observabilidade e qualidade são parte da entrega — não secundários."
-            },
-            {
-                "title": "Profundidade de domínio",
-                "text": "Experiência em PropTech & FinTech & RegTech para sistemas ricos em dados e integrações."
-            }
-        ],
-        "heroChip": "Geralmente respondemos em 24h",
-        "stackTitle": "Stack tecnológica principal",
-        "stackNote": "Arquitetura de alto desempenho e orientada a eventos em todo o stack.",
-        "stack": [
-            "Java (Quarkus/Spring)",
-            "Node.js",
-            "Go",
-            "React",
-            "Next.js",
-            "TypeScript",
-            "Postgres",
-            "NATS JetStream",
-            "ElasticSearch",
-            "Valkey/Redis",
-            "Kubernetes",
-            "Terraform",
-            "Prometheus/Grafana/Loki",
-            "AWS (EKS)",
-            "Playwright/Cypress",
-            "Figma"
-        ],
-        "ctaBlock": {
-            "title": "Nos conte o que está te bloqueando",
-            "text": "Uma função, um pequeno pod, ou uma linha de entrega — vamos propor o formato que se encaixa.",
-            "button": "Iniciar a conversa"
-        },
-        "trust": {
-            "consultation": "Consulta gratuita",
-            "euTeam": "Equipa na UE",
-            "startFast": "Onboarding Rápido",
-            "chat": "Fale connosco"
-        },
-        "technicalCluster": {
-            "title": "Especializações Técnicas",
-            "headline": "Especializações em Engenharia de Precisão",
-            "text": "Especialização profunda em paradigmas modernos de engenharia de software.",
-            "items": [
-                "Refatoração de monólitos legados para microsserviços",
-                "Arquiteturas orientadas a eventos de alto desempenho",
-                "Infraestrutura nativa da nuvem e Kubernetes",
-                "Segurança e Conformidade FinTech (PSD2, GDPR)",
-                "Design primeiro na API e estratégia de integração",
-                "Ecossistemas PropTech e Identidade Digital"
-            ]
-        }
-    },
-    "Services": {
-        "title": "Serviços",
-        "lead": "Da liderança estratégica à implementação prática, fornecemos a expertise técnica que você precisa.",
-        "list": {
-            "leadership": {
-                "title": "Liderança de TI",
-                "subtitle": "Direção Estratégica",
-                "description": "CTOs fracionados e Team Leads que alinham a estratégia de tecnologia aos objetivos de negócio. Revisões de arquitetura, avaliação de dívida técnica e planejamento de roadmap.",
-                "tags": [
-                    "CTO-as-a-Service",
-                    "Estratégia Tech",
-                    "Arquitetura"
-                ]
-            },
-            "backend": {
-                "title": "Desenvolvimento Backend",
-                "subtitle": "Sistemas Escaláveis",
-                "description": "APIs robustas e escaláveis e microsserviços. Sistemas de alto desempenho lidando com transações. Arquiteturas orientadas a eventos e sistemas distribuídos.",
-                "tags": [
-                    "Java",
-                    "Go",
-                    "Node.js",
-                    "PostgreSQL"
-                ]
-            },
-            "frontend": {
-                "title": "Desenvolvimento Frontend",
-                "subtitle": "Interfaces Excepcionais",
-                "description": "Interfaces responsivas com UX excepcional. Bibliotecas de componentes, design systems e SPAs performáticas que os usuários amam e concorrentes invejam.",
-                "tags": [
-                    "React",
-                    "TypeScript",
-                    "Next.js"
-                ]
-            },
-            "qa": {
-                "title": "Engenharia de QA",
-                "subtitle": "Garantia de Qualidade",
-                "description": "Estratégias de teste abrangentes que pegam bugs antes dos usuários. Testes manuais e automatizados, testes de desempenho e auditorias de segurança.",
-                "tags": [
-                    "Selenium",
-                    "Cypress",
-                    "Desempenho"
-                ]
-            },
-            "devops": {
-                "title": "Engenharia DevOps",
-                "subtitle": "Excelência em Infraestrutura",
-                "description": "Pipelines de CI/CD que entregam com confiança. Infraestrutura como código, orquestração de containers e observabilidade que mantém sistemas rodando.",
-                "tags": [
-                    "AWS",
-                    "Kubernetes",
-                    "Terraform"
-                ]
-            },
-            "product-design": {
-                "title": "Gestão de Produto & Design",
-                "subtitle": "Visão à Execução",
-                "description": "Líderes de produto que preenchem a lacuna entre visão e execução, aliados a um design centrado no usuário que resolve problemas reais.",
-                "tags": [
-                    "Estratégia",
-                    "Ágil",
-                    "Design UI/UX"
-                ]
-            }
-        },
-        "cta": {
-            "question": "Precisa de uma solução personalizada?",
-            "button": "Vamos Discutir Suas Necessidades"
-        }
-    },
-    "Expertise": {
-        "title": "Especialidade",
-        "lead": "Trabalhamos em domínios complexos onde confiabilidade, velocidade e clareza importam.",
-        "capabilitiesTitle": "Capacidades",
-        "capabilities": [
-            "Engenharia de produto (descoberta à produção)",
-            "Arquitetura & liderança técnica",
-            "Backend de alta carga & sistemas orientados a eventos",
-            "Integrações pesadas em dados e APIs",
-            "Cloud & DevOps (Kubernetes, IaC, observabilidade)",
-            "Automação de QA & engenharia de qualidade",
-            "Design systems & entrega de UX"
-        ],
-        "areas": {
-            "proptech": {
-                "title": "PropTech",
-                "text": "Listagens, avaliação, integrações, fluxos de back-office, relatórios e portais de clientes."
-            },
-            "fintech": {
-                "title": "FinTech",
-                "text": "Pagamentos, identidade, fluxos sensíveis a conformidade e entrega amigável a auditorias."
-            },
-            "highload": {
-                "title": "Alta carga & plataformas",
-                "text": "Arquitetura orientada a eventos, desempenho, escalabilidade, observabilidade e operações."
-            }
-        },
-        "areasBadge": {
-            "proptech": {
-                "badge": "PropTech"
-            },
-            "fintech": {
-                "badge": "FinTech"
-            },
-            "highload": {
-                "badge": "Alta carga"
-            }
-        }
-    },
-    "Technology": {
-        "title": "Tecnologia",
-        "lead": "Stack moderno, engenharia focada em produção e escolhas pragmáticas baseadas em restrições.",
-        "sectionsTitle": "Áreas tecnológicas",
-        "principlesTitle": "Princípios",
-        "principles": [
-            "Entregue pequenos incrementos",
-            "Torne observável",
-            "Automatize a qualidade",
-            "Projete para a responsabilidade",
-            "Mantenha a carga operacional baixa",
-            "Meça o impacto"
-        ],
-        "sections": {
-            "backend": {
-                "title": "Backend",
-                "text": "Java (Quarkus/Spring), Node.js, Go • microsserviços • REST/GraphQL • mensagens orientadas a eventos."
-            },
-            "frontend": {
-                "title": "Frontend",
-                "text": "React, Next.js, TypeScript • design systems • UI acessível • desempenho."
-            },
-            "mobile": {
-                "title": "Mobile",
-                "text": "Entrega mobile pragmática onde necessário (híbrido ou nativo dependendo das restrições)."
-            },
-            "platform": {
-                "title": "Plataforma & Cloud",
-                "text": "Infraestrutura pronta para produção, CI/CD e observabilidade."
-            },
-            "data": {
-                "title": "Dados & busca",
-                "text": "Postgres, ElasticSearch • pipelines de dados • modelos amigáveis para análise."
-            },
-            "quality": {
-                "title": "Engenharia de qualidade",
-                "text": "Mentalidade de automação primeiro • Playwright/Cypress • testes de contrato onde valer a pena."
-            },
-            "design": {
-                "title": "Design",
-                "text": "Entrega guiada por Figma • prototipos UX • design systems e bibliotecas de componentes."
-            }
-        }
-    },
-    "Team": {
-        "title": "Equipe",
-        "comingSoon": "Perfis e detalhes da liderança serão publicados em Fevereiro de 2026."
-    },
-    "Industries": {
-        "label": "Especialidade da Indústria",
-        "title": "Profundo conhecimento de domínio",
-        "subtitle": "em indústrias de alto risco",
-        "description": "Nós não apenas escrevemos código — entendemos o cenário regulatório, as expectativas dos usuários e os modelos de negócios que impulsionam o sucesso.",
-        "valueProps": {
-            "startups": {
-                "label": "Startups",
-                "text": "CTO fracionado e prevenção de dívida técnica"
-            },
-            "smes": {
-                "label": "PMEs / Empresas",
-                "text": "Modernização de sistemas legados e velocidade sem overhead"
-            }
-        },
-        "fintech": {
-            "name": "FinTech",
-            "tagline": "Construindo o Futuro das Finanças",
-            "description": "Reconhecemos que a confiança é a moeda das finanças modernas. Nossos sistemas integram verificação de identidade e scoring em tempo real para automatizar fluxos hipotecários e bancários complexos sem atrito.",
-            "stats": "Transações Processadas",
-            "highlights": [
-                "BankID Integration",
-                "Mortgage & Fincheck",
-                "PSD2/Open Banking",
-                "Real-time Scoring"
-            ]
-        },
-        "proptech": {
-            "name": "PropTech",
-            "tagline": "Transformando o Imobiliário",
-            "description": "Sabemos que a fragmentação de dados impede a inovação. Nossas soluções unificam registros geoespaciais e padronizam listagens para impulsionar avaliações de próxima geração e busca visual.",
-            "stats": "Propriedades Gerenciadas",
-            "highlights": [
-                "Algorithm-driven Valuations",
-                "Geospatial Data (Cadastre)",
-                "Padrões RESO & Open Immo",
-                "AI Visual Search"
-            ]
-        },
-        "regtech": {
-            "name": "RegTech",
-            "tagline": "Conformidade por Design",
-            "description": "Acreditamos que a conformidade deve ser um acelerador. Incorporamos verificações automatizadas, assinatura digital e integração de crédito diretamente na jornada do usuário para um onboarding sem atrito.",
-            "stats": "Eficiência Ganha",
-            "highlights": [
-                "KYC/AML via BankID",
-                "Fincheck",
-                "Digital Signing Trails",
-                "Integração CRIF"
-            ]
-        },
-        "ecosystems": {
-            "name": "Ecossistemas & Plataformas",
-            "tagline": "Conectando Cadeias de Valor",
-            "description": "Vemos o poder das plataformas conectadas. Nossa identidade unificada e pipelines de dados preenchem a lacuna entre setores díspares, permitindo motores de listagem de propriedades escaláveis.",
-            "stats": "Interações de API",
-            "highlights": [
-                "Cross-sector Integrations",
-                "Plataformas de Listagem de Imóveis",
-                "Unified Identity",
-                "Scalable Data Pipelines"
-            ]
-        },
-        "specializations": {
-            "title": "Especializações Adicionais",
-            "description": "Expertise inter-setorial que gera resultados",
-            "cloud": "Soluções Cloud",
-            "distArch": "Arquitetura Distribuída",
-            "scaling": "Ecossistemas",
-            "product": "Desenvolvimento de Produto Startup",
-            "ai": "Implementação de IA",
-            "migration": "Migração de Sistemas"
-        }
-    },
-    "TechStack": {
-        "label": "Tecnologia",
-        "title": "Stack testado no mercado",
-        "description": "Trabalhamos com as tecnologias que impulsionam as aplicações mais exigentes do mundo. Sem experimentos por sua conta — ferramentas provadas, resultados provados.",
-        "cta": "Discuta Suas Necessidades Tech",
-        "statement": "Nossos engenheiros se mantêm atualizados com tecnologias em evolução enquanto mantêm profunda expertise em soluções testadas em batalha. Escolhemos a ferramenta certa para cada trabalho.",
-        "categories": {
-            "languages": "Linguagens & Frameworks",
-            "data": "Dados & Armazenamento",
-            "cloud": "Cloud & DevOps",
-            "methodology": "Metodologia & IA",
-            "design": "Design"
-        }
-    },
-    "CaseStudies": {
-        "label": "Casos de Sucesso",
-        "title": "Impacto comprovado",
-        "viewAll": "Ver Todos os Projetos",
-        "fintech": {
-            "category": "FinTech",
-            "title": "Hipoteca Digital e Fincheck",
-            "challenge": "Os pedidos de hipoteca tradicionais exigiam várias visitas presenciais e semanas de processamento manual.",
-            "solution": "Integração de BankID para identidade instantânea e desenvolvimento de 'Fincheck' para avaliações financeiras automáticas e candidaturas online.",
-            "outcome": "Primeiro fluxo de hipoteca digital na região com feedback instantâneo sobre elegibilidade e tempo de oferta reduzido."
-        },
-        "proptech": {
-            "category": "PropTech",
-            "title": "Ecossistema Imobiliário Nacional (MLS)",
-            "challenge": "O mercado imobiliário carecia de uma fonte de dados unificada, levando à fragmentação e falta de transparência.",
-            "solution": "Engenharia do primeiro Multiple Listing Service (MLS) abrangente integrado com o Registo de Imóveis nacional (Katastr nemovitostí).",
-            "outcome": "Uma fonte única de verdade para mais de 10.000 corretores, permitindo cooperação fluida e transparência de mercado."
-        },
-        "enterprise": {
-            "category": "Empresas",
-            "title": "Busca Imobiliária por IA",
-            "challenge": "Os utilizadores tinham dificuldade em encontrar propriedades baseadas em preferências visuais entre milhares de anúncios.",
-            "solution": "Implementação de busca visual orientada por IA e Realidade Aumentada (AR) para descoberta de imóveis no local.",
-            "outcome": "Aumento do envolvimento do utilizador em 3 vezes através de exploração intuitiva 'apontar e ver' e busca personalizada."
-        },
-        "testimonials": {
-            "text": "Os engenheiros da BLAiT se integraram perfeitamente à nossa equipe e entregaram além das expectativas. Eles não são fornecedores — são parceiros.",
-            "author": "Sarah Chen",
-            "role": "CTO, FinTech Startup",
-            "cta": "Comece Sua História de Sucesso"
-        }
-    },
-    "Contact": {
-        "label": "Contato",
-        "title": "Vamos construir algo ótimo",
-        "description": "Seja um único especialista ou uma equipe completa, criaremos um engajamento que se encaixe nas suas necessidades e orçamento.",
-        "response": "Resposta em até 24 horas",
-        "emailUs": "Envie-nos um e-mail",
-        "liveChat": "Chat ao vivo",
-        "trustedBy": "Confiado por",
-        "badges": {
-            "fintech": "FinTech",
-            "proptech": "PropTech",
-            "regtech": "RegTech",
-            "enterprise": "Empresas"
-        },
-        "trusted": "Confiado por líderes da indústria",
-        "form": {
-            "name": "Nome",
-            "namePlaceholder": "João Silva",
-            "email": "Email",
-            "emailPlaceholder": "joao@empresa.com",
-            "company": "Empresa",
-            "companyPlaceholder": "Empresa S.A.",
-            "projectType": "Tipo de Projeto",
-            "projectTypePlaceholder": "Selecione o tipo de projeto",
-            "message": "Fale sobre seu projeto",
-            "messagePlaceholder": "O que você está construindo? Quais habilidades você precisa?",
-            "send": "Enviar Mensagem",
-            "sending": "Enviando...",
-            "sent": "Mensagem Enviada!",
-            "sentDesc": "Entraremos em contato em até 24 horas.",
-            "types": {
-                "augmentation": "Parceiro de Engenharia de Produto",
-                "team": "Equipe Dedicada",
-                "project": "Baseado em Projeto",
-                "consulting": "Consultoria Técnica"
-            }
-        }
-    },
-    "About": {
-        "label": "Sobre Nós",
-        "title": "Parceiros de engenharia, não fornecedores",
-        "description1": "Fundamos a BLAiT para redefinir o padrão da colaboração técnica externa. Afastamo-nos dos modelos de outsourcing tradicionais para eliminar incentivos desalinhados, lacunas de comunicação e a \"loteria de talentos\". Construímos algo melhor.",
-        "description2": "Nossos engenheiros trabalham de fusos horários europeus com sobreposição significativa com horários comerciais da UE e dos EUA. Operamos sob rigorosos quadros legais da UE (GDPR) e trazemos alinhamento cultural que vai além do idioma — não apenas pegamos tickets; nós desafiamos requisitos para construir produtos melhores.",
-        "stats": {
-            "timezone": "Cobertura de Fuso Horário",
-            "fluency": "Fluência em Inglês"
-        },
-        "values": {
-            "excellence": {
-                "title": "Excelência em Engenharia",
-                "desc": "Contratamos seniores de elite e engenheiros de nível médio autônomos. Sem juniores, sem trainees. Investimos em entrega de alto nível desde o primeiro dia."
-            },
-            "transparent": {
-                "title": "Parceria Transparente",
-                "desc": "Sem caixas pretas. Visibilidade total sobre o progresso, desafios e decisões."
-            },
-            "impact": {
-                "title": "Foco no Impacto de Negócio",
-                "desc": "Código é um meio, não um fim. Medimos o sucesso pelos resultados de negócio."
-            },
-            "longterm": {
-                "title": "Pensamento de Longo Prazo",
-                "desc": "Construímos sistemas feitos para durar e evoluir. Sem vitórias rápidas que criam dívida técnica."
-            }
-        }
-    },
-    "Process": {
-        "label": "Processo",
-        "title": "Como trabalhamos",
-        "description": "Uma metodologia comprovada refinada em múltiplos engajamentos. Tempo rápido para valor sem cortar caminhos.",
-        "steps": {
-            "discovery": {
-                "title": "Discovery & Arquitetura",
-                "description": "Analisamos seu cenário técnico e objetivos de negócios para definir os limites do sistema antes que uma única linha de código seja escrita.",
-                "details": [
-                    "Análise do Cenário Técnico",
-                    "Definição de Arquitetura",
-                    "Alinhamento de Objetivos de Negócios"
-                ]
-            },
-            "matching": {
-                "title": "Alinhamento Arquitetural",
-                "description": "Não apenas 'preenchemos vagas'. Montamos uma equipe sênior com a experiência de domínio exata para executar a arquitetura definida.",
-                "details": [
-                    "Mapeamento de Expertise de Domínio",
-                    "Verificação Liderada por Seniores",
-                    "Fit Cultural e Técnico"
-                ]
-            },
-            "integration": {
-                "title": "Qualidade de Código & Revisão por Pares",
-                "description": "Cada linha de código é revisada por pares. Impomos padrões de Clean Code e melhores práticas de CI/CD para garantir entrega sem dívida técnica.",
-                "details": [
-                    "Revisões por Pares Obrigatórias",
-                    "Princípios de Clean Code",
-                    "Padrões Rigorosos de QA"
-                ]
-            },
-            "delivery": {
-                "title": "Produção & Evolução",
-                "description": "Entregamos em produção com confiança. Vendemos longevidade, não apenas horas — construindo sistemas projetados para durar.",
-                "details": [
-                    "Entrega Pronta para Produção",
-                    "Configuração de Observabilidade",
-                    "Manutenibilidade a Longo Prazo"
-                ]
-            }
-        },
-        "models": {
-            "title": "Modelos de Engajamento",
-            "subtitle": "Arranjos flexíveis para atender suas necessidades",
-            "augmentation": {
-                "title": "Parceiro de Engenharia de Produto",
-                "desc": "Engenheiros individuais incorporados à sua equipe, trabalhando seus horários, usando suas ferramentas."
-            },
-            "team": {
-                "title": "Equipe Dedicada",
-                "desc": "Um esquadrão completo com habilidades complementares, gerenciado como uma unidade coesa."
-            },
-            "project": {
-                "title": "Baseado em Projeto",
-                "desc": "Oferecemos execução de projetos de ponta a ponta dentro de um escopo e cronograma definidos. Dependendo dos seus requisitos, oferecemos modelos de cobrança de preço fixo ou taxas horárias para garantir total alinhamento com as suas necessidades orçamentais."
-            }
-        }
-    },
-    "FAQ": {
-        "title": "FAQ",
-        "items": {
-            "start": {
-                "question": "Quão rápido vocês podem começar?",
-                "answer": "Geralmente começamos dentro de 48 horas após nossa consultoria inicial. Nosso processo é otimizado para nos integrar à sua equipe o mais rápido possível."
-            },
-            "timezone": {
-                "question": "Vocês trabalham no meu fuso horário?",
-                "answer": "Sim, estamos baseados na UE mas trabalhamos nos fusos horários dos EUA e da Europa. Garantimos pelo menos 4 horas de sobreposição com suas horas principais de trabalho."
-            },
-            "pricing": {
-                "question": "Qual é o modelo de preços?",
-                "answer": "Oferecemos modelos de Entrega com Custo Eficiente, incluindo parcerias de engenharia de produto e preços fixos por projeto. Focamos em ROI Otimizado entregando código de alta qualidade que reduz custos de manutenção a longo prazo."
-            },
-            "pm": {
-                "question": "Vocês fornecem Gerentes de Projeto?",
-                "answer": "Sim, se necessário. No entanto, nossos engenheiros seniores são auto-organizáveis e capazes de trabalhar diretamente com seus product owners."
-            },
-            "security": {
-                "question": "A vossa engenharia está em conformidade com os padrões FinTech?",
-                "answer": "Sim. Incorporamos SDLC seguro, melhores práticas OWASP e varredura de segurança automatizada desde o primeiro dia. A nossa equipa tem experiência na criação de sistemas para ambientes regulados como o RGPD, PSD2 e ISO 27001."
-            }
-        }
-    },
-    "Metadata": {
-        "title": "BLAiT Engineering | Desenvolvimento de Software e Engenharia de Produto",
-        "description": "Especialista em Desenvolvimento de Software e Parceria de Engenharia de Produto. Talento de engenharia para FinTech, PropTech e RegTech. Outsourcing de TI de nível empresarial."
-    },
-    "Security": {
-        "hero": {
-            "label": "Segurança e Conformidade",
-            "title": "Segurança desde o Design",
-            "subtitle": "Não adicionamos segurança no final. Ela está integrada em cada commit, cada container e cada recurso de nuvem que tocamos."
-        },
-        "compliance": {
-            "title": "Conformidade e Padrões",
-            "description": "Nossos processos internos são projetados para se alinhar com as estruturas que importam para você. Embora sejamos um parceiro de engenharia, não um provedor de hospedagem, operamos com o rigor de uma entidade regulada.",
-            "items": {
-                "gdpr": {
-                    "title": "Compatível com GDPR",
-                    "text": "Todos os nossos engenheiros e operações estão baseados na UE/EEE ou jurisdições equivalentes. Acordos de Proteção de Dados (DPA) são padrão em cada compromisso."
-                },
-                "iso": {
-                    "title": "Alinhado com ISO 27001",
-                    "text": "Seguimos as melhores práticas de gestão de segurança da informação, incluindo controles de acesso documentados, planos de resposta a incidentes e gestão de ativos."
-                },
-                "soc2": {
-                    "title": "Prontidão para SOC2",
-                    "text": "Para clientes dos EUA, nos alinhamos com os Critérios de Serviços de Confiança SOC2. Implementamos gestão de mudanças, acesso lógico e controles de monitoramento por padrão."
-                }
-            }
-        },
-        "infrastructure": {
-            "title": "Segurança de Infraestrutura",
-            "description": "Fundações seguras para sistemas escaláveis.",
-            "items": {
-                "aws": {
-                    "title": "Segurança na Nuvem",
-                    "text": "Usamos as melhores práticas AWS/GCP: Well-Architected Framework, funções IAM de menor privilégio e VPCs separadas para ambientes."
-                },
-                "encryption": {
-                    "title": "Criptografia em Todo Lugar",
-                    "text": "Os dados são criptografados em repouso (AES-256) e em trânsito (TLS 1.2+). Gerenciamos segredos usando cofres de nível empresarial (AWS Secrets Manager, HashiCorp Vault)."
-                },
-                "access": {
-                    "title": "Acesso Zero Trust",
-                    "text": "Sem VPNs, sem senhas compartilhadas. Acessamos a infraestrutura via credenciais de curta duração e proxies conscientes da identidade."
-                }
-            }
-        },
-        "sdlc": {
-            "title": "Ciclo de Desenvolvimento Seguro",
-            "description": "Código que se defende.",
-            "items": {
-                "review": {
-                    "title": "Revisão por Pares Obrigatória",
-                    "text": "Nenhum código chega à produção sem pelo menos uma aprovação de um engenheiro sênior. Verificamos vulnerabilidades OWASP Top 10 durante a revisão."
-                },
-                "scanning": {
-                    "title": "Escaneamento Automatizado",
-                    "text": "Pipelines de CI/CD incluem SAST (Análise Estática), DAST (Análise Dinâmica) e escaneamento especializado de dependências para detectar vulnerabilidades precocemente."
-                },
-                "supply": {
-                    "title": "Segurança da Cadeia de Suprimentos",
-                    "text": "Fixamos versões de dependências, usamos commits assinados e auditamos regularmente bibliotecas de terceiros em busca de CVEs."
-                }
-            }
-        },
-        "operational": {
-            "title": "Segurança Operacional",
-            "items": [
-                "NDAs rigorosos & Acordos de Proteção de PI",
-                "Verificações de antecedentes abrangentes",
-                "Dispositivos gerenciados (MDM)",
-                "Cultura de Conscientização de Segurança"
-            ]
-        },
-        "cta": {
-            "title": "Tem necessidades específicas de conformidade?",
-            "text": "Teremos prazer em discutir nossos protocolos de segurança e ajudá-lo com seus requisitos de avaliação de fornecedores.",
-            "button": "Contatar Equipe de Segurança"
-        }
+  "Brand": {
+    "name": "Solving Crew",
+    "short": "From problem to production",
+    "promise": "From problem to production — with the right people.",
+    "playful": "We solve all your problems.",
+    "description": "Senior-led product engineering. Start with the roles you need and scale as projects grow."
+  },
+  "Nav": {
+    "home": "Home",
+    "services": "Services",
+    "expertise": "Expertise",
+    "technology": "Technology",
+    "team": "Team",
+    "contact": "Contact",
+    "getInTouch": "Get in touch",
+    "process": "Process",
+    "work": "Work",
+    "about": "About",
+    "faq": "FAQ",
+    "specializations": "Specializations"
+  },
+  "Common": {
+    "step": "Step"
+  },
+  "Footer": {
+    "brandDesc": "Strategic product engineering partner for companies that refuse to compromise on engineering quality.",
+    "services": "Services",
+    "company": "Company",
+    "industries": "Industries",
+    "rights": "BLAiT Engineering. All rights reserved.",
+    "links": {
+      "leadership": "IT Leadership",
+      "backend": "Backend Development",
+      "frontend": "Frontend Development",
+      "devops": "DevOps Engineering",
+      "about": "About Us",
+      "caseStudies": "Case Studies",
+      "process": "Process",
+      "contact": "Contact",
+      "fintech": "FinTech",
+      "proptech": "PropTech",
+      "regtech": "RegTech",
+      "enterprise": "Enterprise",
+      "security": "Security & Compliance"
     }
+  },
+  "Home": {
+    "kicker": "Senior-led product engineering partner",
+    "subheadline": "Senior-led product teams for FinTech, PropTech, and RegTech. We provide the architectural depth of a CTO office with the delivery speed of an agile squad.",
+    "ctaPrimary": "Contact us",
+    "ctaSecondary": "See services",
+    "scroll": "Scroll",
+    "sideText": "Strategic Engineering Partnership",
+    "highlights": {
+      "h1": {
+        "badge": "Solution-first",
+        "titlePart1": "Senior-Led Software Development",
+        "titlePart2": "Product Engineering",
+        "text": "We propose the smallest team shape that unblocks progress — and scale only when it pays off."
+      },
+      "h2": {
+        "badge": "Production mindset",
+        "title": "Build + run, reliably",
+        "text": "IaC, observability, CI/CD and testing are part of delivery — not an afterthought."
+      },
+      "h3": {
+        "badge": "Serious domains",
+        "title": "PropTech, FinTech, RegTech, B2B SaaS",
+        "text": "Integrations, data-heavy systems and regulated environments where reliability matters."
+      }
+    },
+    "heroBullets": [
+      {
+        "title": "Small team, senior-led",
+        "text": "We join as a compact crew. No juniors, no hand-holding—just autonomous expertise that unblocks delivery."
+      },
+      {
+        "title": "Production-first delivery",
+        "text": "CI/CD, observability and quality are part of delivery — not an afterthought."
+      },
+      {
+        "title": "Domain depth",
+        "text": "PropTech, FinTech & RegTech experience for integration-heavy, data-rich systems."
+      }
+    ],
+    "heroChip": "Typically reply within 24h",
+    "stackTitle": "Core tech stack",
+    "stackNote": "High-performance, event-driven architecture across the full stack.",
+    "stack": [
+      "Java (Quarkus/Spring)",
+      "Node.js",
+      "Go",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Postgres",
+      "NATS JetStream",
+      "ElasticSearch",
+      "Valkey/Redis",
+      "Kubernetes",
+      "Terraform",
+      "Prometheus/Grafana/Loki",
+      "AWS (EKS)",
+      "Playwright/Cypress",
+      "Figma"
+    ],
+    "ctaBlock": {
+      "title": "Tell us what’s blocking you",
+      "text": "One role, a small pod, or a delivery lane — we’ll propose a shape that fits.",
+      "button": "Start the conversation"
+    },
+    "trust": {
+      "consultation": "Free consultation",
+      "euTeam": "EU-based team",
+      "startFast": "Rapid Onboarding",
+      "chat": "Chat with us"
+    },
+    "technicalCluster": {
+      "title": "Technical Specializations",
+      "headline": "Precision Engineering Specializations",
+      "text": "Deep expertise in modern software engineering paradigms.",
+      "items": [
+        "Legacy Monolith to Microservices Refactoring",
+        "High-Throughput Event-Driven Architectures",
+        "Cloud-Native Infrastructure & Kubernetes",
+        "FinTech Security & Compliance (PSD2, GDPR)",
+        "API-First Design & Integration Strategy",
+        "PropTech Ecosystems & Digital Identity"
+      ]
+    },
+    "heroChunks": {
+      "strategic": "Strategic Engineering",
+      "architecting": "Architecting Value",
+      "velocity": "Engineering Velocity",
+      "scale": "Built to Scale"
+    }
+  },
+  "Services": {
+    "title": "Services",
+    "leadTitle": "From strategic leadership to hands-on implementation",
+    "leadText": "We provide the technical expertise you need.",
+    "list": {
+      "leadership": {
+        "title": "IT Leadership & CTO-as-a-Service",
+        "subtitle": "Strategic Technology Direction",
+        "description": "Fractional CTOs and Team Leads who align technology strategy with business objectives. We specialize in architecture modernization, technical debt reduction, and building high-performance engineering cultures.",
+        "tags": [
+          "CTO-as-a-Service",
+          "Legacy Modernization",
+          "Architecture Audit"
+        ]
+      },
+      "backend": {
+        "title": "Backend Engineering",
+        "subtitle": "Event-Driven & Scalable Systems",
+        "description": "Robust, high-performance APIs and microservices. We specialize in event-driven Java (Quarkus/Spring) architectures, Go-based distributed systems, and real-time transaction processing.",
+        "tags": [
+          "Java/Go/Node.js",
+          "Event-Driven",
+          "Microservices",
+          "Cloud-Native"
+        ]
+      },
+      "frontend": {
+        "title": "Frontend Development",
+        "subtitle": "Exceptional Interfaces",
+        "description": "Responsive interfaces with exceptional UX. Component libraries, design systems, and performant SPAs that users love and competitors envy.",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Next.js"
+        ]
+      },
+      "qa": {
+        "title": "QA Engineering",
+        "subtitle": "Quality Assurance",
+        "description": "Comprehensive test strategies that catch bugs before users do. Manual and automated testing, performance testing, and security audits.",
+        "tags": [
+          "Selenium",
+          "Cypress",
+          "Performance"
+        ]
+      },
+      "devops": {
+        "title": "Cloud & DevOps Engineering",
+        "subtitle": "Infrastructure as Code",
+        "description": "Modernizing platforms with CI/CD automation and Infrastructure as Code (Terraform). We build production-ready Kubernetes environments with comprehensive observability (Prometheus/Grafana).",
+        "tags": [
+          "AWS/GCP/Azure",
+          "Kubernetes",
+          "Terraform (IaC)",
+          "DevSecOps"
+        ]
+      },
+      "product-design": {
+        "title": "Product Management & Design",
+        "subtitle": "Vision to Execution",
+        "description": "Product leaders who bridge the gap between vision and execution, coupled with user-centric design that solves real problems.",
+        "tags": [
+          "Strategy",
+          "Agile",
+          "UI/UX Design"
+        ]
+      }
+    },
+    "cta": {
+      "question": "Need a custom solution?",
+      "button": "Let's Discuss Your Needs"
+    }
+  },
+  "Expertise": {
+    "title": "Expertise",
+    "lead": "We work in complex domains where reliability, speed and clarity matter.",
+    "capabilitiesTitle": "Capabilities",
+    "capabilities": [
+      "Product engineering (discovery to production)",
+      "Architecture & tech leadership",
+      "High-load backend & event-driven systems",
+      "Data-heavy integrations and APIs",
+      "Cloud & DevOps (Kubernetes, IaC, observability)",
+      "QA automation & quality engineering",
+      "Design systems & UX delivery",
+      "frontend-desing",
+      "3d-web-experience",
+      "ui-ux-pro-max",
+      "scroll-experience"
+    ],
+    "areas": {
+      "proptech": {
+        "title": "PropTech",
+        "text": "Listings, valuation, integrations, back-office workflows, reporting and customer portals."
+      },
+      "fintech": {
+        "title": "FinTech",
+        "text": "Payments, identity, compliance-sensitive flows and audit-friendly delivery."
+      },
+      "highload": {
+        "title": "High-load & platforms",
+        "text": "Event-driven architecture, performance, scalability, observability and operations."
+      }
+    },
+    "areasBadge": {
+      "proptech": {
+        "badge": "PropTech"
+      },
+      "fintech": {
+        "badge": "FinTech"
+      },
+      "highload": {
+        "badge": "High-load"
+      }
+    }
+  },
+  "Technology": {
+    "title": "Technology",
+    "lead": "Modern stack, production-first engineering, and pragmatic choices based on constraints.",
+    "sectionsTitle": "Technology areas",
+    "principlesTitle": "Principles",
+    "principles": [
+      "Ship small increments",
+      "Make it observable",
+      "Automate quality",
+      "Design for ownership",
+      "Keep operational load low",
+      "Measure impact"
+    ],
+    "sections": {
+      "backend": {
+        "title": "Backend",
+        "text": "Java (Quarkus/Spring), Node.js, Go • microservices • REST/GraphQL • event-driven messaging."
+      },
+      "frontend": {
+        "title": "Frontend",
+        "text": "React, Next.js, TypeScript • design systems • accessible UI • performance."
+      },
+      "mobile": {
+        "title": "Mobile",
+        "text": "Pragmatic mobile delivery where needed (hybrid or native depending on constraints)."
+      },
+      "platform": {
+        "title": "Platform & Cloud",
+        "text": "Production-ready infrastructure, CI/CD and observability."
+      },
+      "data": {
+        "title": "Data & search",
+        "text": "Postgres, ElasticSearch • data pipelines • analytics-friendly models."
+      },
+      "quality": {
+        "title": "Quality engineering",
+        "text": "Automation-first mindset • Playwright/Cypress • contract testing where it pays off."
+      },
+      "design": {
+        "title": "Design",
+        "text": "Figma-driven delivery • UX prototypes • design systems and component libraries."
+      }
+    }
+  },
+  "Team": {
+    "title": "Team",
+    "comingSoon": "Profiles & leadership details will be published in February 2026."
+  },
+  "Industries": {
+    "label": "Industry Expertise",
+    "title": "Deep domain knowledge",
+    "subtitle": "in high-stakes industries",
+    "description": "We don't just write code—we understand the regulatory landscape, user expectations, and business models that drive success.",
+    "valueProps": {
+      "startups": {
+        "label": "Startups",
+        "text": "Fractional CTO & Avoiding Tech Debt"
+      },
+      "smes": {
+        "label": "SMEs / Enterprise",
+        "text": "Modernizing Legacy Systems & Velocity without Overhead"
+      }
+    },
+    "fintech": {
+      "name": "FinTech",
+      "tagline": "Building the Future of Finance",
+      "description": "We recognize that trust is the currency of modern finance. Our systems integrate identity verification and real-time scoring to automate complex mortgage and banking flows without friction.",
+      "stats": "Transactions Processed",
+      "highlights": [
+        "BankID Integration",
+        "Mortgage & Fincheck",
+        "PSD2/Open Banking",
+        "Real-time Scoring"
+      ]
+    },
+    "proptech": {
+      "name": "PropTech",
+      "tagline": "Transforming Real Estate",
+      "description": "We know that data fragmentation holds back innovation. Our solutions unify geospatial records and standardize listings to power next-gen valuations and visual search.",
+      "stats": "Properties Managed",
+      "highlights": [
+        "Algorithm-driven Valuations",
+        "Geospatial Data (Cadastre)",
+        "RESO & Open Immo Standards",
+        "AI Visual Search"
+      ]
+    },
+    "regtech": {
+      "name": "RegTech",
+      "tagline": "Compliance by Design",
+      "description": "We believe compliance should be an accelerator. We embed automated checks, digital signing, and credit integration directly into the user journey for frictionless onboarding.",
+      "stats": "Efficiency Gained",
+      "highlights": [
+        "KYC/AML via BankID",
+        "Fincheck",
+        "Digital Signing Trails",
+        "CRIF Integration"
+      ]
+    },
+    "ecosystems": {
+      "name": "Ecosystems & Platforms",
+      "tagline": "Connecting Value Chains",
+      "description": "We see the power of connected platforms. Our unified identity and data pipelines bridge the gap between disparate sectors, enabling scalable property listing engines.",
+      "stats": "API Interactions",
+      "highlights": [
+        "Cross-sector Integrations",
+        "Property Listing Platforms",
+        "Unified Identity",
+        "Scalable Data Pipelines"
+      ]
+    },
+    "specializations": {
+      "title": "Additional Specializations",
+      "description": "Cross-industry expertise that drives results",
+      "cloud": "Cloud Solutions",
+      "distArch": "Distributed Architecture",
+      "scaling": "Ecosystems",
+      "product": "Startup Product Development",
+      "ai": "AI Implementation",
+      "migration": "System Migration"
+    }
+  },
+  "TechStack": {
+    "label": "Technology",
+    "title": "Market-tested stack",
+    "description": "We work with the technologies that power the world's most demanding applications. No experiments on your dime—proven tools, proven results.",
+    "cta": "Discuss Your Tech Needs",
+    "statement": "Our engineers stay current with evolving technologies while maintaining deep expertise in battle-tested solutions. We choose the right tool for each job.",
+    "categories": {
+      "languages": "Languages & Frameworks",
+      "data": "Data & Storage",
+      "cloud": "Cloud & DevOps",
+      "methodology": "Methodology & AI",
+      "design": "Design"
+    }
+  },
+  "CaseStudies": {
+    "label": "Case Studies",
+    "title": "Proven impact",
+    "viewAll": "View All Projects",
+    "fintech": {
+      "category": "FinTech",
+      "title": "Digital Mortgage & Fincheck",
+      "challenge": "Traditional mortgage applications required multiple in-person visits and weeks of manual processing.",
+      "solution": "Integrated BankID for instant KYC and developed 'Fincheck' for automated financial health assessments and online applications.",
+      "outcome": "First-to-market digital mortgage flow in the region with instant eligibility feedback and reduced time-to-offer."
+    },
+    "proptech": {
+      "category": "PropTech",
+      "title": "National Real Estate Ecosystem (MLS)",
+      "challenge": "The real estate market lacked a unified source of data, leading to fragmentation and lack of transparency for brokers and buyers.",
+      "solution": "Engineered the first comprehensive Multiple Listing Service (MLS) integrated with the national Land Registry (Katastr nemovitostí).",
+      "outcome": "Created a single source of truth for 10,000+ brokers, enabling seamless cooperation and transaction transparency."
+    },
+    "enterprise": {
+      "category": "Enterprise",
+      "title": "AI-Powered Property Search",
+      "challenge": "Users struggled to find properties based on visual preference or location-specific data amidst thousands of listings.",
+      "solution": "Implemented AI-driven visual search for property styles and Augmented Reality (AR) for on-site property discovery.",
+      "outcome": "Increased user engagement by 3x through intuitive, 'point-and-see' property exploration and personalized search."
+    },
+    "testimonials": {
+      "text": "BLAiT engineers integrated seamlessly with our team and delivered beyond expectations. They're not vendors—they're partners.",
+      "author": "Sarah Chen",
+      "role": "CTO, FinTech Startup",
+      "cta": "Start Your Success Story"
+    }
+  },
+  "Contact": {
+    "label": "Contact",
+    "title": "Let's build something great",
+    "description": "Whether you need a single specialist or a full team, we'll craft an engagement that fits your needs and budget.",
+    "response": "Response within 24 hours",
+    "emailUs": "Email us",
+    "liveChat": "Live Chat",
+    "trustedBy": "Trusted by",
+    "badges": {
+      "fintech": "FinTech",
+      "proptech": "PropTech",
+      "regtech": "RegTech",
+      "enterprise": "Enterprise"
+    },
+    "trusted": "Trusted by industry leaders",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "John Smith",
+      "email": "Email",
+      "emailPlaceholder": "john@company.com",
+      "company": "Company",
+      "companyPlaceholder": "Company Inc.",
+      "projectType": "Project Type",
+      "projectTypePlaceholder": "Select project type",
+      "message": "Tell us about your project",
+      "messagePlaceholder": "What are you building? What skills do you need?",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "sent": "Message Sent!",
+      "sentDesc": "We'll get back to you within 24 hours.",
+      "types": {
+        "augmentation": "Product Engineering Partner",
+        "team": "Dedicated Team",
+        "project": "Project-Based",
+        "consulting": "Technical Consulting"
+      }
+    }
+  },
+  "About": {
+    "label": "About Us",
+    "title": "Engineering partners, not vendors",
+    "description1": "We founded BLAiT to redefine the standard of external technical collaboration. We moved away from traditional outsourcing models to eliminate misaligned incentives, communication gaps, and the \"talent lottery.\" We built something better.",
+    "description2": "Our engineers work from European time zones with significant overlap with both EU and US business hours. We operate under strict EU legal frameworks (GDPR) and bring cultural alignment that goes beyond language—we don't just take tickets; we challenge requirements to build better products.",
+    "stats": {
+      "timezone": "Time Zone Coverage",
+      "fluency": "English Fluency"
+    },
+    "values": {
+      "excellence": {
+        "title": "Engineering Excellence",
+        "desc": "We hire elite seniors and autonomous mid-level engineers. No juniors, no trainees. We invest in top-tier delivery from Day 1."
+      },
+      "transparent": {
+        "title": "Transparent Partnership",
+        "desc": "No black boxes. Full visibility into progress, challenges, and decisions."
+      },
+      "impact": {
+        "title": "Business Impact Focus",
+        "desc": "Code is a means, not an end. We measure success by business outcomes."
+      },
+      "longterm": {
+        "title": "Long-term Thinking",
+        "desc": "We build systems meant to last and evolve. No quick wins that create tech debt."
+      }
+    }
+  },
+  "Process": {
+    "label": "Process",
+    "title": "How we work",
+    "description": "A proven methodology refined across multiple engagements. Fast time-to-value without cutting corners.",
+    "steps": {
+      "discovery": {
+        "title": "Discovery & Architecture",
+        "description": "We analyze your technical landscape and business goals to define the system boundaries before a single line of code is written.",
+        "details": [
+          "Technical Landscape Analysis",
+          "Architecture Definition",
+          "Business Goal Alignment"
+        ]
+      },
+      "matching": {
+        "title": "Architectural Alignment",
+        "description": "We don’t just 'fill seats'. We assemble a senior crew with the exact domain experience to execute the defined architecture.",
+        "details": [
+          "Domain Expertise Mapping",
+          "Senior-Led Verification",
+          "Cultural & Technical Fit"
+        ]
+      },
+      "integration": {
+        "title": "Code Quality & Peer Review",
+        "description": "Every line of code is peer-reviewed. We enforce Clean Code standards and CI/CD best practices to ensure zero-debt delivery.",
+        "details": [
+          "Mandatory Peer Reviews",
+          "Clean Code Principles",
+          "Rigorous QA Standards"
+        ]
+      },
+      "delivery": {
+        "title": "Production & Evolution",
+        "description": "We ship to production with confidence. We sell longevity, not just hours—building systems designed to last.",
+        "details": [
+          "Production-Ready Delivery",
+          "Observability Setup",
+          "Long-term Maintainability"
+        ]
+      }
+    },
+    "models": {
+      "title": "Engagement Models",
+      "subtitle": "Flexible arrangements to fit your needs",
+      "augmentation": {
+        "title": "Product Engineering Partner",
+        "desc": "Individual engineers embedded in your team, working your hours, using your tools."
+      },
+      "team": {
+        "title": "Dedicated Team",
+        "desc": "A full squad with complementary skills, managed as a cohesive unit."
+      },
+      "project": {
+        "title": "Project-Based",
+        "desc": "We provide end-to-end project execution within a defined scope and timeline. Depending on your requirements, we offer both Fixed-Price or Hourly rates billing models to ensure full alignment with your budgetary needs."
+      }
+    }
+  },
+  "FAQ": {
+    "title": "FAQ",
+    "items": {
+      "start": {
+        "question": "How quickly can you start?",
+        "answer": "We typically start within 48 hours of our initial consultation. Our process is streamlined to get us integrated with your team as fast as possible."
+      },
+      "timezone": {
+        "question": "Do you work in my time zone?",
+        "answer": "Yes, we are based in the EU but work across US and European time zones. We ensure at least 4 hours of overlap with your core working hours."
+      },
+      "pricing": {
+        "question": "What is your pricing model?",
+        "answer": "We offer Cost-Efficient Delivery models including product engineering partnerships and project-based fixed pricing. We focus on Optimized ROI by delivering high-quality code that reduces long-term maintenance costs."
+      },
+      "pm": {
+        "question": "How do you handle legacy code modernization?",
+        "answer": "We take a pragmatic approach to legacy debt. Our team can either incrementally refactor your existing monolith into microservices or build new high-performance features that integrate seamlessly with your current stack."
+      },
+      "security": {
+        "question": "Is your engineering compliant with FinTech standards?",
+        "answer": "Yes. We incorporate secure SDLC, OWASP best practices, and automated security scanning from day one. Our team is experienced in building systems for regulated environments like GDPR, PSD2, and ISO 27001."
+      }
+    }
+  },
+  "Metadata": {
+    "title": "BLAiT Engineering | Product Engineering & IT Staffing Partner",
+    "description": "Expert Software Development and IT Staffing. Precision-matched engineering talent for FinTech, PropTech, and RegTech. Enterprise-grade IT outsourcing and strategic engineering partnerships."
+  },
+  "Security": {
+    "hero": {
+      "label": "Security & Compliance",
+      "title": "Security by Design",
+      "subtitle": "We don’t bolt security on at the end. It’s baked into every commit, every container, and every cloud resource we touch."
+    },
+    "compliance": {
+      "title": "Compliance & Standards",
+      "description": "Our internal processes are designed to align with the frameworks that matter to you. While we are an engineering partner, not a hosting provider, we operate with the rigor of a regulated entity.",
+      "items": {
+        "gdpr": {
+          "title": "GDPR Compliant",
+          "text": "All our engineers and operations are based in the EU/EEA or equivalent jurisdictions. Data Protection Agreements (DPA) are standard in every engagement."
+        },
+        "iso": {
+          "title": "ISO 27001 Aligned",
+          "text": "We follow information security management best practices, including documented access controls, incident response plans, and asset management."
+        },
+        "soc2": {
+          "title": "SOC2 Readiness",
+          "text": "For US clients, we align with SOC2 Trust Services Criteria. We implement change management, logical access, and monitoring controls by default."
+        }
+      }
+    },
+    "infrastructure": {
+      "title": "Infrastructure Security",
+      "description": "Secure foundations for scalable systems.",
+      "items": {
+        "aws": {
+          "title": "Cloud Security",
+          "text": "We use AWS/GCP best practices: Well-Architected Framework, least-privilege IAM roles, and separate VPCs for environments."
+        },
+        "encryption": {
+          "title": "Encryption Everywhere",
+          "text": "Data is encrypted at rest (AES-256) and in transit (TLS 1.2+). We manage secrets using enterprise-grade vaults (AWS Secrets Manager, HashiCorp Vault)."
+        },
+        "access": {
+          "title": "Zero Trust Access",
+          "text": "No VPNs, no shared passwords. We access infrastructure via short-lived credentials and identity-aware proxies."
+        }
+      }
+    },
+    "sdlc": {
+      "title": "Secure Development Lifecycle",
+      "description": "Code that defends itself.",
+      "items": {
+        "review": {
+          "title": "Mandatory Peer Review",
+          "text": "No code reaches production without at least one senior engineer approval. We check for OWASP Top 10 vulnerabilities during review."
+        },
+        "scanning": {
+          "title": "Automated Scanning",
+          "text": "CI/CD pipelines include SAST (Static Analysis), DAST (Dynamic Analysis), and specialized dependency scanning to catch vulnerabilities early."
+        },
+        "supply": {
+          "title": "Supply Chain Security",
+          "text": "We pin dependency versions, use signed commits, and regularly audit third-party libraries for CVEs."
+        }
+      }
+    },
+    "operational": {
+      "title": "Operational Security",
+      "items": [
+        "Strict NDA & IP Protection Agreements",
+        "Comprehensive Background Checks",
+        "Managed Devices (MDM)",
+        "Security Awareness Culture"
+      ]
+    },
+    "cta": {
+      "title": "Have specific compliance needs?",
+      "text": "We are happy to discuss our security protocols and align with your vendor assessment requirements.",
+      "button": "Contact Security Team"
+    }
+  }
 }

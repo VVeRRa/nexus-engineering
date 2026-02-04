@@ -1,94 +1,99 @@
 "use client";
 
+import { useRef } from "react";
 import { useTranslations } from "next-intl";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { Background3D } from "./Background3D";
 
 export function HeroSection() {
   const t = useTranslations("Home");
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"]
+  });
+
+  const mainContentOpacity = useTransform(scrollYProgress, [0, 0.15], [1, 0]);
+
+  // First part fades out quickly
+  const title1Opacity = useTransform(scrollYProgress, [0, 0.15], [1, 0]);
+  const title1Y = useTransform(scrollYProgress, [0, 0.15], [0, -50]);
+
+  // Second part fades in then out
+  const title2Opacity = useTransform(scrollYProgress, [0.15, 0.25, 0.4], [0, 1, 0]);
+  const title2Y = useTransform(scrollYProgress, [0.15, 0.4], [50, -50]);
 
   return (
-    <section id="hero" className="bg-transparent relative min-h-screen flex flex-col justify-center overflow-hidden transition-colors duration-300">
+    <section
+      id="hero"
+      ref={containerRef}
+      className="bg-black relative h-[500vh]"
+    >
+      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col justify-center items-center">
+        <Background3D scrollYProgress={scrollYProgress} />
 
-
-
-      {/* Content */}
-      <div className="container relative z-10 pt-32 pb-20 text-center md:pt-40">
-
-        {/* Top Badge - Optional bubble */}
-        <div className="flex justify-center mb-8 animate-fade-up" style={{ animationDelay: "0ms", animationFillMode: "forwards" }}>
-          <span className="text-[var(--color-primary)] font-bold text-sm tracking-wider uppercase bg-blue-50 px-4 py-1.5 rounded-full">
-            {t('kicker')}
-          </span>
-        </div>
-
-        {/* Main Headline */}
-        <div className="max-w-4xl mx-auto">
-          <h1
-            className="text-5xl md:text-6xl lg:text-7xl text-[var(--color-ink)] tracking-tight leading-[1.1] animate-fade-up"
-            style={{
-              fontFamily: "var(--font-display)",
-              fontWeight: 800,
-              animationDelay: "100ms",
-              animationFillMode: "forwards",
-            }}
-          >
-            {t('highlights.h1.title')}
-          </h1>
-        </div>
-
-        {/* Subheadline */}
-        <p
-          className="text-xl md:text-2xl text-[var(--color-ink)] max-w-2xl mx-auto mt-8 leading-relaxed animate-fade-up"
+        {/* Main Static Title (Overlay) - Part 1 */}
+        <motion.div
           style={{
-            fontFamily: "var(--font-body)",
-            animationDelay: "200ms",
-            animationFillMode: "forwards",
+            opacity: title1Opacity,
+            y: title1Y
           }}
+          className="absolute inset-0 bg-transparent flex flex-col items-center justify-center pointer-events-none z-10 px-8 will-change-transform"
         >
-          {t('subheadline')}
-        </p>
-
-        {/* Action Area - Centered Pill Button */}
-        <div
-          className="flex flex-col items-center mt-12 animate-fade-up"
-          style={{ animationDelay: "300ms", animationFillMode: "forwards" }}
-        >
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-          >
-            {t('ctaBlock.button')}
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </a>
-
-          {/* Trust indicators */}
-          <div className="flex items-center gap-6 mt-16 text-sm text-[var(--color-ink)] font-medium">
-            <div className="flex items-center gap-2">
-              <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-              </div>
-              <span>{t('trust.consultation')}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-              </div>
-              <span>{t('trust.euTeam')}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-              </div>
-              <span>{t('trust.startFast')}</span>
-            </div>
+          <p className="text-white/60 text-lg md:text-xl max-w-lg text-center mb-8 font-medium tracking-tight">
+            {t("subheadline")}
+          </p>
+          <div className="relative w-full text-center">
+            <h1 className="text-7xl md:text-[128px] font-bold text-white tracking-[-0.05em] leading-none uppercase inline-block py-8">
+              {t("highlights.h1.titlePart1")}
+            </h1>
           </div>
+        </motion.div>
+
+        {/* Main Title - Part 2 (Scrolls in after Part 1) */}
+        <motion.div
+          style={{
+            opacity: title2Opacity,
+            y: title2Y
+          }}
+          className="absolute inset-0 bg-transparent flex flex-col items-center justify-center pointer-events-none z-10 px-8 will-change-transform"
+        >
+          <div className="relative w-full text-center mt-32"> {/* Added margin to visually separate if needed, or keep centered */}
+            <h1 className="text-7xl md:text-[128px] font-bold text-white tracking-[-0.05em] leading-none uppercase inline-block py-8">
+              {t("highlights.h1.titlePart2")}
+            </h1>
+          </div>
+        </motion.div>
+
+        {/* Scroll-linked Chunks - Shifted timeline */}
+        <div className="relative z-10 w-full h-full">
+          <TextChunk text={t("heroChunks.velocity")} progress={scrollYProgress} range={[0.45, 0.55, 0.65, 0.75]} isGradient />
+          <TextChunk text={t("heroChunks.scale")} progress={scrollYProgress} range={[0.75, 0.8, 0.9, 0.95]} />
         </div>
       </div>
+    </section>
+  );
+}
 
+function TextChunk({ text, progress, range, isGradient }: { text: string; progress: any; range: [number, number, number, number]; isGradient?: boolean }) {
+  const opacity = useTransform(progress, range, [0, 0.9, 0.9, 0]);
+  const scale = useTransform(progress, range, [0.95, 1, 1, 1.05]);
+  const y = useTransform(progress, range, [100, 0, 0, -100]);
 
-
-
-    </section >
+  return (
+    <motion.div
+      style={{
+        opacity,
+        scale,
+        y,
+        mixBlendMode: "normal" as any
+      }}
+      className="absolute inset-0 flex items-center justify-center p-8 text-center will-change-transform"
+    >
+      <h2 className={`text-7xl md:text-[128px] font-bold tracking-[-0.05em] uppercase selection:bg-white selection:text-black leading-none py-12 ${isGradient ? 'bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent' : 'text-white'}`}>
+        {text}
+      </h2>
+    </motion.div>
   );
 }

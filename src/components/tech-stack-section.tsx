@@ -1,151 +1,96 @@
 "use client";
 
+import { useRef } from "react";
 import { Section } from "./ui/section";
 import { SectionHeader } from "./ui/section-header";
-
 import { useTranslations } from "next-intl";
+import { motion, useInView } from "framer-motion";
 
 export function TechStackSection() {
   const t = useTranslations("TechStack");
+  const containerRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(containerRef, { margin: "200px" });
 
-  const techCategories = [
-    {
-      name: t("categories.languages"),
-      color: "var(--color-primary)",
-      techs: [
-        { name: "Java", abbr: "Jv" },
-        { name: "Go", abbr: "Go" },
-        { name: "Node.js", abbr: "Nj" },
-        { name: "React", abbr: "Re" },
-        { name: "TypeScript", abbr: "Ts" },
-        { name: "Next.js", abbr: "Nx" },
-      ],
-    },
-    {
-      name: t("categories.data"),
-      color: "var(--color-secondary)",
-      techs: [
-        { name: "PostgreSQL", abbr: "Pg" },
-        { name: "Redis", abbr: "Rd" },
-        { name: "Elasticsearch", abbr: "Es" },
-        { name: "MongoDB", abbr: "Mg" },
-      ],
-    },
-    {
-      name: t("categories.design"),
-      color: "var(--color-secondary)",
-      techs: [
-        { name: "Figma", abbr: "Fi" },
-        { name: "Storybook", abbr: "Sb" },
-        { name: "Tailwind", abbr: "Tw" },
-        { name: "Adobe products", abbr: "Ad" },
-      ],
-    },
-    {
-      name: t("categories.cloud"),
-      color: "var(--color-primary)",
-      techs: [
-        { name: "AWS", abbr: "Aw" },
-        { name: "Kubernetes", abbr: "K8" },
-        { name: "Docker", abbr: "Dk" },
-        { name: "Terraform", abbr: "Tf" },
-        { name: "Google Cloud", abbr: "Gc" },
-      ],
-    },
-    {
-      name: t("categories.methodology"),
-      color: "var(--color-primary)",
-      techs: [
-        { name: "Agile", abbr: "Ag" },
-        { name: "AI", abbr: "AI" },
-        { name: "CI/CD", abbr: "CI" },
-      ],
-    },
+  const allTechs = [
+    "Java", "Quarkus", "Spring Boot", "Node.js", "TypeScript", "Go", "React", "Next.js",
+    "PostgreSQL", "Redis", "Elasticsearch", "NATS JetStream", "AWS", "Kubernetes",
+    "Terraform", "Docker", "Prometheus", "Grafana", "Loki", "Playwright", "Figma",
+    "CI/CD", "Testing", "Agile", "AI", "Cloud-Native", "Microservices"
   ];
 
+  // Double the array for seamless looping
+  const marqueeTechs = [...allTechs, ...allTechs];
+
   return (
-
-    <Section
-      id="tech"
-      background={
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-0 -z-10"
-          style={{ background: 'radial-gradient(circle, var(--color-green-100) 0%, transparent 70%)' }}
+    <Section id="tech" className="bg-black py-32 overflow-hidden">
+      <div ref={containerRef} className="container relative z-10 mb-20 text-center">
+        <SectionHeader
+          align="center"
+          label={t("label")}
+          title={t("title")}
+          description={t("description")}
         />
-      }
-    >
-      <SectionHeader
-        align="center"
-        label={<span className="text-[var(--color-secondary)]">{t("label")}</span>}
-        title={t("title")}
-        description={t("description")}
-        className="mb-10"
-      />
-
-      {/* Tech Categories Grid */}
-      <div className="grid md:grid-cols-2 gap-8 lg:gap-12 animate-on-scroll stagger-fly-children">
-        {techCategories.map((category, catIndex) => (
-          <div key={catIndex} className="group">
-            {/* Category Header */}
-            <div className="flex items-center gap-4 mb-6">
-              <div
-                className="w-3 h-3 rounded-full"
-                style={{ background: category.color }}
-              />
-              <h3
-                className="text-sm uppercase tracking-[0.15em] text-[var(--color-ink)]"
-                style={{ fontFamily: "var(--font-mono)", fontWeight: 600 }}
-              >
-                {category.name}
-              </h3>
-              <div className="flex-1 h-px bg-[var(--color-border)]" />
-            </div>
-
-            {/* Tech Grid */}
-            <div className="grid grid-cols-3 gap-3">
-              {category.techs.map((tech, techIndex) => (
-                <div
-                  key={techIndex}
-                  className="group/item relative bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-3 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-default overflow-hidden"
-                >
-
-                  <div className="relative z-10">
-                    <div
-                      className="text-lg mb-1 transition-colors duration-300 font-bold"
-                      style={{
-                        fontFamily: "var(--font-mono)",
-                        color: category.color,
-                      }}
-                    >
-                      {tech.abbr}
-                    </div>
-
-                    {/* Name */}
-                    <div
-                      className="text-xs text-[var(--color-ink)] font-medium"
-                      style={{ fontFamily: "var(--font-display)" }}
-                    >
-                      {tech.name}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
       </div>
 
-      {/* Bottom Statement */}
-      <div className="mt-20 pt-12 border-t border-slate-800">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 text-center lg:text-left">
-          <p className="text-lg text-[var(--color-ink)] max-w-2xl">
-            {t("statement")}
-          </p>
-          <a href="#contact" className="inline-flex items-center justify-center px-8 py-3 bg-[var(--color-primary)] text-white rounded-full font-bold hover:bg-blue-700 transition-colors">
-            {t("cta")}
-          </a>
-        </div>
+      {/* Marquee Container */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+        className="relative flex overflow-x-hidden group py-12"
+      >
+        <motion.div
+          animate={isInView ? {
+            x: ["0%", "-50%"],
+          } : {}}
+          transition={{
+            duration: 45,
+            ease: "linear",
+            repeat: Infinity,
+          }}
+          className="flex whitespace-nowrap gap-8 px-4"
+        >
+          {marqueeTechs.map((tech, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ scale: 1.05, y: -8 }}
+              className="px-10 py-5 border border-white/5 bg-white/[0.01] rounded-full hover:border-white/20 transition-all duration-500 group/tag"
+            >
+              <span className="text-[11px] font-bold tracking-[0.25em] text-white/50 group-hover/tag:text-white uppercase transition-all duration-300">
+                {tech}
+              </span>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
+
+      <div className="container relative z-10 mt-32">
+        {/* Bottom Statement Area */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.98 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+          viewport={{ once: true }}
+          className="p-16 lg:p-20 border border-white/5 bg-white/[0.01] rounded-[4rem] relative overflow-hidden group"
+        >
+          {/* Subtle Glows inside Bottom Block */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-white/[0.02] blur-[100px] -z-10 group-hover:bg-white/[0.04] transition-all duration-1000" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/[0.02] blur-[100px] -z-10 group-hover:bg-white/[0.04] transition-all duration-1000" />
+
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-16 relative z-10 text-center lg:text-left">
+            <p className="text-2xl md:text-3xl text-white/50 max-w-2xl leading-tight font-medium tracking-tight">
+              {t("statement")}
+            </p>
+            <div className="flex justify-center">
+              <a href="#contact" className="btn btn-primary px-14 py-6">
+                {t("cta")}
+              </a>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </Section>
   );
 }
+

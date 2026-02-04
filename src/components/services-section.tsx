@@ -2,8 +2,8 @@
 
 import { Section } from "./ui/section";
 import { SectionHeader } from "./ui/section-header";
-
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 
 export function ServicesSection() {
   const t = useTranslations("Services");
@@ -59,90 +59,116 @@ export function ServicesSection() {
     },
   ];
 
+  const containerVars = {
+    initial: { opacity: 0 },
+    whileInView: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVars = {
+    initial: { y: 30, opacity: 0 },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: [0.2, 0.65, 0.3, 0.9] as any,
+      },
+    },
+  };
+
   return (
-
-    <Section
-      id="services"
-      background={
-        <div
-          className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-0 -z-10"
-          style={{ background: 'radial-gradient(circle, var(--color-green-200) 0%, transparent 70%)' }}
+    <section id="services" className="py-16 md:py-24 bg-black relative">
+      <div className="container relative z-10 mx-auto px-6">
+        <SectionHeader
+          align="center"
+          label={t("title")}
+          title={t("leadTitle")}
+          description={t("leadText")}
+          className="mb-24"
         />
-      }
-    >
-      <SectionHeader
-        align="center"
-        label={<span className="text-[var(--color-secondary)]">{t("title")}</span>}
-        title={t("lead")}
-        className="mb-12"
-      />
 
-      {/* Services Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-on-scroll stagger-fly-children">
-        {services.map((service, index) => {
-          const tags = (t.raw(`list.${service.id}.tags`) as string[]) || [];
-          const isEven = index % 2 === 0;
+        {/* Services Bento Grid */}
+        <motion.div
+          variants={containerVars}
+          initial="initial"
+          whileInView="whileInView"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10 overflow-hidden"
+        >
+          {services.map((service, index) => {
+            const spans = [
+              "lg:col-span-1",
+              "lg:col-span-1",
+              "lg:col-span-1",
+              "lg:col-span-1",
+              "lg:col-span-1",
+              "lg:col-span-1",
+            ];
 
-          const themeClass = isEven
-            ? "from-[var(--color-primary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-blue-100 shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
-            : "from-[var(--color-secondary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-green-100 shadow-[0_20px_50px_rgba(34,197,94,0.15)]";
+            const tags = (t.raw(`list.${service.id}.tags`) as string[]) || [];
 
-          return (
-            <div
-              key={index}
-              className={`group bg-gradient-to-br ${themeClass} border rounded-3xl p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-100`}
-            >
-              {/* Content */}
-              <div>
-                <div className="flex items-center gap-4 mb-3">
-                  {/* Icon */}
-                  <div
-                    className={`shrink-0 w-12 h-12 rounded-xl flex items-center justify-center transition-colors ${isEven
-                      ? "bg-blue-50 text-[var(--color-primary)]"
-                      : "bg-green-50 text-[var(--color-secondary)]"
-                      }`}
-                  >
+            return (
+              <motion.div
+                key={index}
+                variants={itemVars}
+                className={`group bg-[#050505] p-10 flex flex-col h-full relative overflow-hidden transition-colors duration-500 hover:bg-[#0a0a0a] ${spans[index % spans.length]}`}
+              >
+                <div className="flex items-start justify-between mb-8">
+                  <div className="w-12 h-12 flex items-center justify-center text-white/40 group-hover:text-white transition-all duration-500">
                     {service.icon}
                   </div>
+                  <div className="text-white/5 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                      <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                  </div>
+                </div>
 
-                  <h3
-                    className="text-xl font-bold text-[var(--color-ink)]"
-                    style={{ fontFamily: "var(--font-display)" }}
-                  >
+                <div className="flex flex-col flex-1">
+                  <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">
                     {t(`list.${service.id}.title`)}
                   </h3>
+
+                  <p className="text-muted mb-8 leading-relaxed text-sm max-w-sm">
+                    {t(`list.${service.id}.description`)}
+                  </p>
+
+                  <div className="mt-auto flex flex-wrap gap-2">
+                    {tags.map((tag, tagIndex) => (
+                      <span
+                        key={tagIndex}
+                        className="px-3 py-1.5 text-[9px] font-bold uppercase tracking-widest bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 text-blue-400"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
+              </motion.div>
+            );
+          })}
+        </motion.div>
 
-                <p className="text-[var(--color-ink)] mb-6 leading-relaxed text-sm">
-                  {t(`list.${service.id}.description`)}
-                </p>
-
-                <div className="flex flex-wrap gap-2">
-                  {tags.slice(0, 3).map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className={`px-0 py-1 text-xs font-medium ${isEven
-                        ? "text-blue-300"
-                        : "text-green-300"
-                        }`}
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          );
-        })}
+        {/* Bottom CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mt-24 text-center"
+        >
+          <a href="#contact" className="inline-flex items-center gap-4 group text-white/40 font-bold tracking-[0.3em] uppercase text-[10px] transition-all duration-300 hover:text-white">
+            {t('cta.button')}
+            <span className="w-10 h-px bg-white/10 group-hover:w-16 group-hover:bg-white/40 transition-all duration-500" />
+          </a>
+        </motion.div>
       </div>
-
-      {/* Bottom CTA */}
-      <div className="mt-16 text-center">
-        <a href="#contact" className="inline-flex items-center gap-2 text-[var(--color-secondary)] font-bold hover:gap-3 transition-all">
-          {t('cta.button')}
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-        </a>
-      </div>
-    </Section>
+    </section>
   );
 }
+

@@ -2,8 +2,8 @@
 
 import { Section } from "./ui/section";
 import { SectionHeader } from "./ui/section-header";
-
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 
 export function ProcessSection() {
   const t = useTranslations("Process");
@@ -15,7 +15,7 @@ export function ProcessSection() {
       description: t("steps.discovery.description"),
       details: (t.raw("steps.discovery.details") as string[]) || [],
       icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
@@ -27,7 +27,7 @@ export function ProcessSection() {
       description: t("steps.matching.description"),
       details: (t.raw("steps.matching.details") as string[]) || [],
       icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
           <circle cx="9" cy="7" r="4"></circle>
           <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -41,7 +41,7 @@ export function ProcessSection() {
       description: t("steps.integration.description"),
       details: (t.raw("steps.integration.details") as string[]) || [],
       icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
           <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
         </svg>
@@ -53,132 +53,142 @@ export function ProcessSection() {
       description: t("steps.delivery.description"),
       details: (t.raw("steps.delivery.details") as string[]) || [],
       icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
         </svg>
       ),
     },
   ];
 
+  const containerVars = {
+    initial: { opacity: 0 },
+    whileInView: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVars = {
+    initial: { y: 30, opacity: 0 },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: [0.2, 0.65, 0.3, 0.9] as any,
+      },
+    },
+  };
+
   return (
-
-    <Section
-      id="process"
-      background={
-        <div
-          className="absolute top-0 left-1/4 w-[600px] h-[600px] rounded-full opacity-0 -z-10"
-          style={{ background: 'radial-gradient(circle, var(--color-blue-100) 0%, transparent 70%)' }}
+    <Section id="process" className="bg-black py-24">
+      <div className="container relative z-10">
+        <SectionHeader
+          align="center"
+          label={t("label")}
+          title={t("title")}
+          description={t("description")}
+          className="mb-16"
         />
-      }
-    >
-      <SectionHeader
-        align="center"
-        label={<span className="text-[var(--color-secondary)]">{t("label")}</span>}
-        title={t("title")}
-        description={t("description")}
-        className="mb-12"
-      />
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 animate-on-scroll stagger-fly-children">
-        {Object.entries(steps).map(([key, step], index) => {
-          const isEven = index % 2 === 0;
+        <motion.div
+          variants={containerVars}
+          initial="initial"
+          whileInView="whileInView"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10 overflow-hidden"
+        >
 
-          const themeClass = isEven
-            ? "from-[var(--color-primary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-blue-100 shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
-            : "from-[var(--color-secondary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-green-100 shadow-[0_20px_50px_rgba(34,197,94,0.15)]";
+          {steps.map((step, index) => (
+            <motion.div
+              key={index}
+              variants={itemVars}
+              className="group relative bg-[#050505] p-10 md:p-12 transition-all duration-500 hover:bg-[#0a0a0a]"
+            >
+              <div className="absolute top-8 right-8 text-8xl font-black text-blue-500/20 pointer-events-none group-hover:text-blue-500/30 transition-all duration-700">
+                {step.number}
+              </div>
 
-          const iconBgClass = isEven
-            ? "bg-blue-50 text-[var(--color-primary)]"
-            : "bg-green-50 text-[var(--color-secondary)]";
-
-          return (
-            <div key={key} className="group relative">
-              <div className={`h-full bg-gradient-to-br ${themeClass} border rounded-3xl p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col`}>
-                <div className="mb-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className={`w-12 h-12 shrink-0 rounded-xl ${iconBgClass} flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform duration-300`}>
-                      {index + 1}
-                    </div>
-                    <h3
-                      className="text-2xl font-bold text-[var(--color-ink)]"
-                      style={{ fontFamily: "var(--font-display)" }}
-                    >
-                      {step.title}
-                    </h3>
-                  </div>
-                  <p className="text-[var(--color-ink)]">
-                    {step.description}
-                  </p>
+              <div className="relative z-10">
+                <div className="w-12 h-12 flex items-center justify-center text-white/40 group-hover:text-white transition-all duration-500 mb-10">
+                  {step.icon}
                 </div>
 
-                <ul className="space-y-3 mt-auto">
+                <h3 className="text-2xl font-bold text-white mb-6 tracking-tight">
+                  {step.title}
+                </h3>
+
+                <p className="text-muted mb-10 leading-relaxed text-sm">
+                  {step.description}
+                </p>
+
+                <ul className="space-y-4">
                   {step.details.map((detail, i) => (
-                    <li key={i} className="flex items-start gap-3 text-[var(--color-ink)] text-sm">
-                      <span
-                        className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5"
-                        style={{ background: isEven ? `color-mix(in srgb, var(--color-primary), transparent 85%)` : `color-mix(in srgb, var(--color-secondary), transparent 85%)` }}
-                      >
-                        <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                          <path
-                            d="M2 6L5 9L10 3"
-                            stroke={isEven ? "var(--color-primary)" : "var(--color-secondary)"}
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </span>
+                    <li key={i} className="flex items-center gap-4 text-white/60 text-[10px] font-bold uppercase tracking-widest">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-500 group-hover:scale-125 transition-all duration-700" />
                       {detail}
                     </li>
                   ))}
                 </ul>
               </div>
-            </div>
-          );
-        })}
-      </div>
+            </motion.div>
+          ))}
+        </motion.div>
 
-      {/* Engagement Models (Simplified) */}
-      <div className="mt-24 pt-16 border-t border-[var(--color-border)]">
-        <div className="bg-[var(--color-paper-secondary)] rounded-3xl overflow-hidden flex flex-col lg:flex-row shadow-2xl">
-          {/* Image Side */}
-          <div className="lg:w-2/5 relative min-h-[300px] lg:min-h-full">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/process-whiteboard.png"
-              alt="Developer collaboration"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-[var(--color-surface)]/30 mix-blend-multiply" />
-          </div>
-
-          {/* Content Side */}
-          <div className="flex-1 p-8 md:p-12 lg:p-16">
-            <h3 className="text-2xl font-bold text-[var(--color-ink)] mb-4" style={{ fontFamily: "var(--font-display)" }}>
-              {t("models.title")}
-            </h3>
-            <p className="text-[var(--color-ink)] mb-10 text-lg">
-              {t("models.subtitle")}
-            </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
-              {[
-                { id: "augmentation", icon: "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8z M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75" },
-                { id: "team", icon: "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8z M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75" },
-                { id: "project", icon: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16zM3.27 6.96L12 12.01l8.73-5.05 M12 22.08V12" }
-              ].map((model, idx) => (
-                <div key={model.id} className={`bg-[var(--color-surface)] border border-[var(--color-border)] rounded-2xl p-6 hover:shadow-lg transition-all duration-300 ${model.id === 'project' ? 'md:col-span-2 lg:col-span-1 xl:col-span-2' : ''}`}>
-                  <h4 className="text-lg font-bold text-[var(--color-ink)] mb-2 flex items-center gap-2">
-                    {t(`models.${model.id}.title`)}
-                  </h4>
-                  <p className="text-[var(--color-ink)] text-sm leading-relaxed">
-                    {t(`models.${model.id}.desc`)}
-                  </p>
-                </div>
-              ))}
-            </div>
+        {/* Engagement Models */}
+        <div className="mt-40 pt-24 border-t border-white/5">
+          <div className="flex flex-col lg:flex-row gap-24 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="lg:w-1/2"
+            >
+              <h3 className="text-4xl font-black text-white mb-8 tracking-tighter">
+                {t("models.title")}
+              </h3>
+              <p className="text-white/40 text-lg leading-relaxed mb-12 font-light">
+                {t("models.subtitle")}
+              </p>
+              <div className="grid gap-6">
+                {[
+                  { id: "augmentation" },
+                  { id: "team" },
+                  { id: "project" }
+                ].map((model) => (
+                  <div key={model.id} className="p-8 bg-white/[0.01] border border-white/5 rounded-3xl hover:bg-white/[0.03] transition-colors group">
+                    <h4 className="text-xl font-bold text-white mb-3 transition-colors uppercase tracking-[0.2em] text-[11px] font-bold">{t(`models.${model.id}.title`)}</h4>
+                    <p className="text-white/30 text-base font-medium leading-relaxed">{t(`models.${model.id}.desc`)}</p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className="lg:w-1/2 relative aspect-[4/3] w-full rounded-[3rem] overflow-hidden border border-white/5 group bg-white/[0.02]"
+            >
+              <img
+                src="/images/process-whiteboard.png"
+                alt="Developer collaboration"
+                className="w-full h-full object-cover grayscale opacity-30 group-hover:opacity-60 transition-all duration-1000"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+              <div className="absolute bottom-12 left-12 right-12">
+                <div className="text-[10px] font-bold tracking-[0.4em] text-white/50 uppercase mb-4">Engineering Excellence</div>
+                <div className="h-px w-24 bg-white/20 mb-6" />
+                <div className="text-white/40 text-sm font-medium leading-relaxed max-w-sm">Senior engineering expertise integrated into your daily workflow.</div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>
     </Section>
   );
 }
+
