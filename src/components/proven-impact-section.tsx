@@ -65,13 +65,13 @@ export function ProvenImpactSection() {
                         <div className="relative z-10 flex flex-col h-full">
                             <div className="flex items-center gap-4 mb-10">
                                 <div className="w-10 h-px bg-white/10 group-hover:w-16 group-hover:bg-white/40 transition-all duration-700" />
-                                <span className="text-[10px] font-bold tracking-widest text-white/50 uppercase">
+                                <span className={`text-[10px] font-bold tracking-widest uppercase ${project.id === 'fintech' ? 'text-[#22d3ee]' : project.id === 'proptech' ? 'text-[#a855f7]' : 'text-[#3b82f6]'}`}>
                                     {t(`${project.id}.category`)}
                                 </span>
                             </div>
 
                             <motion.h3
-                                className={`text-3xl font-black mb-12 tracking-tighter leading-tight ${project.id === 'fintech' ? 'text-[#22d3ee]' : project.id === 'proptech' ? 'text-[#a855f7]' : 'text-[#3b82f6]'}`}
+                                className="text-3xl font-black text-white mb-12 tracking-tighter leading-tight"
                             >
                                 {t(`${project.id}.title`)}
                             </motion.h3>
