@@ -99,32 +99,32 @@ export function IndustriesSection() {
             <motion.div
               key={index}
               variants={itemVars}
-              className="group relative bg-[#050505] p-6 md:p-14 transition-all duration-700 overflow-hidden hover:bg-[#0a0a0a]"
+              className="group relative bg-[#050505] p-5 md:p-14 transition-all duration-700 overflow-hidden hover:bg-[#0a0a0a]"
             >
-              {/* Glow Aura */}
+              {/* Glow Aura - Desktop Only */}
               <div
-                className="absolute -top-32 -right-32 w-80 h-80 blur-[120px] opacity-0 group-hover:opacity-20 transition-opacity duration-700 pointer-events-none"
+                className="hidden md:block absolute -top-32 -right-32 w-80 h-80 blur-[120px] opacity-0 group-hover:opacity-20 transition-opacity duration-700 pointer-events-none"
                 style={{ background: industry.color }}
               />
 
               <div className="relative z-10">
-                <div className="flex items-center gap-4 mb-8 text-white/50">
+                <div className="flex items-center gap-4 mb-4 md:mb-8 text-white/50">
                   <div className="w-10 h-px bg-white/10 group-hover:w-16 group-hover:bg-white/40 transition-all duration-700" />
                   <span className="text-[10px] font-bold tracking-[0.4em] uppercase">
                     {industry.tagline}
                   </span>
                 </div>
 
-                <h3 className="text-5xl md:text-6xl font-black text-white mb-8 tracking-tighter">
+                <h3 className="text-2xl md:text-6xl font-black text-white mb-4 md:mb-8 tracking-tighter">
                   {industry.name}
                 </h3>
 
-                <p className="text-muted text-lg mb-12 leading-tight tracking-tight font-medium">
+                <p className="text-muted text-lg mb-6 md:mb-12 leading-tight tracking-tight font-medium">
                   {industry.description}
                 </p>
 
                 {/* Highlights */}
-                <div className="grid sm:grid-cols-2 gap-6 pb-2">
+                <div className="grid sm:grid-cols-2 gap-4 md:gap-6 pb-2">
                   {industry.highlights.map((highlight: string, hIndex: number) => (
                     <div key={hIndex} className="flex items-center gap-4">
                       <div

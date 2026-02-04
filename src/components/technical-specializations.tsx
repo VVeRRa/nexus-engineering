@@ -56,6 +56,7 @@ export function TechnicalSpecializations() {
                 title={t("headline")}
                 description={t("text")}
                 className="mb-16"
+                titleClassName="text-xl sm:text-5xl md:text-7xl lg:text-8xl"
             />
 
             <motion.div

@@ -127,7 +127,12 @@ export const Background3D = ({ scrollYProgress }: { scrollYProgress: any }) => {
     return (
         <div className="absolute inset-0 z-0 bg-black overflow-hidden pointer-events-none">
             {/* Extremely lightweight Canvas - strictly capped performance */}
-            <Canvas camera={{ position: [0, 0, 8], fov: 50 }} dpr={[1, 1]} performance={{ min: 0.1 }}>
+            <Canvas
+                camera={{ position: [0, 0, 8], fov: 50 }}
+                dpr={[1, 1]}
+                performance={{ min: 0.1 }}
+                gl={{ powerPreference: "high-performance", antialias: false, stencil: false, depth: false, alpha: true }}
+            >
                 <ambientLight intensity={1} />
                 <TheCore scrollYProgress={scrollYProgress} />
                 <GalaxySwarm scrollYProgress={scrollYProgress} />

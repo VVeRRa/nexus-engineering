@@ -73,19 +73,28 @@ export function Header() {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <a
-          href={isHomePage ? "/" : `/${locale || ""}`} // Change to "/" to be semantically correct but intercepted
-          className="group relative z-[50] flex items-center gap-2"
+          href="#"
+          className="group relative z-[1000] flex items-center gap-2"
           onClick={(e) => {
+            e.preventDefault();
             if (isHomePage) {
-              e.preventDefault();
               e.stopPropagation();
               setIsMobileMenuOpen(false);
 
+              // Force direct scroll first, then smooth
+              window.scrollTo(0, 0);
+
               if (lenis) {
-                lenis.scrollTo(0, { immediate: false, duration: 1.5 });
-              } else {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                lenis.scrollTo(0, { immediate: true });
               }
+
+              // Remove hash if present
+              if (window.location.hash) {
+                history.replaceState(null, "", window.location.pathname);
+              }
+            } else {
+              // Not home page, let it navigate (but via router usually better, here href is # so we might need to handle navigation manually if we used Link, but this is <a>)
+              window.location.href = `/${locale || ""}`;
             }
           }}
         >

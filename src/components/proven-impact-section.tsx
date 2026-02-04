@@ -59,11 +59,11 @@ export function ProvenImpactSection() {
                     <motion.div
                         key={index}
                         variants={itemVars}
-                        className="group relative bg-[#050505] p-10 md:p-12 transition-all duration-500 hover:bg-[#0a0a0a] overflow-hidden"
+                        className="group relative bg-[#050505] p-5 md:p-12 transition-all duration-500 hover:bg-[#0a0a0a] overflow-hidden"
                     >
                         {/* Content */}
                         <div className="relative z-10 flex flex-col h-full">
-                            <div className="flex items-center gap-4 mb-10">
+                            <div className="flex items-center gap-4 mb-5 md:mb-10">
                                 <div className="w-10 h-px bg-white/10 group-hover:w-16 group-hover:bg-white/40 transition-all duration-700" />
                                 <span className={`text-[10px] font-bold tracking-widest uppercase ${project.id === 'fintech' ? 'text-[#22d3ee]' : project.id === 'proptech' ? 'text-[#a855f7]' : 'text-[#3b82f6]'}`}>
                                     {t(`${project.id}.category`)}
@@ -71,12 +71,12 @@ export function ProvenImpactSection() {
                             </div>
 
                             <motion.h3
-                                className="text-3xl font-black text-white mb-12 tracking-tighter leading-tight"
+                                className="text-xl md:text-3xl font-black text-white mb-6 md:mb-12 tracking-tighter leading-tight"
                             >
                                 {t(`${project.id}.title`)}
                             </motion.h3>
 
-                            <div className="space-y-8 flex-grow">
+                            <div className="space-y-6 md:space-y-8 flex-grow">
                                 <div>
                                     <h4 className="text-[10px] uppercase tracking-widest font-bold text-white/50 mb-3">Challenge</h4>
                                     <p className="text-muted text-sm leading-relaxed">

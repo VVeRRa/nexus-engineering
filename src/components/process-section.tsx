@@ -83,7 +83,7 @@ export function ProcessSection() {
   };
 
   return (
-    <Section id="process" className="bg-black py-24">
+    <Section id="process" className="bg-black py-12 md:py-24">
       <div className="container relative z-10">
         <SectionHeader
           align="center"
@@ -105,29 +105,29 @@ export function ProcessSection() {
             <motion.div
               key={index}
               variants={itemVars}
-              className="group relative bg-[#050505] p-6 md:p-12 transition-all duration-500 hover:bg-[#0a0a0a]"
+              className="group relative bg-[#050505] p-4 md:p-12 transition-colors duration-300 hover:bg-[#0a0a0a]"
             >
-              <div className="absolute top-8 right-8 text-8xl font-black text-[#3b82f6]/40 pointer-events-none group-hover:text-[#3b82f6]/50 transition-all duration-700">
+              <div className="absolute top-4 right-4 md:top-12 md:right-12 text-5xl md:text-8xl font-black text-[#3b82f6]/40 pointer-events-none group-hover:text-[#3b82f6]/50 transition-colors duration-500">
                 {step.number}
               </div>
 
               <div className="relative z-10">
-                <div className="w-12 h-12 flex items-center justify-center text-[#3b82f6] group-hover:text-white transition-all duration-500 mb-10">
+                <div className="w-12 h-12 flex items-center justify-center text-[#3b82f6] group-hover:text-white transition-colors duration-300 mb-4 md:mb-10">
                   {step.icon}
                 </div>
 
-                <h3 className="text-2xl font-bold text-white mb-6 tracking-tight">
+                <h3 className="text-lg md:text-2xl font-bold text-white mb-3 md:mb-6 tracking-tight">
                   {step.title}
                 </h3>
 
-                <p className="text-muted mb-10 leading-relaxed text-sm">
+                <p className="text-muted mb-6 md:mb-10 leading-relaxed text-sm">
                   {step.description}
                 </p>
 
-                <ul className="space-y-4">
+                <ul className="space-y-2 md:space-y-4">
                   {step.details.map((detail, i) => (
                     <li key={i} className="flex items-center gap-4 text-white/60 text-[10px] font-bold uppercase tracking-widest">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] group-hover:scale-125 transition-all duration-700" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] group-hover:scale-125 transition-transform duration-500" />
                       {detail}
                     </li>
                   ))}

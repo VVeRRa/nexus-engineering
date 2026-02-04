@@ -8,6 +8,7 @@ interface SectionHeaderProps {
     description?: ReactNode;
     align?: "left" | "center";
     className?: string;
+    titleClassName?: string;
 }
 
 export function SectionHeader({
@@ -16,11 +17,12 @@ export function SectionHeader({
     description,
     align = "left",
     className,
+    titleClassName,
 }: SectionHeaderProps) {
     return (
         <div
             className={cn(
-                "mb-16 relative z-10",
+                "mb-8 md:mb-16 relative z-10",
                 align === "center" ? "text-center max-w-3xl mx-auto" : "max-w-3xl",
                 className
             )}
@@ -42,7 +44,8 @@ export function SectionHeader({
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 className={cn(
-                    "text-5xl md:text-7xl lg:text-8xl mb-8 tracking-tighter leading-[0.9] text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 pb-2"
+                    "text-3xl sm:text-5xl md:text-7xl lg:text-8xl mb-8 tracking-tighter leading-[0.9] text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 pb-2 break-words hyphens-auto",
+                    titleClassName
                 )}
                 style={{
                     fontFamily: "var(--font-sans)",

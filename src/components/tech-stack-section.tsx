@@ -83,7 +83,7 @@ export function TechStackSection() {
               {t("statement")}
             </p>
             <div className="flex justify-center">
-              <a href="#contact" className="btn btn-primary px-14 py-6">
+              <a href="#contact" className="btn btn-primary px-8 py-4 md:px-10 md:py-5">
                 {t("cta")}
               </a>
             </div>

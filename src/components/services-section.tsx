@@ -88,7 +88,7 @@ export function ServicesSection() {
   };
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-black relative">
+    <section id="services" className="py-10 md:py-24 bg-black relative">
       <div className="container relative z-10 mx-auto px-6">
         <SectionHeader
           align="center"
@@ -122,9 +122,9 @@ export function ServicesSection() {
               <motion.div
                 key={index}
                 variants={itemVars}
-                className={`group bg-[#050505] p-6 md:p-10 flex flex-col h-full relative overflow-hidden transition-colors duration-500 hover:bg-[#0a0a0a] ${spans[index % spans.length]}`}
+                className={`group bg-[#050505] p-4 md:p-10 flex flex-col h-full relative overflow-hidden transition-colors duration-500 hover:bg-[#0a0a0a] ${spans[index % spans.length]}`}
               >
-                <div className="flex items-start justify-between mb-8">
+                <div className="flex items-start justify-between mb-4 md:mb-8">
                   <div
                     className="w-12 h-12 flex items-center justify-center text-white/40 group-hover:text-[var(--service-color)] transition-all duration-500"
                     style={{ "--service-color": service.color } as React.CSSProperties}
@@ -144,11 +144,11 @@ export function ServicesSection() {
                 </div>
 
                 <div className="flex flex-col flex-1">
-                  <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">
+                  <h3 className="text-lg md:text-2xl font-bold text-white mb-3 md:mb-4 tracking-tight break-words">
                     {t(`list.${service.id}.title`)}
                   </h3>
 
-                  <p className="text-muted mb-8 leading-relaxed text-sm max-w-sm">
+                  <p className="text-muted mb-6 md:mb-8 leading-relaxed text-sm max-w-sm">
                     {t(`list.${service.id}.description`)}
                   </p>
 
