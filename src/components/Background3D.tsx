@@ -14,14 +14,16 @@ function TheCore({ scrollYProgress }: { scrollYProgress: any }) {
         const scroll = scrollYProgress ? scrollYProgress.get() : 0;
 
         if (mesh.current) {
+            // Optimized for immediate visibility
             const baseScale = 1.3 + scroll * 8;
             targetScale.current.set(baseScale, baseScale, baseScale);
-            mesh.current.scale.lerp(targetScale.current, 0.08);
+            mesh.current.scale.lerp(targetScale.current, 0.1); // Faster lerp
             mesh.current.rotation.y += delta * 0.12;
             mesh.current.rotation.x = scroll * Math.PI * 0.5;
 
             if (mesh.current.material instanceof THREE.Material) {
-                mesh.current.material.opacity = Math.max(0.08, 0.25 - scroll * 0.15);
+                // Keep visibility higher for longer at the start
+                mesh.current.material.opacity = Math.max(0.1, 0.4 - scroll * 0.2);
             }
         }
 
@@ -29,10 +31,10 @@ function TheCore({ scrollYProgress }: { scrollYProgress: any }) {
             innerMesh.current.rotation.y -= delta * 0.18;
             const innerScale = (0.7 + scroll * 4);
             targetScale.current.set(innerScale, innerScale, innerScale);
-            innerMesh.current.scale.lerp(targetScale.current, 0.08);
+            innerMesh.current.scale.lerp(targetScale.current, 0.1);
 
             if (innerMesh.current.material instanceof THREE.Material) {
-                innerMesh.current.material.opacity = Math.max(0.06, 0.2 - scroll * 0.12);
+                innerMesh.current.material.opacity = Math.max(0.1, 0.3 - scroll * 0.15);
             }
         }
     });
