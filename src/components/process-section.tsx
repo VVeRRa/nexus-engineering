@@ -107,12 +107,12 @@ export function ProcessSection() {
               variants={itemVars}
               className="group relative bg-[#050505] p-6 md:p-12 transition-all duration-500 hover:bg-[#0a0a0a]"
             >
-              <div className="absolute top-8 right-8 text-8xl font-black text-blue-500/20 pointer-events-none group-hover:text-blue-500/30 transition-all duration-700">
+              <div className="absolute top-8 right-8 text-8xl font-black text-[#3b82f6]/40 pointer-events-none group-hover:text-[#3b82f6]/50 transition-all duration-700">
                 {step.number}
               </div>
 
               <div className="relative z-10">
-                <div className="w-12 h-12 flex items-center justify-center text-white/40 group-hover:text-white transition-all duration-500 mb-10">
+                <div className="w-12 h-12 flex items-center justify-center text-[#3b82f6] group-hover:text-white transition-all duration-500 mb-10">
                   {step.icon}
                 </div>
 
@@ -127,7 +127,7 @@ export function ProcessSection() {
                 <ul className="space-y-4">
                   {step.details.map((detail, i) => (
                     <li key={i} className="flex items-center gap-4 text-white/60 text-[10px] font-bold uppercase tracking-widest">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-500 group-hover:scale-125 transition-all duration-700" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] group-hover:scale-125 transition-all duration-700" />
                       {detail}
                     </li>
                   ))}

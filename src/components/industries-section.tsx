@@ -11,7 +11,7 @@ export function IndustriesSection() {
   const industries = [
     {
       name: t("fintech.name"),
-      color: "#ffffff",
+      color: "var(--color-fintech)",
       tagline: t("fintech.tagline"),
       description: t("fintech.description"),
       highlights: (t.raw("fintech.highlights") as string[]) || [],
@@ -19,7 +19,7 @@ export function IndustriesSection() {
     },
     {
       name: t("proptech.name"),
-      color: "#ffffff",
+      color: "var(--color-proptech)",
       tagline: t("proptech.tagline"),
       description: t("proptech.description"),
       highlights: (t.raw("proptech.highlights") as string[]) || [],
@@ -27,7 +27,7 @@ export function IndustriesSection() {
     },
     {
       name: t("regtech.name"),
-      color: "#ffffff",
+      color: "var(--color-cloud)",
       tagline: t("regtech.tagline"),
       description: t("regtech.description"),
       highlights: (t.raw("regtech.highlights") as string[]) || [],
@@ -35,7 +35,7 @@ export function IndustriesSection() {
     },
     {
       name: t("ecosystems.name"),
-      color: "#ffffff",
+      color: "var(--color-accent)",
       tagline: t("ecosystems.tagline"),
       description: t("ecosystems.description"),
       highlights: (t.raw("ecosystems.highlights") as string[]) || [],
@@ -127,7 +127,10 @@ export function IndustriesSection() {
                 <div className="grid sm:grid-cols-2 gap-6 pb-2">
                   {industry.highlights.map((highlight: string, hIndex: number) => (
                     <div key={hIndex} className="flex items-center gap-4">
-                      <div className="w-1.5 h-1.5 rounded-full bg-white/10 group-hover:bg-white/40 transition-all duration-700" />
+                      <div
+                        className="w-1.5 h-1.5 rounded-full bg-white/10 group-hover:scale-125 transition-all duration-700"
+                        style={{ backgroundColor: industry.color }}
+                      />
                       <span className="text-[10px] font-bold tracking-widest text-white/50 uppercase">{highlight}</span>
                     </div>
                   ))}

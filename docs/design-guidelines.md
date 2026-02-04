@@ -10,10 +10,10 @@ A bold, technical aesthetic that conveys precision, reliability, and cutting-edg
 
 ### Primary Colors
 ```
---color-ink: #0D0D0F          // Near-black, primary text
---color-paper: #FAFAF9        // Warm off-white background
---color-accent: #E8FF47       // Electric lime - distinctive accent
---color-accent-dark: #C4D93D  // Darker lime for hover states
+--color-ink: #ededed          // Off-white, primary text
+--color-paper: #050505        // Deep black background
+--color-accent: #0070f3       // Vercel Blue - primary accent
+--color-accent-secondary: #50e3c2 // Cyan - secondary accent (glows)
 ```
 
 ### Secondary Colors

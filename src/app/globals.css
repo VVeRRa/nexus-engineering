@@ -5,16 +5,22 @@
     --color-background: #000000;
     --color-foreground: #FFFFFF;
 
-    --color-ink: #FFFFFF;
+    --color-ink: #ededed;
     --color-paper: #050505;
-    --color-accent: #FFFFFF;
-    --color-accent-secondary: #FFFFFF;
+    --color-accent: #0070f3;
+    --color-accent-secondary: #50e3c2;
     --color-muted: rgba(255, 255, 255, 0.6);
 
-    --color-fintech: #00D4AA;
-    --color-proptech: #FF6B35;
-    --color-cloud: #3B82F6;
-    --color-ai: #A855F7;
+    --color-fintech: #22d3ee;
+    /* Cyan (from About Us) */
+    --color-proptech: #a855f7;
+    /* Purple (from About Us) */
+    --color-cloud: #3b82f6;
+    /* Blue (from About Us) */
+    --color-ai: #a855f7;
+    /* Purple (Reuse) */
+    --color-devops: #34d399;
+    /* Emerald (from About Us) */
 
     --font-display: 'Inter', var(--font-sans), system-ui, sans-serif;
     --font-body: 'Inter', var(--font-sans), system-ui, sans-serif;
@@ -36,7 +42,7 @@
 @layer base {
     :root {
         --background: #000000;
-        --foreground: #FFFFFF;
+        --foreground: #ededed;
     }
 
     html {

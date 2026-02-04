@@ -71,7 +71,7 @@ export function ProvenImpactSection() {
                             </div>
 
                             <motion.h3
-                                className="text-3xl font-black text-white mb-12 tracking-tighter leading-tight"
+                                className={`text-3xl font-black mb-12 tracking-tighter leading-tight ${project.id === 'fintech' ? 'text-[#22d3ee]' : project.id === 'proptech' ? 'text-[#a855f7]' : 'text-[#3b82f6]'}`}
                             >
                                 {t(`${project.id}.title`)}
                             </motion.h3>
