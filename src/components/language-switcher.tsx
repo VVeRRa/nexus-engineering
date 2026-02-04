@@ -73,7 +73,7 @@ export default function LanguageSwitcher({ direction = 'down' }: LanguageSwitche
 
             {isOpen && (
                 <div
-                    className={`absolute z-50 w-full min-w-[80px] bg-[var(--color-surface)] border border-[var(--color-border)] rounded-md shadow-lg overflow-hidden ${direction === 'up' ? 'bottom-full mb-1' : 'top-full mt-1'}`}
+                    className={`absolute z-50 w-full min-w-[80px] bg-black border border-white/10 rounded-md shadow-lg overflow-hidden ${direction === 'up' ? 'bottom-full mb-1' : 'top-full mt-1'}`}
                 >
                     <ul className="py-1 max-h-60 overflow-auto">
                         {locales.map((l) => (

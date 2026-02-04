@@ -118,7 +118,9 @@ export default async function RootLayout({
           >
             <JsonLd locale={locale} />
             <SmoothScroll>
-              {children}
+              <div className="relative w-full max-w-[100vw] overflow-x-clip">
+                {children}
+              </div>
             </SmoothScroll>
           </ThemeProvider>
         </NextIntlClientProvider>

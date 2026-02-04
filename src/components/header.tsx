@@ -6,13 +6,14 @@ import LanguageSwitcher from "./language-switcher";
 
 
 import { useScrollSpy } from "@/hooks/use-scroll-spy";
-
+import { useLenis } from "./SmoothScroll"; // Assuming SmoothScroll is in components/SmoothScroll, Header is in components/header, so "./SmoothScroll"
 import { usePathname } from "next/navigation";
 
 export function Header() {
   const t = useTranslations("Nav");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const lenis = useLenis();
   const pathname = usePathname();
   // If we are on a subpage (like /security), we need full paths for anchors
   // Assuming the home page is "/[locale]" or "/"
@@ -72,12 +73,19 @@ export function Header() {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <a
-          href={`/${locale || ""}`}
-          className="group relative z-[50]"
+          href={isHomePage ? "/" : `/${locale || ""}`} // Change to "/" to be semantically correct but intercepted
+          className="group relative z-[50] flex items-center gap-2"
           onClick={(e) => {
             if (isHomePage) {
               e.preventDefault();
-              window.scrollTo({ top: 0, behavior: 'smooth' });
+              e.stopPropagation();
+              setIsMobileMenuOpen(false);
+
+              if (lenis) {
+                lenis.scrollTo(0, { immediate: false, duration: 1.5 });
+              } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
             }
           }}
         >
@@ -112,9 +120,9 @@ export function Header() {
         </div>
 
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button - Enhanced Visibility */}
         <button
-          className="lg:hidden relative z-[999] p-2 text-white"
+          className="lg:hidden relative z-[999] p-2 text-white bg-white/10 backdrop-blur-md rounded-full border border-white/10"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -131,33 +139,37 @@ export function Header() {
       </div>
 
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Premium Design */}
       <div
-        style={{ backgroundColor: "#000000" }}
-        className={`lg:hidden fixed inset-0 top-0 z-[990] transition-all duration-700 ease-[0.16,1,0.3,1] ${isMobileMenuOpen
+        className={`lg:hidden fixed inset-0 z-[990] bg-[#000000] transition-all duration-700 cubic-bezier(0.16, 1, 0.3, 1) ${isMobileMenuOpen
           ? "translate-y-0 opacity-100"
           : "-translate-y-full opacity-0"
           }`}
       >
-        <nav className="container min-h-full flex flex-col justify-center gap-8 pt-24 pb-10 px-8">
-          {navLinks.map((link) => (
+        <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10 pointer-events-none"></div>
+        <nav className="container min-h-full flex flex-col justify-center gap-6 pt-24 pb-10 px-8 relative z-10">
+          {navLinks.map((link, index) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-3xl md:text-5xl text-white font-black tracking-tighter hover:text-white/60 transition-all duration-300 uppercase"
+              style={{ transitionDelay: `${index * 50}ms` }}
+              className={`text-4xl md:text-5xl text-white font-black tracking-tighter hover:text-[#00D4AA] transition-all duration-300 uppercase transform ${isMobileMenuOpen ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
+                }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.label}
             </a>
           ))}
-          <div className="mt-12 pt-12 border-t border-white/5 flex flex-col gap-8">
+          <div className={`mt-8 pt-8 border-t border-white/10 flex flex-col gap-6 transform transition-all duration-500 delay-300 ${isMobileMenuOpen ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}>
             <LanguageSwitcher direction="up" />
             <a
               href="#contact"
-              className="btn btn-primary w-full"
+              className="btn btn-primary w-full justify-between group"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {t("getInTouch")}
+              <span className="group-hover:translate-x-1 transition-transform">→</span>
             </a>
           </div>
         </nav>
