@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Button } from "./ui/button";
 
 export function HeroSection() {
   const t = useTranslations("Home");
@@ -54,15 +55,18 @@ export function HeroSection() {
           className="flex flex-col items-center mt-8 md:mt-12 animate-fade-up"
           style={{ animationDelay: "300ms", animationFillMode: "forwards" }}
         >
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-3 px-6 py-3 md:px-8 md:py-4 bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white text-base md:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+          <Button
+            asChild
+            size="lg"
+            className="rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
-            {t('ctaBlock.button')}
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </a>
+            <a href="#contact" className="gap-3">
+              {t('ctaBlock.button')}
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </Button>
 
           {/* Trust indicators */}
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mt-12 md:mt-16 text-xs md:text-sm text-[var(--color-ink)] font-medium max-w-xs md:max-w-none mx-auto">

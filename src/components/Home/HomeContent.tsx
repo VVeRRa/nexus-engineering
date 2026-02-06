@@ -1,51 +1,28 @@
-"use client";
-
 import Image from "next/image";
-import { useEffect } from "react";
 import {
     Header,
     HeroSection,
     ServicesSection,
     IndustriesSection,
-    TechStackSection,
     ProcessSection,
-    ProvenImpactSection,
-    FAQSection,
-    AboutSection,
-    ContactSection,
+    // Below the fold components loaded dynamically
     Footer,
-    TechnicalSpecializations,
 } from "@/components";
 
+import dynamic from "next/dynamic";
+import { ScrollObserver } from "@/components/ui/scroll-observer";
+
+const TechnicalSpecializations = dynamic(() => import("@/components").then(mod => mod.TechnicalSpecializations));
+const ProvenImpactSection = dynamic(() => import("@/components").then(mod => mod.ProvenImpactSection));
+const AboutSection = dynamic(() => import("@/components").then(mod => mod.AboutSection));
+const TechStackSection = dynamic(() => import("@/components").then(mod => mod.TechStackSection));
+const FAQSection = dynamic(() => import("@/components").then(mod => mod.FAQSection));
+const ContactSection = dynamic(() => import("@/components").then(mod => mod.ContactSection));
+
 export function HomeContent() {
-    // Scroll animation observer
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("is-visible");
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },
-            {
-                threshold: 0.1, // Trigger when 10% is visible
-                rootMargin: "150px", // Trigger earlier for smoother flow
-            }
-        );
-
-        const elements = document.querySelectorAll(".animate-on-scroll");
-        elements.forEach((el) => observer.observe(el));
-
-        // Cleanup
-        return () => {
-            observer.disconnect();
-        };
-    }, []);
-
     return (
         <>
+            <ScrollObserver />
             <Header />
             <main>
                 <HeroSection />
