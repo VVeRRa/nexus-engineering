@@ -14,11 +14,13 @@ export function HeroSection() {
       <div className="container relative z-10 pt-32 pb-20 text-center md:pt-40">
 
         {/* Top Badge - Optional bubble */}
-        <div className="flex justify-center mb-8 animate-fade-up" style={{ animationDelay: "0ms", animationFillMode: "forwards" }}>
-          <span className="text-[var(--color-primary)] font-bold text-sm tracking-wider uppercase bg-blue-50 px-4 py-1.5 rounded-full">
-            {t('kicker')}
-          </span>
-        </div>
+        {t('kicker') && (
+          <div className="flex justify-center mb-8 animate-fade-up" style={{ animationDelay: "0ms", animationFillMode: "forwards" }}>
+            <span className="text-[var(--color-primary)] font-bold text-sm tracking-wider uppercase bg-blue-50 px-4 py-1.5 rounded-full">
+              {t('kicker')}
+            </span>
+          </div>
+        )}
 
         {/* Main Headline */}
         <div className="max-w-4xl mx-auto">

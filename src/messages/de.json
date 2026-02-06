@@ -46,7 +46,7 @@
     }
   },
   "Home": {
-    "kicker": "Senior-geführter Product-Engineering-Partner",
+    "kicker": "",
     "subheadline": "Senior-geführte Produktteams für FinTech, PropTech und RegTech. Wir bieten die architektonische Tiefe eines CTO-Office mit der Liefergeschwindigkeit eines agilen Squads.",
     "ctaPrimary": "Kontaktieren Sie uns",
     "ctaSecondary": "Leistungen ansehen",
@@ -55,7 +55,7 @@
     "highlights": {
       "h1": {
         "badge": "Lösungsorientiert",
-        "title": "Senior-geführte Softwareentwicklung & Produkt-Engineering",
+        "title": "Senior-geführter Product-Engineering-Partner",
         "text": "Wir schlagen die kleinste Teamgröße vor, die den Fortschritt freisetzt – und skalieren erst, wenn es sich lohnt."
       },
       "h2": {
@@ -111,7 +111,7 @@
     },
     "trust": {
       "consultation": "Kostenlose Beratung",
-      "euTeam": "Team in der EU",
+      "euTeam": "Europa-basiertes Team",
       "startFast": "Schnelles Onboarding",
       "chat": "Chatten Sie mit uns"
     },

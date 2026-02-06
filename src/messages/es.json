@@ -46,7 +46,7 @@
         }
     },
     "Home": {
-        "kicker": "Socio de ingeniería de producto liderado por seniors",
+        "kicker": "",
         "subheadline": "Equipos de producto liderados por seniors para FinTech, PropTech y RegTech. Ofrecemos la profundidad arquitectónica de una oficina de CTO con la velocidad de entrega de un escuadrón ágil.",
         "ctaPrimary": "Contáctenos",
         "ctaSecondary": "Ver servicios",
@@ -55,7 +55,7 @@
         "highlights": {
             "h1": {
                 "badge": "Prioridad en la solución",
-                "title": "Desarrollo de Software y Socio de Ingeniería de Producto de Élite",
+                "title": "Socio de ingeniería de producto liderado por seniors",
                 "text": "Proponemos el equipo más pequeño que desbloquea el progreso — y escalamos solo cuando vale la pena."
             },
             "h2": {
@@ -111,7 +111,7 @@
         },
         "trust": {
             "consultation": "Consulta gratuita",
-            "euTeam": "Equipo en la UE",
+            "euTeam": "Equipo basado en Europa",
             "startFast": "Onboarding Rápido",
             "chat": "Habla con nosotros"
         },

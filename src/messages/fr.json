@@ -46,7 +46,7 @@
         }
     },
     "Home": {
-        "kicker": "Partenaire d'ingénierie produit dirigé par des seniors",
+        "kicker": "",
         "subheadline": "Équipes produit dirigées par des seniors pour FinTech, PropTech et RegTech. Nous offrons la profondeur architecturale d'un bureau de CTO avec la vitesse de livraison d'une squad agile.",
         "ctaPrimary": "Contactez-nous",
         "ctaSecondary": "Voir les services",
@@ -55,7 +55,7 @@
         "highlights": {
             "h1": {
                 "badge": "Priorité à la solution",
-                "title": "Développement Logiciel & Ingénierie Produit de Haut Niveau",
+                "title": "Partenaire d'ingénierie produit dirigé par des seniors",
                 "text": "Nous proposons la plus petite équipe qui débloque le progrès — et ne passons à l'échelle que lorsque cela est rentable."
             },
             "h2": {
@@ -111,7 +111,7 @@
         },
         "trust": {
             "consultation": "Consultation gratuite",
-            "euTeam": "Équipe basée en UE",
+            "euTeam": "Équipe basée en Europe",
             "startFast": "Onboarding Rapide",
             "chat": "Discuter avec nous"
         },

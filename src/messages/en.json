@@ -46,7 +46,7 @@
     }
   },
   "Home": {
-    "kicker": "Senior-led product engineering partner",
+    "kicker": "",
     "subheadline": "Senior-led product teams for FinTech, PropTech, and RegTech. We provide the architectural depth of a CTO office with the delivery speed of an agile squad.",
     "ctaPrimary": "Contact us",
     "ctaSecondary": "See services",
@@ -55,7 +55,7 @@
     "highlights": {
       "h1": {
         "badge": "Solution-first",
-        "title": "Senior-Led Software Development & Product Engineering",
+        "title": "Senior-led product engineering partner",
         "text": "We propose the smallest team shape that unblocks progress — and scale only when it pays off."
       },
       "h2": {
@@ -111,7 +111,7 @@
     },
     "trust": {
       "consultation": "Free consultation",
-      "euTeam": "EU-based team",
+      "euTeam": "Europe-based team",
       "startFast": "Rapid Onboarding",
       "chat": "Chat with us"
     },

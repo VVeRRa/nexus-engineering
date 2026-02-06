@@ -46,7 +46,7 @@
     }
   },
   "Home": {
-    "kicker": "Seniorní produktový engineering partner",
+    "kicker": "",
     "subheadline": "Seniorní produktové týmy pro FinTech, PropTech a RegTech. Poskytujeme architektonickou hloubku CTO office s rychlostí dodání agilního squadu.",
     "ctaPrimary": "Kontaktovat",
     "ctaSecondary": "Zobrazit služby",
@@ -55,7 +55,7 @@
     "highlights": {
       "h1": {
         "badge": "Řešení > šablona",
-        "title": "Seniorní vývoj softwaru a partnerství v produktovém inženýrství",
+        "title": "Seniorní produktový engineering partner",
         "text": "Navrhneme nejmenší tvar týmu, který odemkne progres — a škálujeme až když to dává smysl."
       },
       "h2": {
@@ -111,7 +111,7 @@
     },
     "trust": {
       "consultation": "Konzultace zdarma",
-      "euTeam": "Tým v EU",
+      "euTeam": "Tým v Evropě",
       "startFast": "Rychlý onboarding",
       "chat": "Napište nám"
     },

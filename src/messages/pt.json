@@ -46,7 +46,7 @@
         }
     },
     "Home": {
-        "kicker": "Parceiro de engenharia de produto liderado por seniores",
+        "kicker": "",
         "subheadline": "Times de produto liderados por seniores para FinTech, PropTech e RegTech. Fornecemos a profundidade arquitetural de um escritório de CTO com a velocidade de entrega de um squad ágil.",
         "ctaPrimary": "Contate-nos",
         "ctaSecondary": "Ver serviços",
@@ -55,11 +55,11 @@
         "highlights": {
             "h1": {
                 "badge": "Foco na solução",
-                "title": "Desenvolvimento de Software e Parceria de Engenharia de Produto de Elite",
+                "title": "Parceiro de engenharia de produto liderado por seniores",
                 "text": "Propomos o menor time capaz de destravar o progresso — e escalamos apenas quando vale a pena."
             },
             "h2": {
-                "badge": "Mentalidade de produção",
+                "badge": "Mentalidad de produção",
                 "title": "Construir + rodar, com confiabilidade",
                 "text": "IaC, observabilidade, CI/CD e testes fazem parte da entrega — não são secundários."
             },
@@ -111,7 +111,7 @@
         },
         "trust": {
             "consultation": "Consulta gratuita",
-            "euTeam": "Equipa na UE",
+            "euTeam": "Equipa baseada na Europa",
             "startFast": "Onboarding Rápido",
             "chat": "Fale connosco"
         },
