@@ -78,7 +78,7 @@ export function ServicesSection() {
       />
 
       {/* Services Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-on-scroll stagger-fly-children">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 animate-on-scroll stagger-fly-children">
         {services.map((service, index) => {
           const tags = (t.raw(`list.${service.id}.tags`) as string[]) || [];
           const isEven = index % 2 === 0;
@@ -90,7 +90,7 @@ export function ServicesSection() {
           return (
             <div
               key={index}
-              className={`group bg-gradient-to-br ${themeClass} border rounded-3xl p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-100`}
+              className={`group bg-gradient-to-br ${themeClass} border rounded-3xl p-4 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-100`}
             >
               {/* Content */}
               <div>
@@ -106,7 +106,7 @@ export function ServicesSection() {
                   </div>
 
                   <h3
-                    className="text-xl font-bold text-[var(--color-ink)]"
+                    className="text-xl font-bold text-[var(--color-ink)] break-words"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {t(`list.${service.id}.title`)}

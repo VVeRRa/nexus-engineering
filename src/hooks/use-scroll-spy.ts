@@ -11,7 +11,7 @@ export function useScrollSpy(selectors: string[], options?: IntersectionObserver
         if (typeof window !== "undefined" && window.location.hash) {
             const hashId = window.location.hash.slice(1);
             if (selectors.includes(`#${hashId}`)) {
-                setActiveId(hashId);
+                setTimeout(() => setActiveId(hashId), 0);
             }
         }
     }, [selectors]);

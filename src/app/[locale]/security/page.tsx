@@ -167,9 +167,9 @@ export default function SecurityPage() {
                                     <div className="flex gap-4"><span className="text-blue-500">public class</span> <span className="text-yellow-400">PaymentService</span> {'{'}</div>
                                     <div className="pl-8 flex gap-4"><span className="text-purple-500">@AuditLog</span></div>
                                     <div className="pl-8 flex gap-4"><span className="text-blue-500">public</span> <span className="text-white">Transaction</span> <span className="text-green-400">process</span>(<span className="text-white">Data</span> data) {'{'}</div>
-                                    <div className="pl-16 text-slate-600">// Validate input schema</div>
+                                    <div className="pl-16 text-slate-600">{'// Validate input schema'}</div>
                                     <div className="pl-16 dark:text-slate-300 text-slate-700">Schema.validate(data);</div>
-                                    <div className="pl-16 text-slate-600">// Encrypt sensitive fields</div>
+                                    <div className="pl-16 text-slate-600">{'// Encrypt sensitive fields'}</div>
                                     <div className="pl-16 dark:text-slate-300 text-slate-700">var encrypted = Vault.encrypt(data.getNumber());</div>
                                     <div className="pl-16 dark:text-slate-300 text-slate-700">return transactionRepo.save(encrypted);</div>
                                     <div className="pl-8 text-white">{'}'}</div>

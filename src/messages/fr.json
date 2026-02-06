@@ -435,6 +435,7 @@
             "message": "Parlez-nous de votre projet",
             "messagePlaceholder": "Que construisez-vous ? De quelles compétences avez-vous besoin ?",
             "send": "Envoyer le message",
+            "reassurance": "Votre confidentialité est notre priorité. Nous sommes prêts à signer un NDA.",
             "sending": "Envoi...",
             "sent": "Message envoyé !",
             "sentDesc": "Nous reviendrons vers vous sous 24 heures.",

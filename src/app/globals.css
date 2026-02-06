@@ -7,6 +7,10 @@
 :root {
   /* Primary Colors - Friendly & Professional */
   --color-ink: #F1F5F9;
+
+  /* Global text safety */
+  overflow-wrap: break-word;
+  hyphens: auto;
   /* Slate 100 - Text */
   /* Slate 100 - Text */
   --color-paper: #243566;
@@ -50,7 +54,7 @@
 
   /* Spacing */
   --space-section: 10rem;
-  --space-section-mobile: 5rem;
+  --space-section-mobile: 3rem;
   --container-max: 1400px;
 
   /* Timing */

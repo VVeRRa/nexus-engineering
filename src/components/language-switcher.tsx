@@ -41,7 +41,6 @@ export default function LanguageSwitcher({ direction = 'down' }: LanguageSwitche
     function onSelect(nextLocale: string) {
         setIsOpen(false);
         startTransition(() => {
-            // @ts-ignore -- scroll option is valid but sometimes TS complains with custom routers
             router.replace(pathname, { locale: nextLocale, scroll: false });
         });
     }

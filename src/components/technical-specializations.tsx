@@ -17,7 +17,7 @@ export function TechnicalSpecializations() {
             try {
                 const item = t(`items.${i}`);
                 if (item) result.push(item);
-            } catch (e) {
+            } catch {
                 // Silently fail
             }
         }
@@ -55,7 +55,7 @@ export function TechnicalSpecializations() {
                     return (
                         <div
                             key={index}
-                            className={`group bg-gradient-to-br ${themeClass} border rounded-3xl p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-100`}
+                            className={`group bg-gradient-to-br ${themeClass} border rounded-3xl p-5 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-100`}
                         >
                             <div className="flex items-start gap-4">
                                 <div className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center ${isEven ? "bg-blue-50 text-[var(--color-primary)]" : "bg-green-50 text-[var(--color-secondary)]"

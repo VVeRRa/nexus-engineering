@@ -112,7 +112,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden relative z-50 p-2 text-[var(--color-ink)]"
+            className="lg:hidden relative z-50 p-2 text-[var(--color-ink)] min-w-[44px] min-h-[44px] flex items-center justify-center"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >

@@ -31,10 +31,9 @@ export function ProvenImpactSection() {
                 description={<div className="w-24 h-1.5 bg-[var(--color-secondary)] mx-auto rounded-full" />}
             />
 
-            <div className="grid lg:grid-cols-3 gap-8 animate-on-scroll stagger-fly-children">
+            <div className="grid lg:grid-cols-3 gap-4 lg:gap-8 animate-on-scroll stagger-fly-children">
                 {projects.map((project, index) => {
                     const isEven = index % 2 === 0;
-                    const color = isEven ? "var(--color-primary)" : "var(--color-secondary)";
                     const themeClass = isEven
                         ? "from-[var(--color-primary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-blue-100 shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
                         : "from-[var(--color-secondary)]/20 via-[var(--color-paper)] to-[var(--color-paper)] border-green-100 shadow-[0_20px_50px_rgba(34,197,94,0.15)]";
@@ -42,7 +41,7 @@ export function ProvenImpactSection() {
                     return (
                         <div
                             key={index}
-                            className={`group relative bg-gradient-to-br transition-all duration-300 border rounded-3xl p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 flex flex-col items-start transform-gpu will-change-transform ${themeClass}`}
+                            className={`group relative bg-gradient-to-br transition-all duration-300 border rounded-3xl p-4 md:p-8 hover:shadow-xl hover:-translate-y-1 flex flex-col items-start transform-gpu will-change-transform ${themeClass}`}
                         >
                             {/* Category Tag */}
                             <span

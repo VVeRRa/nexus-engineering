@@ -40,11 +40,10 @@ export async function JsonLd({ locale }: { locale: string }) {
                 ],
                 "contactPoint": {
                     "@type": "ContactPoint",
-                    "telephone": "+1-555-0123-4567",
                     "contactType": "sales",
                     "areaServed": ["US", "EU"],
-                    "availableLanguage": ["English", "German", "French", "Spanish", "Czech", "Ukrainian"],
-                },
+                    "availableLanguage": ["English", "German", "French", "Spanish", "Czech", "Ukrainian"]
+                }
             },
             {
                 "@type": "WebSite",
