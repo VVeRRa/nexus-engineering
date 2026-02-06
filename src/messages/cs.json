@@ -47,7 +47,7 @@
   },
   "Home": {
     "kicker": "",
-    "subheadline": "Seniorní produktové týmy pro FinTech, PropTech a RegTech. Poskytujeme architektonickou hloubku CTO office s rychlostí dodání agilního squadu.",
+    "subheadline": "Specializujeme se na FinTech, PropTech a RegTech. Poskytujeme architektonickou hloubku CTO office s rychlostí dodání agilního squadu.",
     "ctaPrimary": "Kontaktovat",
     "ctaSecondary": "Zobrazit služby",
     "scroll": "Rolovat",
@@ -125,7 +125,7 @@
         "Cloud-native infrastruktura a Kubernetes",
         "FinTech bezpečnost a compliance (PSD2, GDPR)",
         "API-First design a integrační strategie",
-        "PropTech ekosystémy a digitální identita"
+        "Ekosystémy PropTech, FinTech a MLS"
       ]
     }
   },
@@ -295,7 +295,7 @@
     "valueProps": {
       "startups": {
         "label": "Startupy",
-        "text": "Frakční CTO a prevence technického dluhu"
+        "text": "Produktové prototypy"
       },
       "smes": {
         "label": "SME / Korporace",
@@ -309,7 +309,7 @@
       "stats": "Zpracovaných transakcí",
       "highlights": [
         "BankID Integrace",
-        "Hypotéky & Fincheck",
+        "Hypotéky & Finanční zdraví & Scoring",
         "PSD2/Open Banking",
         "Real-time Scoring"
       ]
@@ -323,7 +323,7 @@
         "Algoritmické oceňování (Valuo)",
         "Geoprostorová data (Katastr)",
         "RESO & Open Immo standardy",
-        "AI vizuální vyhledávání"
+        "AI vyhledávání"
       ]
     },
     "regtech": {
@@ -333,7 +333,7 @@
       "stats": "Zvýšení efektivity",
       "highlights": [
         "KYC/AML přes BankID",
-        "Fincheck",
+        "Finanční zdraví",
         "Digitální podpisové stopy",
         "Integrace CRIF"
       ]
@@ -381,9 +381,9 @@
     "viewAll": "Zobrazit všechny projekty",
     "fintech": {
       "category": "FinTech",
-      "title": "Digitální hypotéka a Fincheck",
+      "title": "Digitální hypotéka a Finanční zdraví",
       "challenge": "Tradiční žádosti o hypotéku vyžadovaly několik osobních návštěv a týdny ručního zpracování.",
-      "solution": "Integrovali jsme BankID pro okamžité KYC a vyvinuli 'Fincheck' pro automatizované posouzení finančního zdraví a online žádosti.",
+      "solution": "Integrovali jsme BankID pro okamžité KYC a vyvinuli 'FinCheck' pro automatizované posouzení finančního zdraví a online žádosti.",
       "outcome": "První plně digitální hypotéka na trhu s okamžitou zpětnou vazbou o způsobilosti a kratší dobou do nabídky."
     },
     "proptech": {
@@ -395,10 +395,10 @@
     },
     "enterprise": {
       "category": "Enterprise",
-      "title": "Vyhledávání nemovitostí pomocí AI",
-      "challenge": "Uživatelé v tisících inzerátů obtížně hledali nemovitosti podle vizuálních preferencí nebo lokálních dat.",
-      "solution": "Implementovali jsme vizuální vyhledávání pomocí AI a rozšířenou realitu (AR) pro objevování nemovitostí přímo v terénu.",
-      "outcome": "Zvýšení zapojení uživatelů o 300 % díky intuitivnímu vyhledávání stylem 'namiř a uvidíš' a personalizovanému hledání."
+      "title": "Realitní platforma pro Enterprise",
+      "challenge": "Velké realitní sítě bojovaly s roztříštěnými nástroji, neefektivními procesy a nepropojenými daty.",
+      "solution": "Vyvinuli jsme komplexní ekosystém integrující MLS, CRM a BankID pro zefektivnění operací národních franšíz.",
+      "outcome": "Sjednocení operací pro velké sítě, snížení administrativy a zrychlení uzavírání obchodů."
     },
     "testimonials": {
       "text": "Inženýři z BLAiT se plynule integrovali do našeho týmu a doručili výsledky nad očekávání. Nejsou jen dodavateli – jsou partnery.",

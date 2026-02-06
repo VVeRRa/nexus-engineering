@@ -47,7 +47,7 @@
   },
   "Home": {
     "kicker": "",
-    "subheadline": "Senior-led product teams for FinTech, PropTech, and RegTech. We provide the architectural depth of a CTO office with the delivery speed of an agile squad.",
+    "subheadline": "Specialized in FinTech, PropTech, and RegTech. We provide the architectural depth of a CTO office with the delivery speed of an agile squad.",
     "ctaPrimary": "Contact us",
     "ctaSecondary": "See services",
     "scroll": "Scroll",
@@ -125,7 +125,7 @@
         "Cloud-Native Infrastructure & Kubernetes",
         "FinTech Security & Compliance (PSD2, GDPR)",
         "API-First Design & Integration Strategy",
-        "PropTech Ecosystems & Digital Identity"
+        "PropTech, FinTech & MLS Ecosystems"
       ]
     }
   },
@@ -296,7 +296,7 @@
     "valueProps": {
       "startups": {
         "label": "Startups",
-        "text": "Fractional CTO & Avoiding Tech Debt"
+        "text": "Product Prototypes"
       },
       "smes": {
         "label": "SMEs / Enterprise",
@@ -309,8 +309,8 @@
       "description": "We recognize that trust is the currency of modern finance. Our systems integrate identity verification and real-time scoring to automate complex mortgage and banking flows without friction.",
       "stats": "Transactions Processed",
       "highlights": [
-        "BankID Integration",
-        "Mortgage & Fincheck",
+        "Digital ID Integration",
+        "Mortgage & Financial Health & Scoring",
         "PSD2/Open Banking",
         "Real-time Scoring"
       ]
@@ -318,13 +318,13 @@
     "proptech": {
       "name": "PropTech",
       "tagline": "Transforming Real Estate",
-      "description": "We know that data fragmentation holds back innovation. Our solutions unify geospatial records and standardize listings to power next-gen valuations and visual search.",
+      "description": "We know that data fragmentation holds back innovation. Our solutions unify geospatial records and standardize listings to power next-gen valuations and AI search.",
       "stats": "Properties Managed",
       "highlights": [
         "Algorithm-driven Valuations",
         "Geospatial Data (Cadastre)",
         "RESO & Open Immo Standards",
-        "AI Visual Search"
+        "AI Search"
       ]
     },
     "regtech": {
@@ -333,8 +333,8 @@
       "description": "We believe compliance should be an accelerator. We embed automated checks, digital signing, and credit integration directly into the user journey for frictionless onboarding.",
       "stats": "Efficiency Gained",
       "highlights": [
-        "KYC/AML via BankID",
-        "Fincheck",
+        "KYC/AML via Digital ID",
+        "Financial Health",
         "Digital Signing Trails",
         "CRIF Integration"
       ]
@@ -382,24 +382,24 @@
     "viewAll": "View All Projects",
     "fintech": {
       "category": "FinTech",
-      "title": "Digital Mortgage & Fincheck",
+      "title": "Digital Mortgage & Financial Health",
       "challenge": "Traditional mortgage applications required multiple in-person visits and weeks of manual processing.",
-      "solution": "Integrated BankID for instant KYC and developed 'Fincheck' for automated financial health assessments and online applications.",
+      "solution": "Integrated Digital ID for instant KYC and developed 'FinCheck' for automated financial health assessments and online applications.",
       "outcome": "First-to-market digital mortgage flow in the region with instant eligibility feedback and reduced time-to-offer."
     },
     "proptech": {
       "category": "PropTech",
       "title": "National Real Estate Ecosystem (MLS)",
       "challenge": "The real estate market lacked a unified source of data, leading to fragmentation and lack of transparency for brokers and buyers.",
-      "solution": "Engineered the first comprehensive Multiple Listing Service (MLS) integrated with the national Land Registry (Katastr nemovitostí).",
+      "solution": "Engineered the first comprehensive Multiple Listing Service (MLS) integrated with the national Land Registry.",
       "outcome": "Created a single source of truth for 10,000+ brokers, enabling seamless cooperation and transaction transparency."
     },
     "enterprise": {
       "category": "Enterprise",
-      "title": "AI-Powered Property Search",
-      "challenge": "Users struggled to find properties based on visual preference or location-specific data amidst thousands of listings.",
-      "solution": "Implemented AI-driven visual search for property styles and Augmented Reality (AR) for on-site property discovery.",
-      "outcome": "Increased user engagement by 3x through intuitive, 'point-and-see' property exploration and personalized search."
+      "title": "Enterprise Real Estate Platform",
+      "challenge": "Major real estate networks struggled with fragmented tools, inefficient workflows, and disconnected data sources.",
+      "solution": "Developed a comprehensive ecosystem integrating MLS, CRM, and Digital ID to streamline operations for national franchises.",
+      "outcome": "Unified operations for large-scale networks, reducing administrative overhead and accelerating deal closure times."
     },
     "testimonials": {
       "text": "BLAiT engineers integrated seamlessly with our team and delivered beyond expectations. They're not vendors—they're partners.",
