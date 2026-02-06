@@ -3,12 +3,14 @@
 import { Section } from "./ui/section";
 import { SectionHeader } from "./ui/section-header";
 
+import { useMemo } from "react";
 import { useTranslations } from "next-intl";
+import { Button } from "./ui/button";
 
 export function TechStackSection() {
   const t = useTranslations("TechStack");
 
-  const techCategories = [
+  const techCategories = useMemo(() => [
     {
       name: t("categories.languages"),
       color: "var(--color-primary)",
@@ -57,11 +59,19 @@ export function TechStackSection() {
       color: "var(--color-primary)",
       techs: [
         { name: "Agile", abbr: "Ag" },
-        { name: "AI", abbr: "AI" },
+        { name: "Gemini, Claude, OpenAI", abbr: "AI" },
         { name: "CI/CD", abbr: "CI" },
       ],
     },
-  ];
+    {
+      name: t("categories.prototyping"),
+      color: "var(--color-secondary)",
+      techs: [
+        { name: "Lovable", abbr: "Lv" },
+        { name: "NotebookLM", abbr: "Nb" },
+      ],
+    },
+  ], [t]);
 
   return (
 
@@ -84,7 +94,7 @@ export function TechStackSection() {
 
       {/* Tech Categories Grid */}
       <div className="grid md:grid-cols-2 gap-8 lg:gap-12 animate-on-scroll stagger-fly-children">
-        {techCategories.map((category, catIndex) => (
+        {techCategories.map((category: { name: string; color: string; techs: { name: string; abbr: string }[] }, catIndex: number) => (
           <div key={catIndex} className="group">
             {/* Category Header */}
             <div className="flex items-center gap-4 mb-6">
@@ -103,7 +113,7 @@ export function TechStackSection() {
 
             {/* Tech Grid */}
             <div className="grid grid-cols-3 gap-3">
-              {category.techs.map((tech, techIndex) => (
+              {category.techs.map((tech: { name: string; abbr: string }, techIndex: number) => (
                 <div
                   key={techIndex}
                   className="group/item relative bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-3 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-default overflow-hidden"
@@ -141,9 +151,11 @@ export function TechStackSection() {
           <p className="text-lg text-[var(--color-ink)] max-w-2xl">
             {t("statement")}
           </p>
-          <a href="#contact" className="inline-flex items-center justify-center px-8 py-3 bg-[var(--color-primary)] text-white rounded-full font-bold hover:bg-blue-700 transition-colors">
-            {t("cta")}
-          </a>
+          <Button asChild size="lg" className="shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+            <a href="#contact">
+              {t("cta")}
+            </a>
+          </Button>
         </div>
       </div>
     </Section>

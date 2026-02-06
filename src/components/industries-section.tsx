@@ -87,15 +87,15 @@ export function IndustriesSection() {
       </div>
 
       {/* Industries Grid */}
-      <div className="grid md:grid-cols-2 gap-8 animate-on-scroll stagger-fly-children">
+      <div className="grid md:grid-cols-2 gap-4 md:gap-8 animate-on-scroll stagger-fly-children">
         {industries.map((industry, index) => (
           <div
             key={index}
             className={`group relative rounded-3xl overflow-hidden bg-gradient-to-br from-[var(--color-card-from)] ${index % 2 === 0 ? "to-[var(--color-card-to-blue)] border-[var(--color-card-border-blue)]" : "to-[var(--color-card-to-green)] border-[var(--color-card-border-green)]"
-              } border p-8 md:p-10 lg:p-12 hover:shadow-xl transition-all duration-300`}
+              } border p-4 md:p-10 lg:p-12 hover:shadow-xl transition-all duration-300`}
           >
-            <div className="flex items-start justify-between mb-8">
-              <div>
+            <div className="flex flex-col sm:flex-row items-start justify-between mb-8 gap-4 sm:gap-0">
+              <div className="w-full sm:w-auto">
                 {/* Color Accent Bar */}
                 <div
                   className="w-12 h-1 rounded-full mb-4"
@@ -133,7 +133,7 @@ export function IndustriesSection() {
             </div>
 
             {/* Description */}
-            <p className="text-[var(--color-ink)] mb-8 leading-relaxed">
+            <p className="text-[var(--color-ink)] mb-4 md:mb-8 leading-relaxed">
               {industry.description}
             </p>
 

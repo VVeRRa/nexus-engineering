@@ -46,8 +46,8 @@
         }
     },
     "Home": {
-        "kicker": "Partenaire d'ingénierie produit dirigé par des seniors",
-        "subheadline": "Équipes produit dirigées par des seniors pour FinTech, PropTech et RegTech. Nous offrons la profondeur architecturale d'un bureau de CTO avec la vitesse de livraison d'une squad agile.",
+        "kicker": "",
+        "subheadline": "Spécialisés dans la FinTech, la PropTech et la RegTech. Nous offrons la profondeur architecturale d'un bureau de CTO avec la vitesse de livraison d'une squad agile.",
         "ctaPrimary": "Contactez-nous",
         "ctaSecondary": "Voir les services",
         "scroll": "Défiler",
@@ -55,7 +55,7 @@
         "highlights": {
             "h1": {
                 "badge": "Priorité à la solution",
-                "title": "Développement Logiciel & Ingénierie Produit de Haut Niveau",
+                "title": "Partenaire d'ingénierie produit dirigé par des seniors",
                 "text": "Nous proposons la plus petite équipe qui débloque le progrès — et ne passons à l'échelle que lorsque cela est rentable."
             },
             "h2": {
@@ -111,7 +111,7 @@
         },
         "trust": {
             "consultation": "Consultation gratuite",
-            "euTeam": "Équipe basée en UE",
+            "euTeam": "Équipe basée en Europe",
             "startFast": "Onboarding Rapide",
             "chat": "Discuter avec nous"
         },
@@ -125,7 +125,7 @@
                 "Infrastructure Cloud-Native & Kubernetes",
                 "Sécurité & Conformité FinTech (PSD2, GDPR)",
                 "Conception API-First & Stratégie d'Intégration",
-                "Écosystèmes PropTech & Identité Numérique"
+                "Écosystèmes PropTech, FinTech et MLS"
             ]
         }
     },
@@ -295,7 +295,7 @@
         "valueProps": {
             "startups": {
                 "label": "Startups",
-                "text": "CTO fractionnel & prévention de la dette technique"
+                "text": "Prototypes de produits"
             },
             "smes": {
                 "label": "PME / Entreprise",
@@ -308,8 +308,8 @@
             "description": "Nous reconnaissons que la confiance est la monnaie de la finance moderne. Nos systèmes intègrent la vérification d'identité et le scoring en temps réel pour automatiser sans friction les flux hypothécaires et bancaires complexes.",
             "stats": "Transactions traitées",
             "highlights": [
-                "BankID Integration",
-                "Mortgage & Fincheck",
+                "Digital ID Integration",
+                "Mortgage & Santé financière & Scoring",
                 "PSD2/Open Banking",
                 "Real-time Scoring"
             ]
@@ -323,7 +323,7 @@
                 "Algorithm-driven Valuations",
                 "Geospatial Data (Cadastre)",
                 "Normes RESO & Open Immo",
-                "AI Visual Search"
+                "Recherche IA"
             ]
         },
         "regtech": {
@@ -332,8 +332,8 @@
             "description": "Nous croyons que la conformité doit être un accélérateur. Nous intégrons des contrôles automatisés, la signature numérique et les données de crédit directement dans le parcours utilisateur pour une intégration fluide.",
             "stats": "Efficacité gagnée",
             "highlights": [
-                "KYC/AML via BankID",
-                "Fincheck",
+                "KYC/AML via Digital ID",
+                "Santé financière",
                 "Digital Signing Trails",
                 "Intégration CRIF"
             ]
@@ -372,6 +372,7 @@
             "data": "Données & Stockage",
             "cloud": "Cloud & DevOps",
             "methodology": "Méthodologie & IA",
+            "prototyping": "Prototypage",
             "design": "Design"
         }
     },
@@ -381,24 +382,24 @@
         "viewAll": "Voir tous les projets",
         "fintech": {
             "category": "FinTech",
-            "title": "Prêt Immobilier & Fincheck",
+            "title": "Prêt Immobilier & Santé financière",
             "challenge": "Les demandes de prêt traditionnelles nécessitaient plusieurs visites physiques et des semaines de traitement manuel.",
-            "solution": "Intégration de BankID pour un KYC instantané et développement de 'Fincheck' pour les évaluations financières automatisées et les demandes en ligne.",
+            "solution": "Intégration de Digital ID pour un KYC instantané et développement de 'FinCheck' pour les évaluations financières automatisées et les demandes en ligne.",
             "outcome": "Premier flux de prêt digital sur le marché avec un retour immédiat sur l'éligibilité et un délai d'offre réduit."
         },
         "proptech": {
             "category": "PropTech",
             "title": "Écosystème Immobilier National (MLS)",
             "challenge": "Le marché immobilier manquait d'une source de données unifiée, entraînant fragmentation et manque de transparence pour les courtiers et acheteurs.",
-            "solution": "Conception du premier Multiple Listing Service (MLS) complet intégré au registre foncier national (Katastr nemovitostí).",
+            "solution": "Conception du premier Multiple Listing Service (MLS) complet intégré au registre foncier national.",
             "outcome": "Une source unique de vérité pour plus de 10 000 courtiers, permettant une coopération fluide et une transparence accrue."
         },
         "enterprise": {
             "category": "Entreprise",
-            "title": "Recherche Immobilière par IA",
-            "challenge": "Les utilisateurs peinaient à trouver des biens selon leurs préférences visuelles parmi des milliers d'annonces.",
-            "solution": "Mise en place d'une recherche visuelle par IA et de la réalité augmentée (AR) pour la découverte de biens sur site.",
-            "outcome": "Engagement utilisateur triplé grâce à une exploration intuitive 'pointer-et-voir' et une recherche personnalisée."
+            "title": "Plateforme Immobilière Enterprise",
+            "challenge": "Les grands réseaux immobiliers étaient confrontés à des outils fragmentés, des flux de travail inefficaces et des données déconnectées.",
+            "solution": "Développement d'un écosystème complet intégrant MLS, CRM et Digital ID pour rationaliser les opérations des franchises nationales.",
+            "outcome": "Opérations unifiées pour les réseaux à grande échelle, réduisant la charge administrative et accélérant la conclusion des transactions."
         },
         "testimonials": {
             "text": "Les ingénieurs BLAiT se sont intégrés parfaitement à notre équipe et ont livré au-delà des attentes. Ce ne sont pas des vendeurs — ce sont des partenaires.",
@@ -434,6 +435,7 @@
             "message": "Parlez-nous de votre projet",
             "messagePlaceholder": "Que construisez-vous ? De quelles compétences avez-vous besoin ?",
             "send": "Envoyer le message",
+            "reassurance": "Votre confidentialité est notre priorité. Nous sommes prêts à signer un NDA.",
             "sending": "Envoi...",
             "sent": "Message envoyé !",
             "sentDesc": "Nous reviendrons vers vous sous 24 heures.",
@@ -518,8 +520,12 @@
         "models": {
             "title": "Modèles d'engagement",
             "subtitle": "Arrangements flexibles pour répondre à vos besoins",
+            "prototyping": {
+                "title": "Prototypage de Produit",
+                "desc": "Validez rapidement vos idées avec des prototypes fonctionnels. Nous construisons des MVP pour tester le marché avant l'investissement complet."
+            },
             "augmentation": {
-                "title": "Partenaire d'ingénierie produit",
+                "title": "Extension d'équipe",
                 "desc": "Ingénieurs individuels intégrés à votre équipe, travaillant selon vos horaires, avec vos outils."
             },
             "team": {
@@ -528,7 +534,15 @@
             },
             "project": {
                 "title": "Basé sur un projet",
-                "desc": "Nous assurons une exécution de projet de bout en bout dans un périmètre et un calendrier définis. Selon vos besoins, nous proposons des modèles de facturation au forfait ou au taux horaire pour garantir un alignement total avec votre budget."
+                "desc": "Nous assurons une exécution de projet de bout en bout dans un périmètre et un calendrier définis."
+            },
+            "billing": {
+                "title": "Modèles de facturation",
+                "desc": "Selon vos besoins, nous proposons des modèles de facturation au forfait ou au taux horaire pour garantir un alignement total avec votre budget."
+            },
+            "consulting": {
+                "title": "Partenaire d'ingénierie produit",
+                "desc": "Conseils d'experts sur l'architecture et les stratégies de transformation numérique pour pérenniser votre entreprise."
             }
         }
     },

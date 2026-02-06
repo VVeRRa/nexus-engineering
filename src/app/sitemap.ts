@@ -7,10 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const pages = ["", "/security"];
 
     return locales.flatMap((locale) => {
-        const languages = locales.reduce((acc, l) => ({
-            ...acc,
-            [l === "ua" ? "uk" : l]: `${baseUrl}/${l}`
-        }), {});
+
 
         return pages.map((page) => ({
             url: `${baseUrl}/${locale}${page}`,

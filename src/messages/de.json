@@ -46,8 +46,8 @@
     }
   },
   "Home": {
-    "kicker": "Senior-geführter Product-Engineering-Partner",
-    "subheadline": "Senior-geführte Produktteams für FinTech, PropTech und RegTech. Wir bieten die architektonische Tiefe eines CTO-Office mit der Liefergeschwindigkeit eines agilen Squads.",
+    "kicker": "",
+    "subheadline": "Spezialisiert auf FinTech, PropTech und RegTech. Wir bieten die architektonische Tiefe eines CTO-Office mit der Liefergeschwindigkeit eines eingespielten Teams.",
     "ctaPrimary": "Kontaktieren Sie uns",
     "ctaSecondary": "Leistungen ansehen",
     "scroll": "Scrollen",
@@ -55,7 +55,7 @@
     "highlights": {
       "h1": {
         "badge": "Lösungsorientiert",
-        "title": "Senior-geführte Softwareentwicklung & Produkt-Engineering",
+        "title": "Senior-geführter Product-Engineering-Partner",
         "text": "Wir schlagen die kleinste Teamgröße vor, die den Fortschritt freisetzt – und skalieren erst, wenn es sich lohnt."
       },
       "h2": {
@@ -111,7 +111,7 @@
     },
     "trust": {
       "consultation": "Kostenlose Beratung",
-      "euTeam": "Team in der EU",
+      "euTeam": "Europa-basiertes Team",
       "startFast": "Schnelles Onboarding",
       "chat": "Chatten Sie mit uns"
     },
@@ -125,7 +125,7 @@
         "Cloud-native Infrastruktur & Kubernetes",
         "FinTech Sicherheit & Compliance (PSD2, GDPR)",
         "API-First Design & Integrationsstrategie",
-        "PropTech-Ökosysteme & Digitale Identität"
+        "PropTech, FinTech & MLS-Ökosysteme"
       ]
     }
   },
@@ -295,7 +295,7 @@
     "valueProps": {
       "startups": {
         "label": "Startups",
-        "text": "Fractional CTO & Vermeidung technischer Schulden"
+        "text": "Produkt-Prototypen"
       },
       "smes": {
         "label": "KMUs / Enterprise",
@@ -308,8 +308,8 @@
       "description": "Wir erkennen, dass Vertrauen die Währung der modernen Finanzwelt ist. Unsere Systeme integrieren Identitätsprüfung und Echtzeit-Scoring, um komplexe Hypotheken- und Bankprozesse reibungslos zu automatisieren.",
       "stats": "Verarbeitete Transaktionen",
       "highlights": [
-        "BankID Integration",
-        "Mortgage & Fincheck",
+        "Digital ID Integration",
+        "Mortgage & Finanzielle Gesundheit & Scoring",
         "PSD2/Open Banking",
         "Real-time Scoring"
       ]
@@ -323,7 +323,7 @@
         "Algorithm-driven Valuations",
         "Geospatial Data (Cadastre)",
         "RESO & Open Immo Standards",
-        "AI Visual Search"
+        "AI-Suche"
       ]
     },
     "regtech": {
@@ -332,8 +332,8 @@
       "description": "Wir glauben, dass Compliance ein Beschleuniger sein sollte. Wir integrieren automatisierte Prüfungen, digitale Signaturen und Kreditauskünfte direkt in die User Journey für ein reibungsloses Onboarding.",
       "stats": "Effizienzsteigerung",
       "highlights": [
-        "KYC/AML via BankID",
-        "Fincheck",
+        "KYC/AML via Digital ID",
+        "Finanzielle Gesundheit",
         "Digital Signing Trails",
         "CRIF Integration"
       ]
@@ -372,6 +372,7 @@
       "data": "Daten & Speicher",
       "cloud": "Cloud & DevOps",
       "methodology": "Methodik & AI",
+      "prototyping": "Prototyping",
       "design": "Design"
     }
   },
@@ -381,24 +382,24 @@
     "viewAll": "Alle Projekte ansehen",
     "fintech": {
       "category": "FinTech",
-      "title": "Digitale Hypothek & Fincheck",
+      "title": "Digitale Hypothek & Finanzielle Gesundheit",
       "challenge": "Traditionelle Hypothekenanträge erforderten mehrere persönliche Besuche und Wochen manueller Bearbeitung.",
-      "solution": "Integrierte BankID für sofortiges KYC und entwickelte 'Fincheck' für automatisierte Finanzbewertungen und Online-Anträge.",
+      "solution": "Integrierte Digital ID für sofortiges KYC und entwickelte 'FinCheck' für automatisierte Finanzbewertungen und Online-Anträge.",
       "outcome": "Erster digitaler Hypotheken-Flow in der Region mit sofortigem Feedback zur Berechtigung und verkürzter Zeit bis zum Angebot."
     },
     "proptech": {
       "category": "PropTech",
       "title": "Nationales Immobilien-Ökosystem (MLS)",
       "challenge": "Dem Immobilienmarkt fehlte eine einheitliche Datenquelle, was zu Fragmentierung und mangelnder Transparenz für Makler und Käufer führte.",
-      "solution": "Entwicklung des ersten umfassenden Multiple Listing Service (MLS), integriert in das nationale Grundbuch (Katastr nemovitostí).",
+      "solution": "Entwicklung des ersten umfassenden Multiple Listing Service (MLS), integriert in das nationale Grundbuch.",
       "outcome": "Eine einzige 'Source of Truth' für über 10.000 Makler, die nahtlose Zusammenarbeit und Transparenz ermöglicht."
     },
     "enterprise": {
       "category": "Enterprise",
-      "title": "KI-gestützte Immobiliensuche",
-      "challenge": "Benutzer hatten Schwierigkeiten, Immobilien basierend auf visuellen Präferenzen oder standortspezifischen Daten unter Tausenden von Angeboten zu finden.",
-      "solution": "Implementierung einer KI-gesteuerten visuellen Suche nach Baustilen und Augmented Reality (AR) zur Entdeckung von Immobilien vor Ort.",
-      "outcome": "Steigerung des Benutzerengagements um das 3-fache durch intuitive 'Point-and-See'-Exploration und personalisierte Suche."
+      "title": "Enterprise Immobilien-Plattform",
+      "challenge": "Große Immobiliennetzwerke kämpften mit fragmentierten Tools, ineffizienten Abläufen und isolierten Datenquellen.",
+      "solution": "Entwicklung eines umfassenden Ökosystems mit MLS-, CRM- und Digital ID-Integration zur Optimierung der Abläufe für nationale Franchises.",
+      "outcome": "Vereinheitlichte Abläufe für große Netzwerke, reduzierte Verwaltung und beschleunigte Vertragsabschlüsse."
     },
     "testimonials": {
       "text": "BLAiT-Ingenieure haben sich nahtlos in unser Team integriert und über die Erwartungen hinaus geliefert. Sie sind keine Lieferanten – sie sind Partner.",
@@ -433,6 +434,7 @@
       "projectTypePlaceholder": "Projekttyp wählen",
       "message": "Erzählen Sie uns von Ihrem Projekt",
       "messagePlaceholder": "Was bauen Sie? Welche Fähigkeiten benötigen Sie?",
+      "reassurance": "Ihre Privatsphäre ist unsere Priorität. Wir unterschreiben gerne eine NDA.",
       "send": "Nachricht senden",
       "sending": "Senden...",
       "sent": "Nachricht gesendet!",
@@ -518,8 +520,12 @@
     "models": {
       "title": "Zusammenarbeitsmodelle",
       "subtitle": "Flexible Arrangements für Ihre Bedürfnisse",
+      "prototyping": {
+        "title": "Produkt-Prototyping",
+        "desc": "Validieren Sie Ideen schnell mit funktionalen Prototypen. Wir entwickeln MVP-Versionen, um die Markttauglichkeit vor der vollen Investition zu testen."
+      },
       "augmentation": {
-        "title": "Produkt-Engineering-Partner",
+        "title": "Team-Erweiterung",
         "desc": "Einzelne Ingenieure, eingebettet in Ihr Team, arbeiten zu Ihren Zeiten, mit Ihren Tools."
       },
       "team": {
@@ -528,7 +534,15 @@
       },
       "project": {
         "title": "Projektbasiert",
-        "desc": "Wir bieten eine End-to-End-Projektabwicklung innerhalb eines definierten Umfangs und Zeitrahmens. Je nach Ihren Anforderungen bieten wir sowohl Festpreis- als auch Stundenabrechnungsmodelle an, um eine vollständige Übereinstimmung mit Ihrem Budget zu gewährleisten."
+        "desc": "Wir bieten eine End-to-End-Projektabwicklung innerhalb eines definierten Umfangs und Zeitrahmens."
+      },
+      "billing": {
+        "title": "Abrechnungsmodelle",
+        "desc": "Je nach Ihren Anforderungen bieten wir sowohl Festpreis- als auch Stundenabrechnungsmodelle an, um eine vollständige Übereinstimmung mit Ihrem Budget zu gewährleisten."
+      },
+      "consulting": {
+        "title": "Produkt-Engineering-Partner",
+        "desc": "Expertenratschläge zu Architektur und digitalen Transformationsstrategien, um Ihr Unternehmen zukunftssicher zu machen."
       }
     }
   },

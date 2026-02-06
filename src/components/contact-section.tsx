@@ -2,6 +2,7 @@
 
 import { Section } from "./ui/section";
 import { SectionHeader } from "./ui/section-header";
+import { Button } from "./ui/button";
 
 import { startTransition, useActionState } from "react";
 import { useForm } from "react-hook-form";
@@ -179,7 +180,7 @@ export function ContactSection() {
                     <select
                       {...register("projectType")}
                       id="projectType"
-                      required
+                      required={false}
                       className="w-full max-w-full bg-[var(--color-paper)] border border-[var(--color-border)] text-[var(--color-ink)] invalid:text-[var(--color-ink)]/50 focus:bg-[var(--color-paper)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 outline-none transition-all appearance-none min-w-0"
                     >
                       <option value="" disabled>{t("form.projectTypePlaceholder")}</option>
@@ -210,13 +211,19 @@ export function ContactSection() {
                   )}
                 </div>
 
-                <button
-                  type="submit"
-                  className="w-full btn btn-accent btn-lg justify-center rounded-xl py-3 h-auto !px-4 md:px-8 text-base shadow-lg hover:shadow-xl hover:-translate-y-1 !whitespace-normal text-center leading-tight"
-                  disabled={isPending}
-                >
-                  {isPending ? t("form.sending") : t("form.send")}
-                </button>
+                <div className="space-y-3">
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="w-full justify-center h-auto py-3 !px-4 md:px-8 text-base shadow-lg hover:shadow-xl hover:-translate-y-0.5 !whitespace-normal text-center leading-tight"
+                    disabled={isPending}
+                  >
+                    {isPending ? t("form.sending") : t("form.send")}
+                  </Button>
+                  <p className="text-xs text-center text-slate-400">
+                    {t("form.reassurance")}
+                  </p>
+                </div>
               </form>
             )}
           </div>

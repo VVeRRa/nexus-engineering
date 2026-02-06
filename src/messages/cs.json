@@ -46,8 +46,8 @@
     }
   },
   "Home": {
-    "kicker": "Seniorní produktový engineering partner",
-    "subheadline": "Seniorní produktové týmy pro FinTech, PropTech a RegTech. Poskytujeme architektonickou hloubku CTO office s rychlostí dodání agilního squadu.",
+    "kicker": "",
+    "subheadline": "Specializujeme se na FinTech, PropTech a RegTech. Poskytujeme architektonickou hloubku CTO office s rychlostí dodání agilního squadu.",
     "ctaPrimary": "Kontaktovat",
     "ctaSecondary": "Zobrazit služby",
     "scroll": "Rolovat",
@@ -55,7 +55,7 @@
     "highlights": {
       "h1": {
         "badge": "Řešení > šablona",
-        "title": "Seniorní vývoj softwaru a partnerství v produktovém inženýrství",
+        "title": "Partner pro produktové inženýrství pod vedením seniorů",
         "text": "Navrhneme nejmenší tvar týmu, který odemkne progres — a škálujeme až když to dává smysl."
       },
       "h2": {
@@ -111,7 +111,7 @@
     },
     "trust": {
       "consultation": "Konzultace zdarma",
-      "euTeam": "Tým v EU",
+      "euTeam": "Tým v Evropě",
       "startFast": "Rychlý onboarding",
       "chat": "Napište nám"
     },
@@ -125,7 +125,7 @@
         "Cloud-native infrastruktura a Kubernetes",
         "FinTech bezpečnost a compliance (PSD2, GDPR)",
         "API-First design a integrační strategie",
-        "PropTech ekosystémy a digitální identita"
+        "Ekosystémy PropTech, FinTech a MLS"
       ]
     }
   },
@@ -295,7 +295,7 @@
     "valueProps": {
       "startups": {
         "label": "Startupy",
-        "text": "Frakční CTO a prevence technického dluhu"
+        "text": "Produktové prototypy"
       },
       "smes": {
         "label": "SME / Korporace",
@@ -309,7 +309,7 @@
       "stats": "Zpracovaných transakcí",
       "highlights": [
         "BankID Integrace",
-        "Hypotéky & Fincheck",
+        "Hypotéky & Finanční zdraví & Scoring",
         "PSD2/Open Banking",
         "Real-time Scoring"
       ]
@@ -323,7 +323,7 @@
         "Algoritmické oceňování (Valuo)",
         "Geoprostorová data (Katastr)",
         "RESO & Open Immo standardy",
-        "AI vizuální vyhledávání"
+        "AI vyhledávání"
       ]
     },
     "regtech": {
@@ -333,7 +333,7 @@
       "stats": "Zvýšení efektivity",
       "highlights": [
         "KYC/AML přes BankID",
-        "Fincheck",
+        "Finanční zdraví",
         "Digitální podpisové stopy",
         "Integrace CRIF"
       ]
@@ -372,6 +372,7 @@
       "data": "Data & Úložiště",
       "cloud": "Cloud & DevOps",
       "methodology": "Metodika & AI",
+      "prototyping": "Prototypování",
       "design": "Design"
     }
   },
@@ -381,9 +382,9 @@
     "viewAll": "Zobrazit všechny projekty",
     "fintech": {
       "category": "FinTech",
-      "title": "Digitální hypotéka a Fincheck",
+      "title": "Digitální hypotéka a Finanční zdraví",
       "challenge": "Tradiční žádosti o hypotéku vyžadovaly několik osobních návštěv a týdny ručního zpracování.",
-      "solution": "Integrovali jsme BankID pro okamžité KYC a vyvinuli 'Fincheck' pro automatizované posouzení finančního zdraví a online žádosti.",
+      "solution": "Integrovali jsme BankID pro okamžité KYC a vyvinuli 'FinCheck' pro automatizované posouzení finančního zdraví a online žádosti.",
       "outcome": "První plně digitální hypotéka na trhu s okamžitou zpětnou vazbou o způsobilosti a kratší dobou do nabídky."
     },
     "proptech": {
@@ -395,10 +396,10 @@
     },
     "enterprise": {
       "category": "Enterprise",
-      "title": "Vyhledávání nemovitostí pomocí AI",
-      "challenge": "Uživatelé v tisících inzerátů obtížně hledali nemovitosti podle vizuálních preferencí nebo lokálních dat.",
-      "solution": "Implementovali jsme vizuální vyhledávání pomocí AI a rozšířenou realitu (AR) pro objevování nemovitostí přímo v terénu.",
-      "outcome": "Zvýšení zapojení uživatelů o 300 % díky intuitivnímu vyhledávání stylem 'namiř a uvidíš' a personalizovanému hledání."
+      "title": "Realitní platforma pro Enterprise",
+      "challenge": "Velké realitní sítě bojovaly s roztříštěnými nástroji, neefektivními procesy a nepropojenými daty.",
+      "solution": "Vyvinuli jsme komplexní ekosystém integrující MLS, CRM a BankID pro zefektivnění operací národních franšíz.",
+      "outcome": "Sjednocení operací pro velké sítě, snížení administrativy a zrychlení uzavírání obchodů."
     },
     "testimonials": {
       "text": "Inženýři z BLAiT se plynule integrovali do našeho týmu a doručili výsledky nad očekávání. Nejsou jen dodavateli – jsou partnery.",
@@ -434,6 +435,7 @@
       "message": "Povězte nám o svém projektu",
       "messagePlaceholder": "Co budujete? Jaké dovednosti potřebujete?",
       "send": "Odeslat zprávu",
+      "reassurance": "Vaše soukromí je naší prioritou. Rádi podepíšeme NDA.",
       "sending": "Odesílám...",
       "sent": "Zpráva odeslána!",
       "sentDesc": "Ozveme se vám do 24 hodin.",
@@ -518,8 +520,12 @@
     "models": {
       "title": "Modely spolupráce",
       "subtitle": "Flexibilní uspořádání podle vašich potřeb",
+      "prototyping": {
+        "title": "Produktový Prototyping",
+        "desc": "Rychlá validace nápadů pomocí funkčních prototypů. Stavíme MVP verze pro testování trhu před plnou investicí do vývoje."
+      },
       "augmentation": {
-        "title": "Partner pro produktové inženýrství",
+        "title": "Rozšíření týmu",
         "desc": "Jednotliví inženýři začlenění do vašeho týmu, pracující ve vašich hodinách, s vašimi nástroji."
       },
       "team": {
@@ -528,7 +534,15 @@
       },
       "project": {
         "title": "Projektová báze",
-        "desc": "Poskytujeme komplexní realizaci projektů v definovaném rozsahu a časovém harmonogramu. V závislosti na vašich požadavcích nabízíme modely účtování s pevnou cenou nebo hodinovou sazbou, abychom zajistili plný soulad s vaším rozpočtem."
+        "desc": "Poskytujeme komplexní realizaci projektů v definovaném rozsahu a časovém harmonogramu."
+      },
+      "billing": {
+        "title": "Modely účtování",
+        "desc": "V závislosti na vašich požadavcích nabízíme modely účtování s pevnou cenou nebo hodinovou sazbou, abychom zajistili plný soulad s vaším rozpočtem."
+      },
+      "consulting": {
+        "title": "Partner pro produktové inženýrství",
+        "desc": "Odborné poradenství v oblasti architektury a strategií digitální transformace pro zajištění budoucnosti vašeho podnikání."
       }
     }
   },

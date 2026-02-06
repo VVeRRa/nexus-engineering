@@ -6,6 +6,8 @@ import "../globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { JsonLd } from "@/components/JsonLd";
 
+import { SmoothScroller } from "@/components/smooth-scroller";
+
 const geistSans = Geist({
   subsets: ["latin"],
   variable: "--font-body",
@@ -23,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   const baseUrl = "https://blait.eu";
-  const path = locale === 'en' ? '' : `/${locale}`;
+
 
   return {
     metadataBase: new URL(baseUrl),
@@ -107,10 +109,12 @@ export default async function RootLayout({
             disableTransitionOnChange
           >
             <JsonLd locale={locale} />
+            <SmoothScroller />
             {children}
-          </ThemeProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+
+          </ThemeProvider >
+        </NextIntlClientProvider >
+      </body >
+    </html >
   );
 }
