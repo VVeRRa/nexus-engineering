@@ -11,21 +11,21 @@ export function HeroSection() {
 
 
       {/* Content */}
-      <div className="container relative z-10 pt-32 pb-20 text-center md:pt-40">
+      <div className="container relative z-10 pt-24 pb-16 text-center md:pt-40">
 
         {/* Top Badge - Optional bubble */}
         {t('kicker') && (
-          <div className="flex justify-center mb-8 animate-fade-up" style={{ animationDelay: "0ms", animationFillMode: "forwards" }}>
-            <span className="text-[var(--color-primary)] font-bold text-sm tracking-wider uppercase bg-blue-50 px-4 py-1.5 rounded-full">
+          <div className="flex justify-center mb-6 md:mb-8 animate-fade-up" style={{ animationDelay: "0ms", animationFillMode: "forwards" }}>
+            <span className="text-[var(--color-primary)] font-bold text-xs md:text-sm tracking-wider uppercase bg-blue-50 px-3 py-1 md:px-4 md:py-1.5 rounded-full">
               {t('kicker')}
             </span>
           </div>
         )}
 
         {/* Main Headline */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto px-4 md:px-0">
           <h1
-            className="text-5xl md:text-6xl lg:text-7xl text-[var(--color-ink)] tracking-tight leading-[1.1] animate-fade-up"
+            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-[var(--color-ink)] tracking-tight leading-[1.1] animate-fade-up break-words"
             style={{
               fontFamily: "var(--font-display)",
               fontWeight: 800,
@@ -39,7 +39,7 @@ export function HeroSection() {
 
         {/* Subheadline */}
         <p
-          className="text-xl md:text-2xl text-[var(--color-ink)] max-w-2xl mx-auto mt-8 leading-relaxed animate-fade-up"
+          className="text-lg md:text-2xl text-[var(--color-ink)] max-w-2xl mx-auto mt-6 md:mt-8 leading-relaxed animate-fade-up px-4 md:px-0"
           style={{
             fontFamily: "var(--font-body)",
             animationDelay: "200ms",
@@ -51,12 +51,12 @@ export function HeroSection() {
 
         {/* Action Area - Centered Pill Button */}
         <div
-          className="flex flex-col items-center mt-12 animate-fade-up"
+          className="flex flex-col items-center mt-8 md:mt-12 animate-fade-up"
           style={{ animationDelay: "300ms", animationFillMode: "forwards" }}
         >
           <a
             href="#contact"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            className="inline-flex items-center gap-3 px-6 py-3 md:px-8 md:py-4 bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white text-base md:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
           >
             {t('ctaBlock.button')}
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -65,24 +65,24 @@ export function HeroSection() {
           </a>
 
           {/* Trust indicators */}
-          <div className="flex items-center gap-6 mt-16 text-sm text-[var(--color-ink)] font-medium">
-            <div className="flex items-center gap-2">
-              <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mt-12 md:mt-16 text-xs md:text-sm text-[var(--color-ink)] font-medium max-w-xs md:max-w-none mx-auto">
+            <div className="flex items-center gap-1.5 md:gap-2">
+              <div className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600 shrink-0">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
               </div>
-              <span>{t('trust.consultation')}</span>
+              <span className="whitespace-nowrap">{t('trust.consultation')}</span>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+            <div className="flex items-center gap-1.5 md:gap-2">
+              <div className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600 shrink-0">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
               </div>
-              <span>{t('trust.euTeam')}</span>
+              <span className="whitespace-nowrap">{t('trust.euTeam')}</span>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+            <div className="flex items-center gap-1.5 md:gap-2">
+              <div className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600 shrink-0">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
               </div>
-              <span>{t('trust.startFast')}</span>
+              <span className="whitespace-nowrap">{t('trust.startFast')}</span>
             </div>
           </div>
         </div>
