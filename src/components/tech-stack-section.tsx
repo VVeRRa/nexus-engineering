@@ -57,8 +57,16 @@ export function TechStackSection() {
       color: "var(--color-primary)",
       techs: [
         { name: "Agile", abbr: "Ag" },
-        { name: "AI", abbr: "AI" },
+        { name: "Gemini, Claude, OpenAI", abbr: "AI" },
         { name: "CI/CD", abbr: "CI" },
+      ],
+    },
+    {
+      name: t("categories.prototyping"),
+      color: "var(--color-secondary)",
+      techs: [
+        { name: "Lovable", abbr: "Lv" },
+        { name: "NotebookLM", abbr: "Nb" },
       ],
     },
   ];

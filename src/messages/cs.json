@@ -372,6 +372,7 @@
       "data": "Data & Úložiště",
       "cloud": "Cloud & DevOps",
       "methodology": "Metodika & AI",
+      "prototyping": "Prototypování",
       "design": "Design"
     }
   },
@@ -518,8 +519,12 @@
     "models": {
       "title": "Modely spolupráce",
       "subtitle": "Flexibilní uspořádání podle vašich potřeb",
+      "prototyping": {
+        "title": "Produktový Prototyping",
+        "desc": "Rychlá validace nápadů pomocí funkčních prototypů. Stavíme MVP verze pro testování trhu před plnou investicí do vývoje."
+      },
       "augmentation": {
-        "title": "Partner pro produktové inženýrství",
+        "title": "Rozšíření týmu",
         "desc": "Jednotliví inženýři začlenění do vašeho týmu, pracující ve vašich hodinách, s vašimi nástroji."
       },
       "team": {
@@ -528,7 +533,15 @@
       },
       "project": {
         "title": "Projektová báze",
-        "desc": "Poskytujeme komplexní realizaci projektů v definovaném rozsahu a časovém harmonogramu. V závislosti na vašich požadavcích nabízíme modely účtování s pevnou cenou nebo hodinovou sazbou, abychom zajistili plný soulad s vaším rozpočtem."
+        "desc": "Poskytujeme komplexní realizaci projektů v definovaném rozsahu a časovém harmonogramu."
+      },
+      "billing": {
+        "title": "Modely účtování",
+        "desc": "V závislosti na vašich požadavcích nabízíme modely účtování s pevnou cenou nebo hodinovou sazbou, abychom zajistili plný soulad s vaším rozpočtem."
+      },
+      "consulting": {
+        "title": "Partner pro produktové inženýrství",
+        "desc": "Odborné poradenství v oblasti architektury a strategií digitální transformace pro zajištění budoucnosti vašeho podnikání."
       }
     }
   },

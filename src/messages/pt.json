@@ -372,6 +372,7 @@
             "data": "Dados & Armazenamento",
             "cloud": "Cloud & DevOps",
             "methodology": "Metodologia & IA",
+            "prototyping": "Prototipagem",
             "design": "Design"
         }
     },
@@ -518,8 +519,12 @@
         "models": {
             "title": "Modelos de Engajamento",
             "subtitle": "Arranjos flexíveis para atender suas necessidades",
+            "prototyping": {
+                "title": "Prototipagem de Produto",
+                "desc": "Valide ideias rapidamente com protótipos funcionais. Construímos versões MVP para testar a adesão ao mercado antes do investimento total."
+            },
             "augmentation": {
-                "title": "Parceiro de Engenharia de Produto",
+                "title": "Extensão de Equipa",
                 "desc": "Engenheiros individuais incorporados à sua equipe, trabalhando seus horários, usando suas ferramentas."
             },
             "team": {
@@ -528,7 +533,15 @@
             },
             "project": {
                 "title": "Baseado em Projeto",
-                "desc": "Oferecemos execução de projetos de ponta a ponta dentro de um escopo e cronograma definidos. Dependendo dos seus requisitos, oferecemos modelos de cobrança de preço fixo ou taxas horárias para garantir total alinhamento com as suas necessidades orçamentais."
+                "desc": "Oferecemos execução de projetos de ponta a ponta dentro de um escopo e cronograma definidos."
+            },
+            "billing": {
+                "title": "Modelos de Cobrança",
+                "desc": "Dependendo dos seus requisitos, oferecemos modelos de cobrança de preço fixo ou taxas horárias para garantir total alinhamento com as suas necessidades orçamentais."
+            },
+            "consulting": {
+                "title": "Parceiro de Engenharia de Produto",
+                "desc": "Orientação especializada sobre arquitetura e estratégias de transformação digital para preparar o seu negócio para o futuro."
             }
         }
     },

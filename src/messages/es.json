@@ -372,6 +372,7 @@
             "data": "Datos y Almacenamiento",
             "cloud": "Nube y DevOps",
             "methodology": "Metodología e IA",
+            "prototyping": "Prototipado",
             "design": "Diseño"
         }
     },
@@ -518,8 +519,12 @@
         "models": {
             "title": "Modelos de Compromiso",
             "subtitle": "Arreglos flexibles para satisfacer sus necesidades",
+            "prototyping": {
+                "title": "Prototipado de Productos",
+                "desc": "Valide ideas rápidamente con prototipos funcionales. Construimos versiones MVP para probar el ajuste al mercado antes de la inversión total."
+            },
             "augmentation": {
-                "title": "Socio de Ingeniería de Producto",
+                "title": "Extensión del Equipo",
                 "desc": "Ingenieros individuales integrados en su equipo, trabajando en sus horarios, utilizando sus herramientas."
             },
             "team": {
@@ -528,7 +533,15 @@
             },
             "project": {
                 "title": "Basado en Proyecto",
-                "desc": "Ofrecemos ejecución de proyectos de principio a fin dentro de un alcance y cronograma definidos. Dependiendo de sus requisitos, ofrecemos modelos de facturación de precio fijo o por horas para garantizar una alineación total con sus necesidades presupuestarias."
+                "desc": "Ofrecemos ejecución de proyectos de principio a fin dentro de un alcance y cronograma definidos."
+            },
+            "billing": {
+                "title": "Modelos de Facturación",
+                "desc": "Dependiendo de sus requisitos, ofrecemos modelos de facturación de precio fijo o por horas para garantizar una alineación total con sus necesidades presupuestarias."
+            },
+            "consulting": {
+                "title": "Socio de Ingeniería de Producto",
+                "desc": "Orientación experta sobre arquitectura y estrategias de transformación digital para preparar su negocio para el futuro."
             }
         }
     },

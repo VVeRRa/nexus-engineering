@@ -60,7 +60,7 @@ function AccordionItem({ question, answer, index }: { question: string; answer: 
                 </span>
             </button>
             <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-48' : 'max-h-0'}`}
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[500px]' : 'max-h-0'}`}
             >
                 <div className="p-6 pt-0 text-slate-400">
                     {answer}

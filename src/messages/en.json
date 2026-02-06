@@ -373,6 +373,7 @@
       "data": "Data & Storage",
       "cloud": "Cloud & DevOps",
       "methodology": "Methodology & AI",
+      "prototyping": "Prototyping",
       "design": "Design"
     }
   },
@@ -519,8 +520,12 @@
     "models": {
       "title": "Engagement Models",
       "subtitle": "Flexible arrangements to fit your needs",
+      "prototyping": {
+        "title": "Product Prototyping",
+        "desc": "Rapidly validate ideas with functional prototypes. We build MVP versions to test market fit before full-scale engineering investment."
+      },
       "augmentation": {
-        "title": "Product Engineering Partner",
+        "title": "Team Extension",
         "desc": "Individual engineers embedded in your team, working your hours, using your tools."
       },
       "team": {
@@ -529,7 +534,15 @@
       },
       "project": {
         "title": "Project-Based",
-        "desc": "We provide end-to-end project execution within a defined scope and timeline. Depending on your requirements, we offer both Fixed-Price or Hourly rates billing models to ensure full alignment with your budgetary needs."
+        "desc": "We provide end-to-end project execution within a defined scope and timeline."
+      },
+      "billing": {
+        "title": "Billing Models",
+        "desc": "Depending on your requirements, we offer both Fixed-Price or Hourly rates billing models to ensure full alignment with your budgetary needs."
+      },
+      "consulting": {
+        "title": "Product Engineering Partner",
+        "desc": "Expert guidance on architecture and digital transformation strategies to future-proof your business."
       }
     }
   },

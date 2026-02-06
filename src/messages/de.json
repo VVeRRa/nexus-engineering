@@ -47,7 +47,7 @@
   },
   "Home": {
     "kicker": "",
-    "subheadline": "Spezialisiert auf FinTech, PropTech und RegTech. Wir bieten die architektonische Tiefe eines CTO-Office mit der Liefergeschwindigkeit eines agilen Squads.",
+    "subheadline": "Spezialisiert auf FinTech, PropTech und RegTech. Wir bieten die architektonische Tiefe eines CTO-Office mit der Liefergeschwindigkeit eines eingespielten Teams.",
     "ctaPrimary": "Kontaktieren Sie uns",
     "ctaSecondary": "Leistungen ansehen",
     "scroll": "Scrollen",
@@ -372,6 +372,7 @@
       "data": "Daten & Speicher",
       "cloud": "Cloud & DevOps",
       "methodology": "Methodik & AI",
+      "prototyping": "Prototyping",
       "design": "Design"
     }
   },
@@ -518,8 +519,12 @@
     "models": {
       "title": "Zusammenarbeitsmodelle",
       "subtitle": "Flexible Arrangements für Ihre Bedürfnisse",
+      "prototyping": {
+        "title": "Produkt-Prototyping",
+        "desc": "Validieren Sie Ideen schnell mit funktionalen Prototypen. Wir entwickeln MVP-Versionen, um die Markttauglichkeit vor der vollen Investition zu testen."
+      },
       "augmentation": {
-        "title": "Produkt-Engineering-Partner",
+        "title": "Team-Erweiterung",
         "desc": "Einzelne Ingenieure, eingebettet in Ihr Team, arbeiten zu Ihren Zeiten, mit Ihren Tools."
       },
       "team": {
@@ -528,7 +533,15 @@
       },
       "project": {
         "title": "Projektbasiert",
-        "desc": "Wir bieten eine End-to-End-Projektabwicklung innerhalb eines definierten Umfangs und Zeitrahmens. Je nach Ihren Anforderungen bieten wir sowohl Festpreis- als auch Stundenabrechnungsmodelle an, um eine vollständige Übereinstimmung mit Ihrem Budget zu gewährleisten."
+        "desc": "Wir bieten eine End-to-End-Projektabwicklung innerhalb eines definierten Umfangs und Zeitrahmens."
+      },
+      "billing": {
+        "title": "Abrechnungsmodelle",
+        "desc": "Je nach Ihren Anforderungen bieten wir sowohl Festpreis- als auch Stundenabrechnungsmodelle an, um eine vollständige Übereinstimmung mit Ihrem Budget zu gewährleisten."
+      },
+      "consulting": {
+        "title": "Produkt-Engineering-Partner",
+        "desc": "Expertenratschläge zu Architektur und digitalen Transformationsstrategien, um Ihr Unternehmen zukunftssicher zu machen."
       }
     }
   },

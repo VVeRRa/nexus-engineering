@@ -372,6 +372,7 @@
             "data": "Données & Stockage",
             "cloud": "Cloud & DevOps",
             "methodology": "Méthodologie & IA",
+            "prototyping": "Prototypage",
             "design": "Design"
         }
     },
@@ -518,8 +519,12 @@
         "models": {
             "title": "Modèles d'engagement",
             "subtitle": "Arrangements flexibles pour répondre à vos besoins",
+            "prototyping": {
+                "title": "Prototypage de Produit",
+                "desc": "Validez rapidement vos idées avec des prototypes fonctionnels. Nous construisons des MVP pour tester le marché avant l'investissement complet."
+            },
             "augmentation": {
-                "title": "Partenaire d'ingénierie produit",
+                "title": "Extension d'équipe",
                 "desc": "Ingénieurs individuels intégrés à votre équipe, travaillant selon vos horaires, avec vos outils."
             },
             "team": {
@@ -528,7 +533,15 @@
             },
             "project": {
                 "title": "Basé sur un projet",
-                "desc": "Nous assurons une exécution de projet de bout en bout dans un périmètre et un calendrier définis. Selon vos besoins, nous proposons des modèles de facturation au forfait ou au taux horaire pour garantir un alignement total avec votre budget."
+                "desc": "Nous assurons une exécution de projet de bout en bout dans un périmètre et un calendrier définis."
+            },
+            "billing": {
+                "title": "Modèles de facturation",
+                "desc": "Selon vos besoins, nous proposons des modèles de facturation au forfait ou au taux horaire pour garantir un alignement total avec votre budget."
+            },
+            "consulting": {
+                "title": "Partenaire d'ingénierie produit",
+                "desc": "Conseils d'experts sur l'architecture et les stratégies de transformation numérique pour pérenniser votre entreprise."
             }
         }
     },
