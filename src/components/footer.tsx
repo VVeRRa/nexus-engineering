@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Logo } from "@/components/ui/logo";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -36,9 +37,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-6">
-              <div className="text-2xl tracking-tighter font-extrabold text-[var(--color-ink)]" style={{ fontFamily: "var(--font-display)" }}>
-                BLAiT<span className="text-[var(--color-primary)]">.</span>
-              </div>
+              <Logo />
             </a>
             <p className="text-[var(--color-ink)] mb-6 max-w-sm leading-relaxed">
               {t("brandDesc")}

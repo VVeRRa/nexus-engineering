@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./language-switcher";
+import { Logo } from "@/components/ui/logo";
 
 
 import { useScrollSpy } from "@/hooks/use-scroll-spy";
@@ -76,9 +77,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href={`/${locale}`} className="flex items-center gap-2 group relative z-50">
-            <div className="text-2xl tracking-tighter font-extrabold text-[var(--color-ink)]" style={{ fontFamily: "var(--font-display)" }}>
-              BLAiT<span className="text-[var(--color-primary)]">.</span>
-            </div>
+            <Logo />
           </a>
 
           {/* Desktop Navigation - Centered */}
