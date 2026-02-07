@@ -323,7 +323,7 @@
         "Algorithm-driven Valuations",
         "Geospatial Data (Cadastre)",
         "RESO & Open Immo Standards",
-        "AI-Suche"
+        "KI-Suche"
       ]
     },
     "regtech": {
@@ -357,7 +357,7 @@
       "distArch": "Verteilte Architektur",
       "scaling": "Ökosysteme",
       "product": "Startup-Produktentwicklung",
-      "ai": "AI-Implementierung",
+      "ai": "KI-Implementierung",
       "migration": "Systemmigration"
     }
   },
@@ -371,7 +371,7 @@
       "languages": "Sprachen & Frameworks",
       "data": "Daten & Speicher",
       "cloud": "Cloud & DevOps",
-      "methodology": "Methodik & AI",
+      "methodology": "Methodik & KI",
       "prototyping": "Prototyping",
       "design": "Design"
     }
@@ -623,7 +623,7 @@
       "items": {
         "review": {
           "title": "Obligatorischer Peer-Review",
-          "text": "Kein Code erreicht die Produktion ohne mindestens eine Genehmigung durch einen Senior Engineer. Wir prüfen während des Reviews auf OWASP Top 10 Schwachstellen."
+          "text": "Kein Code erreicht die Produktion ohne mindestens eine Genehmigung durch einen Senior Engineer."
         },
         "scanning": {
           "title": "Automatisches Scannen",

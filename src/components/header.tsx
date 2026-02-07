@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
-import LanguageSwitcher from "./language-switcher";
+
 import { Logo } from "@/components/ui/logo";
 
 
@@ -96,7 +96,7 @@ export function Header() {
           {/* CTA Button & Language Switcher */}
           <div className="hidden lg:flex items-center gap-4">
 
-            <LanguageSwitcher />
+
             {/* <a
               href="tel:8005551234"
               className="flex items-center gap-2 px-6 py-2.5 bg-[var(--color-primary)] hover:opacity-90 text-white rounded-full text-sm font-bold transition-all duration-300 shadow-lg shadow-blue-500/20"
@@ -157,9 +157,7 @@ export function Header() {
             >
               <span>(800) 555-1234</span>
             </a> */}
-            <div className="flex justify-center gap-4">
-              <LanguageSwitcher direction="up" />
-            </div>
+
           </div>
         </nav>
       </div>

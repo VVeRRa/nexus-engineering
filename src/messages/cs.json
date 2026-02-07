@@ -623,7 +623,7 @@
       "items": {
         "review": {
           "title": "Povinné Code Review",
-          "text": "Žádný kód nejde do produkce bez schválení alespoň jednoho seniorního inženýra. Během review kontrolujeme OWASP Top 10 zranitelnosti."
+          "text": "Žádný kód nejde do produkce bez schválení alespoň jednoho seniorního inženýra."
         },
         "scanning": {
           "title": "Automatizované skenování",

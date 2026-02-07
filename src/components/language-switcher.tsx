@@ -17,7 +17,7 @@ export default function LanguageSwitcher({ direction = 'down' }: LanguageSwitche
     const dropdownRef = useRef<HTMLDivElement>(null);
 
     const locales = [
-        { code: 'en', label: 'EN', flag: '🇬🇧' },
+        { code: 'en', label: 'EN', flag: '🇺🇸' },
         { code: 'cs', label: 'CS', flag: '🇨🇿' },
         { code: 'de', label: 'DE', flag: '🇩🇪' },
         { code: 'fr', label: 'FR', flag: '🇫🇷' },

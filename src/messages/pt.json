@@ -623,7 +623,7 @@
             "items": {
                 "review": {
                     "title": "Revisão por Pares Obrigatória",
-                    "text": "Nenhum código chega à produção sem pelo menos uma aprovação de um engenheiro sênior. Verificamos vulnerabilidades OWASP Top 10 durante a revisão."
+                    "text": "Nenhum código chega à produção sem pelo menos uma aprovação de um engenheiro sênior."
                 },
                 "scanning": {
                     "title": "Escaneamento Automatizado",

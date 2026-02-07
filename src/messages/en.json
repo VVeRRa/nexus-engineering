@@ -624,7 +624,7 @@
       "items": {
         "review": {
           "title": "Mandatory Peer Review",
-          "text": "No code reaches production without at least one senior engineer approval. We check for OWASP Top 10 vulnerabilities during review."
+          "text": "No code reaches production without at least one senior engineer approval."
         },
         "scanning": {
           "title": "Automated Scanning",

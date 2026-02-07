@@ -623,7 +623,7 @@
             "items": {
                 "review": {
                     "title": "Revue par les Pairs Obligatoire",
-                    "text": "Aucun code n'atteint la production sans au moins une approbation d'un ingénieur senior. Nous vérifions les vulnérabilités OWASP Top 10 lors de la revue."
+                    "text": "Aucun code n'atteint la production sans au moins une approbation d'un ingénieur senior."
                 },
                 "scanning": {
                     "title": "Analyse Automatisée",

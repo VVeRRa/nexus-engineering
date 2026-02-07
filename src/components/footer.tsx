@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Logo } from "@/components/ui/logo";
+import LanguageSwitcher from "./language-switcher";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -123,7 +124,9 @@ export function Footer() {
             &copy; {currentYear} {t("rights")}
           </p>
 
-
+          <div className="flex items-center gap-4">
+            <LanguageSwitcher direction="up" />
+          </div>
         </div>
       </div>
     </footer>
