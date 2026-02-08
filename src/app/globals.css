@@ -142,8 +142,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  /* GPU Promotion to reduce white flashes on rotation */
-  transform: translateZ(0);
+  /* GPU Promotion removed to restore sticky header */
+  /* transform: translateZ(0); */
 }
 
 .container {

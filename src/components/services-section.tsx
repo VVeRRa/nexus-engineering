@@ -118,7 +118,7 @@ export function ServicesSection() {
                 </p>
 
                 <div className="flex flex-wrap gap-2">
-                  {tags.slice(0, 3).map((tag, tagIndex) => (
+                  {tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
                       className={`px-0 py-1 text-xs font-medium ${isEven
