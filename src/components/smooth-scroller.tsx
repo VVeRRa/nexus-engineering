@@ -5,21 +5,19 @@ import Lenis from "lenis";
 
 export function SmoothScroller() {
     useEffect(() => {
-        // DETECT TOUCH DEVICES (iPad, Mobile)
-        // We disable custom smooth scrolling on touch devices to prevent conflicts
-        // with native iOS/Android scrolling, especially when external keyboards are used.
-        const isTouch = window.matchMedia("(pointer: coarse)").matches ||
-            ('ontouchstart' in window) ||
-            (navigator.maxTouchPoints > 0);
+        // Initialize Lenis on ALL devices (Desktop, Tablet, Mobile)
+        // This ensures a consistent, premium scroll experience and fixes 
+        // native scroll glitches (blank pages, rubber banding) on iOS/Android.
 
-        // ONLY INITIALIZE LENIS ON DESKTOP (Non-Touch)
-        if (isTouch) return;
+        // Note: Modern smartphones handle Lenis well. If performance issues arise,
+        // we can conditionally adjust the configuration.
 
         const lenis = new Lenis({
             duration: 1.2,
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
             wheelMultiplier: 1,
             touchMultiplier: 2,
+            // infinite: false, // Default
         });
 
         // Add class to html to scope CSS

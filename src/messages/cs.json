@@ -192,7 +192,8 @@
         "tags": [
           "Strategie",
           "Agile",
-          "UI/UX Design"
+          "UI/UX Design",
+          "CPO-as-a-service"
         ]
       }
     },
@@ -296,7 +297,7 @@
     "valueProps": {
       "startups": {
         "label": "Startupy",
-        "text": "Produktové prototypy"
+        "text": "Vývoj produktových prototypů"
       },
       "smes": {
         "label": "SME / Korporace",

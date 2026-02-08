@@ -2,6 +2,7 @@
 
 import { ContactFormSchema } from '@/lib/schemas';
 import { resend } from '@/lib/resend';
+import { ContactConfirmationEmail } from '@/components/emails/contact-confirmation-email';
 
 export type ContactFormState = {
     errors?: {
@@ -60,6 +61,25 @@ export async function sendEmail(prevState: ContactFormState, formData: FormData)
         ${message}
       `,
         });
+
+        // Send confirmation email to the user
+        try {
+            await resend.emails.send({
+                from: process.env.CONTACT_FROM || 'onboarding@resend.dev',
+                to: email,
+                subject: `We've received your message - BLAiT Engineering`,
+                react: <ContactConfirmationEmail
+                    name={name}
+                    email={email}
+                    company={company || undefined}
+                    projectType={projectType || undefined}
+                    message={message}
+                />,
+            });
+        } catch (autoReplyError) {
+            console.error("Failed to send auto-reply:", autoReplyError);
+            // We don't fail the main request if auto-reply fails
+        }
 
         if (data.error) {
             console.error("Resend Error:", data.error);
