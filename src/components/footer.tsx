@@ -17,9 +17,9 @@ export function Footer() {
     ],
     company: [
       { label: t("links.about"), href: "#about" },
-      { label: t("links.caseStudies"), href: "#case-studies" },
+      // { label: t("links.caseStudies"), href: "#case-studies" }, TODO
       { label: t("links.process"), href: "#process" },
-      { label: t("links.security"), href: "/security" },
+      // { label: t("links.security"), href: "/security" },TODO
       { label: t("links.contact"), href: "#contact" },
     ],
     industries: [
@@ -27,6 +27,7 @@ export function Footer() {
       { label: t("links.proptech"), href: "#industries" },
       { label: t("links.regtech"), href: "#industries" },
       { label: t("links.enterprise"), href: "#industries" },
+      { label: t("links.startups"), href: "#industries" },
     ],
   };
 

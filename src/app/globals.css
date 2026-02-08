@@ -122,7 +122,14 @@
 }
 
 html {
+  /* Default to smooth scrolling for browsers/devices without Lenis */
   scroll-behavior: smooth;
+}
+
+html.lenis {
+  /* Lenis handles scrolling, so we disable native smooth scroll to prevent conflicts */
+  height: auto;
+  scroll-behavior: auto;
 }
 
 body {

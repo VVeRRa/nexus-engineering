@@ -22,6 +22,9 @@ export function SmoothScroller() {
             touchMultiplier: 2,
         });
 
+        // Add class to html to scope CSS
+        document.documentElement.classList.add('lenis');
+
         function raf(time: number) {
             lenis.raf(time);
             requestAnimationFrame(raf);
@@ -31,6 +34,7 @@ export function SmoothScroller() {
 
         return () => {
             lenis.destroy();
+            document.documentElement.classList.remove('lenis');
         };
     }, []);
 
