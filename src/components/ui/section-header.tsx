@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 interface SectionHeaderProps {
@@ -22,11 +23,20 @@ export function SectionHeader({
     const isWhite = className?.includes("text-white") || className?.includes("!text-white");
     const inheritColor = className?.includes("text-slate");
 
+    const MotionComponent = animate ? motion.div : "div";
+    const motionProps = animate ? {
+        initial: { opacity: 0, y: 20 },
+        whileInView: { opacity: 1, y: 0 },
+        viewport: { once: true, margin: "-100px" },
+        transition: { duration: 0.6 }
+    } : {};
+
     return (
-        <div
+        <MotionComponent
+            {...motionProps}
             className={cn(
                 "mb-16",
-                animate && "animate-on-scroll",
+                // animate && "animate-on-scroll", // Removed legacy class
                 align === "center" ? "text-center max-w-3xl mx-auto" : "max-w-3xl",
                 className
             )}
@@ -60,6 +70,6 @@ export function SectionHeader({
                     {description}
                 </div>
             )}
-        </div>
+        </MotionComponent>
     );
 }

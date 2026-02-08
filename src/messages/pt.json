@@ -42,6 +42,7 @@
             "proptech": "PropTech",
             "regtech": "RegTech",
             "enterprise": "Empresas",
+            "startups": "Startups",
             "security": "Segurança e Conformidade"
         }
     },
@@ -384,7 +385,7 @@
             "category": "FinTech",
             "title": "Hipoteca Digital e Saúde financeira",
             "challenge": "Os pedidos de hipoteca tradicionais exigiam várias visitas presenciais e semanas de processamento manual.",
-            "solution": "Integração de Digital ID para identidade instantânea e desenvolvimento de 'FinCheck' para avaliações financeiras automáticas e candidaturas online.",
+            "solution": "Integração de Digital ID para identidade instantânea e desenvolvimento de ferramenta digital de saúde financeira para clientes de varejo e candidaturas online.",
             "outcome": "Primeiro fluxo de hipoteca digital na região com feedback instantâneo sobre elegibilidade e tempo de oferta reduzido."
         },
         "proptech": {
@@ -623,7 +624,7 @@
             "items": {
                 "review": {
                     "title": "Revisão por Pares Obrigatória",
-                    "text": "Nenhum código chega à produção sem pelo menos uma aprovação de um engenheiro sênior. Verificamos vulnerabilidades OWASP Top 10 durante a revisão."
+                    "text": "Nenhum código chega à produção sem pelo menos uma aprovação de um engenheiro sênior."
                 },
                 "scanning": {
                     "title": "Escaneamento Automatizado",

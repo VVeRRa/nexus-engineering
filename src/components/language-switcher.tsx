@@ -17,12 +17,12 @@ export default function LanguageSwitcher({ direction = 'down' }: LanguageSwitche
     const dropdownRef = useRef<HTMLDivElement>(null);
 
     const locales = [
-        { code: 'en', label: 'EN', flag: '🇬🇧' },
+        { code: 'en', label: 'EN', flag: '🇺🇸' },
         { code: 'cs', label: 'CS', flag: '🇨🇿' },
         { code: 'de', label: 'DE', flag: '🇩🇪' },
         { code: 'fr', label: 'FR', flag: '🇫🇷' },
         { code: 'es', label: 'ES', flag: '🇪🇸' },
-        { code: 'ua', label: 'UA', flag: '🇺🇦' },
+        { code: 'uk', label: 'UA', flag: '🇺🇦' },
         { code: 'pt', label: 'PT', flag: '🇵🇹' },
     ];
 

@@ -1,6 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Logo } from "@/components/ui/logo";
+import LanguageSwitcher from "./language-switcher";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -15,9 +17,9 @@ export function Footer() {
     ],
     company: [
       { label: t("links.about"), href: "#about" },
-      { label: t("links.caseStudies"), href: "#case-studies" },
+      // { label: t("links.caseStudies"), href: "#case-studies" }, TODO
       { label: t("links.process"), href: "#process" },
-      { label: t("links.security"), href: "/security" },
+      // { label: t("links.security"), href: "/security" },TODO
       { label: t("links.contact"), href: "#contact" },
     ],
     industries: [
@@ -25,6 +27,7 @@ export function Footer() {
       { label: t("links.proptech"), href: "#industries" },
       { label: t("links.regtech"), href: "#industries" },
       { label: t("links.enterprise"), href: "#industries" },
+      { label: t("links.startups"), href: "#industries" },
     ],
   };
 
@@ -36,9 +39,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-6">
-              <div className="text-2xl tracking-tighter font-extrabold text-[var(--color-ink)]" style={{ fontFamily: "var(--font-display)" }}>
-                BLAiT<span className="text-[var(--color-primary)]">.</span>
-              </div>
+              <Logo />
             </a>
             <p className="text-[var(--color-ink)] mb-6 max-w-sm leading-relaxed">
               {t("brandDesc")}
@@ -124,7 +125,9 @@ export function Footer() {
             &copy; {currentYear} {t("rights")}
           </p>
 
-
+          <div className="flex items-center gap-4">
+            <LanguageSwitcher direction="up" />
+          </div>
         </div>
       </div>
     </footer>
