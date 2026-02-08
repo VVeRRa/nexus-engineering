@@ -22,7 +22,7 @@ export default function LanguageSwitcher({ direction = 'down' }: LanguageSwitche
         { code: 'de', label: 'DE', flag: '🇩🇪' },
         { code: 'fr', label: 'FR', flag: '🇫🇷' },
         { code: 'es', label: 'ES', flag: '🇪🇸' },
-        { code: 'ua', label: 'UA', flag: '🇺🇦' },
+        { code: 'uk', label: 'UA', flag: '🇺🇦' },
         { code: 'pt', label: 'PT', flag: '🇵🇹' },
     ];
 

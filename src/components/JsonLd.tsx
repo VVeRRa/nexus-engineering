@@ -59,7 +59,7 @@ export async function JsonLd({ locale }: { locale: string }) {
                 "@type": "WebPage",
                 "@id": `${canonicalUrl}/#webpage`,
                 "url": canonicalUrl,
-                "inLanguage": locale === 'ua' ? 'uk' : locale,
+                "inLanguage": locale,
                 "name": tMeta("title"),
                 "description": tMeta("description"),
                 "isPartOf": {

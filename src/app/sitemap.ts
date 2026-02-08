@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const locales = ["en", "de", "fr", "es", "ua", "pt", "cs"];
+const locales = ["en", "de", "fr", "es", "uk", "pt", "cs"];
 const baseUrl = "https://blait.eu";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             alternates: {
                 languages: locales.reduce((acc, l) => ({
                     ...acc,
-                    [l === "ua" ? "uk" : l]: `${baseUrl}/${l}${page}`
+                    [l]: `${baseUrl}/${l}${page}`
                 }), {}),
             },
         }));
