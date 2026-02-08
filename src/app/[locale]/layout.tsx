@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         de: "/de",
         fr: "/fr",
         es: "/es",
-        uk: "/ua",
+        uk: "/uk",
         pt: "/pt",
         cs: "/cs",
         'x-default': "/en",
