@@ -15,7 +15,7 @@ export async function JsonLd({ locale }: { locale: string }) {
         }
     }));
 
-    const baseUrl = "https://blait.eu";
+    const baseUrl = "https://www.blait.eu";
     const canonicalUrl = `${baseUrl}/${locale}`;
 
     const jsonLd = {
