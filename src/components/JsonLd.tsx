@@ -32,7 +32,7 @@ export async function JsonLd({ locale }: { locale: string }) {
                     "width": 512,
                     "height": 512,
                 },
-                "description": "Senior-led product engineering partner specializing in high-stakes industries like FinTech, PropTech, and RegTech. Delivering scalable backend systems and exceptional user experiences.",
+                "description": tMeta("description"),
                 "areaServed": ["EU", "US", "Worldwide"],
                 "sameAs": [
                     "https://twitter.com/blaitengineering",
