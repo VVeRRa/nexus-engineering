@@ -96,7 +96,7 @@ export async function sendEmail(prevState: ContactFormState, formData: FormData)
     } catch (error) {
         console.error("Server Action Error:", error);
         return {
-            message: `Server Error: ${error instanceof Error ? error.message : String(error)}`,
+            message: 'Database Error: Failed to send message.',
             success: false,
         };
     }
