@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
-  const baseUrl = "https://blait.eu";
+  const baseUrl = "https://www.blait.eu";
 
 
   return {
@@ -34,6 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       template: `%s | BLAiT Engineering`,
     },
     description: t("description"),
+    keywords: t("keywords"),
     authors: [{ name: "BLAiT Engineering" }],
     creator: "BLAiT Engineering",
     publisher: "BLAiT Engineering",

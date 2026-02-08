@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 const locales = ["en", "de", "fr", "es", "uk", "pt", "cs"];
-const baseUrl = "https://blait.eu";
+const baseUrl = "https://www.blait.eu";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const pages = ["", "/security"];
